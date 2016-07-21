@@ -2,18 +2,18 @@ package org.shell.mmo.sample.message.proto;
 
 // 坐标
 message Position {
-    required int32 x = 1; // 横坐标
-    required int32 y = 2; // 纵坐标
+    optional int32 x = 1; // 横坐标
+    optional int32 y = 2; // 纵坐标
 }
 // 主角
 message LeaderRole {
-    required fixed64 id = 1; // 角色id
-    required string name = 2; // 名字
-    required int32 map = 3; // 地图
-    required int32 level = 4; // 等级
-    required int32 server = 5; // 服务器
-    required int32 platform = 6; // 平台
-    required int32 gold = 7; // 元宝
+    optional fixed64 id = 1; // 角色id
+    optional string name = 2; // 名字
+    optional int32 map = 3; // 地图
+    optional int32 level = 4; // 等级
+    optional int32 server = 5; // 服务器
+    optional int32 platform = 6; // 平台
+    optional int32 gold = 7; // 元宝
 }
 
 // 错误码
@@ -26,6 +26,12 @@ enum GameObjectType {
     MONSTER = 2; // 怪物
     PET = 3; // 宠物
     ITEM = 4; // 道具
+}
+// 平台
+enum Platform {
+    INNER = 1; // 内部
+    P37WAN = 2; // 37玩
+    P360 = 3; // 360
 }
 // 模块类型
 enum Module {

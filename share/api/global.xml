@@ -10,6 +10,11 @@
             <PET desc="宠物" id="3"/>
             <ITEM desc="道具" id="4"/>
         </enum>
+        <enum name="Platform" desc="平台">
+            <INNER desc="内部" id="1"/>
+            <P37WAN desc="37玩" id="2"/>
+            <P360 desc="360" id="3"/>
+        </enum>
     </enums>
     <beans>
         <bean name="Position" desc="坐标">

@@ -13,7 +13,7 @@ public final class LogicClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required string usr = 1;</code>
+     * <code>optional string usr = 1;</code>
      *
      * <pre>
      * 账号
@@ -21,7 +21,7 @@ public final class LogicClient {
      */
     boolean hasUsr();
     /**
-     * <code>required string usr = 1;</code>
+     * <code>optional string usr = 1;</code>
      *
      * <pre>
      * 账号
@@ -29,7 +29,7 @@ public final class LogicClient {
      */
     java.lang.String getUsr();
     /**
-     * <code>required string usr = 1;</code>
+     * <code>optional string usr = 1;</code>
      *
      * <pre>
      * 账号
@@ -39,7 +39,7 @@ public final class LogicClient {
         getUsrBytes();
 
     /**
-     * <code>required int32 platform = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Platform platform = 2;</code>
      *
      * <pre>
      * 平台
@@ -47,16 +47,16 @@ public final class LogicClient {
      */
     boolean hasPlatform();
     /**
-     * <code>required int32 platform = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Platform platform = 2;</code>
      *
      * <pre>
      * 平台
      * </pre>
      */
-    int getPlatform();
+    org.shell.mmo.sample.message.proto.Global.Platform getPlatform();
 
     /**
-     * <code>required int32 server = 3;</code>
+     * <code>optional int32 server = 3;</code>
      *
      * <pre>
      * 服务器
@@ -64,7 +64,7 @@ public final class LogicClient {
      */
     boolean hasServer();
     /**
-     * <code>required int32 server = 3;</code>
+     * <code>optional int32 server = 3;</code>
      *
      * <pre>
      * 服务器
@@ -73,7 +73,7 @@ public final class LogicClient {
     int getServer();
 
     /**
-     * <code>required bool adult = 4;</code>
+     * <code>optional bool adult = 4;</code>
      *
      * <pre>
      * 是否成年
@@ -81,7 +81,7 @@ public final class LogicClient {
      */
     boolean hasAdult();
     /**
-     * <code>required bool adult = 4;</code>
+     * <code>optional bool adult = 4;</code>
      *
      * <pre>
      * 是否成年
@@ -90,7 +90,7 @@ public final class LogicClient {
     boolean getAdult();
 
     /**
-     * <code>required int32 time = 5;</code>
+     * <code>optional int32 time = 5;</code>
      *
      * <pre>
      * 时间戳
@@ -98,7 +98,7 @@ public final class LogicClient {
      */
     boolean hasTime();
     /**
-     * <code>required int32 time = 5;</code>
+     * <code>optional int32 time = 5;</code>
      *
      * <pre>
      * 时间戳
@@ -107,7 +107,7 @@ public final class LogicClient {
     int getTime();
 
     /**
-     * <code>required string sign = 6;</code>
+     * <code>optional string sign = 6;</code>
      *
      * <pre>
      * 验证串
@@ -115,7 +115,7 @@ public final class LogicClient {
      */
     boolean hasSign();
     /**
-     * <code>required string sign = 6;</code>
+     * <code>optional string sign = 6;</code>
      *
      * <pre>
      * 验证串
@@ -123,7 +123,7 @@ public final class LogicClient {
      */
     java.lang.String getSign();
     /**
-     * <code>required string sign = 6;</code>
+     * <code>optional string sign = 6;</code>
      *
      * <pre>
      * 验证串
@@ -195,8 +195,14 @@ public final class LogicClient {
               break;
             }
             case 16: {
-              bitField0_ |= 0x00000002;
-              platform_ = input.readInt32();
+              int rawValue = input.readEnum();
+              org.shell.mmo.sample.message.proto.Global.Platform value = org.shell.mmo.sample.message.proto.Global.Platform.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(2, rawValue);
+              } else {
+                bitField0_ |= 0x00000002;
+                platform_ = value;
+              }
               break;
             }
             case 24: {
@@ -263,7 +269,7 @@ public final class LogicClient {
     public static final int USR_FIELD_NUMBER = 1;
     private java.lang.Object usr_;
     /**
-     * <code>required string usr = 1;</code>
+     * <code>optional string usr = 1;</code>
      *
      * <pre>
      * 账号
@@ -273,7 +279,7 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required string usr = 1;</code>
+     * <code>optional string usr = 1;</code>
      *
      * <pre>
      * 账号
@@ -294,7 +300,7 @@ public final class LogicClient {
       }
     }
     /**
-     * <code>required string usr = 1;</code>
+     * <code>optional string usr = 1;</code>
      *
      * <pre>
      * 账号
@@ -315,9 +321,9 @@ public final class LogicClient {
     }
 
     public static final int PLATFORM_FIELD_NUMBER = 2;
-    private int platform_;
+    private org.shell.mmo.sample.message.proto.Global.Platform platform_;
     /**
-     * <code>required int32 platform = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Platform platform = 2;</code>
      *
      * <pre>
      * 平台
@@ -327,20 +333,20 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required int32 platform = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Platform platform = 2;</code>
      *
      * <pre>
      * 平台
      * </pre>
      */
-    public int getPlatform() {
+    public org.shell.mmo.sample.message.proto.Global.Platform getPlatform() {
       return platform_;
     }
 
     public static final int SERVER_FIELD_NUMBER = 3;
     private int server_;
     /**
-     * <code>required int32 server = 3;</code>
+     * <code>optional int32 server = 3;</code>
      *
      * <pre>
      * 服务器
@@ -350,7 +356,7 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required int32 server = 3;</code>
+     * <code>optional int32 server = 3;</code>
      *
      * <pre>
      * 服务器
@@ -363,7 +369,7 @@ public final class LogicClient {
     public static final int ADULT_FIELD_NUMBER = 4;
     private boolean adult_;
     /**
-     * <code>required bool adult = 4;</code>
+     * <code>optional bool adult = 4;</code>
      *
      * <pre>
      * 是否成年
@@ -373,7 +379,7 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>required bool adult = 4;</code>
+     * <code>optional bool adult = 4;</code>
      *
      * <pre>
      * 是否成年
@@ -386,7 +392,7 @@ public final class LogicClient {
     public static final int TIME_FIELD_NUMBER = 5;
     private int time_;
     /**
-     * <code>required int32 time = 5;</code>
+     * <code>optional int32 time = 5;</code>
      *
      * <pre>
      * 时间戳
@@ -396,7 +402,7 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>required int32 time = 5;</code>
+     * <code>optional int32 time = 5;</code>
      *
      * <pre>
      * 时间戳
@@ -409,7 +415,7 @@ public final class LogicClient {
     public static final int SIGN_FIELD_NUMBER = 6;
     private java.lang.Object sign_;
     /**
-     * <code>required string sign = 6;</code>
+     * <code>optional string sign = 6;</code>
      *
      * <pre>
      * 验证串
@@ -419,7 +425,7 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
-     * <code>required string sign = 6;</code>
+     * <code>optional string sign = 6;</code>
      *
      * <pre>
      * 验证串
@@ -440,7 +446,7 @@ public final class LogicClient {
       }
     }
     /**
-     * <code>required string sign = 6;</code>
+     * <code>optional string sign = 6;</code>
      *
      * <pre>
      * 验证串
@@ -462,7 +468,7 @@ public final class LogicClient {
 
     private void initFields() {
       usr_ = "";
-      platform_ = 0;
+      platform_ = org.shell.mmo.sample.message.proto.Global.Platform.INNER;
       server_ = 0;
       adult_ = false;
       time_ = 0;
@@ -474,30 +480,6 @@ public final class LogicClient {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasUsr()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasPlatform()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasServer()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasAdult()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasTime()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasSign()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -509,7 +491,7 @@ public final class LogicClient {
         output.writeBytes(1, getUsrBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, platform_);
+        output.writeEnum(2, platform_.getNumber());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         output.writeInt32(3, server_);
@@ -538,7 +520,7 @@ public final class LogicClient {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, platform_);
+          .computeEnumSize(2, platform_.getNumber());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
@@ -679,7 +661,7 @@ public final class LogicClient {
         super.clear();
         usr_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        platform_ = 0;
+        platform_ = org.shell.mmo.sample.message.proto.Global.Platform.INNER;
         bitField0_ = (bitField0_ & ~0x00000002);
         server_ = 0;
         bitField0_ = (bitField0_ & ~0x00000004);
@@ -784,30 +766,6 @@ public final class LogicClient {
       }
 
       public final boolean isInitialized() {
-        if (!hasUsr()) {
-          
-          return false;
-        }
-        if (!hasPlatform()) {
-          
-          return false;
-        }
-        if (!hasServer()) {
-          
-          return false;
-        }
-        if (!hasAdult()) {
-          
-          return false;
-        }
-        if (!hasTime()) {
-          
-          return false;
-        }
-        if (!hasSign()) {
-          
-          return false;
-        }
         return true;
       }
 
@@ -832,7 +790,7 @@ public final class LogicClient {
 
       private java.lang.Object usr_ = "";
       /**
-       * <code>required string usr = 1;</code>
+       * <code>optional string usr = 1;</code>
        *
        * <pre>
        * 账号
@@ -842,7 +800,7 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required string usr = 1;</code>
+       * <code>optional string usr = 1;</code>
        *
        * <pre>
        * 账号
@@ -863,7 +821,7 @@ public final class LogicClient {
         }
       }
       /**
-       * <code>required string usr = 1;</code>
+       * <code>optional string usr = 1;</code>
        *
        * <pre>
        * 账号
@@ -883,7 +841,7 @@ public final class LogicClient {
         }
       }
       /**
-       * <code>required string usr = 1;</code>
+       * <code>optional string usr = 1;</code>
        *
        * <pre>
        * 账号
@@ -900,7 +858,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required string usr = 1;</code>
+       * <code>optional string usr = 1;</code>
        *
        * <pre>
        * 账号
@@ -913,7 +871,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required string usr = 1;</code>
+       * <code>optional string usr = 1;</code>
        *
        * <pre>
        * 账号
@@ -930,9 +888,9 @@ public final class LogicClient {
         return this;
       }
 
-      private int platform_ ;
+      private org.shell.mmo.sample.message.proto.Global.Platform platform_ = org.shell.mmo.sample.message.proto.Global.Platform.INNER;
       /**
-       * <code>required int32 platform = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Platform platform = 2;</code>
        *
        * <pre>
        * 平台
@@ -942,30 +900,33 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required int32 platform = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Platform platform = 2;</code>
        *
        * <pre>
        * 平台
        * </pre>
        */
-      public int getPlatform() {
+      public org.shell.mmo.sample.message.proto.Global.Platform getPlatform() {
         return platform_;
       }
       /**
-       * <code>required int32 platform = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Platform platform = 2;</code>
        *
        * <pre>
        * 平台
        * </pre>
        */
-      public Builder setPlatform(int value) {
+      public Builder setPlatform(org.shell.mmo.sample.message.proto.Global.Platform value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
         bitField0_ |= 0x00000002;
         platform_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 platform = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Platform platform = 2;</code>
        *
        * <pre>
        * 平台
@@ -973,14 +934,14 @@ public final class LogicClient {
        */
       public Builder clearPlatform() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        platform_ = 0;
+        platform_ = org.shell.mmo.sample.message.proto.Global.Platform.INNER;
         onChanged();
         return this;
       }
 
       private int server_ ;
       /**
-       * <code>required int32 server = 3;</code>
+       * <code>optional int32 server = 3;</code>
        *
        * <pre>
        * 服务器
@@ -990,7 +951,7 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required int32 server = 3;</code>
+       * <code>optional int32 server = 3;</code>
        *
        * <pre>
        * 服务器
@@ -1000,7 +961,7 @@ public final class LogicClient {
         return server_;
       }
       /**
-       * <code>required int32 server = 3;</code>
+       * <code>optional int32 server = 3;</code>
        *
        * <pre>
        * 服务器
@@ -1013,7 +974,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required int32 server = 3;</code>
+       * <code>optional int32 server = 3;</code>
        *
        * <pre>
        * 服务器
@@ -1028,7 +989,7 @@ public final class LogicClient {
 
       private boolean adult_ ;
       /**
-       * <code>required bool adult = 4;</code>
+       * <code>optional bool adult = 4;</code>
        *
        * <pre>
        * 是否成年
@@ -1038,7 +999,7 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>required bool adult = 4;</code>
+       * <code>optional bool adult = 4;</code>
        *
        * <pre>
        * 是否成年
@@ -1048,7 +1009,7 @@ public final class LogicClient {
         return adult_;
       }
       /**
-       * <code>required bool adult = 4;</code>
+       * <code>optional bool adult = 4;</code>
        *
        * <pre>
        * 是否成年
@@ -1061,7 +1022,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required bool adult = 4;</code>
+       * <code>optional bool adult = 4;</code>
        *
        * <pre>
        * 是否成年
@@ -1076,7 +1037,7 @@ public final class LogicClient {
 
       private int time_ ;
       /**
-       * <code>required int32 time = 5;</code>
+       * <code>optional int32 time = 5;</code>
        *
        * <pre>
        * 时间戳
@@ -1086,7 +1047,7 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>required int32 time = 5;</code>
+       * <code>optional int32 time = 5;</code>
        *
        * <pre>
        * 时间戳
@@ -1096,7 +1057,7 @@ public final class LogicClient {
         return time_;
       }
       /**
-       * <code>required int32 time = 5;</code>
+       * <code>optional int32 time = 5;</code>
        *
        * <pre>
        * 时间戳
@@ -1109,7 +1070,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required int32 time = 5;</code>
+       * <code>optional int32 time = 5;</code>
        *
        * <pre>
        * 时间戳
@@ -1124,7 +1085,7 @@ public final class LogicClient {
 
       private java.lang.Object sign_ = "";
       /**
-       * <code>required string sign = 6;</code>
+       * <code>optional string sign = 6;</code>
        *
        * <pre>
        * 验证串
@@ -1134,7 +1095,7 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
-       * <code>required string sign = 6;</code>
+       * <code>optional string sign = 6;</code>
        *
        * <pre>
        * 验证串
@@ -1155,7 +1116,7 @@ public final class LogicClient {
         }
       }
       /**
-       * <code>required string sign = 6;</code>
+       * <code>optional string sign = 6;</code>
        *
        * <pre>
        * 验证串
@@ -1175,7 +1136,7 @@ public final class LogicClient {
         }
       }
       /**
-       * <code>required string sign = 6;</code>
+       * <code>optional string sign = 6;</code>
        *
        * <pre>
        * 验证串
@@ -1192,7 +1153,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required string sign = 6;</code>
+       * <code>optional string sign = 6;</code>
        *
        * <pre>
        * 验证串
@@ -1205,7 +1166,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required string sign = 6;</code>
+       * <code>optional string sign = 6;</code>
        *
        * <pre>
        * 验证串
@@ -1238,7 +1199,7 @@ public final class LogicClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -1246,7 +1207,7 @@ public final class LogicClient {
      */
     boolean hasError();
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -1255,7 +1216,7 @@ public final class LogicClient {
     org.shell.mmo.sample.message.proto.Global.Error getError();
 
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
      *
      * <pre>
      * 主角
@@ -1263,7 +1224,7 @@ public final class LogicClient {
      */
     boolean hasLeaderRole();
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
      *
      * <pre>
      * 主角
@@ -1271,7 +1232,7 @@ public final class LogicClient {
      */
     org.shell.mmo.sample.message.proto.Global.LeaderRole getLeaderRole();
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
      *
      * <pre>
      * 主角
@@ -1402,7 +1363,7 @@ public final class LogicClient {
     public static final int ERROR_FIELD_NUMBER = 1;
     private org.shell.mmo.sample.message.proto.Global.Error error_;
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -1412,7 +1373,7 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -1425,7 +1386,7 @@ public final class LogicClient {
     public static final int LEADERROLE_FIELD_NUMBER = 2;
     private org.shell.mmo.sample.message.proto.Global.LeaderRole leaderRole_;
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
      *
      * <pre>
      * 主角
@@ -1435,7 +1396,7 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
      *
      * <pre>
      * 主角
@@ -1445,7 +1406,7 @@ public final class LogicClient {
       return leaderRole_;
     }
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
      *
      * <pre>
      * 主角
@@ -1465,18 +1426,6 @@ public final class LogicClient {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasError()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasLeaderRole()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!getLeaderRole().isInitialized()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -1704,18 +1653,6 @@ public final class LogicClient {
       }
 
       public final boolean isInitialized() {
-        if (!hasError()) {
-          
-          return false;
-        }
-        if (!hasLeaderRole()) {
-          
-          return false;
-        }
-        if (!getLeaderRole().isInitialized()) {
-          
-          return false;
-        }
         return true;
       }
 
@@ -1740,7 +1677,7 @@ public final class LogicClient {
 
       private org.shell.mmo.sample.message.proto.Global.Error error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -1750,7 +1687,7 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -1760,7 +1697,7 @@ public final class LogicClient {
         return error_;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -1776,7 +1713,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -1793,7 +1730,7 @@ public final class LogicClient {
       private com.google.protobuf.SingleFieldBuilder<
           org.shell.mmo.sample.message.proto.Global.LeaderRole, org.shell.mmo.sample.message.proto.Global.LeaderRole.Builder, org.shell.mmo.sample.message.proto.Global.LeaderRoleOrBuilder> leaderRoleBuilder_;
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
        *
        * <pre>
        * 主角
@@ -1803,7 +1740,7 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
        *
        * <pre>
        * 主角
@@ -1817,7 +1754,7 @@ public final class LogicClient {
         }
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
        *
        * <pre>
        * 主角
@@ -1837,7 +1774,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
        *
        * <pre>
        * 主角
@@ -1855,7 +1792,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
        *
        * <pre>
        * 主角
@@ -1878,7 +1815,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
        *
        * <pre>
        * 主角
@@ -1895,7 +1832,7 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
        *
        * <pre>
        * 主角
@@ -1907,7 +1844,7 @@ public final class LogicClient {
         return getLeaderRoleFieldBuilder().getBuilder();
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
        *
        * <pre>
        * 主角
@@ -1921,7 +1858,7 @@ public final class LogicClient {
         }
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.LeaderRole leaderRole = 2;</code>
        *
        * <pre>
        * 主角
@@ -1972,13 +1909,15 @@ public final class LogicClient {
   static {
     java.lang.String[] descriptorData = {
       "\n\021LogicClient.proto\022\"org.shell.mmo.sampl" +
-      "e.message.proto\032\014global.proto\"i\n\rReqLogi" +
-      "nLogin\022\013\n\003usr\030\001 \002(\t\022\020\n\010platform\030\002 \002(\005\022\016\n" +
-      "\006server\030\003 \002(\005\022\r\n\005adult\030\004 \002(\010\022\014\n\004time\030\005 \002" +
-      "(\005\022\014\n\004sign\030\006 \002(\t\"\215\001\n\rResLoginLogin\0228\n\005er" +
-      "ror\030\001 \002(\0162).org.shell.mmo.sample.message" +
-      ".proto.Error\022B\n\nleaderRole\030\002 \002(\0132..org.s" +
-      "hell.mmo.sample.message.proto.LeaderRole"
+      "e.message.proto\032\014global.proto\"\227\001\n\rReqLog" +
+      "inLogin\022\013\n\003usr\030\001 \001(\t\022>\n\010platform\030\002 \001(\0162," +
+      ".org.shell.mmo.sample.message.proto.Plat" +
+      "form\022\016\n\006server\030\003 \001(\005\022\r\n\005adult\030\004 \001(\010\022\014\n\004t" +
+      "ime\030\005 \001(\005\022\014\n\004sign\030\006 \001(\t\"\215\001\n\rResLoginLogi" +
+      "n\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sample." +
+      "message.proto.Error\022B\n\nleaderRole\030\002 \001(\0132" +
+      "..org.shell.mmo.sample.message.proto.Lea" +
+      "derRole"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

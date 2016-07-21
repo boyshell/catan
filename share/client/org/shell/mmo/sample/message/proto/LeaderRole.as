@@ -16,68 +16,206 @@ package org.shell.mmo.sample.message.proto {
 		 */
 		public static const ID:FieldDescriptor_TYPE_FIXED64 = new FieldDescriptor_TYPE_FIXED64("org.shell.mmo.sample.message.proto.LeaderRole.id", "id", (1 << 3) | com.netease.protobuf.WireType.FIXED_64_BIT);
 
-		public var id:UInt64;
+		private var id$field:UInt64;
+
+		public function clearId():void {
+			id$field = null;
+		}
+
+		public function get hasId():Boolean {
+			return id$field != null;
+		}
+
+		public function set id(value:UInt64):void {
+			id$field = value;
+		}
+
+		public function get id():UInt64 {
+			return id$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const NAME:FieldDescriptor_TYPE_STRING = new FieldDescriptor_TYPE_STRING("org.shell.mmo.sample.message.proto.LeaderRole.name", "name", (2 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED);
 
-		public var name:String;
+		private var name$field:String;
+
+		public function clearName():void {
+			name$field = null;
+		}
+
+		public function get hasName():Boolean {
+			return name$field != null;
+		}
+
+		public function set name(value:String):void {
+			name$field = value;
+		}
+
+		public function get name():String {
+			return name$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const MAP:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.LeaderRole.map", "map", (3 << 3) | com.netease.protobuf.WireType.VARINT);
 
-		public var map:int;
+		private var map$field:int;
+
+		private var hasField$0:uint = 0;
+
+		public function clearMap():void {
+			hasField$0 &= 0xfffffffe;
+			map$field = new int();
+		}
+
+		public function get hasMap():Boolean {
+			return (hasField$0 & 0x1) != 0;
+		}
+
+		public function set map(value:int):void {
+			hasField$0 |= 0x1;
+			map$field = value;
+		}
+
+		public function get map():int {
+			return map$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const LEVEL:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.LeaderRole.level", "level", (4 << 3) | com.netease.protobuf.WireType.VARINT);
 
-		public var level:int;
+		private var level$field:int;
+
+		public function clearLevel():void {
+			hasField$0 &= 0xfffffffd;
+			level$field = new int();
+		}
+
+		public function get hasLevel():Boolean {
+			return (hasField$0 & 0x2) != 0;
+		}
+
+		public function set level(value:int):void {
+			hasField$0 |= 0x2;
+			level$field = value;
+		}
+
+		public function get level():int {
+			return level$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const SERVER:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.LeaderRole.server", "server", (5 << 3) | com.netease.protobuf.WireType.VARINT);
 
-		public var server:int;
+		private var server$field:int;
+
+		public function clearServer():void {
+			hasField$0 &= 0xfffffffb;
+			server$field = new int();
+		}
+
+		public function get hasServer():Boolean {
+			return (hasField$0 & 0x4) != 0;
+		}
+
+		public function set server(value:int):void {
+			hasField$0 |= 0x4;
+			server$field = value;
+		}
+
+		public function get server():int {
+			return server$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const PLATFORM:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.LeaderRole.platform", "platform", (6 << 3) | com.netease.protobuf.WireType.VARINT);
 
-		public var platform:int;
+		private var platform$field:int;
+
+		public function clearPlatform():void {
+			hasField$0 &= 0xfffffff7;
+			platform$field = new int();
+		}
+
+		public function get hasPlatform():Boolean {
+			return (hasField$0 & 0x8) != 0;
+		}
+
+		public function set platform(value:int):void {
+			hasField$0 |= 0x8;
+			platform$field = value;
+		}
+
+		public function get platform():int {
+			return platform$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const GOLD:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.LeaderRole.gold", "gold", (7 << 3) | com.netease.protobuf.WireType.VARINT);
 
-		public var gold:int;
+		private var gold$field:int;
+
+		public function clearGold():void {
+			hasField$0 &= 0xffffffef;
+			gold$field = new int();
+		}
+
+		public function get hasGold():Boolean {
+			return (hasField$0 & 0x10) != 0;
+		}
+
+		public function set gold(value:int):void {
+			hasField$0 |= 0x10;
+			gold$field = value;
+		}
+
+		public function get gold():int {
+			return gold$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 1);
-			com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, this.id);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 2);
-			com.netease.protobuf.WriteUtils.write_TYPE_STRING(output, this.name);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 3);
-			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.map);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 4);
-			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.level);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 5);
-			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.server);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 6);
-			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.platform);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 7);
-			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.gold);
+			if (hasId) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 1);
+				com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, id$field);
+			}
+			if (hasName) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 2);
+				com.netease.protobuf.WriteUtils.write_TYPE_STRING(output, name$field);
+			}
+			if (hasMap) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 3);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, map$field);
+			}
+			if (hasLevel) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 4);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, level$field);
+			}
+			if (hasServer) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 5);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, server$field);
+			}
+			if (hasPlatform) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 6);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, platform$field);
+			}
+			if (hasGold) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 7);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, gold$field);
+			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
 			}

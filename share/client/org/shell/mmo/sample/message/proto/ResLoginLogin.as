@@ -18,23 +18,63 @@ package org.shell.mmo.sample.message.proto {
 		 */
 		public static const ERROR:FieldDescriptor_TYPE_ENUM = new FieldDescriptor_TYPE_ENUM("org.shell.mmo.sample.message.proto.ResLoginLogin.error", "error", (1 << 3) | com.netease.protobuf.WireType.VARINT, org.shell.mmo.sample.message.proto.Error);
 
-		public var error:int;
+		private var error$field:int;
+
+		private var hasField$0:uint = 0;
+
+		public function clearError():void {
+			hasField$0 &= 0xfffffffe;
+			error$field = new int();
+		}
+
+		public function get hasError():Boolean {
+			return (hasField$0 & 0x1) != 0;
+		}
+
+		public function set error(value:int):void {
+			hasField$0 |= 0x1;
+			error$field = value;
+		}
+
+		public function get error():int {
+			return error$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const LEADERROLE:FieldDescriptor_TYPE_MESSAGE = new FieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.message.proto.ResLoginLogin.leaderRole", "leaderRole", (2 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.message.proto.LeaderRole; });
 
-		public var leaderRole:org.shell.mmo.sample.message.proto.LeaderRole;
+		private var leaderRole$field:org.shell.mmo.sample.message.proto.LeaderRole;
+
+		public function clearLeaderRole():void {
+			leaderRole$field = null;
+		}
+
+		public function get hasLeaderRole():Boolean {
+			return leaderRole$field != null;
+		}
+
+		public function set leaderRole(value:org.shell.mmo.sample.message.proto.LeaderRole):void {
+			leaderRole$field = value;
+		}
+
+		public function get leaderRole():org.shell.mmo.sample.message.proto.LeaderRole {
+			return leaderRole$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
-			com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, this.error);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 2);
-			com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, this.leaderRole);
+			if (hasError) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
+				com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, error$field);
+			}
+			if (hasLeaderRole) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 2);
+				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, leaderRole$field);
+			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
 			}

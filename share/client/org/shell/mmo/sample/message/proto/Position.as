@@ -16,23 +16,65 @@ package org.shell.mmo.sample.message.proto {
 		 */
 		public static const X:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.Position.x", "x", (1 << 3) | com.netease.protobuf.WireType.VARINT);
 
-		public var x:int;
+		private var x$field:int;
+
+		private var hasField$0:uint = 0;
+
+		public function clearX():void {
+			hasField$0 &= 0xfffffffe;
+			x$field = new int();
+		}
+
+		public function get hasX():Boolean {
+			return (hasField$0 & 0x1) != 0;
+		}
+
+		public function set x(value:int):void {
+			hasField$0 |= 0x1;
+			x$field = value;
+		}
+
+		public function get x():int {
+			return x$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const Y:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.Position.y", "y", (2 << 3) | com.netease.protobuf.WireType.VARINT);
 
-		public var y:int;
+		private var y$field:int;
+
+		public function clearY():void {
+			hasField$0 &= 0xfffffffd;
+			y$field = new int();
+		}
+
+		public function get hasY():Boolean {
+			return (hasField$0 & 0x2) != 0;
+		}
+
+		public function set y(value:int):void {
+			hasField$0 |= 0x2;
+			y$field = value;
+		}
+
+		public function get y():int {
+			return y$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
-			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.x);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 2);
-			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.y);
+			if (hasX) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, x$field);
+			}
+			if (hasY) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 2);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, y$field);
+			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
 			}

@@ -4,7 +4,7 @@
         <api name="Login" desc="登录" invoke="client" provide="logic">
             <params>
                 <field type="string" name="usr" desc="账号" index="1"/>
-                <field type="int32" name="platform" desc="平台" index="2"/>
+                <field type="Platform" name="platform" desc="平台" index="2"/>
                 <field type="int32" name="server" desc="服务器" index="3"/>
                 <field type="bool" name="adult" desc="是否成年" index="4"/>
                 <field type="int32" name="time" desc="时间戳" index="5"/>

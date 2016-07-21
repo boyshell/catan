@@ -230,6 +230,125 @@ public final class Global {
   }
 
   /**
+   * Protobuf enum {@code org.shell.mmo.sample.message.proto.Platform}
+   *
+   * <pre>
+   * 平台
+   * </pre>
+   */
+  public enum Platform
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>INNER = 1;</code>
+     *
+     * <pre>
+     * 内部
+     * </pre>
+     */
+    INNER(0, 1),
+    /**
+     * <code>P37WAN = 2;</code>
+     *
+     * <pre>
+     * 37玩
+     * </pre>
+     */
+    P37WAN(1, 2),
+    /**
+     * <code>P360 = 3;</code>
+     *
+     * <pre>
+     * 360
+     * </pre>
+     */
+    P360(2, 3),
+    ;
+
+    /**
+     * <code>INNER = 1;</code>
+     *
+     * <pre>
+     * 内部
+     * </pre>
+     */
+    public static final int INNER_VALUE = 1;
+    /**
+     * <code>P37WAN = 2;</code>
+     *
+     * <pre>
+     * 37玩
+     * </pre>
+     */
+    public static final int P37WAN_VALUE = 2;
+    /**
+     * <code>P360 = 3;</code>
+     *
+     * <pre>
+     * 360
+     * </pre>
+     */
+    public static final int P360_VALUE = 3;
+
+
+    public final int getNumber() { return value; }
+
+    public static Platform valueOf(int value) {
+      switch (value) {
+        case 1: return INNER;
+        case 2: return P37WAN;
+        case 3: return P360;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<Platform>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static com.google.protobuf.Internal.EnumLiteMap<Platform>
+        internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<Platform>() {
+            public Platform findValueByNumber(int number) {
+              return Platform.valueOf(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(index);
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(2);
+    }
+
+    private static final Platform[] VALUES = values();
+
+    public static Platform valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int index;
+    private final int value;
+
+    private Platform(int index, int value) {
+      this.index = index;
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:org.shell.mmo.sample.message.proto.Platform)
+  }
+
+  /**
    * Protobuf enum {@code org.shell.mmo.sample.message.proto.Module}
    *
    * <pre>
@@ -323,7 +442,7 @@ public final class Global {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(2);
+      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(3);
     }
 
     private static final Module[] VALUES = values();
@@ -353,7 +472,7 @@ public final class Global {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required int32 x = 1;</code>
+     * <code>optional int32 x = 1;</code>
      *
      * <pre>
      * 横坐标
@@ -361,7 +480,7 @@ public final class Global {
      */
     boolean hasX();
     /**
-     * <code>required int32 x = 1;</code>
+     * <code>optional int32 x = 1;</code>
      *
      * <pre>
      * 横坐标
@@ -370,7 +489,7 @@ public final class Global {
     int getX();
 
     /**
-     * <code>required int32 y = 2;</code>
+     * <code>optional int32 y = 2;</code>
      *
      * <pre>
      * 纵坐标
@@ -378,7 +497,7 @@ public final class Global {
      */
     boolean hasY();
     /**
-     * <code>required int32 y = 2;</code>
+     * <code>optional int32 y = 2;</code>
      *
      * <pre>
      * 纵坐标
@@ -495,7 +614,7 @@ public final class Global {
     public static final int X_FIELD_NUMBER = 1;
     private int x_;
     /**
-     * <code>required int32 x = 1;</code>
+     * <code>optional int32 x = 1;</code>
      *
      * <pre>
      * 横坐标
@@ -505,7 +624,7 @@ public final class Global {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 x = 1;</code>
+     * <code>optional int32 x = 1;</code>
      *
      * <pre>
      * 横坐标
@@ -518,7 +637,7 @@ public final class Global {
     public static final int Y_FIELD_NUMBER = 2;
     private int y_;
     /**
-     * <code>required int32 y = 2;</code>
+     * <code>optional int32 y = 2;</code>
      *
      * <pre>
      * 纵坐标
@@ -528,7 +647,7 @@ public final class Global {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required int32 y = 2;</code>
+     * <code>optional int32 y = 2;</code>
      *
      * <pre>
      * 纵坐标
@@ -548,14 +667,6 @@ public final class Global {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasX()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasY()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -774,14 +885,6 @@ public final class Global {
       }
 
       public final boolean isInitialized() {
-        if (!hasX()) {
-          
-          return false;
-        }
-        if (!hasY()) {
-          
-          return false;
-        }
         return true;
       }
 
@@ -806,7 +909,7 @@ public final class Global {
 
       private int x_ ;
       /**
-       * <code>required int32 x = 1;</code>
+       * <code>optional int32 x = 1;</code>
        *
        * <pre>
        * 横坐标
@@ -816,7 +919,7 @@ public final class Global {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 x = 1;</code>
+       * <code>optional int32 x = 1;</code>
        *
        * <pre>
        * 横坐标
@@ -826,7 +929,7 @@ public final class Global {
         return x_;
       }
       /**
-       * <code>required int32 x = 1;</code>
+       * <code>optional int32 x = 1;</code>
        *
        * <pre>
        * 横坐标
@@ -839,7 +942,7 @@ public final class Global {
         return this;
       }
       /**
-       * <code>required int32 x = 1;</code>
+       * <code>optional int32 x = 1;</code>
        *
        * <pre>
        * 横坐标
@@ -854,7 +957,7 @@ public final class Global {
 
       private int y_ ;
       /**
-       * <code>required int32 y = 2;</code>
+       * <code>optional int32 y = 2;</code>
        *
        * <pre>
        * 纵坐标
@@ -864,7 +967,7 @@ public final class Global {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required int32 y = 2;</code>
+       * <code>optional int32 y = 2;</code>
        *
        * <pre>
        * 纵坐标
@@ -874,7 +977,7 @@ public final class Global {
         return y_;
       }
       /**
-       * <code>required int32 y = 2;</code>
+       * <code>optional int32 y = 2;</code>
        *
        * <pre>
        * 纵坐标
@@ -887,7 +990,7 @@ public final class Global {
         return this;
       }
       /**
-       * <code>required int32 y = 2;</code>
+       * <code>optional int32 y = 2;</code>
        *
        * <pre>
        * 纵坐标
@@ -916,7 +1019,7 @@ public final class Global {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required fixed64 id = 1;</code>
+     * <code>optional fixed64 id = 1;</code>
      *
      * <pre>
      * 角色id
@@ -924,7 +1027,7 @@ public final class Global {
      */
     boolean hasId();
     /**
-     * <code>required fixed64 id = 1;</code>
+     * <code>optional fixed64 id = 1;</code>
      *
      * <pre>
      * 角色id
@@ -933,7 +1036,7 @@ public final class Global {
     long getId();
 
     /**
-     * <code>required string name = 2;</code>
+     * <code>optional string name = 2;</code>
      *
      * <pre>
      * 名字
@@ -941,7 +1044,7 @@ public final class Global {
      */
     boolean hasName();
     /**
-     * <code>required string name = 2;</code>
+     * <code>optional string name = 2;</code>
      *
      * <pre>
      * 名字
@@ -949,7 +1052,7 @@ public final class Global {
      */
     java.lang.String getName();
     /**
-     * <code>required string name = 2;</code>
+     * <code>optional string name = 2;</code>
      *
      * <pre>
      * 名字
@@ -959,7 +1062,7 @@ public final class Global {
         getNameBytes();
 
     /**
-     * <code>required int32 map = 3;</code>
+     * <code>optional int32 map = 3;</code>
      *
      * <pre>
      * 地图
@@ -967,7 +1070,7 @@ public final class Global {
      */
     boolean hasMap();
     /**
-     * <code>required int32 map = 3;</code>
+     * <code>optional int32 map = 3;</code>
      *
      * <pre>
      * 地图
@@ -976,7 +1079,7 @@ public final class Global {
     int getMap();
 
     /**
-     * <code>required int32 level = 4;</code>
+     * <code>optional int32 level = 4;</code>
      *
      * <pre>
      * 等级
@@ -984,7 +1087,7 @@ public final class Global {
      */
     boolean hasLevel();
     /**
-     * <code>required int32 level = 4;</code>
+     * <code>optional int32 level = 4;</code>
      *
      * <pre>
      * 等级
@@ -993,7 +1096,7 @@ public final class Global {
     int getLevel();
 
     /**
-     * <code>required int32 server = 5;</code>
+     * <code>optional int32 server = 5;</code>
      *
      * <pre>
      * 服务器
@@ -1001,7 +1104,7 @@ public final class Global {
      */
     boolean hasServer();
     /**
-     * <code>required int32 server = 5;</code>
+     * <code>optional int32 server = 5;</code>
      *
      * <pre>
      * 服务器
@@ -1010,7 +1113,7 @@ public final class Global {
     int getServer();
 
     /**
-     * <code>required int32 platform = 6;</code>
+     * <code>optional int32 platform = 6;</code>
      *
      * <pre>
      * 平台
@@ -1018,7 +1121,7 @@ public final class Global {
      */
     boolean hasPlatform();
     /**
-     * <code>required int32 platform = 6;</code>
+     * <code>optional int32 platform = 6;</code>
      *
      * <pre>
      * 平台
@@ -1027,7 +1130,7 @@ public final class Global {
     int getPlatform();
 
     /**
-     * <code>required int32 gold = 7;</code>
+     * <code>optional int32 gold = 7;</code>
      *
      * <pre>
      * 元宝
@@ -1035,7 +1138,7 @@ public final class Global {
      */
     boolean hasGold();
     /**
-     * <code>required int32 gold = 7;</code>
+     * <code>optional int32 gold = 7;</code>
      *
      * <pre>
      * 元宝
@@ -1178,7 +1281,7 @@ public final class Global {
     public static final int ID_FIELD_NUMBER = 1;
     private long id_;
     /**
-     * <code>required fixed64 id = 1;</code>
+     * <code>optional fixed64 id = 1;</code>
      *
      * <pre>
      * 角色id
@@ -1188,7 +1291,7 @@ public final class Global {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required fixed64 id = 1;</code>
+     * <code>optional fixed64 id = 1;</code>
      *
      * <pre>
      * 角色id
@@ -1201,7 +1304,7 @@ public final class Global {
     public static final int NAME_FIELD_NUMBER = 2;
     private java.lang.Object name_;
     /**
-     * <code>required string name = 2;</code>
+     * <code>optional string name = 2;</code>
      *
      * <pre>
      * 名字
@@ -1211,7 +1314,7 @@ public final class Global {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required string name = 2;</code>
+     * <code>optional string name = 2;</code>
      *
      * <pre>
      * 名字
@@ -1232,7 +1335,7 @@ public final class Global {
       }
     }
     /**
-     * <code>required string name = 2;</code>
+     * <code>optional string name = 2;</code>
      *
      * <pre>
      * 名字
@@ -1255,7 +1358,7 @@ public final class Global {
     public static final int MAP_FIELD_NUMBER = 3;
     private int map_;
     /**
-     * <code>required int32 map = 3;</code>
+     * <code>optional int32 map = 3;</code>
      *
      * <pre>
      * 地图
@@ -1265,7 +1368,7 @@ public final class Global {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required int32 map = 3;</code>
+     * <code>optional int32 map = 3;</code>
      *
      * <pre>
      * 地图
@@ -1278,7 +1381,7 @@ public final class Global {
     public static final int LEVEL_FIELD_NUMBER = 4;
     private int level_;
     /**
-     * <code>required int32 level = 4;</code>
+     * <code>optional int32 level = 4;</code>
      *
      * <pre>
      * 等级
@@ -1288,7 +1391,7 @@ public final class Global {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>required int32 level = 4;</code>
+     * <code>optional int32 level = 4;</code>
      *
      * <pre>
      * 等级
@@ -1301,7 +1404,7 @@ public final class Global {
     public static final int SERVER_FIELD_NUMBER = 5;
     private int server_;
     /**
-     * <code>required int32 server = 5;</code>
+     * <code>optional int32 server = 5;</code>
      *
      * <pre>
      * 服务器
@@ -1311,7 +1414,7 @@ public final class Global {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>required int32 server = 5;</code>
+     * <code>optional int32 server = 5;</code>
      *
      * <pre>
      * 服务器
@@ -1324,7 +1427,7 @@ public final class Global {
     public static final int PLATFORM_FIELD_NUMBER = 6;
     private int platform_;
     /**
-     * <code>required int32 platform = 6;</code>
+     * <code>optional int32 platform = 6;</code>
      *
      * <pre>
      * 平台
@@ -1334,7 +1437,7 @@ public final class Global {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
-     * <code>required int32 platform = 6;</code>
+     * <code>optional int32 platform = 6;</code>
      *
      * <pre>
      * 平台
@@ -1347,7 +1450,7 @@ public final class Global {
     public static final int GOLD_FIELD_NUMBER = 7;
     private int gold_;
     /**
-     * <code>required int32 gold = 7;</code>
+     * <code>optional int32 gold = 7;</code>
      *
      * <pre>
      * 元宝
@@ -1357,7 +1460,7 @@ public final class Global {
       return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     /**
-     * <code>required int32 gold = 7;</code>
+     * <code>optional int32 gold = 7;</code>
      *
      * <pre>
      * 元宝
@@ -1382,34 +1485,6 @@ public final class Global {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasName()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasMap()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasLevel()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasServer()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasPlatform()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasGold()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -1710,34 +1785,6 @@ public final class Global {
       }
 
       public final boolean isInitialized() {
-        if (!hasId()) {
-          
-          return false;
-        }
-        if (!hasName()) {
-          
-          return false;
-        }
-        if (!hasMap()) {
-          
-          return false;
-        }
-        if (!hasLevel()) {
-          
-          return false;
-        }
-        if (!hasServer()) {
-          
-          return false;
-        }
-        if (!hasPlatform()) {
-          
-          return false;
-        }
-        if (!hasGold()) {
-          
-          return false;
-        }
         return true;
       }
 
@@ -1762,7 +1809,7 @@ public final class Global {
 
       private long id_ ;
       /**
-       * <code>required fixed64 id = 1;</code>
+       * <code>optional fixed64 id = 1;</code>
        *
        * <pre>
        * 角色id
@@ -1772,7 +1819,7 @@ public final class Global {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required fixed64 id = 1;</code>
+       * <code>optional fixed64 id = 1;</code>
        *
        * <pre>
        * 角色id
@@ -1782,7 +1829,7 @@ public final class Global {
         return id_;
       }
       /**
-       * <code>required fixed64 id = 1;</code>
+       * <code>optional fixed64 id = 1;</code>
        *
        * <pre>
        * 角色id
@@ -1795,7 +1842,7 @@ public final class Global {
         return this;
       }
       /**
-       * <code>required fixed64 id = 1;</code>
+       * <code>optional fixed64 id = 1;</code>
        *
        * <pre>
        * 角色id
@@ -1810,7 +1857,7 @@ public final class Global {
 
       private java.lang.Object name_ = "";
       /**
-       * <code>required string name = 2;</code>
+       * <code>optional string name = 2;</code>
        *
        * <pre>
        * 名字
@@ -1820,7 +1867,7 @@ public final class Global {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required string name = 2;</code>
+       * <code>optional string name = 2;</code>
        *
        * <pre>
        * 名字
@@ -1841,7 +1888,7 @@ public final class Global {
         }
       }
       /**
-       * <code>required string name = 2;</code>
+       * <code>optional string name = 2;</code>
        *
        * <pre>
        * 名字
@@ -1861,7 +1908,7 @@ public final class Global {
         }
       }
       /**
-       * <code>required string name = 2;</code>
+       * <code>optional string name = 2;</code>
        *
        * <pre>
        * 名字
@@ -1878,7 +1925,7 @@ public final class Global {
         return this;
       }
       /**
-       * <code>required string name = 2;</code>
+       * <code>optional string name = 2;</code>
        *
        * <pre>
        * 名字
@@ -1891,7 +1938,7 @@ public final class Global {
         return this;
       }
       /**
-       * <code>required string name = 2;</code>
+       * <code>optional string name = 2;</code>
        *
        * <pre>
        * 名字
@@ -1910,7 +1957,7 @@ public final class Global {
 
       private int map_ ;
       /**
-       * <code>required int32 map = 3;</code>
+       * <code>optional int32 map = 3;</code>
        *
        * <pre>
        * 地图
@@ -1920,7 +1967,7 @@ public final class Global {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required int32 map = 3;</code>
+       * <code>optional int32 map = 3;</code>
        *
        * <pre>
        * 地图
@@ -1930,7 +1977,7 @@ public final class Global {
         return map_;
       }
       /**
-       * <code>required int32 map = 3;</code>
+       * <code>optional int32 map = 3;</code>
        *
        * <pre>
        * 地图
@@ -1943,7 +1990,7 @@ public final class Global {
         return this;
       }
       /**
-       * <code>required int32 map = 3;</code>
+       * <code>optional int32 map = 3;</code>
        *
        * <pre>
        * 地图
@@ -1958,7 +2005,7 @@ public final class Global {
 
       private int level_ ;
       /**
-       * <code>required int32 level = 4;</code>
+       * <code>optional int32 level = 4;</code>
        *
        * <pre>
        * 等级
@@ -1968,7 +2015,7 @@ public final class Global {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>required int32 level = 4;</code>
+       * <code>optional int32 level = 4;</code>
        *
        * <pre>
        * 等级
@@ -1978,7 +2025,7 @@ public final class Global {
         return level_;
       }
       /**
-       * <code>required int32 level = 4;</code>
+       * <code>optional int32 level = 4;</code>
        *
        * <pre>
        * 等级
@@ -1991,7 +2038,7 @@ public final class Global {
         return this;
       }
       /**
-       * <code>required int32 level = 4;</code>
+       * <code>optional int32 level = 4;</code>
        *
        * <pre>
        * 等级
@@ -2006,7 +2053,7 @@ public final class Global {
 
       private int server_ ;
       /**
-       * <code>required int32 server = 5;</code>
+       * <code>optional int32 server = 5;</code>
        *
        * <pre>
        * 服务器
@@ -2016,7 +2063,7 @@ public final class Global {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>required int32 server = 5;</code>
+       * <code>optional int32 server = 5;</code>
        *
        * <pre>
        * 服务器
@@ -2026,7 +2073,7 @@ public final class Global {
         return server_;
       }
       /**
-       * <code>required int32 server = 5;</code>
+       * <code>optional int32 server = 5;</code>
        *
        * <pre>
        * 服务器
@@ -2039,7 +2086,7 @@ public final class Global {
         return this;
       }
       /**
-       * <code>required int32 server = 5;</code>
+       * <code>optional int32 server = 5;</code>
        *
        * <pre>
        * 服务器
@@ -2054,7 +2101,7 @@ public final class Global {
 
       private int platform_ ;
       /**
-       * <code>required int32 platform = 6;</code>
+       * <code>optional int32 platform = 6;</code>
        *
        * <pre>
        * 平台
@@ -2064,7 +2111,7 @@ public final class Global {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
-       * <code>required int32 platform = 6;</code>
+       * <code>optional int32 platform = 6;</code>
        *
        * <pre>
        * 平台
@@ -2074,7 +2121,7 @@ public final class Global {
         return platform_;
       }
       /**
-       * <code>required int32 platform = 6;</code>
+       * <code>optional int32 platform = 6;</code>
        *
        * <pre>
        * 平台
@@ -2087,7 +2134,7 @@ public final class Global {
         return this;
       }
       /**
-       * <code>required int32 platform = 6;</code>
+       * <code>optional int32 platform = 6;</code>
        *
        * <pre>
        * 平台
@@ -2102,7 +2149,7 @@ public final class Global {
 
       private int gold_ ;
       /**
-       * <code>required int32 gold = 7;</code>
+       * <code>optional int32 gold = 7;</code>
        *
        * <pre>
        * 元宝
@@ -2112,7 +2159,7 @@ public final class Global {
         return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       /**
-       * <code>required int32 gold = 7;</code>
+       * <code>optional int32 gold = 7;</code>
        *
        * <pre>
        * 元宝
@@ -2122,7 +2169,7 @@ public final class Global {
         return gold_;
       }
       /**
-       * <code>required int32 gold = 7;</code>
+       * <code>optional int32 gold = 7;</code>
        *
        * <pre>
        * 元宝
@@ -2135,7 +2182,7 @@ public final class Global {
         return this;
       }
       /**
-       * <code>required int32 gold = 7;</code>
+       * <code>optional int32 gold = 7;</code>
        *
        * <pre>
        * 元宝
@@ -2179,14 +2226,15 @@ public final class Global {
   static {
     java.lang.String[] descriptorData = {
       "\n\014global.proto\022\"org.shell.mmo.sample.mes" +
-      "sage.proto\" \n\010Position\022\t\n\001x\030\001 \002(\005\022\t\n\001y\030\002" +
-      " \002(\005\"r\n\nLeaderRole\022\n\n\002id\030\001 \002(\006\022\014\n\004name\030\002" +
-      " \002(\t\022\013\n\003map\030\003 \002(\005\022\r\n\005level\030\004 \002(\005\022\016\n\006serv" +
-      "er\030\005 \002(\005\022\020\n\010platform\030\006 \002(\005\022\014\n\004gold\030\007 \002(\005" +
+      "sage.proto\" \n\010Position\022\t\n\001x\030\001 \001(\005\022\t\n\001y\030\002" +
+      " \001(\005\"r\n\nLeaderRole\022\n\n\002id\030\001 \001(\006\022\014\n\004name\030\002" +
+      " \001(\t\022\013\n\003map\030\003 \001(\005\022\r\n\005level\030\004 \001(\005\022\016\n\006serv" +
+      "er\030\005 \001(\005\022\020\n\010platform\030\006 \001(\005\022\014\n\004gold\030\007 \001(\005" +
       "*\024\n\005Error\022\013\n\007SYS_ERR\020\001*:\n\016GameObjectType" +
       "\022\010\n\004HERO\020\001\022\013\n\007MONSTER\020\002\022\007\n\003PET\020\003\022\010\n\004ITEM" +
-      "\020\004*(\n\006Module\022\t\n\005LOGIN\020\001\022\t\n\005FIGHT\020\002\022\010\n\004MO" +
-      "VE\020\003"
+      "\020\004*+\n\010Platform\022\t\n\005INNER\020\001\022\n\n\006P37WAN\020\002\022\010\n" +
+      "\004P360\020\003*(\n\006Module\022\t\n\005LOGIN\020\001\022\t\n\005FIGHT\020\002\022" +
+      "\010\n\004MOVE\020\003"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

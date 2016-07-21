@@ -2,6 +2,7 @@ package org.shell.mmo.sample.message;
 
 import com.google.protobuf.MessageLite;
 import io.netty.channel.Channel;
+import org.shell.mmo.sample.executor.Executors;
 import org.shell.mmo.sample.message.proto.Global;
 
 import java.util.concurrent.Executor;
@@ -24,6 +25,6 @@ public abstract class MessageHandler<K extends MessageLite> extends com.shell.mm
 
     @Override
     public Executor worker() {
-        return null;
+        return Executors.worker(channel);
     }
 }

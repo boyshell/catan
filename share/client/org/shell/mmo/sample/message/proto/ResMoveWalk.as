@@ -19,21 +19,75 @@ package org.shell.mmo.sample.message.proto {
 		 */
 		public static const ERROR:FieldDescriptor_TYPE_ENUM = new FieldDescriptor_TYPE_ENUM("org.shell.mmo.sample.message.proto.ResMoveWalk.error", "error", (1 << 3) | com.netease.protobuf.WireType.VARINT, org.shell.mmo.sample.message.proto.Error);
 
-		public var error:int;
+		private var error$field:int;
+
+		private var hasField$0:uint = 0;
+
+		public function clearError():void {
+			hasField$0 &= 0xfffffffe;
+			error$field = new int();
+		}
+
+		public function get hasError():Boolean {
+			return (hasField$0 & 0x1) != 0;
+		}
+
+		public function set error(value:int):void {
+			hasField$0 |= 0x1;
+			error$field = value;
+		}
+
+		public function get error():int {
+			return error$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const TARGET:FieldDescriptor_TYPE_FIXED64 = new FieldDescriptor_TYPE_FIXED64("org.shell.mmo.sample.message.proto.ResMoveWalk.target", "target", (2 << 3) | com.netease.protobuf.WireType.FIXED_64_BIT);
 
-		public var target:UInt64;
+		private var target$field:UInt64;
+
+		public function clearTarget():void {
+			target$field = null;
+		}
+
+		public function get hasTarget():Boolean {
+			return target$field != null;
+		}
+
+		public function set target(value:UInt64):void {
+			target$field = value;
+		}
+
+		public function get target():UInt64 {
+			return target$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const TYPE:FieldDescriptor_TYPE_ENUM = new FieldDescriptor_TYPE_ENUM("org.shell.mmo.sample.message.proto.ResMoveWalk.type", "type", (3 << 3) | com.netease.protobuf.WireType.VARINT, org.shell.mmo.sample.message.proto.GameObjectType);
 
-		public var type:int;
+		private var type$field:int;
+
+		public function clearType():void {
+			hasField$0 &= 0xfffffffd;
+			type$field = new int();
+		}
+
+		public function get hasType():Boolean {
+			return (hasField$0 & 0x2) != 0;
+		}
+
+		public function set type(value:int):void {
+			hasField$0 |= 0x2;
+			type$field = value;
+		}
+
+		public function get type():int {
+			return type$field;
+		}
 
 		/**
 		 *  @private
@@ -47,12 +101,18 @@ package org.shell.mmo.sample.message.proto {
 		 *  @private
 		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
-			com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, this.error);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 2);
-			com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, this.target);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 3);
-			com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, this.type);
+			if (hasError) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
+				com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, error$field);
+			}
+			if (hasTarget) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 2);
+				com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, target$field);
+			}
+			if (hasType) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 3);
+				com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, type$field);
+			}
 			for (var position$index:uint = 0; position$index < this.position.length; ++position$index) {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 4);
 				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, this.position[position$index]);

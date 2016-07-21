@@ -17,41 +17,121 @@ package org.shell.mmo.sample.message.proto {
 		 */
 		public static const TARGET:FieldDescriptor_TYPE_FIXED64 = new FieldDescriptor_TYPE_FIXED64("org.shell.mmo.sample.message.proto.ReqFightShowDamage.target", "target", (1 << 3) | com.netease.protobuf.WireType.FIXED_64_BIT);
 
-		public var target:UInt64;
+		private var target$field:UInt64;
+
+		public function clearTarget():void {
+			target$field = null;
+		}
+
+		public function get hasTarget():Boolean {
+			return target$field != null;
+		}
+
+		public function set target(value:UInt64):void {
+			target$field = value;
+		}
+
+		public function get target():UInt64 {
+			return target$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const TYPE:FieldDescriptor_TYPE_ENUM = new FieldDescriptor_TYPE_ENUM("org.shell.mmo.sample.message.proto.ReqFightShowDamage.type", "type", (2 << 3) | com.netease.protobuf.WireType.VARINT, org.shell.mmo.sample.message.proto.GameObjectType);
 
-		public var type:int;
+		private var type$field:int;
+
+		private var hasField$0:uint = 0;
+
+		public function clearType():void {
+			hasField$0 &= 0xfffffffe;
+			type$field = new int();
+		}
+
+		public function get hasType():Boolean {
+			return (hasField$0 & 0x1) != 0;
+		}
+
+		public function set type(value:int):void {
+			hasField$0 |= 0x1;
+			type$field = value;
+		}
+
+		public function get type():int {
+			return type$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const SKILL:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.ReqFightShowDamage.skill", "skill", (3 << 3) | com.netease.protobuf.WireType.VARINT);
 
-		public var skill:int;
+		private var skill$field:int;
+
+		public function clearSkill():void {
+			hasField$0 &= 0xfffffffd;
+			skill$field = new int();
+		}
+
+		public function get hasSkill():Boolean {
+			return (hasField$0 & 0x2) != 0;
+		}
+
+		public function set skill(value:int):void {
+			hasField$0 |= 0x2;
+			skill$field = value;
+		}
+
+		public function get skill():int {
+			return skill$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const DAMAGE:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.ReqFightShowDamage.damage", "damage", (4 << 3) | com.netease.protobuf.WireType.VARINT);
 
-		public var damage:int;
+		private var damage$field:int;
+
+		public function clearDamage():void {
+			hasField$0 &= 0xfffffffb;
+			damage$field = new int();
+		}
+
+		public function get hasDamage():Boolean {
+			return (hasField$0 & 0x4) != 0;
+		}
+
+		public function set damage(value:int):void {
+			hasField$0 |= 0x4;
+			damage$field = value;
+		}
+
+		public function get damage():int {
+			return damage$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 1);
-			com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, this.target);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 2);
-			com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, this.type);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 3);
-			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.skill);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 4);
-			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.damage);
+			if (hasTarget) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 1);
+				com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, target$field);
+			}
+			if (hasType) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 2);
+				com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, type$field);
+			}
+			if (hasSkill) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 3);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, skill$field);
+			}
+			if (hasDamage) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 4);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, damage$field);
+			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
 			}

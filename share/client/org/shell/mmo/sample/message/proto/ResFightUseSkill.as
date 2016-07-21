@@ -18,59 +18,177 @@ package org.shell.mmo.sample.message.proto {
 		 */
 		public static const ERROR:FieldDescriptor_TYPE_ENUM = new FieldDescriptor_TYPE_ENUM("org.shell.mmo.sample.message.proto.ResFightUseSkill.error", "error", (1 << 3) | com.netease.protobuf.WireType.VARINT, org.shell.mmo.sample.message.proto.Error);
 
-		public var error:int;
+		private var error$field:int;
+
+		private var hasField$0:uint = 0;
+
+		public function clearError():void {
+			hasField$0 &= 0xfffffffe;
+			error$field = new int();
+		}
+
+		public function get hasError():Boolean {
+			return (hasField$0 & 0x1) != 0;
+		}
+
+		public function set error(value:int):void {
+			hasField$0 |= 0x1;
+			error$field = value;
+		}
+
+		public function get error():int {
+			return error$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const TARGET:FieldDescriptor_TYPE_FIXED64 = new FieldDescriptor_TYPE_FIXED64("org.shell.mmo.sample.message.proto.ResFightUseSkill.target", "target", (2 << 3) | com.netease.protobuf.WireType.FIXED_64_BIT);
 
-		public var target:UInt64;
+		private var target$field:UInt64;
+
+		public function clearTarget():void {
+			target$field = null;
+		}
+
+		public function get hasTarget():Boolean {
+			return target$field != null;
+		}
+
+		public function set target(value:UInt64):void {
+			target$field = value;
+		}
+
+		public function get target():UInt64 {
+			return target$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const TARGETTYPE:FieldDescriptor_TYPE_ENUM = new FieldDescriptor_TYPE_ENUM("org.shell.mmo.sample.message.proto.ResFightUseSkill.targetType", "targetType", (3 << 3) | com.netease.protobuf.WireType.VARINT, org.shell.mmo.sample.message.proto.GameObjectType);
 
-		public var targetType:int;
+		private var targetType$field:int;
+
+		public function clearTargetType():void {
+			hasField$0 &= 0xfffffffd;
+			targetType$field = new int();
+		}
+
+		public function get hasTargetType():Boolean {
+			return (hasField$0 & 0x2) != 0;
+		}
+
+		public function set targetType(value:int):void {
+			hasField$0 |= 0x2;
+			targetType$field = value;
+		}
+
+		public function get targetType():int {
+			return targetType$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const SKILL:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.ResFightUseSkill.skill", "skill", (4 << 3) | com.netease.protobuf.WireType.VARINT);
 
-		public var skill:int;
+		private var skill$field:int;
+
+		public function clearSkill():void {
+			hasField$0 &= 0xfffffffb;
+			skill$field = new int();
+		}
+
+		public function get hasSkill():Boolean {
+			return (hasField$0 & 0x4) != 0;
+		}
+
+		public function set skill(value:int):void {
+			hasField$0 |= 0x4;
+			skill$field = value;
+		}
+
+		public function get skill():int {
+			return skill$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const USER:FieldDescriptor_TYPE_FIXED64 = new FieldDescriptor_TYPE_FIXED64("org.shell.mmo.sample.message.proto.ResFightUseSkill.user", "user", (5 << 3) | com.netease.protobuf.WireType.FIXED_64_BIT);
 
-		public var user:UInt64;
+		private var user$field:UInt64;
+
+		public function clearUser():void {
+			user$field = null;
+		}
+
+		public function get hasUser():Boolean {
+			return user$field != null;
+		}
+
+		public function set user(value:UInt64):void {
+			user$field = value;
+		}
+
+		public function get user():UInt64 {
+			return user$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		public static const USERTYPE:FieldDescriptor_TYPE_ENUM = new FieldDescriptor_TYPE_ENUM("org.shell.mmo.sample.message.proto.ResFightUseSkill.userType", "userType", (6 << 3) | com.netease.protobuf.WireType.VARINT, org.shell.mmo.sample.message.proto.GameObjectType);
 
-		public var userType:int;
+		private var userType$field:int;
+
+		public function clearUserType():void {
+			hasField$0 &= 0xfffffff7;
+			userType$field = new int();
+		}
+
+		public function get hasUserType():Boolean {
+			return (hasField$0 & 0x8) != 0;
+		}
+
+		public function set userType(value:int):void {
+			hasField$0 |= 0x8;
+			userType$field = value;
+		}
+
+		public function get userType():int {
+			return userType$field;
+		}
 
 		/**
 		 *  @private
 		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
-			com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, this.error);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 2);
-			com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, this.target);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 3);
-			com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, this.targetType);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 4);
-			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.skill);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 5);
-			com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, this.user);
-			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 6);
-			com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, this.userType);
+			if (hasError) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
+				com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, error$field);
+			}
+			if (hasTarget) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 2);
+				com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, target$field);
+			}
+			if (hasTargetType) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 3);
+				com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, targetType$field);
+			}
+			if (hasSkill) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 4);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, skill$field);
+			}
+			if (hasUser) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 5);
+				com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, user$field);
+			}
+			if (hasUserType) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 6);
+				com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, userType$field);
+			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
 			}

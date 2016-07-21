@@ -7,6 +7,7 @@ public class ResLoginLoginHandler extends org.shell.mmo.sample.message.MessageHa
     @Override
     protected void execute(LogicClient.ResLoginLogin message) {
         // TODO
+        System.out.println(message);
     }
 
     @Override

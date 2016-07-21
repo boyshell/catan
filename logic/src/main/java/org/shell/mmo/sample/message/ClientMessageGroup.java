@@ -16,12 +16,12 @@ public class ClientMessageGroup {
         ImmutableBiMap.Builder<Short, Parser<? extends MessageLite>> builder = ImmutableBiMap.builder();
 
         builder.put((short)257, org.shell.mmo.sample.message.proto.LogicClient.ReqLoginLogin.PARSER);
-        builder.put((short)257, org.shell.mmo.sample.message.proto.LogicClient.ResLoginLogin.PARSER);
+        builder.put((short)256, org.shell.mmo.sample.message.proto.LogicClient.ResLoginLogin.PARSER);
         builder.put((short)513, org.shell.mmo.sample.message.proto.SceneClient.ReqFightUseSkill.PARSER);
-        builder.put((short)513, org.shell.mmo.sample.message.proto.SceneClient.ResFightUseSkill.PARSER);
-        builder.put((short)641, org.shell.mmo.sample.message.proto.SceneClient.ReqFightShowDamage.PARSER);
+        builder.put((short)512, org.shell.mmo.sample.message.proto.SceneClient.ResFightUseSkill.PARSER);
+        builder.put((short)515, org.shell.mmo.sample.message.proto.SceneClient.ReqFightShowDamage.PARSER);
         builder.put((short)769, org.shell.mmo.sample.message.proto.SceneClient.ReqMoveWalk.PARSER);
-        builder.put((short)769, org.shell.mmo.sample.message.proto.SceneClient.ResMoveWalk.PARSER);
+        builder.put((short)768, org.shell.mmo.sample.message.proto.SceneClient.ResMoveWalk.PARSER);
 
         ImmutableBiMap<Short, Parser<? extends MessageLite>> biMap = builder.build();
         id2parser = ImmutableMap.copyOf(biMap.entrySet());

@@ -13,7 +13,7 @@ public final class SceneClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required fixed64 target = 1;</code>
+     * <code>optional fixed64 target = 1;</code>
      *
      * <pre>
      * 目标id
@@ -21,7 +21,7 @@ public final class SceneClient {
      */
     boolean hasTarget();
     /**
-     * <code>required fixed64 target = 1;</code>
+     * <code>optional fixed64 target = 1;</code>
      *
      * <pre>
      * 目标id
@@ -30,7 +30,7 @@ public final class SceneClient {
     long getTarget();
 
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
      *
      * <pre>
      * 目标类型
@@ -38,7 +38,7 @@ public final class SceneClient {
      */
     boolean hasType();
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
      *
      * <pre>
      * 目标类型
@@ -47,7 +47,7 @@ public final class SceneClient {
     org.shell.mmo.sample.message.proto.Global.GameObjectType getType();
 
     /**
-     * <code>required int32 skill = 3;</code>
+     * <code>optional int32 skill = 3;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -55,7 +55,7 @@ public final class SceneClient {
      */
     boolean hasSkill();
     /**
-     * <code>required int32 skill = 3;</code>
+     * <code>optional int32 skill = 3;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -183,7 +183,7 @@ public final class SceneClient {
     public static final int TARGET_FIELD_NUMBER = 1;
     private long target_;
     /**
-     * <code>required fixed64 target = 1;</code>
+     * <code>optional fixed64 target = 1;</code>
      *
      * <pre>
      * 目标id
@@ -193,7 +193,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required fixed64 target = 1;</code>
+     * <code>optional fixed64 target = 1;</code>
      *
      * <pre>
      * 目标id
@@ -206,7 +206,7 @@ public final class SceneClient {
     public static final int TYPE_FIELD_NUMBER = 2;
     private org.shell.mmo.sample.message.proto.Global.GameObjectType type_;
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
      *
      * <pre>
      * 目标类型
@@ -216,7 +216,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
      *
      * <pre>
      * 目标类型
@@ -229,7 +229,7 @@ public final class SceneClient {
     public static final int SKILL_FIELD_NUMBER = 3;
     private int skill_;
     /**
-     * <code>required int32 skill = 3;</code>
+     * <code>optional int32 skill = 3;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -239,7 +239,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required int32 skill = 3;</code>
+     * <code>optional int32 skill = 3;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -260,18 +260,6 @@ public final class SceneClient {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasTarget()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasType()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasSkill()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -506,18 +494,6 @@ public final class SceneClient {
       }
 
       public final boolean isInitialized() {
-        if (!hasTarget()) {
-          
-          return false;
-        }
-        if (!hasType()) {
-          
-          return false;
-        }
-        if (!hasSkill()) {
-          
-          return false;
-        }
         return true;
       }
 
@@ -542,7 +518,7 @@ public final class SceneClient {
 
       private long target_ ;
       /**
-       * <code>required fixed64 target = 1;</code>
+       * <code>optional fixed64 target = 1;</code>
        *
        * <pre>
        * 目标id
@@ -552,7 +528,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required fixed64 target = 1;</code>
+       * <code>optional fixed64 target = 1;</code>
        *
        * <pre>
        * 目标id
@@ -562,7 +538,7 @@ public final class SceneClient {
         return target_;
       }
       /**
-       * <code>required fixed64 target = 1;</code>
+       * <code>optional fixed64 target = 1;</code>
        *
        * <pre>
        * 目标id
@@ -575,7 +551,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required fixed64 target = 1;</code>
+       * <code>optional fixed64 target = 1;</code>
        *
        * <pre>
        * 目标id
@@ -590,7 +566,7 @@ public final class SceneClient {
 
       private org.shell.mmo.sample.message.proto.Global.GameObjectType type_ = org.shell.mmo.sample.message.proto.Global.GameObjectType.HERO;
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
        *
        * <pre>
        * 目标类型
@@ -600,7 +576,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
        *
        * <pre>
        * 目标类型
@@ -610,7 +586,7 @@ public final class SceneClient {
         return type_;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
        *
        * <pre>
        * 目标类型
@@ -626,7 +602,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
        *
        * <pre>
        * 目标类型
@@ -641,7 +617,7 @@ public final class SceneClient {
 
       private int skill_ ;
       /**
-       * <code>required int32 skill = 3;</code>
+       * <code>optional int32 skill = 3;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -651,7 +627,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required int32 skill = 3;</code>
+       * <code>optional int32 skill = 3;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -661,7 +637,7 @@ public final class SceneClient {
         return skill_;
       }
       /**
-       * <code>required int32 skill = 3;</code>
+       * <code>optional int32 skill = 3;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -674,7 +650,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required int32 skill = 3;</code>
+       * <code>optional int32 skill = 3;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -703,7 +679,7 @@ public final class SceneClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -711,7 +687,7 @@ public final class SceneClient {
      */
     boolean hasError();
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -720,7 +696,7 @@ public final class SceneClient {
     org.shell.mmo.sample.message.proto.Global.Error getError();
 
     /**
-     * <code>required fixed64 target = 2;</code>
+     * <code>optional fixed64 target = 2;</code>
      *
      * <pre>
      * 目标id
@@ -728,7 +704,7 @@ public final class SceneClient {
      */
     boolean hasTarget();
     /**
-     * <code>required fixed64 target = 2;</code>
+     * <code>optional fixed64 target = 2;</code>
      *
      * <pre>
      * 目标id
@@ -737,7 +713,7 @@ public final class SceneClient {
     long getTarget();
 
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
      *
      * <pre>
      * 目标类型
@@ -745,7 +721,7 @@ public final class SceneClient {
      */
     boolean hasTargetType();
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
      *
      * <pre>
      * 目标类型
@@ -754,7 +730,7 @@ public final class SceneClient {
     org.shell.mmo.sample.message.proto.Global.GameObjectType getTargetType();
 
     /**
-     * <code>required int32 skill = 4;</code>
+     * <code>optional int32 skill = 4;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -762,7 +738,7 @@ public final class SceneClient {
      */
     boolean hasSkill();
     /**
-     * <code>required int32 skill = 4;</code>
+     * <code>optional int32 skill = 4;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -771,7 +747,7 @@ public final class SceneClient {
     int getSkill();
 
     /**
-     * <code>required fixed64 user = 5;</code>
+     * <code>optional fixed64 user = 5;</code>
      *
      * <pre>
      * 使用者id
@@ -779,7 +755,7 @@ public final class SceneClient {
      */
     boolean hasUser();
     /**
-     * <code>required fixed64 user = 5;</code>
+     * <code>optional fixed64 user = 5;</code>
      *
      * <pre>
      * 使用者id
@@ -788,7 +764,7 @@ public final class SceneClient {
     long getUser();
 
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
      *
      * <pre>
      * 使用者类型
@@ -796,7 +772,7 @@ public final class SceneClient {
      */
     boolean hasUserType();
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
      *
      * <pre>
      * 使用者类型
@@ -951,7 +927,7 @@ public final class SceneClient {
     public static final int ERROR_FIELD_NUMBER = 1;
     private org.shell.mmo.sample.message.proto.Global.Error error_;
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -961,7 +937,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -974,7 +950,7 @@ public final class SceneClient {
     public static final int TARGET_FIELD_NUMBER = 2;
     private long target_;
     /**
-     * <code>required fixed64 target = 2;</code>
+     * <code>optional fixed64 target = 2;</code>
      *
      * <pre>
      * 目标id
@@ -984,7 +960,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required fixed64 target = 2;</code>
+     * <code>optional fixed64 target = 2;</code>
      *
      * <pre>
      * 目标id
@@ -997,7 +973,7 @@ public final class SceneClient {
     public static final int TARGETTYPE_FIELD_NUMBER = 3;
     private org.shell.mmo.sample.message.proto.Global.GameObjectType targetType_;
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
      *
      * <pre>
      * 目标类型
@@ -1007,7 +983,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
      *
      * <pre>
      * 目标类型
@@ -1020,7 +996,7 @@ public final class SceneClient {
     public static final int SKILL_FIELD_NUMBER = 4;
     private int skill_;
     /**
-     * <code>required int32 skill = 4;</code>
+     * <code>optional int32 skill = 4;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -1030,7 +1006,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>required int32 skill = 4;</code>
+     * <code>optional int32 skill = 4;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -1043,7 +1019,7 @@ public final class SceneClient {
     public static final int USER_FIELD_NUMBER = 5;
     private long user_;
     /**
-     * <code>required fixed64 user = 5;</code>
+     * <code>optional fixed64 user = 5;</code>
      *
      * <pre>
      * 使用者id
@@ -1053,7 +1029,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>required fixed64 user = 5;</code>
+     * <code>optional fixed64 user = 5;</code>
      *
      * <pre>
      * 使用者id
@@ -1066,7 +1042,7 @@ public final class SceneClient {
     public static final int USERTYPE_FIELD_NUMBER = 6;
     private org.shell.mmo.sample.message.proto.Global.GameObjectType userType_;
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
      *
      * <pre>
      * 使用者类型
@@ -1076,7 +1052,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
      *
      * <pre>
      * 使用者类型
@@ -1100,30 +1076,6 @@ public final class SceneClient {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasError()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasTarget()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasTargetType()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasSkill()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasUser()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasUserType()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -1406,30 +1358,6 @@ public final class SceneClient {
       }
 
       public final boolean isInitialized() {
-        if (!hasError()) {
-          
-          return false;
-        }
-        if (!hasTarget()) {
-          
-          return false;
-        }
-        if (!hasTargetType()) {
-          
-          return false;
-        }
-        if (!hasSkill()) {
-          
-          return false;
-        }
-        if (!hasUser()) {
-          
-          return false;
-        }
-        if (!hasUserType()) {
-          
-          return false;
-        }
         return true;
       }
 
@@ -1454,7 +1382,7 @@ public final class SceneClient {
 
       private org.shell.mmo.sample.message.proto.Global.Error error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -1464,7 +1392,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -1474,7 +1402,7 @@ public final class SceneClient {
         return error_;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -1490,7 +1418,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -1505,7 +1433,7 @@ public final class SceneClient {
 
       private long target_ ;
       /**
-       * <code>required fixed64 target = 2;</code>
+       * <code>optional fixed64 target = 2;</code>
        *
        * <pre>
        * 目标id
@@ -1515,7 +1443,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required fixed64 target = 2;</code>
+       * <code>optional fixed64 target = 2;</code>
        *
        * <pre>
        * 目标id
@@ -1525,7 +1453,7 @@ public final class SceneClient {
         return target_;
       }
       /**
-       * <code>required fixed64 target = 2;</code>
+       * <code>optional fixed64 target = 2;</code>
        *
        * <pre>
        * 目标id
@@ -1538,7 +1466,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required fixed64 target = 2;</code>
+       * <code>optional fixed64 target = 2;</code>
        *
        * <pre>
        * 目标id
@@ -1553,7 +1481,7 @@ public final class SceneClient {
 
       private org.shell.mmo.sample.message.proto.Global.GameObjectType targetType_ = org.shell.mmo.sample.message.proto.Global.GameObjectType.HERO;
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
        *
        * <pre>
        * 目标类型
@@ -1563,7 +1491,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
        *
        * <pre>
        * 目标类型
@@ -1573,7 +1501,7 @@ public final class SceneClient {
         return targetType_;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
        *
        * <pre>
        * 目标类型
@@ -1589,7 +1517,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType targetType = 3;</code>
        *
        * <pre>
        * 目标类型
@@ -1604,7 +1532,7 @@ public final class SceneClient {
 
       private int skill_ ;
       /**
-       * <code>required int32 skill = 4;</code>
+       * <code>optional int32 skill = 4;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -1614,7 +1542,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>required int32 skill = 4;</code>
+       * <code>optional int32 skill = 4;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -1624,7 +1552,7 @@ public final class SceneClient {
         return skill_;
       }
       /**
-       * <code>required int32 skill = 4;</code>
+       * <code>optional int32 skill = 4;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -1637,7 +1565,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required int32 skill = 4;</code>
+       * <code>optional int32 skill = 4;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -1652,7 +1580,7 @@ public final class SceneClient {
 
       private long user_ ;
       /**
-       * <code>required fixed64 user = 5;</code>
+       * <code>optional fixed64 user = 5;</code>
        *
        * <pre>
        * 使用者id
@@ -1662,7 +1590,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>required fixed64 user = 5;</code>
+       * <code>optional fixed64 user = 5;</code>
        *
        * <pre>
        * 使用者id
@@ -1672,7 +1600,7 @@ public final class SceneClient {
         return user_;
       }
       /**
-       * <code>required fixed64 user = 5;</code>
+       * <code>optional fixed64 user = 5;</code>
        *
        * <pre>
        * 使用者id
@@ -1685,7 +1613,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required fixed64 user = 5;</code>
+       * <code>optional fixed64 user = 5;</code>
        *
        * <pre>
        * 使用者id
@@ -1700,7 +1628,7 @@ public final class SceneClient {
 
       private org.shell.mmo.sample.message.proto.Global.GameObjectType userType_ = org.shell.mmo.sample.message.proto.Global.GameObjectType.HERO;
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
        *
        * <pre>
        * 使用者类型
@@ -1710,7 +1638,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
        *
        * <pre>
        * 使用者类型
@@ -1720,7 +1648,7 @@ public final class SceneClient {
         return userType_;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
        *
        * <pre>
        * 使用者类型
@@ -1736,7 +1664,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType userType = 6;</code>
        *
        * <pre>
        * 使用者类型
@@ -1765,7 +1693,7 @@ public final class SceneClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required fixed64 target = 1;</code>
+     * <code>optional fixed64 target = 1;</code>
      *
      * <pre>
      * 目标id
@@ -1773,7 +1701,7 @@ public final class SceneClient {
      */
     boolean hasTarget();
     /**
-     * <code>required fixed64 target = 1;</code>
+     * <code>optional fixed64 target = 1;</code>
      *
      * <pre>
      * 目标id
@@ -1782,7 +1710,7 @@ public final class SceneClient {
     long getTarget();
 
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
      *
      * <pre>
      * 目标类型
@@ -1790,7 +1718,7 @@ public final class SceneClient {
      */
     boolean hasType();
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
      *
      * <pre>
      * 目标类型
@@ -1799,7 +1727,7 @@ public final class SceneClient {
     org.shell.mmo.sample.message.proto.Global.GameObjectType getType();
 
     /**
-     * <code>required int32 skill = 3;</code>
+     * <code>optional int32 skill = 3;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -1807,7 +1735,7 @@ public final class SceneClient {
      */
     boolean hasSkill();
     /**
-     * <code>required int32 skill = 3;</code>
+     * <code>optional int32 skill = 3;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -1816,7 +1744,7 @@ public final class SceneClient {
     int getSkill();
 
     /**
-     * <code>required int32 damage = 4;</code>
+     * <code>optional int32 damage = 4;</code>
      *
      * <pre>
      * 伤害数值
@@ -1824,7 +1752,7 @@ public final class SceneClient {
      */
     boolean hasDamage();
     /**
-     * <code>required int32 damage = 4;</code>
+     * <code>optional int32 damage = 4;</code>
      *
      * <pre>
      * 伤害数值
@@ -1957,7 +1885,7 @@ public final class SceneClient {
     public static final int TARGET_FIELD_NUMBER = 1;
     private long target_;
     /**
-     * <code>required fixed64 target = 1;</code>
+     * <code>optional fixed64 target = 1;</code>
      *
      * <pre>
      * 目标id
@@ -1967,7 +1895,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required fixed64 target = 1;</code>
+     * <code>optional fixed64 target = 1;</code>
      *
      * <pre>
      * 目标id
@@ -1980,7 +1908,7 @@ public final class SceneClient {
     public static final int TYPE_FIELD_NUMBER = 2;
     private org.shell.mmo.sample.message.proto.Global.GameObjectType type_;
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
      *
      * <pre>
      * 目标类型
@@ -1990,7 +1918,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
      *
      * <pre>
      * 目标类型
@@ -2003,7 +1931,7 @@ public final class SceneClient {
     public static final int SKILL_FIELD_NUMBER = 3;
     private int skill_;
     /**
-     * <code>required int32 skill = 3;</code>
+     * <code>optional int32 skill = 3;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -2013,7 +1941,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required int32 skill = 3;</code>
+     * <code>optional int32 skill = 3;</code>
      *
      * <pre>
      * 技能id{&#64;link Cskill#id}
@@ -2026,7 +1954,7 @@ public final class SceneClient {
     public static final int DAMAGE_FIELD_NUMBER = 4;
     private int damage_;
     /**
-     * <code>required int32 damage = 4;</code>
+     * <code>optional int32 damage = 4;</code>
      *
      * <pre>
      * 伤害数值
@@ -2036,7 +1964,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>required int32 damage = 4;</code>
+     * <code>optional int32 damage = 4;</code>
      *
      * <pre>
      * 伤害数值
@@ -2058,22 +1986,6 @@ public final class SceneClient {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasTarget()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasType()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasSkill()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasDamage()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -2324,22 +2236,6 @@ public final class SceneClient {
       }
 
       public final boolean isInitialized() {
-        if (!hasTarget()) {
-          
-          return false;
-        }
-        if (!hasType()) {
-          
-          return false;
-        }
-        if (!hasSkill()) {
-          
-          return false;
-        }
-        if (!hasDamage()) {
-          
-          return false;
-        }
         return true;
       }
 
@@ -2364,7 +2260,7 @@ public final class SceneClient {
 
       private long target_ ;
       /**
-       * <code>required fixed64 target = 1;</code>
+       * <code>optional fixed64 target = 1;</code>
        *
        * <pre>
        * 目标id
@@ -2374,7 +2270,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required fixed64 target = 1;</code>
+       * <code>optional fixed64 target = 1;</code>
        *
        * <pre>
        * 目标id
@@ -2384,7 +2280,7 @@ public final class SceneClient {
         return target_;
       }
       /**
-       * <code>required fixed64 target = 1;</code>
+       * <code>optional fixed64 target = 1;</code>
        *
        * <pre>
        * 目标id
@@ -2397,7 +2293,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required fixed64 target = 1;</code>
+       * <code>optional fixed64 target = 1;</code>
        *
        * <pre>
        * 目标id
@@ -2412,7 +2308,7 @@ public final class SceneClient {
 
       private org.shell.mmo.sample.message.proto.Global.GameObjectType type_ = org.shell.mmo.sample.message.proto.Global.GameObjectType.HERO;
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
        *
        * <pre>
        * 目标类型
@@ -2422,7 +2318,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
        *
        * <pre>
        * 目标类型
@@ -2432,7 +2328,7 @@ public final class SceneClient {
         return type_;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
        *
        * <pre>
        * 目标类型
@@ -2448,7 +2344,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 2;</code>
        *
        * <pre>
        * 目标类型
@@ -2463,7 +2359,7 @@ public final class SceneClient {
 
       private int skill_ ;
       /**
-       * <code>required int32 skill = 3;</code>
+       * <code>optional int32 skill = 3;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -2473,7 +2369,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required int32 skill = 3;</code>
+       * <code>optional int32 skill = 3;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -2483,7 +2379,7 @@ public final class SceneClient {
         return skill_;
       }
       /**
-       * <code>required int32 skill = 3;</code>
+       * <code>optional int32 skill = 3;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -2496,7 +2392,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required int32 skill = 3;</code>
+       * <code>optional int32 skill = 3;</code>
        *
        * <pre>
        * 技能id{&#64;link Cskill#id}
@@ -2511,7 +2407,7 @@ public final class SceneClient {
 
       private int damage_ ;
       /**
-       * <code>required int32 damage = 4;</code>
+       * <code>optional int32 damage = 4;</code>
        *
        * <pre>
        * 伤害数值
@@ -2521,7 +2417,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>required int32 damage = 4;</code>
+       * <code>optional int32 damage = 4;</code>
        *
        * <pre>
        * 伤害数值
@@ -2531,7 +2427,7 @@ public final class SceneClient {
         return damage_;
       }
       /**
-       * <code>required int32 damage = 4;</code>
+       * <code>optional int32 damage = 4;</code>
        *
        * <pre>
        * 伤害数值
@@ -2544,7 +2440,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required int32 damage = 4;</code>
+       * <code>optional int32 damage = 4;</code>
        *
        * <pre>
        * 伤害数值
@@ -2786,12 +2682,6 @@ public final class SceneClient {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      for (int i = 0; i < getPositionCount(); i++) {
-        if (!getPosition(i).isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -3025,12 +2915,6 @@ public final class SceneClient {
       }
 
       public final boolean isInitialized() {
-        for (int i = 0; i < getPositionCount(); i++) {
-          if (!getPosition(i).isInitialized()) {
-            
-            return false;
-          }
-        }
         return true;
       }
 
@@ -3381,7 +3265,7 @@ public final class SceneClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -3389,7 +3273,7 @@ public final class SceneClient {
      */
     boolean hasError();
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -3398,7 +3282,7 @@ public final class SceneClient {
     org.shell.mmo.sample.message.proto.Global.Error getError();
 
     /**
-     * <code>required fixed64 target = 2;</code>
+     * <code>optional fixed64 target = 2;</code>
      *
      * <pre>
      * 目标id
@@ -3406,7 +3290,7 @@ public final class SceneClient {
      */
     boolean hasTarget();
     /**
-     * <code>required fixed64 target = 2;</code>
+     * <code>optional fixed64 target = 2;</code>
      *
      * <pre>
      * 目标id
@@ -3415,7 +3299,7 @@ public final class SceneClient {
     long getTarget();
 
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
      *
      * <pre>
      * 目标类型
@@ -3423,7 +3307,7 @@ public final class SceneClient {
      */
     boolean hasType();
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
      *
      * <pre>
      * 目标类型
@@ -3612,7 +3496,7 @@ public final class SceneClient {
     public static final int ERROR_FIELD_NUMBER = 1;
     private org.shell.mmo.sample.message.proto.Global.Error error_;
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -3622,7 +3506,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
      *
      * <pre>
      * 错误码
@@ -3635,7 +3519,7 @@ public final class SceneClient {
     public static final int TARGET_FIELD_NUMBER = 2;
     private long target_;
     /**
-     * <code>required fixed64 target = 2;</code>
+     * <code>optional fixed64 target = 2;</code>
      *
      * <pre>
      * 目标id
@@ -3645,7 +3529,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required fixed64 target = 2;</code>
+     * <code>optional fixed64 target = 2;</code>
      *
      * <pre>
      * 目标id
@@ -3658,7 +3542,7 @@ public final class SceneClient {
     public static final int TYPE_FIELD_NUMBER = 3;
     private org.shell.mmo.sample.message.proto.Global.GameObjectType type_;
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
      *
      * <pre>
      * 目标类型
@@ -3668,7 +3552,7 @@ public final class SceneClient {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
      *
      * <pre>
      * 目标类型
@@ -3745,24 +3629,6 @@ public final class SceneClient {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasError()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasTarget()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasType()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      for (int i = 0; i < getPositionCount(); i++) {
-        if (!getPosition(i).isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -4046,24 +3912,6 @@ public final class SceneClient {
       }
 
       public final boolean isInitialized() {
-        if (!hasError()) {
-          
-          return false;
-        }
-        if (!hasTarget()) {
-          
-          return false;
-        }
-        if (!hasType()) {
-          
-          return false;
-        }
-        for (int i = 0; i < getPositionCount(); i++) {
-          if (!getPosition(i).isInitialized()) {
-            
-            return false;
-          }
-        }
         return true;
       }
 
@@ -4088,7 +3936,7 @@ public final class SceneClient {
 
       private org.shell.mmo.sample.message.proto.Global.Error error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -4098,7 +3946,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -4108,7 +3956,7 @@ public final class SceneClient {
         return error_;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -4124,7 +3972,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.Error error = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Error error = 1;</code>
        *
        * <pre>
        * 错误码
@@ -4139,7 +3987,7 @@ public final class SceneClient {
 
       private long target_ ;
       /**
-       * <code>required fixed64 target = 2;</code>
+       * <code>optional fixed64 target = 2;</code>
        *
        * <pre>
        * 目标id
@@ -4149,7 +3997,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required fixed64 target = 2;</code>
+       * <code>optional fixed64 target = 2;</code>
        *
        * <pre>
        * 目标id
@@ -4159,7 +4007,7 @@ public final class SceneClient {
         return target_;
       }
       /**
-       * <code>required fixed64 target = 2;</code>
+       * <code>optional fixed64 target = 2;</code>
        *
        * <pre>
        * 目标id
@@ -4172,7 +4020,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required fixed64 target = 2;</code>
+       * <code>optional fixed64 target = 2;</code>
        *
        * <pre>
        * 目标id
@@ -4187,7 +4035,7 @@ public final class SceneClient {
 
       private org.shell.mmo.sample.message.proto.Global.GameObjectType type_ = org.shell.mmo.sample.message.proto.Global.GameObjectType.HERO;
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
        *
        * <pre>
        * 目标类型
@@ -4197,7 +4045,7 @@ public final class SceneClient {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
        *
        * <pre>
        * 目标类型
@@ -4207,7 +4055,7 @@ public final class SceneClient {
         return type_;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
        *
        * <pre>
        * 目标类型
@@ -4223,7 +4071,7 @@ public final class SceneClient {
         return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.GameObjectType type = 3;</code>
        *
        * <pre>
        * 目标类型
@@ -4595,24 +4443,24 @@ public final class SceneClient {
     java.lang.String[] descriptorData = {
       "\n\021SceneClient.proto\022\"org.shell.mmo.sampl" +
       "e.message.proto\032\014global.proto\"s\n\020ReqFigh" +
-      "tUseSkill\022\016\n\006target\030\001 \002(\006\022@\n\004type\030\002 \002(\0162" +
+      "tUseSkill\022\016\n\006target\030\001 \001(\006\022@\n\004type\030\002 \001(\0162" +
       "2.org.shell.mmo.sample.message.proto.Gam" +
-      "eObjectType\022\r\n\005skill\030\003 \002(\005\"\207\002\n\020ResFightU" +
-      "seSkill\0228\n\005error\030\001 \002(\0162).org.shell.mmo.s" +
-      "ample.message.proto.Error\022\016\n\006target\030\002 \002(" +
-      "\006\022F\n\ntargetType\030\003 \002(\01622.org.shell.mmo.sa" +
+      "eObjectType\022\r\n\005skill\030\003 \001(\005\"\207\002\n\020ResFightU" +
+      "seSkill\0228\n\005error\030\001 \001(\0162).org.shell.mmo.s" +
+      "ample.message.proto.Error\022\016\n\006target\030\002 \001(" +
+      "\006\022F\n\ntargetType\030\003 \001(\01622.org.shell.mmo.sa" +
       "mple.message.proto.GameObjectType\022\r\n\005ski" +
-      "ll\030\004 \002(\005\022\014\n\004user\030\005 \002(\006\022D\n\010userType\030\006 \002(\016",
+      "ll\030\004 \001(\005\022\014\n\004user\030\005 \001(\006\022D\n\010userType\030\006 \001(\016",
       "22.org.shell.mmo.sample.message.proto.Ga" +
       "meObjectType\"\205\001\n\022ReqFightShowDamage\022\016\n\006t" +
-      "arget\030\001 \002(\006\022@\n\004type\030\002 \002(\01622.org.shell.mm" +
+      "arget\030\001 \001(\006\022@\n\004type\030\002 \001(\01622.org.shell.mm" +
       "o.sample.message.proto.GameObjectType\022\r\n" +
-      "\005skill\030\003 \002(\005\022\016\n\006damage\030\004 \002(\005\"M\n\013ReqMoveW" +
+      "\005skill\030\003 \001(\005\022\016\n\006damage\030\004 \001(\005\"M\n\013ReqMoveW" +
       "alk\022>\n\010position\030\001 \003(\0132,.org.shell.mmo.sa" +
       "mple.message.proto.Position\"\331\001\n\013ResMoveW" +
-      "alk\0228\n\005error\030\001 \002(\0162).org.shell.mmo.sampl" +
-      "e.message.proto.Error\022\016\n\006target\030\002 \002(\006\022@\n" +
-      "\004type\030\003 \002(\01622.org.shell.mmo.sample.messa",
+      "alk\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sampl" +
+      "e.message.proto.Error\022\016\n\006target\030\002 \001(\006\022@\n" +
+      "\004type\030\003 \001(\01622.org.shell.mmo.sample.messa",
       "ge.proto.GameObjectType\022>\n\010position\030\004 \003(" +
       "\0132,.org.shell.mmo.sample.message.proto.P" +
       "osition"
