@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <apis>
+        <api name="Login" desc="登录" invoke="client" provide="logic">
+            <params>
+                <field type="string" name="usr" desc="账号" index="1"/>
+                <field type="int32" name="platform" desc="平台" index="2"/>
+                <field type="int32" name="server" desc="服务器" index="3"/>
+                <field type="bool" name="adult" desc="是否成年" index="4"/>
+                <field type="int32" name="time" desc="时间戳" index="5"/>
+                <field type="string" name="sign" desc="验证串" index="6"/>
+            </params>
+            <returns>
+                <field type="LeaderRole" name="leaderRole" desc="主角" index="1"/>
+            </returns>
+        </api>
+    </apis>
+</root>

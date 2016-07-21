@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <enums>
+        <enum name="Error" desc="错误码">
+            <SYS_ERR desc="系统错误" id="1"/>
+        </enum>
+        <enum name="GameObjectType" desc="对象类型">
+            <HERO desc="英雄" id="1"/>
+            <MONSTER desc="怪物" id="2"/>
+            <PET desc="宠物" id="3"/>
+            <ITEM desc="道具" id="4"/>
+        </enum>
+    </enums>
+    <beans>
+        <bean name="Position" desc="坐标">
+            <field type="int32" name="x" desc="横坐标" index="1"/>
+            <field type="int32" name="y" desc="纵坐标" index="2"/>
+        </bean>
+        <bean name="LeaderRole" desc="主角">
+            <field type="fixed64" name="id" desc="角色id" index="1"/>
+            <field type="string" name="name" desc="名字" index="2"/>
+            <field type="int32" name="map" desc="地图" index="3"/>
+            <field type="int32" name="level" desc="等级" index="4"/>
+            <field type="int32" name="server" desc="服务器" index="5"/>
+            <field type="int32" name="platform" desc="平台" index="6"/>
+            <field type="int32" name="gold" desc="元宝" index="7"/>
+        </bean>
+    </beans>
+</root>

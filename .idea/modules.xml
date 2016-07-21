@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/data/data.iml" filepath="$PROJECT_DIR$/data/data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leader/leader.iml" filepath="$PROJECT_DIR$/leader/leader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log/log.iml" filepath="$PROJECT_DIR$/log/log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logic/logic.iml" filepath="$PROJECT_DIR$/logic/logic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mmo-sample.iml" filepath="$PROJECT_DIR$/.idea/mmo-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robot/robot.iml" filepath="$PROJECT_DIR$/robot/robot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scene/scene.iml" filepath="$PROJECT_DIR$/scene/scene.iml" />
+    </modules>
+  </component>
+</project>

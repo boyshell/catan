@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules>
+    <module id="1" name="login" desc="登录" superClass="org.shell.mmo.sample.message.MessageHandler"/>
+    <module id="2" name="fight" desc="战斗" superClass="org.shell.mmo.sample.message.MessageHandler"/>
+    <module id="3" name="move" desc="移动" superClass="org.shell.mmo.sample.message.MessageHandler"/>
+</modules>

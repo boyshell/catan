@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3648fa52-07c9-48a5-b6d3-dfaf40a6b37b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/protobuf-java-2.4.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/protobuf.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/protoc-gen-as3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/protoc.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/run.n" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/config/未命名.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_2_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_shell_mmo_utils_1_0_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_proxytoys_proxytoys_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_1_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_4_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_morphia_morphia_1_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/mmo-sample.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/BaseFieldDescriptor.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/Binary64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/CustomOption.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/FieldDescriptor.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/IFieldDescriptor.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/Int64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/Message.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/ReadUtils.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/RepeatedFieldDescriptor.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/SimpleWebRPC.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/TextFormat.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/UInt64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/WireType.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/WriteUtils.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/WritingBuffer.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/ZigZag.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_BOOL.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_BYTES.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_DOUBLE.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_ENUM.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_FIXED32.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_FIXED64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_FLOAT.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_INT32.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_INT64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_MESSAGE.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_SFIXED32.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_SFIXED64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_SINT32.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_SINT64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_STRING.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_UINT32.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/FieldDescriptor_TYPE_UINT64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_BOOL.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_BYTES.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_DOUBLE.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_ENUM.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_FIXED32.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_FIXED64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_FLOAT.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_INT32.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_INT64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_MESSAGE.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_SFIXED32.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_SFIXED64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_SINT32.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_SINT64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_STRING.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_UINT32.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/com/netease/protobuf/fieldDescriptors/RepeatedFieldDescriptor_TYPE_UINT64.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/google/protobuf/MethodOptions.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/google/protobuf/ServiceOptions.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/google/protobuf/UninterpretedOption.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/google/protobuf/UninterpretedOption/NamePart.hx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/haxelib.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/options.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/protoc-gen-as3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/protoc-gen-as3.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leader/leader.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leader/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/log.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/logic.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/fight/handler/ReqFightUseSkillHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/handler/ReqLoginLoginHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ClientHandlerGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ClientMessageGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/SceneClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/move/handler/ReqMoveWalkHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/robot.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/fight/handler/ReqFightShowDamageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/fight/handler/ResFightUseSkillHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/login/handler/ResLoginLoginHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/LogicHandlerGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/LogicMessageGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/SceneClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/move/handler/ResMoveWalkHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/scene.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/fight/handler/ReqFightUseSkillHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/ClientHandlerGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/ClientMessageGroup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/proto/SceneClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/move/handler/ReqMoveWalkHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/api/fight.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/api/global.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/api/login.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/api/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/api/move.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/initializer.as.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/ConfigGroup.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/bean/Csample.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/bean/Ddata.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/container/CsampleContainer.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/ContainerGroup.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/Csample.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/Ddata.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/fight/handler/ReqFightShowDamageHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/fight/handler/ResFightUseSkillHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/login/handler/ResLoginLoginHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicHandlerGroup.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicMessageGroup.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Error.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/GameObjectType.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/LeaderRole.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Module.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Position.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqFightShowDamage.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqFightUseSkill.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqLoginLogin.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqMoveWalk.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResFightUseSkill.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResLoginLogin.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResMoveWalk.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/move/handler/ResMoveWalkHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/config/Csample.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/config/Ddata.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/config/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/Error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/GameObjectType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/LeaderRole.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/Position.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/fight.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/move.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/proto/config/config.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/proto/message/LogicClient.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/proto/message/SceneClient.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/proto/message/global.proto" />
+    </list>
+    <ignored path="mmo-sample.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/log/target/" />
+    <ignored path="$PROJECT_DIR$/data/target/" />
+    <ignored path="$PROJECT_DIR$/leader/target/" />
+    <ignored path="$PROJECT_DIR$/logic/target/" />
+    <ignored path="$PROJECT_DIR$/scene/target/" />
+    <ignored path="$PROJECT_DIR$/robot/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="mmo-sample" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leader/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/robot/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="706">
+              <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReqMoveWalkHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/move/handler/ReqMoveWalkHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/MessageHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResFightUseSkillHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/fight/handler/ResFightUseSkillHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/MessageHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReqLoginLoginHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/handler/ReqLoginLoginHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/MessageHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scene/pom.xml" />
+        <option value="$PROJECT_DIR$/data/pom.xml" />
+        <option value="$PROJECT_DIR$/leader/pom.xml" />
+        <option value="$PROJECT_DIR$/log/pom.xml" />
+        <option value="$PROJECT_DIR$/logic/pom.xml" />
+        <option value="$PROJECT_DIR$/robot/pom.xml" />
+        <option value="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="79" />
+    <option name="y" value="23" />
+    <option name="width" value="1400" />
+    <option name="height" value="1337" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="share" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.shell.mmo.sample.message" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="mmo-sample" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3648fa52-07c9-48a5-b6d3-dfaf40a6b37b" name="Default" comment="" />
+      <created>1469080477174</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1469080477174</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="79" y="23" width="1400" height="1337" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/bean/Csample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="34" column="83" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
+          <folding>
+            <element signature="e#2547#2548#0" expanded="false" />
+            <element signature="e#2577#2578#0" expanded="false" />
+            <element signature="e#2637#2638#0" expanded="false" />
+            <element signature="e#2669#2670#0" expanded="false" />
+            <element signature="e#2731#2732#0" expanded="false" />
+            <element signature="e#2763#2764#0" expanded="false" />
+            <element signature="e#2837#2838#0" expanded="false" />
+            <element signature="e#2869#2870#0" expanded="false" />
+            <element signature="e#2951#2952#0" expanded="false" />
+            <element signature="e#2982#2983#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scene/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="102" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leader/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/move/handler/ReqMoveWalkHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/fight/handler/ResFightUseSkillHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/handler/ReqLoginLoginHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+import "global.proto";
+package org.shell.mmo.sample.message.proto;
+
+// 登录:参数
+message ReqLoginLogin {
+    required string usr = 1; // 账号
+    required int32 platform = 2; // 平台
+    required int32 server = 3; // 服务器
+    required bool adult = 4; // 是否成年
+    required int32 time = 5; // 时间戳
+    required string sign = 6; // 验证串
+}
+// 登录:返回值
+message ResLoginLogin {
+    required Error error = 1; // 错误码
+    required LeaderRole leaderRole = 2; // 主角
+}
+

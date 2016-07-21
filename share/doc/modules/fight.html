@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="boyshell" />
+    <title>模块</title>
+</head>
+<body>
+<h4>使用技能</h4>
+<pre style="border: 1px dotted #785">
+<pre style="background: #f5f5f5">
+API提供方: scene
+API调用者: client
+</pre>
+参数: ReqFightUseSkill
+<pre style="background: #f5f5f5">
+<code>
+fixed64 target; // 目标id
+<a href="GameObjectType.html">GameObjectType</a> type; // 目标类型
+int32 skill; // 技能id{@link Cskill#id}
+</code>
+</pre>
+返回值: ResFightUseSkill
+<pre style="background: #f5f5f5">
+<code>
+<a href="Error.html">Error</a> error; // 错误码
+fixed64 target; // 目标id
+<a href="GameObjectType.html">GameObjectType</a> targetType; // 目标类型
+int32 skill; // 技能id{@link Cskill#id}
+fixed64 user; // 使用者id
+<a href="GameObjectType.html">GameObjectType</a> userType; // 使用者类型
+</code>
+</pre>
+</pre>
+<h4>展示攻击结果</h4>
+<pre style="border: 1px dotted #785">
+<pre style="background: #f5f5f5">
+API提供方: client
+API调用者: scene
+</pre>
+参数: ReqFightShowDamage
+<pre style="background: #f5f5f5">
+<code>
+fixed64 target; // 目标id
+<a href="GameObjectType.html">GameObjectType</a> type; // 目标类型
+int32 skill; // 技能id{@link Cskill#id}
+int32 damage; // 伤害数值
+</code>
+</pre>
+</pre>
+</body>

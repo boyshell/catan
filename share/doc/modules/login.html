@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="boyshell" />
+    <title>模块</title>
+</head>
+<body>
+<h4>登录</h4>
+<pre style="border: 1px dotted #785">
+<pre style="background: #f5f5f5">
+API提供方: logic
+API调用者: client
+</pre>
+参数: ReqLoginLogin
+<pre style="background: #f5f5f5">
+<code>
+string usr; // 账号
+int32 platform; // 平台
+int32 server; // 服务器
+bool adult; // 是否成年
+int32 time; // 时间戳
+string sign; // 验证串
+</code>
+</pre>
+返回值: ResLoginLogin
+<pre style="background: #f5f5f5">
+<code>
+<a href="Error.html">Error</a> error; // 错误码
+<a href="LeaderRole.html">LeaderRole</a> leaderRole; // 主角
+</code>
+</pre>
+</pre>
+</body>

@@ -1,0 +1,20 @@
+package org.shell.mmo.sample.config.proto;
+
+// 配置集合
+message ContainerGroup {
+    repeated Csample sampleContainer = 1; // 示例配置文件
+}
+
+// 示例配置文件
+message Csample {
+    required int32 id = 1; // 唯一id,名字可变更,第一列必须保证唯一
+    required string name = 2; // 字符串示例
+    required Ddata data = 3; // 单个引用数据示例
+    repeated Ddata list = 4; // 列表示例
+    repeated Ddata map = 5; // map示例
+}
+// 示例结构
+message Ddata {
+    required int32 id = 1; // 唯一id,名字可变更,第一列必须保证唯一
+    required string name = 2; // 字符串示例
+}
