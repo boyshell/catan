@@ -14,5 +14,14 @@
                 <field type="LeaderRole" name="leaderRole" desc="主角" index="1"/>
             </returns>
         </api>
+
+        <api name="NetTest" desc="网络测试" invoke="client" provide="logic">
+            <params>
+                <list type="string" name="data" desc="数据" index="1"/>
+            </params>
+            <returns>
+                <field type="LeaderRole" name="leaderRole" desc="主角" index="1"/>
+            </returns>
+        </api>
     </apis>
 </root>
