@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <apis>
+        <api name="Enter" desc="进入房间" invoke="client" provide="logic">
+            <params>
+                <field type="int32" name="id" desc="房间id" index="1"/>
+            </params>
+            <returns>
+                <field type="int32" name="id" desc="房间id" index="1"/>
+                <list type="GameTable" name="table" desc="桌子列表" index="2"/>
+            </returns>
+        </api>
+        <api name="Exit" desc="离开房间" invoke="client" provide="logic">
+            <params>
+            </params>
+            <returns>
+            </returns>
+        </api>
+        <api name="All" desc="展示所有房间" invoke="logic" provide="client">
+            <params>
+                <list type="GameRoom" name="room" desc="房间列表" index="1"/>
+            </params>
+        </api>
+        <api name="Update" desc="更新房间" invoke="logic" provide="client">
+            <params>
+                <field type="int32" name="id" desc="房间id" index="1"/>
+                <field type="int32" name="count" desc="玩家人数" index="2"/>
+            </params>
+        </api>
+    </apis>
+</root>

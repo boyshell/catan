@@ -66,6 +66,54 @@ package org.shell.mmo.sample.message.proto {
 		/**
 		 *  @private
 		 */
+		public static const ID:FieldDescriptor_TYPE_FIXED64 = new FieldDescriptor_TYPE_FIXED64("org.shell.mmo.sample.message.proto.ResLoginLogin.id", "id", (3 << 3) | com.netease.protobuf.WireType.FIXED_64_BIT);
+
+		private var id$field:UInt64;
+
+		public function clearId():void {
+			id$field = null;
+		}
+
+		public function get hasId():Boolean {
+			return id$field != null;
+		}
+
+		public function set id(value:UInt64):void {
+			id$field = value;
+		}
+
+		public function get id():UInt64 {
+			return id$field;
+		}
+
+		/**
+		 *  @private
+		 */
+		public static const GOLD:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.ResLoginLogin.gold", "gold", (4 << 3) | com.netease.protobuf.WireType.VARINT);
+
+		private var gold$field:int;
+
+		public function clearGold():void {
+			hasField$0 &= 0xfffffffd;
+			gold$field = new int();
+		}
+
+		public function get hasGold():Boolean {
+			return (hasField$0 & 0x2) != 0;
+		}
+
+		public function set gold(value:int):void {
+			hasField$0 |= 0x2;
+			gold$field = value;
+		}
+
+		public function get gold():int {
+			return gold$field;
+		}
+
+		/**
+		 *  @private
+		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
 			if (hasError) {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
@@ -74,6 +122,14 @@ package org.shell.mmo.sample.message.proto {
 			if (hasLeaderRole) {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 2);
 				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, leaderRole$field);
+			}
+			if (hasId) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 3);
+				com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, id$field);
+			}
+			if (hasGold) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 4);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, gold$field);
 			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
@@ -86,6 +142,8 @@ package org.shell.mmo.sample.message.proto {
 		override com.netease.protobuf.used_by_generated_code final function readFromSlice(input:flash.utils.IDataInput, bytesAfterSlice:uint):void {
 			var error$count:uint = 0;
 			var leaderRole$count:uint = 0;
+			var id$count:uint = 0;
+			var gold$count:uint = 0;
 			while (input.bytesAvailable > bytesAfterSlice) {
 				var tag:uint = com.netease.protobuf.ReadUtils.read_TYPE_UINT32(input);
 				switch (tag >> 3) {
@@ -103,6 +161,20 @@ package org.shell.mmo.sample.message.proto {
 					++leaderRole$count;
 					this.leaderRole = new org.shell.mmo.sample.message.proto.LeaderRole();
 					com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, this.leaderRole);
+					break;
+				case 3:
+					if (id$count != 0) {
+						throw new flash.errors.IOError('Bad data format: ResLoginLogin.id cannot be set twice.');
+					}
+					++id$count;
+					this.id = com.netease.protobuf.ReadUtils.read_TYPE_FIXED64(input);
+					break;
+				case 4:
+					if (gold$count != 0) {
+						throw new flash.errors.IOError('Bad data format: ResLoginLogin.gold cannot be set twice.');
+					}
+					++gold$count;
+					this.gold = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
 					break;
 				default:
 					super.readUnknown(input, tag);

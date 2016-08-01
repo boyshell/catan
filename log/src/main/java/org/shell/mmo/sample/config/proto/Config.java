@@ -13,47 +13,47 @@ public final class Config {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
      *
      * <pre>
-     * 示例配置文件
+     * 卡坦岛地图
      * </pre>
      */
-    java.util.List<org.shell.mmo.sample.config.proto.Config.Csample> 
-        getSampleContainerList();
+    java.util.List<org.shell.mmo.sample.config.proto.Config.CcatanMap> 
+        getCatanMapContainerList();
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
      *
      * <pre>
-     * 示例配置文件
+     * 卡坦岛地图
      * </pre>
      */
-    org.shell.mmo.sample.config.proto.Config.Csample getSampleContainer(int index);
+    org.shell.mmo.sample.config.proto.Config.CcatanMap getCatanMapContainer(int index);
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
      *
      * <pre>
-     * 示例配置文件
+     * 卡坦岛地图
      * </pre>
      */
-    int getSampleContainerCount();
+    int getCatanMapContainerCount();
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
      *
      * <pre>
-     * 示例配置文件
+     * 卡坦岛地图
      * </pre>
      */
-    java.util.List<? extends org.shell.mmo.sample.config.proto.Config.CsampleOrBuilder> 
-        getSampleContainerOrBuilderList();
+    java.util.List<? extends org.shell.mmo.sample.config.proto.Config.CcatanMapOrBuilder> 
+        getCatanMapContainerOrBuilderList();
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
      *
      * <pre>
-     * 示例配置文件
+     * 卡坦岛地图
      * </pre>
      */
-    org.shell.mmo.sample.config.proto.Config.CsampleOrBuilder getSampleContainerOrBuilder(
+    org.shell.mmo.sample.config.proto.Config.CcatanMapOrBuilder getCatanMapContainerOrBuilder(
         int index);
   }
   /**
@@ -114,10 +114,10 @@ public final class Config {
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                sampleContainer_ = new java.util.ArrayList<org.shell.mmo.sample.config.proto.Config.Csample>();
+                catanMapContainer_ = new java.util.ArrayList<org.shell.mmo.sample.config.proto.Config.CcatanMap>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              sampleContainer_.add(input.readMessage(org.shell.mmo.sample.config.proto.Config.Csample.PARSER, extensionRegistry));
+              catanMapContainer_.add(input.readMessage(org.shell.mmo.sample.config.proto.Config.CcatanMap.PARSER, extensionRegistry));
               break;
             }
           }
@@ -129,7 +129,7 @@ public final class Config {
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-          sampleContainer_ = java.util.Collections.unmodifiableList(sampleContainer_);
+          catanMapContainer_ = java.util.Collections.unmodifiableList(catanMapContainer_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -162,63 +162,63 @@ public final class Config {
       return PARSER;
     }
 
-    public static final int SAMPLECONTAINER_FIELD_NUMBER = 1;
-    private java.util.List<org.shell.mmo.sample.config.proto.Config.Csample> sampleContainer_;
+    public static final int CATANMAPCONTAINER_FIELD_NUMBER = 1;
+    private java.util.List<org.shell.mmo.sample.config.proto.Config.CcatanMap> catanMapContainer_;
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
      *
      * <pre>
-     * 示例配置文件
+     * 卡坦岛地图
      * </pre>
      */
-    public java.util.List<org.shell.mmo.sample.config.proto.Config.Csample> getSampleContainerList() {
-      return sampleContainer_;
+    public java.util.List<org.shell.mmo.sample.config.proto.Config.CcatanMap> getCatanMapContainerList() {
+      return catanMapContainer_;
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
      *
      * <pre>
-     * 示例配置文件
+     * 卡坦岛地图
      * </pre>
      */
-    public java.util.List<? extends org.shell.mmo.sample.config.proto.Config.CsampleOrBuilder> 
-        getSampleContainerOrBuilderList() {
-      return sampleContainer_;
+    public java.util.List<? extends org.shell.mmo.sample.config.proto.Config.CcatanMapOrBuilder> 
+        getCatanMapContainerOrBuilderList() {
+      return catanMapContainer_;
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
      *
      * <pre>
-     * 示例配置文件
+     * 卡坦岛地图
      * </pre>
      */
-    public int getSampleContainerCount() {
-      return sampleContainer_.size();
+    public int getCatanMapContainerCount() {
+      return catanMapContainer_.size();
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
      *
      * <pre>
-     * 示例配置文件
+     * 卡坦岛地图
      * </pre>
      */
-    public org.shell.mmo.sample.config.proto.Config.Csample getSampleContainer(int index) {
-      return sampleContainer_.get(index);
+    public org.shell.mmo.sample.config.proto.Config.CcatanMap getCatanMapContainer(int index) {
+      return catanMapContainer_.get(index);
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
      *
      * <pre>
-     * 示例配置文件
+     * 卡坦岛地图
      * </pre>
      */
-    public org.shell.mmo.sample.config.proto.Config.CsampleOrBuilder getSampleContainerOrBuilder(
+    public org.shell.mmo.sample.config.proto.Config.CcatanMapOrBuilder getCatanMapContainerOrBuilder(
         int index) {
-      return sampleContainer_.get(index);
+      return catanMapContainer_.get(index);
     }
 
     private void initFields() {
-      sampleContainer_ = java.util.Collections.emptyList();
+      catanMapContainer_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -226,8 +226,8 @@ public final class Config {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      for (int i = 0; i < getSampleContainerCount(); i++) {
-        if (!getSampleContainer(i).isInitialized()) {
+      for (int i = 0; i < getCatanMapContainerCount(); i++) {
+        if (!getCatanMapContainer(i).isInitialized()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -239,8 +239,8 @@ public final class Config {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < sampleContainer_.size(); i++) {
-        output.writeMessage(1, sampleContainer_.get(i));
+      for (int i = 0; i < catanMapContainer_.size(); i++) {
+        output.writeMessage(1, catanMapContainer_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -251,9 +251,9 @@ public final class Config {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < sampleContainer_.size(); i++) {
+      for (int i = 0; i < catanMapContainer_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, sampleContainer_.get(i));
+          .computeMessageSize(1, catanMapContainer_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -368,7 +368,7 @@ public final class Config {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getSampleContainerFieldBuilder();
+          getCatanMapContainerFieldBuilder();
         }
       }
       private static Builder create() {
@@ -377,11 +377,11 @@ public final class Config {
 
       public Builder clear() {
         super.clear();
-        if (sampleContainerBuilder_ == null) {
-          sampleContainer_ = java.util.Collections.emptyList();
+        if (catanMapContainerBuilder_ == null) {
+          catanMapContainer_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          sampleContainerBuilder_.clear();
+          catanMapContainerBuilder_.clear();
         }
         return this;
       }
@@ -410,14 +410,14 @@ public final class Config {
       public org.shell.mmo.sample.config.proto.Config.ContainerGroup buildPartial() {
         org.shell.mmo.sample.config.proto.Config.ContainerGroup result = new org.shell.mmo.sample.config.proto.Config.ContainerGroup(this);
         int from_bitField0_ = bitField0_;
-        if (sampleContainerBuilder_ == null) {
+        if (catanMapContainerBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
-            sampleContainer_ = java.util.Collections.unmodifiableList(sampleContainer_);
+            catanMapContainer_ = java.util.Collections.unmodifiableList(catanMapContainer_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.sampleContainer_ = sampleContainer_;
+          result.catanMapContainer_ = catanMapContainer_;
         } else {
-          result.sampleContainer_ = sampleContainerBuilder_.build();
+          result.catanMapContainer_ = catanMapContainerBuilder_.build();
         }
         onBuilt();
         return result;
@@ -434,29 +434,29 @@ public final class Config {
 
       public Builder mergeFrom(org.shell.mmo.sample.config.proto.Config.ContainerGroup other) {
         if (other == org.shell.mmo.sample.config.proto.Config.ContainerGroup.getDefaultInstance()) return this;
-        if (sampleContainerBuilder_ == null) {
-          if (!other.sampleContainer_.isEmpty()) {
-            if (sampleContainer_.isEmpty()) {
-              sampleContainer_ = other.sampleContainer_;
+        if (catanMapContainerBuilder_ == null) {
+          if (!other.catanMapContainer_.isEmpty()) {
+            if (catanMapContainer_.isEmpty()) {
+              catanMapContainer_ = other.catanMapContainer_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureSampleContainerIsMutable();
-              sampleContainer_.addAll(other.sampleContainer_);
+              ensureCatanMapContainerIsMutable();
+              catanMapContainer_.addAll(other.catanMapContainer_);
             }
             onChanged();
           }
         } else {
-          if (!other.sampleContainer_.isEmpty()) {
-            if (sampleContainerBuilder_.isEmpty()) {
-              sampleContainerBuilder_.dispose();
-              sampleContainerBuilder_ = null;
-              sampleContainer_ = other.sampleContainer_;
+          if (!other.catanMapContainer_.isEmpty()) {
+            if (catanMapContainerBuilder_.isEmpty()) {
+              catanMapContainerBuilder_.dispose();
+              catanMapContainerBuilder_ = null;
+              catanMapContainer_ = other.catanMapContainer_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              sampleContainerBuilder_ = 
+              catanMapContainerBuilder_ = 
                 com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getSampleContainerFieldBuilder() : null;
+                   getCatanMapContainerFieldBuilder() : null;
             } else {
-              sampleContainerBuilder_.addAllMessages(other.sampleContainer_);
+              catanMapContainerBuilder_.addAllMessages(other.catanMapContainer_);
             }
           }
         }
@@ -465,8 +465,8 @@ public final class Config {
       }
 
       public final boolean isInitialized() {
-        for (int i = 0; i < getSampleContainerCount(); i++) {
-          if (!getSampleContainer(i).isInitialized()) {
+        for (int i = 0; i < getCatanMapContainerCount(); i++) {
+          if (!getCatanMapContainer(i).isInitialized()) {
             
             return false;
           }
@@ -493,316 +493,316 @@ public final class Config {
       }
       private int bitField0_;
 
-      private java.util.List<org.shell.mmo.sample.config.proto.Config.Csample> sampleContainer_ =
+      private java.util.List<org.shell.mmo.sample.config.proto.Config.CcatanMap> catanMapContainer_ =
         java.util.Collections.emptyList();
-      private void ensureSampleContainerIsMutable() {
+      private void ensureCatanMapContainerIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          sampleContainer_ = new java.util.ArrayList<org.shell.mmo.sample.config.proto.Config.Csample>(sampleContainer_);
+          catanMapContainer_ = new java.util.ArrayList<org.shell.mmo.sample.config.proto.Config.CcatanMap>(catanMapContainer_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          org.shell.mmo.sample.config.proto.Config.Csample, org.shell.mmo.sample.config.proto.Config.Csample.Builder, org.shell.mmo.sample.config.proto.Config.CsampleOrBuilder> sampleContainerBuilder_;
+          org.shell.mmo.sample.config.proto.Config.CcatanMap, org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder, org.shell.mmo.sample.config.proto.Config.CcatanMapOrBuilder> catanMapContainerBuilder_;
 
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public java.util.List<org.shell.mmo.sample.config.proto.Config.Csample> getSampleContainerList() {
-        if (sampleContainerBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(sampleContainer_);
+      public java.util.List<org.shell.mmo.sample.config.proto.Config.CcatanMap> getCatanMapContainerList() {
+        if (catanMapContainerBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(catanMapContainer_);
         } else {
-          return sampleContainerBuilder_.getMessageList();
+          return catanMapContainerBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public int getSampleContainerCount() {
-        if (sampleContainerBuilder_ == null) {
-          return sampleContainer_.size();
+      public int getCatanMapContainerCount() {
+        if (catanMapContainerBuilder_ == null) {
+          return catanMapContainer_.size();
         } else {
-          return sampleContainerBuilder_.getCount();
+          return catanMapContainerBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.Csample getSampleContainer(int index) {
-        if (sampleContainerBuilder_ == null) {
-          return sampleContainer_.get(index);
+      public org.shell.mmo.sample.config.proto.Config.CcatanMap getCatanMapContainer(int index) {
+        if (catanMapContainerBuilder_ == null) {
+          return catanMapContainer_.get(index);
         } else {
-          return sampleContainerBuilder_.getMessage(index);
+          return catanMapContainerBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public Builder setSampleContainer(
-          int index, org.shell.mmo.sample.config.proto.Config.Csample value) {
-        if (sampleContainerBuilder_ == null) {
+      public Builder setCatanMapContainer(
+          int index, org.shell.mmo.sample.config.proto.Config.CcatanMap value) {
+        if (catanMapContainerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureSampleContainerIsMutable();
-          sampleContainer_.set(index, value);
+          ensureCatanMapContainerIsMutable();
+          catanMapContainer_.set(index, value);
           onChanged();
         } else {
-          sampleContainerBuilder_.setMessage(index, value);
+          catanMapContainerBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public Builder setSampleContainer(
-          int index, org.shell.mmo.sample.config.proto.Config.Csample.Builder builderForValue) {
-        if (sampleContainerBuilder_ == null) {
-          ensureSampleContainerIsMutable();
-          sampleContainer_.set(index, builderForValue.build());
+      public Builder setCatanMapContainer(
+          int index, org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder builderForValue) {
+        if (catanMapContainerBuilder_ == null) {
+          ensureCatanMapContainerIsMutable();
+          catanMapContainer_.set(index, builderForValue.build());
           onChanged();
         } else {
-          sampleContainerBuilder_.setMessage(index, builderForValue.build());
+          catanMapContainerBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public Builder addSampleContainer(org.shell.mmo.sample.config.proto.Config.Csample value) {
-        if (sampleContainerBuilder_ == null) {
+      public Builder addCatanMapContainer(org.shell.mmo.sample.config.proto.Config.CcatanMap value) {
+        if (catanMapContainerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureSampleContainerIsMutable();
-          sampleContainer_.add(value);
+          ensureCatanMapContainerIsMutable();
+          catanMapContainer_.add(value);
           onChanged();
         } else {
-          sampleContainerBuilder_.addMessage(value);
+          catanMapContainerBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public Builder addSampleContainer(
-          int index, org.shell.mmo.sample.config.proto.Config.Csample value) {
-        if (sampleContainerBuilder_ == null) {
+      public Builder addCatanMapContainer(
+          int index, org.shell.mmo.sample.config.proto.Config.CcatanMap value) {
+        if (catanMapContainerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureSampleContainerIsMutable();
-          sampleContainer_.add(index, value);
+          ensureCatanMapContainerIsMutable();
+          catanMapContainer_.add(index, value);
           onChanged();
         } else {
-          sampleContainerBuilder_.addMessage(index, value);
+          catanMapContainerBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public Builder addSampleContainer(
-          org.shell.mmo.sample.config.proto.Config.Csample.Builder builderForValue) {
-        if (sampleContainerBuilder_ == null) {
-          ensureSampleContainerIsMutable();
-          sampleContainer_.add(builderForValue.build());
+      public Builder addCatanMapContainer(
+          org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder builderForValue) {
+        if (catanMapContainerBuilder_ == null) {
+          ensureCatanMapContainerIsMutable();
+          catanMapContainer_.add(builderForValue.build());
           onChanged();
         } else {
-          sampleContainerBuilder_.addMessage(builderForValue.build());
+          catanMapContainerBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public Builder addSampleContainer(
-          int index, org.shell.mmo.sample.config.proto.Config.Csample.Builder builderForValue) {
-        if (sampleContainerBuilder_ == null) {
-          ensureSampleContainerIsMutable();
-          sampleContainer_.add(index, builderForValue.build());
+      public Builder addCatanMapContainer(
+          int index, org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder builderForValue) {
+        if (catanMapContainerBuilder_ == null) {
+          ensureCatanMapContainerIsMutable();
+          catanMapContainer_.add(index, builderForValue.build());
           onChanged();
         } else {
-          sampleContainerBuilder_.addMessage(index, builderForValue.build());
+          catanMapContainerBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public Builder addAllSampleContainer(
-          java.lang.Iterable<? extends org.shell.mmo.sample.config.proto.Config.Csample> values) {
-        if (sampleContainerBuilder_ == null) {
-          ensureSampleContainerIsMutable();
+      public Builder addAllCatanMapContainer(
+          java.lang.Iterable<? extends org.shell.mmo.sample.config.proto.Config.CcatanMap> values) {
+        if (catanMapContainerBuilder_ == null) {
+          ensureCatanMapContainerIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, sampleContainer_);
+              values, catanMapContainer_);
           onChanged();
         } else {
-          sampleContainerBuilder_.addAllMessages(values);
+          catanMapContainerBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public Builder clearSampleContainer() {
-        if (sampleContainerBuilder_ == null) {
-          sampleContainer_ = java.util.Collections.emptyList();
+      public Builder clearCatanMapContainer() {
+        if (catanMapContainerBuilder_ == null) {
+          catanMapContainer_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          sampleContainerBuilder_.clear();
+          catanMapContainerBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public Builder removeSampleContainer(int index) {
-        if (sampleContainerBuilder_ == null) {
-          ensureSampleContainerIsMutable();
-          sampleContainer_.remove(index);
+      public Builder removeCatanMapContainer(int index) {
+        if (catanMapContainerBuilder_ == null) {
+          ensureCatanMapContainerIsMutable();
+          catanMapContainer_.remove(index);
           onChanged();
         } else {
-          sampleContainerBuilder_.remove(index);
+          catanMapContainerBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.Csample.Builder getSampleContainerBuilder(
+      public org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder getCatanMapContainerBuilder(
           int index) {
-        return getSampleContainerFieldBuilder().getBuilder(index);
+        return getCatanMapContainerFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.CsampleOrBuilder getSampleContainerOrBuilder(
+      public org.shell.mmo.sample.config.proto.Config.CcatanMapOrBuilder getCatanMapContainerOrBuilder(
           int index) {
-        if (sampleContainerBuilder_ == null) {
-          return sampleContainer_.get(index);  } else {
-          return sampleContainerBuilder_.getMessageOrBuilder(index);
+        if (catanMapContainerBuilder_ == null) {
+          return catanMapContainer_.get(index);  } else {
+          return catanMapContainerBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public java.util.List<? extends org.shell.mmo.sample.config.proto.Config.CsampleOrBuilder> 
-           getSampleContainerOrBuilderList() {
-        if (sampleContainerBuilder_ != null) {
-          return sampleContainerBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends org.shell.mmo.sample.config.proto.Config.CcatanMapOrBuilder> 
+           getCatanMapContainerOrBuilderList() {
+        if (catanMapContainerBuilder_ != null) {
+          return catanMapContainerBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(sampleContainer_);
+          return java.util.Collections.unmodifiableList(catanMapContainer_);
         }
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.Csample.Builder addSampleContainerBuilder() {
-        return getSampleContainerFieldBuilder().addBuilder(
-            org.shell.mmo.sample.config.proto.Config.Csample.getDefaultInstance());
+      public org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder addCatanMapContainerBuilder() {
+        return getCatanMapContainerFieldBuilder().addBuilder(
+            org.shell.mmo.sample.config.proto.Config.CcatanMap.getDefaultInstance());
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.Csample.Builder addSampleContainerBuilder(
+      public org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder addCatanMapContainerBuilder(
           int index) {
-        return getSampleContainerFieldBuilder().addBuilder(
-            index, org.shell.mmo.sample.config.proto.Config.Csample.getDefaultInstance());
+        return getCatanMapContainerFieldBuilder().addBuilder(
+            index, org.shell.mmo.sample.config.proto.Config.CcatanMap.getDefaultInstance());
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Csample sampleContainer = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.CcatanMap catanMapContainer = 1;</code>
        *
        * <pre>
-       * 示例配置文件
+       * 卡坦岛地图
        * </pre>
        */
-      public java.util.List<org.shell.mmo.sample.config.proto.Config.Csample.Builder> 
-           getSampleContainerBuilderList() {
-        return getSampleContainerFieldBuilder().getBuilderList();
+      public java.util.List<org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder> 
+           getCatanMapContainerBuilderList() {
+        return getCatanMapContainerFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          org.shell.mmo.sample.config.proto.Config.Csample, org.shell.mmo.sample.config.proto.Config.Csample.Builder, org.shell.mmo.sample.config.proto.Config.CsampleOrBuilder> 
-          getSampleContainerFieldBuilder() {
-        if (sampleContainerBuilder_ == null) {
-          sampleContainerBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              org.shell.mmo.sample.config.proto.Config.Csample, org.shell.mmo.sample.config.proto.Config.Csample.Builder, org.shell.mmo.sample.config.proto.Config.CsampleOrBuilder>(
-                  sampleContainer_,
+          org.shell.mmo.sample.config.proto.Config.CcatanMap, org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder, org.shell.mmo.sample.config.proto.Config.CcatanMapOrBuilder> 
+          getCatanMapContainerFieldBuilder() {
+        if (catanMapContainerBuilder_ == null) {
+          catanMapContainerBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              org.shell.mmo.sample.config.proto.Config.CcatanMap, org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder, org.shell.mmo.sample.config.proto.Config.CcatanMapOrBuilder>(
+                  catanMapContainer_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
                   isClean());
-          sampleContainer_ = null;
+          catanMapContainer_ = null;
         }
-        return sampleContainerBuilder_;
+        return catanMapContainerBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.config.proto.ContainerGroup)
@@ -816,15 +816,15 @@ public final class Config {
     // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.config.proto.ContainerGroup)
   }
 
-  public interface CsampleOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.config.proto.Csample)
+  public interface CcatanMapOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.config.proto.CcatanMap)
       com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>required int32 id = 1;</code>
      *
      * <pre>
-     * 唯一id,名字可变更,第一列必须保证唯一
+     * 地图id
      * </pre>
      */
     boolean hasId();
@@ -832,7 +832,7 @@ public final class Config {
      * <code>required int32 id = 1;</code>
      *
      * <pre>
-     * 唯一id,名字可变更,第一列必须保证唯一
+     * 地图id
      * </pre>
      */
     int getId();
@@ -841,7 +841,7 @@ public final class Config {
      * <code>required string name = 2;</code>
      *
      * <pre>
-     * 字符串示例
+     * 地图名称
      * </pre>
      */
     boolean hasName();
@@ -849,7 +849,7 @@ public final class Config {
      * <code>required string name = 2;</code>
      *
      * <pre>
-     * 字符串示例
+     * 地图名称
      * </pre>
      */
     java.lang.String getName();
@@ -857,149 +857,326 @@ public final class Config {
      * <code>required string name = 2;</code>
      *
      * <pre>
-     * 字符串示例
+     * 地图名称
      * </pre>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
-     * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
+     * <code>required int32 min = 3;</code>
      *
      * <pre>
-     * 单个引用数据示例
+     * 最小参与人数
      * </pre>
      */
-    boolean hasData();
+    boolean hasMin();
     /**
-     * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
+     * <code>required int32 min = 3;</code>
      *
      * <pre>
-     * 单个引用数据示例
+     * 最小参与人数
      * </pre>
      */
-    org.shell.mmo.sample.config.proto.Config.Ddata getData();
-    /**
-     * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
-     *
-     * <pre>
-     * 单个引用数据示例
-     * </pre>
-     */
-    org.shell.mmo.sample.config.proto.Config.DdataOrBuilder getDataOrBuilder();
+    int getMin();
 
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
+     * <code>required int32 max = 4;</code>
      *
      * <pre>
-     * 列表示例
+     * 最大参与人数
      * </pre>
      */
-    java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata> 
-        getListList();
+    boolean hasMax();
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
+     * <code>required int32 max = 4;</code>
      *
      * <pre>
-     * 列表示例
+     * 最大参与人数
      * </pre>
      */
-    org.shell.mmo.sample.config.proto.Config.Ddata getList(int index);
+    int getMax();
+
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
      *
      * <pre>
-     * 列表示例
+     * 格子列表
      * </pre>
      */
-    int getListCount();
+    java.util.List<org.shell.mmo.sample.config.proto.Config.DcatanGrid> 
+        getGridList();
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
      *
      * <pre>
-     * 列表示例
+     * 格子列表
      * </pre>
      */
-    java.util.List<? extends org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> 
-        getListOrBuilderList();
+    org.shell.mmo.sample.config.proto.Config.DcatanGrid getGrid(int index);
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
      *
      * <pre>
-     * 列表示例
+     * 格子列表
      * </pre>
      */
-    org.shell.mmo.sample.config.proto.Config.DdataOrBuilder getListOrBuilder(
+    int getGridCount();
+    /**
+     * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
+     *
+     * <pre>
+     * 格子列表
+     * </pre>
+     */
+    java.util.List<? extends org.shell.mmo.sample.config.proto.Config.DcatanGridOrBuilder> 
+        getGridOrBuilderList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
+     *
+     * <pre>
+     * 格子列表
+     * </pre>
+     */
+    org.shell.mmo.sample.config.proto.Config.DcatanGridOrBuilder getGridOrBuilder(
         int index);
 
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+     * <code>repeated int32 number = 6;</code>
      *
      * <pre>
-     * map示例
+     * 数字列表
      * </pre>
      */
-    java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata> 
-        getMapList();
+    java.util.List<java.lang.Integer> getNumberList();
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+     * <code>repeated int32 number = 6;</code>
      *
      * <pre>
-     * map示例
+     * 数字列表
      * </pre>
      */
-    org.shell.mmo.sample.config.proto.Config.Ddata getMap(int index);
+    int getNumberCount();
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+     * <code>repeated int32 number = 6;</code>
      *
      * <pre>
-     * map示例
+     * 数字列表
      * </pre>
      */
-    int getMapCount();
+    int getNumber(int index);
+
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+     * <code>required int32 brick = 7;</code>
      *
      * <pre>
-     * map示例
+     * 砖头格子数量
      * </pre>
      */
-    java.util.List<? extends org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> 
-        getMapOrBuilderList();
+    boolean hasBrick();
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+     * <code>required int32 brick = 7;</code>
      *
      * <pre>
-     * map示例
+     * 砖头格子数量
      * </pre>
      */
-    org.shell.mmo.sample.config.proto.Config.DdataOrBuilder getMapOrBuilder(
-        int index);
+    int getBrick();
+
+    /**
+     * <code>required int32 lumber = 8;</code>
+     *
+     * <pre>
+     * 木材格子数量
+     * </pre>
+     */
+    boolean hasLumber();
+    /**
+     * <code>required int32 lumber = 8;</code>
+     *
+     * <pre>
+     * 木材格子数量
+     * </pre>
+     */
+    int getLumber();
+
+    /**
+     * <code>required int32 wool = 9;</code>
+     *
+     * <pre>
+     * 羊毛格子数量
+     * </pre>
+     */
+    boolean hasWool();
+    /**
+     * <code>required int32 wool = 9;</code>
+     *
+     * <pre>
+     * 羊毛格子数量
+     * </pre>
+     */
+    int getWool();
+
+    /**
+     * <code>required int32 gain = 10;</code>
+     *
+     * <pre>
+     * 小麦格子数量
+     * </pre>
+     */
+    boolean hasGain();
+    /**
+     * <code>required int32 gain = 10;</code>
+     *
+     * <pre>
+     * 小麦格子数量
+     * </pre>
+     */
+    int getGain();
+
+    /**
+     * <code>required int32 ore = 11;</code>
+     *
+     * <pre>
+     * 煤矿格子数量
+     * </pre>
+     */
+    boolean hasOre();
+    /**
+     * <code>required int32 ore = 11;</code>
+     *
+     * <pre>
+     * 煤矿格子数量
+     * </pre>
+     */
+    int getOre();
+
+    /**
+     * <code>required int32 brickPort = 12;</code>
+     *
+     * <pre>
+     * 砖头港口数量
+     * </pre>
+     */
+    boolean hasBrickPort();
+    /**
+     * <code>required int32 brickPort = 12;</code>
+     *
+     * <pre>
+     * 砖头港口数量
+     * </pre>
+     */
+    int getBrickPort();
+
+    /**
+     * <code>required int32 lumberPort = 13;</code>
+     *
+     * <pre>
+     * 木材港口数量
+     * </pre>
+     */
+    boolean hasLumberPort();
+    /**
+     * <code>required int32 lumberPort = 13;</code>
+     *
+     * <pre>
+     * 木材港口数量
+     * </pre>
+     */
+    int getLumberPort();
+
+    /**
+     * <code>required int32 woolPort = 14;</code>
+     *
+     * <pre>
+     * 羊毛港口数量
+     * </pre>
+     */
+    boolean hasWoolPort();
+    /**
+     * <code>required int32 woolPort = 14;</code>
+     *
+     * <pre>
+     * 羊毛港口数量
+     * </pre>
+     */
+    int getWoolPort();
+
+    /**
+     * <code>required int32 gainPort = 15;</code>
+     *
+     * <pre>
+     * 小麦港口数量
+     * </pre>
+     */
+    boolean hasGainPort();
+    /**
+     * <code>required int32 gainPort = 15;</code>
+     *
+     * <pre>
+     * 小麦港口数量
+     * </pre>
+     */
+    int getGainPort();
+
+    /**
+     * <code>required int32 orePort = 16;</code>
+     *
+     * <pre>
+     * 煤矿港口数量
+     * </pre>
+     */
+    boolean hasOrePort();
+    /**
+     * <code>required int32 orePort = 16;</code>
+     *
+     * <pre>
+     * 煤矿港口数量
+     * </pre>
+     */
+    int getOrePort();
+
+    /**
+     * <code>required int32 bankPort = 17;</code>
+     *
+     * <pre>
+     * 3比1港口
+     * </pre>
+     */
+    boolean hasBankPort();
+    /**
+     * <code>required int32 bankPort = 17;</code>
+     *
+     * <pre>
+     * 3比1港口
+     * </pre>
+     */
+    int getBankPort();
   }
   /**
-   * Protobuf type {@code org.shell.mmo.sample.config.proto.Csample}
+   * Protobuf type {@code org.shell.mmo.sample.config.proto.CcatanMap}
    *
    * <pre>
-   * 示例配置文件
+   * 卡坦岛地图
    * </pre>
    */
-  public static final class Csample extends
+  public static final class CcatanMap extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.config.proto.Csample)
-      CsampleOrBuilder {
-    // Use Csample.newBuilder() to construct.
-    private Csample(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.config.proto.CcatanMap)
+      CcatanMapOrBuilder {
+    // Use CcatanMap.newBuilder() to construct.
+    private CcatanMap(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private Csample(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private CcatanMap(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final Csample defaultInstance;
-    public static Csample getDefaultInstance() {
+    private static final CcatanMap defaultInstance;
+    public static CcatanMap getDefaultInstance() {
       return defaultInstance;
     }
 
-    public Csample getDefaultInstanceForType() {
+    public CcatanMap getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -1009,7 +1186,7 @@ public final class Config {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private Csample(
+    private CcatanMap(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1043,33 +1220,98 @@ public final class Config {
               name_ = bs;
               break;
             }
-            case 26: {
-              org.shell.mmo.sample.config.proto.Config.Ddata.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000004) == 0x00000004)) {
-                subBuilder = data_.toBuilder();
-              }
-              data_ = input.readMessage(org.shell.mmo.sample.config.proto.Config.Ddata.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(data_);
-                data_ = subBuilder.buildPartial();
-              }
+            case 24: {
               bitField0_ |= 0x00000004;
+              min_ = input.readInt32();
               break;
             }
-            case 34: {
-              if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
-                list_ = new java.util.ArrayList<org.shell.mmo.sample.config.proto.Config.Ddata>();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              list_.add(input.readMessage(org.shell.mmo.sample.config.proto.Config.Ddata.PARSER, extensionRegistry));
+            case 32: {
+              bitField0_ |= 0x00000008;
+              max_ = input.readInt32();
               break;
             }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
-                map_ = new java.util.ArrayList<org.shell.mmo.sample.config.proto.Config.Ddata>();
+                grid_ = new java.util.ArrayList<org.shell.mmo.sample.config.proto.Config.DcatanGrid>();
                 mutable_bitField0_ |= 0x00000010;
               }
-              map_.add(input.readMessage(org.shell.mmo.sample.config.proto.Config.Ddata.PARSER, extensionRegistry));
+              grid_.add(input.readMessage(org.shell.mmo.sample.config.proto.Config.DcatanGrid.PARSER, extensionRegistry));
+              break;
+            }
+            case 48: {
+              if (!((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
+                number_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000020;
+              }
+              number_.add(input.readInt32());
+              break;
+            }
+            case 50: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000020) == 0x00000020) && input.getBytesUntilLimit() > 0) {
+                number_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000020;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                number_.add(input.readInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 56: {
+              bitField0_ |= 0x00000010;
+              brick_ = input.readInt32();
+              break;
+            }
+            case 64: {
+              bitField0_ |= 0x00000020;
+              lumber_ = input.readInt32();
+              break;
+            }
+            case 72: {
+              bitField0_ |= 0x00000040;
+              wool_ = input.readInt32();
+              break;
+            }
+            case 80: {
+              bitField0_ |= 0x00000080;
+              gain_ = input.readInt32();
+              break;
+            }
+            case 88: {
+              bitField0_ |= 0x00000100;
+              ore_ = input.readInt32();
+              break;
+            }
+            case 96: {
+              bitField0_ |= 0x00000200;
+              brickPort_ = input.readInt32();
+              break;
+            }
+            case 104: {
+              bitField0_ |= 0x00000400;
+              lumberPort_ = input.readInt32();
+              break;
+            }
+            case 112: {
+              bitField0_ |= 0x00000800;
+              woolPort_ = input.readInt32();
+              break;
+            }
+            case 120: {
+              bitField0_ |= 0x00001000;
+              gainPort_ = input.readInt32();
+              break;
+            }
+            case 128: {
+              bitField0_ |= 0x00002000;
+              orePort_ = input.readInt32();
+              break;
+            }
+            case 136: {
+              bitField0_ |= 0x00004000;
+              bankPort_ = input.readInt32();
               break;
             }
           }
@@ -1080,11 +1322,11 @@ public final class Config {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
-          list_ = java.util.Collections.unmodifiableList(list_);
-        }
         if (((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
-          map_ = java.util.Collections.unmodifiableList(map_);
+          grid_ = java.util.Collections.unmodifiableList(grid_);
+        }
+        if (((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
+          number_ = java.util.Collections.unmodifiableList(number_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -1092,28 +1334,28 @@ public final class Config {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_Csample_descriptor;
+      return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_CcatanMap_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_Csample_fieldAccessorTable
+      return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_CcatanMap_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.shell.mmo.sample.config.proto.Config.Csample.class, org.shell.mmo.sample.config.proto.Config.Csample.Builder.class);
+              org.shell.mmo.sample.config.proto.Config.CcatanMap.class, org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<Csample> PARSER =
-        new com.google.protobuf.AbstractParser<Csample>() {
-      public Csample parsePartialFrom(
+    public static com.google.protobuf.Parser<CcatanMap> PARSER =
+        new com.google.protobuf.AbstractParser<CcatanMap>() {
+      public CcatanMap parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Csample(input, extensionRegistry);
+        return new CcatanMap(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Csample> getParserForType() {
+    public com.google.protobuf.Parser<CcatanMap> getParserForType() {
       return PARSER;
     }
 
@@ -1124,7 +1366,7 @@ public final class Config {
      * <code>required int32 id = 1;</code>
      *
      * <pre>
-     * 唯一id,名字可变更,第一列必须保证唯一
+     * 地图id
      * </pre>
      */
     public boolean hasId() {
@@ -1134,7 +1376,7 @@ public final class Config {
      * <code>required int32 id = 1;</code>
      *
      * <pre>
-     * 唯一id,名字可变更,第一列必须保证唯一
+     * 地图id
      * </pre>
      */
     public int getId() {
@@ -1147,7 +1389,7 @@ public final class Config {
      * <code>required string name = 2;</code>
      *
      * <pre>
-     * 字符串示例
+     * 地图名称
      * </pre>
      */
     public boolean hasName() {
@@ -1157,7 +1399,7 @@ public final class Config {
      * <code>required string name = 2;</code>
      *
      * <pre>
-     * 字符串示例
+     * 地图名称
      * </pre>
      */
     public java.lang.String getName() {
@@ -1178,7 +1420,7 @@ public final class Config {
      * <code>required string name = 2;</code>
      *
      * <pre>
-     * 字符串示例
+     * 地图名称
      * </pre>
      */
     public com.google.protobuf.ByteString
@@ -1195,155 +1437,412 @@ public final class Config {
       }
     }
 
-    public static final int DATA_FIELD_NUMBER = 3;
-    private org.shell.mmo.sample.config.proto.Config.Ddata data_;
+    public static final int MIN_FIELD_NUMBER = 3;
+    private int min_;
     /**
-     * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
+     * <code>required int32 min = 3;</code>
      *
      * <pre>
-     * 单个引用数据示例
+     * 最小参与人数
      * </pre>
      */
-    public boolean hasData() {
+    public boolean hasMin() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
+     * <code>required int32 min = 3;</code>
      *
      * <pre>
-     * 单个引用数据示例
+     * 最小参与人数
      * </pre>
      */
-    public org.shell.mmo.sample.config.proto.Config.Ddata getData() {
-      return data_;
-    }
-    /**
-     * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
-     *
-     * <pre>
-     * 单个引用数据示例
-     * </pre>
-     */
-    public org.shell.mmo.sample.config.proto.Config.DdataOrBuilder getDataOrBuilder() {
-      return data_;
+    public int getMin() {
+      return min_;
     }
 
-    public static final int LIST_FIELD_NUMBER = 4;
-    private java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata> list_;
+    public static final int MAX_FIELD_NUMBER = 4;
+    private int max_;
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
+     * <code>required int32 max = 4;</code>
      *
      * <pre>
-     * 列表示例
+     * 最大参与人数
      * </pre>
      */
-    public java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata> getListList() {
-      return list_;
+    public boolean hasMax() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
+     * <code>required int32 max = 4;</code>
      *
      * <pre>
-     * 列表示例
+     * 最大参与人数
      * </pre>
      */
-    public java.util.List<? extends org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> 
-        getListOrBuilderList() {
-      return list_;
-    }
-    /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-     *
-     * <pre>
-     * 列表示例
-     * </pre>
-     */
-    public int getListCount() {
-      return list_.size();
-    }
-    /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-     *
-     * <pre>
-     * 列表示例
-     * </pre>
-     */
-    public org.shell.mmo.sample.config.proto.Config.Ddata getList(int index) {
-      return list_.get(index);
-    }
-    /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-     *
-     * <pre>
-     * 列表示例
-     * </pre>
-     */
-    public org.shell.mmo.sample.config.proto.Config.DdataOrBuilder getListOrBuilder(
-        int index) {
-      return list_.get(index);
+    public int getMax() {
+      return max_;
     }
 
-    public static final int MAP_FIELD_NUMBER = 5;
-    private java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata> map_;
+    public static final int GRID_FIELD_NUMBER = 5;
+    private java.util.List<org.shell.mmo.sample.config.proto.Config.DcatanGrid> grid_;
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
      *
      * <pre>
-     * map示例
+     * 格子列表
      * </pre>
      */
-    public java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata> getMapList() {
-      return map_;
+    public java.util.List<org.shell.mmo.sample.config.proto.Config.DcatanGrid> getGridList() {
+      return grid_;
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
      *
      * <pre>
-     * map示例
+     * 格子列表
      * </pre>
      */
-    public java.util.List<? extends org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> 
-        getMapOrBuilderList() {
-      return map_;
+    public java.util.List<? extends org.shell.mmo.sample.config.proto.Config.DcatanGridOrBuilder> 
+        getGridOrBuilderList() {
+      return grid_;
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
      *
      * <pre>
-     * map示例
+     * 格子列表
      * </pre>
      */
-    public int getMapCount() {
-      return map_.size();
+    public int getGridCount() {
+      return grid_.size();
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
      *
      * <pre>
-     * map示例
+     * 格子列表
      * </pre>
      */
-    public org.shell.mmo.sample.config.proto.Config.Ddata getMap(int index) {
-      return map_.get(index);
+    public org.shell.mmo.sample.config.proto.Config.DcatanGrid getGrid(int index) {
+      return grid_.get(index);
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+     * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
      *
      * <pre>
-     * map示例
+     * 格子列表
      * </pre>
      */
-    public org.shell.mmo.sample.config.proto.Config.DdataOrBuilder getMapOrBuilder(
+    public org.shell.mmo.sample.config.proto.Config.DcatanGridOrBuilder getGridOrBuilder(
         int index) {
-      return map_.get(index);
+      return grid_.get(index);
+    }
+
+    public static final int NUMBER_FIELD_NUMBER = 6;
+    private java.util.List<java.lang.Integer> number_;
+    /**
+     * <code>repeated int32 number = 6;</code>
+     *
+     * <pre>
+     * 数字列表
+     * </pre>
+     */
+    public java.util.List<java.lang.Integer>
+        getNumberList() {
+      return number_;
+    }
+    /**
+     * <code>repeated int32 number = 6;</code>
+     *
+     * <pre>
+     * 数字列表
+     * </pre>
+     */
+    public int getNumberCount() {
+      return number_.size();
+    }
+    /**
+     * <code>repeated int32 number = 6;</code>
+     *
+     * <pre>
+     * 数字列表
+     * </pre>
+     */
+    public int getNumber(int index) {
+      return number_.get(index);
+    }
+
+    public static final int BRICK_FIELD_NUMBER = 7;
+    private int brick_;
+    /**
+     * <code>required int32 brick = 7;</code>
+     *
+     * <pre>
+     * 砖头格子数量
+     * </pre>
+     */
+    public boolean hasBrick() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>required int32 brick = 7;</code>
+     *
+     * <pre>
+     * 砖头格子数量
+     * </pre>
+     */
+    public int getBrick() {
+      return brick_;
+    }
+
+    public static final int LUMBER_FIELD_NUMBER = 8;
+    private int lumber_;
+    /**
+     * <code>required int32 lumber = 8;</code>
+     *
+     * <pre>
+     * 木材格子数量
+     * </pre>
+     */
+    public boolean hasLumber() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>required int32 lumber = 8;</code>
+     *
+     * <pre>
+     * 木材格子数量
+     * </pre>
+     */
+    public int getLumber() {
+      return lumber_;
+    }
+
+    public static final int WOOL_FIELD_NUMBER = 9;
+    private int wool_;
+    /**
+     * <code>required int32 wool = 9;</code>
+     *
+     * <pre>
+     * 羊毛格子数量
+     * </pre>
+     */
+    public boolean hasWool() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>required int32 wool = 9;</code>
+     *
+     * <pre>
+     * 羊毛格子数量
+     * </pre>
+     */
+    public int getWool() {
+      return wool_;
+    }
+
+    public static final int GAIN_FIELD_NUMBER = 10;
+    private int gain_;
+    /**
+     * <code>required int32 gain = 10;</code>
+     *
+     * <pre>
+     * 小麦格子数量
+     * </pre>
+     */
+    public boolean hasGain() {
+      return ((bitField0_ & 0x00000080) == 0x00000080);
+    }
+    /**
+     * <code>required int32 gain = 10;</code>
+     *
+     * <pre>
+     * 小麦格子数量
+     * </pre>
+     */
+    public int getGain() {
+      return gain_;
+    }
+
+    public static final int ORE_FIELD_NUMBER = 11;
+    private int ore_;
+    /**
+     * <code>required int32 ore = 11;</code>
+     *
+     * <pre>
+     * 煤矿格子数量
+     * </pre>
+     */
+    public boolean hasOre() {
+      return ((bitField0_ & 0x00000100) == 0x00000100);
+    }
+    /**
+     * <code>required int32 ore = 11;</code>
+     *
+     * <pre>
+     * 煤矿格子数量
+     * </pre>
+     */
+    public int getOre() {
+      return ore_;
+    }
+
+    public static final int BRICKPORT_FIELD_NUMBER = 12;
+    private int brickPort_;
+    /**
+     * <code>required int32 brickPort = 12;</code>
+     *
+     * <pre>
+     * 砖头港口数量
+     * </pre>
+     */
+    public boolean hasBrickPort() {
+      return ((bitField0_ & 0x00000200) == 0x00000200);
+    }
+    /**
+     * <code>required int32 brickPort = 12;</code>
+     *
+     * <pre>
+     * 砖头港口数量
+     * </pre>
+     */
+    public int getBrickPort() {
+      return brickPort_;
+    }
+
+    public static final int LUMBERPORT_FIELD_NUMBER = 13;
+    private int lumberPort_;
+    /**
+     * <code>required int32 lumberPort = 13;</code>
+     *
+     * <pre>
+     * 木材港口数量
+     * </pre>
+     */
+    public boolean hasLumberPort() {
+      return ((bitField0_ & 0x00000400) == 0x00000400);
+    }
+    /**
+     * <code>required int32 lumberPort = 13;</code>
+     *
+     * <pre>
+     * 木材港口数量
+     * </pre>
+     */
+    public int getLumberPort() {
+      return lumberPort_;
+    }
+
+    public static final int WOOLPORT_FIELD_NUMBER = 14;
+    private int woolPort_;
+    /**
+     * <code>required int32 woolPort = 14;</code>
+     *
+     * <pre>
+     * 羊毛港口数量
+     * </pre>
+     */
+    public boolean hasWoolPort() {
+      return ((bitField0_ & 0x00000800) == 0x00000800);
+    }
+    /**
+     * <code>required int32 woolPort = 14;</code>
+     *
+     * <pre>
+     * 羊毛港口数量
+     * </pre>
+     */
+    public int getWoolPort() {
+      return woolPort_;
+    }
+
+    public static final int GAINPORT_FIELD_NUMBER = 15;
+    private int gainPort_;
+    /**
+     * <code>required int32 gainPort = 15;</code>
+     *
+     * <pre>
+     * 小麦港口数量
+     * </pre>
+     */
+    public boolean hasGainPort() {
+      return ((bitField0_ & 0x00001000) == 0x00001000);
+    }
+    /**
+     * <code>required int32 gainPort = 15;</code>
+     *
+     * <pre>
+     * 小麦港口数量
+     * </pre>
+     */
+    public int getGainPort() {
+      return gainPort_;
+    }
+
+    public static final int OREPORT_FIELD_NUMBER = 16;
+    private int orePort_;
+    /**
+     * <code>required int32 orePort = 16;</code>
+     *
+     * <pre>
+     * 煤矿港口数量
+     * </pre>
+     */
+    public boolean hasOrePort() {
+      return ((bitField0_ & 0x00002000) == 0x00002000);
+    }
+    /**
+     * <code>required int32 orePort = 16;</code>
+     *
+     * <pre>
+     * 煤矿港口数量
+     * </pre>
+     */
+    public int getOrePort() {
+      return orePort_;
+    }
+
+    public static final int BANKPORT_FIELD_NUMBER = 17;
+    private int bankPort_;
+    /**
+     * <code>required int32 bankPort = 17;</code>
+     *
+     * <pre>
+     * 3比1港口
+     * </pre>
+     */
+    public boolean hasBankPort() {
+      return ((bitField0_ & 0x00004000) == 0x00004000);
+    }
+    /**
+     * <code>required int32 bankPort = 17;</code>
+     *
+     * <pre>
+     * 3比1港口
+     * </pre>
+     */
+    public int getBankPort() {
+      return bankPort_;
     }
 
     private void initFields() {
       id_ = 0;
       name_ = "";
-      data_ = org.shell.mmo.sample.config.proto.Config.Ddata.getDefaultInstance();
-      list_ = java.util.Collections.emptyList();
-      map_ = java.util.Collections.emptyList();
+      min_ = 0;
+      max_ = 0;
+      grid_ = java.util.Collections.emptyList();
+      number_ = java.util.Collections.emptyList();
+      brick_ = 0;
+      lumber_ = 0;
+      wool_ = 0;
+      gain_ = 0;
+      ore_ = 0;
+      brickPort_ = 0;
+      lumberPort_ = 0;
+      woolPort_ = 0;
+      gainPort_ = 0;
+      orePort_ = 0;
+      bankPort_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -1359,22 +1858,60 @@ public final class Config {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasData()) {
+      if (!hasMin()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!getData().isInitialized()) {
+      if (!hasMax()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      for (int i = 0; i < getListCount(); i++) {
-        if (!getList(i).isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
+      if (!hasBrick()) {
+        memoizedIsInitialized = 0;
+        return false;
       }
-      for (int i = 0; i < getMapCount(); i++) {
-        if (!getMap(i).isInitialized()) {
+      if (!hasLumber()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasWool()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasGain()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasOre()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasBrickPort()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasLumberPort()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasWoolPort()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasGainPort()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasOrePort()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasBankPort()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getGridCount(); i++) {
+        if (!getGrid(i).isInitialized()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -1393,13 +1930,49 @@ public final class Config {
         output.writeBytes(2, getNameBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeMessage(3, data_);
+        output.writeInt32(3, min_);
       }
-      for (int i = 0; i < list_.size(); i++) {
-        output.writeMessage(4, list_.get(i));
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, max_);
       }
-      for (int i = 0; i < map_.size(); i++) {
-        output.writeMessage(5, map_.get(i));
+      for (int i = 0; i < grid_.size(); i++) {
+        output.writeMessage(5, grid_.get(i));
+      }
+      for (int i = 0; i < number_.size(); i++) {
+        output.writeInt32(6, number_.get(i));
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt32(7, brick_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeInt32(8, lumber_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeInt32(9, wool_);
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        output.writeInt32(10, gain_);
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        output.writeInt32(11, ore_);
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        output.writeInt32(12, brickPort_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        output.writeInt32(13, lumberPort_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        output.writeInt32(14, woolPort_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        output.writeInt32(15, gainPort_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        output.writeInt32(16, orePort_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        output.writeInt32(17, bankPort_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -1420,15 +1993,68 @@ public final class Config {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, data_);
+          .computeInt32Size(3, min_);
       }
-      for (int i = 0; i < list_.size(); i++) {
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, list_.get(i));
+          .computeInt32Size(4, max_);
       }
-      for (int i = 0; i < map_.size(); i++) {
+      for (int i = 0; i < grid_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, map_.get(i));
+          .computeMessageSize(5, grid_.get(i));
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < number_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt32SizeNoTag(number_.get(i));
+        }
+        size += dataSize;
+        size += 1 * getNumberList().size();
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, brick_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(8, lumber_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, wool_);
+      }
+      if (((bitField0_ & 0x00000080) == 0x00000080)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(10, gain_);
+      }
+      if (((bitField0_ & 0x00000100) == 0x00000100)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, ore_);
+      }
+      if (((bitField0_ & 0x00000200) == 0x00000200)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, brickPort_);
+      }
+      if (((bitField0_ & 0x00000400) == 0x00000400)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(13, lumberPort_);
+      }
+      if (((bitField0_ & 0x00000800) == 0x00000800)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, woolPort_);
+      }
+      if (((bitField0_ & 0x00001000) == 0x00001000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, gainPort_);
+      }
+      if (((bitField0_ & 0x00002000) == 0x00002000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(16, orePort_);
+      }
+      if (((bitField0_ & 0x00004000) == 0x00004000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(17, bankPort_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1442,53 +2068,53 @@ public final class Config {
       return super.writeReplace();
     }
 
-    public static org.shell.mmo.sample.config.proto.Config.Csample parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.CcatanMap parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Csample parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.CcatanMap parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Csample parseFrom(byte[] data)
+    public static org.shell.mmo.sample.config.proto.Config.CcatanMap parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Csample parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.CcatanMap parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Csample parseFrom(java.io.InputStream input)
+    public static org.shell.mmo.sample.config.proto.Config.CcatanMap parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Csample parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.CcatanMap parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Csample parseDelimitedFrom(java.io.InputStream input)
+    public static org.shell.mmo.sample.config.proto.Config.CcatanMap parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Csample parseDelimitedFrom(
+    public static org.shell.mmo.sample.config.proto.Config.CcatanMap parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Csample parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.CcatanMap parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Csample parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.CcatanMap parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1497,7 +2123,7 @@ public final class Config {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(org.shell.mmo.sample.config.proto.Config.Csample prototype) {
+    public static Builder newBuilder(org.shell.mmo.sample.config.proto.Config.CcatanMap prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -1509,29 +2135,29 @@ public final class Config {
       return builder;
     }
     /**
-     * Protobuf type {@code org.shell.mmo.sample.config.proto.Csample}
+     * Protobuf type {@code org.shell.mmo.sample.config.proto.CcatanMap}
      *
      * <pre>
-     * 示例配置文件
+     * 卡坦岛地图
      * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.config.proto.Csample)
-        org.shell.mmo.sample.config.proto.Config.CsampleOrBuilder {
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.config.proto.CcatanMap)
+        org.shell.mmo.sample.config.proto.Config.CcatanMapOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_Csample_descriptor;
+        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_CcatanMap_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_Csample_fieldAccessorTable
+        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_CcatanMap_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.shell.mmo.sample.config.proto.Config.Csample.class, org.shell.mmo.sample.config.proto.Config.Csample.Builder.class);
+                org.shell.mmo.sample.config.proto.Config.CcatanMap.class, org.shell.mmo.sample.config.proto.Config.CcatanMap.Builder.class);
       }
 
-      // Construct using org.shell.mmo.sample.config.proto.Config.Csample.newBuilder()
+      // Construct using org.shell.mmo.sample.config.proto.Config.CcatanMap.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1543,9 +2169,7 @@ public final class Config {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getDataFieldBuilder();
-          getListFieldBuilder();
-          getMapFieldBuilder();
+          getGridFieldBuilder();
         }
       }
       private static Builder create() {
@@ -1558,24 +2182,40 @@ public final class Config {
         bitField0_ = (bitField0_ & ~0x00000001);
         name_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-        if (dataBuilder_ == null) {
-          data_ = org.shell.mmo.sample.config.proto.Config.Ddata.getDefaultInstance();
-        } else {
-          dataBuilder_.clear();
-        }
+        min_ = 0;
         bitField0_ = (bitField0_ & ~0x00000004);
-        if (listBuilder_ == null) {
-          list_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
-        } else {
-          listBuilder_.clear();
-        }
-        if (mapBuilder_ == null) {
-          map_ = java.util.Collections.emptyList();
+        max_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        if (gridBuilder_ == null) {
+          grid_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000010);
         } else {
-          mapBuilder_.clear();
+          gridBuilder_.clear();
         }
+        number_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000020);
+        brick_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000040);
+        lumber_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000080);
+        wool_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000100);
+        gain_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000200);
+        ore_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000400);
+        brickPort_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000800);
+        lumberPort_ = 0;
+        bitField0_ = (bitField0_ & ~0x00001000);
+        woolPort_ = 0;
+        bitField0_ = (bitField0_ & ~0x00002000);
+        gainPort_ = 0;
+        bitField0_ = (bitField0_ & ~0x00004000);
+        orePort_ = 0;
+        bitField0_ = (bitField0_ & ~0x00008000);
+        bankPort_ = 0;
+        bitField0_ = (bitField0_ & ~0x00010000);
         return this;
       }
 
@@ -1585,23 +2225,23 @@ public final class Config {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_Csample_descriptor;
+        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_CcatanMap_descriptor;
       }
 
-      public org.shell.mmo.sample.config.proto.Config.Csample getDefaultInstanceForType() {
-        return org.shell.mmo.sample.config.proto.Config.Csample.getDefaultInstance();
+      public org.shell.mmo.sample.config.proto.Config.CcatanMap getDefaultInstanceForType() {
+        return org.shell.mmo.sample.config.proto.Config.CcatanMap.getDefaultInstance();
       }
 
-      public org.shell.mmo.sample.config.proto.Config.Csample build() {
-        org.shell.mmo.sample.config.proto.Config.Csample result = buildPartial();
+      public org.shell.mmo.sample.config.proto.Config.CcatanMap build() {
+        org.shell.mmo.sample.config.proto.Config.CcatanMap result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public org.shell.mmo.sample.config.proto.Config.Csample buildPartial() {
-        org.shell.mmo.sample.config.proto.Config.Csample result = new org.shell.mmo.sample.config.proto.Config.Csample(this);
+      public org.shell.mmo.sample.config.proto.Config.CcatanMap buildPartial() {
+        org.shell.mmo.sample.config.proto.Config.CcatanMap result = new org.shell.mmo.sample.config.proto.Config.CcatanMap(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1615,45 +2255,85 @@ public final class Config {
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        if (dataBuilder_ == null) {
-          result.data_ = data_;
-        } else {
-          result.data_ = dataBuilder_.build();
+        result.min_ = min_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
         }
-        if (listBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) == 0x00000008)) {
-            list_ = java.util.Collections.unmodifiableList(list_);
-            bitField0_ = (bitField0_ & ~0x00000008);
-          }
-          result.list_ = list_;
-        } else {
-          result.list_ = listBuilder_.build();
-        }
-        if (mapBuilder_ == null) {
+        result.max_ = max_;
+        if (gridBuilder_ == null) {
           if (((bitField0_ & 0x00000010) == 0x00000010)) {
-            map_ = java.util.Collections.unmodifiableList(map_);
+            grid_ = java.util.Collections.unmodifiableList(grid_);
             bitField0_ = (bitField0_ & ~0x00000010);
           }
-          result.map_ = map_;
+          result.grid_ = grid_;
         } else {
-          result.map_ = mapBuilder_.build();
+          result.grid_ = gridBuilder_.build();
         }
+        if (((bitField0_ & 0x00000020) == 0x00000020)) {
+          number_ = java.util.Collections.unmodifiableList(number_);
+          bitField0_ = (bitField0_ & ~0x00000020);
+        }
+        result.number_ = number_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.brick_ = brick_;
+        if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.lumber_ = lumber_;
+        if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.wool_ = wool_;
+        if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
+          to_bitField0_ |= 0x00000080;
+        }
+        result.gain_ = gain_;
+        if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
+          to_bitField0_ |= 0x00000100;
+        }
+        result.ore_ = ore_;
+        if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
+          to_bitField0_ |= 0x00000200;
+        }
+        result.brickPort_ = brickPort_;
+        if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
+          to_bitField0_ |= 0x00000400;
+        }
+        result.lumberPort_ = lumberPort_;
+        if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
+          to_bitField0_ |= 0x00000800;
+        }
+        result.woolPort_ = woolPort_;
+        if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
+          to_bitField0_ |= 0x00001000;
+        }
+        result.gainPort_ = gainPort_;
+        if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
+          to_bitField0_ |= 0x00002000;
+        }
+        result.orePort_ = orePort_;
+        if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
+          to_bitField0_ |= 0x00004000;
+        }
+        result.bankPort_ = bankPort_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.shell.mmo.sample.config.proto.Config.Csample) {
-          return mergeFrom((org.shell.mmo.sample.config.proto.Config.Csample)other);
+        if (other instanceof org.shell.mmo.sample.config.proto.Config.CcatanMap) {
+          return mergeFrom((org.shell.mmo.sample.config.proto.Config.CcatanMap)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.shell.mmo.sample.config.proto.Config.Csample other) {
-        if (other == org.shell.mmo.sample.config.proto.Config.Csample.getDefaultInstance()) return this;
+      public Builder mergeFrom(org.shell.mmo.sample.config.proto.Config.CcatanMap other) {
+        if (other == org.shell.mmo.sample.config.proto.Config.CcatanMap.getDefaultInstance()) return this;
         if (other.hasId()) {
           setId(other.getId());
         }
@@ -1662,60 +2342,80 @@ public final class Config {
           name_ = other.name_;
           onChanged();
         }
-        if (other.hasData()) {
-          mergeData(other.getData());
+        if (other.hasMin()) {
+          setMin(other.getMin());
         }
-        if (listBuilder_ == null) {
-          if (!other.list_.isEmpty()) {
-            if (list_.isEmpty()) {
-              list_ = other.list_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+        if (other.hasMax()) {
+          setMax(other.getMax());
+        }
+        if (gridBuilder_ == null) {
+          if (!other.grid_.isEmpty()) {
+            if (grid_.isEmpty()) {
+              grid_ = other.grid_;
+              bitField0_ = (bitField0_ & ~0x00000010);
             } else {
-              ensureListIsMutable();
-              list_.addAll(other.list_);
+              ensureGridIsMutable();
+              grid_.addAll(other.grid_);
             }
             onChanged();
           }
         } else {
-          if (!other.list_.isEmpty()) {
-            if (listBuilder_.isEmpty()) {
-              listBuilder_.dispose();
-              listBuilder_ = null;
-              list_ = other.list_;
-              bitField0_ = (bitField0_ & ~0x00000008);
-              listBuilder_ = 
+          if (!other.grid_.isEmpty()) {
+            if (gridBuilder_.isEmpty()) {
+              gridBuilder_.dispose();
+              gridBuilder_ = null;
+              grid_ = other.grid_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+              gridBuilder_ = 
                 com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getListFieldBuilder() : null;
+                   getGridFieldBuilder() : null;
             } else {
-              listBuilder_.addAllMessages(other.list_);
+              gridBuilder_.addAllMessages(other.grid_);
             }
           }
         }
-        if (mapBuilder_ == null) {
-          if (!other.map_.isEmpty()) {
-            if (map_.isEmpty()) {
-              map_ = other.map_;
-              bitField0_ = (bitField0_ & ~0x00000010);
-            } else {
-              ensureMapIsMutable();
-              map_.addAll(other.map_);
-            }
-            onChanged();
+        if (!other.number_.isEmpty()) {
+          if (number_.isEmpty()) {
+            number_ = other.number_;
+            bitField0_ = (bitField0_ & ~0x00000020);
+          } else {
+            ensureNumberIsMutable();
+            number_.addAll(other.number_);
           }
-        } else {
-          if (!other.map_.isEmpty()) {
-            if (mapBuilder_.isEmpty()) {
-              mapBuilder_.dispose();
-              mapBuilder_ = null;
-              map_ = other.map_;
-              bitField0_ = (bitField0_ & ~0x00000010);
-              mapBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getMapFieldBuilder() : null;
-            } else {
-              mapBuilder_.addAllMessages(other.map_);
-            }
-          }
+          onChanged();
+        }
+        if (other.hasBrick()) {
+          setBrick(other.getBrick());
+        }
+        if (other.hasLumber()) {
+          setLumber(other.getLumber());
+        }
+        if (other.hasWool()) {
+          setWool(other.getWool());
+        }
+        if (other.hasGain()) {
+          setGain(other.getGain());
+        }
+        if (other.hasOre()) {
+          setOre(other.getOre());
+        }
+        if (other.hasBrickPort()) {
+          setBrickPort(other.getBrickPort());
+        }
+        if (other.hasLumberPort()) {
+          setLumberPort(other.getLumberPort());
+        }
+        if (other.hasWoolPort()) {
+          setWoolPort(other.getWoolPort());
+        }
+        if (other.hasGainPort()) {
+          setGainPort(other.getGainPort());
+        }
+        if (other.hasOrePort()) {
+          setOrePort(other.getOrePort());
+        }
+        if (other.hasBankPort()) {
+          setBankPort(other.getBankPort());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -1730,22 +2430,60 @@ public final class Config {
           
           return false;
         }
-        if (!hasData()) {
+        if (!hasMin()) {
           
           return false;
         }
-        if (!getData().isInitialized()) {
+        if (!hasMax()) {
           
           return false;
         }
-        for (int i = 0; i < getListCount(); i++) {
-          if (!getList(i).isInitialized()) {
-            
-            return false;
-          }
+        if (!hasBrick()) {
+          
+          return false;
         }
-        for (int i = 0; i < getMapCount(); i++) {
-          if (!getMap(i).isInitialized()) {
+        if (!hasLumber()) {
+          
+          return false;
+        }
+        if (!hasWool()) {
+          
+          return false;
+        }
+        if (!hasGain()) {
+          
+          return false;
+        }
+        if (!hasOre()) {
+          
+          return false;
+        }
+        if (!hasBrickPort()) {
+          
+          return false;
+        }
+        if (!hasLumberPort()) {
+          
+          return false;
+        }
+        if (!hasWoolPort()) {
+          
+          return false;
+        }
+        if (!hasGainPort()) {
+          
+          return false;
+        }
+        if (!hasOrePort()) {
+          
+          return false;
+        }
+        if (!hasBankPort()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getGridCount(); i++) {
+          if (!getGrid(i).isInitialized()) {
             
             return false;
           }
@@ -1757,11 +2495,11 @@ public final class Config {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.shell.mmo.sample.config.proto.Config.Csample parsedMessage = null;
+        org.shell.mmo.sample.config.proto.Config.CcatanMap parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.shell.mmo.sample.config.proto.Config.Csample) e.getUnfinishedMessage();
+          parsedMessage = (org.shell.mmo.sample.config.proto.Config.CcatanMap) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -1777,7 +2515,7 @@ public final class Config {
        * <code>required int32 id = 1;</code>
        *
        * <pre>
-       * 唯一id,名字可变更,第一列必须保证唯一
+       * 地图id
        * </pre>
        */
       public boolean hasId() {
@@ -1787,7 +2525,7 @@ public final class Config {
        * <code>required int32 id = 1;</code>
        *
        * <pre>
-       * 唯一id,名字可变更,第一列必须保证唯一
+       * 地图id
        * </pre>
        */
       public int getId() {
@@ -1797,7 +2535,7 @@ public final class Config {
        * <code>required int32 id = 1;</code>
        *
        * <pre>
-       * 唯一id,名字可变更,第一列必须保证唯一
+       * 地图id
        * </pre>
        */
       public Builder setId(int value) {
@@ -1810,7 +2548,7 @@ public final class Config {
        * <code>required int32 id = 1;</code>
        *
        * <pre>
-       * 唯一id,名字可变更,第一列必须保证唯一
+       * 地图id
        * </pre>
        */
       public Builder clearId() {
@@ -1825,7 +2563,7 @@ public final class Config {
        * <code>required string name = 2;</code>
        *
        * <pre>
-       * 字符串示例
+       * 地图名称
        * </pre>
        */
       public boolean hasName() {
@@ -1835,7 +2573,7 @@ public final class Config {
        * <code>required string name = 2;</code>
        *
        * <pre>
-       * 字符串示例
+       * 地图名称
        * </pre>
        */
       public java.lang.String getName() {
@@ -1856,7 +2594,7 @@ public final class Config {
        * <code>required string name = 2;</code>
        *
        * <pre>
-       * 字符串示例
+       * 地图名称
        * </pre>
        */
       public com.google.protobuf.ByteString
@@ -1876,7 +2614,7 @@ public final class Config {
        * <code>required string name = 2;</code>
        *
        * <pre>
-       * 字符串示例
+       * 地图名称
        * </pre>
        */
       public Builder setName(
@@ -1893,7 +2631,7 @@ public final class Config {
        * <code>required string name = 2;</code>
        *
        * <pre>
-       * 字符串示例
+       * 地图名称
        * </pre>
        */
       public Builder clearName() {
@@ -1906,7 +2644,7 @@ public final class Config {
        * <code>required string name = 2;</code>
        *
        * <pre>
-       * 字符串示例
+       * 地图名称
        * </pre>
        */
       public Builder setNameBytes(
@@ -1920,802 +2658,1056 @@ public final class Config {
         return this;
       }
 
-      private org.shell.mmo.sample.config.proto.Config.Ddata data_ = org.shell.mmo.sample.config.proto.Config.Ddata.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          org.shell.mmo.sample.config.proto.Config.Ddata, org.shell.mmo.sample.config.proto.Config.Ddata.Builder, org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> dataBuilder_;
+      private int min_ ;
       /**
-       * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
+       * <code>required int32 min = 3;</code>
        *
        * <pre>
-       * 单个引用数据示例
+       * 最小参与人数
        * </pre>
        */
-      public boolean hasData() {
+      public boolean hasMin() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
+       * <code>required int32 min = 3;</code>
        *
        * <pre>
-       * 单个引用数据示例
+       * 最小参与人数
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.Ddata getData() {
-        if (dataBuilder_ == null) {
-          return data_;
-        } else {
-          return dataBuilder_.getMessage();
-        }
+      public int getMin() {
+        return min_;
       }
       /**
-       * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
+       * <code>required int32 min = 3;</code>
        *
        * <pre>
-       * 单个引用数据示例
+       * 最小参与人数
        * </pre>
        */
-      public Builder setData(org.shell.mmo.sample.config.proto.Config.Ddata value) {
-        if (dataBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          data_ = value;
-          onChanged();
-        } else {
-          dataBuilder_.setMessage(value);
-        }
+      public Builder setMin(int value) {
         bitField0_ |= 0x00000004;
-        return this;
-      }
-      /**
-       * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
-       *
-       * <pre>
-       * 单个引用数据示例
-       * </pre>
-       */
-      public Builder setData(
-          org.shell.mmo.sample.config.proto.Config.Ddata.Builder builderForValue) {
-        if (dataBuilder_ == null) {
-          data_ = builderForValue.build();
-          onChanged();
-        } else {
-          dataBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000004;
-        return this;
-      }
-      /**
-       * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
-       *
-       * <pre>
-       * 单个引用数据示例
-       * </pre>
-       */
-      public Builder mergeData(org.shell.mmo.sample.config.proto.Config.Ddata value) {
-        if (dataBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) == 0x00000004) &&
-              data_ != org.shell.mmo.sample.config.proto.Config.Ddata.getDefaultInstance()) {
-            data_ =
-              org.shell.mmo.sample.config.proto.Config.Ddata.newBuilder(data_).mergeFrom(value).buildPartial();
-          } else {
-            data_ = value;
-          }
-          onChanged();
-        } else {
-          dataBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000004;
-        return this;
-      }
-      /**
-       * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
-       *
-       * <pre>
-       * 单个引用数据示例
-       * </pre>
-       */
-      public Builder clearData() {
-        if (dataBuilder_ == null) {
-          data_ = org.shell.mmo.sample.config.proto.Config.Ddata.getDefaultInstance();
-          onChanged();
-        } else {
-          dataBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000004);
-        return this;
-      }
-      /**
-       * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
-       *
-       * <pre>
-       * 单个引用数据示例
-       * </pre>
-       */
-      public org.shell.mmo.sample.config.proto.Config.Ddata.Builder getDataBuilder() {
-        bitField0_ |= 0x00000004;
+        min_ = value;
         onChanged();
-        return getDataFieldBuilder().getBuilder();
+        return this;
       }
       /**
-       * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
+       * <code>required int32 min = 3;</code>
        *
        * <pre>
-       * 单个引用数据示例
+       * 最小参与人数
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.DdataOrBuilder getDataOrBuilder() {
-        if (dataBuilder_ != null) {
-          return dataBuilder_.getMessageOrBuilder();
-        } else {
-          return data_;
-        }
-      }
-      /**
-       * <code>required .org.shell.mmo.sample.config.proto.Ddata data = 3;</code>
-       *
-       * <pre>
-       * 单个引用数据示例
-       * </pre>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          org.shell.mmo.sample.config.proto.Config.Ddata, org.shell.mmo.sample.config.proto.Config.Ddata.Builder, org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> 
-          getDataFieldBuilder() {
-        if (dataBuilder_ == null) {
-          dataBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              org.shell.mmo.sample.config.proto.Config.Ddata, org.shell.mmo.sample.config.proto.Config.Ddata.Builder, org.shell.mmo.sample.config.proto.Config.DdataOrBuilder>(
-                  getData(),
-                  getParentForChildren(),
-                  isClean());
-          data_ = null;
-        }
-        return dataBuilder_;
+      public Builder clearMin() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        min_ = 0;
+        onChanged();
+        return this;
       }
 
-      private java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata> list_ =
+      private int max_ ;
+      /**
+       * <code>required int32 max = 4;</code>
+       *
+       * <pre>
+       * 最大参与人数
+       * </pre>
+       */
+      public boolean hasMax() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>required int32 max = 4;</code>
+       *
+       * <pre>
+       * 最大参与人数
+       * </pre>
+       */
+      public int getMax() {
+        return max_;
+      }
+      /**
+       * <code>required int32 max = 4;</code>
+       *
+       * <pre>
+       * 最大参与人数
+       * </pre>
+       */
+      public Builder setMax(int value) {
+        bitField0_ |= 0x00000008;
+        max_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 max = 4;</code>
+       *
+       * <pre>
+       * 最大参与人数
+       * </pre>
+       */
+      public Builder clearMax() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        max_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<org.shell.mmo.sample.config.proto.Config.DcatanGrid> grid_ =
         java.util.Collections.emptyList();
-      private void ensureListIsMutable() {
-        if (!((bitField0_ & 0x00000008) == 0x00000008)) {
-          list_ = new java.util.ArrayList<org.shell.mmo.sample.config.proto.Config.Ddata>(list_);
-          bitField0_ |= 0x00000008;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilder<
-          org.shell.mmo.sample.config.proto.Config.Ddata, org.shell.mmo.sample.config.proto.Config.Ddata.Builder, org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> listBuilder_;
-
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata> getListList() {
-        if (listBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(list_);
-        } else {
-          return listBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public int getListCount() {
-        if (listBuilder_ == null) {
-          return list_.size();
-        } else {
-          return listBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public org.shell.mmo.sample.config.proto.Config.Ddata getList(int index) {
-        if (listBuilder_ == null) {
-          return list_.get(index);
-        } else {
-          return listBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public Builder setList(
-          int index, org.shell.mmo.sample.config.proto.Config.Ddata value) {
-        if (listBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureListIsMutable();
-          list_.set(index, value);
-          onChanged();
-        } else {
-          listBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public Builder setList(
-          int index, org.shell.mmo.sample.config.proto.Config.Ddata.Builder builderForValue) {
-        if (listBuilder_ == null) {
-          ensureListIsMutable();
-          list_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          listBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public Builder addList(org.shell.mmo.sample.config.proto.Config.Ddata value) {
-        if (listBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureListIsMutable();
-          list_.add(value);
-          onChanged();
-        } else {
-          listBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public Builder addList(
-          int index, org.shell.mmo.sample.config.proto.Config.Ddata value) {
-        if (listBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureListIsMutable();
-          list_.add(index, value);
-          onChanged();
-        } else {
-          listBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public Builder addList(
-          org.shell.mmo.sample.config.proto.Config.Ddata.Builder builderForValue) {
-        if (listBuilder_ == null) {
-          ensureListIsMutable();
-          list_.add(builderForValue.build());
-          onChanged();
-        } else {
-          listBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public Builder addList(
-          int index, org.shell.mmo.sample.config.proto.Config.Ddata.Builder builderForValue) {
-        if (listBuilder_ == null) {
-          ensureListIsMutable();
-          list_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          listBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public Builder addAllList(
-          java.lang.Iterable<? extends org.shell.mmo.sample.config.proto.Config.Ddata> values) {
-        if (listBuilder_ == null) {
-          ensureListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, list_);
-          onChanged();
-        } else {
-          listBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public Builder clearList() {
-        if (listBuilder_ == null) {
-          list_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
-          onChanged();
-        } else {
-          listBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public Builder removeList(int index) {
-        if (listBuilder_ == null) {
-          ensureListIsMutable();
-          list_.remove(index);
-          onChanged();
-        } else {
-          listBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public org.shell.mmo.sample.config.proto.Config.Ddata.Builder getListBuilder(
-          int index) {
-        return getListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public org.shell.mmo.sample.config.proto.Config.DdataOrBuilder getListOrBuilder(
-          int index) {
-        if (listBuilder_ == null) {
-          return list_.get(index);  } else {
-          return listBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public java.util.List<? extends org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> 
-           getListOrBuilderList() {
-        if (listBuilder_ != null) {
-          return listBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(list_);
-        }
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public org.shell.mmo.sample.config.proto.Config.Ddata.Builder addListBuilder() {
-        return getListFieldBuilder().addBuilder(
-            org.shell.mmo.sample.config.proto.Config.Ddata.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public org.shell.mmo.sample.config.proto.Config.Ddata.Builder addListBuilder(
-          int index) {
-        return getListFieldBuilder().addBuilder(
-            index, org.shell.mmo.sample.config.proto.Config.Ddata.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata list = 4;</code>
-       *
-       * <pre>
-       * 列表示例
-       * </pre>
-       */
-      public java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata.Builder> 
-           getListBuilderList() {
-        return getListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          org.shell.mmo.sample.config.proto.Config.Ddata, org.shell.mmo.sample.config.proto.Config.Ddata.Builder, org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> 
-          getListFieldBuilder() {
-        if (listBuilder_ == null) {
-          listBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              org.shell.mmo.sample.config.proto.Config.Ddata, org.shell.mmo.sample.config.proto.Config.Ddata.Builder, org.shell.mmo.sample.config.proto.Config.DdataOrBuilder>(
-                  list_,
-                  ((bitField0_ & 0x00000008) == 0x00000008),
-                  getParentForChildren(),
-                  isClean());
-          list_ = null;
-        }
-        return listBuilder_;
-      }
-
-      private java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata> map_ =
-        java.util.Collections.emptyList();
-      private void ensureMapIsMutable() {
+      private void ensureGridIsMutable() {
         if (!((bitField0_ & 0x00000010) == 0x00000010)) {
-          map_ = new java.util.ArrayList<org.shell.mmo.sample.config.proto.Config.Ddata>(map_);
+          grid_ = new java.util.ArrayList<org.shell.mmo.sample.config.proto.Config.DcatanGrid>(grid_);
           bitField0_ |= 0x00000010;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          org.shell.mmo.sample.config.proto.Config.Ddata, org.shell.mmo.sample.config.proto.Config.Ddata.Builder, org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> mapBuilder_;
+          org.shell.mmo.sample.config.proto.Config.DcatanGrid, org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder, org.shell.mmo.sample.config.proto.Config.DcatanGridOrBuilder> gridBuilder_;
 
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata> getMapList() {
-        if (mapBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(map_);
+      public java.util.List<org.shell.mmo.sample.config.proto.Config.DcatanGrid> getGridList() {
+        if (gridBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(grid_);
         } else {
-          return mapBuilder_.getMessageList();
+          return gridBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public int getMapCount() {
-        if (mapBuilder_ == null) {
-          return map_.size();
+      public int getGridCount() {
+        if (gridBuilder_ == null) {
+          return grid_.size();
         } else {
-          return mapBuilder_.getCount();
+          return gridBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.Ddata getMap(int index) {
-        if (mapBuilder_ == null) {
-          return map_.get(index);
+      public org.shell.mmo.sample.config.proto.Config.DcatanGrid getGrid(int index) {
+        if (gridBuilder_ == null) {
+          return grid_.get(index);
         } else {
-          return mapBuilder_.getMessage(index);
+          return gridBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public Builder setMap(
-          int index, org.shell.mmo.sample.config.proto.Config.Ddata value) {
-        if (mapBuilder_ == null) {
+      public Builder setGrid(
+          int index, org.shell.mmo.sample.config.proto.Config.DcatanGrid value) {
+        if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMapIsMutable();
-          map_.set(index, value);
+          ensureGridIsMutable();
+          grid_.set(index, value);
           onChanged();
         } else {
-          mapBuilder_.setMessage(index, value);
+          gridBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public Builder setMap(
-          int index, org.shell.mmo.sample.config.proto.Config.Ddata.Builder builderForValue) {
-        if (mapBuilder_ == null) {
-          ensureMapIsMutable();
-          map_.set(index, builderForValue.build());
+      public Builder setGrid(
+          int index, org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder builderForValue) {
+        if (gridBuilder_ == null) {
+          ensureGridIsMutable();
+          grid_.set(index, builderForValue.build());
           onChanged();
         } else {
-          mapBuilder_.setMessage(index, builderForValue.build());
+          gridBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public Builder addMap(org.shell.mmo.sample.config.proto.Config.Ddata value) {
-        if (mapBuilder_ == null) {
+      public Builder addGrid(org.shell.mmo.sample.config.proto.Config.DcatanGrid value) {
+        if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMapIsMutable();
-          map_.add(value);
+          ensureGridIsMutable();
+          grid_.add(value);
           onChanged();
         } else {
-          mapBuilder_.addMessage(value);
+          gridBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public Builder addMap(
-          int index, org.shell.mmo.sample.config.proto.Config.Ddata value) {
-        if (mapBuilder_ == null) {
+      public Builder addGrid(
+          int index, org.shell.mmo.sample.config.proto.Config.DcatanGrid value) {
+        if (gridBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMapIsMutable();
-          map_.add(index, value);
+          ensureGridIsMutable();
+          grid_.add(index, value);
           onChanged();
         } else {
-          mapBuilder_.addMessage(index, value);
+          gridBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public Builder addMap(
-          org.shell.mmo.sample.config.proto.Config.Ddata.Builder builderForValue) {
-        if (mapBuilder_ == null) {
-          ensureMapIsMutable();
-          map_.add(builderForValue.build());
+      public Builder addGrid(
+          org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder builderForValue) {
+        if (gridBuilder_ == null) {
+          ensureGridIsMutable();
+          grid_.add(builderForValue.build());
           onChanged();
         } else {
-          mapBuilder_.addMessage(builderForValue.build());
+          gridBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public Builder addMap(
-          int index, org.shell.mmo.sample.config.proto.Config.Ddata.Builder builderForValue) {
-        if (mapBuilder_ == null) {
-          ensureMapIsMutable();
-          map_.add(index, builderForValue.build());
+      public Builder addGrid(
+          int index, org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder builderForValue) {
+        if (gridBuilder_ == null) {
+          ensureGridIsMutable();
+          grid_.add(index, builderForValue.build());
           onChanged();
         } else {
-          mapBuilder_.addMessage(index, builderForValue.build());
+          gridBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public Builder addAllMap(
-          java.lang.Iterable<? extends org.shell.mmo.sample.config.proto.Config.Ddata> values) {
-        if (mapBuilder_ == null) {
-          ensureMapIsMutable();
+      public Builder addAllGrid(
+          java.lang.Iterable<? extends org.shell.mmo.sample.config.proto.Config.DcatanGrid> values) {
+        if (gridBuilder_ == null) {
+          ensureGridIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, map_);
+              values, grid_);
           onChanged();
         } else {
-          mapBuilder_.addAllMessages(values);
+          gridBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public Builder clearMap() {
-        if (mapBuilder_ == null) {
-          map_ = java.util.Collections.emptyList();
+      public Builder clearGrid() {
+        if (gridBuilder_ == null) {
+          grid_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000010);
           onChanged();
         } else {
-          mapBuilder_.clear();
+          gridBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public Builder removeMap(int index) {
-        if (mapBuilder_ == null) {
-          ensureMapIsMutable();
-          map_.remove(index);
+      public Builder removeGrid(int index) {
+        if (gridBuilder_ == null) {
+          ensureGridIsMutable();
+          grid_.remove(index);
           onChanged();
         } else {
-          mapBuilder_.remove(index);
+          gridBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.Ddata.Builder getMapBuilder(
+      public org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder getGridBuilder(
           int index) {
-        return getMapFieldBuilder().getBuilder(index);
+        return getGridFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.DdataOrBuilder getMapOrBuilder(
+      public org.shell.mmo.sample.config.proto.Config.DcatanGridOrBuilder getGridOrBuilder(
           int index) {
-        if (mapBuilder_ == null) {
-          return map_.get(index);  } else {
-          return mapBuilder_.getMessageOrBuilder(index);
+        if (gridBuilder_ == null) {
+          return grid_.get(index);  } else {
+          return gridBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public java.util.List<? extends org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> 
-           getMapOrBuilderList() {
-        if (mapBuilder_ != null) {
-          return mapBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends org.shell.mmo.sample.config.proto.Config.DcatanGridOrBuilder> 
+           getGridOrBuilderList() {
+        if (gridBuilder_ != null) {
+          return gridBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(map_);
+          return java.util.Collections.unmodifiableList(grid_);
         }
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.Ddata.Builder addMapBuilder() {
-        return getMapFieldBuilder().addBuilder(
-            org.shell.mmo.sample.config.proto.Config.Ddata.getDefaultInstance());
+      public org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder addGridBuilder() {
+        return getGridFieldBuilder().addBuilder(
+            org.shell.mmo.sample.config.proto.Config.DcatanGrid.getDefaultInstance());
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public org.shell.mmo.sample.config.proto.Config.Ddata.Builder addMapBuilder(
+      public org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder addGridBuilder(
           int index) {
-        return getMapFieldBuilder().addBuilder(
-            index, org.shell.mmo.sample.config.proto.Config.Ddata.getDefaultInstance());
+        return getGridFieldBuilder().addBuilder(
+            index, org.shell.mmo.sample.config.proto.Config.DcatanGrid.getDefaultInstance());
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.config.proto.Ddata map = 5;</code>
+       * <code>repeated .org.shell.mmo.sample.config.proto.DcatanGrid grid = 5;</code>
        *
        * <pre>
-       * map示例
+       * 格子列表
        * </pre>
        */
-      public java.util.List<org.shell.mmo.sample.config.proto.Config.Ddata.Builder> 
-           getMapBuilderList() {
-        return getMapFieldBuilder().getBuilderList();
+      public java.util.List<org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder> 
+           getGridBuilderList() {
+        return getGridFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          org.shell.mmo.sample.config.proto.Config.Ddata, org.shell.mmo.sample.config.proto.Config.Ddata.Builder, org.shell.mmo.sample.config.proto.Config.DdataOrBuilder> 
-          getMapFieldBuilder() {
-        if (mapBuilder_ == null) {
-          mapBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              org.shell.mmo.sample.config.proto.Config.Ddata, org.shell.mmo.sample.config.proto.Config.Ddata.Builder, org.shell.mmo.sample.config.proto.Config.DdataOrBuilder>(
-                  map_,
+          org.shell.mmo.sample.config.proto.Config.DcatanGrid, org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder, org.shell.mmo.sample.config.proto.Config.DcatanGridOrBuilder> 
+          getGridFieldBuilder() {
+        if (gridBuilder_ == null) {
+          gridBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              org.shell.mmo.sample.config.proto.Config.DcatanGrid, org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder, org.shell.mmo.sample.config.proto.Config.DcatanGridOrBuilder>(
+                  grid_,
                   ((bitField0_ & 0x00000010) == 0x00000010),
                   getParentForChildren(),
                   isClean());
-          map_ = null;
+          grid_ = null;
         }
-        return mapBuilder_;
+        return gridBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.config.proto.Csample)
+      private java.util.List<java.lang.Integer> number_ = java.util.Collections.emptyList();
+      private void ensureNumberIsMutable() {
+        if (!((bitField0_ & 0x00000020) == 0x00000020)) {
+          number_ = new java.util.ArrayList<java.lang.Integer>(number_);
+          bitField0_ |= 0x00000020;
+         }
+      }
+      /**
+       * <code>repeated int32 number = 6;</code>
+       *
+       * <pre>
+       * 数字列表
+       * </pre>
+       */
+      public java.util.List<java.lang.Integer>
+          getNumberList() {
+        return java.util.Collections.unmodifiableList(number_);
+      }
+      /**
+       * <code>repeated int32 number = 6;</code>
+       *
+       * <pre>
+       * 数字列表
+       * </pre>
+       */
+      public int getNumberCount() {
+        return number_.size();
+      }
+      /**
+       * <code>repeated int32 number = 6;</code>
+       *
+       * <pre>
+       * 数字列表
+       * </pre>
+       */
+      public int getNumber(int index) {
+        return number_.get(index);
+      }
+      /**
+       * <code>repeated int32 number = 6;</code>
+       *
+       * <pre>
+       * 数字列表
+       * </pre>
+       */
+      public Builder setNumber(
+          int index, int value) {
+        ensureNumberIsMutable();
+        number_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 number = 6;</code>
+       *
+       * <pre>
+       * 数字列表
+       * </pre>
+       */
+      public Builder addNumber(int value) {
+        ensureNumberIsMutable();
+        number_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 number = 6;</code>
+       *
+       * <pre>
+       * 数字列表
+       * </pre>
+       */
+      public Builder addAllNumber(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureNumberIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, number_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 number = 6;</code>
+       *
+       * <pre>
+       * 数字列表
+       * </pre>
+       */
+      public Builder clearNumber() {
+        number_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000020);
+        onChanged();
+        return this;
+      }
+
+      private int brick_ ;
+      /**
+       * <code>required int32 brick = 7;</code>
+       *
+       * <pre>
+       * 砖头格子数量
+       * </pre>
+       */
+      public boolean hasBrick() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      /**
+       * <code>required int32 brick = 7;</code>
+       *
+       * <pre>
+       * 砖头格子数量
+       * </pre>
+       */
+      public int getBrick() {
+        return brick_;
+      }
+      /**
+       * <code>required int32 brick = 7;</code>
+       *
+       * <pre>
+       * 砖头格子数量
+       * </pre>
+       */
+      public Builder setBrick(int value) {
+        bitField0_ |= 0x00000040;
+        brick_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 brick = 7;</code>
+       *
+       * <pre>
+       * 砖头格子数量
+       * </pre>
+       */
+      public Builder clearBrick() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        brick_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lumber_ ;
+      /**
+       * <code>required int32 lumber = 8;</code>
+       *
+       * <pre>
+       * 木材格子数量
+       * </pre>
+       */
+      public boolean hasLumber() {
+        return ((bitField0_ & 0x00000080) == 0x00000080);
+      }
+      /**
+       * <code>required int32 lumber = 8;</code>
+       *
+       * <pre>
+       * 木材格子数量
+       * </pre>
+       */
+      public int getLumber() {
+        return lumber_;
+      }
+      /**
+       * <code>required int32 lumber = 8;</code>
+       *
+       * <pre>
+       * 木材格子数量
+       * </pre>
+       */
+      public Builder setLumber(int value) {
+        bitField0_ |= 0x00000080;
+        lumber_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 lumber = 8;</code>
+       *
+       * <pre>
+       * 木材格子数量
+       * </pre>
+       */
+      public Builder clearLumber() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        lumber_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int wool_ ;
+      /**
+       * <code>required int32 wool = 9;</code>
+       *
+       * <pre>
+       * 羊毛格子数量
+       * </pre>
+       */
+      public boolean hasWool() {
+        return ((bitField0_ & 0x00000100) == 0x00000100);
+      }
+      /**
+       * <code>required int32 wool = 9;</code>
+       *
+       * <pre>
+       * 羊毛格子数量
+       * </pre>
+       */
+      public int getWool() {
+        return wool_;
+      }
+      /**
+       * <code>required int32 wool = 9;</code>
+       *
+       * <pre>
+       * 羊毛格子数量
+       * </pre>
+       */
+      public Builder setWool(int value) {
+        bitField0_ |= 0x00000100;
+        wool_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 wool = 9;</code>
+       *
+       * <pre>
+       * 羊毛格子数量
+       * </pre>
+       */
+      public Builder clearWool() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        wool_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gain_ ;
+      /**
+       * <code>required int32 gain = 10;</code>
+       *
+       * <pre>
+       * 小麦格子数量
+       * </pre>
+       */
+      public boolean hasGain() {
+        return ((bitField0_ & 0x00000200) == 0x00000200);
+      }
+      /**
+       * <code>required int32 gain = 10;</code>
+       *
+       * <pre>
+       * 小麦格子数量
+       * </pre>
+       */
+      public int getGain() {
+        return gain_;
+      }
+      /**
+       * <code>required int32 gain = 10;</code>
+       *
+       * <pre>
+       * 小麦格子数量
+       * </pre>
+       */
+      public Builder setGain(int value) {
+        bitField0_ |= 0x00000200;
+        gain_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 gain = 10;</code>
+       *
+       * <pre>
+       * 小麦格子数量
+       * </pre>
+       */
+      public Builder clearGain() {
+        bitField0_ = (bitField0_ & ~0x00000200);
+        gain_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int ore_ ;
+      /**
+       * <code>required int32 ore = 11;</code>
+       *
+       * <pre>
+       * 煤矿格子数量
+       * </pre>
+       */
+      public boolean hasOre() {
+        return ((bitField0_ & 0x00000400) == 0x00000400);
+      }
+      /**
+       * <code>required int32 ore = 11;</code>
+       *
+       * <pre>
+       * 煤矿格子数量
+       * </pre>
+       */
+      public int getOre() {
+        return ore_;
+      }
+      /**
+       * <code>required int32 ore = 11;</code>
+       *
+       * <pre>
+       * 煤矿格子数量
+       * </pre>
+       */
+      public Builder setOre(int value) {
+        bitField0_ |= 0x00000400;
+        ore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 ore = 11;</code>
+       *
+       * <pre>
+       * 煤矿格子数量
+       * </pre>
+       */
+      public Builder clearOre() {
+        bitField0_ = (bitField0_ & ~0x00000400);
+        ore_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int brickPort_ ;
+      /**
+       * <code>required int32 brickPort = 12;</code>
+       *
+       * <pre>
+       * 砖头港口数量
+       * </pre>
+       */
+      public boolean hasBrickPort() {
+        return ((bitField0_ & 0x00000800) == 0x00000800);
+      }
+      /**
+       * <code>required int32 brickPort = 12;</code>
+       *
+       * <pre>
+       * 砖头港口数量
+       * </pre>
+       */
+      public int getBrickPort() {
+        return brickPort_;
+      }
+      /**
+       * <code>required int32 brickPort = 12;</code>
+       *
+       * <pre>
+       * 砖头港口数量
+       * </pre>
+       */
+      public Builder setBrickPort(int value) {
+        bitField0_ |= 0x00000800;
+        brickPort_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 brickPort = 12;</code>
+       *
+       * <pre>
+       * 砖头港口数量
+       * </pre>
+       */
+      public Builder clearBrickPort() {
+        bitField0_ = (bitField0_ & ~0x00000800);
+        brickPort_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lumberPort_ ;
+      /**
+       * <code>required int32 lumberPort = 13;</code>
+       *
+       * <pre>
+       * 木材港口数量
+       * </pre>
+       */
+      public boolean hasLumberPort() {
+        return ((bitField0_ & 0x00001000) == 0x00001000);
+      }
+      /**
+       * <code>required int32 lumberPort = 13;</code>
+       *
+       * <pre>
+       * 木材港口数量
+       * </pre>
+       */
+      public int getLumberPort() {
+        return lumberPort_;
+      }
+      /**
+       * <code>required int32 lumberPort = 13;</code>
+       *
+       * <pre>
+       * 木材港口数量
+       * </pre>
+       */
+      public Builder setLumberPort(int value) {
+        bitField0_ |= 0x00001000;
+        lumberPort_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 lumberPort = 13;</code>
+       *
+       * <pre>
+       * 木材港口数量
+       * </pre>
+       */
+      public Builder clearLumberPort() {
+        bitField0_ = (bitField0_ & ~0x00001000);
+        lumberPort_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int woolPort_ ;
+      /**
+       * <code>required int32 woolPort = 14;</code>
+       *
+       * <pre>
+       * 羊毛港口数量
+       * </pre>
+       */
+      public boolean hasWoolPort() {
+        return ((bitField0_ & 0x00002000) == 0x00002000);
+      }
+      /**
+       * <code>required int32 woolPort = 14;</code>
+       *
+       * <pre>
+       * 羊毛港口数量
+       * </pre>
+       */
+      public int getWoolPort() {
+        return woolPort_;
+      }
+      /**
+       * <code>required int32 woolPort = 14;</code>
+       *
+       * <pre>
+       * 羊毛港口数量
+       * </pre>
+       */
+      public Builder setWoolPort(int value) {
+        bitField0_ |= 0x00002000;
+        woolPort_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 woolPort = 14;</code>
+       *
+       * <pre>
+       * 羊毛港口数量
+       * </pre>
+       */
+      public Builder clearWoolPort() {
+        bitField0_ = (bitField0_ & ~0x00002000);
+        woolPort_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gainPort_ ;
+      /**
+       * <code>required int32 gainPort = 15;</code>
+       *
+       * <pre>
+       * 小麦港口数量
+       * </pre>
+       */
+      public boolean hasGainPort() {
+        return ((bitField0_ & 0x00004000) == 0x00004000);
+      }
+      /**
+       * <code>required int32 gainPort = 15;</code>
+       *
+       * <pre>
+       * 小麦港口数量
+       * </pre>
+       */
+      public int getGainPort() {
+        return gainPort_;
+      }
+      /**
+       * <code>required int32 gainPort = 15;</code>
+       *
+       * <pre>
+       * 小麦港口数量
+       * </pre>
+       */
+      public Builder setGainPort(int value) {
+        bitField0_ |= 0x00004000;
+        gainPort_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 gainPort = 15;</code>
+       *
+       * <pre>
+       * 小麦港口数量
+       * </pre>
+       */
+      public Builder clearGainPort() {
+        bitField0_ = (bitField0_ & ~0x00004000);
+        gainPort_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int orePort_ ;
+      /**
+       * <code>required int32 orePort = 16;</code>
+       *
+       * <pre>
+       * 煤矿港口数量
+       * </pre>
+       */
+      public boolean hasOrePort() {
+        return ((bitField0_ & 0x00008000) == 0x00008000);
+      }
+      /**
+       * <code>required int32 orePort = 16;</code>
+       *
+       * <pre>
+       * 煤矿港口数量
+       * </pre>
+       */
+      public int getOrePort() {
+        return orePort_;
+      }
+      /**
+       * <code>required int32 orePort = 16;</code>
+       *
+       * <pre>
+       * 煤矿港口数量
+       * </pre>
+       */
+      public Builder setOrePort(int value) {
+        bitField0_ |= 0x00008000;
+        orePort_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 orePort = 16;</code>
+       *
+       * <pre>
+       * 煤矿港口数量
+       * </pre>
+       */
+      public Builder clearOrePort() {
+        bitField0_ = (bitField0_ & ~0x00008000);
+        orePort_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bankPort_ ;
+      /**
+       * <code>required int32 bankPort = 17;</code>
+       *
+       * <pre>
+       * 3比1港口
+       * </pre>
+       */
+      public boolean hasBankPort() {
+        return ((bitField0_ & 0x00010000) == 0x00010000);
+      }
+      /**
+       * <code>required int32 bankPort = 17;</code>
+       *
+       * <pre>
+       * 3比1港口
+       * </pre>
+       */
+      public int getBankPort() {
+        return bankPort_;
+      }
+      /**
+       * <code>required int32 bankPort = 17;</code>
+       *
+       * <pre>
+       * 3比1港口
+       * </pre>
+       */
+      public Builder setBankPort(int value) {
+        bitField0_ |= 0x00010000;
+        bankPort_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 bankPort = 17;</code>
+       *
+       * <pre>
+       * 3比1港口
+       * </pre>
+       */
+      public Builder clearBankPort() {
+        bitField0_ = (bitField0_ & ~0x00010000);
+        bankPort_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.config.proto.CcatanMap)
     }
 
     static {
-      defaultInstance = new Csample(true);
+      defaultInstance = new CcatanMap(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.config.proto.Csample)
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.config.proto.CcatanMap)
   }
 
-  public interface DdataOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.config.proto.Ddata)
+  public interface DcatanGridOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.config.proto.DcatanGrid)
       com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>required int32 id = 1;</code>
      *
      * <pre>
-     * 唯一id,名字可变更,第一列必须保证唯一
+     * 格子id
      * </pre>
      */
     boolean hasId();
@@ -2723,61 +3715,69 @@ public final class Config {
      * <code>required int32 id = 1;</code>
      *
      * <pre>
-     * 唯一id,名字可变更,第一列必须保证唯一
+     * 格子id
      * </pre>
      */
     int getId();
 
     /**
-     * <code>required string name = 2;</code>
+     * <code>required int32 x = 2;</code>
      *
      * <pre>
-     * 字符串示例
+     * 横坐标,屏幕中心点为0,横向邻接格子坐标变更3,右加左减
      * </pre>
      */
-    boolean hasName();
+    boolean hasX();
     /**
-     * <code>required string name = 2;</code>
+     * <code>required int32 x = 2;</code>
      *
      * <pre>
-     * 字符串示例
+     * 横坐标,屏幕中心点为0,横向邻接格子坐标变更3,右加左减
      * </pre>
      */
-    java.lang.String getName();
+    int getX();
+
     /**
-     * <code>required string name = 2;</code>
+     * <code>required int32 y = 3;</code>
      *
      * <pre>
-     * 字符串示例
+     * 纵坐标,屏幕中心点为0,纵向临界变更6,横向邻接变更3,上加下减
      * </pre>
      */
-    com.google.protobuf.ByteString
-        getNameBytes();
+    boolean hasY();
+    /**
+     * <code>required int32 y = 3;</code>
+     *
+     * <pre>
+     * 纵坐标,屏幕中心点为0,纵向临界变更6,横向邻接变更3,上加下减
+     * </pre>
+     */
+    int getY();
   }
   /**
-   * Protobuf type {@code org.shell.mmo.sample.config.proto.Ddata}
+   * Protobuf type {@code org.shell.mmo.sample.config.proto.DcatanGrid}
    *
    * <pre>
-   * 示例结构
+   * 卡坦岛格子,边朝下,非顶点朝下
    * </pre>
    */
-  public static final class Ddata extends
+  public static final class DcatanGrid extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.config.proto.Ddata)
-      DdataOrBuilder {
-    // Use Ddata.newBuilder() to construct.
-    private Ddata(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.config.proto.DcatanGrid)
+      DcatanGridOrBuilder {
+    // Use DcatanGrid.newBuilder() to construct.
+    private DcatanGrid(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private Ddata(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private DcatanGrid(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final Ddata defaultInstance;
-    public static Ddata getDefaultInstance() {
+    private static final DcatanGrid defaultInstance;
+    public static DcatanGrid getDefaultInstance() {
       return defaultInstance;
     }
 
-    public Ddata getDefaultInstanceForType() {
+    public DcatanGrid getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -2787,7 +3787,7 @@ public final class Config {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private Ddata(
+    private DcatanGrid(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2815,10 +3815,14 @@ public final class Config {
               id_ = input.readInt32();
               break;
             }
-            case 18: {
-              com.google.protobuf.ByteString bs = input.readBytes();
+            case 16: {
               bitField0_ |= 0x00000002;
-              name_ = bs;
+              x_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              y_ = input.readInt32();
               break;
             }
           }
@@ -2835,28 +3839,28 @@ public final class Config {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_Ddata_descriptor;
+      return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_Ddata_fieldAccessorTable
+      return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.shell.mmo.sample.config.proto.Config.Ddata.class, org.shell.mmo.sample.config.proto.Config.Ddata.Builder.class);
+              org.shell.mmo.sample.config.proto.Config.DcatanGrid.class, org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<Ddata> PARSER =
-        new com.google.protobuf.AbstractParser<Ddata>() {
-      public Ddata parsePartialFrom(
+    public static com.google.protobuf.Parser<DcatanGrid> PARSER =
+        new com.google.protobuf.AbstractParser<DcatanGrid>() {
+      public DcatanGrid parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Ddata(input, extensionRegistry);
+        return new DcatanGrid(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Ddata> getParserForType() {
+    public com.google.protobuf.Parser<DcatanGrid> getParserForType() {
       return PARSER;
     }
 
@@ -2867,7 +3871,7 @@ public final class Config {
      * <code>required int32 id = 1;</code>
      *
      * <pre>
-     * 唯一id,名字可变更,第一列必须保证唯一
+     * 格子id
      * </pre>
      */
     public boolean hasId() {
@@ -2877,70 +3881,63 @@ public final class Config {
      * <code>required int32 id = 1;</code>
      *
      * <pre>
-     * 唯一id,名字可变更,第一列必须保证唯一
+     * 格子id
      * </pre>
      */
     public int getId() {
       return id_;
     }
 
-    public static final int NAME_FIELD_NUMBER = 2;
-    private java.lang.Object name_;
+    public static final int X_FIELD_NUMBER = 2;
+    private int x_;
     /**
-     * <code>required string name = 2;</code>
+     * <code>required int32 x = 2;</code>
      *
      * <pre>
-     * 字符串示例
+     * 横坐标,屏幕中心点为0,横向邻接格子坐标变更3,右加左减
      * </pre>
      */
-    public boolean hasName() {
+    public boolean hasX() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required string name = 2;</code>
+     * <code>required int32 x = 2;</code>
      *
      * <pre>
-     * 字符串示例
+     * 横坐标,屏幕中心点为0,横向邻接格子坐标变更3,右加左减
      * </pre>
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          name_ = s;
-        }
-        return s;
-      }
+    public int getX() {
+      return x_;
+    }
+
+    public static final int Y_FIELD_NUMBER = 3;
+    private int y_;
+    /**
+     * <code>required int32 y = 3;</code>
+     *
+     * <pre>
+     * 纵坐标,屏幕中心点为0,纵向临界变更6,横向邻接变更3,上加下减
+     * </pre>
+     */
+    public boolean hasY() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required string name = 2;</code>
+     * <code>required int32 y = 3;</code>
      *
      * <pre>
-     * 字符串示例
+     * 纵坐标,屏幕中心点为0,纵向临界变更6,横向邻接变更3,上加下减
      * </pre>
      */
-    public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        name_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public int getY() {
+      return y_;
     }
 
     private void initFields() {
       id_ = 0;
-      name_ = "";
+      x_ = 0;
+      y_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2952,7 +3949,11 @@ public final class Config {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasName()) {
+      if (!hasX()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasY()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -2967,7 +3968,10 @@ public final class Config {
         output.writeInt32(1, id_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getNameBytes());
+        output.writeInt32(2, x_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, y_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -2984,7 +3988,11 @@ public final class Config {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getNameBytes());
+          .computeInt32Size(2, x_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, y_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2998,53 +4006,53 @@ public final class Config {
       return super.writeReplace();
     }
 
-    public static org.shell.mmo.sample.config.proto.Config.Ddata parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.DcatanGrid parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Ddata parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.DcatanGrid parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Ddata parseFrom(byte[] data)
+    public static org.shell.mmo.sample.config.proto.Config.DcatanGrid parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Ddata parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.DcatanGrid parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Ddata parseFrom(java.io.InputStream input)
+    public static org.shell.mmo.sample.config.proto.Config.DcatanGrid parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Ddata parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.DcatanGrid parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Ddata parseDelimitedFrom(java.io.InputStream input)
+    public static org.shell.mmo.sample.config.proto.Config.DcatanGrid parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Ddata parseDelimitedFrom(
+    public static org.shell.mmo.sample.config.proto.Config.DcatanGrid parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Ddata parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.DcatanGrid parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static org.shell.mmo.sample.config.proto.Config.Ddata parseFrom(
+    public static org.shell.mmo.sample.config.proto.Config.DcatanGrid parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3053,7 +4061,7 @@ public final class Config {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(org.shell.mmo.sample.config.proto.Config.Ddata prototype) {
+    public static Builder newBuilder(org.shell.mmo.sample.config.proto.Config.DcatanGrid prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -3065,29 +4073,29 @@ public final class Config {
       return builder;
     }
     /**
-     * Protobuf type {@code org.shell.mmo.sample.config.proto.Ddata}
+     * Protobuf type {@code org.shell.mmo.sample.config.proto.DcatanGrid}
      *
      * <pre>
-     * 示例结构
+     * 卡坦岛格子,边朝下,非顶点朝下
      * </pre>
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.config.proto.Ddata)
-        org.shell.mmo.sample.config.proto.Config.DdataOrBuilder {
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.config.proto.DcatanGrid)
+        org.shell.mmo.sample.config.proto.Config.DcatanGridOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_Ddata_descriptor;
+        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_Ddata_fieldAccessorTable
+        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.shell.mmo.sample.config.proto.Config.Ddata.class, org.shell.mmo.sample.config.proto.Config.Ddata.Builder.class);
+                org.shell.mmo.sample.config.proto.Config.DcatanGrid.class, org.shell.mmo.sample.config.proto.Config.DcatanGrid.Builder.class);
       }
 
-      // Construct using org.shell.mmo.sample.config.proto.Config.Ddata.newBuilder()
+      // Construct using org.shell.mmo.sample.config.proto.Config.DcatanGrid.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3109,8 +4117,10 @@ public final class Config {
         super.clear();
         id_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
-        name_ = "";
+        x_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
+        y_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -3120,23 +4130,23 @@ public final class Config {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_Ddata_descriptor;
+        return org.shell.mmo.sample.config.proto.Config.internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_descriptor;
       }
 
-      public org.shell.mmo.sample.config.proto.Config.Ddata getDefaultInstanceForType() {
-        return org.shell.mmo.sample.config.proto.Config.Ddata.getDefaultInstance();
+      public org.shell.mmo.sample.config.proto.Config.DcatanGrid getDefaultInstanceForType() {
+        return org.shell.mmo.sample.config.proto.Config.DcatanGrid.getDefaultInstance();
       }
 
-      public org.shell.mmo.sample.config.proto.Config.Ddata build() {
-        org.shell.mmo.sample.config.proto.Config.Ddata result = buildPartial();
+      public org.shell.mmo.sample.config.proto.Config.DcatanGrid build() {
+        org.shell.mmo.sample.config.proto.Config.DcatanGrid result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public org.shell.mmo.sample.config.proto.Config.Ddata buildPartial() {
-        org.shell.mmo.sample.config.proto.Config.Ddata result = new org.shell.mmo.sample.config.proto.Config.Ddata(this);
+      public org.shell.mmo.sample.config.proto.Config.DcatanGrid buildPartial() {
+        org.shell.mmo.sample.config.proto.Config.DcatanGrid result = new org.shell.mmo.sample.config.proto.Config.DcatanGrid(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3146,30 +4156,35 @@ public final class Config {
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.name_ = name_;
+        result.x_ = x_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.y_ = y_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.shell.mmo.sample.config.proto.Config.Ddata) {
-          return mergeFrom((org.shell.mmo.sample.config.proto.Config.Ddata)other);
+        if (other instanceof org.shell.mmo.sample.config.proto.Config.DcatanGrid) {
+          return mergeFrom((org.shell.mmo.sample.config.proto.Config.DcatanGrid)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(org.shell.mmo.sample.config.proto.Config.Ddata other) {
-        if (other == org.shell.mmo.sample.config.proto.Config.Ddata.getDefaultInstance()) return this;
+      public Builder mergeFrom(org.shell.mmo.sample.config.proto.Config.DcatanGrid other) {
+        if (other == org.shell.mmo.sample.config.proto.Config.DcatanGrid.getDefaultInstance()) return this;
         if (other.hasId()) {
           setId(other.getId());
         }
-        if (other.hasName()) {
-          bitField0_ |= 0x00000002;
-          name_ = other.name_;
-          onChanged();
+        if (other.hasX()) {
+          setX(other.getX());
+        }
+        if (other.hasY()) {
+          setY(other.getY());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -3180,7 +4195,11 @@ public final class Config {
           
           return false;
         }
-        if (!hasName()) {
+        if (!hasX()) {
+          
+          return false;
+        }
+        if (!hasY()) {
           
           return false;
         }
@@ -3191,11 +4210,11 @@ public final class Config {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        org.shell.mmo.sample.config.proto.Config.Ddata parsedMessage = null;
+        org.shell.mmo.sample.config.proto.Config.DcatanGrid parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.shell.mmo.sample.config.proto.Config.Ddata) e.getUnfinishedMessage();
+          parsedMessage = (org.shell.mmo.sample.config.proto.Config.DcatanGrid) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -3211,7 +4230,7 @@ public final class Config {
        * <code>required int32 id = 1;</code>
        *
        * <pre>
-       * 唯一id,名字可变更,第一列必须保证唯一
+       * 格子id
        * </pre>
        */
       public boolean hasId() {
@@ -3221,7 +4240,7 @@ public final class Config {
        * <code>required int32 id = 1;</code>
        *
        * <pre>
-       * 唯一id,名字可变更,第一列必须保证唯一
+       * 格子id
        * </pre>
        */
       public int getId() {
@@ -3231,7 +4250,7 @@ public final class Config {
        * <code>required int32 id = 1;</code>
        *
        * <pre>
-       * 唯一id,名字可变更,第一列必须保证唯一
+       * 格子id
        * </pre>
        */
       public Builder setId(int value) {
@@ -3244,7 +4263,7 @@ public final class Config {
        * <code>required int32 id = 1;</code>
        *
        * <pre>
-       * 唯一id,名字可变更,第一列必须保证唯一
+       * 格子id
        * </pre>
        */
       public Builder clearId() {
@@ -3254,115 +4273,111 @@ public final class Config {
         return this;
       }
 
-      private java.lang.Object name_ = "";
+      private int x_ ;
       /**
-       * <code>required string name = 2;</code>
+       * <code>required int32 x = 2;</code>
        *
        * <pre>
-       * 字符串示例
+       * 横坐标,屏幕中心点为0,横向邻接格子坐标变更3,右加左减
        * </pre>
        */
-      public boolean hasName() {
+      public boolean hasX() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required string name = 2;</code>
+       * <code>required int32 x = 2;</code>
        *
        * <pre>
-       * 字符串示例
+       * 横坐标,屏幕中心点为0,横向邻接格子坐标变更3,右加左减
        * </pre>
        */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            name_ = s;
-          }
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
+      public int getX() {
+        return x_;
       }
       /**
-       * <code>required string name = 2;</code>
+       * <code>required int32 x = 2;</code>
        *
        * <pre>
-       * 字符串示例
+       * 横坐标,屏幕中心点为0,横向邻接格子坐标变更3,右加左减
        * </pre>
        */
-      public com.google.protobuf.ByteString
-          getNameBytes() {
-        java.lang.Object ref = name_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          name_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string name = 2;</code>
-       *
-       * <pre>
-       * 字符串示例
-       * </pre>
-       */
-      public Builder setName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        name_ = value;
+      public Builder setX(int value) {
+        bitField0_ |= 0x00000002;
+        x_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string name = 2;</code>
+       * <code>required int32 x = 2;</code>
        *
        * <pre>
-       * 字符串示例
+       * 横坐标,屏幕中心点为0,横向邻接格子坐标变更3,右加左减
        * </pre>
        */
-      public Builder clearName() {
+      public Builder clearX() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        name_ = getDefaultInstance().getName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string name = 2;</code>
-       *
-       * <pre>
-       * 字符串示例
-       * </pre>
-       */
-      public Builder setNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        name_ = value;
+        x_ = 0;
         onChanged();
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.config.proto.Ddata)
+      private int y_ ;
+      /**
+       * <code>required int32 y = 3;</code>
+       *
+       * <pre>
+       * 纵坐标,屏幕中心点为0,纵向临界变更6,横向邻接变更3,上加下减
+       * </pre>
+       */
+      public boolean hasY() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>required int32 y = 3;</code>
+       *
+       * <pre>
+       * 纵坐标,屏幕中心点为0,纵向临界变更6,横向邻接变更3,上加下减
+       * </pre>
+       */
+      public int getY() {
+        return y_;
+      }
+      /**
+       * <code>required int32 y = 3;</code>
+       *
+       * <pre>
+       * 纵坐标,屏幕中心点为0,纵向临界变更6,横向邻接变更3,上加下减
+       * </pre>
+       */
+      public Builder setY(int value) {
+        bitField0_ |= 0x00000004;
+        y_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 y = 3;</code>
+       *
+       * <pre>
+       * 纵坐标,屏幕中心点为0,纵向临界变更6,横向邻接变更3,上加下减
+       * </pre>
+       */
+      public Builder clearY() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        y_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.config.proto.DcatanGrid)
     }
 
     static {
-      defaultInstance = new Ddata(true);
+      defaultInstance = new DcatanGrid(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.config.proto.Ddata)
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.config.proto.DcatanGrid)
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
@@ -3371,15 +4386,15 @@ public final class Config {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_org_shell_mmo_sample_config_proto_ContainerGroup_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_org_shell_mmo_sample_config_proto_Csample_descriptor;
+    internal_static_org_shell_mmo_sample_config_proto_CcatanMap_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_org_shell_mmo_sample_config_proto_Csample_fieldAccessorTable;
+      internal_static_org_shell_mmo_sample_config_proto_CcatanMap_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_org_shell_mmo_sample_config_proto_Ddata_descriptor;
+    internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_org_shell_mmo_sample_config_proto_Ddata_fieldAccessorTable;
+      internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3390,15 +4405,18 @@ public final class Config {
   static {
     java.lang.String[] descriptorData = {
       "\n\014config.proto\022!org.shell.mmo.sample.con" +
-      "fig.proto\"U\n\016ContainerGroup\022C\n\017sampleCon" +
-      "tainer\030\001 \003(\0132*.org.shell.mmo.sample.conf" +
-      "ig.proto.Csample\"\312\001\n\007Csample\022\n\n\002id\030\001 \002(\005" +
-      "\022\014\n\004name\030\002 \002(\t\0226\n\004data\030\003 \002(\0132(.org.shell" +
-      ".mmo.sample.config.proto.Ddata\0226\n\004list\030\004" +
-      " \003(\0132(.org.shell.mmo.sample.config.proto" +
-      ".Ddata\0225\n\003map\030\005 \003(\0132(.org.shell.mmo.samp" +
-      "le.config.proto.Ddata\"!\n\005Ddata\022\n\n\002id\030\001 \002" +
-      "(\005\022\014\n\004name\030\002 \002(\t"
+      "fig.proto\"Y\n\016ContainerGroup\022G\n\021catanMapC" +
+      "ontainer\030\001 \003(\0132,.org.shell.mmo.sample.co" +
+      "nfig.proto.CcatanMap\"\302\002\n\tCcatanMap\022\n\n\002id" +
+      "\030\001 \002(\005\022\014\n\004name\030\002 \002(\t\022\013\n\003min\030\003 \002(\005\022\013\n\003max" +
+      "\030\004 \002(\005\022;\n\004grid\030\005 \003(\0132-.org.shell.mmo.sam" +
+      "ple.config.proto.DcatanGrid\022\016\n\006number\030\006 " +
+      "\003(\005\022\r\n\005brick\030\007 \002(\005\022\016\n\006lumber\030\010 \002(\005\022\014\n\004wo" +
+      "ol\030\t \002(\005\022\014\n\004gain\030\n \002(\005\022\013\n\003ore\030\013 \002(\005\022\021\n\tb" +
+      "rickPort\030\014 \002(\005\022\022\n\nlumberPort\030\r \002(\005\022\020\n\010wo",
+      "olPort\030\016 \002(\005\022\020\n\010gainPort\030\017 \002(\005\022\017\n\007orePor" +
+      "t\030\020 \002(\005\022\020\n\010bankPort\030\021 \002(\005\".\n\nDcatanGrid\022" +
+      "\n\n\002id\030\001 \002(\005\022\t\n\001x\030\002 \002(\005\022\t\n\001y\030\003 \002(\005"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -3417,19 +4435,19 @@ public final class Config {
     internal_static_org_shell_mmo_sample_config_proto_ContainerGroup_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_config_proto_ContainerGroup_descriptor,
-        new java.lang.String[] { "SampleContainer", });
-    internal_static_org_shell_mmo_sample_config_proto_Csample_descriptor =
+        new java.lang.String[] { "CatanMapContainer", });
+    internal_static_org_shell_mmo_sample_config_proto_CcatanMap_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_org_shell_mmo_sample_config_proto_Csample_fieldAccessorTable = new
+    internal_static_org_shell_mmo_sample_config_proto_CcatanMap_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_org_shell_mmo_sample_config_proto_Csample_descriptor,
-        new java.lang.String[] { "Id", "Name", "Data", "List", "Map", });
-    internal_static_org_shell_mmo_sample_config_proto_Ddata_descriptor =
+        internal_static_org_shell_mmo_sample_config_proto_CcatanMap_descriptor,
+        new java.lang.String[] { "Id", "Name", "Min", "Max", "Grid", "Number", "Brick", "Lumber", "Wool", "Gain", "Ore", "BrickPort", "LumberPort", "WoolPort", "GainPort", "OrePort", "BankPort", });
+    internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_org_shell_mmo_sample_config_proto_Ddata_fieldAccessorTable = new
+    internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_org_shell_mmo_sample_config_proto_Ddata_descriptor,
-        new java.lang.String[] { "Id", "Name", });
+        internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_descriptor,
+        new java.lang.String[] { "Id", "X", "Y", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

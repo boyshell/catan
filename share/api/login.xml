@@ -12,16 +12,15 @@
             </params>
             <returns>
                 <field type="LeaderRole" name="leaderRole" desc="主角" index="1"/>
+                <field type="fixed64" name="id" desc="账号id" index="2"/>
+                <field type="int32" name="gold" desc="元宝数量" index="3"/>
             </returns>
         </api>
 
-        <api name="NetTest" desc="网络测试" invoke="client" provide="logic">
+        <api name="Replace" desc="顶号" invoke="logic" provide="client">
             <params>
-                <list type="string" name="data" desc="数据" index="1"/>
+                <field type="string" name="host" desc="顶号者的主机地址" index="1"/>
             </params>
-            <returns>
-                <field type="LeaderRole" name="leaderRole" desc="主角" index="1"/>
-            </returns>
         </api>
     </apis>
 </root>

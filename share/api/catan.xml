@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <apis>
+        <api name="Start" desc="开始" invoke="logic" provide="client">
+            <params>
+                <field type="CatanMap" name="map" desc="卡坦岛地图" index="1"/>
+            </params>
+        </api>
+        <api name="RoundInitStart" desc="初始化回合开始" invoke="logic" provide="client">
+            <params>
+                <field type="fixed64" name="id" desc="账号id" index="1"/>
+                <field type="int32" name="remain" desc="剩余多少秒结束" index="2"/>
+            </params>
+        </api>
+        <api name="Set" desc="设置起始点" invoke="client" provide="logic">
+            <params>
+                <field type="int32" name="country" desc="村庄位置" index="1"/>
+                <field type="int32" name="road" desc="道路位置" index="2"/>
+            </params>
+            <returns broadcast="true">
+                <field type="fixed64" name="id" desc="账号id" index="1"/>
+                <field type="int32" name="country" desc="村庄位置" index="2"/>
+                <field type="int32" name="road" desc="道路位置" index="3"/>
+            </returns>
+        </api>
+        <api name="RoundCommonStart" desc="普通回合开始" invoke="logic" provide="client">
+            <params>
+                <field type="fixed64" name="id" desc="账号id" index="1"/>
+                <field type="int32" name="remain" desc="剩余多少秒结束" index="2"/>
+                <field type="bool" name="rob" desc="受否需要移动强盗" index="3"/>
+                <list type="CatanMasterResource" name="gain" desc="每个人收获列表" index="4"/>
+            </params>
+        </api>
+        <api name="RoundCommonEnd" desc="结束普通回合" invoke="client" provide="logic">
+            <params>
+            </params>
+            <returns>
+            </returns>
+        </api>
+        <api name="BuildRoad" desc="建造道路" invoke="client" provide="logic">
+            <params>
+                <field type="int32" name="road" desc="道路位置" index="1"/>
+            </params>
+            <returns broadcast="true">
+                <field type="fixed64" name="id" desc="账号id" index="1"/>
+                <field type="int32" name="road" desc="道路位置" index="2"/>
+            </returns>
+        </api>
+        <api name="BuildCountry" desc="建造村庄" invoke="client" provide="logic">
+            <params>
+                <field type="int32" name="country" desc="村庄位置" index="1"/>
+            </params>
+            <returns broadcast="true">
+                <field type="fixed64" name="id" desc="账号id" index="1"/>
+                <field type="int32" name="country" desc="村庄位置" index="2"/>
+            </returns>
+        </api>
+        <api name="BuildCity" desc="建造城市" invoke="client" provide="logic">
+            <params>
+                <field type="int32" name="city" desc="城市位置" index="1"/>
+            </params>
+            <returns broadcast="true">
+                <field type="fixed64" name="id" desc="账号id" index="1"/>
+                <field type="int32" name="city" desc="城市位置" index="2"/>
+            </returns>
+        </api>
+        <api name="BuildDevelopmentCard" desc="建造发展卡" invoke="client" provide="logic">
+            <params>
+                <field type="int32" name="count" desc="数量" index="1"/>
+            </params>
+            <returns broadcast="true">
+                <field type="fixed64" name="id" desc="账号id" index="1"/>
+                <field type="int32" name="count" desc="数量" index="2"/>
+            </returns>
+        </api>
+        <api name="TradeSystem" desc="系统交易" invoke="client" provide="logic">
+            <params>
+                <list type="CatanResource" name="offer" desc="我要的资源" index="1"/>
+                <list type="CatanResource" name="want" desc="我提供的资源" index="2"/>
+            </params>
+            <returns broadcast="true">
+                <list type="CatanResource" name="offer" desc="玩家要的资源" index="1"/>
+                <list type="CatanResource" name="want" desc="玩家提供的资源" index="2"/>
+                <field type="fixed64" name="id" desc="账号id" index="3"/>
+            </returns>
+        </api>
+        <api name="TradeOffer" desc="开价给所有人(交易流程:开价->还价/取消->成交/取消)" invoke="client" provide="logic">
+            <params>
+                <list type="CatanResource" name="offer" desc="我要的资源" index="1"/>
+                <list type="CatanResource" name="want" desc="我提供的资源" index="2"/>
+            </params>
+            <returns broadcast="true">
+                <list type="CatanResource" name="offer" desc="玩家要的资源" index="1"/>
+                <list type="CatanResource" name="want" desc="玩家提供的资源" index="2"/>
+                <field type="fixed64" name="id" desc="账号id" index="3"/>
+            </returns>
+        </api>
+        <api name="TradeCounterOffer" desc="还价给发起者,可以跟开价一模一样,表示我接受你的报价" invoke="client" provide="logic">
+            <params>
+                <list type="CatanResource" name="offer" desc="我要的资源" index="1"/>
+                <list type="CatanResource" name="want" desc="我提供的资源" index="2"/>
+            </params>
+            <returns>
+            </returns>
+        </api>
+        <api name="TradeCounterOfferToMe" desc="别人给我还价" invoke="logic" provide="client">
+            <params>
+                <list type="CatanResource" name="offer" desc="玩家要的资源" index="1"/>
+                <list type="CatanResource" name="want" desc="玩家提供的资源" index="2"/>
+                <field type="fixed64" name="id" desc="账号id" index="3"/>
+            </params>
+        </api>
+        <api name="TradeCounterOfferRefuse" desc="拒绝别人的开价" invoke="client" provide="logic">
+            <params>
+            </params>
+            <returns>
+            </returns>
+        </api>
+        <api name="TradeCounterOfferRefuseToMe" desc="别人拒绝我的交易" invoke="logic" provide="client">
+            <params>
+                <field type="fixed64" name="id" desc="账号id" index="3"/>
+            </params>
+        </api>
+        <api name="TradeDeal" desc="交易成交" invoke="client" provide="logic">
+            <params>
+                <field type="fixed64" name="target" desc="目标id" index="1"/>
+            </params>
+            <returns broadcast="true">
+                <field type="CatanMasterResource" name="master1" desc="玩家1获得的资源" index="1"/>
+                <field type="CatanMasterResource" name="master2" desc="玩家2获得的资源" index="3"/>
+            </returns>
+        </api>
+        <api name="TradeCancel" desc="交易取消" invoke="client" provide="logic">
+            <params>
+            </params>
+            <returns broadcast="true">
+            </returns>
+        </api>
+        <api name="Rob" desc="抢劫" invoke="client" provide="logic">
+            <params>
+                <field type="int32" name="robber" desc="强盗的位置" index="1"/>
+                <field type="fixed64" name="id" desc="被抢的玩家" index="2"/>
+            </params>
+            <returns broadcast="true">
+                <field type="int32" name="robber" desc="强盗的位置" index="1"/>
+                <field type="fixed64" name="criminal" desc="罪犯" index="2"/>
+                <field type="fixed64" name="victim" desc="受害者" index="3"/>
+                <field type="CatanResource" name="resource" desc="资源" index="4"/>
+            </returns>
+        </api>
+        <api name="RichCard" desc="使用丰收卡" invoke="client" provide="logic">
+            <params>
+                <list type="CatanResource" name="resource" desc="资源" index="1"/>
+            </params>
+            <returns broadcast="true">
+                <list type="CatanResource" name="resource" desc="资源" index="1"/>
+                <field type="fixed64" name="id" desc="账号id" index="2"/>
+            </returns>
+        </api>
+        <api name="RoadCard" desc="使用道路卡" invoke="client" provide="logic">
+            <params>
+                <list type="int32" name="road" desc="道路位置" index="1"/>
+            </params>
+            <returns broadcast="true">
+                <list type="int32" name="road" desc="道路位置" index="1"/>
+                <field type="fixed64" name="id" desc="账号id" index="2"/>
+            </returns>
+        </api>
+        <api name="KnightCard" desc="使用骑士卡" invoke="client" provide="logic">
+            <params>
+                <field type="int32" name="robber" desc="强盗的位置" index="1"/>
+                <field type="fixed64" name="id" desc="被抢的玩家" index="2"/>
+            </params>
+            <returns broadcast="true">
+                <field type="int32" name="robber" desc="强盗的位置" index="1"/>
+                <field type="fixed64" name="criminal" desc="罪犯" index="2"/>
+                <field type="fixed64" name="victim" desc="受害者" index="3"/>
+                <field type="CatanResource" name="resource" desc="资源" index="4"/>
+            </returns>
+        </api>
+        <api name="MonopolyCard" desc="使用垄断卡" invoke="client" provide="logic">
+            <params>
+                <field type="CatanResourceType" name="type" desc="资源类型" index="1"/>
+            </params>
+            <returns broadcast="true">
+                <field type="fixed64" name="id" desc="垄断者账号" index="1"/>
+                <list type="CatanMasterResource" name="lose" desc="被垄断列表" index="4"/>
+            </returns>
+        </api>
+        <api name="RoundFoldStart" desc="弃牌回合开始(前端自行判定自己是否需要弃牌)" invoke="logic" provide="client">
+            <params>
+                <field type="fixed64" name="id" desc="账号id" index="1"/>
+                <field type="int32" name="remain" desc="剩余多少秒结束" index="2"/>
+            </params>
+        </api>
+        <api name="Fold" desc="弃牌" invoke="client" provide="logic">
+            <params>
+                <list type="CatanResource" name="lose" desc="弃牌列表" index="4"/>
+            </params>
+            <returns broadcast="true">
+                <field type="fixed64" name="id" desc="账号" index="1"/>
+                <list type="CatanResource" name="lose" desc="弃牌列表" index="2"/>
+            </returns>
+        </api>
+        <api name="Done" desc="结束" invoke="logic" provide="client">
+            <params>
+                <list type="CatanScore" name="score" desc="积分" index="1"/>
+                <field type="int32" name="gain" desc="本轮战绩" index="2"/>
+                <field type="int32" name="totalGain" desc="累计战绩" index="3"/>
+            </params>
+        </api>
+    </apis>
+</root>

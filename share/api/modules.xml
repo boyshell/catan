@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modules>
-    <module id="1" name="login" desc="登录" superClass="org.shell.mmo.sample.message.MessageHandler"/>
-    <module id="2" name="fight" desc="战斗" superClass="org.shell.mmo.sample.message.MessageHandler"/>
-    <module id="3" name="move" desc="移动" superClass="org.shell.mmo.sample.message.MessageHandler"/>
+    <module id="1" name="login" desc="登录" superClass="org.shell.mmo.sample.message.ChannelMessageHandler"/>
+    <module id="2" name="role" desc="角色" superClass="org.shell.mmo.sample.message.AccountMessageHandler"/>
+    <module id="3" name="room" desc="房间" superClass="org.shell.mmo.sample.message.RoomMessageHandler"/>
+    <module id="4" name="table" desc="桌子" superClass="org.shell.mmo.sample.message.TableMessageHandler"/>
+    <module id="5" name="catan" desc="卡坦岛" superClass="org.shell.mmo.sample.message.CatanMessageHandler"/>
 </modules>

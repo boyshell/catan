@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="boyshell" />
+    <title>模块</title>
+</head>
+<body>
+<h4>创建桌子</h4>
+<pre style="border: 1px dotted #785">
+<pre style="background: #f5f5f5">
+API提供方: logic
+API调用者: client
+</pre>
+参数: ReqTableCreate
+<pre style="background: #f5f5f5">
+<code>
+string name; // 房间名字
+string pwd; // 房间密码
+int32 map; // 使用那张图?
+</code>
+</pre>
+返回值: ResTableCreate
+<pre style="background: #f5f5f5">
+<code>
+<a href="Error.html">Error</a> error; // 错误码
+int32 id; // 桌子编号
+int32 map; // 使用那张图?
+</code>
+</pre>
+</pre>
+<h4>添加桌子</h4>
+<pre style="border: 1px dotted #785">
+<pre style="background: #f5f5f5">
+API提供方: client
+API调用者: logic
+</pre>
+参数: ReqTableAdd
+<pre style="background: #f5f5f5">
+<code>
+<a href="GameTable.html">GameTable</a> table; // 桌子信息
+</code>
+</pre>
+</pre>
+<h4>加入桌子</h4>
+<pre style="border: 1px dotted #785">
+<pre style="background: #f5f5f5">
+API提供方: logic
+API调用者: client
+</pre>
+参数: ReqTableJoin
+<pre style="background: #f5f5f5">
+<code>
+int32 id; // 桌子编号
+string pwd; // 房间密码
+</code>
+</pre>
+返回值: ResTableJoin
+<pre style="background: #f5f5f5">
+<code>
+<a href="Error.html">Error</a> error; // 错误码
+int32 id; // 桌子编号
+int32 map; // 使用那张图?
+<a href="TableRole.html">TableRole</a> master; // 游戏者列表
+</code>
+</pre>
+</pre>
+<h4>更新桌子</h4>
+<pre style="border: 1px dotted #785">
+<pre style="background: #f5f5f5">
+API提供方: client
+API调用者: logic
+</pre>
+参数: ReqTableUpdate
+<pre style="background: #f5f5f5">
+<code>
+int32 id; // 桌子编号
+int32 count; // 当前人数
+bool start; // 是否已经开始
+</code>
+</pre>
+</pre>
+<h4>退出桌子</h4>
+<pre style="border: 1px dotted #785">
+<pre style="background: #f5f5f5">
+API提供方: logic
+API调用者: client
+</pre>
+参数: ReqTableExit
+<pre style="background: #f5f5f5">
+<code>
+</code>
+</pre>
+返回值: ResTableExit
+<pre style="background: #f5f5f5">
+<code>
+<a href="Error.html">Error</a> error; // 错误码
+fixed64 id; // 账号id
+</code>
+</pre>
+</pre>
+<h4>移除桌子</h4>
+<pre style="border: 1px dotted #785">
+<pre style="background: #f5f5f5">
+API提供方: client
+API调用者: logic
+</pre>
+参数: ReqTableRemove
+<pre style="background: #f5f5f5">
+<code>
+int32 id; // 桌子编号
+</code>
+</pre>
+</pre>
+<h4>准备</h4>
+<pre style="border: 1px dotted #785">
+<pre style="background: #f5f5f5">
+API提供方: logic
+API调用者: client
+</pre>
+参数: ReqTableReady
+<pre style="background: #f5f5f5">
+<code>
+</code>
+</pre>
+返回值: ResTableReady
+<pre style="background: #f5f5f5">
+<code>
+<a href="Error.html">Error</a> error; // 错误码
+fixed64 id; // 账号id
+</code>
+</pre>
+</pre>
+</body>

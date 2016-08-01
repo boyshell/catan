@@ -3,17 +3,54 @@
     <enums>
         <enum name="Error" desc="错误码">
             <SYS_ERR desc="系统错误" id="1"/>
+            <LOGIN_FLAG_ERR desc="登录密钥错误" id="2"/>
+            <LOGIN_OVERTIME desc="登录密钥超时" id="3"/>
+            <USR_ERR desc="账号非法" id="4"/>
+            <PLATFORM_ERR desc="平台非法" id="5"/>
+            <LIMIT_HOST desc="被限制的主机" id="6"/>
+            <LIMIT_USR desc="被限制的账号" id="7"/>
+            <LOGIN_REPEAT desc="重复登录" id="8"/>
+            <ROLE_EXIST desc="角色已经存在" id="9"/>
+            <ROLE_NAME_LEN desc="角色名长度非法" id="10"/>
+            <ROLE_NAME_ILLEGAL desc="角色名非法" id="11"/>
+            <ROLE_NAME_REPEAT desc="角色名重复" id="12"/>
+
+            <ROOM_NULL desc="房间[不存在]" id="13"/>
+
+            <TABLE_NAME_NULL desc="桌子[名称非法]" id="14"/>
+            <TABLE_PWD_TOO_LONG desc="桌子[密码太长]" id="15"/>
+            <TABLE_IN desc="桌子[已经在桌子中了]" id="16"/>
+            <TABLE_NOT_IN desc="桌子[不在桌子中]" id="17"/>
+            <TABLE_START desc="桌子[处于开始状态]" id="18"/>
+            <TABLE_NULL desc="桌子[不存在]" id="19"/>
+            <TABLE_FULL desc="桌子[满了]" id="20"/>
+            <TABLE_PWD_ERROR desc="桌子[密码错误]" id="21"/>
+            <TABLE_READY desc="桌子[已经准备]" id="22"/>
+
+            <CATAN_MAP_ILLEGAL desc="卡坦岛[地图非法]" id="23"/>
         </enum>
-        <enum name="GameObjectType" desc="对象类型">
-            <HERO desc="英雄" id="1"/>
-            <MONSTER desc="怪物" id="2"/>
-            <PET desc="宠物" id="3"/>
-            <ITEM desc="道具" id="4"/>
+        <enum name="RoomType" desc="桌子类型">
+            <ROOM_CATAN desc="卡坦岛" id="1"/>
         </enum>
         <enum name="Platform" desc="平台">
             <INNER desc="内部" id="1"/>
             <P37WAN desc="37玩" id="2"/>
             <P360 desc="360" id="3"/>
+        </enum>
+        <enum name="CatanResourceType" desc="卡坦岛资源类型">
+            <RESOURCE_BRICK desc="砖" id="1"/>
+            <RESOURCE_LUMBER desc="木材" id="2"/>
+            <RESOURCE_WOOL desc="羊毛" id="3"/>
+            <RESOURCE_GAIN desc="粮食" id="4"/>
+            <RESOURCE_ORE desc="矿石" id="5"/>
+        </enum>
+        <enum name="CatanPortType" desc="卡坦岛港口类型">
+            <PORT_BRICK desc="砖港" id="1"/>
+            <PORT_LUMBER desc="木港" id="2"/>
+            <PORT_WOOL desc="羊港" id="3"/>
+            <PORT_GAIN desc="麦港" id="4"/>
+            <PORT_ORE desc="矿港" id="5"/>
+            <PORT_BANK desc="3比1港" id="6"/>
         </enum>
     </enums>
     <beans>
@@ -22,13 +59,71 @@
             <field type="int32" name="y" desc="纵坐标" index="2"/>
         </bean>
         <bean name="LeaderRole" desc="主角">
-            <field type="fixed64" name="id" desc="角色id" index="1"/>
-            <field type="string" name="name" desc="名字" index="2"/>
-            <field type="int32" name="map" desc="地图" index="3"/>
-            <field type="int32" name="level" desc="等级" index="4"/>
-            <field type="int32" name="server" desc="服务器" index="5"/>
-            <field type="int32" name="platform" desc="平台" index="6"/>
-            <field type="int32" name="gold" desc="元宝" index="7"/>
+            <field type="string" name="name" desc="名字" index="1"/>
+            <field type="int32" name="scene" desc="场景" index="2"/>
+            <field type="int32" name="level" desc="等级" index="3"/>
+        </bean>
+        <bean name="GameRoom" desc="房间信息">
+            <field type="int32" name="id" desc="房间编号" index="1"/>
+            <field type="int32" name="count" desc="当前人数" index="2"/>
+            <field type="int32" name="max" desc="人数上限" index="3"/>
+            <field type="string" name="name" desc="房间名字" index="4"/>
+        </bean>
+        <bean name="GameTable" desc="桌子信息">
+            <field type="int32" name="id" desc="桌子编号" index="1"/>
+            <field type="int32" name="count" desc="当前人数" index="2"/>
+            <field type="bool" name="pwd" desc="是否需要密码" index="3"/>
+            <field type="string" name="name" desc="房间名字" index="4"/>
+            <field type="bool" name="start" desc="是否已经开始" index="5"/>
+            <field type="int32" name="max" desc="人数上限" index="6"/>
+            <field type="int32" name="map" desc="使用那张图?" index="7"/>
+        </bean>
+        <bean name="TableRole" desc="卡坦岛玩家">
+            <field type="fixed64" name="id" desc="玩家id" index="1"/>
+            <field type="string" name="name" desc="玩家名" index="2"/>
+            <field type="bool" name="ready" desc="是否准备完毕" index="3"/>
+        </bean>
+        <bean name="CatanResource" desc="卡坦岛资源">
+            <field type="CatanResourceType" name="type" desc="类型" index="1"/>
+            <field type="int32" name="num" desc="数量" index="2"/>
+        </bean>
+        <bean name="CatanMasterResource" desc="卡坦岛玩家关联资源">
+            <field type="fixed64" name="id" desc="玩家id" index="1"/>
+            <list type="CatanResource" name="resource" desc="资源" index="2"/>
+        </bean>
+        <bean name="CatanMap" desc="卡坦岛地图信息">
+            <list type="CatanGrid" name="grid" desc="格子信息" index="1"/>
+            <list type="CatanCity" name="city" desc="城市信息" index="2"/>
+            <list type="CatanCountry" name="country" desc="村庄信息" index="3"/>
+            <list type="CatanRoad" name="road" desc="道路信息" index="4"/>
+            <list type="CatanPort" name="port" desc="港口信息" index="5"/>
+        </bean>
+        <bean name="CatanPort" desc="卡坦岛港口信息">
+            <field type="Position" name="position1" desc="坐标1" index="1"/>
+            <field type="Position" name="position2" desc="坐标2" index="2"/>
+            <field type="CatanPortType" name="type" desc="港口类型" index="3"/>
+        </bean>
+        <bean name="CatanGrid" desc="卡坦岛格子信息">
+            <field type="Position" name="position" desc="坐标" index="1"/>
+            <field type="CatanResourceType" name="type" desc="资源产出类型" index="2"/>
+            <field type="int32" name="number" desc="数字" index="3"/>
+        </bean>
+        <bean name="CatanCity" desc="卡坦岛城市信息">
+            <field type="Position" name="point" desc="顶点坐标" index="1"/>
+            <field type="fixed64" name="id" desc="玩家id" index="2"/>
+        </bean>
+        <bean name="CatanCountry" desc="卡坦岛村庄信息">
+            <field type="Position" name="point" desc="顶点坐标" index="1"/>
+            <field type="fixed64" name="id" desc="玩家id" index="2"/>
+        </bean>
+        <bean name="CatanRoad" desc="卡坦岛道路信息">
+            <field type="Position" name="point1" desc="顶点坐标" index="1"/>
+            <field type="Position" name="point2" desc="顶点坐标" index="2"/>
+            <field type="fixed64" name="id" desc="玩家id" index="3"/>
+        </bean>
+        <bean name="CatanScore" desc="卡坦岛积分信息">
+            <field type="int32" name="score" desc="积分" index="1"/>
+            <listd type="fixed64" name="id" desc="玩家id" index="2"/>
         </bean>
     </beans>
 </root>

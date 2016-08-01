@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <apis>
+        <api name="Create" desc="创建桌子" invoke="client" provide="logic">
+            <params>
+                <field type="string" name="name" desc="房间名字" index="1"/>
+                <field type="string" name="pwd" desc="房间密码" index="2"/>
+                <field type="int32" name="map" desc="使用那张图?" index="3"/>
+            </params>
+            <returns>
+                <field type="int32" name="id" desc="桌子编号" index="1"/>
+                <field type="int32" name="map" desc="使用那张图?" index="2"/>
+            </returns>
+        </api>
+        <api name="Add" desc="添加桌子" invoke="logic" provide="client">
+            <params>
+                <field type="GameTable" name="table" desc="桌子信息" index="1"/>
+            </params>
+        </api>
+        <api name="Join" desc="加入桌子" invoke="client" provide="logic">
+            <params>
+                <field type="int32" name="id" desc="桌子编号" index="1"/>
+                <field type="string" name="pwd" desc="房间密码" index="2"/>
+            </params>
+            <returns>
+                <field type="int32" name="id" desc="桌子编号" index="1"/>
+                <field type="int32" name="map" desc="使用那张图?" index="2"/>
+                <list type="TableRole" name="master" desc="游戏者列表" index="3"/>
+            </returns>
+        </api>
+        <api name="Update" desc="更新桌子" invoke="logic" provide="client">
+            <params>
+                <field type="int32" name="id" desc="桌子编号" index="1"/>
+                <field type="int32" name="count" desc="当前人数" index="2"/>
+                <field type="bool" name="start" desc="是否已经开始" index="3"/>
+            </params>
+        </api>
+        <api name="Exit" desc="退出桌子" invoke="client" provide="logic">
+            <params>
+            </params>
+            <returns>
+                <field type="fixed64" name="id" desc="账号id" index="1"/>
+            </returns>
+        </api>
+        <api name="Remove" desc="移除桌子" invoke="logic" provide="client">
+            <params>
+                <field type="int32" name="id" desc="桌子编号" index="1"/>
+            </params>
+        </api>
+        <api name="Ready" desc="准备" invoke="client" provide="logic">
+            <params>
+            </params>
+            <returns broadcast="true">
+                <field type="fixed64" name="id" desc="账号id" index="1"/>
+            </returns>
+        </api>
+    </apis>
+</root>

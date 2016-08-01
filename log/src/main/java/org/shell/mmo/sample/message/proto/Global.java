@@ -25,6 +25,182 @@ public final class Global {
      * </pre>
      */
     SYS_ERR(0, 1),
+    /**
+     * <code>LOGIN_FLAG_ERR = 2;</code>
+     *
+     * <pre>
+     * 登录密钥错误
+     * </pre>
+     */
+    LOGIN_FLAG_ERR(1, 2),
+    /**
+     * <code>LOGIN_OVERTIME = 3;</code>
+     *
+     * <pre>
+     * 登录密钥超时
+     * </pre>
+     */
+    LOGIN_OVERTIME(2, 3),
+    /**
+     * <code>USR_ERR = 4;</code>
+     *
+     * <pre>
+     * 账号非法
+     * </pre>
+     */
+    USR_ERR(3, 4),
+    /**
+     * <code>PLATFORM_ERR = 5;</code>
+     *
+     * <pre>
+     * 平台非法
+     * </pre>
+     */
+    PLATFORM_ERR(4, 5),
+    /**
+     * <code>LIMIT_HOST = 6;</code>
+     *
+     * <pre>
+     * 被限制的主机
+     * </pre>
+     */
+    LIMIT_HOST(5, 6),
+    /**
+     * <code>LIMIT_USR = 7;</code>
+     *
+     * <pre>
+     * 被限制的账号
+     * </pre>
+     */
+    LIMIT_USR(6, 7),
+    /**
+     * <code>LOGIN_REPEAT = 8;</code>
+     *
+     * <pre>
+     * 重复登录
+     * </pre>
+     */
+    LOGIN_REPEAT(7, 8),
+    /**
+     * <code>ROLE_EXIST = 9;</code>
+     *
+     * <pre>
+     * 角色已经存在
+     * </pre>
+     */
+    ROLE_EXIST(8, 9),
+    /**
+     * <code>ROLE_NAME_LEN = 10;</code>
+     *
+     * <pre>
+     * 角色名长度非法
+     * </pre>
+     */
+    ROLE_NAME_LEN(9, 10),
+    /**
+     * <code>ROLE_NAME_ILLEGAL = 11;</code>
+     *
+     * <pre>
+     * 角色名非法
+     * </pre>
+     */
+    ROLE_NAME_ILLEGAL(10, 11),
+    /**
+     * <code>ROLE_NAME_REPEAT = 12;</code>
+     *
+     * <pre>
+     * 角色名重复
+     * </pre>
+     */
+    ROLE_NAME_REPEAT(11, 12),
+    /**
+     * <code>ROOM_NULL = 13;</code>
+     *
+     * <pre>
+     * 房间[不存在]
+     * </pre>
+     */
+    ROOM_NULL(12, 13),
+    /**
+     * <code>TABLE_NAME_NULL = 14;</code>
+     *
+     * <pre>
+     * 桌子[名称非法]
+     * </pre>
+     */
+    TABLE_NAME_NULL(13, 14),
+    /**
+     * <code>TABLE_PWD_TOO_LONG = 15;</code>
+     *
+     * <pre>
+     * 桌子[密码太长]
+     * </pre>
+     */
+    TABLE_PWD_TOO_LONG(14, 15),
+    /**
+     * <code>TABLE_IN = 16;</code>
+     *
+     * <pre>
+     * 桌子[已经在桌子中了]
+     * </pre>
+     */
+    TABLE_IN(15, 16),
+    /**
+     * <code>TABLE_NOT_IN = 17;</code>
+     *
+     * <pre>
+     * 桌子[不在桌子中]
+     * </pre>
+     */
+    TABLE_NOT_IN(16, 17),
+    /**
+     * <code>TABLE_START = 18;</code>
+     *
+     * <pre>
+     * 桌子[处于开始状态]
+     * </pre>
+     */
+    TABLE_START(17, 18),
+    /**
+     * <code>TABLE_NULL = 19;</code>
+     *
+     * <pre>
+     * 桌子[不存在]
+     * </pre>
+     */
+    TABLE_NULL(18, 19),
+    /**
+     * <code>TABLE_FULL = 20;</code>
+     *
+     * <pre>
+     * 桌子[满了]
+     * </pre>
+     */
+    TABLE_FULL(19, 20),
+    /**
+     * <code>TABLE_PWD_ERROR = 21;</code>
+     *
+     * <pre>
+     * 桌子[密码错误]
+     * </pre>
+     */
+    TABLE_PWD_ERROR(20, 21),
+    /**
+     * <code>TABLE_READY = 22;</code>
+     *
+     * <pre>
+     * 桌子[已经准备]
+     * </pre>
+     */
+    TABLE_READY(21, 22),
+    /**
+     * <code>CATAN_MAP_ILLEGAL = 23;</code>
+     *
+     * <pre>
+     * 卡坦岛[地图非法]
+     * </pre>
+     */
+    CATAN_MAP_ILLEGAL(22, 23),
     ;
 
     /**
@@ -35,6 +211,182 @@ public final class Global {
      * </pre>
      */
     public static final int SYS_ERR_VALUE = 1;
+    /**
+     * <code>LOGIN_FLAG_ERR = 2;</code>
+     *
+     * <pre>
+     * 登录密钥错误
+     * </pre>
+     */
+    public static final int LOGIN_FLAG_ERR_VALUE = 2;
+    /**
+     * <code>LOGIN_OVERTIME = 3;</code>
+     *
+     * <pre>
+     * 登录密钥超时
+     * </pre>
+     */
+    public static final int LOGIN_OVERTIME_VALUE = 3;
+    /**
+     * <code>USR_ERR = 4;</code>
+     *
+     * <pre>
+     * 账号非法
+     * </pre>
+     */
+    public static final int USR_ERR_VALUE = 4;
+    /**
+     * <code>PLATFORM_ERR = 5;</code>
+     *
+     * <pre>
+     * 平台非法
+     * </pre>
+     */
+    public static final int PLATFORM_ERR_VALUE = 5;
+    /**
+     * <code>LIMIT_HOST = 6;</code>
+     *
+     * <pre>
+     * 被限制的主机
+     * </pre>
+     */
+    public static final int LIMIT_HOST_VALUE = 6;
+    /**
+     * <code>LIMIT_USR = 7;</code>
+     *
+     * <pre>
+     * 被限制的账号
+     * </pre>
+     */
+    public static final int LIMIT_USR_VALUE = 7;
+    /**
+     * <code>LOGIN_REPEAT = 8;</code>
+     *
+     * <pre>
+     * 重复登录
+     * </pre>
+     */
+    public static final int LOGIN_REPEAT_VALUE = 8;
+    /**
+     * <code>ROLE_EXIST = 9;</code>
+     *
+     * <pre>
+     * 角色已经存在
+     * </pre>
+     */
+    public static final int ROLE_EXIST_VALUE = 9;
+    /**
+     * <code>ROLE_NAME_LEN = 10;</code>
+     *
+     * <pre>
+     * 角色名长度非法
+     * </pre>
+     */
+    public static final int ROLE_NAME_LEN_VALUE = 10;
+    /**
+     * <code>ROLE_NAME_ILLEGAL = 11;</code>
+     *
+     * <pre>
+     * 角色名非法
+     * </pre>
+     */
+    public static final int ROLE_NAME_ILLEGAL_VALUE = 11;
+    /**
+     * <code>ROLE_NAME_REPEAT = 12;</code>
+     *
+     * <pre>
+     * 角色名重复
+     * </pre>
+     */
+    public static final int ROLE_NAME_REPEAT_VALUE = 12;
+    /**
+     * <code>ROOM_NULL = 13;</code>
+     *
+     * <pre>
+     * 房间[不存在]
+     * </pre>
+     */
+    public static final int ROOM_NULL_VALUE = 13;
+    /**
+     * <code>TABLE_NAME_NULL = 14;</code>
+     *
+     * <pre>
+     * 桌子[名称非法]
+     * </pre>
+     */
+    public static final int TABLE_NAME_NULL_VALUE = 14;
+    /**
+     * <code>TABLE_PWD_TOO_LONG = 15;</code>
+     *
+     * <pre>
+     * 桌子[密码太长]
+     * </pre>
+     */
+    public static final int TABLE_PWD_TOO_LONG_VALUE = 15;
+    /**
+     * <code>TABLE_IN = 16;</code>
+     *
+     * <pre>
+     * 桌子[已经在桌子中了]
+     * </pre>
+     */
+    public static final int TABLE_IN_VALUE = 16;
+    /**
+     * <code>TABLE_NOT_IN = 17;</code>
+     *
+     * <pre>
+     * 桌子[不在桌子中]
+     * </pre>
+     */
+    public static final int TABLE_NOT_IN_VALUE = 17;
+    /**
+     * <code>TABLE_START = 18;</code>
+     *
+     * <pre>
+     * 桌子[处于开始状态]
+     * </pre>
+     */
+    public static final int TABLE_START_VALUE = 18;
+    /**
+     * <code>TABLE_NULL = 19;</code>
+     *
+     * <pre>
+     * 桌子[不存在]
+     * </pre>
+     */
+    public static final int TABLE_NULL_VALUE = 19;
+    /**
+     * <code>TABLE_FULL = 20;</code>
+     *
+     * <pre>
+     * 桌子[满了]
+     * </pre>
+     */
+    public static final int TABLE_FULL_VALUE = 20;
+    /**
+     * <code>TABLE_PWD_ERROR = 21;</code>
+     *
+     * <pre>
+     * 桌子[密码错误]
+     * </pre>
+     */
+    public static final int TABLE_PWD_ERROR_VALUE = 21;
+    /**
+     * <code>TABLE_READY = 22;</code>
+     *
+     * <pre>
+     * 桌子[已经准备]
+     * </pre>
+     */
+    public static final int TABLE_READY_VALUE = 22;
+    /**
+     * <code>CATAN_MAP_ILLEGAL = 23;</code>
+     *
+     * <pre>
+     * 卡坦岛[地图非法]
+     * </pre>
+     */
+    public static final int CATAN_MAP_ILLEGAL_VALUE = 23;
 
 
     public final int getNumber() { return value; }
@@ -42,6 +394,28 @@ public final class Global {
     public static Error valueOf(int value) {
       switch (value) {
         case 1: return SYS_ERR;
+        case 2: return LOGIN_FLAG_ERR;
+        case 3: return LOGIN_OVERTIME;
+        case 4: return USR_ERR;
+        case 5: return PLATFORM_ERR;
+        case 6: return LIMIT_HOST;
+        case 7: return LIMIT_USR;
+        case 8: return LOGIN_REPEAT;
+        case 9: return ROLE_EXIST;
+        case 10: return ROLE_NAME_LEN;
+        case 11: return ROLE_NAME_ILLEGAL;
+        case 12: return ROLE_NAME_REPEAT;
+        case 13: return ROOM_NULL;
+        case 14: return TABLE_NAME_NULL;
+        case 15: return TABLE_PWD_TOO_LONG;
+        case 16: return TABLE_IN;
+        case 17: return TABLE_NOT_IN;
+        case 18: return TABLE_START;
+        case 19: return TABLE_NULL;
+        case 20: return TABLE_FULL;
+        case 21: return TABLE_PWD_ERROR;
+        case 22: return TABLE_READY;
+        case 23: return CATAN_MAP_ILLEGAL;
         default: return null;
       }
     }
@@ -94,103 +468,52 @@ public final class Global {
   }
 
   /**
-   * Protobuf enum {@code org.shell.mmo.sample.message.proto.GameObjectType}
+   * Protobuf enum {@code org.shell.mmo.sample.message.proto.RoomType}
    *
    * <pre>
-   * 对象类型
+   * 桌子类型
    * </pre>
    */
-  public enum GameObjectType
+  public enum RoomType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>HERO = 1;</code>
+     * <code>ROOM_CATAN = 1;</code>
      *
      * <pre>
-     * 英雄
+     * 卡坦岛
      * </pre>
      */
-    HERO(0, 1),
-    /**
-     * <code>MONSTER = 2;</code>
-     *
-     * <pre>
-     * 怪物
-     * </pre>
-     */
-    MONSTER(1, 2),
-    /**
-     * <code>PET = 3;</code>
-     *
-     * <pre>
-     * 宠物
-     * </pre>
-     */
-    PET(2, 3),
-    /**
-     * <code>ITEM = 4;</code>
-     *
-     * <pre>
-     * 道具
-     * </pre>
-     */
-    ITEM(3, 4),
+    ROOM_CATAN(0, 1),
     ;
 
     /**
-     * <code>HERO = 1;</code>
+     * <code>ROOM_CATAN = 1;</code>
      *
      * <pre>
-     * 英雄
+     * 卡坦岛
      * </pre>
      */
-    public static final int HERO_VALUE = 1;
-    /**
-     * <code>MONSTER = 2;</code>
-     *
-     * <pre>
-     * 怪物
-     * </pre>
-     */
-    public static final int MONSTER_VALUE = 2;
-    /**
-     * <code>PET = 3;</code>
-     *
-     * <pre>
-     * 宠物
-     * </pre>
-     */
-    public static final int PET_VALUE = 3;
-    /**
-     * <code>ITEM = 4;</code>
-     *
-     * <pre>
-     * 道具
-     * </pre>
-     */
-    public static final int ITEM_VALUE = 4;
+    public static final int ROOM_CATAN_VALUE = 1;
 
 
     public final int getNumber() { return value; }
 
-    public static GameObjectType valueOf(int value) {
+    public static RoomType valueOf(int value) {
       switch (value) {
-        case 1: return HERO;
-        case 2: return MONSTER;
-        case 3: return PET;
-        case 4: return ITEM;
+        case 1: return ROOM_CATAN;
         default: return null;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<GameObjectType>
+    public static com.google.protobuf.Internal.EnumLiteMap<RoomType>
         internalGetValueMap() {
       return internalValueMap;
     }
-    private static com.google.protobuf.Internal.EnumLiteMap<GameObjectType>
+    private static com.google.protobuf.Internal.EnumLiteMap<RoomType>
         internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<GameObjectType>() {
-            public GameObjectType findValueByNumber(int number) {
-              return GameObjectType.valueOf(number);
+          new com.google.protobuf.Internal.EnumLiteMap<RoomType>() {
+            public RoomType findValueByNumber(int number) {
+              return RoomType.valueOf(number);
             }
           };
 
@@ -207,9 +530,9 @@ public final class Global {
       return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(1);
     }
 
-    private static final GameObjectType[] VALUES = values();
+    private static final RoomType[] VALUES = values();
 
-    public static GameObjectType valueOf(
+    public static RoomType valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -221,12 +544,12 @@ public final class Global {
     private final int index;
     private final int value;
 
-    private GameObjectType(int index, int value) {
+    private RoomType(int index, int value) {
       this.index = index;
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:org.shell.mmo.sample.message.proto.GameObjectType)
+    // @@protoc_insertion_point(enum_scope:org.shell.mmo.sample.message.proto.RoomType)
   }
 
   /**
@@ -349,6 +672,329 @@ public final class Global {
   }
 
   /**
+   * Protobuf enum {@code org.shell.mmo.sample.message.proto.CatanResourceType}
+   *
+   * <pre>
+   * 卡坦岛资源类型
+   * </pre>
+   */
+  public enum CatanResourceType
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>RESOURCE_BRICK = 1;</code>
+     *
+     * <pre>
+     * 砖
+     * </pre>
+     */
+    RESOURCE_BRICK(0, 1),
+    /**
+     * <code>RESOURCE_LUMBER = 2;</code>
+     *
+     * <pre>
+     * 木材
+     * </pre>
+     */
+    RESOURCE_LUMBER(1, 2),
+    /**
+     * <code>RESOURCE_WOOL = 3;</code>
+     *
+     * <pre>
+     * 羊毛
+     * </pre>
+     */
+    RESOURCE_WOOL(2, 3),
+    /**
+     * <code>RESOURCE_GAIN = 4;</code>
+     *
+     * <pre>
+     * 粮食
+     * </pre>
+     */
+    RESOURCE_GAIN(3, 4),
+    /**
+     * <code>RESOURCE_ORE = 5;</code>
+     *
+     * <pre>
+     * 矿石
+     * </pre>
+     */
+    RESOURCE_ORE(4, 5),
+    ;
+
+    /**
+     * <code>RESOURCE_BRICK = 1;</code>
+     *
+     * <pre>
+     * 砖
+     * </pre>
+     */
+    public static final int RESOURCE_BRICK_VALUE = 1;
+    /**
+     * <code>RESOURCE_LUMBER = 2;</code>
+     *
+     * <pre>
+     * 木材
+     * </pre>
+     */
+    public static final int RESOURCE_LUMBER_VALUE = 2;
+    /**
+     * <code>RESOURCE_WOOL = 3;</code>
+     *
+     * <pre>
+     * 羊毛
+     * </pre>
+     */
+    public static final int RESOURCE_WOOL_VALUE = 3;
+    /**
+     * <code>RESOURCE_GAIN = 4;</code>
+     *
+     * <pre>
+     * 粮食
+     * </pre>
+     */
+    public static final int RESOURCE_GAIN_VALUE = 4;
+    /**
+     * <code>RESOURCE_ORE = 5;</code>
+     *
+     * <pre>
+     * 矿石
+     * </pre>
+     */
+    public static final int RESOURCE_ORE_VALUE = 5;
+
+
+    public final int getNumber() { return value; }
+
+    public static CatanResourceType valueOf(int value) {
+      switch (value) {
+        case 1: return RESOURCE_BRICK;
+        case 2: return RESOURCE_LUMBER;
+        case 3: return RESOURCE_WOOL;
+        case 4: return RESOURCE_GAIN;
+        case 5: return RESOURCE_ORE;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<CatanResourceType>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static com.google.protobuf.Internal.EnumLiteMap<CatanResourceType>
+        internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<CatanResourceType>() {
+            public CatanResourceType findValueByNumber(int number) {
+              return CatanResourceType.valueOf(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(index);
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(3);
+    }
+
+    private static final CatanResourceType[] VALUES = values();
+
+    public static CatanResourceType valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int index;
+    private final int value;
+
+    private CatanResourceType(int index, int value) {
+      this.index = index;
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:org.shell.mmo.sample.message.proto.CatanResourceType)
+  }
+
+  /**
+   * Protobuf enum {@code org.shell.mmo.sample.message.proto.CatanPortType}
+   *
+   * <pre>
+   * 卡坦岛港口类型
+   * </pre>
+   */
+  public enum CatanPortType
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>PORT_BRICK = 1;</code>
+     *
+     * <pre>
+     * 砖港
+     * </pre>
+     */
+    PORT_BRICK(0, 1),
+    /**
+     * <code>PORT_LUMBER = 2;</code>
+     *
+     * <pre>
+     * 木港
+     * </pre>
+     */
+    PORT_LUMBER(1, 2),
+    /**
+     * <code>PORT_WOOL = 3;</code>
+     *
+     * <pre>
+     * 羊港
+     * </pre>
+     */
+    PORT_WOOL(2, 3),
+    /**
+     * <code>PORT_GAIN = 4;</code>
+     *
+     * <pre>
+     * 麦港
+     * </pre>
+     */
+    PORT_GAIN(3, 4),
+    /**
+     * <code>PORT_ORE = 5;</code>
+     *
+     * <pre>
+     * 矿港
+     * </pre>
+     */
+    PORT_ORE(4, 5),
+    /**
+     * <code>PORT_BANK = 6;</code>
+     *
+     * <pre>
+     * 3比1港
+     * </pre>
+     */
+    PORT_BANK(5, 6),
+    ;
+
+    /**
+     * <code>PORT_BRICK = 1;</code>
+     *
+     * <pre>
+     * 砖港
+     * </pre>
+     */
+    public static final int PORT_BRICK_VALUE = 1;
+    /**
+     * <code>PORT_LUMBER = 2;</code>
+     *
+     * <pre>
+     * 木港
+     * </pre>
+     */
+    public static final int PORT_LUMBER_VALUE = 2;
+    /**
+     * <code>PORT_WOOL = 3;</code>
+     *
+     * <pre>
+     * 羊港
+     * </pre>
+     */
+    public static final int PORT_WOOL_VALUE = 3;
+    /**
+     * <code>PORT_GAIN = 4;</code>
+     *
+     * <pre>
+     * 麦港
+     * </pre>
+     */
+    public static final int PORT_GAIN_VALUE = 4;
+    /**
+     * <code>PORT_ORE = 5;</code>
+     *
+     * <pre>
+     * 矿港
+     * </pre>
+     */
+    public static final int PORT_ORE_VALUE = 5;
+    /**
+     * <code>PORT_BANK = 6;</code>
+     *
+     * <pre>
+     * 3比1港
+     * </pre>
+     */
+    public static final int PORT_BANK_VALUE = 6;
+
+
+    public final int getNumber() { return value; }
+
+    public static CatanPortType valueOf(int value) {
+      switch (value) {
+        case 1: return PORT_BRICK;
+        case 2: return PORT_LUMBER;
+        case 3: return PORT_WOOL;
+        case 4: return PORT_GAIN;
+        case 5: return PORT_ORE;
+        case 6: return PORT_BANK;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<CatanPortType>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static com.google.protobuf.Internal.EnumLiteMap<CatanPortType>
+        internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<CatanPortType>() {
+            public CatanPortType findValueByNumber(int number) {
+              return CatanPortType.valueOf(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(index);
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(4);
+    }
+
+    private static final CatanPortType[] VALUES = values();
+
+    public static CatanPortType valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int index;
+    private final int value;
+
+    private CatanPortType(int index, int value) {
+      this.index = index;
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:org.shell.mmo.sample.message.proto.CatanPortType)
+  }
+
+  /**
    * Protobuf enum {@code org.shell.mmo.sample.message.proto.Module}
    *
    * <pre>
@@ -366,21 +1012,37 @@ public final class Global {
      */
     LOGIN(0, 1),
     /**
-     * <code>FIGHT = 2;</code>
+     * <code>ROLE = 2;</code>
      *
      * <pre>
-     * 战斗
+     * 角色
      * </pre>
      */
-    FIGHT(1, 2),
+    ROLE(1, 2),
     /**
-     * <code>MOVE = 3;</code>
+     * <code>ROOM = 3;</code>
      *
      * <pre>
-     * 移动
+     * 房间
      * </pre>
      */
-    MOVE(2, 3),
+    ROOM(2, 3),
+    /**
+     * <code>TABLE = 4;</code>
+     *
+     * <pre>
+     * 桌子
+     * </pre>
+     */
+    TABLE(3, 4),
+    /**
+     * <code>CATAN = 5;</code>
+     *
+     * <pre>
+     * 卡坦岛
+     * </pre>
+     */
+    CATAN(4, 5),
     ;
 
     /**
@@ -392,21 +1054,37 @@ public final class Global {
      */
     public static final int LOGIN_VALUE = 1;
     /**
-     * <code>FIGHT = 2;</code>
+     * <code>ROLE = 2;</code>
      *
      * <pre>
-     * 战斗
+     * 角色
      * </pre>
      */
-    public static final int FIGHT_VALUE = 2;
+    public static final int ROLE_VALUE = 2;
     /**
-     * <code>MOVE = 3;</code>
+     * <code>ROOM = 3;</code>
      *
      * <pre>
-     * 移动
+     * 房间
      * </pre>
      */
-    public static final int MOVE_VALUE = 3;
+    public static final int ROOM_VALUE = 3;
+    /**
+     * <code>TABLE = 4;</code>
+     *
+     * <pre>
+     * 桌子
+     * </pre>
+     */
+    public static final int TABLE_VALUE = 4;
+    /**
+     * <code>CATAN = 5;</code>
+     *
+     * <pre>
+     * 卡坦岛
+     * </pre>
+     */
+    public static final int CATAN_VALUE = 5;
 
 
     public final int getNumber() { return value; }
@@ -414,8 +1092,10 @@ public final class Global {
     public static Module valueOf(int value) {
       switch (value) {
         case 1: return LOGIN;
-        case 2: return FIGHT;
-        case 3: return MOVE;
+        case 2: return ROLE;
+        case 3: return ROOM;
+        case 4: return TABLE;
+        case 5: return CATAN;
         default: return null;
       }
     }
@@ -442,7 +1122,7 @@ public final class Global {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(3);
+      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(5);
     }
 
     private static final Module[] VALUES = values();
@@ -1019,24 +1699,7 @@ public final class Global {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional fixed64 id = 1;</code>
-     *
-     * <pre>
-     * 角色id
-     * </pre>
-     */
-    boolean hasId();
-    /**
-     * <code>optional fixed64 id = 1;</code>
-     *
-     * <pre>
-     * 角色id
-     * </pre>
-     */
-    long getId();
-
-    /**
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 1;</code>
      *
      * <pre>
      * 名字
@@ -1044,7 +1707,7 @@ public final class Global {
      */
     boolean hasName();
     /**
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 1;</code>
      *
      * <pre>
      * 名字
@@ -1052,7 +1715,7 @@ public final class Global {
      */
     java.lang.String getName();
     /**
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 1;</code>
      *
      * <pre>
      * 名字
@@ -1062,24 +1725,24 @@ public final class Global {
         getNameBytes();
 
     /**
-     * <code>optional int32 map = 3;</code>
+     * <code>optional int32 scene = 2;</code>
      *
      * <pre>
-     * 地图
+     * 场景
      * </pre>
      */
-    boolean hasMap();
+    boolean hasScene();
     /**
-     * <code>optional int32 map = 3;</code>
+     * <code>optional int32 scene = 2;</code>
      *
      * <pre>
-     * 地图
+     * 场景
      * </pre>
      */
-    int getMap();
+    int getScene();
 
     /**
-     * <code>optional int32 level = 4;</code>
+     * <code>optional int32 level = 3;</code>
      *
      * <pre>
      * 等级
@@ -1087,64 +1750,13 @@ public final class Global {
      */
     boolean hasLevel();
     /**
-     * <code>optional int32 level = 4;</code>
+     * <code>optional int32 level = 3;</code>
      *
      * <pre>
      * 等级
      * </pre>
      */
     int getLevel();
-
-    /**
-     * <code>optional int32 server = 5;</code>
-     *
-     * <pre>
-     * 服务器
-     * </pre>
-     */
-    boolean hasServer();
-    /**
-     * <code>optional int32 server = 5;</code>
-     *
-     * <pre>
-     * 服务器
-     * </pre>
-     */
-    int getServer();
-
-    /**
-     * <code>optional int32 platform = 6;</code>
-     *
-     * <pre>
-     * 平台
-     * </pre>
-     */
-    boolean hasPlatform();
-    /**
-     * <code>optional int32 platform = 6;</code>
-     *
-     * <pre>
-     * 平台
-     * </pre>
-     */
-    int getPlatform();
-
-    /**
-     * <code>optional int32 gold = 7;</code>
-     *
-     * <pre>
-     * 元宝
-     * </pre>
-     */
-    boolean hasGold();
-    /**
-     * <code>optional int32 gold = 7;</code>
-     *
-     * <pre>
-     * 元宝
-     * </pre>
-     */
-    int getGold();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.LeaderRole}
@@ -1202,40 +1814,20 @@ public final class Global {
               }
               break;
             }
-            case 9: {
+            case 10: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000001;
-              id_ = input.readFixed64();
+              name_ = bs;
               break;
             }
-            case 18: {
-              com.google.protobuf.ByteString bs = input.readBytes();
+            case 16: {
               bitField0_ |= 0x00000002;
-              name_ = bs;
+              scene_ = input.readInt32();
               break;
             }
             case 24: {
               bitField0_ |= 0x00000004;
-              map_ = input.readInt32();
-              break;
-            }
-            case 32: {
-              bitField0_ |= 0x00000008;
               level_ = input.readInt32();
-              break;
-            }
-            case 40: {
-              bitField0_ |= 0x00000010;
-              server_ = input.readInt32();
-              break;
-            }
-            case 48: {
-              bitField0_ |= 0x00000020;
-              platform_ = input.readInt32();
-              break;
-            }
-            case 56: {
-              bitField0_ |= 0x00000040;
-              gold_ = input.readInt32();
               break;
             }
           }
@@ -1278,43 +1870,20 @@ public final class Global {
     }
 
     private int bitField0_;
-    public static final int ID_FIELD_NUMBER = 1;
-    private long id_;
-    /**
-     * <code>optional fixed64 id = 1;</code>
-     *
-     * <pre>
-     * 角色id
-     * </pre>
-     */
-    public boolean hasId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional fixed64 id = 1;</code>
-     *
-     * <pre>
-     * 角色id
-     * </pre>
-     */
-    public long getId() {
-      return id_;
-    }
-
-    public static final int NAME_FIELD_NUMBER = 2;
+    public static final int NAME_FIELD_NUMBER = 1;
     private java.lang.Object name_;
     /**
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 1;</code>
      *
      * <pre>
      * 名字
      * </pre>
      */
     public boolean hasName() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+      return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 1;</code>
      *
      * <pre>
      * 名字
@@ -1335,7 +1904,7 @@ public final class Global {
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>optional string name = 1;</code>
      *
      * <pre>
      * 名字
@@ -1355,43 +1924,43 @@ public final class Global {
       }
     }
 
-    public static final int MAP_FIELD_NUMBER = 3;
-    private int map_;
+    public static final int SCENE_FIELD_NUMBER = 2;
+    private int scene_;
     /**
-     * <code>optional int32 map = 3;</code>
+     * <code>optional int32 scene = 2;</code>
      *
      * <pre>
-     * 地图
+     * 场景
      * </pre>
      */
-    public boolean hasMap() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
+    public boolean hasScene() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>optional int32 map = 3;</code>
+     * <code>optional int32 scene = 2;</code>
      *
      * <pre>
-     * 地图
+     * 场景
      * </pre>
      */
-    public int getMap() {
-      return map_;
+    public int getScene() {
+      return scene_;
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 4;
+    public static final int LEVEL_FIELD_NUMBER = 3;
     private int level_;
     /**
-     * <code>optional int32 level = 4;</code>
+     * <code>optional int32 level = 3;</code>
      *
      * <pre>
      * 等级
      * </pre>
      */
     public boolean hasLevel() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
+      return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional int32 level = 4;</code>
+     * <code>optional int32 level = 3;</code>
      *
      * <pre>
      * 等级
@@ -1401,83 +1970,10 @@ public final class Global {
       return level_;
     }
 
-    public static final int SERVER_FIELD_NUMBER = 5;
-    private int server_;
-    /**
-     * <code>optional int32 server = 5;</code>
-     *
-     * <pre>
-     * 服务器
-     * </pre>
-     */
-    public boolean hasServer() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>optional int32 server = 5;</code>
-     *
-     * <pre>
-     * 服务器
-     * </pre>
-     */
-    public int getServer() {
-      return server_;
-    }
-
-    public static final int PLATFORM_FIELD_NUMBER = 6;
-    private int platform_;
-    /**
-     * <code>optional int32 platform = 6;</code>
-     *
-     * <pre>
-     * 平台
-     * </pre>
-     */
-    public boolean hasPlatform() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
-    }
-    /**
-     * <code>optional int32 platform = 6;</code>
-     *
-     * <pre>
-     * 平台
-     * </pre>
-     */
-    public int getPlatform() {
-      return platform_;
-    }
-
-    public static final int GOLD_FIELD_NUMBER = 7;
-    private int gold_;
-    /**
-     * <code>optional int32 gold = 7;</code>
-     *
-     * <pre>
-     * 元宝
-     * </pre>
-     */
-    public boolean hasGold() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
-    }
-    /**
-     * <code>optional int32 gold = 7;</code>
-     *
-     * <pre>
-     * 元宝
-     * </pre>
-     */
-    public int getGold() {
-      return gold_;
-    }
-
     private void initFields() {
-      id_ = 0L;
       name_ = "";
-      map_ = 0;
+      scene_ = 0;
       level_ = 0;
-      server_ = 0;
-      platform_ = 0;
-      gold_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -1493,25 +1989,13 @@ public final class Global {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeFixed64(1, id_);
+        output.writeBytes(1, getNameBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(2, getNameBytes());
+        output.writeInt32(2, scene_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, map_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, level_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeInt32(5, server_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeInt32(6, platform_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeInt32(7, gold_);
+        output.writeInt32(3, level_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -1524,31 +2008,15 @@ public final class Global {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed64Size(1, id_);
+          .computeBytesSize(1, getNameBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, getNameBytes());
+          .computeInt32Size(2, scene_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, map_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, level_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, server_);
-      }
-      if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, platform_);
-      }
-      if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, gold_);
+          .computeInt32Size(3, level_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1671,20 +2139,12 @@ public final class Global {
 
       public Builder clear() {
         super.clear();
-        id_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000001);
         name_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        scene_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
-        map_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
         level_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
-        server_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        platform_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000020);
-        gold_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
 
@@ -1716,31 +2176,15 @@ public final class Global {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.id_ = id_;
+        result.name_ = name_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.name_ = name_;
+        result.scene_ = scene_;
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.map_ = map_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
         result.level_ = level_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
-        }
-        result.server_ = server_;
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000020;
-        }
-        result.platform_ = platform_;
-        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
-          to_bitField0_ |= 0x00000040;
-        }
-        result.gold_ = gold_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -1757,28 +2201,16 @@ public final class Global {
 
       public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.LeaderRole other) {
         if (other == org.shell.mmo.sample.message.proto.Global.LeaderRole.getDefaultInstance()) return this;
-        if (other.hasId()) {
-          setId(other.getId());
-        }
         if (other.hasName()) {
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000001;
           name_ = other.name_;
           onChanged();
         }
-        if (other.hasMap()) {
-          setMap(other.getMap());
+        if (other.hasScene()) {
+          setScene(other.getScene());
         }
         if (other.hasLevel()) {
           setLevel(other.getLevel());
-        }
-        if (other.hasServer()) {
-          setServer(other.getServer());
-        }
-        if (other.hasPlatform()) {
-          setPlatform(other.getPlatform());
-        }
-        if (other.hasGold()) {
-          setGold(other.getGold());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -1807,67 +2239,19 @@ public final class Global {
       }
       private int bitField0_;
 
-      private long id_ ;
-      /**
-       * <code>optional fixed64 id = 1;</code>
-       *
-       * <pre>
-       * 角色id
-       * </pre>
-       */
-      public boolean hasId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional fixed64 id = 1;</code>
-       *
-       * <pre>
-       * 角色id
-       * </pre>
-       */
-      public long getId() {
-        return id_;
-      }
-      /**
-       * <code>optional fixed64 id = 1;</code>
-       *
-       * <pre>
-       * 角色id
-       * </pre>
-       */
-      public Builder setId(long value) {
-        bitField0_ |= 0x00000001;
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional fixed64 id = 1;</code>
-       *
-       * <pre>
-       * 角色id
-       * </pre>
-       */
-      public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        id_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object name_ = "";
       /**
-       * <code>optional string name = 2;</code>
+       * <code>optional string name = 1;</code>
        *
        * <pre>
        * 名字
        * </pre>
        */
       public boolean hasName() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
+        return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional string name = 2;</code>
+       * <code>optional string name = 1;</code>
        *
        * <pre>
        * 名字
@@ -1888,7 +2272,7 @@ public final class Global {
         }
       }
       /**
-       * <code>optional string name = 2;</code>
+       * <code>optional string name = 1;</code>
        *
        * <pre>
        * 名字
@@ -1908,10 +2292,2864 @@ public final class Global {
         }
       }
       /**
-       * <code>optional string name = 2;</code>
+       * <code>optional string name = 1;</code>
        *
        * <pre>
        * 名字
+       * </pre>
+       */
+      public Builder setName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       * 名字
+       * </pre>
+       */
+      public Builder clearName() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 1;</code>
+       *
+       * <pre>
+       * 名字
+       * </pre>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int scene_ ;
+      /**
+       * <code>optional int32 scene = 2;</code>
+       *
+       * <pre>
+       * 场景
+       * </pre>
+       */
+      public boolean hasScene() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional int32 scene = 2;</code>
+       *
+       * <pre>
+       * 场景
+       * </pre>
+       */
+      public int getScene() {
+        return scene_;
+      }
+      /**
+       * <code>optional int32 scene = 2;</code>
+       *
+       * <pre>
+       * 场景
+       * </pre>
+       */
+      public Builder setScene(int value) {
+        bitField0_ |= 0x00000002;
+        scene_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 scene = 2;</code>
+       *
+       * <pre>
+       * 场景
+       * </pre>
+       */
+      public Builder clearScene() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        scene_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int level_ ;
+      /**
+       * <code>optional int32 level = 3;</code>
+       *
+       * <pre>
+       * 等级
+       * </pre>
+       */
+      public boolean hasLevel() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional int32 level = 3;</code>
+       *
+       * <pre>
+       * 等级
+       * </pre>
+       */
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <code>optional int32 level = 3;</code>
+       *
+       * <pre>
+       * 等级
+       * </pre>
+       */
+      public Builder setLevel(int value) {
+        bitField0_ |= 0x00000004;
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 level = 3;</code>
+       *
+       * <pre>
+       * 等级
+       * </pre>
+       */
+      public Builder clearLevel() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.LeaderRole)
+    }
+
+    static {
+      defaultInstance = new LeaderRole(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.LeaderRole)
+  }
+
+  public interface GameRoomOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.GameRoom)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional int32 id = 1;</code>
+     *
+     * <pre>
+     * 房间编号
+     * </pre>
+     */
+    boolean hasId();
+    /**
+     * <code>optional int32 id = 1;</code>
+     *
+     * <pre>
+     * 房间编号
+     * </pre>
+     */
+    int getId();
+
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 当前人数
+     * </pre>
+     */
+    boolean hasCount();
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 当前人数
+     * </pre>
+     */
+    int getCount();
+
+    /**
+     * <code>optional int32 max = 3;</code>
+     *
+     * <pre>
+     * 人数上限
+     * </pre>
+     */
+    boolean hasMax();
+    /**
+     * <code>optional int32 max = 3;</code>
+     *
+     * <pre>
+     * 人数上限
+     * </pre>
+     */
+    int getMax();
+
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    boolean hasName();
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    java.lang.String getName();
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.GameRoom}
+   *
+   * <pre>
+   * 房间信息
+   * </pre>
+   */
+  public static final class GameRoom extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.GameRoom)
+      GameRoomOrBuilder {
+    // Use GameRoom.newBuilder() to construct.
+    private GameRoom(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private GameRoom(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final GameRoom defaultInstance;
+    public static GameRoom getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public GameRoom getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GameRoom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              id_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              count_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              max_ = input.readInt32();
+              break;
+            }
+            case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000008;
+              name_ = bs;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_GameRoom_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_GameRoom_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.GameRoom.class, org.shell.mmo.sample.message.proto.Global.GameRoom.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<GameRoom> PARSER =
+        new com.google.protobuf.AbstractParser<GameRoom>() {
+      public GameRoom parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GameRoom(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GameRoom> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int ID_FIELD_NUMBER = 1;
+    private int id_;
+    /**
+     * <code>optional int32 id = 1;</code>
+     *
+     * <pre>
+     * 房间编号
+     * </pre>
+     */
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional int32 id = 1;</code>
+     *
+     * <pre>
+     * 房间编号
+     * </pre>
+     */
+    public int getId() {
+      return id_;
+    }
+
+    public static final int COUNT_FIELD_NUMBER = 2;
+    private int count_;
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 当前人数
+     * </pre>
+     */
+    public boolean hasCount() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 当前人数
+     * </pre>
+     */
+    public int getCount() {
+      return count_;
+    }
+
+    public static final int MAX_FIELD_NUMBER = 3;
+    private int max_;
+    /**
+     * <code>optional int32 max = 3;</code>
+     *
+     * <pre>
+     * 人数上限
+     * </pre>
+     */
+    public boolean hasMax() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional int32 max = 3;</code>
+     *
+     * <pre>
+     * 人数上限
+     * </pre>
+     */
+    public int getMax() {
+      return max_;
+    }
+
+    public static final int NAME_FIELD_NUMBER = 4;
+    private java.lang.Object name_;
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    public boolean hasName() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          name_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private void initFields() {
+      id_ = 0;
+      count_ = 0;
+      max_ = 0;
+      name_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, id_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, count_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, max_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeBytes(4, getNameBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, id_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, count_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, max_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(4, getNameBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.GameRoom parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameRoom parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameRoom parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameRoom parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameRoom parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameRoom parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameRoom parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameRoom parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameRoom parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameRoom parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.GameRoom prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.GameRoom}
+     *
+     * <pre>
+     * 房间信息
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.GameRoom)
+        org.shell.mmo.sample.message.proto.Global.GameRoomOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_GameRoom_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_GameRoom_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.GameRoom.class, org.shell.mmo.sample.message.proto.Global.GameRoom.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.GameRoom.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        id_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        count_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        max_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        name_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_GameRoom_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.GameRoom getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.GameRoom.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.GameRoom build() {
+        org.shell.mmo.sample.message.proto.Global.GameRoom result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.GameRoom buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.GameRoom result = new org.shell.mmo.sample.message.proto.Global.GameRoom(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.id_ = id_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.count_ = count_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.max_ = max_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.name_ = name_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.GameRoom) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.GameRoom)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.GameRoom other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.GameRoom.getDefaultInstance()) return this;
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        if (other.hasCount()) {
+          setCount(other.getCount());
+        }
+        if (other.hasMax()) {
+          setMax(other.getMax());
+        }
+        if (other.hasName()) {
+          bitField0_ |= 0x00000008;
+          name_ = other.name_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.GameRoom parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.GameRoom) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int id_ ;
+      /**
+       * <code>optional int32 id = 1;</code>
+       *
+       * <pre>
+       * 房间编号
+       * </pre>
+       */
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional int32 id = 1;</code>
+       *
+       * <pre>
+       * 房间编号
+       * </pre>
+       */
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>optional int32 id = 1;</code>
+       *
+       * <pre>
+       * 房间编号
+       * </pre>
+       */
+      public Builder setId(int value) {
+        bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 id = 1;</code>
+       *
+       * <pre>
+       * 房间编号
+       * </pre>
+       */
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int count_ ;
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 当前人数
+       * </pre>
+       */
+      public boolean hasCount() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 当前人数
+       * </pre>
+       */
+      public int getCount() {
+        return count_;
+      }
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 当前人数
+       * </pre>
+       */
+      public Builder setCount(int value) {
+        bitField0_ |= 0x00000002;
+        count_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 当前人数
+       * </pre>
+       */
+      public Builder clearCount() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        count_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int max_ ;
+      /**
+       * <code>optional int32 max = 3;</code>
+       *
+       * <pre>
+       * 人数上限
+       * </pre>
+       */
+      public boolean hasMax() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional int32 max = 3;</code>
+       *
+       * <pre>
+       * 人数上限
+       * </pre>
+       */
+      public int getMax() {
+        return max_;
+      }
+      /**
+       * <code>optional int32 max = 3;</code>
+       *
+       * <pre>
+       * 人数上限
+       * </pre>
+       */
+      public Builder setMax(int value) {
+        bitField0_ |= 0x00000004;
+        max_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 max = 3;</code>
+       *
+       * <pre>
+       * 人数上限
+       * </pre>
+       */
+      public Builder clearMax() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        max_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object name_ = "";
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public Builder setName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public Builder clearName() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.GameRoom)
+    }
+
+    static {
+      defaultInstance = new GameRoom(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.GameRoom)
+  }
+
+  public interface GameTableOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.GameTable)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional int32 id = 1;</code>
+     *
+     * <pre>
+     * 桌子编号
+     * </pre>
+     */
+    boolean hasId();
+    /**
+     * <code>optional int32 id = 1;</code>
+     *
+     * <pre>
+     * 桌子编号
+     * </pre>
+     */
+    int getId();
+
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 当前人数
+     * </pre>
+     */
+    boolean hasCount();
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 当前人数
+     * </pre>
+     */
+    int getCount();
+
+    /**
+     * <code>optional bool pwd = 3;</code>
+     *
+     * <pre>
+     * 是否需要密码
+     * </pre>
+     */
+    boolean hasPwd();
+    /**
+     * <code>optional bool pwd = 3;</code>
+     *
+     * <pre>
+     * 是否需要密码
+     * </pre>
+     */
+    boolean getPwd();
+
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    boolean hasName();
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    java.lang.String getName();
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    /**
+     * <code>optional bool start = 5;</code>
+     *
+     * <pre>
+     * 是否已经开始
+     * </pre>
+     */
+    boolean hasStart();
+    /**
+     * <code>optional bool start = 5;</code>
+     *
+     * <pre>
+     * 是否已经开始
+     * </pre>
+     */
+    boolean getStart();
+
+    /**
+     * <code>optional int32 max = 6;</code>
+     *
+     * <pre>
+     * 人数上限
+     * </pre>
+     */
+    boolean hasMax();
+    /**
+     * <code>optional int32 max = 6;</code>
+     *
+     * <pre>
+     * 人数上限
+     * </pre>
+     */
+    int getMax();
+
+    /**
+     * <code>optional int32 map = 7;</code>
+     *
+     * <pre>
+     * 使用那张图?
+     * </pre>
+     */
+    boolean hasMap();
+    /**
+     * <code>optional int32 map = 7;</code>
+     *
+     * <pre>
+     * 使用那张图?
+     * </pre>
+     */
+    int getMap();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.GameTable}
+   *
+   * <pre>
+   * 桌子信息
+   * </pre>
+   */
+  public static final class GameTable extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.GameTable)
+      GameTableOrBuilder {
+    // Use GameTable.newBuilder() to construct.
+    private GameTable(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private GameTable(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final GameTable defaultInstance;
+    public static GameTable getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public GameTable getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GameTable(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              id_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              count_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              pwd_ = input.readBool();
+              break;
+            }
+            case 34: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000008;
+              name_ = bs;
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              start_ = input.readBool();
+              break;
+            }
+            case 48: {
+              bitField0_ |= 0x00000020;
+              max_ = input.readInt32();
+              break;
+            }
+            case 56: {
+              bitField0_ |= 0x00000040;
+              map_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_GameTable_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_GameTable_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.GameTable.class, org.shell.mmo.sample.message.proto.Global.GameTable.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<GameTable> PARSER =
+        new com.google.protobuf.AbstractParser<GameTable>() {
+      public GameTable parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GameTable(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GameTable> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int ID_FIELD_NUMBER = 1;
+    private int id_;
+    /**
+     * <code>optional int32 id = 1;</code>
+     *
+     * <pre>
+     * 桌子编号
+     * </pre>
+     */
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional int32 id = 1;</code>
+     *
+     * <pre>
+     * 桌子编号
+     * </pre>
+     */
+    public int getId() {
+      return id_;
+    }
+
+    public static final int COUNT_FIELD_NUMBER = 2;
+    private int count_;
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 当前人数
+     * </pre>
+     */
+    public boolean hasCount() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 当前人数
+     * </pre>
+     */
+    public int getCount() {
+      return count_;
+    }
+
+    public static final int PWD_FIELD_NUMBER = 3;
+    private boolean pwd_;
+    /**
+     * <code>optional bool pwd = 3;</code>
+     *
+     * <pre>
+     * 是否需要密码
+     * </pre>
+     */
+    public boolean hasPwd() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional bool pwd = 3;</code>
+     *
+     * <pre>
+     * 是否需要密码
+     * </pre>
+     */
+    public boolean getPwd() {
+      return pwd_;
+    }
+
+    public static final int NAME_FIELD_NUMBER = 4;
+    private java.lang.Object name_;
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    public boolean hasName() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          name_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string name = 4;</code>
+     *
+     * <pre>
+     * 房间名字
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int START_FIELD_NUMBER = 5;
+    private boolean start_;
+    /**
+     * <code>optional bool start = 5;</code>
+     *
+     * <pre>
+     * 是否已经开始
+     * </pre>
+     */
+    public boolean hasStart() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>optional bool start = 5;</code>
+     *
+     * <pre>
+     * 是否已经开始
+     * </pre>
+     */
+    public boolean getStart() {
+      return start_;
+    }
+
+    public static final int MAX_FIELD_NUMBER = 6;
+    private int max_;
+    /**
+     * <code>optional int32 max = 6;</code>
+     *
+     * <pre>
+     * 人数上限
+     * </pre>
+     */
+    public boolean hasMax() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    /**
+     * <code>optional int32 max = 6;</code>
+     *
+     * <pre>
+     * 人数上限
+     * </pre>
+     */
+    public int getMax() {
+      return max_;
+    }
+
+    public static final int MAP_FIELD_NUMBER = 7;
+    private int map_;
+    /**
+     * <code>optional int32 map = 7;</code>
+     *
+     * <pre>
+     * 使用那张图?
+     * </pre>
+     */
+    public boolean hasMap() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    /**
+     * <code>optional int32 map = 7;</code>
+     *
+     * <pre>
+     * 使用那张图?
+     * </pre>
+     */
+    public int getMap() {
+      return map_;
+    }
+
+    private void initFields() {
+      id_ = 0;
+      count_ = 0;
+      pwd_ = false;
+      name_ = "";
+      start_ = false;
+      max_ = 0;
+      map_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, id_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, count_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBool(3, pwd_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeBytes(4, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeBool(5, start_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeInt32(6, max_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeInt32(7, map_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, id_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, count_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, pwd_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(4, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, start_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, max_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, map_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.GameTable parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameTable parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameTable parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameTable parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameTable parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameTable parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameTable parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameTable parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameTable parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.GameTable parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.GameTable prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.GameTable}
+     *
+     * <pre>
+     * 桌子信息
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.GameTable)
+        org.shell.mmo.sample.message.proto.Global.GameTableOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_GameTable_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_GameTable_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.GameTable.class, org.shell.mmo.sample.message.proto.Global.GameTable.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.GameTable.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        id_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        count_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        pwd_ = false;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        name_ = "";
+        bitField0_ = (bitField0_ & ~0x00000008);
+        start_ = false;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        max_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000020);
+        map_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000040);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_GameTable_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.GameTable getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.GameTable.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.GameTable build() {
+        org.shell.mmo.sample.message.proto.Global.GameTable result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.GameTable buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.GameTable result = new org.shell.mmo.sample.message.proto.Global.GameTable(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.id_ = id_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.count_ = count_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.pwd_ = pwd_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.name_ = name_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.start_ = start_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.max_ = max_;
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        result.map_ = map_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.GameTable) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.GameTable)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.GameTable other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.GameTable.getDefaultInstance()) return this;
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        if (other.hasCount()) {
+          setCount(other.getCount());
+        }
+        if (other.hasPwd()) {
+          setPwd(other.getPwd());
+        }
+        if (other.hasName()) {
+          bitField0_ |= 0x00000008;
+          name_ = other.name_;
+          onChanged();
+        }
+        if (other.hasStart()) {
+          setStart(other.getStart());
+        }
+        if (other.hasMax()) {
+          setMax(other.getMax());
+        }
+        if (other.hasMap()) {
+          setMap(other.getMap());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.GameTable parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.GameTable) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int id_ ;
+      /**
+       * <code>optional int32 id = 1;</code>
+       *
+       * <pre>
+       * 桌子编号
+       * </pre>
+       */
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional int32 id = 1;</code>
+       *
+       * <pre>
+       * 桌子编号
+       * </pre>
+       */
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>optional int32 id = 1;</code>
+       *
+       * <pre>
+       * 桌子编号
+       * </pre>
+       */
+      public Builder setId(int value) {
+        bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 id = 1;</code>
+       *
+       * <pre>
+       * 桌子编号
+       * </pre>
+       */
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int count_ ;
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 当前人数
+       * </pre>
+       */
+      public boolean hasCount() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 当前人数
+       * </pre>
+       */
+      public int getCount() {
+        return count_;
+      }
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 当前人数
+       * </pre>
+       */
+      public Builder setCount(int value) {
+        bitField0_ |= 0x00000002;
+        count_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 当前人数
+       * </pre>
+       */
+      public Builder clearCount() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        count_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean pwd_ ;
+      /**
+       * <code>optional bool pwd = 3;</code>
+       *
+       * <pre>
+       * 是否需要密码
+       * </pre>
+       */
+      public boolean hasPwd() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional bool pwd = 3;</code>
+       *
+       * <pre>
+       * 是否需要密码
+       * </pre>
+       */
+      public boolean getPwd() {
+        return pwd_;
+      }
+      /**
+       * <code>optional bool pwd = 3;</code>
+       *
+       * <pre>
+       * 是否需要密码
+       * </pre>
+       */
+      public Builder setPwd(boolean value) {
+        bitField0_ |= 0x00000004;
+        pwd_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool pwd = 3;</code>
+       *
+       * <pre>
+       * 是否需要密码
+       * </pre>
+       */
+      public Builder clearPwd() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        pwd_ = false;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object name_ = "";
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public Builder setName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public Builder clearName() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string name = 4;</code>
+       *
+       * <pre>
+       * 房间名字
+       * </pre>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
+      private boolean start_ ;
+      /**
+       * <code>optional bool start = 5;</code>
+       *
+       * <pre>
+       * 是否已经开始
+       * </pre>
+       */
+      public boolean hasStart() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional bool start = 5;</code>
+       *
+       * <pre>
+       * 是否已经开始
+       * </pre>
+       */
+      public boolean getStart() {
+        return start_;
+      }
+      /**
+       * <code>optional bool start = 5;</code>
+       *
+       * <pre>
+       * 是否已经开始
+       * </pre>
+       */
+      public Builder setStart(boolean value) {
+        bitField0_ |= 0x00000010;
+        start_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool start = 5;</code>
+       *
+       * <pre>
+       * 是否已经开始
+       * </pre>
+       */
+      public Builder clearStart() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        start_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int max_ ;
+      /**
+       * <code>optional int32 max = 6;</code>
+       *
+       * <pre>
+       * 人数上限
+       * </pre>
+       */
+      public boolean hasMax() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>optional int32 max = 6;</code>
+       *
+       * <pre>
+       * 人数上限
+       * </pre>
+       */
+      public int getMax() {
+        return max_;
+      }
+      /**
+       * <code>optional int32 max = 6;</code>
+       *
+       * <pre>
+       * 人数上限
+       * </pre>
+       */
+      public Builder setMax(int value) {
+        bitField0_ |= 0x00000020;
+        max_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 max = 6;</code>
+       *
+       * <pre>
+       * 人数上限
+       * </pre>
+       */
+      public Builder clearMax() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        max_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int map_ ;
+      /**
+       * <code>optional int32 map = 7;</code>
+       *
+       * <pre>
+       * 使用那张图?
+       * </pre>
+       */
+      public boolean hasMap() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      /**
+       * <code>optional int32 map = 7;</code>
+       *
+       * <pre>
+       * 使用那张图?
+       * </pre>
+       */
+      public int getMap() {
+        return map_;
+      }
+      /**
+       * <code>optional int32 map = 7;</code>
+       *
+       * <pre>
+       * 使用那张图?
+       * </pre>
+       */
+      public Builder setMap(int value) {
+        bitField0_ |= 0x00000040;
+        map_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 map = 7;</code>
+       *
+       * <pre>
+       * 使用那张图?
+       * </pre>
+       */
+      public Builder clearMap() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        map_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.GameTable)
+    }
+
+    static {
+      defaultInstance = new GameTable(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.GameTable)
+  }
+
+  public interface TableRoleOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.TableRole)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional fixed64 id = 1;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    boolean hasId();
+    /**
+     * <code>optional fixed64 id = 1;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    long getId();
+
+    /**
+     * <code>optional string name = 2;</code>
+     *
+     * <pre>
+     * 玩家名
+     * </pre>
+     */
+    boolean hasName();
+    /**
+     * <code>optional string name = 2;</code>
+     *
+     * <pre>
+     * 玩家名
+     * </pre>
+     */
+    java.lang.String getName();
+    /**
+     * <code>optional string name = 2;</code>
+     *
+     * <pre>
+     * 玩家名
+     * </pre>
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    /**
+     * <code>optional bool ready = 3;</code>
+     *
+     * <pre>
+     * 是否准备完毕
+     * </pre>
+     */
+    boolean hasReady();
+    /**
+     * <code>optional bool ready = 3;</code>
+     *
+     * <pre>
+     * 是否准备完毕
+     * </pre>
+     */
+    boolean getReady();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.TableRole}
+   *
+   * <pre>
+   * 卡坦岛玩家
+   * </pre>
+   */
+  public static final class TableRole extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.TableRole)
+      TableRoleOrBuilder {
+    // Use TableRole.newBuilder() to construct.
+    private TableRole(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private TableRole(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final TableRole defaultInstance;
+    public static TableRole getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public TableRole getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private TableRole(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 9: {
+              bitField0_ |= 0x00000001;
+              id_ = input.readFixed64();
+              break;
+            }
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
+              bitField0_ |= 0x00000002;
+              name_ = bs;
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              ready_ = input.readBool();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_TableRole_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_TableRole_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.TableRole.class, org.shell.mmo.sample.message.proto.Global.TableRole.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<TableRole> PARSER =
+        new com.google.protobuf.AbstractParser<TableRole>() {
+      public TableRole parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new TableRole(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<TableRole> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int ID_FIELD_NUMBER = 1;
+    private long id_;
+    /**
+     * <code>optional fixed64 id = 1;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional fixed64 id = 1;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public long getId() {
+      return id_;
+    }
+
+    public static final int NAME_FIELD_NUMBER = 2;
+    private java.lang.Object name_;
+    /**
+     * <code>optional string name = 2;</code>
+     *
+     * <pre>
+     * 玩家名
+     * </pre>
+     */
+    public boolean hasName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional string name = 2;</code>
+     *
+     * <pre>
+     * 玩家名
+     * </pre>
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          name_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string name = 2;</code>
+     *
+     * <pre>
+     * 玩家名
+     * </pre>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int READY_FIELD_NUMBER = 3;
+    private boolean ready_;
+    /**
+     * <code>optional bool ready = 3;</code>
+     *
+     * <pre>
+     * 是否准备完毕
+     * </pre>
+     */
+    public boolean hasReady() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional bool ready = 3;</code>
+     *
+     * <pre>
+     * 是否准备完毕
+     * </pre>
+     */
+    public boolean getReady() {
+      return ready_;
+    }
+
+    private void initFields() {
+      id_ = 0L;
+      name_ = "";
+      ready_ = false;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeFixed64(1, id_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBool(3, ready_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed64Size(1, id_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, ready_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.TableRole parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.TableRole parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.TableRole parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.TableRole parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.TableRole parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.TableRole parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.TableRole parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.TableRole parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.TableRole parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.TableRole parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.TableRole prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.TableRole}
+     *
+     * <pre>
+     * 卡坦岛玩家
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.TableRole)
+        org.shell.mmo.sample.message.proto.Global.TableRoleOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_TableRole_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_TableRole_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.TableRole.class, org.shell.mmo.sample.message.proto.Global.TableRole.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.TableRole.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        id_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        name_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        ready_ = false;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_TableRole_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.TableRole getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.TableRole.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.TableRole build() {
+        org.shell.mmo.sample.message.proto.Global.TableRole result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.TableRole buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.TableRole result = new org.shell.mmo.sample.message.proto.Global.TableRole(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.id_ = id_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.name_ = name_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.ready_ = ready_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.TableRole) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.TableRole)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.TableRole other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.TableRole.getDefaultInstance()) return this;
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        if (other.hasName()) {
+          bitField0_ |= 0x00000002;
+          name_ = other.name_;
+          onChanged();
+        }
+        if (other.hasReady()) {
+          setReady(other.getReady());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.TableRole parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.TableRole) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private long id_ ;
+      /**
+       * <code>optional fixed64 id = 1;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional fixed64 id = 1;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public long getId() {
+        return id_;
+      }
+      /**
+       * <code>optional fixed64 id = 1;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder setId(long value) {
+        bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional fixed64 id = 1;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        id_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object name_ = "";
+      /**
+       * <code>optional string name = 2;</code>
+       *
+       * <pre>
+       * 玩家名
+       * </pre>
+       */
+      public boolean hasName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string name = 2;</code>
+       *
+       * <pre>
+       * 玩家名
+       * </pre>
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          if (bs.isValidUtf8()) {
+            name_ = s;
+          }
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 2;</code>
+       *
+       * <pre>
+       * 玩家名
+       * </pre>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string name = 2;</code>
+       *
+       * <pre>
+       * 玩家名
        * </pre>
        */
       public Builder setName(
@@ -1928,7 +5166,7 @@ public final class Global {
        * <code>optional string name = 2;</code>
        *
        * <pre>
-       * 名字
+       * 玩家名
        * </pre>
        */
       public Builder clearName() {
@@ -1941,7 +5179,7 @@ public final class Global {
        * <code>optional string name = 2;</code>
        *
        * <pre>
-       * 名字
+       * 玩家名
        * </pre>
        */
       public Builder setNameBytes(
@@ -1955,255 +5193,8815 @@ public final class Global {
         return this;
       }
 
-      private int map_ ;
+      private boolean ready_ ;
       /**
-       * <code>optional int32 map = 3;</code>
+       * <code>optional bool ready = 3;</code>
        *
        * <pre>
-       * 地图
+       * 是否准备完毕
        * </pre>
        */
-      public boolean hasMap() {
+      public boolean hasReady() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional int32 map = 3;</code>
+       * <code>optional bool ready = 3;</code>
        *
        * <pre>
-       * 地图
+       * 是否准备完毕
        * </pre>
        */
-      public int getMap() {
-        return map_;
+      public boolean getReady() {
+        return ready_;
       }
       /**
-       * <code>optional int32 map = 3;</code>
+       * <code>optional bool ready = 3;</code>
        *
        * <pre>
-       * 地图
+       * 是否准备完毕
        * </pre>
        */
-      public Builder setMap(int value) {
+      public Builder setReady(boolean value) {
         bitField0_ |= 0x00000004;
-        map_ = value;
+        ready_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 map = 3;</code>
+       * <code>optional bool ready = 3;</code>
        *
        * <pre>
-       * 地图
+       * 是否准备完毕
        * </pre>
        */
-      public Builder clearMap() {
+      public Builder clearReady() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        map_ = 0;
+        ready_ = false;
         onChanged();
         return this;
       }
 
-      private int level_ ;
-      /**
-       * <code>optional int32 level = 4;</code>
-       *
-       * <pre>
-       * 等级
-       * </pre>
-       */
-      public boolean hasLevel() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>optional int32 level = 4;</code>
-       *
-       * <pre>
-       * 等级
-       * </pre>
-       */
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <code>optional int32 level = 4;</code>
-       *
-       * <pre>
-       * 等级
-       * </pre>
-       */
-      public Builder setLevel(int value) {
-        bitField0_ |= 0x00000008;
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 level = 4;</code>
-       *
-       * <pre>
-       * 等级
-       * </pre>
-       */
-      public Builder clearLevel() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        level_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int server_ ;
-      /**
-       * <code>optional int32 server = 5;</code>
-       *
-       * <pre>
-       * 服务器
-       * </pre>
-       */
-      public boolean hasServer() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
-      }
-      /**
-       * <code>optional int32 server = 5;</code>
-       *
-       * <pre>
-       * 服务器
-       * </pre>
-       */
-      public int getServer() {
-        return server_;
-      }
-      /**
-       * <code>optional int32 server = 5;</code>
-       *
-       * <pre>
-       * 服务器
-       * </pre>
-       */
-      public Builder setServer(int value) {
-        bitField0_ |= 0x00000010;
-        server_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 server = 5;</code>
-       *
-       * <pre>
-       * 服务器
-       * </pre>
-       */
-      public Builder clearServer() {
-        bitField0_ = (bitField0_ & ~0x00000010);
-        server_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int platform_ ;
-      /**
-       * <code>optional int32 platform = 6;</code>
-       *
-       * <pre>
-       * 平台
-       * </pre>
-       */
-      public boolean hasPlatform() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
-      /**
-       * <code>optional int32 platform = 6;</code>
-       *
-       * <pre>
-       * 平台
-       * </pre>
-       */
-      public int getPlatform() {
-        return platform_;
-      }
-      /**
-       * <code>optional int32 platform = 6;</code>
-       *
-       * <pre>
-       * 平台
-       * </pre>
-       */
-      public Builder setPlatform(int value) {
-        bitField0_ |= 0x00000020;
-        platform_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 platform = 6;</code>
-       *
-       * <pre>
-       * 平台
-       * </pre>
-       */
-      public Builder clearPlatform() {
-        bitField0_ = (bitField0_ & ~0x00000020);
-        platform_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int gold_ ;
-      /**
-       * <code>optional int32 gold = 7;</code>
-       *
-       * <pre>
-       * 元宝
-       * </pre>
-       */
-      public boolean hasGold() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
-      }
-      /**
-       * <code>optional int32 gold = 7;</code>
-       *
-       * <pre>
-       * 元宝
-       * </pre>
-       */
-      public int getGold() {
-        return gold_;
-      }
-      /**
-       * <code>optional int32 gold = 7;</code>
-       *
-       * <pre>
-       * 元宝
-       * </pre>
-       */
-      public Builder setGold(int value) {
-        bitField0_ |= 0x00000040;
-        gold_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int32 gold = 7;</code>
-       *
-       * <pre>
-       * 元宝
-       * </pre>
-       */
-      public Builder clearGold() {
-        bitField0_ = (bitField0_ & ~0x00000040);
-        gold_ = 0;
-        onChanged();
-        return this;
-      }
-
-      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.LeaderRole)
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.TableRole)
     }
 
     static {
-      defaultInstance = new LeaderRole(true);
+      defaultInstance = new TableRole(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.LeaderRole)
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.TableRole)
+  }
+
+  public interface CatanResourceOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.CatanResource)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 1;</code>
+     *
+     * <pre>
+     * 类型
+     * </pre>
+     */
+    boolean hasType();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 1;</code>
+     *
+     * <pre>
+     * 类型
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanResourceType getType();
+
+    /**
+     * <code>optional int32 num = 2;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    boolean hasNum();
+    /**
+     * <code>optional int32 num = 2;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    int getNum();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanResource}
+   *
+   * <pre>
+   * 卡坦岛资源
+   * </pre>
+   */
+  public static final class CatanResource extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.CatanResource)
+      CatanResourceOrBuilder {
+    // Use CatanResource.newBuilder() to construct.
+    private CatanResource(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CatanResource(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CatanResource defaultInstance;
+    public static CatanResource getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CatanResource getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CatanResource(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              int rawValue = input.readEnum();
+              org.shell.mmo.sample.message.proto.Global.CatanResourceType value = org.shell.mmo.sample.message.proto.Global.CatanResourceType.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+              } else {
+                bitField0_ |= 0x00000001;
+                type_ = value;
+              }
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              num_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanResource_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanResource_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.CatanResource.class, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CatanResource> PARSER =
+        new com.google.protobuf.AbstractParser<CatanResource>() {
+      public CatanResource parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CatanResource(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CatanResource> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int TYPE_FIELD_NUMBER = 1;
+    private org.shell.mmo.sample.message.proto.Global.CatanResourceType type_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 1;</code>
+     *
+     * <pre>
+     * 类型
+     * </pre>
+     */
+    public boolean hasType() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 1;</code>
+     *
+     * <pre>
+     * 类型
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanResourceType getType() {
+      return type_;
+    }
+
+    public static final int NUM_FIELD_NUMBER = 2;
+    private int num_;
+    /**
+     * <code>optional int32 num = 2;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    public boolean hasNum() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional int32 num = 2;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    public int getNum() {
+      return num_;
+    }
+
+    private void initFields() {
+      type_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
+      num_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeEnum(1, type_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, num_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, type_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, num_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.CatanResource parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanResource parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanResource parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanResource parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanResource parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanResource parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanResource parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanResource parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanResource parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanResource parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.CatanResource prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanResource}
+     *
+     * <pre>
+     * 卡坦岛资源
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.CatanResource)
+        org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanResource_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanResource_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.CatanResource.class, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.CatanResource.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        type_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        num_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanResource_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanResource getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanResource build() {
+        org.shell.mmo.sample.message.proto.Global.CatanResource result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanResource buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.CatanResource result = new org.shell.mmo.sample.message.proto.Global.CatanResource(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.type_ = type_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.num_ = num_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.CatanResource) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.CatanResource)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.CatanResource other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance()) return this;
+        if (other.hasType()) {
+          setType(other.getType());
+        }
+        if (other.hasNum()) {
+          setNum(other.getNum());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.CatanResource parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.CatanResource) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private org.shell.mmo.sample.message.proto.Global.CatanResourceType type_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 1;</code>
+       *
+       * <pre>
+       * 类型
+       * </pre>
+       */
+      public boolean hasType() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 1;</code>
+       *
+       * <pre>
+       * 类型
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResourceType getType() {
+        return type_;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 1;</code>
+       *
+       * <pre>
+       * 类型
+       * </pre>
+       */
+      public Builder setType(org.shell.mmo.sample.message.proto.Global.CatanResourceType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 1;</code>
+       *
+       * <pre>
+       * 类型
+       * </pre>
+       */
+      public Builder clearType() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        type_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
+        onChanged();
+        return this;
+      }
+
+      private int num_ ;
+      /**
+       * <code>optional int32 num = 2;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public boolean hasNum() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional int32 num = 2;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public int getNum() {
+        return num_;
+      }
+      /**
+       * <code>optional int32 num = 2;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public Builder setNum(int value) {
+        bitField0_ |= 0x00000002;
+        num_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 num = 2;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public Builder clearNum() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        num_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.CatanResource)
+    }
+
+    static {
+      defaultInstance = new CatanResource(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.CatanResource)
+  }
+
+  public interface CatanMasterResourceOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.CatanMasterResource)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional fixed64 id = 1;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    boolean hasId();
+    /**
+     * <code>optional fixed64 id = 1;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    long getId();
+
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> 
+        getResourceList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index);
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    int getResourceCount();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
+        getResourceOrBuilderList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanMasterResource}
+   *
+   * <pre>
+   * 卡坦岛玩家关联资源
+   * </pre>
+   */
+  public static final class CatanMasterResource extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.CatanMasterResource)
+      CatanMasterResourceOrBuilder {
+    // Use CatanMasterResource.newBuilder() to construct.
+    private CatanMasterResource(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CatanMasterResource(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CatanMasterResource defaultInstance;
+    public static CatanMasterResource getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CatanMasterResource getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CatanMasterResource(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 9: {
+              bitField0_ |= 0x00000001;
+              id_ = input.readFixed64();
+              break;
+            }
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResource>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              resource_.add(input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanResource.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          resource_ = java.util.Collections.unmodifiableList(resource_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.CatanMasterResource.class, org.shell.mmo.sample.message.proto.Global.CatanMasterResource.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CatanMasterResource> PARSER =
+        new com.google.protobuf.AbstractParser<CatanMasterResource>() {
+      public CatanMasterResource parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CatanMasterResource(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CatanMasterResource> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int ID_FIELD_NUMBER = 1;
+    private long id_;
+    /**
+     * <code>optional fixed64 id = 1;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional fixed64 id = 1;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public long getId() {
+      return id_;
+    }
+
+    public static final int RESOURCE_FIELD_NUMBER = 2;
+    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> resource_;
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> getResourceList() {
+      return resource_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
+        getResourceOrBuilderList() {
+      return resource_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    public int getResourceCount() {
+      return resource_.size();
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index) {
+      return resource_.get(index);
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
+        int index) {
+      return resource_.get(index);
+    }
+
+    private void initFields() {
+      id_ = 0L;
+      resource_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeFixed64(1, id_);
+      }
+      for (int i = 0; i < resource_.size(); i++) {
+        output.writeMessage(2, resource_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed64Size(1, id_);
+      }
+      for (int i = 0; i < resource_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, resource_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.CatanMasterResource parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMasterResource parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMasterResource parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMasterResource parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMasterResource parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMasterResource parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMasterResource parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMasterResource parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMasterResource parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMasterResource parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.CatanMasterResource prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanMasterResource}
+     *
+     * <pre>
+     * 卡坦岛玩家关联资源
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.CatanMasterResource)
+        org.shell.mmo.sample.message.proto.Global.CatanMasterResourceOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.CatanMasterResource.class, org.shell.mmo.sample.message.proto.Global.CatanMasterResource.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.CatanMasterResource.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getResourceFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        id_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (resourceBuilder_ == null) {
+          resource_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          resourceBuilder_.clear();
+        }
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanMasterResource getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.CatanMasterResource.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanMasterResource build() {
+        org.shell.mmo.sample.message.proto.Global.CatanMasterResource result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanMasterResource buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.CatanMasterResource result = new org.shell.mmo.sample.message.proto.Global.CatanMasterResource(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.id_ = id_;
+        if (resourceBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+            resource_ = java.util.Collections.unmodifiableList(resource_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.resource_ = resource_;
+        } else {
+          result.resource_ = resourceBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.CatanMasterResource) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.CatanMasterResource)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.CatanMasterResource other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.CatanMasterResource.getDefaultInstance()) return this;
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        if (resourceBuilder_ == null) {
+          if (!other.resource_.isEmpty()) {
+            if (resource_.isEmpty()) {
+              resource_ = other.resource_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureResourceIsMutable();
+              resource_.addAll(other.resource_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.resource_.isEmpty()) {
+            if (resourceBuilder_.isEmpty()) {
+              resourceBuilder_.dispose();
+              resourceBuilder_ = null;
+              resource_ = other.resource_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              resourceBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getResourceFieldBuilder() : null;
+            } else {
+              resourceBuilder_.addAllMessages(other.resource_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.CatanMasterResource parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.CatanMasterResource) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private long id_ ;
+      /**
+       * <code>optional fixed64 id = 1;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional fixed64 id = 1;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public long getId() {
+        return id_;
+      }
+      /**
+       * <code>optional fixed64 id = 1;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder setId(long value) {
+        bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional fixed64 id = 1;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        id_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> resource_ =
+        java.util.Collections.emptyList();
+      private void ensureResourceIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResource>(resource_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> resourceBuilder_;
+
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> getResourceList() {
+        if (resourceBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(resource_);
+        } else {
+          return resourceBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public int getResourceCount() {
+        if (resourceBuilder_ == null) {
+          return resource_.size();
+        } else {
+          return resourceBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index) {
+        if (resourceBuilder_ == null) {
+          return resource_.get(index);
+        } else {
+          return resourceBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder setResource(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanResource value) {
+        if (resourceBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureResourceIsMutable();
+          resource_.set(index, value);
+          onChanged();
+        } else {
+          resourceBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder setResource(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
+        if (resourceBuilder_ == null) {
+          ensureResourceIsMutable();
+          resource_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          resourceBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder addResource(org.shell.mmo.sample.message.proto.Global.CatanResource value) {
+        if (resourceBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureResourceIsMutable();
+          resource_.add(value);
+          onChanged();
+        } else {
+          resourceBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder addResource(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanResource value) {
+        if (resourceBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureResourceIsMutable();
+          resource_.add(index, value);
+          onChanged();
+        } else {
+          resourceBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder addResource(
+          org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
+        if (resourceBuilder_ == null) {
+          ensureResourceIsMutable();
+          resource_.add(builderForValue.build());
+          onChanged();
+        } else {
+          resourceBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder addResource(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
+        if (resourceBuilder_ == null) {
+          ensureResourceIsMutable();
+          resource_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          resourceBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder addAllResource(
+          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanResource> values) {
+        if (resourceBuilder_ == null) {
+          ensureResourceIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, resource_);
+          onChanged();
+        } else {
+          resourceBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder clearResource() {
+        if (resourceBuilder_ == null) {
+          resource_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          resourceBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder removeResource(int index) {
+        if (resourceBuilder_ == null) {
+          ensureResourceIsMutable();
+          resource_.remove(index);
+          onChanged();
+        } else {
+          resourceBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder getResourceBuilder(
+          int index) {
+        return getResourceFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
+          int index) {
+        if (resourceBuilder_ == null) {
+          return resource_.get(index);  } else {
+          return resourceBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
+           getResourceOrBuilderList() {
+        if (resourceBuilder_ != null) {
+          return resourceBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(resource_);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder addResourceBuilder() {
+        return getResourceFieldBuilder().addBuilder(
+            org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder addResourceBuilder(
+          int index) {
+        return getResourceFieldBuilder().addBuilder(
+            index, org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource.Builder> 
+           getResourceBuilderList() {
+        return getResourceFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
+          getResourceFieldBuilder() {
+        if (resourceBuilder_ == null) {
+          resourceBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder>(
+                  resource_,
+                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  getParentForChildren(),
+                  isClean());
+          resource_ = null;
+        }
+        return resourceBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.CatanMasterResource)
+    }
+
+    static {
+      defaultInstance = new CatanMasterResource(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.CatanMasterResource)
+  }
+
+  public interface CatanMapOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.CatanMap)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+     *
+     * <pre>
+     * 格子信息
+     * </pre>
+     */
+    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanGrid> 
+        getGridList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+     *
+     * <pre>
+     * 格子信息
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanGrid getGrid(int index);
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+     *
+     * <pre>
+     * 格子信息
+     * </pre>
+     */
+    int getGridCount();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+     *
+     * <pre>
+     * 格子信息
+     * </pre>
+     */
+    java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanGridOrBuilder> 
+        getGridOrBuilderList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+     *
+     * <pre>
+     * 格子信息
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanGridOrBuilder getGridOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+     *
+     * <pre>
+     * 城市信息
+     * </pre>
+     */
+    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCity> 
+        getCityList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+     *
+     * <pre>
+     * 城市信息
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanCity getCity(int index);
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+     *
+     * <pre>
+     * 城市信息
+     * </pre>
+     */
+    int getCityCount();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+     *
+     * <pre>
+     * 城市信息
+     * </pre>
+     */
+    java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanCityOrBuilder> 
+        getCityOrBuilderList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+     *
+     * <pre>
+     * 城市信息
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanCityOrBuilder getCityOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+     *
+     * <pre>
+     * 村庄信息
+     * </pre>
+     */
+    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCountry> 
+        getCountryList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+     *
+     * <pre>
+     * 村庄信息
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanCountry getCountry(int index);
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+     *
+     * <pre>
+     * 村庄信息
+     * </pre>
+     */
+    int getCountryCount();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+     *
+     * <pre>
+     * 村庄信息
+     * </pre>
+     */
+    java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanCountryOrBuilder> 
+        getCountryOrBuilderList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+     *
+     * <pre>
+     * 村庄信息
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanCountryOrBuilder getCountryOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+     *
+     * <pre>
+     * 道路信息
+     * </pre>
+     */
+    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanRoad> 
+        getRoadList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+     *
+     * <pre>
+     * 道路信息
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanRoad getRoad(int index);
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+     *
+     * <pre>
+     * 道路信息
+     * </pre>
+     */
+    int getRoadCount();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+     *
+     * <pre>
+     * 道路信息
+     * </pre>
+     */
+    java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanRoadOrBuilder> 
+        getRoadOrBuilderList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+     *
+     * <pre>
+     * 道路信息
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanRoadOrBuilder getRoadOrBuilder(
+        int index);
+
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+     *
+     * <pre>
+     * 港口信息
+     * </pre>
+     */
+    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanPort> 
+        getPortList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+     *
+     * <pre>
+     * 港口信息
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanPort getPort(int index);
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+     *
+     * <pre>
+     * 港口信息
+     * </pre>
+     */
+    int getPortCount();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+     *
+     * <pre>
+     * 港口信息
+     * </pre>
+     */
+    java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanPortOrBuilder> 
+        getPortOrBuilderList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+     *
+     * <pre>
+     * 港口信息
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanPortOrBuilder getPortOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanMap}
+   *
+   * <pre>
+   * 卡坦岛地图信息
+   * </pre>
+   */
+  public static final class CatanMap extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.CatanMap)
+      CatanMapOrBuilder {
+    // Use CatanMap.newBuilder() to construct.
+    private CatanMap(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CatanMap(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CatanMap defaultInstance;
+    public static CatanMap getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CatanMap getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CatanMap(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                grid_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanGrid>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              grid_.add(input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanGrid.PARSER, extensionRegistry));
+              break;
+            }
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                city_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanCity>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              city_.add(input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanCity.PARSER, extensionRegistry));
+              break;
+            }
+            case 26: {
+              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                country_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanCountry>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              country_.add(input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanCountry.PARSER, extensionRegistry));
+              break;
+            }
+            case 34: {
+              if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
+                road_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanRoad>();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              road_.add(input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanRoad.PARSER, extensionRegistry));
+              break;
+            }
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+                port_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanPort>();
+                mutable_bitField0_ |= 0x00000010;
+              }
+              port_.add(input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanPort.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          grid_ = java.util.Collections.unmodifiableList(grid_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+          city_ = java.util.Collections.unmodifiableList(city_);
+        }
+        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+          country_ = java.util.Collections.unmodifiableList(country_);
+        }
+        if (((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
+          road_ = java.util.Collections.unmodifiableList(road_);
+        }
+        if (((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+          port_ = java.util.Collections.unmodifiableList(port_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanMap_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanMap_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.CatanMap.class, org.shell.mmo.sample.message.proto.Global.CatanMap.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CatanMap> PARSER =
+        new com.google.protobuf.AbstractParser<CatanMap>() {
+      public CatanMap parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CatanMap(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CatanMap> getParserForType() {
+      return PARSER;
+    }
+
+    public static final int GRID_FIELD_NUMBER = 1;
+    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanGrid> grid_;
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+     *
+     * <pre>
+     * 格子信息
+     * </pre>
+     */
+    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanGrid> getGridList() {
+      return grid_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+     *
+     * <pre>
+     * 格子信息
+     * </pre>
+     */
+    public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanGridOrBuilder> 
+        getGridOrBuilderList() {
+      return grid_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+     *
+     * <pre>
+     * 格子信息
+     * </pre>
+     */
+    public int getGridCount() {
+      return grid_.size();
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+     *
+     * <pre>
+     * 格子信息
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanGrid getGrid(int index) {
+      return grid_.get(index);
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+     *
+     * <pre>
+     * 格子信息
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanGridOrBuilder getGridOrBuilder(
+        int index) {
+      return grid_.get(index);
+    }
+
+    public static final int CITY_FIELD_NUMBER = 2;
+    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCity> city_;
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+     *
+     * <pre>
+     * 城市信息
+     * </pre>
+     */
+    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCity> getCityList() {
+      return city_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+     *
+     * <pre>
+     * 城市信息
+     * </pre>
+     */
+    public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanCityOrBuilder> 
+        getCityOrBuilderList() {
+      return city_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+     *
+     * <pre>
+     * 城市信息
+     * </pre>
+     */
+    public int getCityCount() {
+      return city_.size();
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+     *
+     * <pre>
+     * 城市信息
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanCity getCity(int index) {
+      return city_.get(index);
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+     *
+     * <pre>
+     * 城市信息
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanCityOrBuilder getCityOrBuilder(
+        int index) {
+      return city_.get(index);
+    }
+
+    public static final int COUNTRY_FIELD_NUMBER = 3;
+    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCountry> country_;
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+     *
+     * <pre>
+     * 村庄信息
+     * </pre>
+     */
+    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCountry> getCountryList() {
+      return country_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+     *
+     * <pre>
+     * 村庄信息
+     * </pre>
+     */
+    public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanCountryOrBuilder> 
+        getCountryOrBuilderList() {
+      return country_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+     *
+     * <pre>
+     * 村庄信息
+     * </pre>
+     */
+    public int getCountryCount() {
+      return country_.size();
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+     *
+     * <pre>
+     * 村庄信息
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanCountry getCountry(int index) {
+      return country_.get(index);
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+     *
+     * <pre>
+     * 村庄信息
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanCountryOrBuilder getCountryOrBuilder(
+        int index) {
+      return country_.get(index);
+    }
+
+    public static final int ROAD_FIELD_NUMBER = 4;
+    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanRoad> road_;
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+     *
+     * <pre>
+     * 道路信息
+     * </pre>
+     */
+    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanRoad> getRoadList() {
+      return road_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+     *
+     * <pre>
+     * 道路信息
+     * </pre>
+     */
+    public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanRoadOrBuilder> 
+        getRoadOrBuilderList() {
+      return road_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+     *
+     * <pre>
+     * 道路信息
+     * </pre>
+     */
+    public int getRoadCount() {
+      return road_.size();
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+     *
+     * <pre>
+     * 道路信息
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanRoad getRoad(int index) {
+      return road_.get(index);
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+     *
+     * <pre>
+     * 道路信息
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanRoadOrBuilder getRoadOrBuilder(
+        int index) {
+      return road_.get(index);
+    }
+
+    public static final int PORT_FIELD_NUMBER = 5;
+    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanPort> port_;
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+     *
+     * <pre>
+     * 港口信息
+     * </pre>
+     */
+    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanPort> getPortList() {
+      return port_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+     *
+     * <pre>
+     * 港口信息
+     * </pre>
+     */
+    public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanPortOrBuilder> 
+        getPortOrBuilderList() {
+      return port_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+     *
+     * <pre>
+     * 港口信息
+     * </pre>
+     */
+    public int getPortCount() {
+      return port_.size();
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+     *
+     * <pre>
+     * 港口信息
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanPort getPort(int index) {
+      return port_.get(index);
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+     *
+     * <pre>
+     * 港口信息
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanPortOrBuilder getPortOrBuilder(
+        int index) {
+      return port_.get(index);
+    }
+
+    private void initFields() {
+      grid_ = java.util.Collections.emptyList();
+      city_ = java.util.Collections.emptyList();
+      country_ = java.util.Collections.emptyList();
+      road_ = java.util.Collections.emptyList();
+      port_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      for (int i = 0; i < grid_.size(); i++) {
+        output.writeMessage(1, grid_.get(i));
+      }
+      for (int i = 0; i < city_.size(); i++) {
+        output.writeMessage(2, city_.get(i));
+      }
+      for (int i = 0; i < country_.size(); i++) {
+        output.writeMessage(3, country_.get(i));
+      }
+      for (int i = 0; i < road_.size(); i++) {
+        output.writeMessage(4, road_.get(i));
+      }
+      for (int i = 0; i < port_.size(); i++) {
+        output.writeMessage(5, port_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < grid_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, grid_.get(i));
+      }
+      for (int i = 0; i < city_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, city_.get(i));
+      }
+      for (int i = 0; i < country_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, country_.get(i));
+      }
+      for (int i = 0; i < road_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, road_.get(i));
+      }
+      for (int i = 0; i < port_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, port_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.CatanMap parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMap parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMap parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMap parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMap parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMap parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMap parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMap parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMap parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanMap parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.CatanMap prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanMap}
+     *
+     * <pre>
+     * 卡坦岛地图信息
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.CatanMap)
+        org.shell.mmo.sample.message.proto.Global.CatanMapOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanMap_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanMap_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.CatanMap.class, org.shell.mmo.sample.message.proto.Global.CatanMap.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.CatanMap.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getGridFieldBuilder();
+          getCityFieldBuilder();
+          getCountryFieldBuilder();
+          getRoadFieldBuilder();
+          getPortFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (gridBuilder_ == null) {
+          grid_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          gridBuilder_.clear();
+        }
+        if (cityBuilder_ == null) {
+          city_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          cityBuilder_.clear();
+        }
+        if (countryBuilder_ == null) {
+          country_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          countryBuilder_.clear();
+        }
+        if (roadBuilder_ == null) {
+          road_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        } else {
+          roadBuilder_.clear();
+        }
+        if (portBuilder_ == null) {
+          port_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        } else {
+          portBuilder_.clear();
+        }
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanMap_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanMap getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.CatanMap.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanMap build() {
+        org.shell.mmo.sample.message.proto.Global.CatanMap result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanMap buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.CatanMap result = new org.shell.mmo.sample.message.proto.Global.CatanMap(this);
+        int from_bitField0_ = bitField0_;
+        if (gridBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+            grid_ = java.util.Collections.unmodifiableList(grid_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.grid_ = grid_;
+        } else {
+          result.grid_ = gridBuilder_.build();
+        }
+        if (cityBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002)) {
+            city_ = java.util.Collections.unmodifiableList(city_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.city_ = city_;
+        } else {
+          result.city_ = cityBuilder_.build();
+        }
+        if (countryBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004)) {
+            country_ = java.util.Collections.unmodifiableList(country_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.country_ = country_;
+        } else {
+          result.country_ = countryBuilder_.build();
+        }
+        if (roadBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008)) {
+            road_ = java.util.Collections.unmodifiableList(road_);
+            bitField0_ = (bitField0_ & ~0x00000008);
+          }
+          result.road_ = road_;
+        } else {
+          result.road_ = roadBuilder_.build();
+        }
+        if (portBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) == 0x00000010)) {
+            port_ = java.util.Collections.unmodifiableList(port_);
+            bitField0_ = (bitField0_ & ~0x00000010);
+          }
+          result.port_ = port_;
+        } else {
+          result.port_ = portBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.CatanMap) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.CatanMap)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.CatanMap other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.CatanMap.getDefaultInstance()) return this;
+        if (gridBuilder_ == null) {
+          if (!other.grid_.isEmpty()) {
+            if (grid_.isEmpty()) {
+              grid_ = other.grid_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureGridIsMutable();
+              grid_.addAll(other.grid_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.grid_.isEmpty()) {
+            if (gridBuilder_.isEmpty()) {
+              gridBuilder_.dispose();
+              gridBuilder_ = null;
+              grid_ = other.grid_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              gridBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getGridFieldBuilder() : null;
+            } else {
+              gridBuilder_.addAllMessages(other.grid_);
+            }
+          }
+        }
+        if (cityBuilder_ == null) {
+          if (!other.city_.isEmpty()) {
+            if (city_.isEmpty()) {
+              city_ = other.city_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+            } else {
+              ensureCityIsMutable();
+              city_.addAll(other.city_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.city_.isEmpty()) {
+            if (cityBuilder_.isEmpty()) {
+              cityBuilder_.dispose();
+              cityBuilder_ = null;
+              city_ = other.city_;
+              bitField0_ = (bitField0_ & ~0x00000002);
+              cityBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getCityFieldBuilder() : null;
+            } else {
+              cityBuilder_.addAllMessages(other.city_);
+            }
+          }
+        }
+        if (countryBuilder_ == null) {
+          if (!other.country_.isEmpty()) {
+            if (country_.isEmpty()) {
+              country_ = other.country_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureCountryIsMutable();
+              country_.addAll(other.country_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.country_.isEmpty()) {
+            if (countryBuilder_.isEmpty()) {
+              countryBuilder_.dispose();
+              countryBuilder_ = null;
+              country_ = other.country_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              countryBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getCountryFieldBuilder() : null;
+            } else {
+              countryBuilder_.addAllMessages(other.country_);
+            }
+          }
+        }
+        if (roadBuilder_ == null) {
+          if (!other.road_.isEmpty()) {
+            if (road_.isEmpty()) {
+              road_ = other.road_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+            } else {
+              ensureRoadIsMutable();
+              road_.addAll(other.road_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.road_.isEmpty()) {
+            if (roadBuilder_.isEmpty()) {
+              roadBuilder_.dispose();
+              roadBuilder_ = null;
+              road_ = other.road_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+              roadBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getRoadFieldBuilder() : null;
+            } else {
+              roadBuilder_.addAllMessages(other.road_);
+            }
+          }
+        }
+        if (portBuilder_ == null) {
+          if (!other.port_.isEmpty()) {
+            if (port_.isEmpty()) {
+              port_ = other.port_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+            } else {
+              ensurePortIsMutable();
+              port_.addAll(other.port_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.port_.isEmpty()) {
+            if (portBuilder_.isEmpty()) {
+              portBuilder_.dispose();
+              portBuilder_ = null;
+              port_ = other.port_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+              portBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getPortFieldBuilder() : null;
+            } else {
+              portBuilder_.addAllMessages(other.port_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.CatanMap parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.CatanMap) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanGrid> grid_ =
+        java.util.Collections.emptyList();
+      private void ensureGridIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          grid_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanGrid>(grid_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanGrid, org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder, org.shell.mmo.sample.message.proto.Global.CatanGridOrBuilder> gridBuilder_;
+
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanGrid> getGridList() {
+        if (gridBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(grid_);
+        } else {
+          return gridBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public int getGridCount() {
+        if (gridBuilder_ == null) {
+          return grid_.size();
+        } else {
+          return gridBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanGrid getGrid(int index) {
+        if (gridBuilder_ == null) {
+          return grid_.get(index);
+        } else {
+          return gridBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public Builder setGrid(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanGrid value) {
+        if (gridBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGridIsMutable();
+          grid_.set(index, value);
+          onChanged();
+        } else {
+          gridBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public Builder setGrid(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder builderForValue) {
+        if (gridBuilder_ == null) {
+          ensureGridIsMutable();
+          grid_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          gridBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public Builder addGrid(org.shell.mmo.sample.message.proto.Global.CatanGrid value) {
+        if (gridBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGridIsMutable();
+          grid_.add(value);
+          onChanged();
+        } else {
+          gridBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public Builder addGrid(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanGrid value) {
+        if (gridBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureGridIsMutable();
+          grid_.add(index, value);
+          onChanged();
+        } else {
+          gridBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public Builder addGrid(
+          org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder builderForValue) {
+        if (gridBuilder_ == null) {
+          ensureGridIsMutable();
+          grid_.add(builderForValue.build());
+          onChanged();
+        } else {
+          gridBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public Builder addGrid(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder builderForValue) {
+        if (gridBuilder_ == null) {
+          ensureGridIsMutable();
+          grid_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          gridBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public Builder addAllGrid(
+          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanGrid> values) {
+        if (gridBuilder_ == null) {
+          ensureGridIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, grid_);
+          onChanged();
+        } else {
+          gridBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public Builder clearGrid() {
+        if (gridBuilder_ == null) {
+          grid_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          gridBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public Builder removeGrid(int index) {
+        if (gridBuilder_ == null) {
+          ensureGridIsMutable();
+          grid_.remove(index);
+          onChanged();
+        } else {
+          gridBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder getGridBuilder(
+          int index) {
+        return getGridFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanGridOrBuilder getGridOrBuilder(
+          int index) {
+        if (gridBuilder_ == null) {
+          return grid_.get(index);  } else {
+          return gridBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanGridOrBuilder> 
+           getGridOrBuilderList() {
+        if (gridBuilder_ != null) {
+          return gridBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(grid_);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder addGridBuilder() {
+        return getGridFieldBuilder().addBuilder(
+            org.shell.mmo.sample.message.proto.Global.CatanGrid.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder addGridBuilder(
+          int index) {
+        return getGridFieldBuilder().addBuilder(
+            index, org.shell.mmo.sample.message.proto.Global.CatanGrid.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanGrid grid = 1;</code>
+       *
+       * <pre>
+       * 格子信息
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder> 
+           getGridBuilderList() {
+        return getGridFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanGrid, org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder, org.shell.mmo.sample.message.proto.Global.CatanGridOrBuilder> 
+          getGridFieldBuilder() {
+        if (gridBuilder_ == null) {
+          gridBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.CatanGrid, org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder, org.shell.mmo.sample.message.proto.Global.CatanGridOrBuilder>(
+                  grid_,
+                  ((bitField0_ & 0x00000001) == 0x00000001),
+                  getParentForChildren(),
+                  isClean());
+          grid_ = null;
+        }
+        return gridBuilder_;
+      }
+
+      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCity> city_ =
+        java.util.Collections.emptyList();
+      private void ensureCityIsMutable() {
+        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+          city_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanCity>(city_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanCity, org.shell.mmo.sample.message.proto.Global.CatanCity.Builder, org.shell.mmo.sample.message.proto.Global.CatanCityOrBuilder> cityBuilder_;
+
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCity> getCityList() {
+        if (cityBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(city_);
+        } else {
+          return cityBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public int getCityCount() {
+        if (cityBuilder_ == null) {
+          return city_.size();
+        } else {
+          return cityBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCity getCity(int index) {
+        if (cityBuilder_ == null) {
+          return city_.get(index);
+        } else {
+          return cityBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public Builder setCity(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCity value) {
+        if (cityBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCityIsMutable();
+          city_.set(index, value);
+          onChanged();
+        } else {
+          cityBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public Builder setCity(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCity.Builder builderForValue) {
+        if (cityBuilder_ == null) {
+          ensureCityIsMutable();
+          city_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          cityBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public Builder addCity(org.shell.mmo.sample.message.proto.Global.CatanCity value) {
+        if (cityBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCityIsMutable();
+          city_.add(value);
+          onChanged();
+        } else {
+          cityBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public Builder addCity(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCity value) {
+        if (cityBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCityIsMutable();
+          city_.add(index, value);
+          onChanged();
+        } else {
+          cityBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public Builder addCity(
+          org.shell.mmo.sample.message.proto.Global.CatanCity.Builder builderForValue) {
+        if (cityBuilder_ == null) {
+          ensureCityIsMutable();
+          city_.add(builderForValue.build());
+          onChanged();
+        } else {
+          cityBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public Builder addCity(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCity.Builder builderForValue) {
+        if (cityBuilder_ == null) {
+          ensureCityIsMutable();
+          city_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          cityBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public Builder addAllCity(
+          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanCity> values) {
+        if (cityBuilder_ == null) {
+          ensureCityIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, city_);
+          onChanged();
+        } else {
+          cityBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public Builder clearCity() {
+        if (cityBuilder_ == null) {
+          city_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          cityBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public Builder removeCity(int index) {
+        if (cityBuilder_ == null) {
+          ensureCityIsMutable();
+          city_.remove(index);
+          onChanged();
+        } else {
+          cityBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCity.Builder getCityBuilder(
+          int index) {
+        return getCityFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCityOrBuilder getCityOrBuilder(
+          int index) {
+        if (cityBuilder_ == null) {
+          return city_.get(index);  } else {
+          return cityBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanCityOrBuilder> 
+           getCityOrBuilderList() {
+        if (cityBuilder_ != null) {
+          return cityBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(city_);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCity.Builder addCityBuilder() {
+        return getCityFieldBuilder().addBuilder(
+            org.shell.mmo.sample.message.proto.Global.CatanCity.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCity.Builder addCityBuilder(
+          int index) {
+        return getCityFieldBuilder().addBuilder(
+            index, org.shell.mmo.sample.message.proto.Global.CatanCity.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCity city = 2;</code>
+       *
+       * <pre>
+       * 城市信息
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCity.Builder> 
+           getCityBuilderList() {
+        return getCityFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanCity, org.shell.mmo.sample.message.proto.Global.CatanCity.Builder, org.shell.mmo.sample.message.proto.Global.CatanCityOrBuilder> 
+          getCityFieldBuilder() {
+        if (cityBuilder_ == null) {
+          cityBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.CatanCity, org.shell.mmo.sample.message.proto.Global.CatanCity.Builder, org.shell.mmo.sample.message.proto.Global.CatanCityOrBuilder>(
+                  city_,
+                  ((bitField0_ & 0x00000002) == 0x00000002),
+                  getParentForChildren(),
+                  isClean());
+          city_ = null;
+        }
+        return cityBuilder_;
+      }
+
+      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCountry> country_ =
+        java.util.Collections.emptyList();
+      private void ensureCountryIsMutable() {
+        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+          country_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanCountry>(country_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanCountry, org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder, org.shell.mmo.sample.message.proto.Global.CatanCountryOrBuilder> countryBuilder_;
+
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCountry> getCountryList() {
+        if (countryBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(country_);
+        } else {
+          return countryBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public int getCountryCount() {
+        if (countryBuilder_ == null) {
+          return country_.size();
+        } else {
+          return countryBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCountry getCountry(int index) {
+        if (countryBuilder_ == null) {
+          return country_.get(index);
+        } else {
+          return countryBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public Builder setCountry(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCountry value) {
+        if (countryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCountryIsMutable();
+          country_.set(index, value);
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public Builder setCountry(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder builderForValue) {
+        if (countryBuilder_ == null) {
+          ensureCountryIsMutable();
+          country_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public Builder addCountry(org.shell.mmo.sample.message.proto.Global.CatanCountry value) {
+        if (countryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCountryIsMutable();
+          country_.add(value);
+          onChanged();
+        } else {
+          countryBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public Builder addCountry(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCountry value) {
+        if (countryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCountryIsMutable();
+          country_.add(index, value);
+          onChanged();
+        } else {
+          countryBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public Builder addCountry(
+          org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder builderForValue) {
+        if (countryBuilder_ == null) {
+          ensureCountryIsMutable();
+          country_.add(builderForValue.build());
+          onChanged();
+        } else {
+          countryBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public Builder addCountry(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder builderForValue) {
+        if (countryBuilder_ == null) {
+          ensureCountryIsMutable();
+          country_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          countryBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public Builder addAllCountry(
+          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanCountry> values) {
+        if (countryBuilder_ == null) {
+          ensureCountryIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, country_);
+          onChanged();
+        } else {
+          countryBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public Builder clearCountry() {
+        if (countryBuilder_ == null) {
+          country_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          countryBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public Builder removeCountry(int index) {
+        if (countryBuilder_ == null) {
+          ensureCountryIsMutable();
+          country_.remove(index);
+          onChanged();
+        } else {
+          countryBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder getCountryBuilder(
+          int index) {
+        return getCountryFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCountryOrBuilder getCountryOrBuilder(
+          int index) {
+        if (countryBuilder_ == null) {
+          return country_.get(index);  } else {
+          return countryBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanCountryOrBuilder> 
+           getCountryOrBuilderList() {
+        if (countryBuilder_ != null) {
+          return countryBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(country_);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder addCountryBuilder() {
+        return getCountryFieldBuilder().addBuilder(
+            org.shell.mmo.sample.message.proto.Global.CatanCountry.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder addCountryBuilder(
+          int index) {
+        return getCountryFieldBuilder().addBuilder(
+            index, org.shell.mmo.sample.message.proto.Global.CatanCountry.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCountry country = 3;</code>
+       *
+       * <pre>
+       * 村庄信息
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder> 
+           getCountryBuilderList() {
+        return getCountryFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanCountry, org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder, org.shell.mmo.sample.message.proto.Global.CatanCountryOrBuilder> 
+          getCountryFieldBuilder() {
+        if (countryBuilder_ == null) {
+          countryBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.CatanCountry, org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder, org.shell.mmo.sample.message.proto.Global.CatanCountryOrBuilder>(
+                  country_,
+                  ((bitField0_ & 0x00000004) == 0x00000004),
+                  getParentForChildren(),
+                  isClean());
+          country_ = null;
+        }
+        return countryBuilder_;
+      }
+
+      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanRoad> road_ =
+        java.util.Collections.emptyList();
+      private void ensureRoadIsMutable() {
+        if (!((bitField0_ & 0x00000008) == 0x00000008)) {
+          road_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanRoad>(road_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanRoad, org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder, org.shell.mmo.sample.message.proto.Global.CatanRoadOrBuilder> roadBuilder_;
+
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanRoad> getRoadList() {
+        if (roadBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(road_);
+        } else {
+          return roadBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public int getRoadCount() {
+        if (roadBuilder_ == null) {
+          return road_.size();
+        } else {
+          return roadBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanRoad getRoad(int index) {
+        if (roadBuilder_ == null) {
+          return road_.get(index);
+        } else {
+          return roadBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public Builder setRoad(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanRoad value) {
+        if (roadBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRoadIsMutable();
+          road_.set(index, value);
+          onChanged();
+        } else {
+          roadBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public Builder setRoad(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder builderForValue) {
+        if (roadBuilder_ == null) {
+          ensureRoadIsMutable();
+          road_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          roadBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public Builder addRoad(org.shell.mmo.sample.message.proto.Global.CatanRoad value) {
+        if (roadBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRoadIsMutable();
+          road_.add(value);
+          onChanged();
+        } else {
+          roadBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public Builder addRoad(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanRoad value) {
+        if (roadBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRoadIsMutable();
+          road_.add(index, value);
+          onChanged();
+        } else {
+          roadBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public Builder addRoad(
+          org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder builderForValue) {
+        if (roadBuilder_ == null) {
+          ensureRoadIsMutable();
+          road_.add(builderForValue.build());
+          onChanged();
+        } else {
+          roadBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public Builder addRoad(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder builderForValue) {
+        if (roadBuilder_ == null) {
+          ensureRoadIsMutable();
+          road_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          roadBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public Builder addAllRoad(
+          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanRoad> values) {
+        if (roadBuilder_ == null) {
+          ensureRoadIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, road_);
+          onChanged();
+        } else {
+          roadBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public Builder clearRoad() {
+        if (roadBuilder_ == null) {
+          road_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+          onChanged();
+        } else {
+          roadBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public Builder removeRoad(int index) {
+        if (roadBuilder_ == null) {
+          ensureRoadIsMutable();
+          road_.remove(index);
+          onChanged();
+        } else {
+          roadBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder getRoadBuilder(
+          int index) {
+        return getRoadFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanRoadOrBuilder getRoadOrBuilder(
+          int index) {
+        if (roadBuilder_ == null) {
+          return road_.get(index);  } else {
+          return roadBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanRoadOrBuilder> 
+           getRoadOrBuilderList() {
+        if (roadBuilder_ != null) {
+          return roadBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(road_);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder addRoadBuilder() {
+        return getRoadFieldBuilder().addBuilder(
+            org.shell.mmo.sample.message.proto.Global.CatanRoad.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder addRoadBuilder(
+          int index) {
+        return getRoadFieldBuilder().addBuilder(
+            index, org.shell.mmo.sample.message.proto.Global.CatanRoad.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanRoad road = 4;</code>
+       *
+       * <pre>
+       * 道路信息
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder> 
+           getRoadBuilderList() {
+        return getRoadFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanRoad, org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder, org.shell.mmo.sample.message.proto.Global.CatanRoadOrBuilder> 
+          getRoadFieldBuilder() {
+        if (roadBuilder_ == null) {
+          roadBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.CatanRoad, org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder, org.shell.mmo.sample.message.proto.Global.CatanRoadOrBuilder>(
+                  road_,
+                  ((bitField0_ & 0x00000008) == 0x00000008),
+                  getParentForChildren(),
+                  isClean());
+          road_ = null;
+        }
+        return roadBuilder_;
+      }
+
+      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanPort> port_ =
+        java.util.Collections.emptyList();
+      private void ensurePortIsMutable() {
+        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
+          port_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanPort>(port_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanPort, org.shell.mmo.sample.message.proto.Global.CatanPort.Builder, org.shell.mmo.sample.message.proto.Global.CatanPortOrBuilder> portBuilder_;
+
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanPort> getPortList() {
+        if (portBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(port_);
+        } else {
+          return portBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public int getPortCount() {
+        if (portBuilder_ == null) {
+          return port_.size();
+        } else {
+          return portBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanPort getPort(int index) {
+        if (portBuilder_ == null) {
+          return port_.get(index);
+        } else {
+          return portBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public Builder setPort(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanPort value) {
+        if (portBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePortIsMutable();
+          port_.set(index, value);
+          onChanged();
+        } else {
+          portBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public Builder setPort(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanPort.Builder builderForValue) {
+        if (portBuilder_ == null) {
+          ensurePortIsMutable();
+          port_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          portBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public Builder addPort(org.shell.mmo.sample.message.proto.Global.CatanPort value) {
+        if (portBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePortIsMutable();
+          port_.add(value);
+          onChanged();
+        } else {
+          portBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public Builder addPort(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanPort value) {
+        if (portBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePortIsMutable();
+          port_.add(index, value);
+          onChanged();
+        } else {
+          portBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public Builder addPort(
+          org.shell.mmo.sample.message.proto.Global.CatanPort.Builder builderForValue) {
+        if (portBuilder_ == null) {
+          ensurePortIsMutable();
+          port_.add(builderForValue.build());
+          onChanged();
+        } else {
+          portBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public Builder addPort(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanPort.Builder builderForValue) {
+        if (portBuilder_ == null) {
+          ensurePortIsMutable();
+          port_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          portBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public Builder addAllPort(
+          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanPort> values) {
+        if (portBuilder_ == null) {
+          ensurePortIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, port_);
+          onChanged();
+        } else {
+          portBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public Builder clearPort() {
+        if (portBuilder_ == null) {
+          port_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+          onChanged();
+        } else {
+          portBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public Builder removePort(int index) {
+        if (portBuilder_ == null) {
+          ensurePortIsMutable();
+          port_.remove(index);
+          onChanged();
+        } else {
+          portBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanPort.Builder getPortBuilder(
+          int index) {
+        return getPortFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanPortOrBuilder getPortOrBuilder(
+          int index) {
+        if (portBuilder_ == null) {
+          return port_.get(index);  } else {
+          return portBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanPortOrBuilder> 
+           getPortOrBuilderList() {
+        if (portBuilder_ != null) {
+          return portBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(port_);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanPort.Builder addPortBuilder() {
+        return getPortFieldBuilder().addBuilder(
+            org.shell.mmo.sample.message.proto.Global.CatanPort.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanPort.Builder addPortBuilder(
+          int index) {
+        return getPortFieldBuilder().addBuilder(
+            index, org.shell.mmo.sample.message.proto.Global.CatanPort.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanPort port = 5;</code>
+       *
+       * <pre>
+       * 港口信息
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanPort.Builder> 
+           getPortBuilderList() {
+        return getPortFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanPort, org.shell.mmo.sample.message.proto.Global.CatanPort.Builder, org.shell.mmo.sample.message.proto.Global.CatanPortOrBuilder> 
+          getPortFieldBuilder() {
+        if (portBuilder_ == null) {
+          portBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.CatanPort, org.shell.mmo.sample.message.proto.Global.CatanPort.Builder, org.shell.mmo.sample.message.proto.Global.CatanPortOrBuilder>(
+                  port_,
+                  ((bitField0_ & 0x00000010) == 0x00000010),
+                  getParentForChildren(),
+                  isClean());
+          port_ = null;
+        }
+        return portBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.CatanMap)
+    }
+
+    static {
+      defaultInstance = new CatanMap(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.CatanMap)
+  }
+
+  public interface CatanPortOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.CatanPort)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+     *
+     * <pre>
+     * 坐标1
+     * </pre>
+     */
+    boolean hasPosition1();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+     *
+     * <pre>
+     * 坐标1
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getPosition1();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+     *
+     * <pre>
+     * 坐标1
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPosition1OrBuilder();
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+     *
+     * <pre>
+     * 坐标2
+     * </pre>
+     */
+    boolean hasPosition2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+     *
+     * <pre>
+     * 坐标2
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getPosition2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+     *
+     * <pre>
+     * 坐标2
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPosition2OrBuilder();
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanPortType type = 3;</code>
+     *
+     * <pre>
+     * 港口类型
+     * </pre>
+     */
+    boolean hasType();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanPortType type = 3;</code>
+     *
+     * <pre>
+     * 港口类型
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanPortType getType();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanPort}
+   *
+   * <pre>
+   * 卡坦岛港口信息
+   * </pre>
+   */
+  public static final class CatanPort extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.CatanPort)
+      CatanPortOrBuilder {
+    // Use CatanPort.newBuilder() to construct.
+    private CatanPort(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CatanPort(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CatanPort defaultInstance;
+    public static CatanPort getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CatanPort getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CatanPort(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = position1_.toBuilder();
+              }
+              position1_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(position1_);
+                position1_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+            case 18: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = position2_.toBuilder();
+              }
+              position2_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(position2_);
+                position2_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000002;
+              break;
+            }
+            case 24: {
+              int rawValue = input.readEnum();
+              org.shell.mmo.sample.message.proto.Global.CatanPortType value = org.shell.mmo.sample.message.proto.Global.CatanPortType.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(3, rawValue);
+              } else {
+                bitField0_ |= 0x00000004;
+                type_ = value;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanPort_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanPort_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.CatanPort.class, org.shell.mmo.sample.message.proto.Global.CatanPort.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CatanPort> PARSER =
+        new com.google.protobuf.AbstractParser<CatanPort>() {
+      public CatanPort parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CatanPort(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CatanPort> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int POSITION1_FIELD_NUMBER = 1;
+    private org.shell.mmo.sample.message.proto.Global.Position position1_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+     *
+     * <pre>
+     * 坐标1
+     * </pre>
+     */
+    public boolean hasPosition1() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+     *
+     * <pre>
+     * 坐标1
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getPosition1() {
+      return position1_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+     *
+     * <pre>
+     * 坐标1
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPosition1OrBuilder() {
+      return position1_;
+    }
+
+    public static final int POSITION2_FIELD_NUMBER = 2;
+    private org.shell.mmo.sample.message.proto.Global.Position position2_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+     *
+     * <pre>
+     * 坐标2
+     * </pre>
+     */
+    public boolean hasPosition2() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+     *
+     * <pre>
+     * 坐标2
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getPosition2() {
+      return position2_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+     *
+     * <pre>
+     * 坐标2
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPosition2OrBuilder() {
+      return position2_;
+    }
+
+    public static final int TYPE_FIELD_NUMBER = 3;
+    private org.shell.mmo.sample.message.proto.Global.CatanPortType type_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanPortType type = 3;</code>
+     *
+     * <pre>
+     * 港口类型
+     * </pre>
+     */
+    public boolean hasType() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanPortType type = 3;</code>
+     *
+     * <pre>
+     * 港口类型
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanPortType getType() {
+      return type_;
+    }
+
+    private void initFields() {
+      position1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      position2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      type_ = org.shell.mmo.sample.message.proto.Global.CatanPortType.PORT_BRICK;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, position1_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, position2_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeEnum(3, type_.getNumber());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, position1_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, position2_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, type_.getNumber());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.CatanPort parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanPort parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanPort parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanPort parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanPort parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanPort parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanPort parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanPort parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanPort parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanPort parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.CatanPort prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanPort}
+     *
+     * <pre>
+     * 卡坦岛港口信息
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.CatanPort)
+        org.shell.mmo.sample.message.proto.Global.CatanPortOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanPort_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanPort_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.CatanPort.class, org.shell.mmo.sample.message.proto.Global.CatanPort.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.CatanPort.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getPosition1FieldBuilder();
+          getPosition2FieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (position1Builder_ == null) {
+          position1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          position1Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (position2Builder_ == null) {
+          position2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          position2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        type_ = org.shell.mmo.sample.message.proto.Global.CatanPortType.PORT_BRICK;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanPort_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanPort getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.CatanPort.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanPort build() {
+        org.shell.mmo.sample.message.proto.Global.CatanPort result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanPort buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.CatanPort result = new org.shell.mmo.sample.message.proto.Global.CatanPort(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (position1Builder_ == null) {
+          result.position1_ = position1_;
+        } else {
+          result.position1_ = position1Builder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (position2Builder_ == null) {
+          result.position2_ = position2_;
+        } else {
+          result.position2_ = position2Builder_.build();
+        }
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.type_ = type_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.CatanPort) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.CatanPort)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.CatanPort other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.CatanPort.getDefaultInstance()) return this;
+        if (other.hasPosition1()) {
+          mergePosition1(other.getPosition1());
+        }
+        if (other.hasPosition2()) {
+          mergePosition2(other.getPosition2());
+        }
+        if (other.hasType()) {
+          setType(other.getType());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.CatanPort parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.CatanPort) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private org.shell.mmo.sample.message.proto.Global.Position position1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> position1Builder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+       *
+       * <pre>
+       * 坐标1
+       * </pre>
+       */
+      public boolean hasPosition1() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+       *
+       * <pre>
+       * 坐标1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getPosition1() {
+        if (position1Builder_ == null) {
+          return position1_;
+        } else {
+          return position1Builder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+       *
+       * <pre>
+       * 坐标1
+       * </pre>
+       */
+      public Builder setPosition1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (position1Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          position1_ = value;
+          onChanged();
+        } else {
+          position1Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+       *
+       * <pre>
+       * 坐标1
+       * </pre>
+       */
+      public Builder setPosition1(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (position1Builder_ == null) {
+          position1_ = builderForValue.build();
+          onChanged();
+        } else {
+          position1Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+       *
+       * <pre>
+       * 坐标1
+       * </pre>
+       */
+      public Builder mergePosition1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (position1Builder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              position1_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            position1_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(position1_).mergeFrom(value).buildPartial();
+          } else {
+            position1_ = value;
+          }
+          onChanged();
+        } else {
+          position1Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+       *
+       * <pre>
+       * 坐标1
+       * </pre>
+       */
+      public Builder clearPosition1() {
+        if (position1Builder_ == null) {
+          position1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          position1Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+       *
+       * <pre>
+       * 坐标1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getPosition1Builder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getPosition1FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+       *
+       * <pre>
+       * 坐标1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPosition1OrBuilder() {
+        if (position1Builder_ != null) {
+          return position1Builder_.getMessageOrBuilder();
+        } else {
+          return position1_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position1 = 1;</code>
+       *
+       * <pre>
+       * 坐标1
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getPosition1FieldBuilder() {
+        if (position1Builder_ == null) {
+          position1Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getPosition1(),
+                  getParentForChildren(),
+                  isClean());
+          position1_ = null;
+        }
+        return position1Builder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position position2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> position2Builder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+       *
+       * <pre>
+       * 坐标2
+       * </pre>
+       */
+      public boolean hasPosition2() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+       *
+       * <pre>
+       * 坐标2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getPosition2() {
+        if (position2Builder_ == null) {
+          return position2_;
+        } else {
+          return position2Builder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+       *
+       * <pre>
+       * 坐标2
+       * </pre>
+       */
+      public Builder setPosition2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (position2Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          position2_ = value;
+          onChanged();
+        } else {
+          position2Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+       *
+       * <pre>
+       * 坐标2
+       * </pre>
+       */
+      public Builder setPosition2(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (position2Builder_ == null) {
+          position2_ = builderForValue.build();
+          onChanged();
+        } else {
+          position2Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+       *
+       * <pre>
+       * 坐标2
+       * </pre>
+       */
+      public Builder mergePosition2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (position2Builder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              position2_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            position2_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(position2_).mergeFrom(value).buildPartial();
+          } else {
+            position2_ = value;
+          }
+          onChanged();
+        } else {
+          position2Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+       *
+       * <pre>
+       * 坐标2
+       * </pre>
+       */
+      public Builder clearPosition2() {
+        if (position2Builder_ == null) {
+          position2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          position2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+       *
+       * <pre>
+       * 坐标2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getPosition2Builder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getPosition2FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+       *
+       * <pre>
+       * 坐标2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPosition2OrBuilder() {
+        if (position2Builder_ != null) {
+          return position2Builder_.getMessageOrBuilder();
+        } else {
+          return position2_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position2 = 2;</code>
+       *
+       * <pre>
+       * 坐标2
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getPosition2FieldBuilder() {
+        if (position2Builder_ == null) {
+          position2Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getPosition2(),
+                  getParentForChildren(),
+                  isClean());
+          position2_ = null;
+        }
+        return position2Builder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.CatanPortType type_ = org.shell.mmo.sample.message.proto.Global.CatanPortType.PORT_BRICK;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanPortType type = 3;</code>
+       *
+       * <pre>
+       * 港口类型
+       * </pre>
+       */
+      public boolean hasType() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanPortType type = 3;</code>
+       *
+       * <pre>
+       * 港口类型
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanPortType getType() {
+        return type_;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanPortType type = 3;</code>
+       *
+       * <pre>
+       * 港口类型
+       * </pre>
+       */
+      public Builder setType(org.shell.mmo.sample.message.proto.Global.CatanPortType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000004;
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanPortType type = 3;</code>
+       *
+       * <pre>
+       * 港口类型
+       * </pre>
+       */
+      public Builder clearType() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        type_ = org.shell.mmo.sample.message.proto.Global.CatanPortType.PORT_BRICK;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.CatanPort)
+    }
+
+    static {
+      defaultInstance = new CatanPort(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.CatanPort)
+  }
+
+  public interface CatanGridOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.CatanGrid)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+     *
+     * <pre>
+     * 坐标
+     * </pre>
+     */
+    boolean hasPosition();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+     *
+     * <pre>
+     * 坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getPosition();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+     *
+     * <pre>
+     * 坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPositionOrBuilder();
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 2;</code>
+     *
+     * <pre>
+     * 资源产出类型
+     * </pre>
+     */
+    boolean hasType();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 2;</code>
+     *
+     * <pre>
+     * 资源产出类型
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanResourceType getType();
+
+    /**
+     * <code>optional int32 number = 3;</code>
+     *
+     * <pre>
+     * 数字
+     * </pre>
+     */
+    boolean hasNumber();
+    /**
+     * <code>optional int32 number = 3;</code>
+     *
+     * <pre>
+     * 数字
+     * </pre>
+     */
+    int getNumber();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanGrid}
+   *
+   * <pre>
+   * 卡坦岛格子信息
+   * </pre>
+   */
+  public static final class CatanGrid extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.CatanGrid)
+      CatanGridOrBuilder {
+    // Use CatanGrid.newBuilder() to construct.
+    private CatanGrid(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CatanGrid(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CatanGrid defaultInstance;
+    public static CatanGrid getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CatanGrid getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CatanGrid(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = position_.toBuilder();
+              }
+              position_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(position_);
+                position_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+            case 16: {
+              int rawValue = input.readEnum();
+              org.shell.mmo.sample.message.proto.Global.CatanResourceType value = org.shell.mmo.sample.message.proto.Global.CatanResourceType.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(2, rawValue);
+              } else {
+                bitField0_ |= 0x00000002;
+                type_ = value;
+              }
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              number_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanGrid_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanGrid_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.CatanGrid.class, org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CatanGrid> PARSER =
+        new com.google.protobuf.AbstractParser<CatanGrid>() {
+      public CatanGrid parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CatanGrid(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CatanGrid> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int POSITION_FIELD_NUMBER = 1;
+    private org.shell.mmo.sample.message.proto.Global.Position position_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+     *
+     * <pre>
+     * 坐标
+     * </pre>
+     */
+    public boolean hasPosition() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+     *
+     * <pre>
+     * 坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getPosition() {
+      return position_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+     *
+     * <pre>
+     * 坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPositionOrBuilder() {
+      return position_;
+    }
+
+    public static final int TYPE_FIELD_NUMBER = 2;
+    private org.shell.mmo.sample.message.proto.Global.CatanResourceType type_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 2;</code>
+     *
+     * <pre>
+     * 资源产出类型
+     * </pre>
+     */
+    public boolean hasType() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 2;</code>
+     *
+     * <pre>
+     * 资源产出类型
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanResourceType getType() {
+      return type_;
+    }
+
+    public static final int NUMBER_FIELD_NUMBER = 3;
+    private int number_;
+    /**
+     * <code>optional int32 number = 3;</code>
+     *
+     * <pre>
+     * 数字
+     * </pre>
+     */
+    public boolean hasNumber() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional int32 number = 3;</code>
+     *
+     * <pre>
+     * 数字
+     * </pre>
+     */
+    public int getNumber() {
+      return number_;
+    }
+
+    private void initFields() {
+      position_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      type_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
+      number_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, position_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeEnum(2, type_.getNumber());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, number_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, position_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(2, type_.getNumber());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, number_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.CatanGrid parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanGrid parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanGrid parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanGrid parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanGrid parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanGrid parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanGrid parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanGrid parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanGrid parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanGrid parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.CatanGrid prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanGrid}
+     *
+     * <pre>
+     * 卡坦岛格子信息
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.CatanGrid)
+        org.shell.mmo.sample.message.proto.Global.CatanGridOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanGrid_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanGrid_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.CatanGrid.class, org.shell.mmo.sample.message.proto.Global.CatanGrid.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.CatanGrid.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getPositionFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (positionBuilder_ == null) {
+          position_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          positionBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        type_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        number_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanGrid_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanGrid getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.CatanGrid.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanGrid build() {
+        org.shell.mmo.sample.message.proto.Global.CatanGrid result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanGrid buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.CatanGrid result = new org.shell.mmo.sample.message.proto.Global.CatanGrid(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (positionBuilder_ == null) {
+          result.position_ = position_;
+        } else {
+          result.position_ = positionBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.type_ = type_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.number_ = number_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.CatanGrid) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.CatanGrid)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.CatanGrid other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.CatanGrid.getDefaultInstance()) return this;
+        if (other.hasPosition()) {
+          mergePosition(other.getPosition());
+        }
+        if (other.hasType()) {
+          setType(other.getType());
+        }
+        if (other.hasNumber()) {
+          setNumber(other.getNumber());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.CatanGrid parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.CatanGrid) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private org.shell.mmo.sample.message.proto.Global.Position position_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> positionBuilder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+       *
+       * <pre>
+       * 坐标
+       * </pre>
+       */
+      public boolean hasPosition() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+       *
+       * <pre>
+       * 坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getPosition() {
+        if (positionBuilder_ == null) {
+          return position_;
+        } else {
+          return positionBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+       *
+       * <pre>
+       * 坐标
+       * </pre>
+       */
+      public Builder setPosition(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (positionBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          position_ = value;
+          onChanged();
+        } else {
+          positionBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+       *
+       * <pre>
+       * 坐标
+       * </pre>
+       */
+      public Builder setPosition(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (positionBuilder_ == null) {
+          position_ = builderForValue.build();
+          onChanged();
+        } else {
+          positionBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+       *
+       * <pre>
+       * 坐标
+       * </pre>
+       */
+      public Builder mergePosition(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (positionBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              position_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            position_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(position_).mergeFrom(value).buildPartial();
+          } else {
+            position_ = value;
+          }
+          onChanged();
+        } else {
+          positionBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+       *
+       * <pre>
+       * 坐标
+       * </pre>
+       */
+      public Builder clearPosition() {
+        if (positionBuilder_ == null) {
+          position_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          positionBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+       *
+       * <pre>
+       * 坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getPositionBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getPositionFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+       *
+       * <pre>
+       * 坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPositionOrBuilder() {
+        if (positionBuilder_ != null) {
+          return positionBuilder_.getMessageOrBuilder();
+        } else {
+          return position_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position position = 1;</code>
+       *
+       * <pre>
+       * 坐标
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getPositionFieldBuilder() {
+        if (positionBuilder_ == null) {
+          positionBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getPosition(),
+                  getParentForChildren(),
+                  isClean());
+          position_ = null;
+        }
+        return positionBuilder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.CatanResourceType type_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 2;</code>
+       *
+       * <pre>
+       * 资源产出类型
+       * </pre>
+       */
+      public boolean hasType() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 2;</code>
+       *
+       * <pre>
+       * 资源产出类型
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResourceType getType() {
+        return type_;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 2;</code>
+       *
+       * <pre>
+       * 资源产出类型
+       * </pre>
+       */
+      public Builder setType(org.shell.mmo.sample.message.proto.Global.CatanResourceType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000002;
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType type = 2;</code>
+       *
+       * <pre>
+       * 资源产出类型
+       * </pre>
+       */
+      public Builder clearType() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        type_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
+        onChanged();
+        return this;
+      }
+
+      private int number_ ;
+      /**
+       * <code>optional int32 number = 3;</code>
+       *
+       * <pre>
+       * 数字
+       * </pre>
+       */
+      public boolean hasNumber() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional int32 number = 3;</code>
+       *
+       * <pre>
+       * 数字
+       * </pre>
+       */
+      public int getNumber() {
+        return number_;
+      }
+      /**
+       * <code>optional int32 number = 3;</code>
+       *
+       * <pre>
+       * 数字
+       * </pre>
+       */
+      public Builder setNumber(int value) {
+        bitField0_ |= 0x00000004;
+        number_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 number = 3;</code>
+       *
+       * <pre>
+       * 数字
+       * </pre>
+       */
+      public Builder clearNumber() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        number_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.CatanGrid)
+    }
+
+    static {
+      defaultInstance = new CatanGrid(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.CatanGrid)
+  }
+
+  public interface CatanCityOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.CatanCity)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    boolean hasPoint();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getPoint();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPointOrBuilder();
+
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    boolean hasId();
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    long getId();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanCity}
+   *
+   * <pre>
+   * 卡坦岛城市信息
+   * </pre>
+   */
+  public static final class CatanCity extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.CatanCity)
+      CatanCityOrBuilder {
+    // Use CatanCity.newBuilder() to construct.
+    private CatanCity(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CatanCity(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CatanCity defaultInstance;
+    public static CatanCity getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CatanCity getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CatanCity(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = point_.toBuilder();
+              }
+              point_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(point_);
+                point_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+            case 17: {
+              bitField0_ |= 0x00000002;
+              id_ = input.readFixed64();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCity_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCity_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.CatanCity.class, org.shell.mmo.sample.message.proto.Global.CatanCity.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CatanCity> PARSER =
+        new com.google.protobuf.AbstractParser<CatanCity>() {
+      public CatanCity parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CatanCity(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CatanCity> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int POINT_FIELD_NUMBER = 1;
+    private org.shell.mmo.sample.message.proto.Global.Position point_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public boolean hasPoint() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getPoint() {
+      return point_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPointOrBuilder() {
+      return point_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 2;
+    private long id_;
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public long getId() {
+      return id_;
+    }
+
+    private void initFields() {
+      point_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      id_ = 0L;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, point_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeFixed64(2, id_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, point_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed64Size(2, id_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.CatanCity parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCity parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCity parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCity parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCity parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCity parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCity parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCity parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCity parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCity parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.CatanCity prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanCity}
+     *
+     * <pre>
+     * 卡坦岛城市信息
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.CatanCity)
+        org.shell.mmo.sample.message.proto.Global.CatanCityOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCity_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCity_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.CatanCity.class, org.shell.mmo.sample.message.proto.Global.CatanCity.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.CatanCity.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getPointFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (pointBuilder_ == null) {
+          point_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          pointBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        id_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCity_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanCity getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.CatanCity.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanCity build() {
+        org.shell.mmo.sample.message.proto.Global.CatanCity result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanCity buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.CatanCity result = new org.shell.mmo.sample.message.proto.Global.CatanCity(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (pointBuilder_ == null) {
+          result.point_ = point_;
+        } else {
+          result.point_ = pointBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.id_ = id_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.CatanCity) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.CatanCity)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.CatanCity other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.CatanCity.getDefaultInstance()) return this;
+        if (other.hasPoint()) {
+          mergePoint(other.getPoint());
+        }
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.CatanCity parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.CatanCity) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private org.shell.mmo.sample.message.proto.Global.Position point_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> pointBuilder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public boolean hasPoint() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getPoint() {
+        if (pointBuilder_ == null) {
+          return point_;
+        } else {
+          return pointBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder setPoint(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (pointBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          point_ = value;
+          onChanged();
+        } else {
+          pointBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder setPoint(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (pointBuilder_ == null) {
+          point_ = builderForValue.build();
+          onChanged();
+        } else {
+          pointBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder mergePoint(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (pointBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              point_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            point_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(point_).mergeFrom(value).buildPartial();
+          } else {
+            point_ = value;
+          }
+          onChanged();
+        } else {
+          pointBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder clearPoint() {
+        if (pointBuilder_ == null) {
+          point_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          pointBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getPointBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getPointFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPointOrBuilder() {
+        if (pointBuilder_ != null) {
+          return pointBuilder_.getMessageOrBuilder();
+        } else {
+          return point_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getPointFieldBuilder() {
+        if (pointBuilder_ == null) {
+          pointBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getPoint(),
+                  getParentForChildren(),
+                  isClean());
+          point_ = null;
+        }
+        return pointBuilder_;
+      }
+
+      private long id_ ;
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public long getId() {
+        return id_;
+      }
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder setId(long value) {
+        bitField0_ |= 0x00000002;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        id_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.CatanCity)
+    }
+
+    static {
+      defaultInstance = new CatanCity(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.CatanCity)
+  }
+
+  public interface CatanCountryOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.CatanCountry)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    boolean hasPoint();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getPoint();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPointOrBuilder();
+
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    boolean hasId();
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    long getId();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanCountry}
+   *
+   * <pre>
+   * 卡坦岛村庄信息
+   * </pre>
+   */
+  public static final class CatanCountry extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.CatanCountry)
+      CatanCountryOrBuilder {
+    // Use CatanCountry.newBuilder() to construct.
+    private CatanCountry(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CatanCountry(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CatanCountry defaultInstance;
+    public static CatanCountry getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CatanCountry getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CatanCountry(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = point_.toBuilder();
+              }
+              point_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(point_);
+                point_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+            case 17: {
+              bitField0_ |= 0x00000002;
+              id_ = input.readFixed64();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCountry_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCountry_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.CatanCountry.class, org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CatanCountry> PARSER =
+        new com.google.protobuf.AbstractParser<CatanCountry>() {
+      public CatanCountry parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CatanCountry(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CatanCountry> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int POINT_FIELD_NUMBER = 1;
+    private org.shell.mmo.sample.message.proto.Global.Position point_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public boolean hasPoint() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getPoint() {
+      return point_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPointOrBuilder() {
+      return point_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 2;
+    private long id_;
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public long getId() {
+      return id_;
+    }
+
+    private void initFields() {
+      point_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      id_ = 0L;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, point_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeFixed64(2, id_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, point_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed64Size(2, id_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.CatanCountry parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCountry parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCountry parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCountry parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCountry parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCountry parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCountry parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCountry parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCountry parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCountry parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.CatanCountry prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanCountry}
+     *
+     * <pre>
+     * 卡坦岛村庄信息
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.CatanCountry)
+        org.shell.mmo.sample.message.proto.Global.CatanCountryOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCountry_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCountry_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.CatanCountry.class, org.shell.mmo.sample.message.proto.Global.CatanCountry.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.CatanCountry.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getPointFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (pointBuilder_ == null) {
+          point_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          pointBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        id_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCountry_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanCountry getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.CatanCountry.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanCountry build() {
+        org.shell.mmo.sample.message.proto.Global.CatanCountry result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanCountry buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.CatanCountry result = new org.shell.mmo.sample.message.proto.Global.CatanCountry(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (pointBuilder_ == null) {
+          result.point_ = point_;
+        } else {
+          result.point_ = pointBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.id_ = id_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.CatanCountry) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.CatanCountry)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.CatanCountry other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.CatanCountry.getDefaultInstance()) return this;
+        if (other.hasPoint()) {
+          mergePoint(other.getPoint());
+        }
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.CatanCountry parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.CatanCountry) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private org.shell.mmo.sample.message.proto.Global.Position point_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> pointBuilder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public boolean hasPoint() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getPoint() {
+        if (pointBuilder_ == null) {
+          return point_;
+        } else {
+          return pointBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder setPoint(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (pointBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          point_ = value;
+          onChanged();
+        } else {
+          pointBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder setPoint(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (pointBuilder_ == null) {
+          point_ = builderForValue.build();
+          onChanged();
+        } else {
+          pointBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder mergePoint(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (pointBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              point_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            point_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(point_).mergeFrom(value).buildPartial();
+          } else {
+            point_ = value;
+          }
+          onChanged();
+        } else {
+          pointBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder clearPoint() {
+        if (pointBuilder_ == null) {
+          point_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          pointBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getPointBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getPointFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPointOrBuilder() {
+        if (pointBuilder_ != null) {
+          return pointBuilder_.getMessageOrBuilder();
+        } else {
+          return point_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getPointFieldBuilder() {
+        if (pointBuilder_ == null) {
+          pointBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getPoint(),
+                  getParentForChildren(),
+                  isClean());
+          point_ = null;
+        }
+        return pointBuilder_;
+      }
+
+      private long id_ ;
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public long getId() {
+        return id_;
+      }
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder setId(long value) {
+        bitField0_ |= 0x00000002;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        id_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.CatanCountry)
+    }
+
+    static {
+      defaultInstance = new CatanCountry(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.CatanCountry)
+  }
+
+  public interface CatanRoadOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.CatanRoad)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    boolean hasPoint1();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getPoint1();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPoint1OrBuilder();
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    boolean hasPoint2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getPoint2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPoint2OrBuilder();
+
+    /**
+     * <code>optional fixed64 id = 3;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    boolean hasId();
+    /**
+     * <code>optional fixed64 id = 3;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    long getId();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanRoad}
+   *
+   * <pre>
+   * 卡坦岛道路信息
+   * </pre>
+   */
+  public static final class CatanRoad extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.CatanRoad)
+      CatanRoadOrBuilder {
+    // Use CatanRoad.newBuilder() to construct.
+    private CatanRoad(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CatanRoad(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CatanRoad defaultInstance;
+    public static CatanRoad getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CatanRoad getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CatanRoad(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = point1_.toBuilder();
+              }
+              point1_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(point1_);
+                point1_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+            case 18: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = point2_.toBuilder();
+              }
+              point2_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(point2_);
+                point2_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000002;
+              break;
+            }
+            case 25: {
+              bitField0_ |= 0x00000004;
+              id_ = input.readFixed64();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanRoad_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanRoad_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.CatanRoad.class, org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CatanRoad> PARSER =
+        new com.google.protobuf.AbstractParser<CatanRoad>() {
+      public CatanRoad parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CatanRoad(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CatanRoad> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int POINT1_FIELD_NUMBER = 1;
+    private org.shell.mmo.sample.message.proto.Global.Position point1_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public boolean hasPoint1() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getPoint1() {
+      return point1_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPoint1OrBuilder() {
+      return point1_;
+    }
+
+    public static final int POINT2_FIELD_NUMBER = 2;
+    private org.shell.mmo.sample.message.proto.Global.Position point2_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public boolean hasPoint2() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getPoint2() {
+      return point2_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+     *
+     * <pre>
+     * 顶点坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPoint2OrBuilder() {
+      return point2_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 3;
+    private long id_;
+    /**
+     * <code>optional fixed64 id = 3;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional fixed64 id = 3;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public long getId() {
+      return id_;
+    }
+
+    private void initFields() {
+      point1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      point2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      id_ = 0L;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, point1_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, point2_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeFixed64(3, id_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, point1_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, point2_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed64Size(3, id_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.CatanRoad parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanRoad parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanRoad parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanRoad parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanRoad parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanRoad parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanRoad parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanRoad parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanRoad parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanRoad parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.CatanRoad prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanRoad}
+     *
+     * <pre>
+     * 卡坦岛道路信息
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.CatanRoad)
+        org.shell.mmo.sample.message.proto.Global.CatanRoadOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanRoad_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanRoad_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.CatanRoad.class, org.shell.mmo.sample.message.proto.Global.CatanRoad.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.CatanRoad.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getPoint1FieldBuilder();
+          getPoint2FieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (point1Builder_ == null) {
+          point1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          point1Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (point2Builder_ == null) {
+          point2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          point2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        id_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanRoad_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanRoad getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.CatanRoad.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanRoad build() {
+        org.shell.mmo.sample.message.proto.Global.CatanRoad result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanRoad buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.CatanRoad result = new org.shell.mmo.sample.message.proto.Global.CatanRoad(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (point1Builder_ == null) {
+          result.point1_ = point1_;
+        } else {
+          result.point1_ = point1Builder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (point2Builder_ == null) {
+          result.point2_ = point2_;
+        } else {
+          result.point2_ = point2Builder_.build();
+        }
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.id_ = id_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.CatanRoad) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.CatanRoad)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.CatanRoad other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.CatanRoad.getDefaultInstance()) return this;
+        if (other.hasPoint1()) {
+          mergePoint1(other.getPoint1());
+        }
+        if (other.hasPoint2()) {
+          mergePoint2(other.getPoint2());
+        }
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.CatanRoad parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.CatanRoad) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private org.shell.mmo.sample.message.proto.Global.Position point1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> point1Builder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public boolean hasPoint1() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getPoint1() {
+        if (point1Builder_ == null) {
+          return point1_;
+        } else {
+          return point1Builder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder setPoint1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (point1Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          point1_ = value;
+          onChanged();
+        } else {
+          point1Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder setPoint1(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (point1Builder_ == null) {
+          point1_ = builderForValue.build();
+          onChanged();
+        } else {
+          point1Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder mergePoint1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (point1Builder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              point1_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            point1_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(point1_).mergeFrom(value).buildPartial();
+          } else {
+            point1_ = value;
+          }
+          onChanged();
+        } else {
+          point1Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder clearPoint1() {
+        if (point1Builder_ == null) {
+          point1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          point1Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getPoint1Builder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getPoint1FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPoint1OrBuilder() {
+        if (point1Builder_ != null) {
+          return point1Builder_.getMessageOrBuilder();
+        } else {
+          return point1_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point1 = 1;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getPoint1FieldBuilder() {
+        if (point1Builder_ == null) {
+          point1Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getPoint1(),
+                  getParentForChildren(),
+                  isClean());
+          point1_ = null;
+        }
+        return point1Builder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position point2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> point2Builder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public boolean hasPoint2() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getPoint2() {
+        if (point2Builder_ == null) {
+          return point2_;
+        } else {
+          return point2Builder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder setPoint2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (point2Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          point2_ = value;
+          onChanged();
+        } else {
+          point2Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder setPoint2(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (point2Builder_ == null) {
+          point2_ = builderForValue.build();
+          onChanged();
+        } else {
+          point2Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder mergePoint2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (point2Builder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              point2_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            point2_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(point2_).mergeFrom(value).buildPartial();
+          } else {
+            point2_ = value;
+          }
+          onChanged();
+        } else {
+          point2Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public Builder clearPoint2() {
+        if (point2Builder_ == null) {
+          point2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          point2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getPoint2Builder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getPoint2FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getPoint2OrBuilder() {
+        if (point2Builder_ != null) {
+          return point2Builder_.getMessageOrBuilder();
+        } else {
+          return point2_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position point2 = 2;</code>
+       *
+       * <pre>
+       * 顶点坐标
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getPoint2FieldBuilder() {
+        if (point2Builder_ == null) {
+          point2Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getPoint2(),
+                  getParentForChildren(),
+                  isClean());
+          point2_ = null;
+        }
+        return point2Builder_;
+      }
+
+      private long id_ ;
+      /**
+       * <code>optional fixed64 id = 3;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional fixed64 id = 3;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public long getId() {
+        return id_;
+      }
+      /**
+       * <code>optional fixed64 id = 3;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder setId(long value) {
+        bitField0_ |= 0x00000004;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional fixed64 id = 3;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        id_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.CatanRoad)
+    }
+
+    static {
+      defaultInstance = new CatanRoad(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.CatanRoad)
+  }
+
+  public interface CatanScoreOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.CatanScore)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional int32 score = 1;</code>
+     *
+     * <pre>
+     * 积分
+     * </pre>
+     */
+    boolean hasScore();
+    /**
+     * <code>optional int32 score = 1;</code>
+     *
+     * <pre>
+     * 积分
+     * </pre>
+     */
+    int getScore();
+
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    boolean hasId();
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    long getId();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanScore}
+   *
+   * <pre>
+   * 卡坦岛积分信息
+   * </pre>
+   */
+  public static final class CatanScore extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.CatanScore)
+      CatanScoreOrBuilder {
+    // Use CatanScore.newBuilder() to construct.
+    private CatanScore(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CatanScore(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CatanScore defaultInstance;
+    public static CatanScore getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CatanScore getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CatanScore(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              score_ = input.readInt32();
+              break;
+            }
+            case 17: {
+              bitField0_ |= 0x00000002;
+              id_ = input.readFixed64();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanScore_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanScore_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.CatanScore.class, org.shell.mmo.sample.message.proto.Global.CatanScore.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CatanScore> PARSER =
+        new com.google.protobuf.AbstractParser<CatanScore>() {
+      public CatanScore parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CatanScore(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CatanScore> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int SCORE_FIELD_NUMBER = 1;
+    private int score_;
+    /**
+     * <code>optional int32 score = 1;</code>
+     *
+     * <pre>
+     * 积分
+     * </pre>
+     */
+    public boolean hasScore() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional int32 score = 1;</code>
+     *
+     * <pre>
+     * 积分
+     * </pre>
+     */
+    public int getScore() {
+      return score_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 2;
+    private long id_;
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional fixed64 id = 2;</code>
+     *
+     * <pre>
+     * 玩家id
+     * </pre>
+     */
+    public long getId() {
+      return id_;
+    }
+
+    private void initFields() {
+      score_ = 0;
+      id_ = 0L;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, score_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeFixed64(2, id_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, score_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed64Size(2, id_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.CatanScore parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanScore parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanScore parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanScore parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanScore parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanScore parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanScore parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanScore parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanScore parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanScore parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.CatanScore prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanScore}
+     *
+     * <pre>
+     * 卡坦岛积分信息
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.CatanScore)
+        org.shell.mmo.sample.message.proto.Global.CatanScoreOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanScore_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanScore_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.CatanScore.class, org.shell.mmo.sample.message.proto.Global.CatanScore.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.CatanScore.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        score_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        id_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanScore_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanScore getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.CatanScore.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanScore build() {
+        org.shell.mmo.sample.message.proto.Global.CatanScore result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanScore buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.CatanScore result = new org.shell.mmo.sample.message.proto.Global.CatanScore(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.score_ = score_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.id_ = id_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.CatanScore) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.CatanScore)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.CatanScore other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.CatanScore.getDefaultInstance()) return this;
+        if (other.hasScore()) {
+          setScore(other.getScore());
+        }
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.CatanScore parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.CatanScore) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int score_ ;
+      /**
+       * <code>optional int32 score = 1;</code>
+       *
+       * <pre>
+       * 积分
+       * </pre>
+       */
+      public boolean hasScore() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional int32 score = 1;</code>
+       *
+       * <pre>
+       * 积分
+       * </pre>
+       */
+      public int getScore() {
+        return score_;
+      }
+      /**
+       * <code>optional int32 score = 1;</code>
+       *
+       * <pre>
+       * 积分
+       * </pre>
+       */
+      public Builder setScore(int value) {
+        bitField0_ |= 0x00000001;
+        score_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 score = 1;</code>
+       *
+       * <pre>
+       * 积分
+       * </pre>
+       */
+      public Builder clearScore() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        score_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long id_ ;
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public long getId() {
+        return id_;
+      }
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder setId(long value) {
+        bitField0_ |= 0x00000002;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional fixed64 id = 2;</code>
+       *
+       * <pre>
+       * 玩家id
+       * </pre>
+       */
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        id_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.CatanScore)
+    }
+
+    static {
+      defaultInstance = new CatanScore(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.CatanScore)
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
@@ -2216,6 +14014,66 @@ public final class Global {
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_org_shell_mmo_sample_message_proto_LeaderRole_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_GameRoom_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_GameRoom_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_GameTable_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_GameTable_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_TableRole_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_TableRole_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_CatanResource_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_CatanResource_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_CatanMap_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_CatanMap_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_CatanPort_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_CatanPort_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_CatanGrid_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_CatanGrid_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_CatanCity_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_CatanCity_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_CatanCountry_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_CatanCountry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_CatanRoad_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_CatanRoad_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_CatanScore_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_CatanScore_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2227,14 +14085,65 @@ public final class Global {
     java.lang.String[] descriptorData = {
       "\n\014global.proto\022\"org.shell.mmo.sample.mes" +
       "sage.proto\" \n\010Position\022\t\n\001x\030\001 \001(\005\022\t\n\001y\030\002" +
-      " \001(\005\"r\n\nLeaderRole\022\n\n\002id\030\001 \001(\006\022\014\n\004name\030\002" +
-      " \001(\t\022\013\n\003map\030\003 \001(\005\022\r\n\005level\030\004 \001(\005\022\016\n\006serv" +
-      "er\030\005 \001(\005\022\020\n\010platform\030\006 \001(\005\022\014\n\004gold\030\007 \001(\005" +
-      "*\024\n\005Error\022\013\n\007SYS_ERR\020\001*:\n\016GameObjectType" +
-      "\022\010\n\004HERO\020\001\022\013\n\007MONSTER\020\002\022\007\n\003PET\020\003\022\010\n\004ITEM" +
-      "\020\004*+\n\010Platform\022\t\n\005INNER\020\001\022\n\n\006P37WAN\020\002\022\010\n" +
-      "\004P360\020\003*(\n\006Module\022\t\n\005LOGIN\020\001\022\t\n\005FIGHT\020\002\022" +
-      "\010\n\004MOVE\020\003"
+      " \001(\005\"8\n\nLeaderRole\022\014\n\004name\030\001 \001(\t\022\r\n\005scen" +
+      "e\030\002 \001(\005\022\r\n\005level\030\003 \001(\005\"@\n\010GameRoom\022\n\n\002id" +
+      "\030\001 \001(\005\022\r\n\005count\030\002 \001(\005\022\013\n\003max\030\003 \001(\005\022\014\n\004na" +
+      "me\030\004 \001(\t\"j\n\tGameTable\022\n\n\002id\030\001 \001(\005\022\r\n\005cou" +
+      "nt\030\002 \001(\005\022\013\n\003pwd\030\003 \001(\010\022\014\n\004name\030\004 \001(\t\022\r\n\005s" +
+      "tart\030\005 \001(\010\022\013\n\003max\030\006 \001(\005\022\013\n\003map\030\007 \001(\005\"4\n\t" +
+      "TableRole\022\n\n\002id\030\001 \001(\006\022\014\n\004name\030\002 \001(\t\022\r\n\005r" +
+      "eady\030\003 \001(\010\"a\n\rCatanResource\022C\n\004type\030\001 \001(",
+      "\01625.org.shell.mmo.sample.message.proto.C" +
+      "atanResourceType\022\013\n\003num\030\002 \001(\005\"f\n\023CatanMa" +
+      "sterResource\022\n\n\002id\030\001 \001(\006\022C\n\010resource\030\002 \003" +
+      "(\01321.org.shell.mmo.sample.message.proto." +
+      "CatanResource\"\301\002\n\010CatanMap\022;\n\004grid\030\001 \003(\013" +
+      "2-.org.shell.mmo.sample.message.proto.Ca" +
+      "tanGrid\022;\n\004city\030\002 \003(\0132-.org.shell.mmo.sa" +
+      "mple.message.proto.CatanCity\022A\n\007country\030" +
+      "\003 \003(\01320.org.shell.mmo.sample.message.pro" +
+      "to.CatanCountry\022;\n\004road\030\004 \003(\0132-.org.shel",
+      "l.mmo.sample.message.proto.CatanRoad\022;\n\004" +
+      "port\030\005 \003(\0132-.org.shell.mmo.sample.messag" +
+      "e.proto.CatanPort\"\316\001\n\tCatanPort\022?\n\tposit" +
+      "ion1\030\001 \001(\0132,.org.shell.mmo.sample.messag" +
+      "e.proto.Position\022?\n\tposition2\030\002 \001(\0132,.or" +
+      "g.shell.mmo.sample.message.proto.Positio" +
+      "n\022?\n\004type\030\003 \001(\01621.org.shell.mmo.sample.m" +
+      "essage.proto.CatanPortType\"\240\001\n\tCatanGrid" +
+      "\022>\n\010position\030\001 \001(\0132,.org.shell.mmo.sampl" +
+      "e.message.proto.Position\022C\n\004type\030\002 \001(\01625",
+      ".org.shell.mmo.sample.message.proto.Cata" +
+      "nResourceType\022\016\n\006number\030\003 \001(\005\"T\n\tCatanCi" +
+      "ty\022;\n\005point\030\001 \001(\0132,.org.shell.mmo.sample" +
+      ".message.proto.Position\022\n\n\002id\030\002 \001(\006\"W\n\014C" +
+      "atanCountry\022;\n\005point\030\001 \001(\0132,.org.shell.m" +
+      "mo.sample.message.proto.Position\022\n\n\002id\030\002" +
+      " \001(\006\"\223\001\n\tCatanRoad\022<\n\006point1\030\001 \001(\0132,.org" +
+      ".shell.mmo.sample.message.proto.Position" +
+      "\022<\n\006point2\030\002 \001(\0132,.org.shell.mmo.sample." +
+      "message.proto.Position\022\n\n\002id\030\003 \001(\006\"\'\n\nCa",
+      "tanScore\022\r\n\005score\030\001 \001(\005\022\n\n\002id\030\002 \001(\006*\246\003\n\005" +
+      "Error\022\013\n\007SYS_ERR\020\001\022\022\n\016LOGIN_FLAG_ERR\020\002\022\022" +
+      "\n\016LOGIN_OVERTIME\020\003\022\013\n\007USR_ERR\020\004\022\020\n\014PLATF" +
+      "ORM_ERR\020\005\022\016\n\nLIMIT_HOST\020\006\022\r\n\tLIMIT_USR\020\007" +
+      "\022\020\n\014LOGIN_REPEAT\020\010\022\016\n\nROLE_EXIST\020\t\022\021\n\rRO" +
+      "LE_NAME_LEN\020\n\022\025\n\021ROLE_NAME_ILLEGAL\020\013\022\024\n\020" +
+      "ROLE_NAME_REPEAT\020\014\022\r\n\tROOM_NULL\020\r\022\023\n\017TAB" +
+      "LE_NAME_NULL\020\016\022\026\n\022TABLE_PWD_TOO_LONG\020\017\022\014" +
+      "\n\010TABLE_IN\020\020\022\020\n\014TABLE_NOT_IN\020\021\022\017\n\013TABLE_" +
+      "START\020\022\022\016\n\nTABLE_NULL\020\023\022\016\n\nTABLE_FULL\020\024\022",
+      "\023\n\017TABLE_PWD_ERROR\020\025\022\017\n\013TABLE_READY\020\026\022\025\n" +
+      "\021CATAN_MAP_ILLEGAL\020\027*\032\n\010RoomType\022\016\n\nROOM" +
+      "_CATAN\020\001*+\n\010Platform\022\t\n\005INNER\020\001\022\n\n\006P37WA" +
+      "N\020\002\022\010\n\004P360\020\003*t\n\021CatanResourceType\022\022\n\016RE" +
+      "SOURCE_BRICK\020\001\022\023\n\017RESOURCE_LUMBER\020\002\022\021\n\rR" +
+      "ESOURCE_WOOL\020\003\022\021\n\rRESOURCE_GAIN\020\004\022\020\n\014RES" +
+      "OURCE_ORE\020\005*k\n\rCatanPortType\022\016\n\nPORT_BRI" +
+      "CK\020\001\022\017\n\013PORT_LUMBER\020\002\022\r\n\tPORT_WOOL\020\003\022\r\n\t" +
+      "PORT_GAIN\020\004\022\014\n\010PORT_ORE\020\005\022\r\n\tPORT_BANK\020\006" +
+      "*=\n\006Module\022\t\n\005LOGIN\020\001\022\010\n\004ROLE\020\002\022\010\n\004ROOM\020",
+      "\003\022\t\n\005TABLE\020\004\022\t\n\005CATAN\020\005"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2259,7 +14168,79 @@ public final class Global {
     internal_static_org_shell_mmo_sample_message_proto_LeaderRole_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_LeaderRole_descriptor,
-        new java.lang.String[] { "Id", "Name", "Map", "Level", "Server", "Platform", "Gold", });
+        new java.lang.String[] { "Name", "Scene", "Level", });
+    internal_static_org_shell_mmo_sample_message_proto_GameRoom_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_org_shell_mmo_sample_message_proto_GameRoom_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_GameRoom_descriptor,
+        new java.lang.String[] { "Id", "Count", "Max", "Name", });
+    internal_static_org_shell_mmo_sample_message_proto_GameTable_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_org_shell_mmo_sample_message_proto_GameTable_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_GameTable_descriptor,
+        new java.lang.String[] { "Id", "Count", "Pwd", "Name", "Start", "Max", "Map", });
+    internal_static_org_shell_mmo_sample_message_proto_TableRole_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_org_shell_mmo_sample_message_proto_TableRole_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_TableRole_descriptor,
+        new java.lang.String[] { "Id", "Name", "Ready", });
+    internal_static_org_shell_mmo_sample_message_proto_CatanResource_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_org_shell_mmo_sample_message_proto_CatanResource_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_CatanResource_descriptor,
+        new java.lang.String[] { "Type", "Num", });
+    internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_descriptor,
+        new java.lang.String[] { "Id", "Resource", });
+    internal_static_org_shell_mmo_sample_message_proto_CatanMap_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_org_shell_mmo_sample_message_proto_CatanMap_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_CatanMap_descriptor,
+        new java.lang.String[] { "Grid", "City", "Country", "Road", "Port", });
+    internal_static_org_shell_mmo_sample_message_proto_CatanPort_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_org_shell_mmo_sample_message_proto_CatanPort_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_CatanPort_descriptor,
+        new java.lang.String[] { "Position1", "Position2", "Type", });
+    internal_static_org_shell_mmo_sample_message_proto_CatanGrid_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_org_shell_mmo_sample_message_proto_CatanGrid_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_CatanGrid_descriptor,
+        new java.lang.String[] { "Position", "Type", "Number", });
+    internal_static_org_shell_mmo_sample_message_proto_CatanCity_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_org_shell_mmo_sample_message_proto_CatanCity_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_CatanCity_descriptor,
+        new java.lang.String[] { "Point", "Id", });
+    internal_static_org_shell_mmo_sample_message_proto_CatanCountry_descriptor =
+      getDescriptor().getMessageTypes().get(11);
+    internal_static_org_shell_mmo_sample_message_proto_CatanCountry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_CatanCountry_descriptor,
+        new java.lang.String[] { "Point", "Id", });
+    internal_static_org_shell_mmo_sample_message_proto_CatanRoad_descriptor =
+      getDescriptor().getMessageTypes().get(12);
+    internal_static_org_shell_mmo_sample_message_proto_CatanRoad_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_CatanRoad_descriptor,
+        new java.lang.String[] { "Point1", "Point2", "Id", });
+    internal_static_org_shell_mmo_sample_message_proto_CatanScore_descriptor =
+      getDescriptor().getMessageTypes().get(13);
+    internal_static_org_shell_mmo_sample_message_proto_CatanScore_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_CatanScore_descriptor,
+        new java.lang.String[] { "Score", "Id", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

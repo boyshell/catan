@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <apis>
+        <api name="CreateRole" desc="创角" invoke="client" provide="logic">
+            <params>
+                <field type="string" name="name" desc="角色名称" index="1"/>
+            </params>
+            <returns>
+                <field type="LeaderRole" name="leaderRole" desc="主角" index="1"/>
+            </returns>
+        </api>
+    </apis>
+</root>

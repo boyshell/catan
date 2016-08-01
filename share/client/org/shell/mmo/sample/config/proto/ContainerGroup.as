@@ -7,7 +7,7 @@ package org.shell.mmo.sample.config.proto {
 	import flash.utils.IDataOutput;
 	import flash.utils.IExternalizable;
 	import flash.errors.IOError;
-	import org.shell.mmo.sample.config.proto.Csample;
+	import org.shell.mmo.sample.config.proto.CcatanMap;
 	// @@protoc_insertion_point(imports)
 
 	// @@protoc_insertion_point(class_metadata)
@@ -15,18 +15,18 @@ package org.shell.mmo.sample.config.proto {
 		/**
 		 *  @private
 		 */
-		public static const SAMPLECONTAINER:RepeatedFieldDescriptor_TYPE_MESSAGE = new RepeatedFieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.config.proto.ContainerGroup.sampleContainer", "sampleContainer", (1 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.config.proto.Csample; });
+		public static const CATANMAPCONTAINER:RepeatedFieldDescriptor_TYPE_MESSAGE = new RepeatedFieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.config.proto.ContainerGroup.catanMapContainer", "catanMapContainer", (1 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.config.proto.CcatanMap; });
 
-		[ArrayElementType("org.shell.mmo.sample.config.proto.Csample")]
-		public var sampleContainer:Array = [];
+		[ArrayElementType("org.shell.mmo.sample.config.proto.CcatanMap")]
+		public var catanMapContainer:Array = [];
 
 		/**
 		 *  @private
 		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
-			for (var sampleContainer$index:uint = 0; sampleContainer$index < this.sampleContainer.length; ++sampleContainer$index) {
+			for (var catanMapContainer$index:uint = 0; catanMapContainer$index < this.catanMapContainer.length; ++catanMapContainer$index) {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 1);
-				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, this.sampleContainer[sampleContainer$index]);
+				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, this.catanMapContainer[catanMapContainer$index]);
 			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
@@ -41,7 +41,7 @@ package org.shell.mmo.sample.config.proto {
 				var tag:uint = com.netease.protobuf.ReadUtils.read_TYPE_UINT32(input);
 				switch (tag >> 3) {
 				case 1:
-					this.sampleContainer.push(com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, new org.shell.mmo.sample.config.proto.Csample()));
+					this.catanMapContainer.push(com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, new org.shell.mmo.sample.config.proto.CcatanMap()));
 					break;
 				default:
 					super.readUnknown(input, tag);

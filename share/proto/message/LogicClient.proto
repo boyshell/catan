@@ -14,5 +14,319 @@ message ReqLoginLogin {
 message ResLoginLogin {
     optional Error error = 1; // 错误码
     optional LeaderRole leaderRole = 2; // 主角
+    optional fixed64 id = 3; // 账号id
+    optional int32 gold = 4; // 元宝数量
+}
+// 顶号:参数
+message ReqLoginReplace {
+    optional string host = 1; // 顶号者的主机地址
+}
+// 创角:参数
+message ReqRoleCreateRole {
+    optional string name = 1; // 角色名称
+}
+// 创角:返回值
+message ResRoleCreateRole {
+    optional Error error = 1; // 错误码
+    optional LeaderRole leaderRole = 2; // 主角
+}
+// 进入房间:参数
+message ReqRoomEnter {
+    optional int32 id = 1; // 房间id
+}
+// 进入房间:返回值
+message ResRoomEnter {
+    optional Error error = 1; // 错误码
+    optional int32 id = 2; // 房间id
+    repeated GameTable table = 3; // 桌子列表
+}
+// 离开房间:参数
+message ReqRoomExit {
+}
+// 离开房间:返回值
+message ResRoomExit {
+    optional Error error = 1; // 错误码
+}
+// 展示所有房间:参数
+message ReqRoomAll {
+    repeated GameRoom room = 1; // 房间列表
+}
+// 更新房间:参数
+message ReqRoomUpdate {
+    optional int32 id = 1; // 房间id
+    optional int32 count = 2; // 玩家人数
+}
+// 创建桌子:参数
+message ReqTableCreate {
+    optional string name = 1; // 房间名字
+    optional string pwd = 2; // 房间密码
+    optional int32 map = 3; // 使用那张图?
+}
+// 创建桌子:返回值
+message ResTableCreate {
+    optional Error error = 1; // 错误码
+    optional int32 id = 2; // 桌子编号
+    optional int32 map = 3; // 使用那张图?
+}
+// 添加桌子:参数
+message ReqTableAdd {
+    optional GameTable table = 1; // 桌子信息
+}
+// 加入桌子:参数
+message ReqTableJoin {
+    optional int32 id = 1; // 桌子编号
+    optional string pwd = 2; // 房间密码
+}
+// 加入桌子:返回值
+message ResTableJoin {
+    optional Error error = 1; // 错误码
+    optional int32 id = 2; // 桌子编号
+    optional int32 map = 3; // 使用那张图?
+    repeated TableRole master = 4; // 游戏者列表
+}
+// 更新桌子:参数
+message ReqTableUpdate {
+    optional int32 id = 1; // 桌子编号
+    optional int32 count = 2; // 当前人数
+    optional bool start = 3; // 是否已经开始
+}
+// 退出桌子:参数
+message ReqTableExit {
+}
+// 退出桌子:返回值
+message ResTableExit {
+    optional Error error = 1; // 错误码
+    optional fixed64 id = 2; // 账号id
+}
+// 移除桌子:参数
+message ReqTableRemove {
+    optional int32 id = 1; // 桌子编号
+}
+// 准备:参数
+message ReqTableReady {
+}
+// 准备:返回值
+message ResTableReady {
+    optional Error error = 1; // 错误码
+    optional fixed64 id = 2; // 账号id
+}
+// 开始:参数
+message ReqCatanStart {
+    optional CatanMap map = 1; // 卡坦岛地图
+}
+// 初始化回合开始:参数
+message ReqCatanRoundInitStart {
+    optional fixed64 id = 1; // 账号id
+    optional int32 remain = 2; // 剩余多少秒结束
+}
+// 设置起始点:参数
+message ReqCatanSet {
+    optional int32 country = 1; // 村庄位置
+    optional int32 road = 2; // 道路位置
+}
+// 设置起始点:返回值
+message ResCatanSet {
+    optional Error error = 1; // 错误码
+    optional fixed64 id = 2; // 账号id
+    optional int32 country = 3; // 村庄位置
+    optional int32 road = 4; // 道路位置
+}
+// 普通回合开始:参数
+message ReqCatanRoundCommonStart {
+    optional fixed64 id = 1; // 账号id
+    optional int32 remain = 2; // 剩余多少秒结束
+    optional bool rob = 3; // 受否需要移动强盗
+    repeated CatanMasterResource gain = 4; // 每个人收获列表
+}
+// 结束普通回合:参数
+message ReqCatanRoundCommonEnd {
+}
+// 结束普通回合:返回值
+message ResCatanRoundCommonEnd {
+    optional Error error = 1; // 错误码
+}
+// 建造道路:参数
+message ReqCatanBuildRoad {
+    optional int32 road = 1; // 道路位置
+}
+// 建造道路:返回值
+message ResCatanBuildRoad {
+    optional Error error = 1; // 错误码
+    optional fixed64 id = 2; // 账号id
+    optional int32 road = 3; // 道路位置
+}
+// 建造村庄:参数
+message ReqCatanBuildCountry {
+    optional int32 country = 1; // 村庄位置
+}
+// 建造村庄:返回值
+message ResCatanBuildCountry {
+    optional Error error = 1; // 错误码
+    optional fixed64 id = 2; // 账号id
+    optional int32 country = 3; // 村庄位置
+}
+// 建造城市:参数
+message ReqCatanBuildCity {
+    optional int32 city = 1; // 城市位置
+}
+// 建造城市:返回值
+message ResCatanBuildCity {
+    optional Error error = 1; // 错误码
+    optional fixed64 id = 2; // 账号id
+    optional int32 city = 3; // 城市位置
+}
+// 建造发展卡:参数
+message ReqCatanBuildDevelopmentCard {
+    optional int32 count = 1; // 数量
+}
+// 建造发展卡:返回值
+message ResCatanBuildDevelopmentCard {
+    optional Error error = 1; // 错误码
+    optional fixed64 id = 2; // 账号id
+    optional int32 count = 3; // 数量
+}
+// 系统交易:参数
+message ReqCatanTradeSystem {
+    repeated CatanResource offer = 1; // 我要的资源
+    repeated CatanResource want = 2; // 我提供的资源
+}
+// 系统交易:返回值
+message ResCatanTradeSystem {
+    optional Error error = 1; // 错误码
+    repeated CatanResource offer = 2; // 玩家要的资源
+    repeated CatanResource want = 3; // 玩家提供的资源
+    optional fixed64 id = 4; // 账号id
+}
+// 开价给所有人(交易流程:开价->还价/取消->成交/取消):参数
+message ReqCatanTradeOffer {
+    repeated CatanResource offer = 1; // 我要的资源
+    repeated CatanResource want = 2; // 我提供的资源
+}
+// 开价给所有人(交易流程:开价->还价/取消->成交/取消):返回值
+message ResCatanTradeOffer {
+    optional Error error = 1; // 错误码
+    repeated CatanResource offer = 2; // 玩家要的资源
+    repeated CatanResource want = 3; // 玩家提供的资源
+    optional fixed64 id = 4; // 账号id
+}
+// 还价给发起者,可以跟开价一模一样,表示我接受你的报价:参数
+message ReqCatanTradeCounterOffer {
+    repeated CatanResource offer = 1; // 我要的资源
+    repeated CatanResource want = 2; // 我提供的资源
+}
+// 还价给发起者,可以跟开价一模一样,表示我接受你的报价:返回值
+message ResCatanTradeCounterOffer {
+    optional Error error = 1; // 错误码
+}
+// 别人给我还价:参数
+message ReqCatanTradeCounterOfferToMe {
+    repeated CatanResource offer = 1; // 玩家要的资源
+    repeated CatanResource want = 2; // 玩家提供的资源
+    optional fixed64 id = 3; // 账号id
+}
+// 拒绝别人的开价:参数
+message ReqCatanTradeCounterOfferRefuse {
+}
+// 拒绝别人的开价:返回值
+message ResCatanTradeCounterOfferRefuse {
+    optional Error error = 1; // 错误码
+}
+// 别人拒绝我的交易:参数
+message ReqCatanTradeCounterOfferRefuseToMe {
+    optional fixed64 id = 3; // 账号id
+}
+// 交易成交:参数
+message ReqCatanTradeDeal {
+    optional fixed64 target = 1; // 目标id
+}
+// 交易成交:返回值
+message ResCatanTradeDeal {
+    optional Error error = 1; // 错误码
+    optional CatanMasterResource master1 = 2; // 玩家1获得的资源
+    optional CatanMasterResource master2 = 4; // 玩家2获得的资源
+}
+// 交易取消:参数
+message ReqCatanTradeCancel {
+}
+// 交易取消:返回值
+message ResCatanTradeCancel {
+    optional Error error = 1; // 错误码
+}
+// 抢劫:参数
+message ReqCatanRob {
+    optional int32 robber = 1; // 强盗的位置
+    optional fixed64 id = 2; // 被抢的玩家
+}
+// 抢劫:返回值
+message ResCatanRob {
+    optional Error error = 1; // 错误码
+    optional int32 robber = 2; // 强盗的位置
+    optional fixed64 criminal = 3; // 罪犯
+    optional fixed64 victim = 4; // 受害者
+    optional CatanResource resource = 5; // 资源
+}
+// 使用丰收卡:参数
+message ReqCatanRichCard {
+    repeated CatanResource resource = 1; // 资源
+}
+// 使用丰收卡:返回值
+message ResCatanRichCard {
+    optional Error error = 1; // 错误码
+    repeated CatanResource resource = 2; // 资源
+    optional fixed64 id = 3; // 账号id
+}
+// 使用道路卡:参数
+message ReqCatanRoadCard {
+    repeated int32 road = 1; // 道路位置
+}
+// 使用道路卡:返回值
+message ResCatanRoadCard {
+    optional Error error = 1; // 错误码
+    repeated int32 road = 2; // 道路位置
+    optional fixed64 id = 3; // 账号id
+}
+// 使用骑士卡:参数
+message ReqCatanKnightCard {
+    optional int32 robber = 1; // 强盗的位置
+    optional fixed64 id = 2; // 被抢的玩家
+}
+// 使用骑士卡:返回值
+message ResCatanKnightCard {
+    optional Error error = 1; // 错误码
+    optional int32 robber = 2; // 强盗的位置
+    optional fixed64 criminal = 3; // 罪犯
+    optional fixed64 victim = 4; // 受害者
+    optional CatanResource resource = 5; // 资源
+}
+// 使用垄断卡:参数
+message ReqCatanMonopolyCard {
+    optional CatanResourceType type = 1; // 资源类型
+}
+// 使用垄断卡:返回值
+message ResCatanMonopolyCard {
+    optional Error error = 1; // 错误码
+    optional fixed64 id = 2; // 垄断者账号
+    repeated CatanMasterResource lose = 5; // 被垄断列表
+}
+// 弃牌回合开始(前端自行判定自己是否需要弃牌):参数
+message ReqCatanRoundFoldStart {
+    optional fixed64 id = 1; // 账号id
+    optional int32 remain = 2; // 剩余多少秒结束
+}
+// 弃牌:参数
+message ReqCatanFold {
+    repeated CatanResource lose = 4; // 弃牌列表
+}
+// 弃牌:返回值
+message ResCatanFold {
+    optional Error error = 1; // 错误码
+    optional fixed64 id = 2; // 账号
+    repeated CatanResource lose = 3; // 弃牌列表
+}
+// 结束:参数
+message ReqCatanDone {
+    repeated CatanScore score = 1; // 积分
+    optional int32 gain = 2; // 本轮战绩
+    optional int32 totalGain = 3; // 累计战绩
 }
 

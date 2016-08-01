@@ -1,29 +1,22 @@
 package org.shell.mmo.sample.message;
 
 import com.google.protobuf.MessageLite;
-import io.netty.channel.Channel;
+import com.google.protobuf.MessageLiteOrBuilder;
 import org.shell.mmo.sample.message.proto.Global;
-
-import java.util.concurrent.Executor;
 
 /**
  * Created by zhangxiangxi on 16/7/20.
  */
-public abstract class MessageHandler<K extends MessageLite> extends com.shell.mmo.utils.net.message.MessageHandler<Global.Error, Global.Module, K> {
-    protected Channel channel;
-
-    protected abstract void execute(K message);
-
+public abstract class MessageHandler<K extends MessageLite> extends com.shell.mmo.utils.net.message.MessageHandler<K> {
     public abstract Global.Module module();
+    public abstract MessageLiteOrBuilder error(Global.Error error);
 
     @Override
-    protected boolean init(Channel channel) {
-        this.channel = channel;
-        return true;
+    protected boolean filter() {
+        return false;
     }
 
     @Override
-    public Executor worker() {
-        return null;
+    protected void rescue() {
     }
 }

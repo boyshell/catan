@@ -7,25 +7,114 @@ message Position {
 }
 // 主角
 message LeaderRole {
-    optional fixed64 id = 1; // 角色id
-    optional string name = 2; // 名字
-    optional int32 map = 3; // 地图
-    optional int32 level = 4; // 等级
-    optional int32 server = 5; // 服务器
-    optional int32 platform = 6; // 平台
-    optional int32 gold = 7; // 元宝
+    optional string name = 1; // 名字
+    optional int32 scene = 2; // 场景
+    optional int32 level = 3; // 等级
+}
+// 房间信息
+message GameRoom {
+    optional int32 id = 1; // 房间编号
+    optional int32 count = 2; // 当前人数
+    optional int32 max = 3; // 人数上限
+    optional string name = 4; // 房间名字
+}
+// 桌子信息
+message GameTable {
+    optional int32 id = 1; // 桌子编号
+    optional int32 count = 2; // 当前人数
+    optional bool pwd = 3; // 是否需要密码
+    optional string name = 4; // 房间名字
+    optional bool start = 5; // 是否已经开始
+    optional int32 max = 6; // 人数上限
+    optional int32 map = 7; // 使用那张图?
+}
+// 卡坦岛玩家
+message TableRole {
+    optional fixed64 id = 1; // 玩家id
+    optional string name = 2; // 玩家名
+    optional bool ready = 3; // 是否准备完毕
+}
+// 卡坦岛资源
+message CatanResource {
+    optional CatanResourceType type = 1; // 类型
+    optional int32 num = 2; // 数量
+}
+// 卡坦岛玩家关联资源
+message CatanMasterResource {
+    optional fixed64 id = 1; // 玩家id
+    repeated CatanResource resource = 2; // 资源
+}
+// 卡坦岛地图信息
+message CatanMap {
+    repeated CatanGrid grid = 1; // 格子信息
+    repeated CatanCity city = 2; // 城市信息
+    repeated CatanCountry country = 3; // 村庄信息
+    repeated CatanRoad road = 4; // 道路信息
+    repeated CatanPort port = 5; // 港口信息
+}
+// 卡坦岛港口信息
+message CatanPort {
+    optional Position position1 = 1; // 坐标1
+    optional Position position2 = 2; // 坐标2
+    optional CatanPortType type = 3; // 港口类型
+}
+// 卡坦岛格子信息
+message CatanGrid {
+    optional Position position = 1; // 坐标
+    optional CatanResourceType type = 2; // 资源产出类型
+    optional int32 number = 3; // 数字
+}
+// 卡坦岛城市信息
+message CatanCity {
+    optional Position point = 1; // 顶点坐标
+    optional fixed64 id = 2; // 玩家id
+}
+// 卡坦岛村庄信息
+message CatanCountry {
+    optional Position point = 1; // 顶点坐标
+    optional fixed64 id = 2; // 玩家id
+}
+// 卡坦岛道路信息
+message CatanRoad {
+    optional Position point1 = 1; // 顶点坐标
+    optional Position point2 = 2; // 顶点坐标
+    optional fixed64 id = 3; // 玩家id
+}
+// 卡坦岛积分信息
+message CatanScore {
+    optional int32 score = 1; // 积分
+    optional fixed64 id = 2; // 玩家id
 }
 
 // 错误码
 enum Error {
     SYS_ERR = 1; // 系统错误
+    LOGIN_FLAG_ERR = 2; // 登录密钥错误
+    LOGIN_OVERTIME = 3; // 登录密钥超时
+    USR_ERR = 4; // 账号非法
+    PLATFORM_ERR = 5; // 平台非法
+    LIMIT_HOST = 6; // 被限制的主机
+    LIMIT_USR = 7; // 被限制的账号
+    LOGIN_REPEAT = 8; // 重复登录
+    ROLE_EXIST = 9; // 角色已经存在
+    ROLE_NAME_LEN = 10; // 角色名长度非法
+    ROLE_NAME_ILLEGAL = 11; // 角色名非法
+    ROLE_NAME_REPEAT = 12; // 角色名重复
+    ROOM_NULL = 13; // 房间[不存在]
+    TABLE_NAME_NULL = 14; // 桌子[名称非法]
+    TABLE_PWD_TOO_LONG = 15; // 桌子[密码太长]
+    TABLE_IN = 16; // 桌子[已经在桌子中了]
+    TABLE_NOT_IN = 17; // 桌子[不在桌子中]
+    TABLE_START = 18; // 桌子[处于开始状态]
+    TABLE_NULL = 19; // 桌子[不存在]
+    TABLE_FULL = 20; // 桌子[满了]
+    TABLE_PWD_ERROR = 21; // 桌子[密码错误]
+    TABLE_READY = 22; // 桌子[已经准备]
+    CATAN_MAP_ILLEGAL = 23; // 卡坦岛[地图非法]
 }
-// 对象类型
-enum GameObjectType {
-    HERO = 1; // 英雄
-    MONSTER = 2; // 怪物
-    PET = 3; // 宠物
-    ITEM = 4; // 道具
+// 桌子类型
+enum RoomType {
+    ROOM_CATAN = 1; // 卡坦岛
 }
 // 平台
 enum Platform {
@@ -33,9 +122,28 @@ enum Platform {
     P37WAN = 2; // 37玩
     P360 = 3; // 360
 }
+// 卡坦岛资源类型
+enum CatanResourceType {
+    RESOURCE_BRICK = 1; // 砖
+    RESOURCE_LUMBER = 2; // 木材
+    RESOURCE_WOOL = 3; // 羊毛
+    RESOURCE_GAIN = 4; // 粮食
+    RESOURCE_ORE = 5; // 矿石
+}
+// 卡坦岛港口类型
+enum CatanPortType {
+    PORT_BRICK = 1; // 砖港
+    PORT_LUMBER = 2; // 木港
+    PORT_WOOL = 3; // 羊港
+    PORT_GAIN = 4; // 麦港
+    PORT_ORE = 5; // 矿港
+    PORT_BANK = 6; // 3比1港
+}
 // 模块类型
 enum Module {
     LOGIN = 1; // 登录
-    FIGHT = 2; // 战斗
-    MOVE = 3; // 移动
+    ROLE = 2; // 角色
+    ROOM = 3; // 房间
+    TABLE = 4; // 桌子
+    CATAN = 5; // 卡坦岛
 }

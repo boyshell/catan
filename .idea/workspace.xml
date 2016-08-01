@@ -1,17 +1,449 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3648fa52-07c9-48a5-b6d3-dfaf40a6b37b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/data.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/config/proto/Config.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/src/main/java/org/shell/mmo/sample/message/proto/Global.java" afterPath="" />
+    <list default="true" id="3648fa52-07c9-48a5-b6d3-dfaf40a6b37b" name="Default" comment="移除data模块">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/config/卡坦岛.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lmax_disruptor_3_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_shell_mmo_modules_1_0_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/bean/DcatanGrid.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/container/CcatanMapContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/bean/DcatanGrid.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/container/CcatanMapContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/account/Account.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/account/AccountService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/account/LoginEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/account/RoleLoginEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/Catan.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanMessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanRound.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/RoleCatan.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCityHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCountryHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildDevelopmentCardHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildRoadHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanFoldHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanKnightCardHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanMonopolyCardHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRichCardHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoadCardHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRobHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoundCommonEndHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanSetHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCancelHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferRefuseHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeDealHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeOfferHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeSystemHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/bean/DcatanGrid.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/container/CcatanMapContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/event/EventBus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/guice/PostConstructModule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/LoginMessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ChannelAttributeKey.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/role/Role.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/role/RoleMessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/role/handler/ReqRoleCreateRoleHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/RoleRoom.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/Room.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/RoomMessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/RoomService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomEnterHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomExitHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/scene/RoleScene.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/Table.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableMessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/handler/ReqTableCreateHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/handler/ReqTableExitHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/handler/ReqTableJoinHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/handler/ReqTableReadyHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/uid/UID.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/uid/UIDSaver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logic/src/test/java/org/shell/mmo/sample/catan/CatanMapTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/account/Account.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/account/AccountService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanMapShow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanMessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanDoneHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoundCommonStartHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoundFoldStartHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoundInitStartHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanStartHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferRefuseToMeHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferToMeHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanBuildCityHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanBuildCountryHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanBuildDevelopmentCardHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanBuildRoadHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanFoldHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanKnightCardHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanMonopolyCardHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanRichCardHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanRoadCardHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanRobHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanRoundCommonEndHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanSetHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanTradeCancelHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanTradeCounterOfferHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanTradeCounterOfferRefuseHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanTradeDealHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanTradeOfferHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ResCatanTradeSystemHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/bean/DcatanGrid.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/container/CcatanMapContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/login/LoginMessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/login/handler/ReqLoginReplaceHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/ChannelAttributeKey.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/role/Role.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/role/RoleMessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/role/handler/ResRoleCreateRoleHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/RoleRoom.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/Room.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/RoomMessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/RoomService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomAllHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomUpdateHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ResRoomEnterHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ResRoomExitHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/RoleTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/Table.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/TableMessageHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/TableService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableAddHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableRemoveHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableUpdateHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ResTableCreateHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ResTableExitHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ResTableJoinHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ResTableReadyHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/bean/DcatanGrid.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/container/CcatanMapContainer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/api/catan.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/api/role.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/api/room.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/api/table.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/CatanMessageHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanAddTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanCountDownHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanDoneHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanRemoveTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanRoundCommonStartHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanRoundFoldStartHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanRoundInitStartHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanRoundStartHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanStartHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferRefuseToMeHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferToMeHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanUpdateTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanBuildCityHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanBuildCountryHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanBuildDevelopmentCardHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanBuildRoadHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanCancelWatchTablesHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanCreateTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanExitTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanFoldHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanJoinTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanKnightCardHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanMonopolyCardHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanReadyHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanRichCardHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanRoadCardHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanRobHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanRoundCommonEndHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanRoundEndHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanSetHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanStartHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanThrowDiceHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeCancelHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeCounterOfferHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeCounterOfferRefuseHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeDealHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeOfferHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeSystemHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanWatchTablesHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/bean/CcatanMap.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/bean/DcatanGrid.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/container/CcatanMapContainer.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/CcatanMap.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/DcatanGrid.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/login/LoginMessageHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/login/handler/ReqLoginReplaceHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/login/handler/ResLoginNetTestHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanCity.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanCountry.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanGrid.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanMap.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanMaster.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanMasterResource.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanPort.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanPortType.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanResource.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanResourceType.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanRoad.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanScore.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanTableBrief.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/GameRoom.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/GameTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Platform.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanAddTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildCity.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildCountry.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildDevelopmentCard.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildRoad.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanCancelWatchTables.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanCountDown.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanCreateTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanDone.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanExitTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanFold.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanJoinTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanKnightCard.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanMonopolyCard.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanReady.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRemoveTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRichCard.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoadCard.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRob.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundCommonEnd.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundCommonStart.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundEnd.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundFoldStart.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundInitStart.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundStart.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanSet.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanStart.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanThrowDice.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeCancel.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeCounterOffer.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeCounterOfferRefuse.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeCounterOfferRefuseToMe.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeCounterOfferToMe.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeDeal.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeOffer.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeSystem.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanUpdateTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanWatchTables.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqLoginNetTest.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqLoginReplace.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoleCreateRole.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomAddTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomAll.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomCancelWatchTables.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomCreateTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomEnter.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomExit.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomExitTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomJoinTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomReady.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomRemoveTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomUpdate.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomUpdateTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomWatchTables.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableAdd.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableCreate.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableExit.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableJoin.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableReady.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableRemove.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableUpdate.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildCity.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildCountry.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildDevelopmentCard.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildRoad.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanCancelWatchTables.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanCreateTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanExitTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanFold.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanJoinTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanKnightCard.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanMonopolyCard.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanReady.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRichCard.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRoadCard.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRob.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRoundCommonEnd.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRoundEnd.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanSet.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanStart.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanThrowDice.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeCancel.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeCounterOffer.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeCounterOfferRefuse.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeDeal.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeOffer.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeSystem.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanWatchTables.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResLoginNetTest.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoleCreateRole.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomCancelWatchTables.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomCreateTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomEnter.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomExit.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomExitTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomJoinTable.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomReady.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomWatchTables.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResTableCreate.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResTableExit.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResTableJoin.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResTableReady.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Room.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/RoomType.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Table.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/TableRole.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/role/RoleMessageHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/role/handler/ResRoleCreateRoleHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/RoomMessageHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ReqRoomAddTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ReqRoomAllHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ReqRoomRemoveTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ReqRoomUpdateHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ReqRoomUpdateTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomCancelWatchTablesHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomCreateTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomEnterHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomExitHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomExitTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomJoinTableHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomReadyHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomWatchTablesHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/TableMessageHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ReqTableAddHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ReqTableRemoveHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ReqTableUpdateHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ResTableCreateHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ResTableExitHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ResTableJoinHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ResTableReadyHandler.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/config/CcatanMap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/config/DcatanGrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanCity.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanCountry.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanGrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanMap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanMaster.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanMasterResource.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanPort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanPortType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanResource.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanResourceType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanRoad.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanScore.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/CatanTableBrief.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/GameRoom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/GameTable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/Platform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/RoomType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/TableRole.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/catan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/role.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/room.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share/doc/modules/table.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/executor/Executors.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/fight/handler/ReqFightUseSkillHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/SceneClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/move/handler/ReqMoveWalkHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/executor/Executors.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/fight/handler/ReqFightShowDamageHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/fight/handler/ResFightUseSkillHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/SceneClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/move/handler/ResMoveWalkHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/bean/Csample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/bean/Ddata.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/container/CsampleContainer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/fight/handler/ReqFightUseSkillHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/ClientHandlerGroup.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/ClientMessageGroup.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/proto/SceneClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/move/handler/ReqMoveWalkHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/api/fight.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/api/move.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/config/未命名.xlsx" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leader/leader.iml" afterPath="$PROJECT_DIR$/leader/leader.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/proto/Config.java" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/message/proto/Global.java" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log.iml" afterPath="$PROJECT_DIR$/log/log.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/proto/Config.java" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/message/proto/Global.java" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/logic.iml" afterPath="$PROJECT_DIR$/logic/logic.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/pom.xml" afterPath="$PROJECT_DIR$/logic/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/LogicMain.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/LogicMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/proto/Config.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/handler/ReqLoginLoginHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/handler/ReqLoginLoginHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ClientHandlerGroup.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ClientHandlerGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ClientMessageGroup.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ClientMessageGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/Global.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/pom.xml" afterPath="$PROJECT_DIR$/robot/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/robot.iml" afterPath="$PROJECT_DIR$/robot/robot.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/proto/Config.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/login/handler/ResLoginLoginHandler.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/login/handler/ResLoginLoginHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/LogicHandlerGroup.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/LogicHandlerGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/LogicMessageGroup.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/LogicMessageGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/Global.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scene/scene.iml" afterPath="$PROJECT_DIR$/scene/scene.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/ConfigGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/proto/Config.java" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/proto/Global.java" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/api/global.xml" afterPath="$PROJECT_DIR$/share/api/global.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/api/login.xml" afterPath="$PROJECT_DIR$/share/api/login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/api/modules.xml" afterPath="$PROJECT_DIR$/share/api/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/ConfigGroup.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/ConfigGroup.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/ContainerGroup.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/ContainerGroup.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicHandlerGroup.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicHandlerGroup.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicMessageGroup.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicMessageGroup.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Error.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Error.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/LeaderRole.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/LeaderRole.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Module.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Module.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResLoginLogin.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResLoginLogin.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/doc/config/index.html" afterPath="$PROJECT_DIR$/share/doc/config/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/doc/modules/Error.html" afterPath="$PROJECT_DIR$/share/doc/modules/Error.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/doc/modules/LeaderRole.html" afterPath="$PROJECT_DIR$/share/doc/modules/LeaderRole.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/doc/modules/index.html" afterPath="$PROJECT_DIR$/share/doc/modules/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/doc/modules/login.html" afterPath="$PROJECT_DIR$/share/doc/modules/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/proto/config/config.proto" afterPath="$PROJECT_DIR$/share/proto/config/config.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/proto/message/LogicClient.proto" afterPath="$PROJECT_DIR$/share/proto/message/LogicClient.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/proto/message/global.proto" afterPath="$PROJECT_DIR$/share/proto/message/global.proto" />
     </list>
     <ignored path="mmo-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +470,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RobotMain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java">
+      <file leaf-file-name="ReqLoginLoginHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/handler/ReqLoginLoginHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="359">
+              <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,92 +482,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modules.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/share/api/modules.xml">
+      <file leaf-file-name="ReqRoleCreateRoleHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/role/handler/ReqRoleCreateRoleHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="615">
+              <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/share/api/login.xml">
+      <file leaf-file-name="RoomService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/RoomService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+            <state relative-caret-position="525">
+              <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Encoder.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/Encoder.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="global.proto" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/share/proto/message/global.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogicClient.proto" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/share/proto/message/LogicClient.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SceneClient.proto" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/share/proto/message/SceneClient.proto">
+      <file leaf-file-name="RobotMain.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageToByteEncoder.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.1.Final/netty-all-4.1.1.Final-sources.jar!/io/netty/handler/codec/MessageToByteEncoder.java">
+      <file leaf-file-name="LoginEvent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/account/LoginEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1515">
-              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="25" />
+              <folding>
+                <element signature="e#186#187#0" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractChannelHandlerContext.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.1.Final/netty-all-4.1.1.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
+      <file leaf-file-name="RoleLoginEvent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/account/RoleLoginEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9225">
-              <caret line="730" column="42" selection-start-line="730" selection-start-column="42" selection-end-line="730" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Decoder.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/Decoder.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="225">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="e#194#195#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,6 +545,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -163,31 +565,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scene/pom.xml" />
-        <option value="$PROJECT_DIR$/data/pom.xml" />
-        <option value="$PROJECT_DIR$/leader/pom.xml" />
-        <option value="$PROJECT_DIR$/log/pom.xml" />
-        <option value="$PROJECT_DIR$/logic/pom.xml" />
-        <option value="$PROJECT_DIR$/robot/pom.xml" />
-        <option value="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" />
-        <option value="$PROJECT_DIR$/share/doc/config/index.html" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/LogicMain.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ClientHandlerGroup.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ClientMessageGroup.java" />
-        <option value="$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/Decoder.class" />
-        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java" />
-        <option value="$PROJECT_DIR$/share/api/global.xml" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/handler/ReqLoginLoginHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ResTableReadyHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanDoneHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanMessageHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoundCommonStartHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanService.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/RoleCatan.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/role/RoleMessageHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/RoomMessageHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableMessageHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/account/AccountService.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/Table.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/Catan.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanRound.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanService.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/RoomMessageHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/Table.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/TableService.java" />
+        <option value="$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/message/MessageHandler.class" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/account/AccountService.java" />
         <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/login/handler/ResLoginLoginHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/executor/Executors.java" />
-        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/executor/Executors.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/role/handler/ResRoleCreateRoleHandler.java" />
         <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/MessageHandler.java" />
-        <option value="$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/Server.class" />
-        <option value="$PROJECT_DIR$/share/proto/message/global.proto" />
-        <option value="$PROJECT_DIR$/share/proto/message/LogicClient.proto" />
-        <option value="$PROJECT_DIR$/share/proto/message/SceneClient.proto" />
-        <option value="$PROJECT_DIR$/share/api/login.xml" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/event/EventBus.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/guice/PostConstructModule.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/LogicMain.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/RoleRoom.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomAllHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/RoomService.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomUpdateHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomEnterHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/Room.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ResRoomEnterHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/MyCatanTable.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/RoleTable.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanStartHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ResRoomExitHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/TableMessageHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableAddHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableUpdateHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableRemoveHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ResTableCreateHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/handler/ReqTableReadyHandler.java" />
+        <option value="$PROJECT_DIR$/share/api/table.xml" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ResTableJoinHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableService.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/account/LoginEvent.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/account/RoleLoginEvent.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/handler/ReqLoginLoginHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/role/handler/ReqRoleCreateRoleHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/RoomService.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java" />
       </list>
     </option>
   </component>
@@ -203,8 +631,11 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
+    <option name="x" value="1088" />
     <option name="y" value="23" />
     <option name="width" value="1400" />
     <option name="height" value="1337" />
@@ -236,7 +667,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -255,14 +685,514 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="table" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="table" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="table" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="TODO_SCOPE" value="Class Hierarchy" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+  </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.shell.mmo.sample.catan" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.shell.mmo.sample.executor" />
+      <recent name="org.shell.mmo.sample.catan" />
       <recent name="org.shell.mmo.sample.message" />
+      <recent name="org.shell.mmo.sample.executor" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/share/api" />
     </key>
   </component>
   <component name="RunManager" selected="Application.RobotMain">
@@ -303,6 +1233,66 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="robot" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.shell.mmo.sample.catan.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.shell.mmo.sample.catan.map.Map" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="logic" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CatanMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.shell.mmo.sample.catan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.shell.mmo.sample.catan.CatanMapTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="logic" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="EventBus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.shell.mmo.sample.event.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.shell.mmo.sample.event.EventBus" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="logic" />
       <envs />
       <method />
     </configuration>
@@ -540,19 +1530,28 @@
       <listeners />
       <method />
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.LogicMain" />
       <item index="1" class="java.lang.String" itemvalue="Application.RobotMain" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Map" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CatanMapTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.EventBus" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.RobotMain" />
         <item index="1" class="java.lang.String" itemvalue="Application.LogicMain" />
+        <item index="2" class="java.lang.String" itemvalue="Application.EventBus" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CatanMapTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Map" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -576,38 +1575,62 @@
       <option name="project" value="LOCAL" />
       <updated>1469089293875</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="移除data模块">
+      <created>1469171253950</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1469171253950</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1400" height="1337" extended-state="0" />
+    <frame x="1088" y="23" width="1400" height="1337" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25184095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19734904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39839357" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39984226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -615,15 +1638,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化结构" />
     <MESSAGE value="消息通了" />
-    <option name="LAST_COMMIT_MESSAGE" value="消息通了" />
+    <MESSAGE value="移除data模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="移除data模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <option name="time" value="80" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="len1" />
+        <watch expression="((LocalCache.LocalLoadingCache) ((AccountService) this).cache).get(account.getKey())" language="JAVA" custom="org.shell.mmo.sample.account.AccountService,com.google.common.cache.LocalCache" />
+        <watch expression="table.getPwd()" />
+        <watch expression="cell.getStringCellValue()" />
       </configuration>
     </watches-manager>
   </component>
@@ -632,376 +1658,532 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/MessageHandler.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Unsafe.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/doc/modules/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/doc/config/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/bean/Csample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="34" column="83" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scene/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="102" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leader/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+        <state relative-caret-position="540">
+          <caret line="374" column="5" selection-start-line="374" selection-start-column="5" selection-end-line="374" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/move/handler/ReqMoveWalkHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/MessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/doc/config/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/fight/handler/ResFightUseSkillHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.1.Final/netty-all-4.1.1.Final-sources.jar!/io/netty/handler/codec/ByteToMessageDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="149" column="37" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.1.Final/netty-all-4.1.1.Final-sources.jar!/io/netty/handler/codec/CodecUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/rt.jar!/sun/nio/ch/KQueueArrayWrapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="145" column="43" selection-start-line="145" selection-start-column="43" selection-end-line="145" selection-end-column="43" />
+        <state relative-caret-position="316">
+          <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/doc/modules/login.html">
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/LoginMessageHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="1113" column="21" selection-start-line="1113" selection-start-column="21" selection-end-line="1113" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/doc/modules/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/api/global.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.1.Final/netty-all-4.1.1.Final-sources.jar!/io/netty/channel/EventLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/LogicHandlerGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/util/concurrent/Executor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.1.Final/netty-all-4.1.1.Final-sources.jar!/io/netty/channel/DefaultChannelId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="186" column="29" selection-start-line="186" selection-start-column="29" selection-end-line="186" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.1.Final/netty-all-4.1.1.Final-sources.jar!/io/netty/channel/ChannelId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.1.Final/netty-all-4.1.1.Final-sources.jar!/io/netty/channel/Channel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/MessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/executor/Executors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/executor/Executors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/Server.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="53" column="66" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
+        <state relative-caret-position="90">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/NetUtil.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/MessageHandler.java">
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/event/EventBus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="103" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/message/MessageHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="376">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/LogicMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/handler/ReqLoginLoginHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ClientHandlerGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ClientMessageGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="92" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/LogicMessageGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/Adaptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/login/handler/ResLoginLoginHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/api/modules.xml">
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/guice/PostConstructModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="465">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/RoomMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/share/api/login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/Encoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/proto/message/global.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/proto/message/LogicClient.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/proto/message/SceneClient.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.1.Final/netty-all-4.1.1.Final-sources.jar!/io/netty/handler/codec/MessageToByteEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.1.Final/netty-all-4.1.1.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9225">
-          <caret line="730" column="42" selection-start-line="730" selection-start-column="42" selection-end-line="730" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/Decoder.class">
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/MessageHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/RoleRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/RoomService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomExitHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="33" column="62" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomEnterHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/login/handler/ResLoginLoginHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/role/handler/ResRoleCreateRoleHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomUpdateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomAllHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/RoleRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ResRoomEnterHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanStartHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/MyCatanTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/RoleCatan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanMapShow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/role/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/TableMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ResRoomExitHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableUpdateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="92" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableRemoveHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableAddHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/Global.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="4893" column="26" selection-start-line="4893" selection-start-column="26" selection-end-line="4893" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/handler/ReqTableCreateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ResTableReadyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/message/MessageHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/RoleTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/api/table.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/handler/ReqTableReadyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ResTableCreateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ResTableJoinHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/account/LoginEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/account/RoleLoginEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/login/handler/ReqLoginLoginHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="62" column="44" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/role/handler/ReqRoleCreateRoleHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/RoomService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>robot</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: cglib:cglib-nodep:2.2.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

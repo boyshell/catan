@@ -2,19 +2,32 @@ package org.shell.mmo.sample.config.proto;
 
 // 配置集合
 message ContainerGroup {
-    repeated Csample sampleContainer = 1; // 示例配置文件
+    repeated CcatanMap catanMapContainer = 1; // 卡坦岛地图
 }
 
-// 示例配置文件
-message Csample {
-    required int32 id = 1; // 唯一id,名字可变更,第一列必须保证唯一
-    required string name = 2; // 字符串示例
-    required Ddata data = 3; // 单个引用数据示例
-    repeated Ddata list = 4; // 列表示例
-    repeated Ddata map = 5; // map示例
+// 卡坦岛地图
+message CcatanMap {
+    required int32 id = 1; // 地图id
+    required string name = 2; // 地图名称
+    required int32 min = 3; // 最小参与人数
+    required int32 max = 4; // 最大参与人数
+    repeated DcatanGrid grid = 5; // 格子列表
+    repeated int32 number = 6; // 数字列表
+    required int32 brick = 7; // 砖头格子数量
+    required int32 lumber = 8; // 木材格子数量
+    required int32 wool = 9; // 羊毛格子数量
+    required int32 gain = 10; // 小麦格子数量
+    required int32 ore = 11; // 煤矿格子数量
+    required int32 brickPort = 12; // 砖头港口数量
+    required int32 lumberPort = 13; // 木材港口数量
+    required int32 woolPort = 14; // 羊毛港口数量
+    required int32 gainPort = 15; // 小麦港口数量
+    required int32 orePort = 16; // 煤矿港口数量
+    required int32 bankPort = 17; // 3比1港口
 }
-// 示例结构
-message Ddata {
-    required int32 id = 1; // 唯一id,名字可变更,第一列必须保证唯一
-    required string name = 2; // 字符串示例
+// 卡坦岛格子,边朝下,非顶点朝下
+message DcatanGrid {
+    required int32 id = 1; // 格子id
+    required int32 x = 2; // 横坐标,屏幕中心点为0,横向邻接格子坐标变更3,右加左减
+    required int32 y = 3; // 纵坐标,屏幕中心点为0,纵向临界变更6,横向邻接变更3,上加下减
 }
