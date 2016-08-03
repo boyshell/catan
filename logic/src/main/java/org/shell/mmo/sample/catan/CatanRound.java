@@ -93,7 +93,7 @@ public abstract class CatanRound {
                         }
                     }
                     catanService.buildRoad(catan, role, edge, true);
-                    CatanMap.CatanPoint dst = point == edge.point1 ? edge.point2 : edge.point2;
+                    CatanMap.CatanPoint dst = point == edge.point1 ? edge.point2 : edge.point1;
 
                     LogicClient.ResCatanSet.Builder ret = LogicClient.ResCatanSet.newBuilder()
                             .setCountry(Global.Position.newBuilder().setX(point.x).setY(point.y))

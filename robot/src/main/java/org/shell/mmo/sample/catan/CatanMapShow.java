@@ -1,22 +1,23 @@
 package org.shell.mmo.sample.catan;
 
 import com.google.common.base.Preconditions;
-import com.shell.mmo.utils.ExcelUtil;
-import org.apache.commons.lang3.tuple.Pair;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.shell.mmo.sample.config.ConfigGroup;
+import org.shell.mmo.sample.message.proto.Global;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.File;
-import java.util.Map;
 
 /**
  * Created by zhangxiangxi on 16/7/29.
  */
 public class CatanMapShow {
+    private static MyFrame frame;
+
     public static void show(CatanMap catanMap) {
-        new MyFrame(catanMap);
+        frame = new MyFrame(catanMap);
+    }
+
+    public static void update() {
+        frame.repaint();
     }
 
     public static class MyFrame extends JFrame {
@@ -61,22 +62,40 @@ public class CatanMapShow {
                 int cX = (srcX + dstX) / 2;
                 int cY = (srcY + dstY) / 2;
 
+                Color color = catanMap.getColores().get(edge.getOwner());
+                if (color != null) {
+                    g.setColor(color);
+                }
                 g.drawLine(srcX, srcY, dstX, dstY);
-                String str = edge.getGrids().size() + ":" + (edge.getType() == null ? "" : edge.getType().toString());
+                g.setColor(Color.black);
 
-                g.setColor(Color.RED);
-                g.drawString(str, cX - 50, cY);
-                g.setColor(Color.BLACK);
+                if (edge.getType() != null) {
+                    g.drawString(toString(edge.getType()), cX - 30, cY);
+                }
+
             }
 
             // 绘制点(资源)
             for (CatanMap.CatanPoint point : catanMap.getPoints().values()) {
+                if (point.getType() == null) {
+                    continue;
+                }
+                Color color = catanMap.getColores().get(point.getOwner());
+                g.setColor(color);
                 int srcX = (short) (mapX + (point.getX() * xv));
                 int srcY = (short) (mapY + (point.getY() * yv));
-
-                g.setColor(Color.GREEN);
-                g.drawString(point.getResources() + "", srcX, srcY);
+                if (point.getType() == CatanMap.CatanPoint.Type.CITY) {
+                    g.fillRect(srcX - 5, srcY - 5, 10, 10);
+                } else {
+                    g.drawRect(srcX - 5, srcY - 5, 10, 10);
+                }
                 g.setColor(Color.BLACK);
+//                int srcX = (short) (mapX + (point.getX() * xv));
+//                int srcY = (short) (mapY + (point.getY() * yv));
+//
+//                g.setColor(Color.GREEN);
+//                g.drawString(point.getResources() + "", srcX, srcY);
+//                g.setColor(Color.BLACK);
             }
 
             // 绘制格子(资源,数字)
@@ -85,13 +104,54 @@ public class CatanMapShow {
                 int y = (int) (mapY + grid.getY() * yv);
                 Preconditions.checkArgument((grid.getType() == null && grid.getNumber() == 0)
                         || (grid.getType() != null && grid.getNumber() != 0));
+                // 绘制强盗
+                if (grid == catanMap.getRobber()) {
+                    g.setColor(Color.GRAY);
+                    g.fillRect(x - 10, y - 10, 20, 20);
+                    g.setColor(Color.BLACK);
+                }
+
                 if (grid.getType() != null) {
-                    String str = grid.getType().toString() + "," + grid.getNumber();
+                    String str = toString(grid.getType()) + " " + grid.getNumber();
                     g.setColor(Color.BLUE);
-                    g.drawString(str, x - 50, y);
+                    g.drawString(str, x - 30, y);
                     g.setColor(Color.BLACK);
                 }
             }
+        }
+
+        private String toString(Global.CatanResourceType type) {
+            switch (type) {
+                case RESOURCE_LUMBER:
+                    return "木头";
+                case RESOURCE_BRICK:
+                    return "砖头";
+                case RESOURCE_WOOL:
+                    return "羊毛";
+                case RESOURCE_GAIN:
+                    return "粮食";
+                case RESOURCE_ORE:
+                    return "煤矿";
+            }
+            return null;
+        }
+
+        private String toString(Global.CatanPortType type) {
+            switch (type) {
+                case PORT_LUMBER:
+                    return "木头港口";
+                case PORT_BRICK:
+                    return "砖头港口";
+                case PORT_WOOL:
+                    return "羊毛港口";
+                case PORT_GAIN:
+                    return "粮食港口";
+                case PORT_ORE:
+                    return "煤矿港口";
+                case PORT_BANK:
+                    return "3比1港口";
+            }
+            return null;
         }
     }
 }

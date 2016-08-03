@@ -8,7 +8,7 @@ import org.shell.mmo.sample.message.proto.LogicClient;
 public class ReqCatanStartHandler extends org.shell.mmo.sample.catan.CatanMessageHandler<LogicClient.ReqCatanStart> {
     @Override
     protected void execute(LogicClient.ReqCatanStart message) {
-        CatanMap map = new CatanMap(message.getMap());
+        CatanMap map = new CatanMap(message.getMap(), account.getRole().getTable());
         account.getRole().getTable().setMap(map);
         CatanMapShow.show(map);
     }

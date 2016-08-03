@@ -95,8 +95,10 @@ public class CatanMap {
             }
         }
         // 放置强盗
-        robber = new CatanRobber();
-        robber.grid = allGrids.get(allGrids.size() - 1);
+        grids.values().stream().filter(grid -> grid.number == 0).forEach(grid -> {
+            robber = new CatanRobber();
+            robber.grid = grid;
+        });
         // 放置港口
         List<Global.CatanPortType> ports = new ArrayList<>();
         ports.addAll(ports(Global.CatanPortType.PORT_BRICK, config.getBrickPort()));

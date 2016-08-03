@@ -4,8 +4,11 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Table;
 import org.shell.mmo.sample.message.proto.Global;
+import org.shell.mmo.sample.table.RoleTable;
 
+import java.awt.*;
 import java.util.*;
+import java.util.List;
 
 /**
  * Created by zhangxiangxi on 16/7/29.
@@ -14,8 +17,21 @@ public class CatanMap {
     private Table<Integer, Integer, CatanGrid> grids = HashBasedTable.create();
     private Table<Integer, Integer, CatanPoint> points = HashBasedTable.create();
     private Map<CatanEdge.Key, CatanEdge> edges = new HashMap<>();
+    private Map<Long, Color> colores = new HashMap<>();
+    private CatanGrid robber; // TODO
 
-    public CatanMap(Global.CatanMap map) {
+    public CatanMap(Global.CatanMap map, RoleTable table) {
+        // 设置颜色
+        List<Color> c = new ArrayList<>();
+        c.add(Color.YELLOW);
+        c.add(Color.BLUE);
+        c.add(Color.RED);
+        c.add(Color.GREEN);
+
+        for (long id : table.getMasters().keySet()) {
+            colores.put(id, c.remove(0));
+        }
+
         for (Global.CatanGrid tmp : map.getGridList()) {
             CatanGrid grid = new CatanGrid(tmp.getPosition().getX(), tmp.getPosition().getY(), tmp.hasType() ? tmp.getType() : null);
             grid.number = tmp.getNumber();
@@ -29,7 +45,33 @@ public class CatanMap {
             CatanEdge edge = edges.get(CatanEdge.key(port.getPosition1(), port.getPosition2()));
             edge.type = port.getType();
         }
-        // TODO 城市,村庄,道路,强盗
+
+        robber = grids.get(map.getRobber().getX(), map.getRobber().getY());
+
+        // 道路
+        for (Global.CatanRoad r : map.getRoadList()) {
+            setRoad(r.getPoint1().getX(), r.getPoint1().getY(), r.getPoint2().getX(), r.getPoint2().getY(), r.getId());
+        }
+        // 村庄
+        for (Global.CatanCountry country : map.getCountryList()) {
+            setCountry(country.getPoint().getX(), country.getPoint().getY(), country.getId());
+        }
+        // 城市
+        for (Global.CatanCity city : map.getCityList()) {
+            setCity(city.getPoint().getX(), city.getPoint().getY(), city.getId());
+        }
+    }
+
+    public CatanGrid getRobber() {
+        return robber;
+    }
+
+    public void setRobber(CatanGrid robber) {
+        this.robber = robber;
+    }
+
+    public Map<Long, Color> getColores() {
+        return colores;
     }
 
     public Map<CatanEdge.Key, CatanEdge> getEdges() {
@@ -138,15 +180,51 @@ public class CatanMap {
         return list;
     }
 
+    public void setCountry(int x, int y, long id) {
+        CatanPoint point = points.get(x, y);
+        point.setOwner(id);
+        point.setType(CatanPoint.Type.COUNTRY);
+    }
+
+    public void setCity(int x, int y, long id) {
+        CatanPoint point = points.get(x, y);
+        point.setOwner(id);
+        point.setType(CatanPoint.Type.CITY);
+    }
+
+    public void setRoad(int x1, int y1, int x2, int y2, long id) {
+        System.err.println("x1:" + x1 + ",y1:" + y1 + ",x2:" + x2 + ",y2:" + y2);
+        CatanEdge edge = edges.get(new CatanEdge.Key(x1, y1, x2, y2));
+        edge.setOwner(id);
+    }
+
     public static class CatanPoint {
         private final int x;
         private final int y;
         private int resources;
         private final Set<CatanEdge> edges = new HashSet<>();
+        private long owner; // TODO
+        private Type type; // TODO
 
         public CatanPoint(int x, int y) {
             this.x = x;
             this.y = y;
+        }
+
+        public Type getType() {
+            return type;
+        }
+
+        public void setType(Type type) {
+            this.type = type;
+        }
+
+        public long getOwner() {
+            return owner;
+        }
+
+        public void setOwner(long owner) {
+            this.owner = owner;
         }
 
         public int getX() {
@@ -159,6 +237,11 @@ public class CatanMap {
 
         public int getResources() {
             return resources;
+        }
+
+        public static enum Type {
+            CITY,
+            COUNTRY
         }
     }
 
@@ -198,10 +281,19 @@ public class CatanMap {
         private final CatanPoint point2;
         private final Set<CatanGrid> grids = new HashSet<>();
         private Global.CatanPortType type;
+        private long owner; // TODO deal
 
         public CatanEdge(CatanPoint p1, CatanPoint p2) {
             this.point1 = p1;
             this.point2 = p2;
+        }
+
+        public long getOwner() {
+            return owner;
+        }
+
+        public void setOwner(long owner) {
+            this.owner = owner;
         }
 
         public CatanPoint getPoint1() {
