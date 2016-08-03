@@ -2,226 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3648fa52-07c9-48a5-b6d3-dfaf40a6b37b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/CatanMessageHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanAddTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanCountDownHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanDoneHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanRemoveTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanRoundCommonStartHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanRoundFoldStartHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanRoundInitStartHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanRoundStartHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanStartHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferRefuseToMeHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferToMeHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ReqCatanUpdateTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanBuildCityHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanBuildCountryHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanBuildDevelopmentCardHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanBuildRoadHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanCancelWatchTablesHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanCreateTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanExitTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanFoldHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanJoinTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanKnightCardHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanMonopolyCardHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanReadyHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanRichCardHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanRoadCardHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanRobHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanRoundCommonEndHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanRoundEndHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanSetHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanStartHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanThrowDiceHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeCancelHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeCounterOfferHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeCounterOfferRefuseHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeDealHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeOfferHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanTradeSystemHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/catan/handler/ResCatanWatchTablesHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/ConfigGroup.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/bean/CcatanMap.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/bean/Csample.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/bean/DcatanGrid.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/bean/Ddata.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/container/CcatanMapContainer.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/container/CsampleContainer.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/CcatanMap.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/ContainerGroup.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/Csample.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/DcatanGrid.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/Ddata.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/fight/handler/ReqFightShowDamageHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/fight/handler/ResFightUseSkillHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/login/LoginMessageHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/login/handler/ReqLoginReplaceHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/login/handler/ResLoginLoginHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/login/handler/ResLoginNetTestHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicHandlerGroup.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicMessageGroup.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanCity.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanCountry.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanGrid.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanMap.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanMaster.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanMasterResource.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanPort.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanPortType.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanResource.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanResourceType.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanRoad.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanScore.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanTableBrief.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Error.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/GameObjectType.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/GameRoom.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/GameTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/LeaderRole.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Module.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Platform.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Position.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanAddTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildCity.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildCountry.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildDevelopmentCard.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildRoad.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanCancelWatchTables.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanCountDown.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanCreateTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanDone.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanExitTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanFold.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanJoinTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanKnightCard.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanMonopolyCard.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanReady.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRemoveTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRichCard.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoadCard.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRob.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundCommonEnd.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundCommonStart.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundEnd.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundFoldStart.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundInitStart.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundStart.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanSet.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanStart.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanThrowDice.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeCancel.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeCounterOffer.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeCounterOfferRefuse.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeCounterOfferRefuseToMe.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeCounterOfferToMe.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeDeal.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeOffer.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanTradeSystem.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanUpdateTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanWatchTables.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqFightShowDamage.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqFightUseSkill.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqLoginLogin.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqLoginNetTest.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqLoginReplace.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqMoveWalk.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoleCreateRole.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomAddTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomAll.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomCancelWatchTables.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomCreateTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomEnter.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomExit.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomExitTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomJoinTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomReady.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomRemoveTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomUpdate.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomUpdateTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqRoomWatchTables.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableAdd.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableCreate.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableExit.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableJoin.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableReady.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableRemove.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqTableUpdate.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildCity.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildCountry.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildDevelopmentCard.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildRoad.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanCancelWatchTables.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanCreateTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanExitTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanFold.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanJoinTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanKnightCard.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanMonopolyCard.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanReady.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRichCard.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRoadCard.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRob.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRoundCommonEnd.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRoundEnd.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanSet.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanStart.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanThrowDice.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeCancel.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeCounterOffer.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeCounterOfferRefuse.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeDeal.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeOffer.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeSystem.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanWatchTables.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResFightUseSkill.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResLoginLogin.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResLoginNetTest.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResMoveWalk.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoleCreateRole.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomCancelWatchTables.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomCreateTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomEnter.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomExit.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomExitTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomJoinTable.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomReady.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResRoomWatchTables.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResTableCreate.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResTableExit.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResTableJoin.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResTableReady.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Room.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/RoomType.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Table.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/TableRole.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/move/handler/ResMoveWalkHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/role/RoleMessageHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/role/handler/ResRoleCreateRoleHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/RoomMessageHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ReqRoomAddTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ReqRoomAllHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ReqRoomRemoveTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ReqRoomUpdateHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ReqRoomUpdateTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomCancelWatchTablesHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomCreateTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomEnterHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomExitHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomExitTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomJoinTableHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomReadyHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/room/handler/ResRoomWatchTablesHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/TableMessageHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ReqTableAddHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ReqTableRemoveHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ReqTableUpdateHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ResTableCreateHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ResTableExitHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ResTableJoinHandler.as" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/table/handler/ResTableReadyHandler.as" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicMessageGroup.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicMessageGroup.as" />
     </list>
     <ignored path="mmo-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -326,8 +108,8 @@
       <file leaf-file-name="LogicMessageGroup.as" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicMessageGroup.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="80" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
+            <state relative-caret-position="690">
+              <caret line="133" column="46" selection-start-line="133" selection-start-column="46" selection-end-line="133" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -380,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/TableMessageHandler.java" />
         <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableAddHandler.java" />
         <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableUpdateHandler.java" />
         <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableRemoveHandler.java" />
@@ -431,6 +212,7 @@
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanRound.java" />
         <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/ClientMessageGroup.java" />
+        <option value="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicMessageGroup.as" />
       </list>
     </option>
   </component>
@@ -480,7 +262,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -571,8 +354,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1013,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1470216827477</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="as3消息">
+      <created>1470218878692</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1470218878692</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1079,7 +868,8 @@
     <MESSAGE value="逻辑完毕(编码)" />
     <MESSAGE value="积分部分" />
     <MESSAGE value="简单测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="简单测试" />
+    <MESSAGE value="as3消息" />
+    <option name="LAST_COMMIT_MESSAGE" value="as3消息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1440,6 +1230,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicMessageGroup.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="133" column="46" selection-start-line="133" selection-start-column="46" selection-end-line="133" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanSetHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1455,14 +1253,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/LogicMessageGroup.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="80" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
