@@ -26,25 +26,27 @@ public class ReqCatanRoadCardHandler extends org.shell.mmo.sample.catan.CatanMes
             return;
         }
         CatanMap.CatanEdge edge1 = catan.getMap().getEdges().get(new CatanMap.CatanEdge.Key(message.getSrc1().getX(), message.getSrc1().getY(), message.getDst1().getX(), message.getDst1().getY()));
-        if (edge1 == null || catanService.buildRoad(catan, role, edge1)) {
+        if (edge1 == null || catanService.buildRoad(catan, role, edge1, false)) {
             NetUtil.write(channel, error(Global.Error.CATAN_ILLEGAL_ROAD));
             return;
         }
         CatanMap.CatanEdge edge2 = catan.getMap().getEdges().get(new CatanMap.CatanEdge.Key(message.getSrc2().getX(), message.getSrc2().getY(), message.getDst2().getX(), message.getDst2().getY()));
-        if (edge2 == null || catanService.buildRoad(catan, role, edge2)) {
+        if (edge2 == null || catanService.buildRoad(catan, role, edge2, true)) {
             // 回滚1
             edge1.setOwner(0);
             NetUtil.write(channel, error(Global.Error.CATAN_ILLEGAL_ROAD));
             return;
         }
 
-        catanService.payCard(role, Global.CatanCardType.CARD_ROAD);
+        catanService.payCard(catan, role, Global.CatanCardType.CARD_ROAD);
         catanService.write(catan, LogicClient.ResCatanRoadCard.newBuilder()
                 .setId(account.getId())
                 .setSrc1(message.getSrc1())
                 .setDst1(message.getDst1())
                 .setSrc2(message.getSrc2())
                 .setDst2(message.getDst2()));
+
+        catanService.tryWin(table, catan, account);
     }
 
     @Override

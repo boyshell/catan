@@ -136,6 +136,76 @@ package org.shell.mmo.sample.config.proto {
 		/**
 		 *  @private
 		 */
+		public static const BRICKMAX:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.config.proto.CcatanMap.brickMax", "brickMax", (18 << 3) | com.netease.protobuf.WireType.VARINT);
+
+		public var brickMax:int;
+
+		/**
+		 *  @private
+		 */
+		public static const LUMBERMAX:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.config.proto.CcatanMap.lumberMax", "lumberMax", (19 << 3) | com.netease.protobuf.WireType.VARINT);
+
+		public var lumberMax:int;
+
+		/**
+		 *  @private
+		 */
+		public static const WOOLMAX:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.config.proto.CcatanMap.woolMax", "woolMax", (20 << 3) | com.netease.protobuf.WireType.VARINT);
+
+		public var woolMax:int;
+
+		/**
+		 *  @private
+		 */
+		public static const GAINMAX:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.config.proto.CcatanMap.gainMax", "gainMax", (21 << 3) | com.netease.protobuf.WireType.VARINT);
+
+		public var gainMax:int;
+
+		/**
+		 *  @private
+		 */
+		public static const OREMAX:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.config.proto.CcatanMap.oreMax", "oreMax", (22 << 3) | com.netease.protobuf.WireType.VARINT);
+
+		public var oreMax:int;
+
+		/**
+		 *  @private
+		 */
+		public static const KNIGHTMAX:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.config.proto.CcatanMap.knightMax", "knightMax", (23 << 3) | com.netease.protobuf.WireType.VARINT);
+
+		public var knightMax:int;
+
+		/**
+		 *  @private
+		 */
+		public static const MONOPOLYMAX:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.config.proto.CcatanMap.monopolyMax", "monopolyMax", (24 << 3) | com.netease.protobuf.WireType.VARINT);
+
+		public var monopolyMax:int;
+
+		/**
+		 *  @private
+		 */
+		public static const RICHMAX:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.config.proto.CcatanMap.richMax", "richMax", (25 << 3) | com.netease.protobuf.WireType.VARINT);
+
+		public var richMax:int;
+
+		/**
+		 *  @private
+		 */
+		public static const ROADMAX:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.config.proto.CcatanMap.roadMax", "roadMax", (26 << 3) | com.netease.protobuf.WireType.VARINT);
+
+		public var roadMax:int;
+
+		/**
+		 *  @private
+		 */
+		public static const POINTMAX:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.config.proto.CcatanMap.pointMax", "pointMax", (27 << 3) | com.netease.protobuf.WireType.VARINT);
+
+		public var pointMax:int;
+
+		/**
+		 *  @private
+		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
 			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
 			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.id);
@@ -175,6 +245,26 @@ package org.shell.mmo.sample.config.proto {
 			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.orePort);
 			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 17);
 			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.bankPort);
+			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 18);
+			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.brickMax);
+			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 19);
+			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.lumberMax);
+			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 20);
+			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.woolMax);
+			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 21);
+			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.gainMax);
+			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 22);
+			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.oreMax);
+			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 23);
+			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.knightMax);
+			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 24);
+			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.monopolyMax);
+			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 25);
+			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.richMax);
+			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 26);
+			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.roadMax);
+			com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 27);
+			com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, this.pointMax);
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
 			}
@@ -199,6 +289,16 @@ package org.shell.mmo.sample.config.proto {
 			var gainPort$count:uint = 0;
 			var orePort$count:uint = 0;
 			var bankPort$count:uint = 0;
+			var brickMax$count:uint = 0;
+			var lumberMax$count:uint = 0;
+			var woolMax$count:uint = 0;
+			var gainMax$count:uint = 0;
+			var oreMax$count:uint = 0;
+			var knightMax$count:uint = 0;
+			var monopolyMax$count:uint = 0;
+			var richMax$count:uint = 0;
+			var roadMax$count:uint = 0;
+			var pointMax$count:uint = 0;
 			while (input.bytesAvailable > bytesAfterSlice) {
 				var tag:uint = com.netease.protobuf.ReadUtils.read_TYPE_UINT32(input);
 				switch (tag >> 3) {
@@ -316,6 +416,76 @@ package org.shell.mmo.sample.config.proto {
 					}
 					++bankPort$count;
 					this.bankPort = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					break;
+				case 18:
+					if (brickMax$count != 0) {
+						throw new flash.errors.IOError('Bad data format: CcatanMap.brickMax cannot be set twice.');
+					}
+					++brickMax$count;
+					this.brickMax = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					break;
+				case 19:
+					if (lumberMax$count != 0) {
+						throw new flash.errors.IOError('Bad data format: CcatanMap.lumberMax cannot be set twice.');
+					}
+					++lumberMax$count;
+					this.lumberMax = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					break;
+				case 20:
+					if (woolMax$count != 0) {
+						throw new flash.errors.IOError('Bad data format: CcatanMap.woolMax cannot be set twice.');
+					}
+					++woolMax$count;
+					this.woolMax = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					break;
+				case 21:
+					if (gainMax$count != 0) {
+						throw new flash.errors.IOError('Bad data format: CcatanMap.gainMax cannot be set twice.');
+					}
+					++gainMax$count;
+					this.gainMax = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					break;
+				case 22:
+					if (oreMax$count != 0) {
+						throw new flash.errors.IOError('Bad data format: CcatanMap.oreMax cannot be set twice.');
+					}
+					++oreMax$count;
+					this.oreMax = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					break;
+				case 23:
+					if (knightMax$count != 0) {
+						throw new flash.errors.IOError('Bad data format: CcatanMap.knightMax cannot be set twice.');
+					}
+					++knightMax$count;
+					this.knightMax = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					break;
+				case 24:
+					if (monopolyMax$count != 0) {
+						throw new flash.errors.IOError('Bad data format: CcatanMap.monopolyMax cannot be set twice.');
+					}
+					++monopolyMax$count;
+					this.monopolyMax = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					break;
+				case 25:
+					if (richMax$count != 0) {
+						throw new flash.errors.IOError('Bad data format: CcatanMap.richMax cannot be set twice.');
+					}
+					++richMax$count;
+					this.richMax = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					break;
+				case 26:
+					if (roadMax$count != 0) {
+						throw new flash.errors.IOError('Bad data format: CcatanMap.roadMax cannot be set twice.');
+					}
+					++roadMax$count;
+					this.roadMax = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					break;
+				case 27:
+					if (pointMax$count != 0) {
+						throw new flash.errors.IOError('Bad data format: CcatanMap.pointMax cannot be set twice.');
+					}
+					++pointMax$count;
+					this.pointMax = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
 					break;
 				default:
 					super.readUnknown(input, tag);

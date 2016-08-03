@@ -30,16 +30,16 @@ public class ReqCatanMonopolyCardHandler extends org.shell.mmo.sample.catan.Cata
             if (tmp == role) {
                 continue;
             }
-            Global.CatanResource.Builder resource = catanService.payAllResource(tmp, message.getType());
+            Global.CatanResource.Builder resource = catanService.subAllResource(tmp, message.getType());
             if (resource != null) {
                 count += resource.getNum();
                 ret.addLose(Global.CatanMasterResource.newBuilder().setId(tmp.getId()).addResource(resource));
             }
         }
 
-        catanService.addResource(role, message.getType(), count);
+        role.addResource(message.getType(), count);
 
-        catanService.payCard(role, Global.CatanCardType.CARD_MONOPOLY);
+        catanService.payCard(catan, role, Global.CatanCardType.CARD_MONOPOLY);
         catanService.write(catan, ret);
     }
 

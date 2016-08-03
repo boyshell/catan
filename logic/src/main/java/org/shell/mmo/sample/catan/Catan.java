@@ -15,12 +15,19 @@ public class Catan {
     int pos = 0;
     CatanRound round;
     int dice;
+    CatanRole roadKing;
+    CatanRole knightKing;
+    final List<Global.CatanCardType> cards;
+    final int[] resource;
+    final int winScore = 10;
 
-    public Catan(CatanMap map, List<Long> initList, Map<Long, CatanRole> roles) {
+    public Catan(CatanMap map, List<Long> initList, Map<Long, CatanRole> roles, List<Global.CatanCardType> cards, int[] resource) {
         this.map = map;
         this.initList = initList;
         this.roles = roles;
         this.commonList = new ArrayList<>(initList.subList(0, initList.size() / 2));
+        this.cards = cards;
+        this.resource = resource;
     }
 
     public CatanMap getMap() {
@@ -51,7 +58,22 @@ public class Catan {
         return dice;
     }
 
+    public void addResource(Global.CatanResourceType type, int count) {
+        resource[type.ordinal()] += count;
+    }
+
+    public void subResource(Global.CatanResourceType type, int count) {
+        resource[type.ordinal()] -= count;
+    }
+
+    public int getResource(Global.CatanResourceType type) {
+        return resource[type.ordinal()];
+    }
+
     public static class CatanRole {
+        public final static int ROAD_MAX = 15;
+        public final static int COUNTRY_MAX = 5;
+        public final static int CITY_MAX = 4;
         final long id;
         final Set<CatanMap.CatanPoint> countries = new HashSet<>();
         final Set<CatanMap.CatanPoint> cities = new HashSet<>();
@@ -59,6 +81,10 @@ public class Catan {
         final Set<Global.CatanPortType> ports = new HashSet<>();
         final int[] resource = new int[Global.CatanResourceType.values().length];
         final int[] card = new int[Global.CatanCardType.values().length];
+        int knight;
+        int road;
+        int point;
+        int score;
 
         public int[] getResource() {
             return resource;
@@ -105,6 +131,10 @@ public class Catan {
         }
 
         public void addCard(Global.CatanCardType type, int count) {
+            if (type == Global.CatanCardType.CARD_POINT) {
+                ++point;
+                return;
+            }
             card[type.ordinal()] -= count;
         }
     }

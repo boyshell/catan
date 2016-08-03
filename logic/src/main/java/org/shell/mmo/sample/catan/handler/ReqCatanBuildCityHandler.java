@@ -29,8 +29,10 @@ public class ReqCatanBuildCityHandler extends org.shell.mmo.sample.catan.CatanMe
             NetUtil.write(channel, error(Global.Error.CATAN_ILLEGAL_CITY));
             return ;
         }
-        catanService.payAllResource(role, CatanMap.BuildingType.CITY, 1);
+        catanService.payResource(catan, role, CatanMap.BuildingType.CITY, 1);
         catanService.write(catan, LogicClient.ResCatanBuildCity.newBuilder().setId(account.getId()).setCity(message.getCity()));
+
+        catanService.tryWin(table, catan, account);
     }
 
     @Override

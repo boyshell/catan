@@ -24,6 +24,16 @@ public class CcatanMap {
     private final Integer gainPort; // 小麦港口数量
     private final Integer orePort; // 煤矿港口数量
     private final Integer bankPort; // 3比1港口
+    private final Integer brickMax; // 砖头上限
+    private final Integer lumberMax; // 木材上限
+    private final Integer woolMax; // 羊毛上限
+    private final Integer gainMax; // 小麦上限
+    private final Integer oreMax; // 煤矿上限
+    private final Integer knightMax; // 骑士卡上限
+    private final Integer monopolyMax; // 垄断卡上限
+    private final Integer richMax; // 丰收卡上限
+    private final Integer roadMax; // 道路卡上限
+    private final Integer pointMax; // 胜利点上限
 
     public CcatanMap(Config.CcatanMap pBean) {
         this.id = pBean.getId();
@@ -50,6 +60,16 @@ public class CcatanMap {
         this.gainPort = pBean.getGainPort();
         this.orePort = pBean.getOrePort();
         this.bankPort = pBean.getBankPort();
+        this.brickMax = pBean.getBrickMax();
+        this.lumberMax = pBean.getLumberMax();
+        this.woolMax = pBean.getWoolMax();
+        this.gainMax = pBean.getGainMax();
+        this.oreMax = pBean.getOreMax();
+        this.knightMax = pBean.getKnightMax();
+        this.monopolyMax = pBean.getMonopolyMax();
+        this.richMax = pBean.getRichMax();
+        this.roadMax = pBean.getRoadMax();
+        this.pointMax = pBean.getPointMax();
     }
 
     public static java.util.List<Config.CcatanMap> createBuilders(org.apache.poi.ss.usermodel.Sheet sheet, com.google.common.collect.Table<String, Object, com.google.protobuf.MessageLite> type2key2data) {
@@ -79,6 +99,16 @@ public class CcatanMap {
             builder.setGainPort(Integer.parseInt(data.getColumns().get("gainPort").get(i)));
             builder.setOrePort(Integer.parseInt(data.getColumns().get("orePort").get(i)));
             builder.setBankPort(Integer.parseInt(data.getColumns().get("bankPort").get(i)));
+            builder.setBrickMax(Integer.parseInt(data.getColumns().get("brickMax").get(i)));
+            builder.setLumberMax(Integer.parseInt(data.getColumns().get("lumberMax").get(i)));
+            builder.setWoolMax(Integer.parseInt(data.getColumns().get("woolMax").get(i)));
+            builder.setGainMax(Integer.parseInt(data.getColumns().get("gainMax").get(i)));
+            builder.setOreMax(Integer.parseInt(data.getColumns().get("oreMax").get(i)));
+            builder.setKnightMax(Integer.parseInt(data.getColumns().get("knightMax").get(i)));
+            builder.setMonopolyMax(Integer.parseInt(data.getColumns().get("monopolyMax").get(i)));
+            builder.setRichMax(Integer.parseInt(data.getColumns().get("richMax").get(i)));
+            builder.setRoadMax(Integer.parseInt(data.getColumns().get("roadMax").get(i)));
+            builder.setPointMax(Integer.parseInt(data.getColumns().get("pointMax").get(i)));
             list.add(builder.build());
         }
         return list;
@@ -201,6 +231,76 @@ public class CcatanMap {
      */
     public Integer getBankPort() {
         return this.bankPort;
+    }
+
+    /**
+     * 砖头上限
+     */
+    public Integer getBrickMax() {
+        return this.brickMax;
+    }
+
+    /**
+     * 木材上限
+     */
+    public Integer getLumberMax() {
+        return this.lumberMax;
+    }
+
+    /**
+     * 羊毛上限
+     */
+    public Integer getWoolMax() {
+        return this.woolMax;
+    }
+
+    /**
+     * 小麦上限
+     */
+    public Integer getGainMax() {
+        return this.gainMax;
+    }
+
+    /**
+     * 煤矿上限
+     */
+    public Integer getOreMax() {
+        return this.oreMax;
+    }
+
+    /**
+     * 骑士卡上限
+     */
+    public Integer getKnightMax() {
+        return this.knightMax;
+    }
+
+    /**
+     * 垄断卡上限
+     */
+    public Integer getMonopolyMax() {
+        return this.monopolyMax;
+    }
+
+    /**
+     * 丰收卡上限
+     */
+    public Integer getRichMax() {
+        return this.richMax;
+    }
+
+    /**
+     * 道路卡上限
+     */
+    public Integer getRoadMax() {
+        return this.roadMax;
+    }
+
+    /**
+     * 胜利点上限
+     */
+    public Integer getPointMax() {
+        return this.pointMax;
     }
 
 }

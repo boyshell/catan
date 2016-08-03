@@ -48,12 +48,11 @@ public class ReqCatanSetHandler extends org.shell.mmo.sample.catan.CatanMessageH
         if (catan.getInitList().size() <= catan.getRoles().size()) {
             for (Global.CatanResourceType type : Global.CatanResourceType.values()) {
                 if (point.isSet(type)) {
-                    catanService.addResource(role, type, 1);
-                    ret.addResource(Global.CatanResource.newBuilder().setType(type).setNum(1));
+                    ret.addResource(catanService.produceResource(catan, role, type, 1));
                 }
             }
         }
-        catanService.buildRoad(catan, role, edge);
+        catanService.buildRoad(catan, role, edge, true);
         catanService.write(catan, ret);
         round.setAuto(false);
         round.end();

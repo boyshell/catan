@@ -1152,6 +1152,176 @@ public final class Config {
      * </pre>
      */
     int getBankPort();
+
+    /**
+     * <code>required int32 brickMax = 18;</code>
+     *
+     * <pre>
+     * 砖头上限
+     * </pre>
+     */
+    boolean hasBrickMax();
+    /**
+     * <code>required int32 brickMax = 18;</code>
+     *
+     * <pre>
+     * 砖头上限
+     * </pre>
+     */
+    int getBrickMax();
+
+    /**
+     * <code>required int32 lumberMax = 19;</code>
+     *
+     * <pre>
+     * 木材上限
+     * </pre>
+     */
+    boolean hasLumberMax();
+    /**
+     * <code>required int32 lumberMax = 19;</code>
+     *
+     * <pre>
+     * 木材上限
+     * </pre>
+     */
+    int getLumberMax();
+
+    /**
+     * <code>required int32 woolMax = 20;</code>
+     *
+     * <pre>
+     * 羊毛上限
+     * </pre>
+     */
+    boolean hasWoolMax();
+    /**
+     * <code>required int32 woolMax = 20;</code>
+     *
+     * <pre>
+     * 羊毛上限
+     * </pre>
+     */
+    int getWoolMax();
+
+    /**
+     * <code>required int32 gainMax = 21;</code>
+     *
+     * <pre>
+     * 小麦上限
+     * </pre>
+     */
+    boolean hasGainMax();
+    /**
+     * <code>required int32 gainMax = 21;</code>
+     *
+     * <pre>
+     * 小麦上限
+     * </pre>
+     */
+    int getGainMax();
+
+    /**
+     * <code>required int32 oreMax = 22;</code>
+     *
+     * <pre>
+     * 煤矿上限
+     * </pre>
+     */
+    boolean hasOreMax();
+    /**
+     * <code>required int32 oreMax = 22;</code>
+     *
+     * <pre>
+     * 煤矿上限
+     * </pre>
+     */
+    int getOreMax();
+
+    /**
+     * <code>required int32 knightMax = 23;</code>
+     *
+     * <pre>
+     * 骑士卡上限
+     * </pre>
+     */
+    boolean hasKnightMax();
+    /**
+     * <code>required int32 knightMax = 23;</code>
+     *
+     * <pre>
+     * 骑士卡上限
+     * </pre>
+     */
+    int getKnightMax();
+
+    /**
+     * <code>required int32 monopolyMax = 24;</code>
+     *
+     * <pre>
+     * 垄断卡上限
+     * </pre>
+     */
+    boolean hasMonopolyMax();
+    /**
+     * <code>required int32 monopolyMax = 24;</code>
+     *
+     * <pre>
+     * 垄断卡上限
+     * </pre>
+     */
+    int getMonopolyMax();
+
+    /**
+     * <code>required int32 richMax = 25;</code>
+     *
+     * <pre>
+     * 丰收卡上限
+     * </pre>
+     */
+    boolean hasRichMax();
+    /**
+     * <code>required int32 richMax = 25;</code>
+     *
+     * <pre>
+     * 丰收卡上限
+     * </pre>
+     */
+    int getRichMax();
+
+    /**
+     * <code>required int32 roadMax = 26;</code>
+     *
+     * <pre>
+     * 道路卡上限
+     * </pre>
+     */
+    boolean hasRoadMax();
+    /**
+     * <code>required int32 roadMax = 26;</code>
+     *
+     * <pre>
+     * 道路卡上限
+     * </pre>
+     */
+    int getRoadMax();
+
+    /**
+     * <code>required int32 pointMax = 27;</code>
+     *
+     * <pre>
+     * 胜利点上限
+     * </pre>
+     */
+    boolean hasPointMax();
+    /**
+     * <code>required int32 pointMax = 27;</code>
+     *
+     * <pre>
+     * 胜利点上限
+     * </pre>
+     */
+    int getPointMax();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.config.proto.CcatanMap}
@@ -1312,6 +1482,56 @@ public final class Config {
             case 136: {
               bitField0_ |= 0x00004000;
               bankPort_ = input.readInt32();
+              break;
+            }
+            case 144: {
+              bitField0_ |= 0x00008000;
+              brickMax_ = input.readInt32();
+              break;
+            }
+            case 152: {
+              bitField0_ |= 0x00010000;
+              lumberMax_ = input.readInt32();
+              break;
+            }
+            case 160: {
+              bitField0_ |= 0x00020000;
+              woolMax_ = input.readInt32();
+              break;
+            }
+            case 168: {
+              bitField0_ |= 0x00040000;
+              gainMax_ = input.readInt32();
+              break;
+            }
+            case 176: {
+              bitField0_ |= 0x00080000;
+              oreMax_ = input.readInt32();
+              break;
+            }
+            case 184: {
+              bitField0_ |= 0x00100000;
+              knightMax_ = input.readInt32();
+              break;
+            }
+            case 192: {
+              bitField0_ |= 0x00200000;
+              monopolyMax_ = input.readInt32();
+              break;
+            }
+            case 200: {
+              bitField0_ |= 0x00400000;
+              richMax_ = input.readInt32();
+              break;
+            }
+            case 208: {
+              bitField0_ |= 0x00800000;
+              roadMax_ = input.readInt32();
+              break;
+            }
+            case 216: {
+              bitField0_ |= 0x01000000;
+              pointMax_ = input.readInt32();
               break;
             }
           }
@@ -1825,6 +2045,236 @@ public final class Config {
       return bankPort_;
     }
 
+    public static final int BRICKMAX_FIELD_NUMBER = 18;
+    private int brickMax_;
+    /**
+     * <code>required int32 brickMax = 18;</code>
+     *
+     * <pre>
+     * 砖头上限
+     * </pre>
+     */
+    public boolean hasBrickMax() {
+      return ((bitField0_ & 0x00008000) == 0x00008000);
+    }
+    /**
+     * <code>required int32 brickMax = 18;</code>
+     *
+     * <pre>
+     * 砖头上限
+     * </pre>
+     */
+    public int getBrickMax() {
+      return brickMax_;
+    }
+
+    public static final int LUMBERMAX_FIELD_NUMBER = 19;
+    private int lumberMax_;
+    /**
+     * <code>required int32 lumberMax = 19;</code>
+     *
+     * <pre>
+     * 木材上限
+     * </pre>
+     */
+    public boolean hasLumberMax() {
+      return ((bitField0_ & 0x00010000) == 0x00010000);
+    }
+    /**
+     * <code>required int32 lumberMax = 19;</code>
+     *
+     * <pre>
+     * 木材上限
+     * </pre>
+     */
+    public int getLumberMax() {
+      return lumberMax_;
+    }
+
+    public static final int WOOLMAX_FIELD_NUMBER = 20;
+    private int woolMax_;
+    /**
+     * <code>required int32 woolMax = 20;</code>
+     *
+     * <pre>
+     * 羊毛上限
+     * </pre>
+     */
+    public boolean hasWoolMax() {
+      return ((bitField0_ & 0x00020000) == 0x00020000);
+    }
+    /**
+     * <code>required int32 woolMax = 20;</code>
+     *
+     * <pre>
+     * 羊毛上限
+     * </pre>
+     */
+    public int getWoolMax() {
+      return woolMax_;
+    }
+
+    public static final int GAINMAX_FIELD_NUMBER = 21;
+    private int gainMax_;
+    /**
+     * <code>required int32 gainMax = 21;</code>
+     *
+     * <pre>
+     * 小麦上限
+     * </pre>
+     */
+    public boolean hasGainMax() {
+      return ((bitField0_ & 0x00040000) == 0x00040000);
+    }
+    /**
+     * <code>required int32 gainMax = 21;</code>
+     *
+     * <pre>
+     * 小麦上限
+     * </pre>
+     */
+    public int getGainMax() {
+      return gainMax_;
+    }
+
+    public static final int OREMAX_FIELD_NUMBER = 22;
+    private int oreMax_;
+    /**
+     * <code>required int32 oreMax = 22;</code>
+     *
+     * <pre>
+     * 煤矿上限
+     * </pre>
+     */
+    public boolean hasOreMax() {
+      return ((bitField0_ & 0x00080000) == 0x00080000);
+    }
+    /**
+     * <code>required int32 oreMax = 22;</code>
+     *
+     * <pre>
+     * 煤矿上限
+     * </pre>
+     */
+    public int getOreMax() {
+      return oreMax_;
+    }
+
+    public static final int KNIGHTMAX_FIELD_NUMBER = 23;
+    private int knightMax_;
+    /**
+     * <code>required int32 knightMax = 23;</code>
+     *
+     * <pre>
+     * 骑士卡上限
+     * </pre>
+     */
+    public boolean hasKnightMax() {
+      return ((bitField0_ & 0x00100000) == 0x00100000);
+    }
+    /**
+     * <code>required int32 knightMax = 23;</code>
+     *
+     * <pre>
+     * 骑士卡上限
+     * </pre>
+     */
+    public int getKnightMax() {
+      return knightMax_;
+    }
+
+    public static final int MONOPOLYMAX_FIELD_NUMBER = 24;
+    private int monopolyMax_;
+    /**
+     * <code>required int32 monopolyMax = 24;</code>
+     *
+     * <pre>
+     * 垄断卡上限
+     * </pre>
+     */
+    public boolean hasMonopolyMax() {
+      return ((bitField0_ & 0x00200000) == 0x00200000);
+    }
+    /**
+     * <code>required int32 monopolyMax = 24;</code>
+     *
+     * <pre>
+     * 垄断卡上限
+     * </pre>
+     */
+    public int getMonopolyMax() {
+      return monopolyMax_;
+    }
+
+    public static final int RICHMAX_FIELD_NUMBER = 25;
+    private int richMax_;
+    /**
+     * <code>required int32 richMax = 25;</code>
+     *
+     * <pre>
+     * 丰收卡上限
+     * </pre>
+     */
+    public boolean hasRichMax() {
+      return ((bitField0_ & 0x00400000) == 0x00400000);
+    }
+    /**
+     * <code>required int32 richMax = 25;</code>
+     *
+     * <pre>
+     * 丰收卡上限
+     * </pre>
+     */
+    public int getRichMax() {
+      return richMax_;
+    }
+
+    public static final int ROADMAX_FIELD_NUMBER = 26;
+    private int roadMax_;
+    /**
+     * <code>required int32 roadMax = 26;</code>
+     *
+     * <pre>
+     * 道路卡上限
+     * </pre>
+     */
+    public boolean hasRoadMax() {
+      return ((bitField0_ & 0x00800000) == 0x00800000);
+    }
+    /**
+     * <code>required int32 roadMax = 26;</code>
+     *
+     * <pre>
+     * 道路卡上限
+     * </pre>
+     */
+    public int getRoadMax() {
+      return roadMax_;
+    }
+
+    public static final int POINTMAX_FIELD_NUMBER = 27;
+    private int pointMax_;
+    /**
+     * <code>required int32 pointMax = 27;</code>
+     *
+     * <pre>
+     * 胜利点上限
+     * </pre>
+     */
+    public boolean hasPointMax() {
+      return ((bitField0_ & 0x01000000) == 0x01000000);
+    }
+    /**
+     * <code>required int32 pointMax = 27;</code>
+     *
+     * <pre>
+     * 胜利点上限
+     * </pre>
+     */
+    public int getPointMax() {
+      return pointMax_;
+    }
+
     private void initFields() {
       id_ = 0;
       name_ = "";
@@ -1843,6 +2293,16 @@ public final class Config {
       gainPort_ = 0;
       orePort_ = 0;
       bankPort_ = 0;
+      brickMax_ = 0;
+      lumberMax_ = 0;
+      woolMax_ = 0;
+      gainMax_ = 0;
+      oreMax_ = 0;
+      knightMax_ = 0;
+      monopolyMax_ = 0;
+      richMax_ = 0;
+      roadMax_ = 0;
+      pointMax_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -1910,6 +2370,46 @@ public final class Config {
         memoizedIsInitialized = 0;
         return false;
       }
+      if (!hasBrickMax()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasLumberMax()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasWoolMax()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasGainMax()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasOreMax()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasKnightMax()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasMonopolyMax()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasRichMax()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasRoadMax()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasPointMax()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       for (int i = 0; i < getGridCount(); i++) {
         if (!getGrid(i).isInitialized()) {
           memoizedIsInitialized = 0;
@@ -1973,6 +2473,36 @@ public final class Config {
       }
       if (((bitField0_ & 0x00004000) == 0x00004000)) {
         output.writeInt32(17, bankPort_);
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        output.writeInt32(18, brickMax_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        output.writeInt32(19, lumberMax_);
+      }
+      if (((bitField0_ & 0x00020000) == 0x00020000)) {
+        output.writeInt32(20, woolMax_);
+      }
+      if (((bitField0_ & 0x00040000) == 0x00040000)) {
+        output.writeInt32(21, gainMax_);
+      }
+      if (((bitField0_ & 0x00080000) == 0x00080000)) {
+        output.writeInt32(22, oreMax_);
+      }
+      if (((bitField0_ & 0x00100000) == 0x00100000)) {
+        output.writeInt32(23, knightMax_);
+      }
+      if (((bitField0_ & 0x00200000) == 0x00200000)) {
+        output.writeInt32(24, monopolyMax_);
+      }
+      if (((bitField0_ & 0x00400000) == 0x00400000)) {
+        output.writeInt32(25, richMax_);
+      }
+      if (((bitField0_ & 0x00800000) == 0x00800000)) {
+        output.writeInt32(26, roadMax_);
+      }
+      if (((bitField0_ & 0x01000000) == 0x01000000)) {
+        output.writeInt32(27, pointMax_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -2055,6 +2585,46 @@ public final class Config {
       if (((bitField0_ & 0x00004000) == 0x00004000)) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(17, bankPort_);
+      }
+      if (((bitField0_ & 0x00008000) == 0x00008000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(18, brickMax_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(19, lumberMax_);
+      }
+      if (((bitField0_ & 0x00020000) == 0x00020000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(20, woolMax_);
+      }
+      if (((bitField0_ & 0x00040000) == 0x00040000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(21, gainMax_);
+      }
+      if (((bitField0_ & 0x00080000) == 0x00080000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(22, oreMax_);
+      }
+      if (((bitField0_ & 0x00100000) == 0x00100000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(23, knightMax_);
+      }
+      if (((bitField0_ & 0x00200000) == 0x00200000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(24, monopolyMax_);
+      }
+      if (((bitField0_ & 0x00400000) == 0x00400000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(25, richMax_);
+      }
+      if (((bitField0_ & 0x00800000) == 0x00800000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(26, roadMax_);
+      }
+      if (((bitField0_ & 0x01000000) == 0x01000000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(27, pointMax_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2216,6 +2786,26 @@ public final class Config {
         bitField0_ = (bitField0_ & ~0x00008000);
         bankPort_ = 0;
         bitField0_ = (bitField0_ & ~0x00010000);
+        brickMax_ = 0;
+        bitField0_ = (bitField0_ & ~0x00020000);
+        lumberMax_ = 0;
+        bitField0_ = (bitField0_ & ~0x00040000);
+        woolMax_ = 0;
+        bitField0_ = (bitField0_ & ~0x00080000);
+        gainMax_ = 0;
+        bitField0_ = (bitField0_ & ~0x00100000);
+        oreMax_ = 0;
+        bitField0_ = (bitField0_ & ~0x00200000);
+        knightMax_ = 0;
+        bitField0_ = (bitField0_ & ~0x00400000);
+        monopolyMax_ = 0;
+        bitField0_ = (bitField0_ & ~0x00800000);
+        richMax_ = 0;
+        bitField0_ = (bitField0_ & ~0x01000000);
+        roadMax_ = 0;
+        bitField0_ = (bitField0_ & ~0x02000000);
+        pointMax_ = 0;
+        bitField0_ = (bitField0_ & ~0x04000000);
         return this;
       }
 
@@ -2318,6 +2908,46 @@ public final class Config {
           to_bitField0_ |= 0x00004000;
         }
         result.bankPort_ = bankPort_;
+        if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
+          to_bitField0_ |= 0x00008000;
+        }
+        result.brickMax_ = brickMax_;
+        if (((from_bitField0_ & 0x00040000) == 0x00040000)) {
+          to_bitField0_ |= 0x00010000;
+        }
+        result.lumberMax_ = lumberMax_;
+        if (((from_bitField0_ & 0x00080000) == 0x00080000)) {
+          to_bitField0_ |= 0x00020000;
+        }
+        result.woolMax_ = woolMax_;
+        if (((from_bitField0_ & 0x00100000) == 0x00100000)) {
+          to_bitField0_ |= 0x00040000;
+        }
+        result.gainMax_ = gainMax_;
+        if (((from_bitField0_ & 0x00200000) == 0x00200000)) {
+          to_bitField0_ |= 0x00080000;
+        }
+        result.oreMax_ = oreMax_;
+        if (((from_bitField0_ & 0x00400000) == 0x00400000)) {
+          to_bitField0_ |= 0x00100000;
+        }
+        result.knightMax_ = knightMax_;
+        if (((from_bitField0_ & 0x00800000) == 0x00800000)) {
+          to_bitField0_ |= 0x00200000;
+        }
+        result.monopolyMax_ = monopolyMax_;
+        if (((from_bitField0_ & 0x01000000) == 0x01000000)) {
+          to_bitField0_ |= 0x00400000;
+        }
+        result.richMax_ = richMax_;
+        if (((from_bitField0_ & 0x02000000) == 0x02000000)) {
+          to_bitField0_ |= 0x00800000;
+        }
+        result.roadMax_ = roadMax_;
+        if (((from_bitField0_ & 0x04000000) == 0x04000000)) {
+          to_bitField0_ |= 0x01000000;
+        }
+        result.pointMax_ = pointMax_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -2417,6 +3047,36 @@ public final class Config {
         if (other.hasBankPort()) {
           setBankPort(other.getBankPort());
         }
+        if (other.hasBrickMax()) {
+          setBrickMax(other.getBrickMax());
+        }
+        if (other.hasLumberMax()) {
+          setLumberMax(other.getLumberMax());
+        }
+        if (other.hasWoolMax()) {
+          setWoolMax(other.getWoolMax());
+        }
+        if (other.hasGainMax()) {
+          setGainMax(other.getGainMax());
+        }
+        if (other.hasOreMax()) {
+          setOreMax(other.getOreMax());
+        }
+        if (other.hasKnightMax()) {
+          setKnightMax(other.getKnightMax());
+        }
+        if (other.hasMonopolyMax()) {
+          setMonopolyMax(other.getMonopolyMax());
+        }
+        if (other.hasRichMax()) {
+          setRichMax(other.getRichMax());
+        }
+        if (other.hasRoadMax()) {
+          setRoadMax(other.getRoadMax());
+        }
+        if (other.hasPointMax()) {
+          setPointMax(other.getPointMax());
+        }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
@@ -2479,6 +3139,46 @@ public final class Config {
           return false;
         }
         if (!hasBankPort()) {
+          
+          return false;
+        }
+        if (!hasBrickMax()) {
+          
+          return false;
+        }
+        if (!hasLumberMax()) {
+          
+          return false;
+        }
+        if (!hasWoolMax()) {
+          
+          return false;
+        }
+        if (!hasGainMax()) {
+          
+          return false;
+        }
+        if (!hasOreMax()) {
+          
+          return false;
+        }
+        if (!hasKnightMax()) {
+          
+          return false;
+        }
+        if (!hasMonopolyMax()) {
+          
+          return false;
+        }
+        if (!hasRichMax()) {
+          
+          return false;
+        }
+        if (!hasRoadMax()) {
+          
+          return false;
+        }
+        if (!hasPointMax()) {
           
           return false;
         }
@@ -3688,6 +4388,486 @@ public final class Config {
         return this;
       }
 
+      private int brickMax_ ;
+      /**
+       * <code>required int32 brickMax = 18;</code>
+       *
+       * <pre>
+       * 砖头上限
+       * </pre>
+       */
+      public boolean hasBrickMax() {
+        return ((bitField0_ & 0x00020000) == 0x00020000);
+      }
+      /**
+       * <code>required int32 brickMax = 18;</code>
+       *
+       * <pre>
+       * 砖头上限
+       * </pre>
+       */
+      public int getBrickMax() {
+        return brickMax_;
+      }
+      /**
+       * <code>required int32 brickMax = 18;</code>
+       *
+       * <pre>
+       * 砖头上限
+       * </pre>
+       */
+      public Builder setBrickMax(int value) {
+        bitField0_ |= 0x00020000;
+        brickMax_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 brickMax = 18;</code>
+       *
+       * <pre>
+       * 砖头上限
+       * </pre>
+       */
+      public Builder clearBrickMax() {
+        bitField0_ = (bitField0_ & ~0x00020000);
+        brickMax_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lumberMax_ ;
+      /**
+       * <code>required int32 lumberMax = 19;</code>
+       *
+       * <pre>
+       * 木材上限
+       * </pre>
+       */
+      public boolean hasLumberMax() {
+        return ((bitField0_ & 0x00040000) == 0x00040000);
+      }
+      /**
+       * <code>required int32 lumberMax = 19;</code>
+       *
+       * <pre>
+       * 木材上限
+       * </pre>
+       */
+      public int getLumberMax() {
+        return lumberMax_;
+      }
+      /**
+       * <code>required int32 lumberMax = 19;</code>
+       *
+       * <pre>
+       * 木材上限
+       * </pre>
+       */
+      public Builder setLumberMax(int value) {
+        bitField0_ |= 0x00040000;
+        lumberMax_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 lumberMax = 19;</code>
+       *
+       * <pre>
+       * 木材上限
+       * </pre>
+       */
+      public Builder clearLumberMax() {
+        bitField0_ = (bitField0_ & ~0x00040000);
+        lumberMax_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int woolMax_ ;
+      /**
+       * <code>required int32 woolMax = 20;</code>
+       *
+       * <pre>
+       * 羊毛上限
+       * </pre>
+       */
+      public boolean hasWoolMax() {
+        return ((bitField0_ & 0x00080000) == 0x00080000);
+      }
+      /**
+       * <code>required int32 woolMax = 20;</code>
+       *
+       * <pre>
+       * 羊毛上限
+       * </pre>
+       */
+      public int getWoolMax() {
+        return woolMax_;
+      }
+      /**
+       * <code>required int32 woolMax = 20;</code>
+       *
+       * <pre>
+       * 羊毛上限
+       * </pre>
+       */
+      public Builder setWoolMax(int value) {
+        bitField0_ |= 0x00080000;
+        woolMax_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 woolMax = 20;</code>
+       *
+       * <pre>
+       * 羊毛上限
+       * </pre>
+       */
+      public Builder clearWoolMax() {
+        bitField0_ = (bitField0_ & ~0x00080000);
+        woolMax_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gainMax_ ;
+      /**
+       * <code>required int32 gainMax = 21;</code>
+       *
+       * <pre>
+       * 小麦上限
+       * </pre>
+       */
+      public boolean hasGainMax() {
+        return ((bitField0_ & 0x00100000) == 0x00100000);
+      }
+      /**
+       * <code>required int32 gainMax = 21;</code>
+       *
+       * <pre>
+       * 小麦上限
+       * </pre>
+       */
+      public int getGainMax() {
+        return gainMax_;
+      }
+      /**
+       * <code>required int32 gainMax = 21;</code>
+       *
+       * <pre>
+       * 小麦上限
+       * </pre>
+       */
+      public Builder setGainMax(int value) {
+        bitField0_ |= 0x00100000;
+        gainMax_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 gainMax = 21;</code>
+       *
+       * <pre>
+       * 小麦上限
+       * </pre>
+       */
+      public Builder clearGainMax() {
+        bitField0_ = (bitField0_ & ~0x00100000);
+        gainMax_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int oreMax_ ;
+      /**
+       * <code>required int32 oreMax = 22;</code>
+       *
+       * <pre>
+       * 煤矿上限
+       * </pre>
+       */
+      public boolean hasOreMax() {
+        return ((bitField0_ & 0x00200000) == 0x00200000);
+      }
+      /**
+       * <code>required int32 oreMax = 22;</code>
+       *
+       * <pre>
+       * 煤矿上限
+       * </pre>
+       */
+      public int getOreMax() {
+        return oreMax_;
+      }
+      /**
+       * <code>required int32 oreMax = 22;</code>
+       *
+       * <pre>
+       * 煤矿上限
+       * </pre>
+       */
+      public Builder setOreMax(int value) {
+        bitField0_ |= 0x00200000;
+        oreMax_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 oreMax = 22;</code>
+       *
+       * <pre>
+       * 煤矿上限
+       * </pre>
+       */
+      public Builder clearOreMax() {
+        bitField0_ = (bitField0_ & ~0x00200000);
+        oreMax_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int knightMax_ ;
+      /**
+       * <code>required int32 knightMax = 23;</code>
+       *
+       * <pre>
+       * 骑士卡上限
+       * </pre>
+       */
+      public boolean hasKnightMax() {
+        return ((bitField0_ & 0x00400000) == 0x00400000);
+      }
+      /**
+       * <code>required int32 knightMax = 23;</code>
+       *
+       * <pre>
+       * 骑士卡上限
+       * </pre>
+       */
+      public int getKnightMax() {
+        return knightMax_;
+      }
+      /**
+       * <code>required int32 knightMax = 23;</code>
+       *
+       * <pre>
+       * 骑士卡上限
+       * </pre>
+       */
+      public Builder setKnightMax(int value) {
+        bitField0_ |= 0x00400000;
+        knightMax_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 knightMax = 23;</code>
+       *
+       * <pre>
+       * 骑士卡上限
+       * </pre>
+       */
+      public Builder clearKnightMax() {
+        bitField0_ = (bitField0_ & ~0x00400000);
+        knightMax_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int monopolyMax_ ;
+      /**
+       * <code>required int32 monopolyMax = 24;</code>
+       *
+       * <pre>
+       * 垄断卡上限
+       * </pre>
+       */
+      public boolean hasMonopolyMax() {
+        return ((bitField0_ & 0x00800000) == 0x00800000);
+      }
+      /**
+       * <code>required int32 monopolyMax = 24;</code>
+       *
+       * <pre>
+       * 垄断卡上限
+       * </pre>
+       */
+      public int getMonopolyMax() {
+        return monopolyMax_;
+      }
+      /**
+       * <code>required int32 monopolyMax = 24;</code>
+       *
+       * <pre>
+       * 垄断卡上限
+       * </pre>
+       */
+      public Builder setMonopolyMax(int value) {
+        bitField0_ |= 0x00800000;
+        monopolyMax_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 monopolyMax = 24;</code>
+       *
+       * <pre>
+       * 垄断卡上限
+       * </pre>
+       */
+      public Builder clearMonopolyMax() {
+        bitField0_ = (bitField0_ & ~0x00800000);
+        monopolyMax_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int richMax_ ;
+      /**
+       * <code>required int32 richMax = 25;</code>
+       *
+       * <pre>
+       * 丰收卡上限
+       * </pre>
+       */
+      public boolean hasRichMax() {
+        return ((bitField0_ & 0x01000000) == 0x01000000);
+      }
+      /**
+       * <code>required int32 richMax = 25;</code>
+       *
+       * <pre>
+       * 丰收卡上限
+       * </pre>
+       */
+      public int getRichMax() {
+        return richMax_;
+      }
+      /**
+       * <code>required int32 richMax = 25;</code>
+       *
+       * <pre>
+       * 丰收卡上限
+       * </pre>
+       */
+      public Builder setRichMax(int value) {
+        bitField0_ |= 0x01000000;
+        richMax_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 richMax = 25;</code>
+       *
+       * <pre>
+       * 丰收卡上限
+       * </pre>
+       */
+      public Builder clearRichMax() {
+        bitField0_ = (bitField0_ & ~0x01000000);
+        richMax_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int roadMax_ ;
+      /**
+       * <code>required int32 roadMax = 26;</code>
+       *
+       * <pre>
+       * 道路卡上限
+       * </pre>
+       */
+      public boolean hasRoadMax() {
+        return ((bitField0_ & 0x02000000) == 0x02000000);
+      }
+      /**
+       * <code>required int32 roadMax = 26;</code>
+       *
+       * <pre>
+       * 道路卡上限
+       * </pre>
+       */
+      public int getRoadMax() {
+        return roadMax_;
+      }
+      /**
+       * <code>required int32 roadMax = 26;</code>
+       *
+       * <pre>
+       * 道路卡上限
+       * </pre>
+       */
+      public Builder setRoadMax(int value) {
+        bitField0_ |= 0x02000000;
+        roadMax_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 roadMax = 26;</code>
+       *
+       * <pre>
+       * 道路卡上限
+       * </pre>
+       */
+      public Builder clearRoadMax() {
+        bitField0_ = (bitField0_ & ~0x02000000);
+        roadMax_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pointMax_ ;
+      /**
+       * <code>required int32 pointMax = 27;</code>
+       *
+       * <pre>
+       * 胜利点上限
+       * </pre>
+       */
+      public boolean hasPointMax() {
+        return ((bitField0_ & 0x04000000) == 0x04000000);
+      }
+      /**
+       * <code>required int32 pointMax = 27;</code>
+       *
+       * <pre>
+       * 胜利点上限
+       * </pre>
+       */
+      public int getPointMax() {
+        return pointMax_;
+      }
+      /**
+       * <code>required int32 pointMax = 27;</code>
+       *
+       * <pre>
+       * 胜利点上限
+       * </pre>
+       */
+      public Builder setPointMax(int value) {
+        bitField0_ |= 0x04000000;
+        pointMax_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>required int32 pointMax = 27;</code>
+       *
+       * <pre>
+       * 胜利点上限
+       * </pre>
+       */
+      public Builder clearPointMax() {
+        bitField0_ = (bitField0_ & ~0x04000000);
+        pointMax_ = 0;
+        onChanged();
+        return this;
+      }
+
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.config.proto.CcatanMap)
     }
 
@@ -4407,7 +5587,7 @@ public final class Config {
       "\n\014config.proto\022!org.shell.mmo.sample.con" +
       "fig.proto\"Y\n\016ContainerGroup\022G\n\021catanMapC" +
       "ontainer\030\001 \003(\0132,.org.shell.mmo.sample.co" +
-      "nfig.proto.CcatanMap\"\302\002\n\tCcatanMap\022\n\n\002id" +
+      "nfig.proto.CcatanMap\"\365\003\n\tCcatanMap\022\n\n\002id" +
       "\030\001 \002(\005\022\014\n\004name\030\002 \002(\t\022\013\n\003min\030\003 \002(\005\022\013\n\003max" +
       "\030\004 \002(\005\022;\n\004grid\030\005 \003(\0132-.org.shell.mmo.sam" +
       "ple.config.proto.DcatanGrid\022\016\n\006number\030\006 " +
@@ -4415,8 +5595,13 @@ public final class Config {
       "ol\030\t \002(\005\022\014\n\004gain\030\n \002(\005\022\013\n\003ore\030\013 \002(\005\022\021\n\tb" +
       "rickPort\030\014 \002(\005\022\022\n\nlumberPort\030\r \002(\005\022\020\n\010wo",
       "olPort\030\016 \002(\005\022\020\n\010gainPort\030\017 \002(\005\022\017\n\007orePor" +
-      "t\030\020 \002(\005\022\020\n\010bankPort\030\021 \002(\005\".\n\nDcatanGrid\022" +
-      "\n\n\002id\030\001 \002(\005\022\t\n\001x\030\002 \002(\005\022\t\n\001y\030\003 \002(\005"
+      "t\030\020 \002(\005\022\020\n\010bankPort\030\021 \002(\005\022\020\n\010brickMax\030\022 " +
+      "\002(\005\022\021\n\tlumberMax\030\023 \002(\005\022\017\n\007woolMax\030\024 \002(\005\022" +
+      "\017\n\007gainMax\030\025 \002(\005\022\016\n\006oreMax\030\026 \002(\005\022\021\n\tknig" +
+      "htMax\030\027 \002(\005\022\023\n\013monopolyMax\030\030 \002(\005\022\017\n\007rich" +
+      "Max\030\031 \002(\005\022\017\n\007roadMax\030\032 \002(\005\022\020\n\010pointMax\030\033" +
+      " \002(\005\".\n\nDcatanGrid\022\n\n\002id\030\001 \002(\005\022\t\n\001x\030\002 \002(" +
+      "\005\022\t\n\001y\030\003 \002(\005"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -4441,7 +5626,7 @@ public final class Config {
     internal_static_org_shell_mmo_sample_config_proto_CcatanMap_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_config_proto_CcatanMap_descriptor,
-        new java.lang.String[] { "Id", "Name", "Min", "Max", "Grid", "Number", "Brick", "Lumber", "Wool", "Gain", "Ore", "BrickPort", "LumberPort", "WoolPort", "GainPort", "OrePort", "BankPort", });
+        new java.lang.String[] { "Id", "Name", "Min", "Max", "Grid", "Number", "Brick", "Lumber", "Wool", "Gain", "Ore", "BrickPort", "LumberPort", "WoolPort", "GainPort", "OrePort", "BankPort", "BrickMax", "LumberMax", "WoolMax", "GainMax", "OreMax", "KnightMax", "MonopolyMax", "RichMax", "RoadMax", "PointMax", });
     internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_org_shell_mmo_sample_config_proto_DcatanGrid_fieldAccessorTable = new

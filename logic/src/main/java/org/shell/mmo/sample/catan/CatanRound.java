@@ -92,7 +92,7 @@ public abstract class CatanRound {
                             break;
                         }
                     }
-                    catanService.buildRoad(catan, role, edge);
+                    catanService.buildRoad(catan, role, edge, true);
                     CatanMap.CatanPoint dst = point == edge.point1 ? edge.point2 : edge.point2;
 
                     LogicClient.ResCatanSet.Builder ret = LogicClient.ResCatanSet.newBuilder()
@@ -102,8 +102,7 @@ public abstract class CatanRound {
                     if (catan.getInitList().size() <= catan.getRoles().size()) {
                         for (Global.CatanResourceType type : Global.CatanResourceType.values()) {
                             if (point.isSet(type)) {
-                                catanService.addResource(role, type, 1);
-                                ret.addResource(Global.CatanResource.newBuilder().setType(type).setNum(1));
+                                ret.addResource(catanService.produceResource(catan, role, type, 1));
                             }
                         }
                     }
@@ -176,12 +175,9 @@ public abstract class CatanRound {
                         } else {
                             continue;
                         }
-                        catanService.addResource(catan.getRoles().get(point.getOwner()), grid.getType(), count);
                         msg.addGain(Global.CatanMasterResource.newBuilder()
                                 .setId(point.getOwner())
-                                .addResource(Global.CatanResource.newBuilder()
-                                        .setType(grid.getType())
-                                        .setNum(count)));
+                                .addResource(catanService.produceResource(catan, catan.getRoles().get(point.getOwner()), grid.getType(), count)));
                     }
                 }
             }
@@ -227,7 +223,7 @@ public abstract class CatanRound {
                 }
                 list = RandomUtil.random(list);
                 list = list.subList(0, list.size() / 2);
-                catanService.fold(role, list);
+                catanService.fold(catan, role, list);
                 catanService.write(catan, LogicClient.ResCatanFold.newBuilder().setId(role.getId()).addAllLose(list));
             }
 

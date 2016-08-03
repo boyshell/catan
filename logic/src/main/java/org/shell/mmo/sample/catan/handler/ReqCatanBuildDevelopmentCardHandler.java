@@ -24,11 +24,17 @@ public class ReqCatanBuildDevelopmentCardHandler extends org.shell.mmo.sample.ca
             NetUtil.write(channel, error(Global.Error.CATAN_RESOURCE_NOT_ENOUGH));
             return;
         }
-        catanService.payAllResource(role, CatanMap.BuildingType.CARD, message.getCount());
+        if (!catanService.cardCheck(catan, message.getCount())) {
+            NetUtil.write(channel, error(Global.Error.CATAN_CARD_NOT_ENOUGH));
+            return;
+        }
+        catanService.payResource(catan, role, CatanMap.BuildingType.CARD, message.getCount());
         catanService.write(catan
                 , LogicClient.ResCatanBuildDevelopmentCard.newBuilder()
                         .setId(account.getId())
-                        .addAllCard(catanService.addCard(role, message.getCount())));
+                        .addAllCard(catanService.addCard(catan, role, message.getCount())));
+
+        catanService.tryWin(table, catan, account);
     }
 
     @Override

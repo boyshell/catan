@@ -28,12 +28,13 @@ public class ReqCatanRichCardHandler extends org.shell.mmo.sample.catan.CatanMes
             NetUtil.write(channel, error(Global.Error.CATAN_PARAM_ERROR));
             return;
         }
+        LogicClient.ResCatanRichCard.Builder ret = LogicClient.ResCatanRichCard.newBuilder().setId(account.getId());
         for (Global.CatanResourceType type : message.getResourceList()) {
-            catanService.addResource(role, type, 1);
+            ret.addResource(catanService.produceResource(catan, role, type, 1).getType());
         }
 
-        catanService.payCard(role, Global.CatanCardType.CARD_RICH);
-        catanService.write(catan, LogicClient.ResCatanRichCard.newBuilder().setId(account.getId()).addAllResource(message.getResourceList()));
+        catanService.payCard(catan, role, Global.CatanCardType.CARD_RICH);
+        catanService.write(catan, ret);
     }
 
     @Override

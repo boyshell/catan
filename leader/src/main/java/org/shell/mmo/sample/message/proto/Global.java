@@ -369,6 +369,14 @@ public final class Global {
      * </pre>
      */
     CATAN_TRADE_COUNTERED(43, 44),
+    /**
+     * <code>CATAN_CARD_NOT_ENOUGH = 45;</code>
+     *
+     * <pre>
+     * 卡坦岛[发展卡不足]
+     * </pre>
+     */
+    CATAN_CARD_NOT_ENOUGH(44, 45),
     ;
 
     /**
@@ -723,6 +731,14 @@ public final class Global {
      * </pre>
      */
     public static final int CATAN_TRADE_COUNTERED_VALUE = 44;
+    /**
+     * <code>CATAN_CARD_NOT_ENOUGH = 45;</code>
+     *
+     * <pre>
+     * 卡坦岛[发展卡不足]
+     * </pre>
+     */
+    public static final int CATAN_CARD_NOT_ENOUGH_VALUE = 45;
 
 
     public final int getNumber() { return value; }
@@ -773,6 +789,7 @@ public final class Global {
         case 42: return CATAN_TRADE_WANT_ERROR;
         case 43: return CATAN_TRADE_ERROR;
         case 44: return CATAN_TRADE_COUNTERED;
+        case 45: return CATAN_CARD_NOT_ENOUGH;
         default: return null;
       }
     }
@@ -14812,6 +14829,57 @@ public final class Global {
      * </pre>
      */
     long getId();
+
+    /**
+     * <code>optional int32 knight = 3;</code>
+     *
+     * <pre>
+     * 兵卡数量
+     * </pre>
+     */
+    boolean hasKnight();
+    /**
+     * <code>optional int32 knight = 3;</code>
+     *
+     * <pre>
+     * 兵卡数量
+     * </pre>
+     */
+    int getKnight();
+
+    /**
+     * <code>optional int32 road = 4;</code>
+     *
+     * <pre>
+     * 道路数量
+     * </pre>
+     */
+    boolean hasRoad();
+    /**
+     * <code>optional int32 road = 4;</code>
+     *
+     * <pre>
+     * 道路数量
+     * </pre>
+     */
+    int getRoad();
+
+    /**
+     * <code>optional int32 point = 5;</code>
+     *
+     * <pre>
+     * 胜利点数量
+     * </pre>
+     */
+    boolean hasPoint();
+    /**
+     * <code>optional int32 point = 5;</code>
+     *
+     * <pre>
+     * 胜利点数量
+     * </pre>
+     */
+    int getPoint();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanScore}
@@ -14877,6 +14945,21 @@ public final class Global {
             case 17: {
               bitField0_ |= 0x00000002;
               id_ = input.readFixed64();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              knight_ = input.readInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              road_ = input.readInt32();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              point_ = input.readInt32();
               break;
             }
           }
@@ -14965,9 +15048,81 @@ public final class Global {
       return id_;
     }
 
+    public static final int KNIGHT_FIELD_NUMBER = 3;
+    private int knight_;
+    /**
+     * <code>optional int32 knight = 3;</code>
+     *
+     * <pre>
+     * 兵卡数量
+     * </pre>
+     */
+    public boolean hasKnight() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional int32 knight = 3;</code>
+     *
+     * <pre>
+     * 兵卡数量
+     * </pre>
+     */
+    public int getKnight() {
+      return knight_;
+    }
+
+    public static final int ROAD_FIELD_NUMBER = 4;
+    private int road_;
+    /**
+     * <code>optional int32 road = 4;</code>
+     *
+     * <pre>
+     * 道路数量
+     * </pre>
+     */
+    public boolean hasRoad() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional int32 road = 4;</code>
+     *
+     * <pre>
+     * 道路数量
+     * </pre>
+     */
+    public int getRoad() {
+      return road_;
+    }
+
+    public static final int POINT_FIELD_NUMBER = 5;
+    private int point_;
+    /**
+     * <code>optional int32 point = 5;</code>
+     *
+     * <pre>
+     * 胜利点数量
+     * </pre>
+     */
+    public boolean hasPoint() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>optional int32 point = 5;</code>
+     *
+     * <pre>
+     * 胜利点数量
+     * </pre>
+     */
+    public int getPoint() {
+      return point_;
+    }
+
     private void initFields() {
       score_ = 0;
       id_ = 0L;
+      knight_ = 0;
+      road_ = 0;
+      point_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -14988,6 +15143,15 @@ public final class Global {
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeFixed64(2, id_);
       }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, knight_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, road_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt32(5, point_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -15004,6 +15168,18 @@ public final class Global {
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
           .computeFixed64Size(2, id_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, knight_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, road_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, point_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -15130,6 +15306,12 @@ public final class Global {
         bitField0_ = (bitField0_ & ~0x00000001);
         id_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000002);
+        knight_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        road_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        point_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000010);
         return this;
       }
 
@@ -15166,6 +15348,18 @@ public final class Global {
           to_bitField0_ |= 0x00000002;
         }
         result.id_ = id_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.knight_ = knight_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.road_ = road_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.point_ = point_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -15187,6 +15381,15 @@ public final class Global {
         }
         if (other.hasId()) {
           setId(other.getId());
+        }
+        if (other.hasKnight()) {
+          setKnight(other.getKnight());
+        }
+        if (other.hasRoad()) {
+          setRoad(other.getRoad());
+        }
+        if (other.hasPoint()) {
+          setPoint(other.getPoint());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -15307,6 +15510,150 @@ public final class Global {
       public Builder clearId() {
         bitField0_ = (bitField0_ & ~0x00000002);
         id_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int knight_ ;
+      /**
+       * <code>optional int32 knight = 3;</code>
+       *
+       * <pre>
+       * 兵卡数量
+       * </pre>
+       */
+      public boolean hasKnight() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional int32 knight = 3;</code>
+       *
+       * <pre>
+       * 兵卡数量
+       * </pre>
+       */
+      public int getKnight() {
+        return knight_;
+      }
+      /**
+       * <code>optional int32 knight = 3;</code>
+       *
+       * <pre>
+       * 兵卡数量
+       * </pre>
+       */
+      public Builder setKnight(int value) {
+        bitField0_ |= 0x00000004;
+        knight_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 knight = 3;</code>
+       *
+       * <pre>
+       * 兵卡数量
+       * </pre>
+       */
+      public Builder clearKnight() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        knight_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int road_ ;
+      /**
+       * <code>optional int32 road = 4;</code>
+       *
+       * <pre>
+       * 道路数量
+       * </pre>
+       */
+      public boolean hasRoad() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional int32 road = 4;</code>
+       *
+       * <pre>
+       * 道路数量
+       * </pre>
+       */
+      public int getRoad() {
+        return road_;
+      }
+      /**
+       * <code>optional int32 road = 4;</code>
+       *
+       * <pre>
+       * 道路数量
+       * </pre>
+       */
+      public Builder setRoad(int value) {
+        bitField0_ |= 0x00000008;
+        road_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 road = 4;</code>
+       *
+       * <pre>
+       * 道路数量
+       * </pre>
+       */
+      public Builder clearRoad() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        road_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int point_ ;
+      /**
+       * <code>optional int32 point = 5;</code>
+       *
+       * <pre>
+       * 胜利点数量
+       * </pre>
+       */
+      public boolean hasPoint() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional int32 point = 5;</code>
+       *
+       * <pre>
+       * 胜利点数量
+       * </pre>
+       */
+      public int getPoint() {
+        return point_;
+      }
+      /**
+       * <code>optional int32 point = 5;</code>
+       *
+       * <pre>
+       * 胜利点数量
+       * </pre>
+       */
+      public Builder setPoint(int value) {
+        bitField0_ |= 0x00000010;
+        point_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 point = 5;</code>
+       *
+       * <pre>
+       * 胜利点数量
+       * </pre>
+       */
+      public Builder clearPoint() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        point_ = 0;
         onChanged();
         return this;
       }
@@ -15449,44 +15796,45 @@ public final class Global {
       "\223\001\n\tCatanRoad\022<\n\006point1\030\001 \001(\0132,.org.shel" +
       "l.mmo.sample.message.proto.Position\022<\n\006p" +
       "oint2\030\002 \001(\0132,.org.shell.mmo.sample.messa" +
-      "ge.proto.Position\022\n\n\002id\030\003 \001(\006\"\'\n\nCatanSc" +
-      "ore\022\r\n\005score\030\001 \001(\005\022\n\n\002id\030\002 \001(\006*\265\007\n\005Error" +
-      "\022\013\n\007SYS_ERR\020\001\022\022\n\016LOGIN_FLAG_ERR\020\002\022\022\n\016LOG" +
-      "IN_OVERTIME\020\003\022\013\n\007USR_ERR\020\004\022\020\n\014PLATFORM_E" +
-      "RR\020\005\022\016\n\nLIMIT_HOST\020\006\022\r\n\tLIMIT_USR\020\007\022\020\n\014L" +
-      "OGIN_REPEAT\020\010\022\016\n\nROLE_EXIST\020\t\022\021\n\rROLE_NA" +
-      "ME_LEN\020\n\022\025\n\021ROLE_NAME_ILLEGAL\020\013\022\024\n\020ROLE_",
-      "NAME_REPEAT\020\014\022\r\n\tROOM_NULL\020\r\022\023\n\017TABLE_NA" +
-      "ME_NULL\020\016\022\026\n\022TABLE_PWD_TOO_LONG\020\017\022\014\n\010TAB" +
-      "LE_IN\020\020\022\020\n\014TABLE_NOT_IN\020\021\022\017\n\013TABLE_START" +
-      "\020\022\022\016\n\nTABLE_NULL\020\023\022\016\n\nTABLE_FULL\020\024\022\023\n\017TA" +
-      "BLE_PWD_ERROR\020\025\022\017\n\013TABLE_READY\020\026\022\025\n\021CATA" +
-      "N_MAP_ILLEGAL\020\027\022\024\n\020CATAN_ROUND_NULL\020\030\022\030\n" +
-      "\024CATAN_NOT_INIT_ROUND\020\031\022\026\n\022CATAN_NOT_MY_" +
-      "ROUND\020\032\022\031\n\025CATAN_ILLEGAL_COUNTRY\020\033\022\026\n\022CA" +
-      "TAN_ILLEGAL_ROAD\020\034\022\032\n\026CATAN_NOT_COMMON_R" +
-      "OUND\020\035\022\026\n\022CATAN_ILLEGAL_CITY\020\036\022\035\n\031CATAN_",
-      "RESOURCE_NOT_ENOUGH\020\037\022\026\n\022CATAN_TRADE_SYS" +
-      "TEM\020 \022\025\n\021CATAN_CAN_NOT_ROB\020!\022\025\n\021CATAN_CA" +
-      "N_NOT_USE\020\"\022\021\n\rCATAN_NO_CARD\020#\022\025\n\021CATAN_" +
-      "PARAM_ERROR\020$\022\030\n\024CATAN_NOT_FOLD_ROUND\020%\022" +
-      "\026\n\022CATAN_FOLD_ALREADY\020&\022\024\n\020CATAN_TRADE_N" +
-      "ULL\020\'\022\034\n\030CATAN_TRADE_TARGET_ERROR\020(\022\033\n\027C" +
-      "ATAN_TRADE_OFFER_ERROR\020)\022\032\n\026CATAN_TRADE_" +
-      "WANT_ERROR\020*\022\025\n\021CATAN_TRADE_ERROR\020+\022\031\n\025C" +
-      "ATAN_TRADE_COUNTERED\020,*\032\n\010RoomType\022\016\n\nRO" +
-      "OM_CATAN\020\001*+\n\010Platform\022\t\n\005INNER\020\001\022\n\n\006P37",
-      "WAN\020\002\022\010\n\004P360\020\003*t\n\021CatanResourceType\022\022\n\016" +
-      "RESOURCE_BRICK\020\001\022\023\n\017RESOURCE_LUMBER\020\002\022\021\n" +
-      "\rRESOURCE_WOOL\020\003\022\021\n\rRESOURCE_GAIN\020\004\022\020\n\014R" +
-      "ESOURCE_ORE\020\005*a\n\rCatanCardType\022\017\n\013CARD_K" +
-      "NIGHT\020\001\022\021\n\rCARD_MONOPOLY\020\002\022\r\n\tCARD_RICH\020" +
-      "\003\022\r\n\tCARD_ROAD\020\004\022\016\n\nCARD_POINT\020\005*k\n\rCata" +
-      "nPortType\022\016\n\nPORT_BRICK\020\001\022\017\n\013PORT_LUMBER" +
-      "\020\002\022\r\n\tPORT_WOOL\020\003\022\r\n\tPORT_GAIN\020\004\022\014\n\010PORT" +
-      "_ORE\020\005\022\r\n\tPORT_BANK\020\006*=\n\006Module\022\t\n\005LOGIN" +
-      "\020\001\022\010\n\004ROLE\020\002\022\010\n\004ROOM\020\003\022\t\n\005TABLE\020\004\022\t\n\005CAT",
-      "AN\020\005"
+      "ge.proto.Position\022\n\n\002id\030\003 \001(\006\"T\n\nCatanSc" +
+      "ore\022\r\n\005score\030\001 \001(\005\022\n\n\002id\030\002 \001(\006\022\016\n\006knight" +
+      "\030\003 \001(\005\022\014\n\004road\030\004 \001(\005\022\r\n\005point\030\005 \001(\005*\320\007\n\005" +
+      "Error\022\013\n\007SYS_ERR\020\001\022\022\n\016LOGIN_FLAG_ERR\020\002\022\022" +
+      "\n\016LOGIN_OVERTIME\020\003\022\013\n\007USR_ERR\020\004\022\020\n\014PLATF" +
+      "ORM_ERR\020\005\022\016\n\nLIMIT_HOST\020\006\022\r\n\tLIMIT_USR\020\007" +
+      "\022\020\n\014LOGIN_REPEAT\020\010\022\016\n\nROLE_EXIST\020\t\022\021\n\rRO",
+      "LE_NAME_LEN\020\n\022\025\n\021ROLE_NAME_ILLEGAL\020\013\022\024\n\020" +
+      "ROLE_NAME_REPEAT\020\014\022\r\n\tROOM_NULL\020\r\022\023\n\017TAB" +
+      "LE_NAME_NULL\020\016\022\026\n\022TABLE_PWD_TOO_LONG\020\017\022\014" +
+      "\n\010TABLE_IN\020\020\022\020\n\014TABLE_NOT_IN\020\021\022\017\n\013TABLE_" +
+      "START\020\022\022\016\n\nTABLE_NULL\020\023\022\016\n\nTABLE_FULL\020\024\022" +
+      "\023\n\017TABLE_PWD_ERROR\020\025\022\017\n\013TABLE_READY\020\026\022\025\n" +
+      "\021CATAN_MAP_ILLEGAL\020\027\022\024\n\020CATAN_ROUND_NULL" +
+      "\020\030\022\030\n\024CATAN_NOT_INIT_ROUND\020\031\022\026\n\022CATAN_NO" +
+      "T_MY_ROUND\020\032\022\031\n\025CATAN_ILLEGAL_COUNTRY\020\033\022" +
+      "\026\n\022CATAN_ILLEGAL_ROAD\020\034\022\032\n\026CATAN_NOT_COM",
+      "MON_ROUND\020\035\022\026\n\022CATAN_ILLEGAL_CITY\020\036\022\035\n\031C" +
+      "ATAN_RESOURCE_NOT_ENOUGH\020\037\022\026\n\022CATAN_TRAD" +
+      "E_SYSTEM\020 \022\025\n\021CATAN_CAN_NOT_ROB\020!\022\025\n\021CAT" +
+      "AN_CAN_NOT_USE\020\"\022\021\n\rCATAN_NO_CARD\020#\022\025\n\021C" +
+      "ATAN_PARAM_ERROR\020$\022\030\n\024CATAN_NOT_FOLD_ROU" +
+      "ND\020%\022\026\n\022CATAN_FOLD_ALREADY\020&\022\024\n\020CATAN_TR" +
+      "ADE_NULL\020\'\022\034\n\030CATAN_TRADE_TARGET_ERROR\020(" +
+      "\022\033\n\027CATAN_TRADE_OFFER_ERROR\020)\022\032\n\026CATAN_T" +
+      "RADE_WANT_ERROR\020*\022\025\n\021CATAN_TRADE_ERROR\020+" +
+      "\022\031\n\025CATAN_TRADE_COUNTERED\020,\022\031\n\025CATAN_CAR",
+      "D_NOT_ENOUGH\020-*\032\n\010RoomType\022\016\n\nROOM_CATAN" +
+      "\020\001*+\n\010Platform\022\t\n\005INNER\020\001\022\n\n\006P37WAN\020\002\022\010\n" +
+      "\004P360\020\003*t\n\021CatanResourceType\022\022\n\016RESOURCE" +
+      "_BRICK\020\001\022\023\n\017RESOURCE_LUMBER\020\002\022\021\n\rRESOURC" +
+      "E_WOOL\020\003\022\021\n\rRESOURCE_GAIN\020\004\022\020\n\014RESOURCE_" +
+      "ORE\020\005*a\n\rCatanCardType\022\017\n\013CARD_KNIGHT\020\001\022" +
+      "\021\n\rCARD_MONOPOLY\020\002\022\r\n\tCARD_RICH\020\003\022\r\n\tCAR" +
+      "D_ROAD\020\004\022\016\n\nCARD_POINT\020\005*k\n\rCatanPortTyp" +
+      "e\022\016\n\nPORT_BRICK\020\001\022\017\n\013PORT_LUMBER\020\002\022\r\n\tPO" +
+      "RT_WOOL\020\003\022\r\n\tPORT_GAIN\020\004\022\014\n\010PORT_ORE\020\005\022\r",
+      "\n\tPORT_BANK\020\006*=\n\006Module\022\t\n\005LOGIN\020\001\022\010\n\004RO" +
+      "LE\020\002\022\010\n\004ROOM\020\003\022\t\n\005TABLE\020\004\022\t\n\005CATAN\020\005"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -15589,7 +15937,7 @@ public final class Global {
     internal_static_org_shell_mmo_sample_message_proto_CatanScore_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_CatanScore_descriptor,
-        new java.lang.String[] { "Score", "Id", });
+        new java.lang.String[] { "Score", "Id", "Knight", "Road", "Point", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

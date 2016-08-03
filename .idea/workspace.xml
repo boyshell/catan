@@ -4,13 +4,16 @@
     <list default="true" id="3648fa52-07c9-48a5-b6d3-dfaf40a6b37b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/config/卡坦岛.xlsx" afterPath="$PROJECT_DIR$/share/config/卡坦岛.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/proto/Config.java" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/message/proto/Global.java" afterPath="$PROJECT_DIR$/leader/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/proto/Config.java" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/message/proto/Global.java" afterPath="$PROJECT_DIR$/log/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/Catan.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/Catan.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanMap.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanMessageHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanMessageHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanRound.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanRound.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanService.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/RoleCatan.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/RoleCatan.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCityHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCityHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCountryHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCountryHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildDevelopmentCardHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildDevelopmentCardHandler.java" />
@@ -20,51 +23,27 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanMonopolyCardHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanMonopolyCardHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRichCardHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRichCardHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoadCardHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoadCardHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRobHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRobHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoundCommonEndHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoundCommonEndHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanSetHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanSetHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCancelHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCancelHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferRefuseHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferRefuseHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeDealHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeDealHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeOfferHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeOfferHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeSystemHandler.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeSystemHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/proto/Config.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/Global.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/RoomService.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/RoomService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableService.java" afterPath="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanMap.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/proto/Config.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/Global.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java" afterPath="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/proto/Config.java" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/config/proto/Config.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/proto/Global.java" afterPath="$PROJECT_DIR$/scene/src/main/java/org/shell/mmo/sample/message/proto/Global.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/api/catan.xml" afterPath="$PROJECT_DIR$/share/api/catan.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/api/global.xml" afterPath="$PROJECT_DIR$/share/api/global.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanMap.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanMap.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/bean/CcatanMap.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/bean/CcatanMap.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/CcatanMap.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/config/proto/CcatanMap.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanScore.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/CatanScore.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Error.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/Error.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildCity.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildCity.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildCountry.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildCountry.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildRoad.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanBuildRoad.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanKnightCard.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanKnightCard.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRichCard.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRichCard.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoadCard.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoadCard.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRob.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRob.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundCommonStart.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundCommonStart.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundFoldStart.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanRoundFoldStart.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanSet.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ReqCatanSet.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildCity.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildCity.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildCountry.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildCountry.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildDevelopmentCard.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildDevelopmentCard.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildRoad.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanBuildRoad.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanKnightCard.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanKnightCard.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRichCard.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRichCard.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRoadCard.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRoadCard.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRob.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanRob.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanSet.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanSet.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeDeal.as" afterPath="$PROJECT_DIR$/share/client/org/shell/mmo/sample/message/proto/ResCatanTradeDeal.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/doc/modules/CatanMap.html" afterPath="$PROJECT_DIR$/share/doc/modules/CatanMap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/doc/config/CcatanMap.html" afterPath="$PROJECT_DIR$/share/doc/config/CcatanMap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/doc/modules/CatanScore.html" afterPath="$PROJECT_DIR$/share/doc/modules/CatanScore.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/doc/modules/Error.html" afterPath="$PROJECT_DIR$/share/doc/modules/Error.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/doc/modules/catan.html" afterPath="$PROJECT_DIR$/share/doc/modules/catan.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/proto/message/LogicClient.proto" afterPath="$PROJECT_DIR$/share/proto/message/LogicClient.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/proto/config/config.proto" afterPath="$PROJECT_DIR$/share/proto/config/config.proto" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/proto/message/global.proto" afterPath="$PROJECT_DIR$/share/proto/message/global.proto" />
     </list>
     <ignored path="mmo-sample.iws" />
@@ -94,8 +73,8 @@
             <file leaf-file-name="global.xml" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/share/api/global.xml">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="600">
-                    <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+                  <state relative-caret-position="375">
+                    <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
                     <folding />
                   </state>
                 </provider>
@@ -104,7 +83,7 @@
             <file leaf-file-name="catan.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/share/api/catan.xml">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="213">
+                  <state relative-caret-position="-1032">
                     <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
                     <folding />
                   </state>
@@ -122,71 +101,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/util/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="1011" column="14" selection-start-line="1011" selection-start-column="14" selection-end-line="1011" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReqCatanTradeCancelHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCancelHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReqCatanTradeCounterOfferHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReqCatanTradeCounterOfferRefuseHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferRefuseHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReqCatanTradeDealHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeDealHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReqCatanBuildDevelopmentCardHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildDevelopmentCardHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CatanService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="223" column="29" selection-start-line="223" selection-start-column="29" selection-end-line="223" selection-end-column="29" />
+            <state relative-caret-position="345">
+              <caret line="199" column="53" selection-start-line="199" selection-start-column="53" selection-end-line="199" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -219,9 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/RoleRoom.java" />
-        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomAllHandler.java" />
-        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/RoomService.java" />
         <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomUpdateHandler.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/handler/ReqRoomEnterHandler.java" />
         <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/room/Room.java" />
@@ -245,29 +161,32 @@
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/room/RoomService.java" />
         <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/RobotMain.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanMessageHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableService.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoundCommonEndHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCountryHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCityHandler.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeSystemHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildRoadHandler.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRobHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanMonopolyCardHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanFoldHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRichCardHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanKnightCardHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoadCardHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanSetHandler.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanMap.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeOfferHandler.java" />
-        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanRound.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferHandler.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCounterOfferRefuseHandler.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeCancelHandler.java" />
         <option value="$PROJECT_DIR$/share/api/catan.xml" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeDealHandler.java" />
+        <option value="$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanMap.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/RoleCatan.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableService.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoadCardHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanKnightCardHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java" />
         <option value="$PROJECT_DIR$/share/api/global.xml" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanMonopolyCardHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRichCardHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanSetHandler.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildDevelopmentCardHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanRound.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildRoadHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCityHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCountryHandler.java" />
+        <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanFoldHandler.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/Catan.java" />
         <option value="$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanService.java" />
       </list>
@@ -367,7 +286,143 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="doc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="share" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mmo-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="robot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="role" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -911,7 +966,14 @@
       <option name="project" value="LOCAL" />
       <updated>1470040728106</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="逻辑完毕(编码)">
+      <created>1470204371874</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1470204371874</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -939,7 +1001,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23858616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32851407" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851407" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -965,11 +1027,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="初始化结构" />
     <MESSAGE value="消息通了" />
     <MESSAGE value="移除data模块" />
     <MESSAGE value="完成房间和桌子" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成房间和桌子" />
+    <MESSAGE value="逻辑完毕(编码)" />
+    <option name="LAST_COMMIT_MESSAGE" value="逻辑完毕(编码)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -988,48 +1053,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ReqTableAddHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/message/proto/Global.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="4893" column="26" selection-start-line="4893" selection-start-column="26" selection-end-line="4893" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/handler/ReqTableCreateHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/handler/ResTableReadyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/shell/mmo-utils/1.0-SNAPSHOT/mmo-utils-1.0-SNAPSHOT.jar!/com/shell/mmo/utils/net/message/MessageHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/RoleTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/share/api/table.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1116,6 +1139,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="687">
           <caret line="135" column="28" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+          <folding>
+            <element signature="e#4230#4231#0" expanded="false" />
+            <element signature="e#4273#4274#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1134,36 +1161,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding>
-            <element signature="e#6122#6123#0" expanded="false" />
-            <element signature="e#6156#6157#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoundCommonEndHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCountryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCityHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="26" column="110" selection-start-line="26" selection-start-column="110" selection-end-line="26" selection-end-column="110" />
           <folding />
         </state>
       </provider>
@@ -1184,90 +1185,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildRoadHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanMonopolyCardHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/Global.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="1176" column="32" selection-start-line="1176" selection-start-column="32" selection-end-line="1176" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/LogicClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="48387" column="22" selection-start-line="48387" selection-start-column="22" selection-end-line="48387" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRichCardHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanKnightCardHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/role/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanSetHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanFoldHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="35" column="130" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="130" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/RoleCatan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="92" column="53" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1280,48 +1201,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoadCardHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="9" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanRound.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="193" column="57" selection-start-line="193" selection-start-column="57" selection-end-line="193" selection-end-column="57" />
-          <folding>
-            <element signature="e#4674#4675#0" expanded="true" />
-            <element signature="e#4710#4711#0" expanded="true" />
-            <element signature="e#4755#4756#0" expanded="true" />
-            <element signature="e#4797#4798#0" expanded="true" />
-            <element signature="e#6783#6784#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeOfferHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/api/catan.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/share/api/global.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1358,39 +1241,227 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeDealHandler.java">
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/role/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/table/RoleTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robot/src/main/java/org/shell/mmo/sample/catan/CatanMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/api/catan.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1032">
+          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/role/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="e#566#567#0" expanded="false" />
+            <element signature="e#594#595#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/table/TableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1022">
+          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+          <folding>
+            <element signature="e#6193#6194#0" expanded="false" />
+            <element signature="e#6227#6228#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRoadCardHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanKnightCardHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/doc/config/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/config/bean/CcatanMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/api/global.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/message/proto/Global.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="7047" column="21" selection-start-line="7047" selection-start-column="21" selection-end-line="7047" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanMonopolyCardHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanRichCardHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="32" column="88" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanSetHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanTradeDealHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="87" column="53" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildRoadHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCityHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildCountryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanFoldHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/handler/ReqCatanBuildDevelopmentCardHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        <state relative-caret-position="480">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/Catan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="106" column="64" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
+        <state relative-caret-position="705">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
           <folding>
-            <element signature="e#2608#2609#0" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
-            <element signature="e#2730#2731#0" expanded="true" />
-            <element signature="e#2783#2784#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1686#1687#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="947">
+          <caret line="92" column="53" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanRound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1472">
+          <caret line="225" column="41" selection-start-line="225" selection-start-column="41" selection-end-line="225" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/RoleCatan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logic/src/main/java/org/shell/mmo/sample/catan/CatanService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="223" column="29" selection-start-line="223" selection-start-column="29" selection-end-line="223" selection-end-column="29" />
+        <state relative-caret-position="345">
+          <caret line="199" column="53" selection-start-line="199" selection-start-column="53" selection-end-line="199" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

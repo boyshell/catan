@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Created by zhangxiangxi on 16/7/27.
@@ -60,13 +61,39 @@ public class CatanService {
     public Catan create(Table table) {
         CcatanMap catanMap = configGroup.catanMapContainer.getMap().get(tableService.id(table));
         List<Long> masters = RandomUtil.random(new ArrayList<>(tableService.masters(table).keySet()));
-        Catan catan = new Catan(new CatanMap(catanMap), initMasters(masters), catanRoles(masters));
+        Catan catan = new Catan(new CatanMap(catanMap), initMasters(masters), catanRoles(masters), initCards(catanMap), initResource(catanMap));
 
         write(catan, LogicClient.ReqCatanStart.newBuilder().setMap(catan.map.build()));
 
         addRound(catan, new CatanRound.CatanInitRound(catan, this));
         return catan;
 
+    }
+
+    private int[] initResource(CcatanMap config) {
+        int[] resource = new int[Global.CatanResourceType.values().length];
+        resource[Global.CatanResourceType.RESOURCE_BRICK.ordinal()] = config.getBrickMax();
+        resource[Global.CatanResourceType.RESOURCE_LUMBER.ordinal()] = config.getLumberMax();
+        resource[Global.CatanResourceType.RESOURCE_WOOL.ordinal()] = config.getWoolMax();
+        resource[Global.CatanResourceType.RESOURCE_GAIN.ordinal()] = config.getGainMax();
+        resource[Global.CatanResourceType.RESOURCE_ORE.ordinal()] = config.getOreMax();
+        return resource;
+    }
+
+    private List<Global.CatanCardType> initCards(CcatanMap config) {
+        List<Global.CatanCardType> list = new ArrayList<>();
+        add(list, Global.CatanCardType.CARD_KNIGHT, config.getKnightMax());
+        add(list, Global.CatanCardType.CARD_MONOPOLY, config.getMonopolyMax());
+        add(list, Global.CatanCardType.CARD_RICH, config.getRichMax());
+        add(list, Global.CatanCardType.CARD_ROAD, config.getRoadMax());
+        add(list, Global.CatanCardType.CARD_POINT, config.getPointMax());
+        return list;
+    }
+
+    private void add(List<Global.CatanCardType> list, Global.CatanCardType type, int count) {
+        for (int i = 0; i < count; ++i) {
+            list.add(type);
+        }
     }
 
     private Map<Long, Catan.CatanRole> catanRoles(List<Long> masters) {
@@ -96,6 +123,10 @@ public class CatanService {
     }
 
     public boolean buildCountry(Catan.CatanRole role, CatanMap.CatanPoint point, boolean init) {
+        // 村庄上限
+        if (role.getCountries().size() >= Catan.CatanRole.COUNTRY_MAX) {
+            return false;
+        }
         // 村庄合法性:周围不能有相邻的村庄,有自己的道路联通(初始化回合不用)
         boolean edgeConnect = init;
         for (CatanMap.CatanEdge edge : point.edges) {
@@ -119,6 +150,7 @@ public class CatanService {
                 role.ports.add(edge.type);
             }
         }
+        ++role.score;
         return true;
     }
 
@@ -136,14 +168,49 @@ public class CatanService {
         return null;
     }
 
-    public boolean buildRoad(Catan catan, Catan.CatanRole role, CatanMap.CatanEdge edge) {
+    public boolean buildRoad(Catan catan, Catan.CatanRole role, CatanMap.CatanEdge edge, boolean trigger) {
+        // 道路上限
+        if (role.getEdges().size() >= Catan.CatanRole.ROAD_MAX) {
+            return false;
+        }
         // 道路合法性,必须要有连接的道路或者村庄/城市
         if (!buildRoadCheck(catan, role, edge)) {
             return false;
         }
         edge.owner = role.getId();
         role.edges.add(edge);
+        if (trigger) {
+            role.road = countMaxRoad(role, edge);
+            if (role.road >= 5) {
+                if (catan.roadKing == null) {
+                } else if (catan.roadKing.road < role.road) {
+                    catan.roadKing.score -= 2;
+                } else {
+                    return true;
+                }
+                catan.roadKing = role;
+                role.score += 2;
+            }
+        }
         return true;
+    }
+
+    private int countMaxRoad(Catan.CatanRole role, CatanMap.CatanEdge edge) {
+        int len1 = count(role, edge, edge.point1, 0);
+        int len2 = count(role, edge, edge.point2, 0);
+        return len1 + len2 + 1;
+    }
+
+    private int count(Catan.CatanRole role, CatanMap.CatanEdge edge, CatanMap.CatanPoint point, int now) {
+        int max = 0;
+        for (CatanMap.CatanEdge tmp : point.edges) {
+            if (tmp == edge || tmp.owner != role.getId()) {
+                continue;
+            }
+            int maxt = count(role, edge, point == tmp.point1 ? tmp.point2 : tmp.point1, now + 1);
+            max = maxt > max ? maxt : max;
+        }
+        return max + now;
     }
 
     private boolean buildRoadCheck(Catan catan, Catan.CatanRole role, CatanMap.CatanEdge edge) {
@@ -181,13 +248,17 @@ public class CatanService {
         return true;
     }
 
-    public void payAllResource(Catan.CatanRole role, CatanMap.BuildingType type, int count) {
+    public void payResource(Catan catan, Catan.CatanRole role, CatanMap.BuildingType type, int count) {
         for (Global.CatanResource resource : type.getCost()) {
-            role.subResource(resource.getType(), resource.getNum() * count);
+            payResource(catan, role, resource.getType(), resource.getNum() * count);
         }
     }
 
     public boolean buildCity(Catan.CatanRole role, CatanMap.CatanPoint point) {
+        // 城市上限
+        if (role.getCities().size() >= Catan.CatanRole.CITY_MAX) {
+            return false;
+        }
         // 城市合法性:存在自己的村庄
         if (point.owner != role.getId()) {
             return false;
@@ -198,13 +269,14 @@ public class CatanService {
         point.buildingType = CatanMap.BuildingType.CITY;
         role.countries.remove(point);
         role.cities.add(point);
+        ++role.score;
         return true;
     }
 
-    public List<Global.CatanCard> addCard(Catan.CatanRole role, int count) {
+    public List<Global.CatanCard> addCard(Catan catan, Catan.CatanRole role, int count) {
         List<Global.CatanCard> list = new ArrayList<>();
         for (int i = 0; i < count; ++i) {
-            Global.CatanCardType type = Global.CatanCardType.valueOf(RandomUtil.random(1, Global.CatanCardType.values().length + 1));
+            Global.CatanCardType type = catan.cards.remove(0);
             role.addCard(type, 1);
             list.add(Global.CatanCard.newBuilder().setType(type).setCount(1).build());
         }
@@ -309,25 +381,52 @@ public class CatanService {
         return null;
     }
 
+    public boolean cardCheck(Catan catan, int count) {
+        return catan.cards.size() >= count;
+    }
+
     public boolean cardCheck(Catan.CatanRole role, Global.CatanCardType type) {
         return role.getCard(type) > 0;
     }
 
-    public void payCard(Catan.CatanRole role, Global.CatanCardType type) {
+    public void payCard(Catan catan, Catan.CatanRole role, Global.CatanCardType type) {
         role.subCard(type, 1);
+        // 兵王
+        if (type == Global.CatanCardType.CARD_KNIGHT) {
+            role.knight += 1;
+            if (role.knight >= 3) {
+                if (catan.knightKing == null) {
+                } else if (role.knight > catan.knightKing.knight) {
+                    catan.knightKing.score -= 2;
+                } else {
+                    return;
+                }
+                catan.knightKing = role;
+                role.score += 2;
+            }
+        }
     }
 
-    public Global.CatanResource.Builder payAllResource(Catan.CatanRole role, Global.CatanResourceType type) {
+    public Global.CatanResource.Builder subAllResource(Catan.CatanRole role, Global.CatanResourceType type) {
         int count = role.getResource(type);
         role.subResource(type, count);
         return Global.CatanResource.newBuilder().setType(type).setNum(count);
     }
 
-    public void addResource(Catan.CatanRole role, Global.CatanResourceType type, int count) {
+    public Global.CatanResource produceResource(Catan catan, Catan.CatanRole role, Global.CatanResourceType type, int count) {
+        Global.CatanResource.Builder builder = Global.CatanResource.newBuilder();
+        count = Math.min(count,catan.getResource(type));
+        catan.subResource(type, count);
         role.addResource(type, count);
+        return builder.setType(type).setNum(count).build();
     }
 
-    public List<Global.CatanResource> fold(Catan.CatanRole role, List<Global.CatanResource> loseList) {
+    public void payResource(Catan catan, Catan.CatanRole role, Global.CatanResourceType type, int count) {
+        role.subResource(type, count);
+        catan.addResource(type, count);
+    }
+
+    public List<Global.CatanResource> fold(Catan catan, Catan.CatanRole role, List<Global.CatanResource> loseList) {
         int total = 0;
         int count = 0;
         for (int resource : role.resource) {
@@ -346,8 +445,33 @@ public class CatanService {
             return null;
         }
         for (Global.CatanResource r : loseList) {
-            role.subResource(r.getType(), r.getNum());
+            payResource(catan, role, r.getType(), r.getNum());
         }
         return loseList;
+    }
+
+    public boolean tryWin(Table table, Catan catan, Account account) {
+        Catan.CatanRole role = catan.getRoles().get(account.getId());
+        if (role.score < catan.winScore) {
+            return false;
+        }
+
+        List<Global.CatanScore> list = catan.getRoles().values().stream().map(tmp -> Global.CatanScore.newBuilder()
+                .setId(tmp.getId())
+                .setKnight(tmp.knight)
+                .setRoad(tmp.road)
+                .setPoint(tmp.point)
+                .setScore(tmp.score)
+                .build()).collect(Collectors.toList());
+        for (Catan.CatanRole tmp : catan.getRoles().values()) {
+            int gain = tmp.score - role.score;
+            account.getRole().getCatan().setTotalGain(gain + account.getRole().getCatan().getTotalGain());
+            accountService.write(tmp.getId(), LogicClient.ReqCatanDone.newBuilder()
+                    .addAllScore(list)
+                    .setGain(gain)
+                    .setTotalGain(account.getRole().getCatan().getTotalGain()));
+        }
+        tableService.done(table);
+        return true;
     }
 }

@@ -191,4 +191,8 @@ public class TableService {
     public Catan catan(Table table) {
         return table.catan;
     }
+
+    public void done(Table table) {
+        table.catan = null;
+    }
 }

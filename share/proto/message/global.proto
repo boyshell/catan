@@ -90,6 +90,9 @@ message CatanRoad {
 message CatanScore {
     optional int32 score = 1; // 积分
     optional fixed64 id = 2; // 玩家id
+    optional int32 knight = 3; // 兵卡数量
+    optional int32 road = 4; // 道路数量
+    optional int32 point = 5; // 胜利点数量
 }
 
 // 错误码
@@ -138,6 +141,7 @@ enum Error {
     CATAN_TRADE_WANT_ERROR = 42; // 卡坦岛[需求的资源错误]
     CATAN_TRADE_ERROR = 43; // 卡坦岛[交易错误]
     CATAN_TRADE_COUNTERED = 44; // 卡坦岛[已经还价了]
+    CATAN_CARD_NOT_ENOUGH = 45; // 卡坦岛[发展卡不足]
 }
 // 桌子类型
 enum RoomType {

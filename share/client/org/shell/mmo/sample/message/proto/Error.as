@@ -44,5 +44,6 @@ package org.shell.mmo.sample.message.proto {
 		public static const CATAN_TRADE_WANT_ERROR:int = 42;
 		public static const CATAN_TRADE_ERROR:int = 43;
 		public static const CATAN_TRADE_COUNTERED:int = 44;
+		public static const CATAN_CARD_NOT_ENOUGH:int = 45;
 	}
 }

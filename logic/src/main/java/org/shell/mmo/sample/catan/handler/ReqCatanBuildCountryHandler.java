@@ -29,8 +29,10 @@ public class ReqCatanBuildCountryHandler extends org.shell.mmo.sample.catan.Cata
             NetUtil.write(channel, error(Global.Error.CATAN_ILLEGAL_COUNTRY));
             return ;
         }
-        catanService.payAllResource(role, CatanMap.BuildingType.COUNTRY, 1);
+        catanService.payResource(catan, role, CatanMap.BuildingType.COUNTRY, 1);
         catanService.write(catan, LogicClient.ResCatanBuildCountry.newBuilder().setId(account.getId()).setCountry(message.getCountry()));
+
+        catanService.tryWin(table, catan, account);
     }
 
     @Override

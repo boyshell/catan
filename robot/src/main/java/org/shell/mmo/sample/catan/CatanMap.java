@@ -29,7 +29,7 @@ public class CatanMap {
             CatanEdge edge = edges.get(CatanEdge.key(port.getPosition1(), port.getPosition2()));
             edge.type = port.getType();
         }
-        // TODO 城市,村庄,道路
+        // TODO 城市,村庄,道路,强盗
     }
 
     public Map<CatanEdge.Key, CatanEdge> getEdges() {
@@ -136,36 +136,6 @@ public class CatanMap {
             list.add(type);
         }
         return list;
-    }
-
-    public Global.CatanMap.Builder build() {
-        Global.CatanMap.Builder builder = Global.CatanMap.newBuilder();
-        // 格子
-        for (CatanGrid grid : grids.values()) {
-            Global.CatanGrid.Builder gridBuilder = Global.CatanGrid.newBuilder();
-            gridBuilder.setPosition(Global.Position.newBuilder().setX(grid.getX()).setY(grid.getY()));
-            gridBuilder.setType(grid.getType());
-            if (grid.getNumber() > 0) {
-                gridBuilder.setNumber(grid.getNumber());
-            }
-
-            builder.addGrid(gridBuilder);
-        }
-        // 港口
-        for (CatanEdge edge : edges.values()) {
-            if (edge.getType() != null) {
-                Global.CatanPort.Builder portBuilder = Global.CatanPort.newBuilder();
-                portBuilder.setPosition1(Global.Position.newBuilder().setX(edge.getPoint1().getX()).setY(edge.getPoint1().getY()));
-                portBuilder.setPosition2(Global.Position.newBuilder().setX(edge.getPoint2().getX()).setY(edge.getPoint2().getY()));
-                portBuilder.setType(edge.getType());
-
-                builder.addPort(portBuilder);
-            }
-        }
-        // TODO 城市
-        // TODO 村庄
-        // TODO 道路
-        return builder;
     }
 
     public static class CatanPoint {

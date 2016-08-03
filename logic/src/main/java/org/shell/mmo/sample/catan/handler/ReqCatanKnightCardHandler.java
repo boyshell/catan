@@ -40,9 +40,11 @@ public class ReqCatanKnightCardHandler extends org.shell.mmo.sample.catan.CatanM
 
         catanService.write(catan, ret);
 
-        catanService.payCard(criminal, Global.CatanCardType.CARD_KNIGHT);
+        catanService.payCard(catan, criminal, Global.CatanCardType.CARD_KNIGHT);
         CatanRound.CatanCommonRound round = (CatanRound.CatanCommonRound)catan.getRound();
         round.setCard(false);
+
+        catanService.tryWin(table, catan, account);
     }
 
     @Override

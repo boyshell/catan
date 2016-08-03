@@ -29,7 +29,7 @@ public class ReqCatanFoldHandler extends org.shell.mmo.sample.catan.CatanMessage
             return;
         }
         Catan.CatanRole role = catan.getRoles().get(account.getId());
-        if (catanService.fold(role, message.getLoseList()) == null) {
+        if (catanService.fold(catan, role, message.getLoseList()) == null) {
             NetUtil.write(channel, error(Global.Error.CATAN_PARAM_ERROR));
             return;
         }

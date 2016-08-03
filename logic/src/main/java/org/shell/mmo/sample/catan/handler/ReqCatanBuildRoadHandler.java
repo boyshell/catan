@@ -26,12 +26,14 @@ public class ReqCatanBuildRoadHandler extends org.shell.mmo.sample.catan.CatanMe
             return;
         }
         CatanMap.CatanEdge edge = catan.getMap().getEdges().get(new CatanMap.CatanEdge.Key(message.getSrc().getX(), message.getSrc().getY(), message.getDst().getX(), message.getDst().getY()));
-        if (edge == null || !catanService.buildRoad(catan, role, edge)) {
+        if (edge == null || !catanService.buildRoad(catan, role, edge, true)) {
             NetUtil.write(channel, error(Global.Error.CATAN_ILLEGAL_ROAD));
             return ;
         }
-        catanService.payAllResource(role, CatanMap.BuildingType.ROAD, 1);
+        catanService.payResource(catan, role, CatanMap.BuildingType.ROAD, 1);
         catanService.write(catan, LogicClient.ResCatanBuildRoad.newBuilder().setSrc(message.getSrc()).setDst(message.getDst()).setId(account.getId()));
+
+        catanService.tryWin(table, catan, account);
     }
 
     @Override

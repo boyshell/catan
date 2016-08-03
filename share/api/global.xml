@@ -49,6 +49,7 @@
             <CATAN_TRADE_WANT_ERROR desc="卡坦岛[需求的资源错误]" id="42"/>
             <CATAN_TRADE_ERROR desc="卡坦岛[交易错误]" id="43"/>
             <CATAN_TRADE_COUNTERED desc="卡坦岛[已经还价了]" id="44"/>
+            <CATAN_CARD_NOT_ENOUGH desc="卡坦岛[发展卡不足]" id="45"/>
         </enum>
         <enum name="RoomType" desc="桌子类型">
             <ROOM_CATAN desc="卡坦岛" id="1"/>
@@ -156,7 +157,10 @@
         </bean>
         <bean name="CatanScore" desc="卡坦岛积分信息">
             <field type="int32" name="score" desc="积分" index="1"/>
-            <listd type="fixed64" name="id" desc="玩家id" index="2"/>
+            <field type="fixed64" name="id" desc="玩家id" index="2"/>
+            <field type="int32" name="knight" desc="兵卡数量" index="3"/>
+            <field type="int32" name="road" desc="道路数量" index="4"/>
+            <field type="int32" name="point" desc="胜利点数量" index="5"/>
         </bean>
     </beans>
 </root>

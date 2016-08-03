@@ -24,6 +24,16 @@ message CcatanMap {
     required int32 gainPort = 15; // 小麦港口数量
     required int32 orePort = 16; // 煤矿港口数量
     required int32 bankPort = 17; // 3比1港口
+    required int32 brickMax = 18; // 砖头上限
+    required int32 lumberMax = 19; // 木材上限
+    required int32 woolMax = 20; // 羊毛上限
+    required int32 gainMax = 21; // 小麦上限
+    required int32 oreMax = 22; // 煤矿上限
+    required int32 knightMax = 23; // 骑士卡上限
+    required int32 monopolyMax = 24; // 垄断卡上限
+    required int32 richMax = 25; // 丰收卡上限
+    required int32 roadMax = 26; // 道路卡上限
+    required int32 pointMax = 27; // 胜利点上限
 }
 // 卡坦岛格子,边朝下,非顶点朝下
 message DcatanGrid {
