@@ -201,6 +201,174 @@ public final class Global {
      * </pre>
      */
     CATAN_MAP_ILLEGAL(22, 23),
+    /**
+     * <code>CATAN_ROUND_NULL = 24;</code>
+     *
+     * <pre>
+     * 卡坦岛[回合不存在]
+     * </pre>
+     */
+    CATAN_ROUND_NULL(23, 24),
+    /**
+     * <code>CATAN_NOT_INIT_ROUND = 25;</code>
+     *
+     * <pre>
+     * 卡坦岛[不是初始化回合]
+     * </pre>
+     */
+    CATAN_NOT_INIT_ROUND(24, 25),
+    /**
+     * <code>CATAN_NOT_MY_ROUND = 26;</code>
+     *
+     * <pre>
+     * 卡坦岛[不是我的回合]
+     * </pre>
+     */
+    CATAN_NOT_MY_ROUND(25, 26),
+    /**
+     * <code>CATAN_ILLEGAL_COUNTRY = 27;</code>
+     *
+     * <pre>
+     * 卡坦岛[村庄位置非法]
+     * </pre>
+     */
+    CATAN_ILLEGAL_COUNTRY(26, 27),
+    /**
+     * <code>CATAN_ILLEGAL_ROAD = 28;</code>
+     *
+     * <pre>
+     * 卡坦岛[道路位置非法]
+     * </pre>
+     */
+    CATAN_ILLEGAL_ROAD(27, 28),
+    /**
+     * <code>CATAN_NOT_COMMON_ROUND = 29;</code>
+     *
+     * <pre>
+     * 卡坦岛[不是普通回合]
+     * </pre>
+     */
+    CATAN_NOT_COMMON_ROUND(28, 29),
+    /**
+     * <code>CATAN_ILLEGAL_CITY = 30;</code>
+     *
+     * <pre>
+     * 卡坦岛[城市位置非法]
+     * </pre>
+     */
+    CATAN_ILLEGAL_CITY(29, 30),
+    /**
+     * <code>CATAN_RESOURCE_NOT_ENOUGH = 31;</code>
+     *
+     * <pre>
+     * 卡坦岛[资源不足]
+     * </pre>
+     */
+    CATAN_RESOURCE_NOT_ENOUGH(30, 31),
+    /**
+     * <code>CATAN_TRADE_SYSTEM = 32;</code>
+     *
+     * <pre>
+     * 卡坦岛[系统交易参数错误]
+     * </pre>
+     */
+    CATAN_TRADE_SYSTEM(31, 32),
+    /**
+     * <code>CATAN_CAN_NOT_ROB = 33;</code>
+     *
+     * <pre>
+     * 卡坦岛[不能抢夺]
+     * </pre>
+     */
+    CATAN_CAN_NOT_ROB(32, 33),
+    /**
+     * <code>CATAN_CAN_NOT_USE = 34;</code>
+     *
+     * <pre>
+     * 卡坦岛[本轮不能使用发展卡了]
+     * </pre>
+     */
+    CATAN_CAN_NOT_USE(33, 34),
+    /**
+     * <code>CATAN_NO_CARD = 35;</code>
+     *
+     * <pre>
+     * 卡坦岛[没有该类型发展卡]
+     * </pre>
+     */
+    CATAN_NO_CARD(34, 35),
+    /**
+     * <code>CATAN_PARAM_ERROR = 36;</code>
+     *
+     * <pre>
+     * 卡坦岛[参数错误]
+     * </pre>
+     */
+    CATAN_PARAM_ERROR(35, 36),
+    /**
+     * <code>CATAN_NOT_FOLD_ROUND = 37;</code>
+     *
+     * <pre>
+     * 卡坦岛[不是弃牌回合]
+     * </pre>
+     */
+    CATAN_NOT_FOLD_ROUND(36, 37),
+    /**
+     * <code>CATAN_FOLD_ALREADY = 38;</code>
+     *
+     * <pre>
+     * 卡坦岛[已经弃牌了]
+     * </pre>
+     */
+    CATAN_FOLD_ALREADY(37, 38),
+    /**
+     * <code>CATAN_TRADE_NULL = 39;</code>
+     *
+     * <pre>
+     * 卡坦岛[交易不存在]
+     * </pre>
+     */
+    CATAN_TRADE_NULL(38, 39),
+    /**
+     * <code>CATAN_TRADE_TARGET_ERROR = 40;</code>
+     *
+     * <pre>
+     * 卡坦岛[交易目标错误]
+     * </pre>
+     */
+    CATAN_TRADE_TARGET_ERROR(39, 40),
+    /**
+     * <code>CATAN_TRADE_OFFER_ERROR = 41;</code>
+     *
+     * <pre>
+     * 卡坦岛[提供的资源错误]
+     * </pre>
+     */
+    CATAN_TRADE_OFFER_ERROR(40, 41),
+    /**
+     * <code>CATAN_TRADE_WANT_ERROR = 42;</code>
+     *
+     * <pre>
+     * 卡坦岛[需求的资源错误]
+     * </pre>
+     */
+    CATAN_TRADE_WANT_ERROR(41, 42),
+    /**
+     * <code>CATAN_TRADE_ERROR = 43;</code>
+     *
+     * <pre>
+     * 卡坦岛[交易错误]
+     * </pre>
+     */
+    CATAN_TRADE_ERROR(42, 43),
+    /**
+     * <code>CATAN_TRADE_COUNTERED = 44;</code>
+     *
+     * <pre>
+     * 卡坦岛[已经还价了]
+     * </pre>
+     */
+    CATAN_TRADE_COUNTERED(43, 44),
     ;
 
     /**
@@ -387,6 +555,174 @@ public final class Global {
      * </pre>
      */
     public static final int CATAN_MAP_ILLEGAL_VALUE = 23;
+    /**
+     * <code>CATAN_ROUND_NULL = 24;</code>
+     *
+     * <pre>
+     * 卡坦岛[回合不存在]
+     * </pre>
+     */
+    public static final int CATAN_ROUND_NULL_VALUE = 24;
+    /**
+     * <code>CATAN_NOT_INIT_ROUND = 25;</code>
+     *
+     * <pre>
+     * 卡坦岛[不是初始化回合]
+     * </pre>
+     */
+    public static final int CATAN_NOT_INIT_ROUND_VALUE = 25;
+    /**
+     * <code>CATAN_NOT_MY_ROUND = 26;</code>
+     *
+     * <pre>
+     * 卡坦岛[不是我的回合]
+     * </pre>
+     */
+    public static final int CATAN_NOT_MY_ROUND_VALUE = 26;
+    /**
+     * <code>CATAN_ILLEGAL_COUNTRY = 27;</code>
+     *
+     * <pre>
+     * 卡坦岛[村庄位置非法]
+     * </pre>
+     */
+    public static final int CATAN_ILLEGAL_COUNTRY_VALUE = 27;
+    /**
+     * <code>CATAN_ILLEGAL_ROAD = 28;</code>
+     *
+     * <pre>
+     * 卡坦岛[道路位置非法]
+     * </pre>
+     */
+    public static final int CATAN_ILLEGAL_ROAD_VALUE = 28;
+    /**
+     * <code>CATAN_NOT_COMMON_ROUND = 29;</code>
+     *
+     * <pre>
+     * 卡坦岛[不是普通回合]
+     * </pre>
+     */
+    public static final int CATAN_NOT_COMMON_ROUND_VALUE = 29;
+    /**
+     * <code>CATAN_ILLEGAL_CITY = 30;</code>
+     *
+     * <pre>
+     * 卡坦岛[城市位置非法]
+     * </pre>
+     */
+    public static final int CATAN_ILLEGAL_CITY_VALUE = 30;
+    /**
+     * <code>CATAN_RESOURCE_NOT_ENOUGH = 31;</code>
+     *
+     * <pre>
+     * 卡坦岛[资源不足]
+     * </pre>
+     */
+    public static final int CATAN_RESOURCE_NOT_ENOUGH_VALUE = 31;
+    /**
+     * <code>CATAN_TRADE_SYSTEM = 32;</code>
+     *
+     * <pre>
+     * 卡坦岛[系统交易参数错误]
+     * </pre>
+     */
+    public static final int CATAN_TRADE_SYSTEM_VALUE = 32;
+    /**
+     * <code>CATAN_CAN_NOT_ROB = 33;</code>
+     *
+     * <pre>
+     * 卡坦岛[不能抢夺]
+     * </pre>
+     */
+    public static final int CATAN_CAN_NOT_ROB_VALUE = 33;
+    /**
+     * <code>CATAN_CAN_NOT_USE = 34;</code>
+     *
+     * <pre>
+     * 卡坦岛[本轮不能使用发展卡了]
+     * </pre>
+     */
+    public static final int CATAN_CAN_NOT_USE_VALUE = 34;
+    /**
+     * <code>CATAN_NO_CARD = 35;</code>
+     *
+     * <pre>
+     * 卡坦岛[没有该类型发展卡]
+     * </pre>
+     */
+    public static final int CATAN_NO_CARD_VALUE = 35;
+    /**
+     * <code>CATAN_PARAM_ERROR = 36;</code>
+     *
+     * <pre>
+     * 卡坦岛[参数错误]
+     * </pre>
+     */
+    public static final int CATAN_PARAM_ERROR_VALUE = 36;
+    /**
+     * <code>CATAN_NOT_FOLD_ROUND = 37;</code>
+     *
+     * <pre>
+     * 卡坦岛[不是弃牌回合]
+     * </pre>
+     */
+    public static final int CATAN_NOT_FOLD_ROUND_VALUE = 37;
+    /**
+     * <code>CATAN_FOLD_ALREADY = 38;</code>
+     *
+     * <pre>
+     * 卡坦岛[已经弃牌了]
+     * </pre>
+     */
+    public static final int CATAN_FOLD_ALREADY_VALUE = 38;
+    /**
+     * <code>CATAN_TRADE_NULL = 39;</code>
+     *
+     * <pre>
+     * 卡坦岛[交易不存在]
+     * </pre>
+     */
+    public static final int CATAN_TRADE_NULL_VALUE = 39;
+    /**
+     * <code>CATAN_TRADE_TARGET_ERROR = 40;</code>
+     *
+     * <pre>
+     * 卡坦岛[交易目标错误]
+     * </pre>
+     */
+    public static final int CATAN_TRADE_TARGET_ERROR_VALUE = 40;
+    /**
+     * <code>CATAN_TRADE_OFFER_ERROR = 41;</code>
+     *
+     * <pre>
+     * 卡坦岛[提供的资源错误]
+     * </pre>
+     */
+    public static final int CATAN_TRADE_OFFER_ERROR_VALUE = 41;
+    /**
+     * <code>CATAN_TRADE_WANT_ERROR = 42;</code>
+     *
+     * <pre>
+     * 卡坦岛[需求的资源错误]
+     * </pre>
+     */
+    public static final int CATAN_TRADE_WANT_ERROR_VALUE = 42;
+    /**
+     * <code>CATAN_TRADE_ERROR = 43;</code>
+     *
+     * <pre>
+     * 卡坦岛[交易错误]
+     * </pre>
+     */
+    public static final int CATAN_TRADE_ERROR_VALUE = 43;
+    /**
+     * <code>CATAN_TRADE_COUNTERED = 44;</code>
+     *
+     * <pre>
+     * 卡坦岛[已经还价了]
+     * </pre>
+     */
+    public static final int CATAN_TRADE_COUNTERED_VALUE = 44;
 
 
     public final int getNumber() { return value; }
@@ -416,6 +752,27 @@ public final class Global {
         case 21: return TABLE_PWD_ERROR;
         case 22: return TABLE_READY;
         case 23: return CATAN_MAP_ILLEGAL;
+        case 24: return CATAN_ROUND_NULL;
+        case 25: return CATAN_NOT_INIT_ROUND;
+        case 26: return CATAN_NOT_MY_ROUND;
+        case 27: return CATAN_ILLEGAL_COUNTRY;
+        case 28: return CATAN_ILLEGAL_ROAD;
+        case 29: return CATAN_NOT_COMMON_ROUND;
+        case 30: return CATAN_ILLEGAL_CITY;
+        case 31: return CATAN_RESOURCE_NOT_ENOUGH;
+        case 32: return CATAN_TRADE_SYSTEM;
+        case 33: return CATAN_CAN_NOT_ROB;
+        case 34: return CATAN_CAN_NOT_USE;
+        case 35: return CATAN_NO_CARD;
+        case 36: return CATAN_PARAM_ERROR;
+        case 37: return CATAN_NOT_FOLD_ROUND;
+        case 38: return CATAN_FOLD_ALREADY;
+        case 39: return CATAN_TRADE_NULL;
+        case 40: return CATAN_TRADE_TARGET_ERROR;
+        case 41: return CATAN_TRADE_OFFER_ERROR;
+        case 42: return CATAN_TRADE_WANT_ERROR;
+        case 43: return CATAN_TRADE_ERROR;
+        case 44: return CATAN_TRADE_COUNTERED;
         default: return null;
       }
     }
@@ -825,6 +1182,159 @@ public final class Global {
   }
 
   /**
+   * Protobuf enum {@code org.shell.mmo.sample.message.proto.CatanCardType}
+   *
+   * <pre>
+   * 卡坦岛发展卡类型
+   * </pre>
+   */
+  public enum CatanCardType
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>CARD_KNIGHT = 1;</code>
+     *
+     * <pre>
+     * 骑士卡
+     * </pre>
+     */
+    CARD_KNIGHT(0, 1),
+    /**
+     * <code>CARD_MONOPOLY = 2;</code>
+     *
+     * <pre>
+     * 垄断卡
+     * </pre>
+     */
+    CARD_MONOPOLY(1, 2),
+    /**
+     * <code>CARD_RICH = 3;</code>
+     *
+     * <pre>
+     * 丰收卡
+     * </pre>
+     */
+    CARD_RICH(2, 3),
+    /**
+     * <code>CARD_ROAD = 4;</code>
+     *
+     * <pre>
+     * 道路卡
+     * </pre>
+     */
+    CARD_ROAD(3, 4),
+    /**
+     * <code>CARD_POINT = 5;</code>
+     *
+     * <pre>
+     * 点数卡
+     * </pre>
+     */
+    CARD_POINT(4, 5),
+    ;
+
+    /**
+     * <code>CARD_KNIGHT = 1;</code>
+     *
+     * <pre>
+     * 骑士卡
+     * </pre>
+     */
+    public static final int CARD_KNIGHT_VALUE = 1;
+    /**
+     * <code>CARD_MONOPOLY = 2;</code>
+     *
+     * <pre>
+     * 垄断卡
+     * </pre>
+     */
+    public static final int CARD_MONOPOLY_VALUE = 2;
+    /**
+     * <code>CARD_RICH = 3;</code>
+     *
+     * <pre>
+     * 丰收卡
+     * </pre>
+     */
+    public static final int CARD_RICH_VALUE = 3;
+    /**
+     * <code>CARD_ROAD = 4;</code>
+     *
+     * <pre>
+     * 道路卡
+     * </pre>
+     */
+    public static final int CARD_ROAD_VALUE = 4;
+    /**
+     * <code>CARD_POINT = 5;</code>
+     *
+     * <pre>
+     * 点数卡
+     * </pre>
+     */
+    public static final int CARD_POINT_VALUE = 5;
+
+
+    public final int getNumber() { return value; }
+
+    public static CatanCardType valueOf(int value) {
+      switch (value) {
+        case 1: return CARD_KNIGHT;
+        case 2: return CARD_MONOPOLY;
+        case 3: return CARD_RICH;
+        case 4: return CARD_ROAD;
+        case 5: return CARD_POINT;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<CatanCardType>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static com.google.protobuf.Internal.EnumLiteMap<CatanCardType>
+        internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<CatanCardType>() {
+            public CatanCardType findValueByNumber(int number) {
+              return CatanCardType.valueOf(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(index);
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(4);
+    }
+
+    private static final CatanCardType[] VALUES = values();
+
+    public static CatanCardType valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int index;
+    private final int value;
+
+    private CatanCardType(int index, int value) {
+      this.index = index;
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:org.shell.mmo.sample.message.proto.CatanCardType)
+  }
+
+  /**
    * Protobuf enum {@code org.shell.mmo.sample.message.proto.CatanPortType}
    *
    * <pre>
@@ -969,7 +1479,7 @@ public final class Global {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(4);
+      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(5);
     }
 
     private static final CatanPortType[] VALUES = values();
@@ -1122,7 +1632,7 @@ public final class Global {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(5);
+      return org.shell.mmo.sample.message.proto.Global.getDescriptor().getEnumTypes().get(6);
     }
 
     private static final Module[] VALUES = values();
@@ -6717,6 +7227,562 @@ public final class Global {
     // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.CatanMasterResource)
   }
 
+  public interface CatanCardOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.CatanCard)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanCardType type = 1;</code>
+     *
+     * <pre>
+     * 类型
+     * </pre>
+     */
+    boolean hasType();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanCardType type = 1;</code>
+     *
+     * <pre>
+     * 类型
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanCardType getType();
+
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    boolean hasCount();
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    int getCount();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanCard}
+   *
+   * <pre>
+   * 卡坦岛发展卡
+   * </pre>
+   */
+  public static final class CatanCard extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.CatanCard)
+      CatanCardOrBuilder {
+    // Use CatanCard.newBuilder() to construct.
+    private CatanCard(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CatanCard(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CatanCard defaultInstance;
+    public static CatanCard getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CatanCard getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CatanCard(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              int rawValue = input.readEnum();
+              org.shell.mmo.sample.message.proto.Global.CatanCardType value = org.shell.mmo.sample.message.proto.Global.CatanCardType.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+              } else {
+                bitField0_ |= 0x00000001;
+                type_ = value;
+              }
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              count_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCard_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCard_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.Global.CatanCard.class, org.shell.mmo.sample.message.proto.Global.CatanCard.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CatanCard> PARSER =
+        new com.google.protobuf.AbstractParser<CatanCard>() {
+      public CatanCard parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CatanCard(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CatanCard> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int TYPE_FIELD_NUMBER = 1;
+    private org.shell.mmo.sample.message.proto.Global.CatanCardType type_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanCardType type = 1;</code>
+     *
+     * <pre>
+     * 类型
+     * </pre>
+     */
+    public boolean hasType() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanCardType type = 1;</code>
+     *
+     * <pre>
+     * 类型
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanCardType getType() {
+      return type_;
+    }
+
+    public static final int COUNT_FIELD_NUMBER = 2;
+    private int count_;
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    public boolean hasCount() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional int32 count = 2;</code>
+     *
+     * <pre>
+     * 数量
+     * </pre>
+     */
+    public int getCount() {
+      return count_;
+    }
+
+    private void initFields() {
+      type_ = org.shell.mmo.sample.message.proto.Global.CatanCardType.CARD_KNIGHT;
+      count_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeEnum(1, type_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, count_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, type_.getNumber());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, count_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.Global.CatanCard parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCard parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCard parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCard parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCard parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCard parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCard parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCard parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCard parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.Global.CatanCard parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.Global.CatanCard prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanCard}
+     *
+     * <pre>
+     * 卡坦岛发展卡
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.CatanCard)
+        org.shell.mmo.sample.message.proto.Global.CatanCardOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCard_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCard_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.Global.CatanCard.class, org.shell.mmo.sample.message.proto.Global.CatanCard.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.Global.CatanCard.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        type_ = org.shell.mmo.sample.message.proto.Global.CatanCardType.CARD_KNIGHT;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        count_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.Global.internal_static_org_shell_mmo_sample_message_proto_CatanCard_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanCard getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.Global.CatanCard.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanCard build() {
+        org.shell.mmo.sample.message.proto.Global.CatanCard result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.Global.CatanCard buildPartial() {
+        org.shell.mmo.sample.message.proto.Global.CatanCard result = new org.shell.mmo.sample.message.proto.Global.CatanCard(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.type_ = type_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.count_ = count_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.Global.CatanCard) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.Global.CatanCard)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.Global.CatanCard other) {
+        if (other == org.shell.mmo.sample.message.proto.Global.CatanCard.getDefaultInstance()) return this;
+        if (other.hasType()) {
+          setType(other.getType());
+        }
+        if (other.hasCount()) {
+          setCount(other.getCount());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.Global.CatanCard parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.Global.CatanCard) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private org.shell.mmo.sample.message.proto.Global.CatanCardType type_ = org.shell.mmo.sample.message.proto.Global.CatanCardType.CARD_KNIGHT;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanCardType type = 1;</code>
+       *
+       * <pre>
+       * 类型
+       * </pre>
+       */
+      public boolean hasType() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanCardType type = 1;</code>
+       *
+       * <pre>
+       * 类型
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCardType getType() {
+        return type_;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanCardType type = 1;</code>
+       *
+       * <pre>
+       * 类型
+       * </pre>
+       */
+      public Builder setType(org.shell.mmo.sample.message.proto.Global.CatanCardType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        bitField0_ |= 0x00000001;
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanCardType type = 1;</code>
+       *
+       * <pre>
+       * 类型
+       * </pre>
+       */
+      public Builder clearType() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        type_ = org.shell.mmo.sample.message.proto.Global.CatanCardType.CARD_KNIGHT;
+        onChanged();
+        return this;
+      }
+
+      private int count_ ;
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public boolean hasCount() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public int getCount() {
+        return count_;
+      }
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public Builder setCount(int value) {
+        bitField0_ |= 0x00000002;
+        count_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 count = 2;</code>
+       *
+       * <pre>
+       * 数量
+       * </pre>
+       */
+      public Builder clearCount() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        count_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.CatanCard)
+    }
+
+    static {
+      defaultInstance = new CatanCard(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.CatanCard)
+  }
+
   public interface CatanMapOrBuilder extends
       // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.CatanMap)
       com.google.protobuf.MessageOrBuilder {
@@ -6940,6 +8006,31 @@ public final class Global {
      */
     org.shell.mmo.sample.message.proto.Global.CatanPortOrBuilder getPortOrBuilder(
         int index);
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+     *
+     * <pre>
+     * 强盗坐标
+     * </pre>
+     */
+    boolean hasRobber();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+     *
+     * <pre>
+     * 强盗坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getRobber();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+     *
+     * <pre>
+     * 强盗坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.CatanMap}
@@ -7037,6 +8128,19 @@ public final class Global {
               port_.add(input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanPort.PARSER, extensionRegistry));
               break;
             }
+            case 50: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = robber_.toBuilder();
+              }
+              robber_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(robber_);
+                robber_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -7091,6 +8195,7 @@ public final class Global {
       return PARSER;
     }
 
+    private int bitField0_;
     public static final int GRID_FIELD_NUMBER = 1;
     private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanGrid> grid_;
     /**
@@ -7366,12 +8471,46 @@ public final class Global {
       return port_.get(index);
     }
 
+    public static final int ROBBER_FIELD_NUMBER = 6;
+    private org.shell.mmo.sample.message.proto.Global.Position robber_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+     *
+     * <pre>
+     * 强盗坐标
+     * </pre>
+     */
+    public boolean hasRobber() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+     *
+     * <pre>
+     * 强盗坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getRobber() {
+      return robber_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+     *
+     * <pre>
+     * 强盗坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder() {
+      return robber_;
+    }
+
     private void initFields() {
       grid_ = java.util.Collections.emptyList();
       city_ = java.util.Collections.emptyList();
       country_ = java.util.Collections.emptyList();
       road_ = java.util.Collections.emptyList();
       port_ = java.util.Collections.emptyList();
+      robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -7401,6 +8540,9 @@ public final class Global {
       for (int i = 0; i < port_.size(); i++) {
         output.writeMessage(5, port_.get(i));
       }
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(6, robber_);
+      }
       getUnknownFields().writeTo(output);
     }
 
@@ -7429,6 +8571,10 @@ public final class Global {
       for (int i = 0; i < port_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, port_.get(i));
+      }
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, robber_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -7548,6 +8694,7 @@ public final class Global {
           getCountryFieldBuilder();
           getRoadFieldBuilder();
           getPortFieldBuilder();
+          getRobberFieldBuilder();
         }
       }
       private static Builder create() {
@@ -7586,6 +8733,12 @@ public final class Global {
         } else {
           portBuilder_.clear();
         }
+        if (robberBuilder_ == null) {
+          robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          robberBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
 
@@ -7613,6 +8766,7 @@ public final class Global {
       public org.shell.mmo.sample.message.proto.Global.CatanMap buildPartial() {
         org.shell.mmo.sample.message.proto.Global.CatanMap result = new org.shell.mmo.sample.message.proto.Global.CatanMap(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         if (gridBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
             grid_ = java.util.Collections.unmodifiableList(grid_);
@@ -7658,6 +8812,15 @@ public final class Global {
         } else {
           result.port_ = portBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (robberBuilder_ == null) {
+          result.robber_ = robber_;
+        } else {
+          result.robber_ = robberBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -7802,6 +8965,9 @@ public final class Global {
               portBuilder_.addAllMessages(other.port_);
             }
           }
+        }
+        if (other.hasRobber()) {
+          mergeRobber(other.getRobber());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -9388,6 +10554,158 @@ public final class Global {
           port_ = null;
         }
         return portBuilder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> robberBuilder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+       *
+       * <pre>
+       * 强盗坐标
+       * </pre>
+       */
+      public boolean hasRobber() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+       *
+       * <pre>
+       * 强盗坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getRobber() {
+        if (robberBuilder_ == null) {
+          return robber_;
+        } else {
+          return robberBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+       *
+       * <pre>
+       * 强盗坐标
+       * </pre>
+       */
+      public Builder setRobber(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (robberBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          robber_ = value;
+          onChanged();
+        } else {
+          robberBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+       *
+       * <pre>
+       * 强盗坐标
+       * </pre>
+       */
+      public Builder setRobber(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (robberBuilder_ == null) {
+          robber_ = builderForValue.build();
+          onChanged();
+        } else {
+          robberBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+       *
+       * <pre>
+       * 强盗坐标
+       * </pre>
+       */
+      public Builder mergeRobber(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (robberBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) == 0x00000020) &&
+              robber_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            robber_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(robber_).mergeFrom(value).buildPartial();
+          } else {
+            robber_ = value;
+          }
+          onChanged();
+        } else {
+          robberBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+       *
+       * <pre>
+       * 强盗坐标
+       * </pre>
+       */
+      public Builder clearRobber() {
+        if (robberBuilder_ == null) {
+          robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          robberBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000020);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+       *
+       * <pre>
+       * 强盗坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getRobberBuilder() {
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return getRobberFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+       *
+       * <pre>
+       * 强盗坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder() {
+        if (robberBuilder_ != null) {
+          return robberBuilder_.getMessageOrBuilder();
+        } else {
+          return robber_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 6;</code>
+       *
+       * <pre>
+       * 强盗坐标
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getRobberFieldBuilder() {
+        if (robberBuilder_ == null) {
+          robberBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getRobber(),
+                  getParentForChildren(),
+                  isClean());
+          robber_ = null;
+        }
+        return robberBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.CatanMap)
@@ -14040,6 +15358,11 @@ public final class Global {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_CatanCard_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_CatanCard_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_org_shell_mmo_sample_message_proto_CatanMap_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -14097,53 +15420,73 @@ public final class Global {
       "atanResourceType\022\013\n\003num\030\002 \001(\005\"f\n\023CatanMa" +
       "sterResource\022\n\n\002id\030\001 \001(\006\022C\n\010resource\030\002 \003" +
       "(\01321.org.shell.mmo.sample.message.proto." +
-      "CatanResource\"\301\002\n\010CatanMap\022;\n\004grid\030\001 \003(\013" +
-      "2-.org.shell.mmo.sample.message.proto.Ca" +
-      "tanGrid\022;\n\004city\030\002 \003(\0132-.org.shell.mmo.sa" +
-      "mple.message.proto.CatanCity\022A\n\007country\030" +
-      "\003 \003(\01320.org.shell.mmo.sample.message.pro" +
-      "to.CatanCountry\022;\n\004road\030\004 \003(\0132-.org.shel",
-      "l.mmo.sample.message.proto.CatanRoad\022;\n\004" +
-      "port\030\005 \003(\0132-.org.shell.mmo.sample.messag" +
-      "e.proto.CatanPort\"\316\001\n\tCatanPort\022?\n\tposit" +
-      "ion1\030\001 \001(\0132,.org.shell.mmo.sample.messag" +
-      "e.proto.Position\022?\n\tposition2\030\002 \001(\0132,.or" +
-      "g.shell.mmo.sample.message.proto.Positio" +
-      "n\022?\n\004type\030\003 \001(\01621.org.shell.mmo.sample.m" +
-      "essage.proto.CatanPortType\"\240\001\n\tCatanGrid" +
-      "\022>\n\010position\030\001 \001(\0132,.org.shell.mmo.sampl" +
-      "e.message.proto.Position\022C\n\004type\030\002 \001(\01625",
-      ".org.shell.mmo.sample.message.proto.Cata" +
-      "nResourceType\022\016\n\006number\030\003 \001(\005\"T\n\tCatanCi" +
-      "ty\022;\n\005point\030\001 \001(\0132,.org.shell.mmo.sample" +
-      ".message.proto.Position\022\n\n\002id\030\002 \001(\006\"W\n\014C" +
-      "atanCountry\022;\n\005point\030\001 \001(\0132,.org.shell.m" +
-      "mo.sample.message.proto.Position\022\n\n\002id\030\002" +
-      " \001(\006\"\223\001\n\tCatanRoad\022<\n\006point1\030\001 \001(\0132,.org" +
-      ".shell.mmo.sample.message.proto.Position" +
-      "\022<\n\006point2\030\002 \001(\0132,.org.shell.mmo.sample." +
-      "message.proto.Position\022\n\n\002id\030\003 \001(\006\"\'\n\nCa",
-      "tanScore\022\r\n\005score\030\001 \001(\005\022\n\n\002id\030\002 \001(\006*\246\003\n\005" +
-      "Error\022\013\n\007SYS_ERR\020\001\022\022\n\016LOGIN_FLAG_ERR\020\002\022\022" +
-      "\n\016LOGIN_OVERTIME\020\003\022\013\n\007USR_ERR\020\004\022\020\n\014PLATF" +
-      "ORM_ERR\020\005\022\016\n\nLIMIT_HOST\020\006\022\r\n\tLIMIT_USR\020\007" +
-      "\022\020\n\014LOGIN_REPEAT\020\010\022\016\n\nROLE_EXIST\020\t\022\021\n\rRO" +
-      "LE_NAME_LEN\020\n\022\025\n\021ROLE_NAME_ILLEGAL\020\013\022\024\n\020" +
-      "ROLE_NAME_REPEAT\020\014\022\r\n\tROOM_NULL\020\r\022\023\n\017TAB" +
-      "LE_NAME_NULL\020\016\022\026\n\022TABLE_PWD_TOO_LONG\020\017\022\014" +
-      "\n\010TABLE_IN\020\020\022\020\n\014TABLE_NOT_IN\020\021\022\017\n\013TABLE_" +
-      "START\020\022\022\016\n\nTABLE_NULL\020\023\022\016\n\nTABLE_FULL\020\024\022",
-      "\023\n\017TABLE_PWD_ERROR\020\025\022\017\n\013TABLE_READY\020\026\022\025\n" +
-      "\021CATAN_MAP_ILLEGAL\020\027*\032\n\010RoomType\022\016\n\nROOM" +
-      "_CATAN\020\001*+\n\010Platform\022\t\n\005INNER\020\001\022\n\n\006P37WA" +
-      "N\020\002\022\010\n\004P360\020\003*t\n\021CatanResourceType\022\022\n\016RE" +
-      "SOURCE_BRICK\020\001\022\023\n\017RESOURCE_LUMBER\020\002\022\021\n\rR" +
-      "ESOURCE_WOOL\020\003\022\021\n\rRESOURCE_GAIN\020\004\022\020\n\014RES" +
-      "OURCE_ORE\020\005*k\n\rCatanPortType\022\016\n\nPORT_BRI" +
-      "CK\020\001\022\017\n\013PORT_LUMBER\020\002\022\r\n\tPORT_WOOL\020\003\022\r\n\t" +
-      "PORT_GAIN\020\004\022\014\n\010PORT_ORE\020\005\022\r\n\tPORT_BANK\020\006" +
-      "*=\n\006Module\022\t\n\005LOGIN\020\001\022\010\n\004ROLE\020\002\022\010\n\004ROOM\020",
-      "\003\022\t\n\005TABLE\020\004\022\t\n\005CATAN\020\005"
+      "CatanResource\"[\n\tCatanCard\022?\n\004type\030\001 \001(\016" +
+      "21.org.shell.mmo.sample.message.proto.Ca" +
+      "tanCardType\022\r\n\005count\030\002 \001(\005\"\377\002\n\010CatanMap\022" +
+      ";\n\004grid\030\001 \003(\0132-.org.shell.mmo.sample.mes" +
+      "sage.proto.CatanGrid\022;\n\004city\030\002 \003(\0132-.org" +
+      ".shell.mmo.sample.message.proto.CatanCit",
+      "y\022A\n\007country\030\003 \003(\01320.org.shell.mmo.sampl" +
+      "e.message.proto.CatanCountry\022;\n\004road\030\004 \003" +
+      "(\0132-.org.shell.mmo.sample.message.proto." +
+      "CatanRoad\022;\n\004port\030\005 \003(\0132-.org.shell.mmo." +
+      "sample.message.proto.CatanPort\022<\n\006robber" +
+      "\030\006 \001(\0132,.org.shell.mmo.sample.message.pr" +
+      "oto.Position\"\316\001\n\tCatanPort\022?\n\tposition1\030" +
+      "\001 \001(\0132,.org.shell.mmo.sample.message.pro" +
+      "to.Position\022?\n\tposition2\030\002 \001(\0132,.org.she" +
+      "ll.mmo.sample.message.proto.Position\022?\n\004",
+      "type\030\003 \001(\01621.org.shell.mmo.sample.messag" +
+      "e.proto.CatanPortType\"\240\001\n\tCatanGrid\022>\n\010p" +
+      "osition\030\001 \001(\0132,.org.shell.mmo.sample.mes" +
+      "sage.proto.Position\022C\n\004type\030\002 \001(\01625.org." +
+      "shell.mmo.sample.message.proto.CatanReso" +
+      "urceType\022\016\n\006number\030\003 \001(\005\"T\n\tCatanCity\022;\n" +
+      "\005point\030\001 \001(\0132,.org.shell.mmo.sample.mess" +
+      "age.proto.Position\022\n\n\002id\030\002 \001(\006\"W\n\014CatanC" +
+      "ountry\022;\n\005point\030\001 \001(\0132,.org.shell.mmo.sa" +
+      "mple.message.proto.Position\022\n\n\002id\030\002 \001(\006\"",
+      "\223\001\n\tCatanRoad\022<\n\006point1\030\001 \001(\0132,.org.shel" +
+      "l.mmo.sample.message.proto.Position\022<\n\006p" +
+      "oint2\030\002 \001(\0132,.org.shell.mmo.sample.messa" +
+      "ge.proto.Position\022\n\n\002id\030\003 \001(\006\"\'\n\nCatanSc" +
+      "ore\022\r\n\005score\030\001 \001(\005\022\n\n\002id\030\002 \001(\006*\265\007\n\005Error" +
+      "\022\013\n\007SYS_ERR\020\001\022\022\n\016LOGIN_FLAG_ERR\020\002\022\022\n\016LOG" +
+      "IN_OVERTIME\020\003\022\013\n\007USR_ERR\020\004\022\020\n\014PLATFORM_E" +
+      "RR\020\005\022\016\n\nLIMIT_HOST\020\006\022\r\n\tLIMIT_USR\020\007\022\020\n\014L" +
+      "OGIN_REPEAT\020\010\022\016\n\nROLE_EXIST\020\t\022\021\n\rROLE_NA" +
+      "ME_LEN\020\n\022\025\n\021ROLE_NAME_ILLEGAL\020\013\022\024\n\020ROLE_",
+      "NAME_REPEAT\020\014\022\r\n\tROOM_NULL\020\r\022\023\n\017TABLE_NA" +
+      "ME_NULL\020\016\022\026\n\022TABLE_PWD_TOO_LONG\020\017\022\014\n\010TAB" +
+      "LE_IN\020\020\022\020\n\014TABLE_NOT_IN\020\021\022\017\n\013TABLE_START" +
+      "\020\022\022\016\n\nTABLE_NULL\020\023\022\016\n\nTABLE_FULL\020\024\022\023\n\017TA" +
+      "BLE_PWD_ERROR\020\025\022\017\n\013TABLE_READY\020\026\022\025\n\021CATA" +
+      "N_MAP_ILLEGAL\020\027\022\024\n\020CATAN_ROUND_NULL\020\030\022\030\n" +
+      "\024CATAN_NOT_INIT_ROUND\020\031\022\026\n\022CATAN_NOT_MY_" +
+      "ROUND\020\032\022\031\n\025CATAN_ILLEGAL_COUNTRY\020\033\022\026\n\022CA" +
+      "TAN_ILLEGAL_ROAD\020\034\022\032\n\026CATAN_NOT_COMMON_R" +
+      "OUND\020\035\022\026\n\022CATAN_ILLEGAL_CITY\020\036\022\035\n\031CATAN_",
+      "RESOURCE_NOT_ENOUGH\020\037\022\026\n\022CATAN_TRADE_SYS" +
+      "TEM\020 \022\025\n\021CATAN_CAN_NOT_ROB\020!\022\025\n\021CATAN_CA" +
+      "N_NOT_USE\020\"\022\021\n\rCATAN_NO_CARD\020#\022\025\n\021CATAN_" +
+      "PARAM_ERROR\020$\022\030\n\024CATAN_NOT_FOLD_ROUND\020%\022" +
+      "\026\n\022CATAN_FOLD_ALREADY\020&\022\024\n\020CATAN_TRADE_N" +
+      "ULL\020\'\022\034\n\030CATAN_TRADE_TARGET_ERROR\020(\022\033\n\027C" +
+      "ATAN_TRADE_OFFER_ERROR\020)\022\032\n\026CATAN_TRADE_" +
+      "WANT_ERROR\020*\022\025\n\021CATAN_TRADE_ERROR\020+\022\031\n\025C" +
+      "ATAN_TRADE_COUNTERED\020,*\032\n\010RoomType\022\016\n\nRO" +
+      "OM_CATAN\020\001*+\n\010Platform\022\t\n\005INNER\020\001\022\n\n\006P37",
+      "WAN\020\002\022\010\n\004P360\020\003*t\n\021CatanResourceType\022\022\n\016" +
+      "RESOURCE_BRICK\020\001\022\023\n\017RESOURCE_LUMBER\020\002\022\021\n" +
+      "\rRESOURCE_WOOL\020\003\022\021\n\rRESOURCE_GAIN\020\004\022\020\n\014R" +
+      "ESOURCE_ORE\020\005*a\n\rCatanCardType\022\017\n\013CARD_K" +
+      "NIGHT\020\001\022\021\n\rCARD_MONOPOLY\020\002\022\r\n\tCARD_RICH\020" +
+      "\003\022\r\n\tCARD_ROAD\020\004\022\016\n\nCARD_POINT\020\005*k\n\rCata" +
+      "nPortType\022\016\n\nPORT_BRICK\020\001\022\017\n\013PORT_LUMBER" +
+      "\020\002\022\r\n\tPORT_WOOL\020\003\022\r\n\tPORT_GAIN\020\004\022\014\n\010PORT" +
+      "_ORE\020\005\022\r\n\tPORT_BANK\020\006*=\n\006Module\022\t\n\005LOGIN" +
+      "\020\001\022\010\n\004ROLE\020\002\022\010\n\004ROOM\020\003\022\t\n\005TABLE\020\004\022\t\n\005CAT",
+      "AN\020\005"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -14199,44 +15542,50 @@ public final class Global {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_CatanMasterResource_descriptor,
         new java.lang.String[] { "Id", "Resource", });
-    internal_static_org_shell_mmo_sample_message_proto_CatanMap_descriptor =
+    internal_static_org_shell_mmo_sample_message_proto_CatanCard_descriptor =
       getDescriptor().getMessageTypes().get(7);
+    internal_static_org_shell_mmo_sample_message_proto_CatanCard_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_CatanCard_descriptor,
+        new java.lang.String[] { "Type", "Count", });
+    internal_static_org_shell_mmo_sample_message_proto_CatanMap_descriptor =
+      getDescriptor().getMessageTypes().get(8);
     internal_static_org_shell_mmo_sample_message_proto_CatanMap_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_CatanMap_descriptor,
-        new java.lang.String[] { "Grid", "City", "Country", "Road", "Port", });
+        new java.lang.String[] { "Grid", "City", "Country", "Road", "Port", "Robber", });
     internal_static_org_shell_mmo_sample_message_proto_CatanPort_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_org_shell_mmo_sample_message_proto_CatanPort_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_CatanPort_descriptor,
         new java.lang.String[] { "Position1", "Position2", "Type", });
     internal_static_org_shell_mmo_sample_message_proto_CatanGrid_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_org_shell_mmo_sample_message_proto_CatanGrid_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_CatanGrid_descriptor,
         new java.lang.String[] { "Position", "Type", "Number", });
     internal_static_org_shell_mmo_sample_message_proto_CatanCity_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_org_shell_mmo_sample_message_proto_CatanCity_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_CatanCity_descriptor,
         new java.lang.String[] { "Point", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_CatanCountry_descriptor =
-      getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(12);
     internal_static_org_shell_mmo_sample_message_proto_CatanCountry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_CatanCountry_descriptor,
         new java.lang.String[] { "Point", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_CatanRoad_descriptor =
-      getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(13);
     internal_static_org_shell_mmo_sample_message_proto_CatanRoad_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_CatanRoad_descriptor,
         new java.lang.String[] { "Point1", "Point2", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_CatanScore_descriptor =
-      getDescriptor().getMessageTypes().get(13);
+      getDescriptor().getMessageTypes().get(14);
     internal_static_org_shell_mmo_sample_message_proto_CatanScore_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_CatanScore_descriptor,

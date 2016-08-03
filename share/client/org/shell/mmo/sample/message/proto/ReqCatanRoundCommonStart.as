@@ -65,26 +65,26 @@ package org.shell.mmo.sample.message.proto {
 		/**
 		 *  @private
 		 */
-		public static const ROB:FieldDescriptor_TYPE_BOOL = new FieldDescriptor_TYPE_BOOL("org.shell.mmo.sample.message.proto.ReqCatanRoundCommonStart.rob", "rob", (3 << 3) | com.netease.protobuf.WireType.VARINT);
+		public static const DICE:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.ReqCatanRoundCommonStart.dice", "dice", (3 << 3) | com.netease.protobuf.WireType.VARINT);
 
-		private var rob$field:Boolean;
+		private var dice$field:int;
 
-		public function clearRob():void {
+		public function clearDice():void {
 			hasField$0 &= 0xfffffffd;
-			rob$field = new Boolean();
+			dice$field = new int();
 		}
 
-		public function get hasRob():Boolean {
+		public function get hasDice():Boolean {
 			return (hasField$0 & 0x2) != 0;
 		}
 
-		public function set rob(value:Boolean):void {
+		public function set dice(value:int):void {
 			hasField$0 |= 0x2;
-			rob$field = value;
+			dice$field = value;
 		}
 
-		public function get rob():Boolean {
-			return rob$field;
+		public function get dice():int {
+			return dice$field;
 		}
 
 		/**
@@ -107,9 +107,9 @@ package org.shell.mmo.sample.message.proto {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 2);
 				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, remain$field);
 			}
-			if (hasRob) {
+			if (hasDice) {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 3);
-				com.netease.protobuf.WriteUtils.write_TYPE_BOOL(output, rob$field);
+				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, dice$field);
 			}
 			for (var gain$index:uint = 0; gain$index < this.gain.length; ++gain$index) {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 4);
@@ -126,7 +126,7 @@ package org.shell.mmo.sample.message.proto {
 		override com.netease.protobuf.used_by_generated_code final function readFromSlice(input:flash.utils.IDataInput, bytesAfterSlice:uint):void {
 			var id$count:uint = 0;
 			var remain$count:uint = 0;
-			var rob$count:uint = 0;
+			var dice$count:uint = 0;
 			while (input.bytesAvailable > bytesAfterSlice) {
 				var tag:uint = com.netease.protobuf.ReadUtils.read_TYPE_UINT32(input);
 				switch (tag >> 3) {
@@ -145,11 +145,11 @@ package org.shell.mmo.sample.message.proto {
 					this.remain = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
 					break;
 				case 3:
-					if (rob$count != 0) {
-						throw new flash.errors.IOError('Bad data format: ReqCatanRoundCommonStart.rob cannot be set twice.');
+					if (dice$count != 0) {
+						throw new flash.errors.IOError('Bad data format: ReqCatanRoundCommonStart.dice cannot be set twice.');
 					}
-					++rob$count;
-					this.rob = com.netease.protobuf.ReadUtils.read_TYPE_BOOL(input);
+					++dice$count;
+					this.dice = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
 					break;
 				case 4:
 					this.gain.push(com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, new org.shell.mmo.sample.message.proto.CatanMasterResource()));

@@ -10,6 +10,7 @@ package org.shell.mmo.sample.message.proto {
 	import org.shell.mmo.sample.message.proto.CatanCountry;
 	import org.shell.mmo.sample.message.proto.CatanGrid;
 	import org.shell.mmo.sample.message.proto.CatanPort;
+	import org.shell.mmo.sample.message.proto.Position;
 	import org.shell.mmo.sample.message.proto.CatanRoad;
 	import org.shell.mmo.sample.message.proto.CatanCity;
 	// @@protoc_insertion_point(imports)
@@ -59,6 +60,29 @@ package org.shell.mmo.sample.message.proto {
 		/**
 		 *  @private
 		 */
+		public static const ROBBER:FieldDescriptor_TYPE_MESSAGE = new FieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.message.proto.CatanMap.robber", "robber", (6 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.message.proto.Position; });
+
+		private var robber$field:org.shell.mmo.sample.message.proto.Position;
+
+		public function clearRobber():void {
+			robber$field = null;
+		}
+
+		public function get hasRobber():Boolean {
+			return robber$field != null;
+		}
+
+		public function set robber(value:org.shell.mmo.sample.message.proto.Position):void {
+			robber$field = value;
+		}
+
+		public function get robber():org.shell.mmo.sample.message.proto.Position {
+			return robber$field;
+		}
+
+		/**
+		 *  @private
+		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
 			for (var grid$index:uint = 0; grid$index < this.grid.length; ++grid$index) {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 1);
@@ -80,6 +104,10 @@ package org.shell.mmo.sample.message.proto {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 5);
 				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, this.port[port$index]);
 			}
+			if (hasRobber) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 6);
+				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, robber$field);
+			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
 			}
@@ -89,6 +117,7 @@ package org.shell.mmo.sample.message.proto {
 		 *  @private
 		 */
 		override com.netease.protobuf.used_by_generated_code final function readFromSlice(input:flash.utils.IDataInput, bytesAfterSlice:uint):void {
+			var robber$count:uint = 0;
 			while (input.bytesAvailable > bytesAfterSlice) {
 				var tag:uint = com.netease.protobuf.ReadUtils.read_TYPE_UINT32(input);
 				switch (tag >> 3) {
@@ -106,6 +135,14 @@ package org.shell.mmo.sample.message.proto {
 					break;
 				case 5:
 					this.port.push(com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, new org.shell.mmo.sample.message.proto.CatanPort()));
+					break;
+				case 6:
+					if (robber$count != 0) {
+						throw new flash.errors.IOError('Bad data format: CatanMap.robber cannot be set twice.');
+					}
+					++robber$count;
+					this.robber = new org.shell.mmo.sample.message.proto.Position();
+					com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, this.robber);
 					break;
 				default:
 					super.readUnknown(input, tag);

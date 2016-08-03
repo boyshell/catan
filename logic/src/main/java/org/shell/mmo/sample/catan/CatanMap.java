@@ -1,6 +1,8 @@
 package org.shell.mmo.sample.catan;
 
 import com.google.common.collect.HashBasedTable;
+import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;
 import com.google.common.collect.Table;
 import com.shell.mmo.utils.RandomUtil;
 import org.shell.mmo.sample.config.bean.CcatanMap;
@@ -16,6 +18,8 @@ public class CatanMap {
     private Table<Integer, Integer, CatanGrid> grids = HashBasedTable.create();
     private Table<Integer, Integer, CatanPoint> points = HashBasedTable.create();
     private Map<CatanEdge.Key, CatanEdge> edges = new HashMap<>();
+    private CatanRobber robber;
+    private Multimap<Integer, CatanGrid> dice2grid = HashMultimap.create();
 
     public CatanMap(CcatanMap config) {
         // 构造地图
@@ -76,6 +80,7 @@ public class CatanMap {
                     --number8;
                     grid.number = 8;
                 }
+                dice2grid.put(grid.number, grid);
 
                 it.remove();
                 continue;
@@ -84,8 +89,14 @@ public class CatanMap {
         for (CatanGrid grid : allGrids) {
             if (grid.type != null) {
                 grid.number = numbers.remove(0);
+                for (CatanPoint point : grid.getPoints()) {
+                    dice2grid.put(grid.number, grid);
+                }
             }
         }
+        // 放置强盗
+        robber = new CatanRobber();
+        robber.grid = allGrids.get(allGrids.size() - 1);
         // 放置港口
         List<Global.CatanPortType> ports = new ArrayList<>();
         ports.addAll(ports(Global.CatanPortType.PORT_BRICK, config.getBrickPort()));
@@ -106,6 +117,14 @@ public class CatanMap {
                 edge.type = ports.remove(0);
             }
         }
+    }
+
+    public Multimap<Integer, CatanGrid> getDice2grid() {
+        return dice2grid;
+    }
+
+    public CatanRobber getRobber() {
+        return robber;
     }
 
     public Map<CatanEdge.Key, CatanEdge> getEdges() {
@@ -201,7 +220,7 @@ public class CatanMap {
             points.put(x, y, point);
         }
         if (type != null) {
-            point.resources |= (0x1 << type.getNumber());
+            point.resources |= (0x1 << type.ordinal());
         }
         return point;
     }
@@ -227,8 +246,8 @@ public class CatanMap {
 
             builder.addGrid(gridBuilder);
         }
-        // 港口
         for (CatanEdge edge : edges.values()) {
+            // 港口
             if (edge.getType() != null) {
                 Global.CatanPort.Builder portBuilder = Global.CatanPort.newBuilder();
                 portBuilder.setPosition1(Global.Position.newBuilder().setX(edge.getPoint1().getX()).setY(edge.getPoint1().getY()));
@@ -237,22 +256,78 @@ public class CatanMap {
 
                 builder.addPort(portBuilder);
             }
+            // 道路
+            if (edge.owner != 0) {
+                builder.addRoad(Global.CatanRoad.newBuilder()
+                        .setId(edge.owner)
+                        .setPoint1(Global.Position.newBuilder().setX(edge.getPoint1().getX()).setY(edge.getPoint1().getY()))
+                        .setPoint2(Global.Position.newBuilder().setX(edge.getPoint2().getX()).setY(edge.getPoint2().getY())));
+            }
         }
-        // TODO 城市
-        // TODO 村庄
-        // TODO 道路
+        // 强盗
+        builder.setRobber(Global.Position.newBuilder().setX(robber.grid.getX()).setY(robber.grid.getY()));
+        for (CatanPoint point : points.values()) {
+            if (point.buildingType == BuildingType.COUNTRY) { // 村庄
+                builder.addCountry(Global.CatanCountry.newBuilder().setId(point.getOwner()).setPoint(Global.Position.newBuilder().setX(point.getX()).setY(point.getY())));
+            } else if (point.buildingType == BuildingType.CITY) { // 城市
+                builder.addCity(Global.CatanCity.newBuilder().setId(point.getOwner()).setPoint(Global.Position.newBuilder().setX(point.getX()).setY(point.getY())));
+            }
+        }
+
         return builder;
     }
 
+    public enum BuildingType {
+        COUNTRY(Global.CatanResource.newBuilder().setType(Global.CatanResourceType.RESOURCE_LUMBER).setNum(1).build()
+                , Global.CatanResource.newBuilder().setType(Global.CatanResourceType.RESOURCE_BRICK).setNum(1).build()
+                , Global.CatanResource.newBuilder().setType(Global.CatanResourceType.RESOURCE_WOOL).setNum(1).build()
+                , Global.CatanResource.newBuilder().setType(Global.CatanResourceType.RESOURCE_GAIN).setNum(1).build()),
+        CITY(Global.CatanResource.newBuilder().setType(Global.CatanResourceType.RESOURCE_GAIN).setNum(2).build()
+                , Global.CatanResource.newBuilder().setType(Global.CatanResourceType.RESOURCE_ORE).setNum(3).build()),
+        ROAD(Global.CatanResource.newBuilder().setType(Global.CatanResourceType.RESOURCE_LUMBER).setNum(1).build()
+                , Global.CatanResource.newBuilder().setType(Global.CatanResourceType.RESOURCE_BRICK).setNum(1).build()),
+        CARD(Global.CatanResource.newBuilder().setType(Global.CatanResourceType.RESOURCE_WOOL).setNum(1).build()
+                , Global.CatanResource.newBuilder().setType(Global.CatanResourceType.RESOURCE_GAIN).setNum(1).build()
+                , Global.CatanResource.newBuilder().setType(Global.CatanResourceType.RESOURCE_ORE).setNum(1).build())
+        ;
+        private final List<Global.CatanResource> cost;
+
+        BuildingType(Global.CatanResource... cost) {
+            this.cost = new ArrayList<>();
+            for (Global.CatanResource r : cost) {
+                this.cost.add(r);
+            }
+        }
+
+        public List<Global.CatanResource> getCost() {
+            return cost;
+        }
+    }
+
     public static class CatanPoint {
-        private final int x;
-        private final int y;
-        private int resources;
-        private final Set<CatanEdge> edges = new HashSet<>();
+        final int x;
+        final int y;
+        int resources;
+        final Set<CatanEdge> edges = new HashSet<>();
+        BuildingType buildingType;
+        long owner;
+
 
         public CatanPoint(int x, int y) {
             this.x = x;
             this.y = y;
+        }
+
+        public Set<CatanEdge> getEdges() {
+            return edges;
+        }
+
+        public BuildingType getBuildingType() {
+            return buildingType;
+        }
+
+        public long getOwner() {
+            return owner;
         }
 
         public int getX() {
@@ -265,6 +340,10 @@ public class CatanMap {
 
         public int getResources() {
             return resources;
+        }
+
+        public boolean isSet(Global.CatanResourceType type) {
+            return (resources & (0x1 << type.ordinal())) != 0;
         }
     }
 
@@ -280,6 +359,10 @@ public class CatanMap {
             this.x = x;
             this.y = y;
             this.type = type;
+        }
+
+        public Set<CatanPoint> getPoints() {
+            return points;
         }
 
         public int getX() {
@@ -300,14 +383,23 @@ public class CatanMap {
     }
 
     public static class CatanEdge {
-        private final CatanPoint point1;
-        private final CatanPoint point2;
-        private final Set<CatanGrid> grids = new HashSet<>();
-        private Global.CatanPortType type;
+        final CatanPoint point1;
+        final CatanPoint point2;
+        final Set<CatanGrid> grids = new HashSet<>();
+        Global.CatanPortType type;
+        long owner;
 
         public CatanEdge(CatanPoint p1, CatanPoint p2) {
             this.point1 = p1;
             this.point2 = p2;
+        }
+
+        public void setOwner(long owner) {
+            this.owner = owner;
+        }
+
+        public long getOwner() {
+            return owner;
         }
 
         public CatanPoint getPoint1() {
@@ -361,5 +453,9 @@ public class CatanMap {
                 this.y2 = y2;
             }
         }
+    }
+
+    public static class CatanRobber {
+        CatanGrid grid;
     }
 }

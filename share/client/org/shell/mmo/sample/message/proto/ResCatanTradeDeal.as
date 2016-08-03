@@ -66,7 +66,7 @@ package org.shell.mmo.sample.message.proto {
 		/**
 		 *  @private
 		 */
-		public static const MASTER2:FieldDescriptor_TYPE_MESSAGE = new FieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.message.proto.ResCatanTradeDeal.master2", "master2", (4 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.message.proto.CatanMasterResource; });
+		public static const MASTER2:FieldDescriptor_TYPE_MESSAGE = new FieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.message.proto.ResCatanTradeDeal.master2", "master2", (3 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.message.proto.CatanMasterResource; });
 
 		private var master2$field:org.shell.mmo.sample.message.proto.CatanMasterResource;
 
@@ -99,7 +99,7 @@ package org.shell.mmo.sample.message.proto {
 				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, master1$field);
 			}
 			if (hasMaster2) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 4);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 3);
 				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, master2$field);
 			}
 			for (var fieldKey:* in this) {
@@ -132,7 +132,7 @@ package org.shell.mmo.sample.message.proto {
 					this.master1 = new org.shell.mmo.sample.message.proto.CatanMasterResource();
 					com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, this.master1);
 					break;
-				case 4:
+				case 3:
 					if (master2$count != 0) {
 						throw new flash.errors.IOError('Bad data format: ResCatanTradeDeal.master2 cannot be set twice.');
 					}

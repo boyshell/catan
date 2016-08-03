@@ -28,6 +28,27 @@
             <TABLE_READY desc="桌子[已经准备]" id="22"/>
 
             <CATAN_MAP_ILLEGAL desc="卡坦岛[地图非法]" id="23"/>
+            <CATAN_ROUND_NULL desc="卡坦岛[回合不存在]" id="24"/>
+            <CATAN_NOT_INIT_ROUND desc="卡坦岛[不是初始化回合]" id="25"/>
+            <CATAN_NOT_MY_ROUND desc="卡坦岛[不是我的回合]" id="26"/>
+            <CATAN_ILLEGAL_COUNTRY desc="卡坦岛[村庄位置非法]" id="27"/>
+            <CATAN_ILLEGAL_ROAD desc="卡坦岛[道路位置非法]" id="28"/>
+            <CATAN_NOT_COMMON_ROUND desc="卡坦岛[不是普通回合]" id="29"/>
+            <CATAN_ILLEGAL_CITY desc="卡坦岛[城市位置非法]" id="30"/>
+            <CATAN_RESOURCE_NOT_ENOUGH desc="卡坦岛[资源不足]" id="31"/>
+            <CATAN_TRADE_SYSTEM desc="卡坦岛[系统交易参数错误]" id="32"/>
+            <CATAN_CAN_NOT_ROB desc="卡坦岛[不能抢夺]" id="33"/>
+            <CATAN_CAN_NOT_USE desc="卡坦岛[本轮不能使用发展卡了]" id="34"/>
+            <CATAN_NO_CARD desc="卡坦岛[没有该类型发展卡]" id="35"/>
+            <CATAN_PARAM_ERROR desc="卡坦岛[参数错误]" id="36"/>
+            <CATAN_NOT_FOLD_ROUND desc="卡坦岛[不是弃牌回合]" id="37"/>
+            <CATAN_FOLD_ALREADY desc="卡坦岛[已经弃牌了]" id="38"/>
+            <CATAN_TRADE_NULL desc="卡坦岛[交易不存在]" id="39"/>
+            <CATAN_TRADE_TARGET_ERROR desc="卡坦岛[交易目标错误]" id="40"/>
+            <CATAN_TRADE_OFFER_ERROR desc="卡坦岛[提供的资源错误]" id="41"/>
+            <CATAN_TRADE_WANT_ERROR desc="卡坦岛[需求的资源错误]" id="42"/>
+            <CATAN_TRADE_ERROR desc="卡坦岛[交易错误]" id="43"/>
+            <CATAN_TRADE_COUNTERED desc="卡坦岛[已经还价了]" id="44"/>
         </enum>
         <enum name="RoomType" desc="桌子类型">
             <ROOM_CATAN desc="卡坦岛" id="1"/>
@@ -43,6 +64,13 @@
             <RESOURCE_WOOL desc="羊毛" id="3"/>
             <RESOURCE_GAIN desc="粮食" id="4"/>
             <RESOURCE_ORE desc="矿石" id="5"/>
+        </enum>
+        <enum name="CatanCardType" desc="卡坦岛发展卡类型">
+            <CARD_KNIGHT desc="骑士卡" id="1"/>
+            <CARD_MONOPOLY desc="垄断卡" id="2"/>
+            <CARD_RICH desc="丰收卡" id="3"/>
+            <CARD_ROAD desc="道路卡" id="4"/>
+            <CARD_POINT desc="点数卡" id="5"/>
         </enum>
         <enum name="CatanPortType" desc="卡坦岛港口类型">
             <PORT_BRICK desc="砖港" id="1"/>
@@ -91,12 +119,17 @@
             <field type="fixed64" name="id" desc="玩家id" index="1"/>
             <list type="CatanResource" name="resource" desc="资源" index="2"/>
         </bean>
+        <bean name="CatanCard" desc="卡坦岛发展卡">
+            <field type="CatanCardType" name="type" desc="类型" index="1"/>
+            <field type="int32" name="count" desc="数量" index="2"/>
+        </bean>
         <bean name="CatanMap" desc="卡坦岛地图信息">
             <list type="CatanGrid" name="grid" desc="格子信息" index="1"/>
             <list type="CatanCity" name="city" desc="城市信息" index="2"/>
             <list type="CatanCountry" name="country" desc="村庄信息" index="3"/>
             <list type="CatanRoad" name="road" desc="道路信息" index="4"/>
             <list type="CatanPort" name="port" desc="港口信息" index="5"/>
+            <field type="Position" name="robber" desc="强盗坐标" index="6"/>
         </bean>
         <bean name="CatanPort" desc="卡坦岛港口信息">
             <field type="Position" name="position1" desc="坐标1" index="1"/>

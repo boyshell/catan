@@ -14,6 +14,8 @@ import org.shell.mmo.sample.message.proto.LogicClient;
 import org.shell.mmo.sample.table.Table;
 import org.shell.mmo.sample.table.TableService;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -43,6 +45,10 @@ public class RoomService {
                 worker.execute(() -> onLogin(event.getAccount()));
             }
         });
+    }
+
+    public Collection<Room> all() {
+        return new ArrayList<>(rooms.values());
     }
 
     public void onLogin(Account account) {
@@ -125,5 +131,9 @@ public class RoomService {
 
     public Worker worker() {
         return worker;
+    }
+
+    public Collection<Table> all(Room room) {
+        return room.tables.values();
     }
 }

@@ -43,8 +43,8 @@ API调用者: client
 参数: ReqCatanSet
 <pre style="background: #f5f5f5">
 <code>
-int32 country; // 村庄位置
-int32 road; // 道路位置
+<a href="Position.html">Position</a> country; // 村庄坐标(道路起点)
+<a href="Position.html">Position</a> roadDst; // 道路终点
 </code>
 </pre>
 返回值: ResCatanSet
@@ -52,8 +52,9 @@ int32 road; // 道路位置
 <code>
 <a href="Error.html">Error</a> error; // 错误码
 fixed64 id; // 账号id
-int32 country; // 村庄位置
-int32 road; // 道路位置
+<a href="Position.html">Position</a> country; // 村庄坐标(道路起点)
+<a href="Position.html">Position</a> roadDst; // 道路终点
+<a href="CatanResource.html">CatanResource</a> resource; // 资源
 </code>
 </pre>
 </pre>
@@ -68,7 +69,7 @@ API调用者: logic
 <code>
 fixed64 id; // 账号id
 int32 remain; // 剩余多少秒结束
-bool rob; // 受否需要移动强盗
+int32 dice; // 骰子点数,前端自行判定是否需要移动强盗
 <a href="CatanMasterResource.html">CatanMasterResource</a> gain; // 每个人收获列表
 </code>
 </pre>
@@ -100,7 +101,8 @@ API调用者: client
 参数: ReqCatanBuildRoad
 <pre style="background: #f5f5f5">
 <code>
-int32 road; // 道路位置
+<a href="Position.html">Position</a> src; // 起点
+<a href="Position.html">Position</a> dst; // 终点
 </code>
 </pre>
 返回值: ResCatanBuildRoad
@@ -108,7 +110,8 @@ int32 road; // 道路位置
 <code>
 <a href="Error.html">Error</a> error; // 错误码
 fixed64 id; // 账号id
-int32 road; // 道路位置
+<a href="Position.html">Position</a> src; // 起点
+<a href="Position.html">Position</a> dst; // 终点
 </code>
 </pre>
 </pre>
@@ -121,7 +124,7 @@ API调用者: client
 参数: ReqCatanBuildCountry
 <pre style="background: #f5f5f5">
 <code>
-int32 country; // 村庄位置
+<a href="Position.html">Position</a> country; // 村庄坐标
 </code>
 </pre>
 返回值: ResCatanBuildCountry
@@ -129,7 +132,7 @@ int32 country; // 村庄位置
 <code>
 <a href="Error.html">Error</a> error; // 错误码
 fixed64 id; // 账号id
-int32 country; // 村庄位置
+<a href="Position.html">Position</a> country; // 村庄坐标
 </code>
 </pre>
 </pre>
@@ -142,7 +145,7 @@ API调用者: client
 参数: ReqCatanBuildCity
 <pre style="background: #f5f5f5">
 <code>
-int32 city; // 城市位置
+<a href="Position.html">Position</a> city; // 城市坐标
 </code>
 </pre>
 返回值: ResCatanBuildCity
@@ -150,7 +153,7 @@ int32 city; // 城市位置
 <code>
 <a href="Error.html">Error</a> error; // 错误码
 fixed64 id; // 账号id
-int32 city; // 城市位置
+<a href="Position.html">Position</a> city; // 城市坐标
 </code>
 </pre>
 </pre>
@@ -171,7 +174,7 @@ int32 count; // 数量
 <code>
 <a href="Error.html">Error</a> error; // 错误码
 fixed64 id; // 账号id
-int32 count; // 数量
+<a href="CatanCard.html">CatanCard</a> card; // 获得卡片
 </code>
 </pre>
 </pre>
@@ -198,7 +201,7 @@ fixed64 id; // 账号id
 </code>
 </pre>
 </pre>
-<h4>开价给所有人(交易流程:开价->还价/取消->成交/取消)</h4>
+<h4>开价给所有人(交易流程:开价->还价/取消->成交/取消),此消息可能会重复收取,需要重置交易流程</h4>
 <pre style="border: 1px dotted #785">
 <pre style="background: #f5f5f5">
 API提供方: logic
@@ -303,8 +306,8 @@ fixed64 target; // 目标id
 <pre style="background: #f5f5f5">
 <code>
 <a href="Error.html">Error</a> error; // 错误码
-<a href="CatanMasterResource.html">CatanMasterResource</a> master1; // 玩家1获得的资源
-<a href="CatanMasterResource.html">CatanMasterResource</a> master2; // 玩家2获得的资源
+<a href="CatanMasterResource.html">CatanMasterResource</a> master1; // 玩家1获得的资源(玩家2失去的资源)
+<a href="CatanMasterResource.html">CatanMasterResource</a> master2; // 玩家2获得的资源(玩家1失去的资源)
 </code>
 </pre>
 </pre>
@@ -335,7 +338,7 @@ API调用者: client
 参数: ReqCatanRob
 <pre style="background: #f5f5f5">
 <code>
-int32 robber; // 强盗的位置
+<a href="Position.html">Position</a> robber; // 强盗的位置
 fixed64 id; // 被抢的玩家
 </code>
 </pre>
@@ -343,10 +346,10 @@ fixed64 id; // 被抢的玩家
 <pre style="background: #f5f5f5">
 <code>
 <a href="Error.html">Error</a> error; // 错误码
-int32 robber; // 强盗的位置
+<a href="Position.html">Position</a> robber; // 强盗的位置
 fixed64 criminal; // 罪犯
 fixed64 victim; // 受害者
-<a href="CatanResource.html">CatanResource</a> resource; // 资源
+<a href="CatanResourceType.html">CatanResourceType</a> resource; // 资源
 </code>
 </pre>
 </pre>
@@ -359,14 +362,14 @@ API调用者: client
 参数: ReqCatanRichCard
 <pre style="background: #f5f5f5">
 <code>
-<a href="CatanResource.html">CatanResource</a> resource; // 资源
+<a href="CatanResourceType.html">CatanResourceType</a> resource; // 资源
 </code>
 </pre>
 返回值: ResCatanRichCard
 <pre style="background: #f5f5f5">
 <code>
 <a href="Error.html">Error</a> error; // 错误码
-<a href="CatanResource.html">CatanResource</a> resource; // 资源
+<a href="CatanResourceType.html">CatanResourceType</a> resource; // 资源
 fixed64 id; // 账号id
 </code>
 </pre>
@@ -380,14 +383,20 @@ API调用者: client
 参数: ReqCatanRoadCard
 <pre style="background: #f5f5f5">
 <code>
-int32 road; // 道路位置
+<a href="Position.html">Position</a> src1; // 起点1
+<a href="Position.html">Position</a> dst1; // 终点1
+<a href="Position.html">Position</a> src2; // 起点2
+<a href="Position.html">Position</a> dst2; // 终点2
 </code>
 </pre>
 返回值: ResCatanRoadCard
 <pre style="background: #f5f5f5">
 <code>
 <a href="Error.html">Error</a> error; // 错误码
-int32 road; // 道路位置
+<a href="Position.html">Position</a> src1; // 起点1
+<a href="Position.html">Position</a> dst1; // 终点1
+<a href="Position.html">Position</a> src2; // 起点2
+<a href="Position.html">Position</a> dst2; // 终点2
 fixed64 id; // 账号id
 </code>
 </pre>
@@ -401,7 +410,7 @@ API调用者: client
 参数: ReqCatanKnightCard
 <pre style="background: #f5f5f5">
 <code>
-int32 robber; // 强盗的位置
+<a href="Position.html">Position</a> robber; // 强盗的位置(格子坐标)
 fixed64 id; // 被抢的玩家
 </code>
 </pre>
@@ -409,10 +418,10 @@ fixed64 id; // 被抢的玩家
 <pre style="background: #f5f5f5">
 <code>
 <a href="Error.html">Error</a> error; // 错误码
-int32 robber; // 强盗的位置
+<a href="Position.html">Position</a> robber; // 强盗的位置(格子坐标)
 fixed64 criminal; // 罪犯
 fixed64 victim; // 受害者
-<a href="CatanResource.html">CatanResource</a> resource; // 资源
+<a href="CatanResourceType.html">CatanResourceType</a> resource; // 资源
 </code>
 </pre>
 </pre>
@@ -446,7 +455,6 @@ API调用者: logic
 参数: ReqCatanRoundFoldStart
 <pre style="background: #f5f5f5">
 <code>
-fixed64 id; // 账号id
 int32 remain; // 剩余多少秒结束
 </code>
 </pre>

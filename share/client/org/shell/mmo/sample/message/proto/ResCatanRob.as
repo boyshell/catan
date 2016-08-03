@@ -7,7 +7,8 @@ package org.shell.mmo.sample.message.proto {
 	import flash.utils.IDataOutput;
 	import flash.utils.IExternalizable;
 	import flash.errors.IOError;
-	import org.shell.mmo.sample.message.proto.CatanResource;
+	import org.shell.mmo.sample.message.proto.CatanResourceType;
+	import org.shell.mmo.sample.message.proto.Position;
 	import org.shell.mmo.sample.message.proto.Error;
 	// @@protoc_insertion_point(imports)
 
@@ -43,25 +44,23 @@ package org.shell.mmo.sample.message.proto {
 		/**
 		 *  @private
 		 */
-		public static const ROBBER:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.ResCatanRob.robber", "robber", (2 << 3) | com.netease.protobuf.WireType.VARINT);
+		public static const ROBBER:FieldDescriptor_TYPE_MESSAGE = new FieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.message.proto.ResCatanRob.robber", "robber", (2 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.message.proto.Position; });
 
-		private var robber$field:int;
+		private var robber$field:org.shell.mmo.sample.message.proto.Position;
 
 		public function clearRobber():void {
-			hasField$0 &= 0xfffffffd;
-			robber$field = new int();
+			robber$field = null;
 		}
 
 		public function get hasRobber():Boolean {
-			return (hasField$0 & 0x2) != 0;
+			return robber$field != null;
 		}
 
-		public function set robber(value:int):void {
-			hasField$0 |= 0x2;
+		public function set robber(value:org.shell.mmo.sample.message.proto.Position):void {
 			robber$field = value;
 		}
 
-		public function get robber():int {
+		public function get robber():org.shell.mmo.sample.message.proto.Position {
 			return robber$field;
 		}
 
@@ -114,23 +113,25 @@ package org.shell.mmo.sample.message.proto {
 		/**
 		 *  @private
 		 */
-		public static const RESOURCE:FieldDescriptor_TYPE_MESSAGE = new FieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.message.proto.ResCatanRob.resource", "resource", (5 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.message.proto.CatanResource; });
+		public static const RESOURCE:FieldDescriptor_TYPE_ENUM = new FieldDescriptor_TYPE_ENUM("org.shell.mmo.sample.message.proto.ResCatanRob.resource", "resource", (5 << 3) | com.netease.protobuf.WireType.VARINT, org.shell.mmo.sample.message.proto.CatanResourceType);
 
-		private var resource$field:org.shell.mmo.sample.message.proto.CatanResource;
+		private var resource$field:int;
 
 		public function clearResource():void {
-			resource$field = null;
+			hasField$0 &= 0xfffffffd;
+			resource$field = new int();
 		}
 
 		public function get hasResource():Boolean {
-			return resource$field != null;
+			return (hasField$0 & 0x2) != 0;
 		}
 
-		public function set resource(value:org.shell.mmo.sample.message.proto.CatanResource):void {
+		public function set resource(value:int):void {
+			hasField$0 |= 0x2;
 			resource$field = value;
 		}
 
-		public function get resource():org.shell.mmo.sample.message.proto.CatanResource {
+		public function get resource():int {
 			return resource$field;
 		}
 
@@ -143,8 +144,8 @@ package org.shell.mmo.sample.message.proto {
 				com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, error$field);
 			}
 			if (hasRobber) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 2);
-				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, robber$field);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 2);
+				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, robber$field);
 			}
 			if (hasCriminal) {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 3);
@@ -155,8 +156,8 @@ package org.shell.mmo.sample.message.proto {
 				com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, victim$field);
 			}
 			if (hasResource) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 5);
-				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, resource$field);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 5);
+				com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, resource$field);
 			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
@@ -187,7 +188,8 @@ package org.shell.mmo.sample.message.proto {
 						throw new flash.errors.IOError('Bad data format: ResCatanRob.robber cannot be set twice.');
 					}
 					++robber$count;
-					this.robber = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					this.robber = new org.shell.mmo.sample.message.proto.Position();
+					com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, this.robber);
 					break;
 				case 3:
 					if (criminal$count != 0) {
@@ -208,8 +210,7 @@ package org.shell.mmo.sample.message.proto {
 						throw new flash.errors.IOError('Bad data format: ResCatanRob.resource cannot be set twice.');
 					}
 					++resource$count;
-					this.resource = new org.shell.mmo.sample.message.proto.CatanResource();
-					com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, this.resource);
+					this.resource = com.netease.protobuf.ReadUtils.read_TYPE_ENUM(input);
 					break;
 				default:
 					super.readUnknown(input, tag);

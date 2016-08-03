@@ -15288,38 +15288,54 @@ public final class LogicClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 country = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标(道路起点)
      * </pre>
      */
     boolean hasCountry();
     /**
-     * <code>optional int32 country = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标(道路起点)
      * </pre>
      */
-    int getCountry();
+    org.shell.mmo.sample.message.proto.Global.Position getCountry();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+     *
+     * <pre>
+     * 村庄坐标(道路起点)
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder();
 
     /**
-     * <code>optional int32 road = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
      *
      * <pre>
-     * 道路位置
+     * 道路终点
      * </pre>
      */
-    boolean hasRoad();
+    boolean hasRoadDst();
     /**
-     * <code>optional int32 road = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
      *
      * <pre>
-     * 道路位置
+     * 道路终点
      * </pre>
      */
-    int getRoad();
+    org.shell.mmo.sample.message.proto.Global.Position getRoadDst();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
+     *
+     * <pre>
+     * 道路终点
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRoadDstOrBuilder();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ReqCatanSet}
@@ -15377,14 +15393,30 @@ public final class LogicClient {
               }
               break;
             }
-            case 8: {
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = country_.toBuilder();
+              }
+              country_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(country_);
+                country_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000001;
-              country_ = input.readInt32();
               break;
             }
-            case 16: {
+            case 18: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = roadDst_.toBuilder();
+              }
+              roadDst_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(roadDst_);
+                roadDst_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000002;
-              road_ = input.readInt32();
               break;
             }
           }
@@ -15428,54 +15460,74 @@ public final class LogicClient {
 
     private int bitField0_;
     public static final int COUNTRY_FIELD_NUMBER = 1;
-    private int country_;
+    private org.shell.mmo.sample.message.proto.Global.Position country_;
     /**
-     * <code>optional int32 country = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标(道路起点)
      * </pre>
      */
     public boolean hasCountry() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional int32 country = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标(道路起点)
      * </pre>
      */
-    public int getCountry() {
+    public org.shell.mmo.sample.message.proto.Global.Position getCountry() {
+      return country_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+     *
+     * <pre>
+     * 村庄坐标(道路起点)
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder() {
       return country_;
     }
 
-    public static final int ROAD_FIELD_NUMBER = 2;
-    private int road_;
+    public static final int ROADDST_FIELD_NUMBER = 2;
+    private org.shell.mmo.sample.message.proto.Global.Position roadDst_;
     /**
-     * <code>optional int32 road = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
      *
      * <pre>
-     * 道路位置
+     * 道路终点
      * </pre>
      */
-    public boolean hasRoad() {
+    public boolean hasRoadDst() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>optional int32 road = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
      *
      * <pre>
-     * 道路位置
+     * 道路终点
      * </pre>
      */
-    public int getRoad() {
-      return road_;
+    public org.shell.mmo.sample.message.proto.Global.Position getRoadDst() {
+      return roadDst_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
+     *
+     * <pre>
+     * 道路终点
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRoadDstOrBuilder() {
+      return roadDst_;
     }
 
     private void initFields() {
-      country_ = 0;
-      road_ = 0;
+      country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      roadDst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -15491,10 +15543,10 @@ public final class LogicClient {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, country_);
+        output.writeMessage(1, country_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, road_);
+        output.writeMessage(2, roadDst_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -15507,11 +15559,11 @@ public final class LogicClient {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, country_);
+          .computeMessageSize(1, country_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, road_);
+          .computeMessageSize(2, roadDst_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -15626,6 +15678,8 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getCountryFieldBuilder();
+          getRoadDstFieldBuilder();
         }
       }
       private static Builder create() {
@@ -15634,9 +15688,17 @@ public final class LogicClient {
 
       public Builder clear() {
         super.clear();
-        country_ = 0;
+        if (countryBuilder_ == null) {
+          country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          countryBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
-        road_ = 0;
+        if (roadDstBuilder_ == null) {
+          roadDst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          roadDstBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -15669,11 +15731,19 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.country_ = country_;
+        if (countryBuilder_ == null) {
+          result.country_ = country_;
+        } else {
+          result.country_ = countryBuilder_.build();
+        }
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.road_ = road_;
+        if (roadDstBuilder_ == null) {
+          result.roadDst_ = roadDst_;
+        } else {
+          result.roadDst_ = roadDstBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -15691,10 +15761,10 @@ public final class LogicClient {
       public Builder mergeFrom(org.shell.mmo.sample.message.proto.LogicClient.ReqCatanSet other) {
         if (other == org.shell.mmo.sample.message.proto.LogicClient.ReqCatanSet.getDefaultInstance()) return this;
         if (other.hasCountry()) {
-          setCountry(other.getCountry());
+          mergeCountry(other.getCountry());
         }
-        if (other.hasRoad()) {
-          setRoad(other.getRoad());
+        if (other.hasRoadDst()) {
+          mergeRoadDst(other.getRoadDst());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -15723,100 +15793,308 @@ public final class LogicClient {
       }
       private int bitField0_;
 
-      private int country_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> countryBuilder_;
       /**
-       * <code>optional int32 country = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标(道路起点)
        * </pre>
        */
       public boolean hasCountry() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional int32 country = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标(道路起点)
        * </pre>
        */
-      public int getCountry() {
-        return country_;
+      public org.shell.mmo.sample.message.proto.Global.Position getCountry() {
+        if (countryBuilder_ == null) {
+          return country_;
+        } else {
+          return countryBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 country = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标(道路起点)
        * </pre>
        */
-      public Builder setCountry(int value) {
+      public Builder setCountry(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (countryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          country_ = value;
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000001;
-        country_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 country = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标(道路起点)
+       * </pre>
+       */
+      public Builder setCountry(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (countryBuilder_ == null) {
+          country_ = builderForValue.build();
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+       *
+       * <pre>
+       * 村庄坐标(道路起点)
+       * </pre>
+       */
+      public Builder mergeCountry(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (countryBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              country_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            country_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(country_).mergeFrom(value).buildPartial();
+          } else {
+            country_ = value;
+          }
+          onChanged();
+        } else {
+          countryBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+       *
+       * <pre>
+       * 村庄坐标(道路起点)
        * </pre>
        */
       public Builder clearCountry() {
+        if (countryBuilder_ == null) {
+          country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          countryBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
-        country_ = 0;
-        onChanged();
         return this;
       }
-
-      private int road_ ;
       /**
-       * <code>optional int32 road = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
        *
        * <pre>
-       * 道路位置
+       * 村庄坐标(道路起点)
        * </pre>
        */
-      public boolean hasRoad() {
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getCountryBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getCountryFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+       *
+       * <pre>
+       * 村庄坐标(道路起点)
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder() {
+        if (countryBuilder_ != null) {
+          return countryBuilder_.getMessageOrBuilder();
+        } else {
+          return country_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+       *
+       * <pre>
+       * 村庄坐标(道路起点)
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getCountryFieldBuilder() {
+        if (countryBuilder_ == null) {
+          countryBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getCountry(),
+                  getParentForChildren(),
+                  isClean());
+          country_ = null;
+        }
+        return countryBuilder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position roadDst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> roadDstBuilder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      public boolean hasRoadDst() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional int32 road = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
        *
        * <pre>
-       * 道路位置
+       * 道路终点
        * </pre>
        */
-      public int getRoad() {
-        return road_;
+      public org.shell.mmo.sample.message.proto.Global.Position getRoadDst() {
+        if (roadDstBuilder_ == null) {
+          return roadDst_;
+        } else {
+          return roadDstBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 road = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
        *
        * <pre>
-       * 道路位置
+       * 道路终点
        * </pre>
        */
-      public Builder setRoad(int value) {
+      public Builder setRoadDst(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (roadDstBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          roadDst_ = value;
+          onChanged();
+        } else {
+          roadDstBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000002;
-        road_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 road = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
        *
        * <pre>
-       * 道路位置
+       * 道路终点
        * </pre>
        */
-      public Builder clearRoad() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        road_ = 0;
-        onChanged();
+      public Builder setRoadDst(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (roadDstBuilder_ == null) {
+          roadDst_ = builderForValue.build();
+          onChanged();
+        } else {
+          roadDstBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      public Builder mergeRoadDst(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (roadDstBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              roadDst_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            roadDst_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(roadDst_).mergeFrom(value).buildPartial();
+          } else {
+            roadDst_ = value;
+          }
+          onChanged();
+        } else {
+          roadDstBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      public Builder clearRoadDst() {
+        if (roadDstBuilder_ == null) {
+          roadDst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          roadDstBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getRoadDstBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getRoadDstFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRoadDstOrBuilder() {
+        if (roadDstBuilder_ != null) {
+          return roadDstBuilder_.getMessageOrBuilder();
+        } else {
+          return roadDst_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 2;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getRoadDstFieldBuilder() {
+        if (roadDstBuilder_ == null) {
+          roadDstBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getRoadDst(),
+                  getParentForChildren(),
+                  isClean());
+          roadDst_ = null;
+        }
+        return roadDstBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ReqCatanSet)
@@ -15869,38 +16147,98 @@ public final class LogicClient {
     long getId();
 
     /**
-     * <code>optional int32 country = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标(道路起点)
      * </pre>
      */
     boolean hasCountry();
     /**
-     * <code>optional int32 country = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标(道路起点)
      * </pre>
      */
-    int getCountry();
+    org.shell.mmo.sample.message.proto.Global.Position getCountry();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+     *
+     * <pre>
+     * 村庄坐标(道路起点)
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder();
 
     /**
-     * <code>optional int32 road = 4;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
      *
      * <pre>
-     * 道路位置
+     * 道路终点
      * </pre>
      */
-    boolean hasRoad();
+    boolean hasRoadDst();
     /**
-     * <code>optional int32 road = 4;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
      *
      * <pre>
-     * 道路位置
+     * 道路终点
      * </pre>
      */
-    int getRoad();
+    org.shell.mmo.sample.message.proto.Global.Position getRoadDst();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
+     *
+     * <pre>
+     * 道路终点
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRoadDstOrBuilder();
+
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> 
+        getResourceList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index);
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    int getResourceCount();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
+        getResourceOrBuilderList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ResCatanSet}
@@ -15974,14 +16312,38 @@ public final class LogicClient {
               id_ = input.readFixed64();
               break;
             }
-            case 24: {
+            case 26: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                subBuilder = country_.toBuilder();
+              }
+              country_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(country_);
+                country_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000004;
-              country_ = input.readInt32();
               break;
             }
-            case 32: {
+            case 34: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                subBuilder = roadDst_.toBuilder();
+              }
+              roadDst_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(roadDst_);
+                roadDst_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000008;
-              road_ = input.readInt32();
+              break;
+            }
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+                resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResource>();
+                mutable_bitField0_ |= 0x00000010;
+              }
+              resource_.add(input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanResource.PARSER, extensionRegistry));
               break;
             }
           }
@@ -15992,6 +16354,9 @@ public final class LogicClient {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+          resource_ = java.util.Collections.unmodifiableList(resource_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -16071,56 +16436,132 @@ public final class LogicClient {
     }
 
     public static final int COUNTRY_FIELD_NUMBER = 3;
-    private int country_;
+    private org.shell.mmo.sample.message.proto.Global.Position country_;
     /**
-     * <code>optional int32 country = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标(道路起点)
      * </pre>
      */
     public boolean hasCountry() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional int32 country = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标(道路起点)
      * </pre>
      */
-    public int getCountry() {
+    public org.shell.mmo.sample.message.proto.Global.Position getCountry() {
+      return country_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+     *
+     * <pre>
+     * 村庄坐标(道路起点)
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder() {
       return country_;
     }
 
-    public static final int ROAD_FIELD_NUMBER = 4;
-    private int road_;
+    public static final int ROADDST_FIELD_NUMBER = 4;
+    private org.shell.mmo.sample.message.proto.Global.Position roadDst_;
     /**
-     * <code>optional int32 road = 4;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
      *
      * <pre>
-     * 道路位置
+     * 道路终点
      * </pre>
      */
-    public boolean hasRoad() {
+    public boolean hasRoadDst() {
       return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>optional int32 road = 4;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
      *
      * <pre>
-     * 道路位置
+     * 道路终点
      * </pre>
      */
-    public int getRoad() {
-      return road_;
+    public org.shell.mmo.sample.message.proto.Global.Position getRoadDst() {
+      return roadDst_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
+     *
+     * <pre>
+     * 道路终点
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRoadDstOrBuilder() {
+      return roadDst_;
+    }
+
+    public static final int RESOURCE_FIELD_NUMBER = 5;
+    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> resource_;
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> getResourceList() {
+      return resource_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
+        getResourceOrBuilderList() {
+      return resource_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    public int getResourceCount() {
+      return resource_.size();
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index) {
+      return resource_.get(index);
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     *
+     * <pre>
+     * 资源
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
+        int index) {
+      return resource_.get(index);
     }
 
     private void initFields() {
       error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
       id_ = 0L;
-      country_ = 0;
-      road_ = 0;
+      country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      roadDst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      resource_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -16142,10 +16583,13 @@ public final class LogicClient {
         output.writeFixed64(2, id_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, country_);
+        output.writeMessage(3, country_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeInt32(4, road_);
+        output.writeMessage(4, roadDst_);
+      }
+      for (int i = 0; i < resource_.size(); i++) {
+        output.writeMessage(5, resource_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -16166,11 +16610,15 @@ public final class LogicClient {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, country_);
+          .computeMessageSize(3, country_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, road_);
+          .computeMessageSize(4, roadDst_);
+      }
+      for (int i = 0; i < resource_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, resource_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -16285,6 +16733,9 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getCountryFieldBuilder();
+          getRoadDstFieldBuilder();
+          getResourceFieldBuilder();
         }
       }
       private static Builder create() {
@@ -16297,10 +16748,24 @@ public final class LogicClient {
         bitField0_ = (bitField0_ & ~0x00000001);
         id_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000002);
-        country_ = 0;
+        if (countryBuilder_ == null) {
+          country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          countryBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000004);
-        road_ = 0;
+        if (roadDstBuilder_ == null) {
+          roadDst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          roadDstBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000008);
+        if (resourceBuilder_ == null) {
+          resource_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        } else {
+          resourceBuilder_.clear();
+        }
         return this;
       }
 
@@ -16340,11 +16805,28 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.country_ = country_;
+        if (countryBuilder_ == null) {
+          result.country_ = country_;
+        } else {
+          result.country_ = countryBuilder_.build();
+        }
         if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
           to_bitField0_ |= 0x00000008;
         }
-        result.road_ = road_;
+        if (roadDstBuilder_ == null) {
+          result.roadDst_ = roadDst_;
+        } else {
+          result.roadDst_ = roadDstBuilder_.build();
+        }
+        if (resourceBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) == 0x00000010)) {
+            resource_ = java.util.Collections.unmodifiableList(resource_);
+            bitField0_ = (bitField0_ & ~0x00000010);
+          }
+          result.resource_ = resource_;
+        } else {
+          result.resource_ = resourceBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -16368,10 +16850,36 @@ public final class LogicClient {
           setId(other.getId());
         }
         if (other.hasCountry()) {
-          setCountry(other.getCountry());
+          mergeCountry(other.getCountry());
         }
-        if (other.hasRoad()) {
-          setRoad(other.getRoad());
+        if (other.hasRoadDst()) {
+          mergeRoadDst(other.getRoadDst());
+        }
+        if (resourceBuilder_ == null) {
+          if (!other.resource_.isEmpty()) {
+            if (resource_.isEmpty()) {
+              resource_ = other.resource_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+            } else {
+              ensureResourceIsMutable();
+              resource_.addAll(other.resource_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.resource_.isEmpty()) {
+            if (resourceBuilder_.isEmpty()) {
+              resourceBuilder_.dispose();
+              resourceBuilder_ = null;
+              resource_ = other.resource_;
+              bitField0_ = (bitField0_ & ~0x00000010);
+              resourceBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getResourceFieldBuilder() : null;
+            } else {
+              resourceBuilder_.addAllMessages(other.resource_);
+            }
+          }
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -16499,100 +17007,620 @@ public final class LogicClient {
         return this;
       }
 
-      private int country_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> countryBuilder_;
       /**
-       * <code>optional int32 country = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标(道路起点)
        * </pre>
        */
       public boolean hasCountry() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional int32 country = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标(道路起点)
        * </pre>
        */
-      public int getCountry() {
-        return country_;
+      public org.shell.mmo.sample.message.proto.Global.Position getCountry() {
+        if (countryBuilder_ == null) {
+          return country_;
+        } else {
+          return countryBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 country = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标(道路起点)
        * </pre>
        */
-      public Builder setCountry(int value) {
+      public Builder setCountry(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (countryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          country_ = value;
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000004;
-        country_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 country = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标(道路起点)
+       * </pre>
+       */
+      public Builder setCountry(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (countryBuilder_ == null) {
+          country_ = builderForValue.build();
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+       *
+       * <pre>
+       * 村庄坐标(道路起点)
+       * </pre>
+       */
+      public Builder mergeCountry(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (countryBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              country_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            country_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(country_).mergeFrom(value).buildPartial();
+          } else {
+            country_ = value;
+          }
+          onChanged();
+        } else {
+          countryBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+       *
+       * <pre>
+       * 村庄坐标(道路起点)
        * </pre>
        */
       public Builder clearCountry() {
+        if (countryBuilder_ == null) {
+          country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          countryBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000004);
-        country_ = 0;
-        onChanged();
         return this;
       }
-
-      private int road_ ;
       /**
-       * <code>optional int32 road = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
        *
        * <pre>
-       * 道路位置
+       * 村庄坐标(道路起点)
        * </pre>
        */
-      public boolean hasRoad() {
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getCountryBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getCountryFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+       *
+       * <pre>
+       * 村庄坐标(道路起点)
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder() {
+        if (countryBuilder_ != null) {
+          return countryBuilder_.getMessageOrBuilder();
+        } else {
+          return country_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+       *
+       * <pre>
+       * 村庄坐标(道路起点)
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getCountryFieldBuilder() {
+        if (countryBuilder_ == null) {
+          countryBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getCountry(),
+                  getParentForChildren(),
+                  isClean());
+          country_ = null;
+        }
+        return countryBuilder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position roadDst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> roadDstBuilder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      public boolean hasRoadDst() {
         return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>optional int32 road = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
        *
        * <pre>
-       * 道路位置
+       * 道路终点
        * </pre>
        */
-      public int getRoad() {
-        return road_;
+      public org.shell.mmo.sample.message.proto.Global.Position getRoadDst() {
+        if (roadDstBuilder_ == null) {
+          return roadDst_;
+        } else {
+          return roadDstBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 road = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
        *
        * <pre>
-       * 道路位置
+       * 道路终点
        * </pre>
        */
-      public Builder setRoad(int value) {
+      public Builder setRoadDst(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (roadDstBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          roadDst_ = value;
+          onChanged();
+        } else {
+          roadDstBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000008;
-        road_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 road = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
        *
        * <pre>
-       * 道路位置
+       * 道路终点
        * </pre>
        */
-      public Builder clearRoad() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        road_ = 0;
-        onChanged();
+      public Builder setRoadDst(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (roadDstBuilder_ == null) {
+          roadDst_ = builderForValue.build();
+          onChanged();
+        } else {
+          roadDstBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      public Builder mergeRoadDst(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (roadDstBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008) &&
+              roadDst_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            roadDst_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(roadDst_).mergeFrom(value).buildPartial();
+          } else {
+            roadDst_ = value;
+          }
+          onChanged();
+        } else {
+          roadDstBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      public Builder clearRoadDst() {
+        if (roadDstBuilder_ == null) {
+          roadDst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          roadDstBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getRoadDstBuilder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getRoadDstFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRoadDstOrBuilder() {
+        if (roadDstBuilder_ != null) {
+          return roadDstBuilder_.getMessageOrBuilder();
+        } else {
+          return roadDst_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position roadDst = 4;</code>
+       *
+       * <pre>
+       * 道路终点
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getRoadDstFieldBuilder() {
+        if (roadDstBuilder_ == null) {
+          roadDstBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getRoadDst(),
+                  getParentForChildren(),
+                  isClean());
+          roadDst_ = null;
+        }
+        return roadDstBuilder_;
+      }
+
+      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> resource_ =
+        java.util.Collections.emptyList();
+      private void ensureResourceIsMutable() {
+        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
+          resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResource>(resource_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> resourceBuilder_;
+
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> getResourceList() {
+        if (resourceBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(resource_);
+        } else {
+          return resourceBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public int getResourceCount() {
+        if (resourceBuilder_ == null) {
+          return resource_.size();
+        } else {
+          return resourceBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index) {
+        if (resourceBuilder_ == null) {
+          return resource_.get(index);
+        } else {
+          return resourceBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder setResource(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanResource value) {
+        if (resourceBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureResourceIsMutable();
+          resource_.set(index, value);
+          onChanged();
+        } else {
+          resourceBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder setResource(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
+        if (resourceBuilder_ == null) {
+          ensureResourceIsMutable();
+          resource_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          resourceBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder addResource(org.shell.mmo.sample.message.proto.Global.CatanResource value) {
+        if (resourceBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureResourceIsMutable();
+          resource_.add(value);
+          onChanged();
+        } else {
+          resourceBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder addResource(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanResource value) {
+        if (resourceBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureResourceIsMutable();
+          resource_.add(index, value);
+          onChanged();
+        } else {
+          resourceBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder addResource(
+          org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
+        if (resourceBuilder_ == null) {
+          ensureResourceIsMutable();
+          resource_.add(builderForValue.build());
+          onChanged();
+        } else {
+          resourceBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder addResource(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
+        if (resourceBuilder_ == null) {
+          ensureResourceIsMutable();
+          resource_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          resourceBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder addAllResource(
+          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanResource> values) {
+        if (resourceBuilder_ == null) {
+          ensureResourceIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, resource_);
+          onChanged();
+        } else {
+          resourceBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder clearResource() {
+        if (resourceBuilder_ == null) {
+          resource_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+          onChanged();
+        } else {
+          resourceBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public Builder removeResource(int index) {
+        if (resourceBuilder_ == null) {
+          ensureResourceIsMutable();
+          resource_.remove(index);
+          onChanged();
+        } else {
+          resourceBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder getResourceBuilder(
+          int index) {
+        return getResourceFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
+          int index) {
+        if (resourceBuilder_ == null) {
+          return resource_.get(index);  } else {
+          return resourceBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
+           getResourceOrBuilderList() {
+        if (resourceBuilder_ != null) {
+          return resourceBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(resource_);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder addResourceBuilder() {
+        return getResourceFieldBuilder().addBuilder(
+            org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder addResourceBuilder(
+          int index) {
+        return getResourceFieldBuilder().addBuilder(
+            index, org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       *
+       * <pre>
+       * 资源
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource.Builder> 
+           getResourceBuilderList() {
+        return getResourceFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
+          getResourceFieldBuilder() {
+        if (resourceBuilder_ == null) {
+          resourceBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder>(
+                  resource_,
+                  ((bitField0_ & 0x00000010) == 0x00000010),
+                  getParentForChildren(),
+                  isClean());
+          resource_ = null;
+        }
+        return resourceBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ResCatanSet)
@@ -16645,21 +17673,21 @@ public final class LogicClient {
     int getRemain();
 
     /**
-     * <code>optional bool rob = 3;</code>
+     * <code>optional int32 dice = 3;</code>
      *
      * <pre>
-     * 受否需要移动强盗
+     * 骰子点数,前端自行判定是否需要移动强盗
      * </pre>
      */
-    boolean hasRob();
+    boolean hasDice();
     /**
-     * <code>optional bool rob = 3;</code>
+     * <code>optional int32 dice = 3;</code>
      *
      * <pre>
-     * 受否需要移动强盗
+     * 骰子点数,前端自行判定是否需要移动强盗
      * </pre>
      */
-    boolean getRob();
+    int getDice();
 
     /**
      * <code>repeated .org.shell.mmo.sample.message.proto.CatanMasterResource gain = 4;</code>
@@ -16773,7 +17801,7 @@ public final class LogicClient {
             }
             case 24: {
               bitField0_ |= 0x00000004;
-              rob_ = input.readBool();
+              dice_ = input.readInt32();
               break;
             }
             case 34: {
@@ -16873,27 +17901,27 @@ public final class LogicClient {
       return remain_;
     }
 
-    public static final int ROB_FIELD_NUMBER = 3;
-    private boolean rob_;
+    public static final int DICE_FIELD_NUMBER = 3;
+    private int dice_;
     /**
-     * <code>optional bool rob = 3;</code>
+     * <code>optional int32 dice = 3;</code>
      *
      * <pre>
-     * 受否需要移动强盗
+     * 骰子点数,前端自行判定是否需要移动强盗
      * </pre>
      */
-    public boolean hasRob() {
+    public boolean hasDice() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional bool rob = 3;</code>
+     * <code>optional int32 dice = 3;</code>
      *
      * <pre>
-     * 受否需要移动强盗
+     * 骰子点数,前端自行判定是否需要移动强盗
      * </pre>
      */
-    public boolean getRob() {
-      return rob_;
+    public int getDice() {
+      return dice_;
     }
 
     public static final int GAIN_FIELD_NUMBER = 4;
@@ -16954,7 +17982,7 @@ public final class LogicClient {
     private void initFields() {
       id_ = 0L;
       remain_ = 0;
-      rob_ = false;
+      dice_ = 0;
       gain_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
@@ -16977,7 +18005,7 @@ public final class LogicClient {
         output.writeInt32(2, remain_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBool(3, rob_);
+        output.writeInt32(3, dice_);
       }
       for (int i = 0; i < gain_.size(); i++) {
         output.writeMessage(4, gain_.get(i));
@@ -17001,7 +18029,7 @@ public final class LogicClient {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, rob_);
+          .computeInt32Size(3, dice_);
       }
       for (int i = 0; i < gain_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -17133,7 +18161,7 @@ public final class LogicClient {
         bitField0_ = (bitField0_ & ~0x00000001);
         remain_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
-        rob_ = false;
+        dice_ = 0;
         bitField0_ = (bitField0_ & ~0x00000004);
         if (gainBuilder_ == null) {
           gain_ = java.util.Collections.emptyList();
@@ -17180,7 +18208,7 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.rob_ = rob_;
+        result.dice_ = dice_;
         if (gainBuilder_ == null) {
           if (((bitField0_ & 0x00000008) == 0x00000008)) {
             gain_ = java.util.Collections.unmodifiableList(gain_);
@@ -17212,8 +18240,8 @@ public final class LogicClient {
         if (other.hasRemain()) {
           setRemain(other.getRemain());
         }
-        if (other.hasRob()) {
-          setRob(other.getRob());
+        if (other.hasDice()) {
+          setDice(other.getDice());
         }
         if (gainBuilder_ == null) {
           if (!other.gain_.isEmpty()) {
@@ -17364,50 +18392,50 @@ public final class LogicClient {
         return this;
       }
 
-      private boolean rob_ ;
+      private int dice_ ;
       /**
-       * <code>optional bool rob = 3;</code>
+       * <code>optional int32 dice = 3;</code>
        *
        * <pre>
-       * 受否需要移动强盗
+       * 骰子点数,前端自行判定是否需要移动强盗
        * </pre>
        */
-      public boolean hasRob() {
+      public boolean hasDice() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional bool rob = 3;</code>
+       * <code>optional int32 dice = 3;</code>
        *
        * <pre>
-       * 受否需要移动强盗
+       * 骰子点数,前端自行判定是否需要移动强盗
        * </pre>
        */
-      public boolean getRob() {
-        return rob_;
+      public int getDice() {
+        return dice_;
       }
       /**
-       * <code>optional bool rob = 3;</code>
+       * <code>optional int32 dice = 3;</code>
        *
        * <pre>
-       * 受否需要移动强盗
+       * 骰子点数,前端自行判定是否需要移动强盗
        * </pre>
        */
-      public Builder setRob(boolean value) {
+      public Builder setDice(int value) {
         bitField0_ |= 0x00000004;
-        rob_ = value;
+        dice_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional bool rob = 3;</code>
+       * <code>optional int32 dice = 3;</code>
        *
        * <pre>
-       * 受否需要移动强盗
+       * 骰子点数,前端自行判定是否需要移动强盗
        * </pre>
        */
-      public Builder clearRob() {
+      public Builder clearDice() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        rob_ = false;
+        dice_ = 0;
         onChanged();
         return this;
       }
@@ -18507,21 +19535,54 @@ public final class LogicClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 road = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点
      * </pre>
      */
-    boolean hasRoad();
+    boolean hasSrc();
     /**
-     * <code>optional int32 road = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点
      * </pre>
      */
-    int getRoad();
+    org.shell.mmo.sample.message.proto.Global.Position getSrc();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
+     *
+     * <pre>
+     * 起点
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrcOrBuilder();
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    boolean hasDst();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getDst();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDstOrBuilder();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ReqCatanBuildRoad}
@@ -18579,9 +19640,30 @@ public final class LogicClient {
               }
               break;
             }
-            case 8: {
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = src_.toBuilder();
+              }
+              src_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(src_);
+                src_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000001;
-              road_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = dst_.toBuilder();
+              }
+              dst_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(dst_);
+                dst_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000002;
               break;
             }
           }
@@ -18624,31 +19706,75 @@ public final class LogicClient {
     }
 
     private int bitField0_;
-    public static final int ROAD_FIELD_NUMBER = 1;
-    private int road_;
+    public static final int SRC_FIELD_NUMBER = 1;
+    private org.shell.mmo.sample.message.proto.Global.Position src_;
     /**
-     * <code>optional int32 road = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点
      * </pre>
      */
-    public boolean hasRoad() {
+    public boolean hasSrc() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional int32 road = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点
      * </pre>
      */
-    public int getRoad() {
-      return road_;
+    public org.shell.mmo.sample.message.proto.Global.Position getSrc() {
+      return src_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
+     *
+     * <pre>
+     * 起点
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrcOrBuilder() {
+      return src_;
+    }
+
+    public static final int DST_FIELD_NUMBER = 2;
+    private org.shell.mmo.sample.message.proto.Global.Position dst_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    public boolean hasDst() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getDst() {
+      return dst_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDstOrBuilder() {
+      return dst_;
     }
 
     private void initFields() {
-      road_ = 0;
+      src_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      dst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -18664,7 +19790,10 @@ public final class LogicClient {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, road_);
+        output.writeMessage(1, src_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, dst_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -18677,7 +19806,11 @@ public final class LogicClient {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, road_);
+          .computeMessageSize(1, src_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, dst_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -18792,6 +19925,8 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getSrcFieldBuilder();
+          getDstFieldBuilder();
         }
       }
       private static Builder create() {
@@ -18800,8 +19935,18 @@ public final class LogicClient {
 
       public Builder clear() {
         super.clear();
-        road_ = 0;
+        if (srcBuilder_ == null) {
+          src_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          srcBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
+        if (dstBuilder_ == null) {
+          dst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          dstBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -18833,7 +19978,19 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.road_ = road_;
+        if (srcBuilder_ == null) {
+          result.src_ = src_;
+        } else {
+          result.src_ = srcBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (dstBuilder_ == null) {
+          result.dst_ = dst_;
+        } else {
+          result.dst_ = dstBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -18850,8 +20007,11 @@ public final class LogicClient {
 
       public Builder mergeFrom(org.shell.mmo.sample.message.proto.LogicClient.ReqCatanBuildRoad other) {
         if (other == org.shell.mmo.sample.message.proto.LogicClient.ReqCatanBuildRoad.getDefaultInstance()) return this;
-        if (other.hasRoad()) {
-          setRoad(other.getRoad());
+        if (other.hasSrc()) {
+          mergeSrc(other.getSrc());
+        }
+        if (other.hasDst()) {
+          mergeDst(other.getDst());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -18880,52 +20040,308 @@ public final class LogicClient {
       }
       private int bitField0_;
 
-      private int road_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position src_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> srcBuilder_;
       /**
-       * <code>optional int32 road = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点
        * </pre>
        */
-      public boolean hasRoad() {
+      public boolean hasSrc() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional int32 road = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点
        * </pre>
        */
-      public int getRoad() {
-        return road_;
+      public org.shell.mmo.sample.message.proto.Global.Position getSrc() {
+        if (srcBuilder_ == null) {
+          return src_;
+        } else {
+          return srcBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 road = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点
        * </pre>
        */
-      public Builder setRoad(int value) {
+      public Builder setSrc(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (srcBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          src_ = value;
+          onChanged();
+        } else {
+          srcBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000001;
-        road_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 road = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点
        * </pre>
        */
-      public Builder clearRoad() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        road_ = 0;
-        onChanged();
+      public Builder setSrc(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (srcBuilder_ == null) {
+          src_ = builderForValue.build();
+          onChanged();
+        } else {
+          srcBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
+       *
+       * <pre>
+       * 起点
+       * </pre>
+       */
+      public Builder mergeSrc(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (srcBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              src_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            src_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(src_).mergeFrom(value).buildPartial();
+          } else {
+            src_ = value;
+          }
+          onChanged();
+        } else {
+          srcBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
+       *
+       * <pre>
+       * 起点
+       * </pre>
+       */
+      public Builder clearSrc() {
+        if (srcBuilder_ == null) {
+          src_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          srcBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
+       *
+       * <pre>
+       * 起点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getSrcBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getSrcFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
+       *
+       * <pre>
+       * 起点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrcOrBuilder() {
+        if (srcBuilder_ != null) {
+          return srcBuilder_.getMessageOrBuilder();
+        } else {
+          return src_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 1;</code>
+       *
+       * <pre>
+       * 起点
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getSrcFieldBuilder() {
+        if (srcBuilder_ == null) {
+          srcBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getSrc(),
+                  getParentForChildren(),
+                  isClean());
+          src_ = null;
+        }
+        return srcBuilder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position dst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> dstBuilder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public boolean hasDst() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getDst() {
+        if (dstBuilder_ == null) {
+          return dst_;
+        } else {
+          return dstBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public Builder setDst(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dstBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dst_ = value;
+          onChanged();
+        } else {
+          dstBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public Builder setDst(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (dstBuilder_ == null) {
+          dst_ = builderForValue.build();
+          onChanged();
+        } else {
+          dstBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public Builder mergeDst(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dstBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              dst_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            dst_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(dst_).mergeFrom(value).buildPartial();
+          } else {
+            dst_ = value;
+          }
+          onChanged();
+        } else {
+          dstBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public Builder clearDst() {
+        if (dstBuilder_ == null) {
+          dst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          dstBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getDstBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getDstFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDstOrBuilder() {
+        if (dstBuilder_ != null) {
+          return dstBuilder_.getMessageOrBuilder();
+        } else {
+          return dst_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 2;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getDstFieldBuilder() {
+        if (dstBuilder_ == null) {
+          dstBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getDst(),
+                  getParentForChildren(),
+                  isClean());
+          dst_ = null;
+        }
+        return dstBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ReqCatanBuildRoad)
@@ -18978,21 +20394,54 @@ public final class LogicClient {
     long getId();
 
     /**
-     * <code>optional int32 road = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点
      * </pre>
      */
-    boolean hasRoad();
+    boolean hasSrc();
     /**
-     * <code>optional int32 road = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点
      * </pre>
      */
-    int getRoad();
+    org.shell.mmo.sample.message.proto.Global.Position getSrc();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
+     *
+     * <pre>
+     * 起点
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrcOrBuilder();
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    boolean hasDst();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getDst();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDstOrBuilder();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ResCatanBuildRoad}
@@ -19066,9 +20515,30 @@ public final class LogicClient {
               id_ = input.readFixed64();
               break;
             }
-            case 24: {
+            case 26: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                subBuilder = src_.toBuilder();
+              }
+              src_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(src_);
+                src_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000004;
-              road_ = input.readInt32();
+              break;
+            }
+            case 34: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                subBuilder = dst_.toBuilder();
+              }
+              dst_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(dst_);
+                dst_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000008;
               break;
             }
           }
@@ -19157,33 +20627,77 @@ public final class LogicClient {
       return id_;
     }
 
-    public static final int ROAD_FIELD_NUMBER = 3;
-    private int road_;
+    public static final int SRC_FIELD_NUMBER = 3;
+    private org.shell.mmo.sample.message.proto.Global.Position src_;
     /**
-     * <code>optional int32 road = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点
      * </pre>
      */
-    public boolean hasRoad() {
+    public boolean hasSrc() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional int32 road = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点
      * </pre>
      */
-    public int getRoad() {
-      return road_;
+    public org.shell.mmo.sample.message.proto.Global.Position getSrc() {
+      return src_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
+     *
+     * <pre>
+     * 起点
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrcOrBuilder() {
+      return src_;
+    }
+
+    public static final int DST_FIELD_NUMBER = 4;
+    private org.shell.mmo.sample.message.proto.Global.Position dst_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    public boolean hasDst() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getDst() {
+      return dst_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+     *
+     * <pre>
+     * 终点
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDstOrBuilder() {
+      return dst_;
     }
 
     private void initFields() {
       error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
       id_ = 0L;
-      road_ = 0;
+      src_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      dst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -19205,7 +20719,10 @@ public final class LogicClient {
         output.writeFixed64(2, id_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, road_);
+        output.writeMessage(3, src_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeMessage(4, dst_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -19226,7 +20743,11 @@ public final class LogicClient {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, road_);
+          .computeMessageSize(3, src_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, dst_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -19341,6 +20862,8 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getSrcFieldBuilder();
+          getDstFieldBuilder();
         }
       }
       private static Builder create() {
@@ -19353,8 +20876,18 @@ public final class LogicClient {
         bitField0_ = (bitField0_ & ~0x00000001);
         id_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000002);
-        road_ = 0;
+        if (srcBuilder_ == null) {
+          src_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          srcBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000004);
+        if (dstBuilder_ == null) {
+          dst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          dstBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
 
@@ -19394,7 +20927,19 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.road_ = road_;
+        if (srcBuilder_ == null) {
+          result.src_ = src_;
+        } else {
+          result.src_ = srcBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        if (dstBuilder_ == null) {
+          result.dst_ = dst_;
+        } else {
+          result.dst_ = dstBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -19417,8 +20962,11 @@ public final class LogicClient {
         if (other.hasId()) {
           setId(other.getId());
         }
-        if (other.hasRoad()) {
-          setRoad(other.getRoad());
+        if (other.hasSrc()) {
+          mergeSrc(other.getSrc());
+        }
+        if (other.hasDst()) {
+          mergeDst(other.getDst());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -19546,52 +21094,308 @@ public final class LogicClient {
         return this;
       }
 
-      private int road_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position src_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> srcBuilder_;
       /**
-       * <code>optional int32 road = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点
        * </pre>
        */
-      public boolean hasRoad() {
+      public boolean hasSrc() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional int32 road = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点
        * </pre>
        */
-      public int getRoad() {
-        return road_;
+      public org.shell.mmo.sample.message.proto.Global.Position getSrc() {
+        if (srcBuilder_ == null) {
+          return src_;
+        } else {
+          return srcBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 road = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点
        * </pre>
        */
-      public Builder setRoad(int value) {
+      public Builder setSrc(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (srcBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          src_ = value;
+          onChanged();
+        } else {
+          srcBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000004;
-        road_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 road = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点
        * </pre>
        */
-      public Builder clearRoad() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        road_ = 0;
-        onChanged();
+      public Builder setSrc(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (srcBuilder_ == null) {
+          src_ = builderForValue.build();
+          onChanged();
+        } else {
+          srcBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
+       *
+       * <pre>
+       * 起点
+       * </pre>
+       */
+      public Builder mergeSrc(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (srcBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              src_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            src_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(src_).mergeFrom(value).buildPartial();
+          } else {
+            src_ = value;
+          }
+          onChanged();
+        } else {
+          srcBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
+       *
+       * <pre>
+       * 起点
+       * </pre>
+       */
+      public Builder clearSrc() {
+        if (srcBuilder_ == null) {
+          src_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          srcBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
+       *
+       * <pre>
+       * 起点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getSrcBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getSrcFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
+       *
+       * <pre>
+       * 起点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrcOrBuilder() {
+        if (srcBuilder_ != null) {
+          return srcBuilder_.getMessageOrBuilder();
+        } else {
+          return src_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src = 3;</code>
+       *
+       * <pre>
+       * 起点
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getSrcFieldBuilder() {
+        if (srcBuilder_ == null) {
+          srcBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getSrc(),
+                  getParentForChildren(),
+                  isClean());
+          src_ = null;
+        }
+        return srcBuilder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position dst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> dstBuilder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public boolean hasDst() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getDst() {
+        if (dstBuilder_ == null) {
+          return dst_;
+        } else {
+          return dstBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public Builder setDst(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dstBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dst_ = value;
+          onChanged();
+        } else {
+          dstBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public Builder setDst(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (dstBuilder_ == null) {
+          dst_ = builderForValue.build();
+          onChanged();
+        } else {
+          dstBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public Builder mergeDst(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dstBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008) &&
+              dst_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            dst_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(dst_).mergeFrom(value).buildPartial();
+          } else {
+            dst_ = value;
+          }
+          onChanged();
+        } else {
+          dstBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public Builder clearDst() {
+        if (dstBuilder_ == null) {
+          dst_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          dstBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getDstBuilder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getDstFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDstOrBuilder() {
+        if (dstBuilder_ != null) {
+          return dstBuilder_.getMessageOrBuilder();
+        } else {
+          return dst_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst = 4;</code>
+       *
+       * <pre>
+       * 终点
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getDstFieldBuilder() {
+        if (dstBuilder_ == null) {
+          dstBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getDst(),
+                  getParentForChildren(),
+                  isClean());
+          dst_ = null;
+        }
+        return dstBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ResCatanBuildRoad)
@@ -19610,21 +21414,29 @@ public final class LogicClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 country = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标
      * </pre>
      */
     boolean hasCountry();
     /**
-     * <code>optional int32 country = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标
      * </pre>
      */
-    int getCountry();
+    org.shell.mmo.sample.message.proto.Global.Position getCountry();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+     *
+     * <pre>
+     * 村庄坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ReqCatanBuildCountry}
@@ -19682,9 +21494,17 @@ public final class LogicClient {
               }
               break;
             }
-            case 8: {
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = country_.toBuilder();
+              }
+              country_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(country_);
+                country_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000001;
-              country_ = input.readInt32();
               break;
             }
           }
@@ -19728,30 +21548,40 @@ public final class LogicClient {
 
     private int bitField0_;
     public static final int COUNTRY_FIELD_NUMBER = 1;
-    private int country_;
+    private org.shell.mmo.sample.message.proto.Global.Position country_;
     /**
-     * <code>optional int32 country = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标
      * </pre>
      */
     public boolean hasCountry() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional int32 country = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标
      * </pre>
      */
-    public int getCountry() {
+    public org.shell.mmo.sample.message.proto.Global.Position getCountry() {
+      return country_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+     *
+     * <pre>
+     * 村庄坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder() {
       return country_;
     }
 
     private void initFields() {
-      country_ = 0;
+      country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -19767,7 +21597,7 @@ public final class LogicClient {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, country_);
+        output.writeMessage(1, country_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -19780,7 +21610,7 @@ public final class LogicClient {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, country_);
+          .computeMessageSize(1, country_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -19895,6 +21725,7 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getCountryFieldBuilder();
         }
       }
       private static Builder create() {
@@ -19903,7 +21734,11 @@ public final class LogicClient {
 
       public Builder clear() {
         super.clear();
-        country_ = 0;
+        if (countryBuilder_ == null) {
+          country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          countryBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -19936,7 +21771,11 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.country_ = country_;
+        if (countryBuilder_ == null) {
+          result.country_ = country_;
+        } else {
+          result.country_ = countryBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -19954,7 +21793,7 @@ public final class LogicClient {
       public Builder mergeFrom(org.shell.mmo.sample.message.proto.LogicClient.ReqCatanBuildCountry other) {
         if (other == org.shell.mmo.sample.message.proto.LogicClient.ReqCatanBuildCountry.getDefaultInstance()) return this;
         if (other.hasCountry()) {
-          setCountry(other.getCountry());
+          mergeCountry(other.getCountry());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -19983,52 +21822,156 @@ public final class LogicClient {
       }
       private int bitField0_;
 
-      private int country_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> countryBuilder_;
       /**
-       * <code>optional int32 country = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标
        * </pre>
        */
       public boolean hasCountry() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional int32 country = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标
        * </pre>
        */
-      public int getCountry() {
-        return country_;
+      public org.shell.mmo.sample.message.proto.Global.Position getCountry() {
+        if (countryBuilder_ == null) {
+          return country_;
+        } else {
+          return countryBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 country = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标
        * </pre>
        */
-      public Builder setCountry(int value) {
+      public Builder setCountry(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (countryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          country_ = value;
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000001;
-        country_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 country = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标
+       * </pre>
+       */
+      public Builder setCountry(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (countryBuilder_ == null) {
+          country_ = builderForValue.build();
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+       *
+       * <pre>
+       * 村庄坐标
+       * </pre>
+       */
+      public Builder mergeCountry(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (countryBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              country_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            country_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(country_).mergeFrom(value).buildPartial();
+          } else {
+            country_ = value;
+          }
+          onChanged();
+        } else {
+          countryBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+       *
+       * <pre>
+       * 村庄坐标
        * </pre>
        */
       public Builder clearCountry() {
+        if (countryBuilder_ == null) {
+          country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          countryBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
-        country_ = 0;
-        onChanged();
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+       *
+       * <pre>
+       * 村庄坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getCountryBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getCountryFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+       *
+       * <pre>
+       * 村庄坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder() {
+        if (countryBuilder_ != null) {
+          return countryBuilder_.getMessageOrBuilder();
+        } else {
+          return country_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 1;</code>
+       *
+       * <pre>
+       * 村庄坐标
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getCountryFieldBuilder() {
+        if (countryBuilder_ == null) {
+          countryBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getCountry(),
+                  getParentForChildren(),
+                  isClean());
+          country_ = null;
+        }
+        return countryBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ReqCatanBuildCountry)
@@ -20081,21 +22024,29 @@ public final class LogicClient {
     long getId();
 
     /**
-     * <code>optional int32 country = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标
      * </pre>
      */
     boolean hasCountry();
     /**
-     * <code>optional int32 country = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标
      * </pre>
      */
-    int getCountry();
+    org.shell.mmo.sample.message.proto.Global.Position getCountry();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+     *
+     * <pre>
+     * 村庄坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ResCatanBuildCountry}
@@ -20169,9 +22120,17 @@ public final class LogicClient {
               id_ = input.readFixed64();
               break;
             }
-            case 24: {
+            case 26: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                subBuilder = country_.toBuilder();
+              }
+              country_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(country_);
+                country_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000004;
-              country_ = input.readInt32();
               break;
             }
           }
@@ -20261,32 +22220,42 @@ public final class LogicClient {
     }
 
     public static final int COUNTRY_FIELD_NUMBER = 3;
-    private int country_;
+    private org.shell.mmo.sample.message.proto.Global.Position country_;
     /**
-     * <code>optional int32 country = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标
      * </pre>
      */
     public boolean hasCountry() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional int32 country = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
      *
      * <pre>
-     * 村庄位置
+     * 村庄坐标
      * </pre>
      */
-    public int getCountry() {
+    public org.shell.mmo.sample.message.proto.Global.Position getCountry() {
+      return country_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+     *
+     * <pre>
+     * 村庄坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder() {
       return country_;
     }
 
     private void initFields() {
       error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
       id_ = 0L;
-      country_ = 0;
+      country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -20308,7 +22277,7 @@ public final class LogicClient {
         output.writeFixed64(2, id_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, country_);
+        output.writeMessage(3, country_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -20329,7 +22298,7 @@ public final class LogicClient {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, country_);
+          .computeMessageSize(3, country_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -20444,6 +22413,7 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getCountryFieldBuilder();
         }
       }
       private static Builder create() {
@@ -20456,7 +22426,11 @@ public final class LogicClient {
         bitField0_ = (bitField0_ & ~0x00000001);
         id_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000002);
-        country_ = 0;
+        if (countryBuilder_ == null) {
+          country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          countryBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
@@ -20497,7 +22471,11 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.country_ = country_;
+        if (countryBuilder_ == null) {
+          result.country_ = country_;
+        } else {
+          result.country_ = countryBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -20521,7 +22499,7 @@ public final class LogicClient {
           setId(other.getId());
         }
         if (other.hasCountry()) {
-          setCountry(other.getCountry());
+          mergeCountry(other.getCountry());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -20649,52 +22627,156 @@ public final class LogicClient {
         return this;
       }
 
-      private int country_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> countryBuilder_;
       /**
-       * <code>optional int32 country = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标
        * </pre>
        */
       public boolean hasCountry() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional int32 country = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标
        * </pre>
        */
-      public int getCountry() {
-        return country_;
+      public org.shell.mmo.sample.message.proto.Global.Position getCountry() {
+        if (countryBuilder_ == null) {
+          return country_;
+        } else {
+          return countryBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 country = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标
        * </pre>
        */
-      public Builder setCountry(int value) {
+      public Builder setCountry(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (countryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          country_ = value;
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000004;
-        country_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 country = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
        *
        * <pre>
-       * 村庄位置
+       * 村庄坐标
+       * </pre>
+       */
+      public Builder setCountry(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (countryBuilder_ == null) {
+          country_ = builderForValue.build();
+          onChanged();
+        } else {
+          countryBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+       *
+       * <pre>
+       * 村庄坐标
+       * </pre>
+       */
+      public Builder mergeCountry(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (countryBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              country_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            country_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(country_).mergeFrom(value).buildPartial();
+          } else {
+            country_ = value;
+          }
+          onChanged();
+        } else {
+          countryBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+       *
+       * <pre>
+       * 村庄坐标
        * </pre>
        */
       public Builder clearCountry() {
+        if (countryBuilder_ == null) {
+          country_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          countryBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000004);
-        country_ = 0;
-        onChanged();
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+       *
+       * <pre>
+       * 村庄坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getCountryBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getCountryFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+       *
+       * <pre>
+       * 村庄坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCountryOrBuilder() {
+        if (countryBuilder_ != null) {
+          return countryBuilder_.getMessageOrBuilder();
+        } else {
+          return country_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position country = 3;</code>
+       *
+       * <pre>
+       * 村庄坐标
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getCountryFieldBuilder() {
+        if (countryBuilder_ == null) {
+          countryBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getCountry(),
+                  getParentForChildren(),
+                  isClean());
+          country_ = null;
+        }
+        return countryBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ResCatanBuildCountry)
@@ -20713,21 +22795,29 @@ public final class LogicClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 city = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
      *
      * <pre>
-     * 城市位置
+     * 城市坐标
      * </pre>
      */
     boolean hasCity();
     /**
-     * <code>optional int32 city = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
      *
      * <pre>
-     * 城市位置
+     * 城市坐标
      * </pre>
      */
-    int getCity();
+    org.shell.mmo.sample.message.proto.Global.Position getCity();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
+     *
+     * <pre>
+     * 城市坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCityOrBuilder();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ReqCatanBuildCity}
@@ -20785,9 +22875,17 @@ public final class LogicClient {
               }
               break;
             }
-            case 8: {
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = city_.toBuilder();
+              }
+              city_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(city_);
+                city_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000001;
-              city_ = input.readInt32();
               break;
             }
           }
@@ -20831,30 +22929,40 @@ public final class LogicClient {
 
     private int bitField0_;
     public static final int CITY_FIELD_NUMBER = 1;
-    private int city_;
+    private org.shell.mmo.sample.message.proto.Global.Position city_;
     /**
-     * <code>optional int32 city = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
      *
      * <pre>
-     * 城市位置
+     * 城市坐标
      * </pre>
      */
     public boolean hasCity() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional int32 city = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
      *
      * <pre>
-     * 城市位置
+     * 城市坐标
      * </pre>
      */
-    public int getCity() {
+    public org.shell.mmo.sample.message.proto.Global.Position getCity() {
+      return city_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
+     *
+     * <pre>
+     * 城市坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCityOrBuilder() {
       return city_;
     }
 
     private void initFields() {
-      city_ = 0;
+      city_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -20870,7 +22978,7 @@ public final class LogicClient {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, city_);
+        output.writeMessage(1, city_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -20883,7 +22991,7 @@ public final class LogicClient {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, city_);
+          .computeMessageSize(1, city_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -20998,6 +23106,7 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getCityFieldBuilder();
         }
       }
       private static Builder create() {
@@ -21006,7 +23115,11 @@ public final class LogicClient {
 
       public Builder clear() {
         super.clear();
-        city_ = 0;
+        if (cityBuilder_ == null) {
+          city_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          cityBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -21039,7 +23152,11 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.city_ = city_;
+        if (cityBuilder_ == null) {
+          result.city_ = city_;
+        } else {
+          result.city_ = cityBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -21057,7 +23174,7 @@ public final class LogicClient {
       public Builder mergeFrom(org.shell.mmo.sample.message.proto.LogicClient.ReqCatanBuildCity other) {
         if (other == org.shell.mmo.sample.message.proto.LogicClient.ReqCatanBuildCity.getDefaultInstance()) return this;
         if (other.hasCity()) {
-          setCity(other.getCity());
+          mergeCity(other.getCity());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -21086,52 +23203,156 @@ public final class LogicClient {
       }
       private int bitField0_;
 
-      private int city_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position city_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> cityBuilder_;
       /**
-       * <code>optional int32 city = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
        *
        * <pre>
-       * 城市位置
+       * 城市坐标
        * </pre>
        */
       public boolean hasCity() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional int32 city = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
        *
        * <pre>
-       * 城市位置
+       * 城市坐标
        * </pre>
        */
-      public int getCity() {
-        return city_;
+      public org.shell.mmo.sample.message.proto.Global.Position getCity() {
+        if (cityBuilder_ == null) {
+          return city_;
+        } else {
+          return cityBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 city = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
        *
        * <pre>
-       * 城市位置
+       * 城市坐标
        * </pre>
        */
-      public Builder setCity(int value) {
+      public Builder setCity(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (cityBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          city_ = value;
+          onChanged();
+        } else {
+          cityBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000001;
-        city_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 city = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
        *
        * <pre>
-       * 城市位置
+       * 城市坐标
+       * </pre>
+       */
+      public Builder setCity(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (cityBuilder_ == null) {
+          city_ = builderForValue.build();
+          onChanged();
+        } else {
+          cityBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
+       *
+       * <pre>
+       * 城市坐标
+       * </pre>
+       */
+      public Builder mergeCity(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (cityBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              city_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            city_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(city_).mergeFrom(value).buildPartial();
+          } else {
+            city_ = value;
+          }
+          onChanged();
+        } else {
+          cityBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
+       *
+       * <pre>
+       * 城市坐标
        * </pre>
        */
       public Builder clearCity() {
+        if (cityBuilder_ == null) {
+          city_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          cityBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
-        city_ = 0;
-        onChanged();
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
+       *
+       * <pre>
+       * 城市坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getCityBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getCityFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
+       *
+       * <pre>
+       * 城市坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCityOrBuilder() {
+        if (cityBuilder_ != null) {
+          return cityBuilder_.getMessageOrBuilder();
+        } else {
+          return city_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 1;</code>
+       *
+       * <pre>
+       * 城市坐标
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getCityFieldBuilder() {
+        if (cityBuilder_ == null) {
+          cityBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getCity(),
+                  getParentForChildren(),
+                  isClean());
+          city_ = null;
+        }
+        return cityBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ReqCatanBuildCity)
@@ -21184,21 +23405,29 @@ public final class LogicClient {
     long getId();
 
     /**
-     * <code>optional int32 city = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
      *
      * <pre>
-     * 城市位置
+     * 城市坐标
      * </pre>
      */
     boolean hasCity();
     /**
-     * <code>optional int32 city = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
      *
      * <pre>
-     * 城市位置
+     * 城市坐标
      * </pre>
      */
-    int getCity();
+    org.shell.mmo.sample.message.proto.Global.Position getCity();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
+     *
+     * <pre>
+     * 城市坐标
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCityOrBuilder();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ResCatanBuildCity}
@@ -21272,9 +23501,17 @@ public final class LogicClient {
               id_ = input.readFixed64();
               break;
             }
-            case 24: {
+            case 26: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                subBuilder = city_.toBuilder();
+              }
+              city_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(city_);
+                city_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000004;
-              city_ = input.readInt32();
               break;
             }
           }
@@ -21364,32 +23601,42 @@ public final class LogicClient {
     }
 
     public static final int CITY_FIELD_NUMBER = 3;
-    private int city_;
+    private org.shell.mmo.sample.message.proto.Global.Position city_;
     /**
-     * <code>optional int32 city = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
      *
      * <pre>
-     * 城市位置
+     * 城市坐标
      * </pre>
      */
     public boolean hasCity() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional int32 city = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
      *
      * <pre>
-     * 城市位置
+     * 城市坐标
      * </pre>
      */
-    public int getCity() {
+    public org.shell.mmo.sample.message.proto.Global.Position getCity() {
+      return city_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
+     *
+     * <pre>
+     * 城市坐标
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCityOrBuilder() {
       return city_;
     }
 
     private void initFields() {
       error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
       id_ = 0L;
-      city_ = 0;
+      city_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -21411,7 +23658,7 @@ public final class LogicClient {
         output.writeFixed64(2, id_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, city_);
+        output.writeMessage(3, city_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -21432,7 +23679,7 @@ public final class LogicClient {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, city_);
+          .computeMessageSize(3, city_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -21547,6 +23794,7 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getCityFieldBuilder();
         }
       }
       private static Builder create() {
@@ -21559,7 +23807,11 @@ public final class LogicClient {
         bitField0_ = (bitField0_ & ~0x00000001);
         id_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000002);
-        city_ = 0;
+        if (cityBuilder_ == null) {
+          city_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          cityBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
@@ -21600,7 +23852,11 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.city_ = city_;
+        if (cityBuilder_ == null) {
+          result.city_ = city_;
+        } else {
+          result.city_ = cityBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -21624,7 +23880,7 @@ public final class LogicClient {
           setId(other.getId());
         }
         if (other.hasCity()) {
-          setCity(other.getCity());
+          mergeCity(other.getCity());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -21752,52 +24008,156 @@ public final class LogicClient {
         return this;
       }
 
-      private int city_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position city_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> cityBuilder_;
       /**
-       * <code>optional int32 city = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
        *
        * <pre>
-       * 城市位置
+       * 城市坐标
        * </pre>
        */
       public boolean hasCity() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional int32 city = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
        *
        * <pre>
-       * 城市位置
+       * 城市坐标
        * </pre>
        */
-      public int getCity() {
-        return city_;
+      public org.shell.mmo.sample.message.proto.Global.Position getCity() {
+        if (cityBuilder_ == null) {
+          return city_;
+        } else {
+          return cityBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 city = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
        *
        * <pre>
-       * 城市位置
+       * 城市坐标
        * </pre>
        */
-      public Builder setCity(int value) {
+      public Builder setCity(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (cityBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          city_ = value;
+          onChanged();
+        } else {
+          cityBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000004;
-        city_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 city = 3;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
        *
        * <pre>
-       * 城市位置
+       * 城市坐标
+       * </pre>
+       */
+      public Builder setCity(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (cityBuilder_ == null) {
+          city_ = builderForValue.build();
+          onChanged();
+        } else {
+          cityBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
+       *
+       * <pre>
+       * 城市坐标
+       * </pre>
+       */
+      public Builder mergeCity(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (cityBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              city_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            city_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(city_).mergeFrom(value).buildPartial();
+          } else {
+            city_ = value;
+          }
+          onChanged();
+        } else {
+          cityBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
+       *
+       * <pre>
+       * 城市坐标
        * </pre>
        */
       public Builder clearCity() {
+        if (cityBuilder_ == null) {
+          city_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          cityBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000004);
-        city_ = 0;
-        onChanged();
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
+       *
+       * <pre>
+       * 城市坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getCityBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getCityFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
+       *
+       * <pre>
+       * 城市坐标
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getCityOrBuilder() {
+        if (cityBuilder_ != null) {
+          return cityBuilder_.getMessageOrBuilder();
+        } else {
+          return city_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position city = 3;</code>
+       *
+       * <pre>
+       * 城市坐标
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getCityFieldBuilder() {
+        if (cityBuilder_ == null) {
+          cityBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getCity(),
+                  getParentForChildren(),
+                  isClean());
+          city_ = null;
+        }
+        return cityBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ResCatanBuildCity)
@@ -22287,21 +24647,48 @@ public final class LogicClient {
     long getId();
 
     /**
-     * <code>optional int32 count = 3;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
      *
      * <pre>
-     * 数量
+     * 获得卡片
      * </pre>
      */
-    boolean hasCount();
+    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCard> 
+        getCardList();
     /**
-     * <code>optional int32 count = 3;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
      *
      * <pre>
-     * 数量
+     * 获得卡片
      * </pre>
      */
-    int getCount();
+    org.shell.mmo.sample.message.proto.Global.CatanCard getCard(int index);
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+     *
+     * <pre>
+     * 获得卡片
+     * </pre>
+     */
+    int getCardCount();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+     *
+     * <pre>
+     * 获得卡片
+     * </pre>
+     */
+    java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanCardOrBuilder> 
+        getCardOrBuilderList();
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+     *
+     * <pre>
+     * 获得卡片
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.CatanCardOrBuilder getCardOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ResCatanBuildDevelopmentCard}
@@ -22375,9 +24762,12 @@ public final class LogicClient {
               id_ = input.readFixed64();
               break;
             }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              count_ = input.readInt32();
+            case 26: {
+              if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+                card_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanCard>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              card_.add(input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanCard.PARSER, extensionRegistry));
               break;
             }
           }
@@ -22388,6 +24778,9 @@ public final class LogicClient {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
+          card_ = java.util.Collections.unmodifiableList(card_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -22466,33 +24859,65 @@ public final class LogicClient {
       return id_;
     }
 
-    public static final int COUNT_FIELD_NUMBER = 3;
-    private int count_;
+    public static final int CARD_FIELD_NUMBER = 3;
+    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCard> card_;
     /**
-     * <code>optional int32 count = 3;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
      *
      * <pre>
-     * 数量
+     * 获得卡片
      * </pre>
      */
-    public boolean hasCount() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
+    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCard> getCardList() {
+      return card_;
     }
     /**
-     * <code>optional int32 count = 3;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
      *
      * <pre>
-     * 数量
+     * 获得卡片
      * </pre>
      */
-    public int getCount() {
-      return count_;
+    public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanCardOrBuilder> 
+        getCardOrBuilderList() {
+      return card_;
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+     *
+     * <pre>
+     * 获得卡片
+     * </pre>
+     */
+    public int getCardCount() {
+      return card_.size();
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+     *
+     * <pre>
+     * 获得卡片
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanCard getCard(int index) {
+      return card_.get(index);
+    }
+    /**
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+     *
+     * <pre>
+     * 获得卡片
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.CatanCardOrBuilder getCardOrBuilder(
+        int index) {
+      return card_.get(index);
     }
 
     private void initFields() {
       error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
       id_ = 0L;
-      count_ = 0;
+      card_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -22513,8 +24938,8 @@ public final class LogicClient {
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeFixed64(2, id_);
       }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeInt32(3, count_);
+      for (int i = 0; i < card_.size(); i++) {
+        output.writeMessage(3, card_.get(i));
       }
       getUnknownFields().writeTo(output);
     }
@@ -22533,9 +24958,9 @@ public final class LogicClient {
         size += com.google.protobuf.CodedOutputStream
           .computeFixed64Size(2, id_);
       }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+      for (int i = 0; i < card_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, count_);
+          .computeMessageSize(3, card_.get(i));
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -22650,6 +25075,7 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getCardFieldBuilder();
         }
       }
       private static Builder create() {
@@ -22662,8 +25088,12 @@ public final class LogicClient {
         bitField0_ = (bitField0_ & ~0x00000001);
         id_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000002);
-        count_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
+        if (cardBuilder_ == null) {
+          card_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          cardBuilder_.clear();
+        }
         return this;
       }
 
@@ -22700,10 +25130,15 @@ public final class LogicClient {
           to_bitField0_ |= 0x00000002;
         }
         result.id_ = id_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
+        if (cardBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004)) {
+            card_ = java.util.Collections.unmodifiableList(card_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.card_ = card_;
+        } else {
+          result.card_ = cardBuilder_.build();
         }
-        result.count_ = count_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -22726,8 +25161,31 @@ public final class LogicClient {
         if (other.hasId()) {
           setId(other.getId());
         }
-        if (other.hasCount()) {
-          setCount(other.getCount());
+        if (cardBuilder_ == null) {
+          if (!other.card_.isEmpty()) {
+            if (card_.isEmpty()) {
+              card_ = other.card_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureCardIsMutable();
+              card_.addAll(other.card_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.card_.isEmpty()) {
+            if (cardBuilder_.isEmpty()) {
+              cardBuilder_.dispose();
+              cardBuilder_ = null;
+              card_ = other.card_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              cardBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getCardFieldBuilder() : null;
+            } else {
+              cardBuilder_.addAllMessages(other.card_);
+            }
+          }
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -22855,52 +25313,316 @@ public final class LogicClient {
         return this;
       }
 
-      private int count_ ;
+      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCard> card_ =
+        java.util.Collections.emptyList();
+      private void ensureCardIsMutable() {
+        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+          card_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanCard>(card_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanCard, org.shell.mmo.sample.message.proto.Global.CatanCard.Builder, org.shell.mmo.sample.message.proto.Global.CatanCardOrBuilder> cardBuilder_;
+
       /**
-       * <code>optional int32 count = 3;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
        *
        * <pre>
-       * 数量
+       * 获得卡片
        * </pre>
        */
-      public boolean hasCount() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCard> getCardList() {
+        if (cardBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(card_);
+        } else {
+          return cardBuilder_.getMessageList();
+        }
       }
       /**
-       * <code>optional int32 count = 3;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
        *
        * <pre>
-       * 数量
+       * 获得卡片
        * </pre>
        */
-      public int getCount() {
-        return count_;
+      public int getCardCount() {
+        if (cardBuilder_ == null) {
+          return card_.size();
+        } else {
+          return cardBuilder_.getCount();
+        }
       }
       /**
-       * <code>optional int32 count = 3;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
        *
        * <pre>
-       * 数量
+       * 获得卡片
        * </pre>
        */
-      public Builder setCount(int value) {
-        bitField0_ |= 0x00000004;
-        count_ = value;
-        onChanged();
+      public org.shell.mmo.sample.message.proto.Global.CatanCard getCard(int index) {
+        if (cardBuilder_ == null) {
+          return card_.get(index);
+        } else {
+          return cardBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public Builder setCard(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCard value) {
+        if (cardBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCardIsMutable();
+          card_.set(index, value);
+          onChanged();
+        } else {
+          cardBuilder_.setMessage(index, value);
+        }
         return this;
       }
       /**
-       * <code>optional int32 count = 3;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
        *
        * <pre>
-       * 数量
+       * 获得卡片
        * </pre>
        */
-      public Builder clearCount() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        count_ = 0;
-        onChanged();
+      public Builder setCard(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCard.Builder builderForValue) {
+        if (cardBuilder_ == null) {
+          ensureCardIsMutable();
+          card_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          cardBuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public Builder addCard(org.shell.mmo.sample.message.proto.Global.CatanCard value) {
+        if (cardBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCardIsMutable();
+          card_.add(value);
+          onChanged();
+        } else {
+          cardBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public Builder addCard(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCard value) {
+        if (cardBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCardIsMutable();
+          card_.add(index, value);
+          onChanged();
+        } else {
+          cardBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public Builder addCard(
+          org.shell.mmo.sample.message.proto.Global.CatanCard.Builder builderForValue) {
+        if (cardBuilder_ == null) {
+          ensureCardIsMutable();
+          card_.add(builderForValue.build());
+          onChanged();
+        } else {
+          cardBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public Builder addCard(
+          int index, org.shell.mmo.sample.message.proto.Global.CatanCard.Builder builderForValue) {
+        if (cardBuilder_ == null) {
+          ensureCardIsMutable();
+          card_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          cardBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public Builder addAllCard(
+          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanCard> values) {
+        if (cardBuilder_ == null) {
+          ensureCardIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, card_);
+          onChanged();
+        } else {
+          cardBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public Builder clearCard() {
+        if (cardBuilder_ == null) {
+          card_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+          onChanged();
+        } else {
+          cardBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public Builder removeCard(int index) {
+        if (cardBuilder_ == null) {
+          ensureCardIsMutable();
+          card_.remove(index);
+          onChanged();
+        } else {
+          cardBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCard.Builder getCardBuilder(
+          int index) {
+        return getCardFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCardOrBuilder getCardOrBuilder(
+          int index) {
+        if (cardBuilder_ == null) {
+          return card_.get(index);  } else {
+          return cardBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanCardOrBuilder> 
+           getCardOrBuilderList() {
+        if (cardBuilder_ != null) {
+          return cardBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(card_);
+        }
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCard.Builder addCardBuilder() {
+        return getCardFieldBuilder().addBuilder(
+            org.shell.mmo.sample.message.proto.Global.CatanCard.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.CatanCard.Builder addCardBuilder(
+          int index) {
+        return getCardFieldBuilder().addBuilder(
+            index, org.shell.mmo.sample.message.proto.Global.CatanCard.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanCard card = 3;</code>
+       *
+       * <pre>
+       * 获得卡片
+       * </pre>
+       */
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanCard.Builder> 
+           getCardBuilderList() {
+        return getCardFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.CatanCard, org.shell.mmo.sample.message.proto.Global.CatanCard.Builder, org.shell.mmo.sample.message.proto.Global.CatanCardOrBuilder> 
+          getCardFieldBuilder() {
+        if (cardBuilder_ == null) {
+          cardBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.CatanCard, org.shell.mmo.sample.message.proto.Global.CatanCard.Builder, org.shell.mmo.sample.message.proto.Global.CatanCardOrBuilder>(
+                  card_,
+                  ((bitField0_ & 0x00000004) == 0x00000004),
+                  getParentForChildren(),
+                  isClean());
+          card_ = null;
+        }
+        return cardBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ResCatanBuildDevelopmentCard)
@@ -25778,7 +28500,7 @@ public final class LogicClient {
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ReqCatanTradeOffer}
    *
    * <pre>
-   * 开价给所有人(交易流程:开价-&gt;还价/取消-&gt;成交/取消):参数
+   * 开价给所有人(交易流程:开价-&gt;还价/取消-&gt;成交/取消),此消息可能会重复收取,需要重置交易流程:参数
    * </pre>
    */
   public static final class ReqCatanTradeOffer extends
@@ -26123,7 +28845,7 @@ public final class LogicClient {
      * Protobuf type {@code org.shell.mmo.sample.message.proto.ReqCatanTradeOffer}
      *
      * <pre>
-     * 开价给所有人(交易流程:开价-&gt;还价/取消-&gt;成交/取消):参数
+     * 开价给所有人(交易流程:开价-&gt;还价/取消-&gt;成交/取消),此消息可能会重复收取,需要重置交易流程:参数
      * </pre>
      */
     public static final class Builder extends
@@ -27080,7 +29802,7 @@ public final class LogicClient {
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ResCatanTradeOffer}
    *
    * <pre>
-   * 开价给所有人(交易流程:开价-&gt;还价/取消-&gt;成交/取消):返回值
+   * 开价给所有人(交易流程:开价-&gt;还价/取消-&gt;成交/取消),此消息可能会重复收取,需要重置交易流程:返回值
    * </pre>
    */
   public static final class ResCatanTradeOffer extends
@@ -27504,7 +30226,7 @@ public final class LogicClient {
      * Protobuf type {@code org.shell.mmo.sample.message.proto.ResCatanTradeOffer}
      *
      * <pre>
-     * 开价给所有人(交易流程:开价-&gt;还价/取消-&gt;成交/取消):返回值
+     * 开价给所有人(交易流程:开价-&gt;还价/取消-&gt;成交/取消),此消息可能会重复收取,需要重置交易流程:返回值
      * </pre>
      */
     public static final class Builder extends
@@ -33211,7 +35933,7 @@ public final class LogicClient {
      * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
      *
      * <pre>
-     * 玩家1获得的资源
+     * 玩家1获得的资源(玩家2失去的资源)
      * </pre>
      */
     boolean hasMaster1();
@@ -33219,7 +35941,7 @@ public final class LogicClient {
      * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
      *
      * <pre>
-     * 玩家1获得的资源
+     * 玩家1获得的资源(玩家2失去的资源)
      * </pre>
      */
     org.shell.mmo.sample.message.proto.Global.CatanMasterResource getMaster1();
@@ -33227,32 +35949,32 @@ public final class LogicClient {
      * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
      *
      * <pre>
-     * 玩家1获得的资源
+     * 玩家1获得的资源(玩家2失去的资源)
      * </pre>
      */
     org.shell.mmo.sample.message.proto.Global.CatanMasterResourceOrBuilder getMaster1OrBuilder();
 
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
      *
      * <pre>
-     * 玩家2获得的资源
+     * 玩家2获得的资源(玩家1失去的资源)
      * </pre>
      */
     boolean hasMaster2();
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
      *
      * <pre>
-     * 玩家2获得的资源
+     * 玩家2获得的资源(玩家1失去的资源)
      * </pre>
      */
     org.shell.mmo.sample.message.proto.Global.CatanMasterResource getMaster2();
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
      *
      * <pre>
-     * 玩家2获得的资源
+     * 玩家2获得的资源(玩家1失去的资源)
      * </pre>
      */
     org.shell.mmo.sample.message.proto.Global.CatanMasterResourceOrBuilder getMaster2OrBuilder();
@@ -33337,7 +36059,7 @@ public final class LogicClient {
               bitField0_ |= 0x00000002;
               break;
             }
-            case 34: {
+            case 26: {
               org.shell.mmo.sample.message.proto.Global.CatanMasterResource.Builder subBuilder = null;
               if (((bitField0_ & 0x00000004) == 0x00000004)) {
                 subBuilder = master2_.toBuilder();
@@ -33419,7 +36141,7 @@ public final class LogicClient {
      * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
      *
      * <pre>
-     * 玩家1获得的资源
+     * 玩家1获得的资源(玩家2失去的资源)
      * </pre>
      */
     public boolean hasMaster1() {
@@ -33429,7 +36151,7 @@ public final class LogicClient {
      * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
      *
      * <pre>
-     * 玩家1获得的资源
+     * 玩家1获得的资源(玩家2失去的资源)
      * </pre>
      */
     public org.shell.mmo.sample.message.proto.Global.CatanMasterResource getMaster1() {
@@ -33439,40 +36161,40 @@ public final class LogicClient {
      * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
      *
      * <pre>
-     * 玩家1获得的资源
+     * 玩家1获得的资源(玩家2失去的资源)
      * </pre>
      */
     public org.shell.mmo.sample.message.proto.Global.CatanMasterResourceOrBuilder getMaster1OrBuilder() {
       return master1_;
     }
 
-    public static final int MASTER2_FIELD_NUMBER = 4;
+    public static final int MASTER2_FIELD_NUMBER = 3;
     private org.shell.mmo.sample.message.proto.Global.CatanMasterResource master2_;
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
      *
      * <pre>
-     * 玩家2获得的资源
+     * 玩家2获得的资源(玩家1失去的资源)
      * </pre>
      */
     public boolean hasMaster2() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
      *
      * <pre>
-     * 玩家2获得的资源
+     * 玩家2获得的资源(玩家1失去的资源)
      * </pre>
      */
     public org.shell.mmo.sample.message.proto.Global.CatanMasterResource getMaster2() {
       return master2_;
     }
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
      *
      * <pre>
-     * 玩家2获得的资源
+     * 玩家2获得的资源(玩家1失去的资源)
      * </pre>
      */
     public org.shell.mmo.sample.message.proto.Global.CatanMasterResourceOrBuilder getMaster2OrBuilder() {
@@ -33504,7 +36226,7 @@ public final class LogicClient {
         output.writeMessage(2, master1_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeMessage(4, master2_);
+        output.writeMessage(3, master2_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -33525,7 +36247,7 @@ public final class LogicClient {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, master2_);
+          .computeMessageSize(3, master2_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -33822,7 +36544,7 @@ public final class LogicClient {
        * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
        *
        * <pre>
-       * 玩家1获得的资源
+       * 玩家1获得的资源(玩家2失去的资源)
        * </pre>
        */
       public boolean hasMaster1() {
@@ -33832,7 +36554,7 @@ public final class LogicClient {
        * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
        *
        * <pre>
-       * 玩家1获得的资源
+       * 玩家1获得的资源(玩家2失去的资源)
        * </pre>
        */
       public org.shell.mmo.sample.message.proto.Global.CatanMasterResource getMaster1() {
@@ -33846,7 +36568,7 @@ public final class LogicClient {
        * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
        *
        * <pre>
-       * 玩家1获得的资源
+       * 玩家1获得的资源(玩家2失去的资源)
        * </pre>
        */
       public Builder setMaster1(org.shell.mmo.sample.message.proto.Global.CatanMasterResource value) {
@@ -33866,7 +36588,7 @@ public final class LogicClient {
        * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
        *
        * <pre>
-       * 玩家1获得的资源
+       * 玩家1获得的资源(玩家2失去的资源)
        * </pre>
        */
       public Builder setMaster1(
@@ -33884,7 +36606,7 @@ public final class LogicClient {
        * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
        *
        * <pre>
-       * 玩家1获得的资源
+       * 玩家1获得的资源(玩家2失去的资源)
        * </pre>
        */
       public Builder mergeMaster1(org.shell.mmo.sample.message.proto.Global.CatanMasterResource value) {
@@ -33907,7 +36629,7 @@ public final class LogicClient {
        * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
        *
        * <pre>
-       * 玩家1获得的资源
+       * 玩家1获得的资源(玩家2失去的资源)
        * </pre>
        */
       public Builder clearMaster1() {
@@ -33924,7 +36646,7 @@ public final class LogicClient {
        * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
        *
        * <pre>
-       * 玩家1获得的资源
+       * 玩家1获得的资源(玩家2失去的资源)
        * </pre>
        */
       public org.shell.mmo.sample.message.proto.Global.CatanMasterResource.Builder getMaster1Builder() {
@@ -33936,7 +36658,7 @@ public final class LogicClient {
        * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
        *
        * <pre>
-       * 玩家1获得的资源
+       * 玩家1获得的资源(玩家2失去的资源)
        * </pre>
        */
       public org.shell.mmo.sample.message.proto.Global.CatanMasterResourceOrBuilder getMaster1OrBuilder() {
@@ -33950,7 +36672,7 @@ public final class LogicClient {
        * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master1 = 2;</code>
        *
        * <pre>
-       * 玩家1获得的资源
+       * 玩家1获得的资源(玩家2失去的资源)
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
@@ -33971,20 +36693,20 @@ public final class LogicClient {
       private com.google.protobuf.SingleFieldBuilder<
           org.shell.mmo.sample.message.proto.Global.CatanMasterResource, org.shell.mmo.sample.message.proto.Global.CatanMasterResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanMasterResourceOrBuilder> master2Builder_;
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
        *
        * <pre>
-       * 玩家2获得的资源
+       * 玩家2获得的资源(玩家1失去的资源)
        * </pre>
        */
       public boolean hasMaster2() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
        *
        * <pre>
-       * 玩家2获得的资源
+       * 玩家2获得的资源(玩家1失去的资源)
        * </pre>
        */
       public org.shell.mmo.sample.message.proto.Global.CatanMasterResource getMaster2() {
@@ -33995,10 +36717,10 @@ public final class LogicClient {
         }
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
        *
        * <pre>
-       * 玩家2获得的资源
+       * 玩家2获得的资源(玩家1失去的资源)
        * </pre>
        */
       public Builder setMaster2(org.shell.mmo.sample.message.proto.Global.CatanMasterResource value) {
@@ -34015,10 +36737,10 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
        *
        * <pre>
-       * 玩家2获得的资源
+       * 玩家2获得的资源(玩家1失去的资源)
        * </pre>
        */
       public Builder setMaster2(
@@ -34033,10 +36755,10 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
        *
        * <pre>
-       * 玩家2获得的资源
+       * 玩家2获得的资源(玩家1失去的资源)
        * </pre>
        */
       public Builder mergeMaster2(org.shell.mmo.sample.message.proto.Global.CatanMasterResource value) {
@@ -34056,10 +36778,10 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
        *
        * <pre>
-       * 玩家2获得的资源
+       * 玩家2获得的资源(玩家1失去的资源)
        * </pre>
        */
       public Builder clearMaster2() {
@@ -34073,10 +36795,10 @@ public final class LogicClient {
         return this;
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
        *
        * <pre>
-       * 玩家2获得的资源
+       * 玩家2获得的资源(玩家1失去的资源)
        * </pre>
        */
       public org.shell.mmo.sample.message.proto.Global.CatanMasterResource.Builder getMaster2Builder() {
@@ -34085,10 +36807,10 @@ public final class LogicClient {
         return getMaster2FieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
        *
        * <pre>
-       * 玩家2获得的资源
+       * 玩家2获得的资源(玩家1失去的资源)
        * </pre>
        */
       public org.shell.mmo.sample.message.proto.Global.CatanMasterResourceOrBuilder getMaster2OrBuilder() {
@@ -34099,10 +36821,10 @@ public final class LogicClient {
         }
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 4;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanMasterResource master2 = 3;</code>
        *
        * <pre>
-       * 玩家2获得的资源
+       * 玩家2获得的资源(玩家1失去的资源)
        * </pre>
        */
       private com.google.protobuf.SingleFieldBuilder<
@@ -34902,7 +37624,7 @@ public final class LogicClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 robber = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
      *
      * <pre>
      * 强盗的位置
@@ -34910,13 +37632,21 @@ public final class LogicClient {
      */
     boolean hasRobber();
     /**
-     * <code>optional int32 robber = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
      *
      * <pre>
      * 强盗的位置
      * </pre>
      */
-    int getRobber();
+    org.shell.mmo.sample.message.proto.Global.Position getRobber();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+     *
+     * <pre>
+     * 强盗的位置
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder();
 
     /**
      * <code>optional fixed64 id = 2;</code>
@@ -34991,9 +37721,17 @@ public final class LogicClient {
               }
               break;
             }
-            case 8: {
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = robber_.toBuilder();
+              }
+              robber_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(robber_);
+                robber_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000001;
-              robber_ = input.readInt32();
               break;
             }
             case 17: {
@@ -35042,9 +37780,9 @@ public final class LogicClient {
 
     private int bitField0_;
     public static final int ROBBER_FIELD_NUMBER = 1;
-    private int robber_;
+    private org.shell.mmo.sample.message.proto.Global.Position robber_;
     /**
-     * <code>optional int32 robber = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
      *
      * <pre>
      * 强盗的位置
@@ -35054,13 +37792,23 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional int32 robber = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
      *
      * <pre>
      * 强盗的位置
      * </pre>
      */
-    public int getRobber() {
+    public org.shell.mmo.sample.message.proto.Global.Position getRobber() {
+      return robber_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+     *
+     * <pre>
+     * 强盗的位置
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder() {
       return robber_;
     }
 
@@ -35088,7 +37836,7 @@ public final class LogicClient {
     }
 
     private void initFields() {
-      robber_ = 0;
+      robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
       id_ = 0L;
     }
     private byte memoizedIsInitialized = -1;
@@ -35105,7 +37853,7 @@ public final class LogicClient {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, robber_);
+        output.writeMessage(1, robber_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeFixed64(2, id_);
@@ -35121,7 +37869,7 @@ public final class LogicClient {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, robber_);
+          .computeMessageSize(1, robber_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -35240,6 +37988,7 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getRobberFieldBuilder();
         }
       }
       private static Builder create() {
@@ -35248,7 +37997,11 @@ public final class LogicClient {
 
       public Builder clear() {
         super.clear();
-        robber_ = 0;
+        if (robberBuilder_ == null) {
+          robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          robberBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
         id_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -35283,7 +38036,11 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.robber_ = robber_;
+        if (robberBuilder_ == null) {
+          result.robber_ = robber_;
+        } else {
+          result.robber_ = robberBuilder_.build();
+        }
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
@@ -35305,7 +38062,7 @@ public final class LogicClient {
       public Builder mergeFrom(org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRob other) {
         if (other == org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRob.getDefaultInstance()) return this;
         if (other.hasRobber()) {
-          setRobber(other.getRobber());
+          mergeRobber(other.getRobber());
         }
         if (other.hasId()) {
           setId(other.getId());
@@ -35337,9 +38094,11 @@ public final class LogicClient {
       }
       private int bitField0_;
 
-      private int robber_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> robberBuilder_;
       /**
-       * <code>optional int32 robber = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
        *
        * <pre>
        * 强盗的位置
@@ -35349,40 +38108,142 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional int32 robber = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
        *
        * <pre>
        * 强盗的位置
        * </pre>
        */
-      public int getRobber() {
-        return robber_;
+      public org.shell.mmo.sample.message.proto.Global.Position getRobber() {
+        if (robberBuilder_ == null) {
+          return robber_;
+        } else {
+          return robberBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 robber = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
        *
        * <pre>
        * 强盗的位置
        * </pre>
        */
-      public Builder setRobber(int value) {
+      public Builder setRobber(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (robberBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          robber_ = value;
+          onChanged();
+        } else {
+          robberBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000001;
-        robber_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 robber = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+       *
+       * <pre>
+       * 强盗的位置
+       * </pre>
+       */
+      public Builder setRobber(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (robberBuilder_ == null) {
+          robber_ = builderForValue.build();
+          onChanged();
+        } else {
+          robberBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+       *
+       * <pre>
+       * 强盗的位置
+       * </pre>
+       */
+      public Builder mergeRobber(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (robberBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              robber_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            robber_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(robber_).mergeFrom(value).buildPartial();
+          } else {
+            robber_ = value;
+          }
+          onChanged();
+        } else {
+          robberBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
        *
        * <pre>
        * 强盗的位置
        * </pre>
        */
       public Builder clearRobber() {
+        if (robberBuilder_ == null) {
+          robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          robberBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
-        robber_ = 0;
-        onChanged();
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+       *
+       * <pre>
+       * 强盗的位置
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getRobberBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getRobberFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+       *
+       * <pre>
+       * 强盗的位置
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder() {
+        if (robberBuilder_ != null) {
+          return robberBuilder_.getMessageOrBuilder();
+        } else {
+          return robber_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+       *
+       * <pre>
+       * 强盗的位置
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getRobberFieldBuilder() {
+        if (robberBuilder_ == null) {
+          robberBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getRobber(),
+                  getParentForChildren(),
+                  isClean());
+          robber_ = null;
+        }
+        return robberBuilder_;
       }
 
       private long id_ ;
@@ -35466,7 +38327,7 @@ public final class LogicClient {
     org.shell.mmo.sample.message.proto.Global.Error getError();
 
     /**
-     * <code>optional int32 robber = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
      *
      * <pre>
      * 强盗的位置
@@ -35474,13 +38335,21 @@ public final class LogicClient {
      */
     boolean hasRobber();
     /**
-     * <code>optional int32 robber = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
      *
      * <pre>
      * 强盗的位置
      * </pre>
      */
-    int getRobber();
+    org.shell.mmo.sample.message.proto.Global.Position getRobber();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+     *
+     * <pre>
+     * 强盗的位置
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder();
 
     /**
      * <code>optional fixed64 criminal = 3;</code>
@@ -35517,7 +38386,7 @@ public final class LogicClient {
     long getVictim();
 
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
      *
      * <pre>
      * 资源
@@ -35525,21 +38394,13 @@ public final class LogicClient {
      */
     boolean hasResource();
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    org.shell.mmo.sample.message.proto.Global.CatanResource getResource();
-    /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder();
+    org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ResCatanRob}
@@ -35608,9 +38469,17 @@ public final class LogicClient {
               }
               break;
             }
-            case 16: {
+            case 18: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = robber_.toBuilder();
+              }
+              robber_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(robber_);
+                robber_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000002;
-              robber_ = input.readInt32();
               break;
             }
             case 25: {
@@ -35623,17 +38492,15 @@ public final class LogicClient {
               victim_ = input.readFixed64();
               break;
             }
-            case 42: {
-              org.shell.mmo.sample.message.proto.Global.CatanResource.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000010) == 0x00000010)) {
-                subBuilder = resource_.toBuilder();
+            case 40: {
+              int rawValue = input.readEnum();
+              org.shell.mmo.sample.message.proto.Global.CatanResourceType value = org.shell.mmo.sample.message.proto.Global.CatanResourceType.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(5, rawValue);
+              } else {
+                bitField0_ |= 0x00000010;
+                resource_ = value;
               }
-              resource_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanResource.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(resource_);
-                resource_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000010;
               break;
             }
           }
@@ -35700,9 +38567,9 @@ public final class LogicClient {
     }
 
     public static final int ROBBER_FIELD_NUMBER = 2;
-    private int robber_;
+    private org.shell.mmo.sample.message.proto.Global.Position robber_;
     /**
-     * <code>optional int32 robber = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
      *
      * <pre>
      * 强盗的位置
@@ -35712,13 +38579,23 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>optional int32 robber = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
      *
      * <pre>
      * 强盗的位置
      * </pre>
      */
-    public int getRobber() {
+    public org.shell.mmo.sample.message.proto.Global.Position getRobber() {
+      return robber_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+     *
+     * <pre>
+     * 强盗的位置
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder() {
       return robber_;
     }
 
@@ -35769,9 +38646,9 @@ public final class LogicClient {
     }
 
     public static final int RESOURCE_FIELD_NUMBER = 5;
-    private org.shell.mmo.sample.message.proto.Global.CatanResource resource_;
+    private org.shell.mmo.sample.message.proto.Global.CatanResourceType resource_;
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
      *
      * <pre>
      * 资源
@@ -35781,32 +38658,22 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    public org.shell.mmo.sample.message.proto.Global.CatanResource getResource() {
-      return resource_;
-    }
-    /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder() {
+    public org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource() {
       return resource_;
     }
 
     private void initFields() {
       error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
-      robber_ = 0;
+      robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
       criminal_ = 0L;
       victim_ = 0L;
-      resource_ = org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance();
+      resource_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -35825,7 +38692,7 @@ public final class LogicClient {
         output.writeEnum(1, error_.getNumber());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, robber_);
+        output.writeMessage(2, robber_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         output.writeFixed64(3, criminal_);
@@ -35834,7 +38701,7 @@ public final class LogicClient {
         output.writeFixed64(4, victim_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeMessage(5, resource_);
+        output.writeEnum(5, resource_.getNumber());
       }
       getUnknownFields().writeTo(output);
     }
@@ -35851,7 +38718,7 @@ public final class LogicClient {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, robber_);
+          .computeMessageSize(2, robber_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
@@ -35863,7 +38730,7 @@ public final class LogicClient {
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, resource_);
+          .computeEnumSize(5, resource_.getNumber());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -35978,7 +38845,7 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getResourceFieldBuilder();
+          getRobberFieldBuilder();
         }
       }
       private static Builder create() {
@@ -35989,17 +38856,17 @@ public final class LogicClient {
         super.clear();
         error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
         bitField0_ = (bitField0_ & ~0x00000001);
-        robber_ = 0;
+        if (robberBuilder_ == null) {
+          robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          robberBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000002);
         criminal_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000004);
         victim_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000008);
-        if (resourceBuilder_ == null) {
-          resource_ = org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance();
-        } else {
-          resourceBuilder_.clear();
-        }
+        resource_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
         bitField0_ = (bitField0_ & ~0x00000010);
         return this;
       }
@@ -36036,7 +38903,11 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.robber_ = robber_;
+        if (robberBuilder_ == null) {
+          result.robber_ = robber_;
+        } else {
+          result.robber_ = robberBuilder_.build();
+        }
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
@@ -36048,11 +38919,7 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
           to_bitField0_ |= 0x00000010;
         }
-        if (resourceBuilder_ == null) {
-          result.resource_ = resource_;
-        } else {
-          result.resource_ = resourceBuilder_.build();
-        }
+        result.resource_ = resource_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -36073,7 +38940,7 @@ public final class LogicClient {
           setError(other.getError());
         }
         if (other.hasRobber()) {
-          setRobber(other.getRobber());
+          mergeRobber(other.getRobber());
         }
         if (other.hasCriminal()) {
           setCriminal(other.getCriminal());
@@ -36082,7 +38949,7 @@ public final class LogicClient {
           setVictim(other.getVictim());
         }
         if (other.hasResource()) {
-          mergeResource(other.getResource());
+          setResource(other.getResource());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -36162,9 +39029,11 @@ public final class LogicClient {
         return this;
       }
 
-      private int robber_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> robberBuilder_;
       /**
-       * <code>optional int32 robber = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
        *
        * <pre>
        * 强盗的位置
@@ -36174,40 +39043,142 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional int32 robber = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
        *
        * <pre>
        * 强盗的位置
        * </pre>
        */
-      public int getRobber() {
-        return robber_;
+      public org.shell.mmo.sample.message.proto.Global.Position getRobber() {
+        if (robberBuilder_ == null) {
+          return robber_;
+        } else {
+          return robberBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 robber = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
        *
        * <pre>
        * 强盗的位置
        * </pre>
        */
-      public Builder setRobber(int value) {
+      public Builder setRobber(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (robberBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          robber_ = value;
+          onChanged();
+        } else {
+          robberBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000002;
-        robber_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 robber = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+       *
+       * <pre>
+       * 强盗的位置
+       * </pre>
+       */
+      public Builder setRobber(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (robberBuilder_ == null) {
+          robber_ = builderForValue.build();
+          onChanged();
+        } else {
+          robberBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+       *
+       * <pre>
+       * 强盗的位置
+       * </pre>
+       */
+      public Builder mergeRobber(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (robberBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              robber_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            robber_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(robber_).mergeFrom(value).buildPartial();
+          } else {
+            robber_ = value;
+          }
+          onChanged();
+        } else {
+          robberBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
        *
        * <pre>
        * 强盗的位置
        * </pre>
        */
       public Builder clearRobber() {
+        if (robberBuilder_ == null) {
+          robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          robberBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000002);
-        robber_ = 0;
-        onChanged();
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+       *
+       * <pre>
+       * 强盗的位置
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getRobberBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getRobberFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+       *
+       * <pre>
+       * 强盗的位置
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder() {
+        if (robberBuilder_ != null) {
+          return robberBuilder_.getMessageOrBuilder();
+        } else {
+          return robber_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+       *
+       * <pre>
+       * 强盗的位置
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getRobberFieldBuilder() {
+        if (robberBuilder_ == null) {
+          robberBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getRobber(),
+                  getParentForChildren(),
+                  isClean());
+          robber_ = null;
+        }
+        return robberBuilder_;
       }
 
       private long criminal_ ;
@@ -36306,11 +39277,9 @@ public final class LogicClient {
         return this;
       }
 
-      private org.shell.mmo.sample.message.proto.Global.CatanResource resource_ = org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> resourceBuilder_;
+      private org.shell.mmo.sample.message.proto.Global.CatanResourceType resource_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
        *
        * <pre>
        * 资源
@@ -36320,142 +39289,43 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource getResource() {
-        if (resourceBuilder_ == null) {
-          return resource_;
-        } else {
-          return resourceBuilder_.getMessage();
-        }
+      public org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource() {
+        return resource_;
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
-      public Builder setResource(org.shell.mmo.sample.message.proto.Global.CatanResource value) {
-        if (resourceBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          resource_ = value;
-          onChanged();
-        } else {
-          resourceBuilder_.setMessage(value);
+      public Builder setResource(org.shell.mmo.sample.message.proto.Global.CatanResourceType value) {
+        if (value == null) {
+          throw new NullPointerException();
         }
         bitField0_ |= 0x00000010;
+        resource_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder setResource(
-          org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
-        if (resourceBuilder_ == null) {
-          resource_ = builderForValue.build();
-          onChanged();
-        } else {
-          resourceBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000010;
-        return this;
-      }
-      /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder mergeResource(org.shell.mmo.sample.message.proto.Global.CatanResource value) {
-        if (resourceBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) == 0x00000010) &&
-              resource_ != org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance()) {
-            resource_ =
-              org.shell.mmo.sample.message.proto.Global.CatanResource.newBuilder(resource_).mergeFrom(value).buildPartial();
-          } else {
-            resource_ = value;
-          }
-          onChanged();
-        } else {
-          resourceBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000010;
-        return this;
-      }
-      /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
       public Builder clearResource() {
-        if (resourceBuilder_ == null) {
-          resource_ = org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance();
-          onChanged();
-        } else {
-          resourceBuilder_.clear();
-        }
         bitField0_ = (bitField0_ & ~0x00000010);
-        return this;
-      }
-      /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder getResourceBuilder() {
-        bitField0_ |= 0x00000010;
+        resource_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
         onChanged();
-        return getResourceFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder() {
-        if (resourceBuilder_ != null) {
-          return resourceBuilder_.getMessageOrBuilder();
-        } else {
-          return resource_;
-        }
-      }
-      /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
-          getResourceFieldBuilder() {
-        if (resourceBuilder_ == null) {
-          resourceBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder>(
-                  getResource(),
-                  getParentForChildren(),
-                  isClean());
-          resource_ = null;
-        }
-        return resourceBuilder_;
+        return this;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ResCatanRob)
@@ -36474,24 +39344,15 @@ public final class LogicClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> 
-        getResourceList();
+    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResourceType> getResourceList();
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index);
-    /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
      *
      * <pre>
      * 资源
@@ -36499,23 +39360,13 @@ public final class LogicClient {
      */
     int getResourceCount();
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
-        getResourceOrBuilderList();
-    /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
-        int index);
+    org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource(int index);
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ReqCatanRichCard}
@@ -36573,12 +39424,37 @@ public final class LogicClient {
               }
               break;
             }
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResource>();
-                mutable_bitField0_ |= 0x00000001;
+            case 8: {
+              int rawValue = input.readEnum();
+              org.shell.mmo.sample.message.proto.Global.CatanResourceType value = org.shell.mmo.sample.message.proto.Global.CatanResourceType.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(1, rawValue);
+                } else {
+                if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                  resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResourceType>();
+                  mutable_bitField0_ |= 0x00000001;
+                }
+                resource_.add(value);
               }
-              resource_.add(input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanResource.PARSER, extensionRegistry));
+              break;
+            }
+            case 10: {
+              int length = input.readRawVarint32();
+              int oldLimit = input.pushLimit(length);
+              while(input.getBytesUntilLimit() > 0) {
+                int rawValue = input.readEnum();
+                org.shell.mmo.sample.message.proto.Global.CatanResourceType value = org.shell.mmo.sample.message.proto.Global.CatanResourceType.valueOf(rawValue);
+                if (value == null) {
+                  unknownFields.mergeVarintField(1, rawValue);
+                  } else {
+                  if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                    resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResourceType>();
+                    mutable_bitField0_ |= 0x00000001;
+                  }
+                  resource_.add(value);
+                }
+              }
+              input.popLimit(oldLimit);
               break;
             }
           }
@@ -36624,30 +39500,19 @@ public final class LogicClient {
     }
 
     public static final int RESOURCE_FIELD_NUMBER = 1;
-    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> resource_;
+    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResourceType> resource_;
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> getResourceList() {
+    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResourceType> getResourceList() {
       return resource_;
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
-        getResourceOrBuilderList() {
-      return resource_;
-    }
-    /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
      *
      * <pre>
      * 资源
@@ -36657,24 +39522,13 @@ public final class LogicClient {
       return resource_.size();
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    public org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index) {
-      return resource_.get(index);
-    }
-    /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
-        int index) {
+    public org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource(int index) {
       return resource_.get(index);
     }
 
@@ -36695,7 +39549,7 @@ public final class LogicClient {
                         throws java.io.IOException {
       getSerializedSize();
       for (int i = 0; i < resource_.size(); i++) {
-        output.writeMessage(1, resource_.get(i));
+        output.writeEnum(1, resource_.get(i).getNumber());
       }
       getUnknownFields().writeTo(output);
     }
@@ -36706,9 +39560,14 @@ public final class LogicClient {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < resource_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, resource_.get(i));
+      {
+        int dataSize = 0;
+        for (int i = 0; i < resource_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeEnumSizeNoTag(resource_.get(i).getNumber());
+        }
+        size += dataSize;
+        size += 1 * resource_.size();
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -36823,7 +39682,6 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getResourceFieldBuilder();
         }
       }
       private static Builder create() {
@@ -36832,12 +39690,8 @@ public final class LogicClient {
 
       public Builder clear() {
         super.clear();
-        if (resourceBuilder_ == null) {
-          resource_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          resourceBuilder_.clear();
-        }
+        resource_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -36865,15 +39719,11 @@ public final class LogicClient {
       public org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRichCard buildPartial() {
         org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRichCard result = new org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRichCard(this);
         int from_bitField0_ = bitField0_;
-        if (resourceBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) == 0x00000001)) {
-            resource_ = java.util.Collections.unmodifiableList(resource_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.resource_ = resource_;
-        } else {
-          result.resource_ = resourceBuilder_.build();
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          resource_ = java.util.Collections.unmodifiableList(resource_);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
+        result.resource_ = resource_;
         onBuilt();
         return result;
       }
@@ -36889,31 +39739,15 @@ public final class LogicClient {
 
       public Builder mergeFrom(org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRichCard other) {
         if (other == org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRichCard.getDefaultInstance()) return this;
-        if (resourceBuilder_ == null) {
-          if (!other.resource_.isEmpty()) {
-            if (resource_.isEmpty()) {
-              resource_ = other.resource_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensureResourceIsMutable();
-              resource_.addAll(other.resource_);
-            }
-            onChanged();
+        if (!other.resource_.isEmpty()) {
+          if (resource_.isEmpty()) {
+            resource_ = other.resource_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureResourceIsMutable();
+            resource_.addAll(other.resource_);
           }
-        } else {
-          if (!other.resource_.isEmpty()) {
-            if (resourceBuilder_.isEmpty()) {
-              resourceBuilder_.dispose();
-              resourceBuilder_ = null;
-              resource_ = other.resource_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              resourceBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getResourceFieldBuilder() : null;
-            } else {
-              resourceBuilder_.addAllMessages(other.resource_);
-            }
-          }
+          onChanged();
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -36942,316 +39776,104 @@ public final class LogicClient {
       }
       private int bitField0_;
 
-      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> resource_ =
+      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResourceType> resource_ =
         java.util.Collections.emptyList();
       private void ensureResourceIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResource>(resource_);
+          resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResourceType>(resource_);
           bitField0_ |= 0x00000001;
-         }
+        }
       }
-
-      private com.google.protobuf.RepeatedFieldBuilder<
-          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> resourceBuilder_;
-
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
-      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> getResourceList() {
-        if (resourceBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(resource_);
-        } else {
-          return resourceBuilder_.getMessageList();
-        }
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResourceType> getResourceList() {
+        return java.util.Collections.unmodifiableList(resource_);
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
       public int getResourceCount() {
-        if (resourceBuilder_ == null) {
-          return resource_.size();
-        } else {
-          return resourceBuilder_.getCount();
-        }
+        return resource_.size();
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index) {
-        if (resourceBuilder_ == null) {
-          return resource_.get(index);
-        } else {
-          return resourceBuilder_.getMessage(index);
-        }
+      public org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource(int index) {
+        return resource_.get(index);
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
       public Builder setResource(
-          int index, org.shell.mmo.sample.message.proto.Global.CatanResource value) {
-        if (resourceBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureResourceIsMutable();
-          resource_.set(index, value);
-          onChanged();
-        } else {
-          resourceBuilder_.setMessage(index, value);
+          int index, org.shell.mmo.sample.message.proto.Global.CatanResourceType value) {
+        if (value == null) {
+          throw new NullPointerException();
         }
+        ensureResourceIsMutable();
+        resource_.set(index, value);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
-      public Builder setResource(
-          int index, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
-        if (resourceBuilder_ == null) {
-          ensureResourceIsMutable();
-          resource_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          resourceBuilder_.setMessage(index, builderForValue.build());
+      public Builder addResource(org.shell.mmo.sample.message.proto.Global.CatanResourceType value) {
+        if (value == null) {
+          throw new NullPointerException();
         }
+        ensureResourceIsMutable();
+        resource_.add(value);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder addResource(org.shell.mmo.sample.message.proto.Global.CatanResource value) {
-        if (resourceBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureResourceIsMutable();
-          resource_.add(value);
-          onChanged();
-        } else {
-          resourceBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder addResource(
-          int index, org.shell.mmo.sample.message.proto.Global.CatanResource value) {
-        if (resourceBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureResourceIsMutable();
-          resource_.add(index, value);
-          onChanged();
-        } else {
-          resourceBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder addResource(
-          org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
-        if (resourceBuilder_ == null) {
-          ensureResourceIsMutable();
-          resource_.add(builderForValue.build());
-          onChanged();
-        } else {
-          resourceBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder addResource(
-          int index, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
-        if (resourceBuilder_ == null) {
-          ensureResourceIsMutable();
-          resource_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          resourceBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
       public Builder addAllResource(
-          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanResource> values) {
-        if (resourceBuilder_ == null) {
-          ensureResourceIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, resource_);
-          onChanged();
-        } else {
-          resourceBuilder_.addAllMessages(values);
-        }
+          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceType> values) {
+        ensureResourceIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, resource_);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 1;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
       public Builder clearResource() {
-        if (resourceBuilder_ == null) {
-          resource_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          resourceBuilder_.clear();
-        }
+        resource_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
         return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder removeResource(int index) {
-        if (resourceBuilder_ == null) {
-          ensureResourceIsMutable();
-          resource_.remove(index);
-          onChanged();
-        } else {
-          resourceBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder getResourceBuilder(
-          int index) {
-        return getResourceFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
-          int index) {
-        if (resourceBuilder_ == null) {
-          return resource_.get(index);  } else {
-          return resourceBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
-           getResourceOrBuilderList() {
-        if (resourceBuilder_ != null) {
-          return resourceBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(resource_);
-        }
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder addResourceBuilder() {
-        return getResourceFieldBuilder().addBuilder(
-            org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder addResourceBuilder(
-          int index) {
-        return getResourceFieldBuilder().addBuilder(
-            index, org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 1;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource.Builder> 
-           getResourceBuilderList() {
-        return getResourceFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
-          getResourceFieldBuilder() {
-        if (resourceBuilder_ == null) {
-          resourceBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder>(
-                  resource_,
-                  ((bitField0_ & 0x00000001) == 0x00000001),
-                  getParentForChildren(),
-                  isClean());
-          resource_ = null;
-        }
-        return resourceBuilder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ReqCatanRichCard)
@@ -37287,24 +39909,15 @@ public final class LogicClient {
     org.shell.mmo.sample.message.proto.Global.Error getError();
 
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> 
-        getResourceList();
+    java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResourceType> getResourceList();
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index);
-    /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
      *
      * <pre>
      * 资源
@@ -37312,23 +39925,13 @@ public final class LogicClient {
      */
     int getResourceCount();
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
-        getResourceOrBuilderList();
-    /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
-        int index);
+    org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource(int index);
 
     /**
      * <code>optional fixed64 id = 3;</code>
@@ -37414,12 +40017,37 @@ public final class LogicClient {
               }
               break;
             }
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResource>();
-                mutable_bitField0_ |= 0x00000002;
+            case 16: {
+              int rawValue = input.readEnum();
+              org.shell.mmo.sample.message.proto.Global.CatanResourceType value = org.shell.mmo.sample.message.proto.Global.CatanResourceType.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(2, rawValue);
+                } else {
+                if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                  resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResourceType>();
+                  mutable_bitField0_ |= 0x00000002;
+                }
+                resource_.add(value);
               }
-              resource_.add(input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanResource.PARSER, extensionRegistry));
+              break;
+            }
+            case 18: {
+              int length = input.readRawVarint32();
+              int oldLimit = input.pushLimit(length);
+              while(input.getBytesUntilLimit() > 0) {
+                int rawValue = input.readEnum();
+                org.shell.mmo.sample.message.proto.Global.CatanResourceType value = org.shell.mmo.sample.message.proto.Global.CatanResourceType.valueOf(rawValue);
+                if (value == null) {
+                  unknownFields.mergeVarintField(2, rawValue);
+                  } else {
+                  if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+                    resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResourceType>();
+                    mutable_bitField0_ |= 0x00000002;
+                  }
+                  resource_.add(value);
+                }
+              }
+              input.popLimit(oldLimit);
               break;
             }
             case 25: {
@@ -37494,30 +40122,19 @@ public final class LogicClient {
     }
 
     public static final int RESOURCE_FIELD_NUMBER = 2;
-    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> resource_;
+    private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResourceType> resource_;
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> getResourceList() {
+    public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResourceType> getResourceList() {
       return resource_;
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
-        getResourceOrBuilderList() {
-      return resource_;
-    }
-    /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
      *
      * <pre>
      * 资源
@@ -37527,24 +40144,13 @@ public final class LogicClient {
       return resource_.size();
     }
     /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    public org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index) {
-      return resource_.get(index);
-    }
-    /**
-     * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
-        int index) {
+    public org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource(int index) {
       return resource_.get(index);
     }
 
@@ -37593,7 +40199,7 @@ public final class LogicClient {
         output.writeEnum(1, error_.getNumber());
       }
       for (int i = 0; i < resource_.size(); i++) {
-        output.writeMessage(2, resource_.get(i));
+        output.writeEnum(2, resource_.get(i).getNumber());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeFixed64(3, id_);
@@ -37611,9 +40217,14 @@ public final class LogicClient {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, error_.getNumber());
       }
-      for (int i = 0; i < resource_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, resource_.get(i));
+      {
+        int dataSize = 0;
+        for (int i = 0; i < resource_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeEnumSizeNoTag(resource_.get(i).getNumber());
+        }
+        size += dataSize;
+        size += 1 * resource_.size();
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -37732,7 +40343,6 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getResourceFieldBuilder();
         }
       }
       private static Builder create() {
@@ -37743,12 +40353,8 @@ public final class LogicClient {
         super.clear();
         error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
         bitField0_ = (bitField0_ & ~0x00000001);
-        if (resourceBuilder_ == null) {
-          resource_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          resourceBuilder_.clear();
-        }
+        resource_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         id_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000004);
         return this;
@@ -37783,15 +40389,11 @@ public final class LogicClient {
           to_bitField0_ |= 0x00000001;
         }
         result.error_ = error_;
-        if (resourceBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002)) {
-            resource_ = java.util.Collections.unmodifiableList(resource_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.resource_ = resource_;
-        } else {
-          result.resource_ = resourceBuilder_.build();
+        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+          resource_ = java.util.Collections.unmodifiableList(resource_);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
+        result.resource_ = resource_;
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000002;
         }
@@ -37815,31 +40417,15 @@ public final class LogicClient {
         if (other.hasError()) {
           setError(other.getError());
         }
-        if (resourceBuilder_ == null) {
-          if (!other.resource_.isEmpty()) {
-            if (resource_.isEmpty()) {
-              resource_ = other.resource_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureResourceIsMutable();
-              resource_.addAll(other.resource_);
-            }
-            onChanged();
+        if (!other.resource_.isEmpty()) {
+          if (resource_.isEmpty()) {
+            resource_ = other.resource_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureResourceIsMutable();
+            resource_.addAll(other.resource_);
           }
-        } else {
-          if (!other.resource_.isEmpty()) {
-            if (resourceBuilder_.isEmpty()) {
-              resourceBuilder_.dispose();
-              resourceBuilder_ = null;
-              resource_ = other.resource_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              resourceBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getResourceFieldBuilder() : null;
-            } else {
-              resourceBuilder_.addAllMessages(other.resource_);
-            }
-          }
+          onChanged();
         }
         if (other.hasId()) {
           setId(other.getId());
@@ -37922,316 +40508,104 @@ public final class LogicClient {
         return this;
       }
 
-      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> resource_ =
+      private java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResourceType> resource_ =
         java.util.Collections.emptyList();
       private void ensureResourceIsMutable() {
         if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-          resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResource>(resource_);
+          resource_ = new java.util.ArrayList<org.shell.mmo.sample.message.proto.Global.CatanResourceType>(resource_);
           bitField0_ |= 0x00000002;
-         }
+        }
       }
-
-      private com.google.protobuf.RepeatedFieldBuilder<
-          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> resourceBuilder_;
-
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
-      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource> getResourceList() {
-        if (resourceBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(resource_);
-        } else {
-          return resourceBuilder_.getMessageList();
-        }
+      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResourceType> getResourceList() {
+        return java.util.Collections.unmodifiableList(resource_);
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
       public int getResourceCount() {
-        if (resourceBuilder_ == null) {
-          return resource_.size();
-        } else {
-          return resourceBuilder_.getCount();
-        }
+        return resource_.size();
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource getResource(int index) {
-        if (resourceBuilder_ == null) {
-          return resource_.get(index);
-        } else {
-          return resourceBuilder_.getMessage(index);
-        }
+      public org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource(int index) {
+        return resource_.get(index);
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
       public Builder setResource(
-          int index, org.shell.mmo.sample.message.proto.Global.CatanResource value) {
-        if (resourceBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureResourceIsMutable();
-          resource_.set(index, value);
-          onChanged();
-        } else {
-          resourceBuilder_.setMessage(index, value);
+          int index, org.shell.mmo.sample.message.proto.Global.CatanResourceType value) {
+        if (value == null) {
+          throw new NullPointerException();
         }
+        ensureResourceIsMutable();
+        resource_.set(index, value);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
-      public Builder setResource(
-          int index, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
-        if (resourceBuilder_ == null) {
-          ensureResourceIsMutable();
-          resource_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          resourceBuilder_.setMessage(index, builderForValue.build());
+      public Builder addResource(org.shell.mmo.sample.message.proto.Global.CatanResourceType value) {
+        if (value == null) {
+          throw new NullPointerException();
         }
+        ensureResourceIsMutable();
+        resource_.add(value);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder addResource(org.shell.mmo.sample.message.proto.Global.CatanResource value) {
-        if (resourceBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureResourceIsMutable();
-          resource_.add(value);
-          onChanged();
-        } else {
-          resourceBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder addResource(
-          int index, org.shell.mmo.sample.message.proto.Global.CatanResource value) {
-        if (resourceBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureResourceIsMutable();
-          resource_.add(index, value);
-          onChanged();
-        } else {
-          resourceBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder addResource(
-          org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
-        if (resourceBuilder_ == null) {
-          ensureResourceIsMutable();
-          resource_.add(builderForValue.build());
-          onChanged();
-        } else {
-          resourceBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder addResource(
-          int index, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
-        if (resourceBuilder_ == null) {
-          ensureResourceIsMutable();
-          resource_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          resourceBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
       public Builder addAllResource(
-          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanResource> values) {
-        if (resourceBuilder_ == null) {
-          ensureResourceIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, resource_);
-          onChanged();
-        } else {
-          resourceBuilder_.addAllMessages(values);
-        }
+          java.lang.Iterable<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceType> values) {
+        ensureResourceIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, resource_);
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
+       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResourceType resource = 2;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
       public Builder clearResource() {
-        if (resourceBuilder_ == null) {
-          resource_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          resourceBuilder_.clear();
-        }
+        resource_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
         return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder removeResource(int index) {
-        if (resourceBuilder_ == null) {
-          ensureResourceIsMutable();
-          resource_.remove(index);
-          onChanged();
-        } else {
-          resourceBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder getResourceBuilder(
-          int index) {
-        return getResourceFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder(
-          int index) {
-        if (resourceBuilder_ == null) {
-          return resource_.get(index);  } else {
-          return resourceBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public java.util.List<? extends org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
-           getResourceOrBuilderList() {
-        if (resourceBuilder_ != null) {
-          return resourceBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(resource_);
-        }
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder addResourceBuilder() {
-        return getResourceFieldBuilder().addBuilder(
-            org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder addResourceBuilder(
-          int index) {
-        return getResourceFieldBuilder().addBuilder(
-            index, org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .org.shell.mmo.sample.message.proto.CatanResource resource = 2;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public java.util.List<org.shell.mmo.sample.message.proto.Global.CatanResource.Builder> 
-           getResourceBuilderList() {
-        return getResourceFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
-          getResourceFieldBuilder() {
-        if (resourceBuilder_ == null) {
-          resourceBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder>(
-                  resource_,
-                  ((bitField0_ & 0x00000002) == 0x00000002),
-                  getParentForChildren(),
-                  isClean());
-          resource_ = null;
-        }
-        return resourceBuilder_;
       }
 
       private long id_ ;
@@ -38298,29 +40672,104 @@ public final class LogicClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated int32 road = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    java.util.List<java.lang.Integer> getRoadList();
+    boolean hasSrc1();
     /**
-     * <code>repeated int32 road = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    int getRoadCount();
+    org.shell.mmo.sample.message.proto.Global.Position getSrc1();
     /**
-     * <code>repeated int32 road = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    int getRoad(int index);
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc1OrBuilder();
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    boolean hasDst1();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getDst1();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst1OrBuilder();
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    boolean hasSrc2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getSrc2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc2OrBuilder();
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    boolean hasDst2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getDst2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst2OrBuilder();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ReqCatanRoadCard}
@@ -38378,25 +40827,56 @@ public final class LogicClient {
               }
               break;
             }
-            case 8: {
-              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                road_ = new java.util.ArrayList<java.lang.Integer>();
-                mutable_bitField0_ |= 0x00000001;
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = src1_.toBuilder();
               }
-              road_.add(input.readInt32());
+              src1_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(src1_);
+                src1_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
               break;
             }
-            case 10: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001) && input.getBytesUntilLimit() > 0) {
-                road_ = new java.util.ArrayList<java.lang.Integer>();
-                mutable_bitField0_ |= 0x00000001;
+            case 18: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = dst1_.toBuilder();
               }
-              while (input.getBytesUntilLimit() > 0) {
-                road_.add(input.readInt32());
+              dst1_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(dst1_);
+                dst1_ = subBuilder.buildPartial();
               }
-              input.popLimit(limit);
+              bitField0_ |= 0x00000002;
+              break;
+            }
+            case 26: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                subBuilder = src2_.toBuilder();
+              }
+              src2_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(src2_);
+                src2_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000004;
+              break;
+            }
+            case 34: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                subBuilder = dst2_.toBuilder();
+              }
+              dst2_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(dst2_);
+                dst2_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000008;
               break;
             }
           }
@@ -38407,9 +40887,6 @@ public final class LogicClient {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-          road_ = java.util.Collections.unmodifiableList(road_);
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -38441,42 +40918,144 @@ public final class LogicClient {
       return PARSER;
     }
 
-    public static final int ROAD_FIELD_NUMBER = 1;
-    private java.util.List<java.lang.Integer> road_;
+    private int bitField0_;
+    public static final int SRC1_FIELD_NUMBER = 1;
+    private org.shell.mmo.sample.message.proto.Global.Position src1_;
     /**
-     * <code>repeated int32 road = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    public java.util.List<java.lang.Integer>
-        getRoadList() {
-      return road_;
+    public boolean hasSrc1() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>repeated int32 road = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    public int getRoadCount() {
-      return road_.size();
+    public org.shell.mmo.sample.message.proto.Global.Position getSrc1() {
+      return src1_;
     }
     /**
-     * <code>repeated int32 road = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    public int getRoad(int index) {
-      return road_.get(index);
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc1OrBuilder() {
+      return src1_;
+    }
+
+    public static final int DST1_FIELD_NUMBER = 2;
+    private org.shell.mmo.sample.message.proto.Global.Position dst1_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    public boolean hasDst1() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getDst1() {
+      return dst1_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst1OrBuilder() {
+      return dst1_;
+    }
+
+    public static final int SRC2_FIELD_NUMBER = 3;
+    private org.shell.mmo.sample.message.proto.Global.Position src2_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    public boolean hasSrc2() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getSrc2() {
+      return src2_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc2OrBuilder() {
+      return src2_;
+    }
+
+    public static final int DST2_FIELD_NUMBER = 4;
+    private org.shell.mmo.sample.message.proto.Global.Position dst2_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    public boolean hasDst2() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getDst2() {
+      return dst2_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst2OrBuilder() {
+      return dst2_;
     }
 
     private void initFields() {
-      road_ = java.util.Collections.emptyList();
+      src1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      dst1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      src2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      dst2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -38491,8 +41070,17 @@ public final class LogicClient {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < road_.size(); i++) {
-        output.writeInt32(1, road_.get(i));
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, src1_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, dst1_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeMessage(3, src2_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeMessage(4, dst2_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -38503,14 +41091,21 @@ public final class LogicClient {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < road_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeInt32SizeNoTag(road_.get(i));
-        }
-        size += dataSize;
-        size += 1 * getRoadList().size();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, src1_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, dst1_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, src2_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, dst2_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -38625,6 +41220,10 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getSrc1FieldBuilder();
+          getDst1FieldBuilder();
+          getSrc2FieldBuilder();
+          getDst2FieldBuilder();
         }
       }
       private static Builder create() {
@@ -38633,8 +41232,30 @@ public final class LogicClient {
 
       public Builder clear() {
         super.clear();
-        road_ = java.util.Collections.emptyList();
+        if (src1Builder_ == null) {
+          src1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          src1Builder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
+        if (dst1Builder_ == null) {
+          dst1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          dst1Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (src2Builder_ == null) {
+          src2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          src2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        if (dst2Builder_ == null) {
+          dst2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          dst2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
 
@@ -38662,11 +41283,40 @@ public final class LogicClient {
       public org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRoadCard buildPartial() {
         org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRoadCard result = new org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRoadCard(this);
         int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          road_ = java.util.Collections.unmodifiableList(road_);
-          bitField0_ = (bitField0_ & ~0x00000001);
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
         }
-        result.road_ = road_;
+        if (src1Builder_ == null) {
+          result.src1_ = src1_;
+        } else {
+          result.src1_ = src1Builder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (dst1Builder_ == null) {
+          result.dst1_ = dst1_;
+        } else {
+          result.dst1_ = dst1Builder_.build();
+        }
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        if (src2Builder_ == null) {
+          result.src2_ = src2_;
+        } else {
+          result.src2_ = src2Builder_.build();
+        }
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        if (dst2Builder_ == null) {
+          result.dst2_ = dst2_;
+        } else {
+          result.dst2_ = dst2Builder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -38682,15 +41332,17 @@ public final class LogicClient {
 
       public Builder mergeFrom(org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRoadCard other) {
         if (other == org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRoadCard.getDefaultInstance()) return this;
-        if (!other.road_.isEmpty()) {
-          if (road_.isEmpty()) {
-            road_ = other.road_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensureRoadIsMutable();
-            road_.addAll(other.road_);
-          }
-          onChanged();
+        if (other.hasSrc1()) {
+          mergeSrc1(other.getSrc1());
+        }
+        if (other.hasDst1()) {
+          mergeDst1(other.getDst1());
+        }
+        if (other.hasSrc2()) {
+          mergeSrc2(other.getSrc2());
+        }
+        if (other.hasDst2()) {
+          mergeDst2(other.getDst2());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -38719,98 +41371,612 @@ public final class LogicClient {
       }
       private int bitField0_;
 
-      private java.util.List<java.lang.Integer> road_ = java.util.Collections.emptyList();
-      private void ensureRoadIsMutable() {
-        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          road_ = new java.util.ArrayList<java.lang.Integer>(road_);
-          bitField0_ |= 0x00000001;
-         }
-      }
+      private org.shell.mmo.sample.message.proto.Global.Position src1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> src1Builder_;
       /**
-       * <code>repeated int32 road = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public java.util.List<java.lang.Integer>
-          getRoadList() {
-        return java.util.Collections.unmodifiableList(road_);
+      public boolean hasSrc1() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>repeated int32 road = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public int getRoadCount() {
-        return road_.size();
+      public org.shell.mmo.sample.message.proto.Global.Position getSrc1() {
+        if (src1Builder_ == null) {
+          return src1_;
+        } else {
+          return src1Builder_.getMessage();
+        }
       }
       /**
-       * <code>repeated int32 road = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public int getRoad(int index) {
-        return road_.get(index);
-      }
-      /**
-       * <code>repeated int32 road = 1;</code>
-       *
-       * <pre>
-       * 道路位置
-       * </pre>
-       */
-      public Builder setRoad(
-          int index, int value) {
-        ensureRoadIsMutable();
-        road_.set(index, value);
-        onChanged();
+      public Builder setSrc1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (src1Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          src1_ = value;
+          onChanged();
+        } else {
+          src1Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>repeated int32 road = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public Builder addRoad(int value) {
-        ensureRoadIsMutable();
-        road_.add(value);
-        onChanged();
+      public Builder setSrc1(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (src1Builder_ == null) {
+          src1_ = builderForValue.build();
+          onChanged();
+        } else {
+          src1Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>repeated int32 road = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public Builder addAllRoad(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureRoadIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, road_);
-        onChanged();
+      public Builder mergeSrc1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (src1Builder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              src1_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            src1_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(src1_).mergeFrom(value).buildPartial();
+          } else {
+            src1_ = value;
+          }
+          onChanged();
+        } else {
+          src1Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>repeated int32 road = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public Builder clearRoad() {
-        road_ = java.util.Collections.emptyList();
+      public Builder clearSrc1() {
+        if (src1Builder_ == null) {
+          src1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          src1Builder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
+       *
+       * <pre>
+       * 起点1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getSrc1Builder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getSrc1FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
+       *
+       * <pre>
+       * 起点1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc1OrBuilder() {
+        if (src1Builder_ != null) {
+          return src1Builder_.getMessageOrBuilder();
+        } else {
+          return src1_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 1;</code>
+       *
+       * <pre>
+       * 起点1
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getSrc1FieldBuilder() {
+        if (src1Builder_ == null) {
+          src1Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getSrc1(),
+                  getParentForChildren(),
+                  isClean());
+          src1_ = null;
+        }
+        return src1Builder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position dst1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> dst1Builder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public boolean hasDst1() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getDst1() {
+        if (dst1Builder_ == null) {
+          return dst1_;
+        } else {
+          return dst1Builder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public Builder setDst1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dst1Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dst1_ = value;
+          onChanged();
+        } else {
+          dst1Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public Builder setDst1(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (dst1Builder_ == null) {
+          dst1_ = builderForValue.build();
+          onChanged();
+        } else {
+          dst1Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public Builder mergeDst1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dst1Builder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              dst1_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            dst1_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(dst1_).mergeFrom(value).buildPartial();
+          } else {
+            dst1_ = value;
+          }
+          onChanged();
+        } else {
+          dst1Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public Builder clearDst1() {
+        if (dst1Builder_ == null) {
+          dst1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          dst1Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getDst1Builder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getDst1FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst1OrBuilder() {
+        if (dst1Builder_ != null) {
+          return dst1Builder_.getMessageOrBuilder();
+        } else {
+          return dst1_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 2;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getDst1FieldBuilder() {
+        if (dst1Builder_ == null) {
+          dst1Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getDst1(),
+                  getParentForChildren(),
+                  isClean());
+          dst1_ = null;
+        }
+        return dst1Builder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position src2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> src2Builder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public boolean hasSrc2() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getSrc2() {
+        if (src2Builder_ == null) {
+          return src2_;
+        } else {
+          return src2Builder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public Builder setSrc2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (src2Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          src2_ = value;
+          onChanged();
+        } else {
+          src2Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public Builder setSrc2(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (src2Builder_ == null) {
+          src2_ = builderForValue.build();
+          onChanged();
+        } else {
+          src2Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public Builder mergeSrc2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (src2Builder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              src2_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            src2_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(src2_).mergeFrom(value).buildPartial();
+          } else {
+            src2_ = value;
+          }
+          onChanged();
+        } else {
+          src2Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public Builder clearSrc2() {
+        if (src2Builder_ == null) {
+          src2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          src2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getSrc2Builder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getSrc2FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc2OrBuilder() {
+        if (src2Builder_ != null) {
+          return src2Builder_.getMessageOrBuilder();
+        } else {
+          return src2_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 3;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getSrc2FieldBuilder() {
+        if (src2Builder_ == null) {
+          src2Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getSrc2(),
+                  getParentForChildren(),
+                  isClean());
+          src2_ = null;
+        }
+        return src2Builder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position dst2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> dst2Builder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public boolean hasDst2() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getDst2() {
+        if (dst2Builder_ == null) {
+          return dst2_;
+        } else {
+          return dst2Builder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public Builder setDst2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dst2Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dst2_ = value;
+          onChanged();
+        } else {
+          dst2Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public Builder setDst2(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (dst2Builder_ == null) {
+          dst2_ = builderForValue.build();
+          onChanged();
+        } else {
+          dst2Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public Builder mergeDst2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dst2Builder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008) &&
+              dst2_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            dst2_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(dst2_).mergeFrom(value).buildPartial();
+          } else {
+            dst2_ = value;
+          }
+          onChanged();
+        } else {
+          dst2Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public Builder clearDst2() {
+        if (dst2Builder_ == null) {
+          dst2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          dst2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getDst2Builder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getDst2FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst2OrBuilder() {
+        if (dst2Builder_ != null) {
+          return dst2Builder_.getMessageOrBuilder();
+        } else {
+          return dst2_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 4;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getDst2FieldBuilder() {
+        if (dst2Builder_ == null) {
+          dst2Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getDst2(),
+                  getParentForChildren(),
+                  isClean());
+          dst2_ = null;
+        }
+        return dst2Builder_;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ReqCatanRoadCard)
@@ -38846,32 +42012,107 @@ public final class LogicClient {
     org.shell.mmo.sample.message.proto.Global.Error getError();
 
     /**
-     * <code>repeated int32 road = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    java.util.List<java.lang.Integer> getRoadList();
+    boolean hasSrc1();
     /**
-     * <code>repeated int32 road = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    int getRoadCount();
+    org.shell.mmo.sample.message.proto.Global.Position getSrc1();
     /**
-     * <code>repeated int32 road = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    int getRoad(int index);
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc1OrBuilder();
 
     /**
-     * <code>optional fixed64 id = 3;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    boolean hasDst1();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getDst1();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst1OrBuilder();
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    boolean hasSrc2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getSrc2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc2OrBuilder();
+
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    boolean hasDst2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.Position getDst2();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst2OrBuilder();
+
+    /**
+     * <code>optional fixed64 id = 6;</code>
      *
      * <pre>
      * 账号id
@@ -38879,7 +42120,7 @@ public final class LogicClient {
      */
     boolean hasId();
     /**
-     * <code>optional fixed64 id = 3;</code>
+     * <code>optional fixed64 id = 6;</code>
      *
      * <pre>
      * 账号id
@@ -38954,29 +42195,60 @@ public final class LogicClient {
               }
               break;
             }
-            case 16: {
-              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-                road_ = new java.util.ArrayList<java.lang.Integer>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              road_.add(input.readInt32());
-              break;
-            }
             case 18: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) == 0x00000002) && input.getBytesUntilLimit() > 0) {
-                road_ = new java.util.ArrayList<java.lang.Integer>();
-                mutable_bitField0_ |= 0x00000002;
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = src1_.toBuilder();
               }
-              while (input.getBytesUntilLimit() > 0) {
-                road_.add(input.readInt32());
+              src1_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(src1_);
+                src1_ = subBuilder.buildPartial();
               }
-              input.popLimit(limit);
+              bitField0_ |= 0x00000002;
               break;
             }
-            case 25: {
-              bitField0_ |= 0x00000002;
+            case 26: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000004) == 0x00000004)) {
+                subBuilder = dst1_.toBuilder();
+              }
+              dst1_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(dst1_);
+                dst1_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000004;
+              break;
+            }
+            case 34: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000008) == 0x00000008)) {
+                subBuilder = src2_.toBuilder();
+              }
+              src2_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(src2_);
+                src2_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000008;
+              break;
+            }
+            case 42: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000010) == 0x00000010)) {
+                subBuilder = dst2_.toBuilder();
+              }
+              dst2_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(dst2_);
+                dst2_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000010;
+              break;
+            }
+            case 49: {
+              bitField0_ |= 0x00000020;
               id_ = input.readFixed64();
               break;
             }
@@ -38988,9 +42260,6 @@ public final class LogicClient {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e.getMessage()).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-          road_ = java.util.Collections.unmodifiableList(road_);
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -39046,54 +42315,152 @@ public final class LogicClient {
       return error_;
     }
 
-    public static final int ROAD_FIELD_NUMBER = 2;
-    private java.util.List<java.lang.Integer> road_;
+    public static final int SRC1_FIELD_NUMBER = 2;
+    private org.shell.mmo.sample.message.proto.Global.Position src1_;
     /**
-     * <code>repeated int32 road = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    public java.util.List<java.lang.Integer>
-        getRoadList() {
-      return road_;
+    public boolean hasSrc1() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>repeated int32 road = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    public int getRoadCount() {
-      return road_.size();
+    public org.shell.mmo.sample.message.proto.Global.Position getSrc1() {
+      return src1_;
     }
     /**
-     * <code>repeated int32 road = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
      *
      * <pre>
-     * 道路位置
+     * 起点1
      * </pre>
      */
-    public int getRoad(int index) {
-      return road_.get(index);
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc1OrBuilder() {
+      return src1_;
     }
 
-    public static final int ID_FIELD_NUMBER = 3;
+    public static final int DST1_FIELD_NUMBER = 3;
+    private org.shell.mmo.sample.message.proto.Global.Position dst1_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    public boolean hasDst1() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getDst1() {
+      return dst1_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+     *
+     * <pre>
+     * 终点1
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst1OrBuilder() {
+      return dst1_;
+    }
+
+    public static final int SRC2_FIELD_NUMBER = 4;
+    private org.shell.mmo.sample.message.proto.Global.Position src2_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    public boolean hasSrc2() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getSrc2() {
+      return src2_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+     *
+     * <pre>
+     * 起点2
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc2OrBuilder() {
+      return src2_;
+    }
+
+    public static final int DST2_FIELD_NUMBER = 5;
+    private org.shell.mmo.sample.message.proto.Global.Position dst2_;
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    public boolean hasDst2() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.Position getDst2() {
+      return dst2_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+     *
+     * <pre>
+     * 终点2
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst2OrBuilder() {
+      return dst2_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 6;
     private long id_;
     /**
-     * <code>optional fixed64 id = 3;</code>
+     * <code>optional fixed64 id = 6;</code>
      *
      * <pre>
      * 账号id
      * </pre>
      */
     public boolean hasId() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+      return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     /**
-     * <code>optional fixed64 id = 3;</code>
+     * <code>optional fixed64 id = 6;</code>
      *
      * <pre>
      * 账号id
@@ -39105,7 +42472,10 @@ public final class LogicClient {
 
     private void initFields() {
       error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
-      road_ = java.util.Collections.emptyList();
+      src1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      dst1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      src2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      dst2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
       id_ = 0L;
     }
     private byte memoizedIsInitialized = -1;
@@ -39124,11 +42494,20 @@ public final class LogicClient {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         output.writeEnum(1, error_.getNumber());
       }
-      for (int i = 0; i < road_.size(); i++) {
-        output.writeInt32(2, road_.get(i));
-      }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeFixed64(3, id_);
+        output.writeMessage(2, src1_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeMessage(3, dst1_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeMessage(4, src2_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeMessage(5, dst2_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeFixed64(6, id_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -39143,18 +42522,25 @@ public final class LogicClient {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, error_.getNumber());
       }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < road_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeInt32SizeNoTag(road_.get(i));
-        }
-        size += dataSize;
-        size += 1 * getRoadList().size();
-      }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed64Size(3, id_);
+          .computeMessageSize(2, src1_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, dst1_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, src2_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, dst2_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed64Size(6, id_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -39269,6 +42655,10 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getSrc1FieldBuilder();
+          getDst1FieldBuilder();
+          getSrc2FieldBuilder();
+          getDst2FieldBuilder();
         }
       }
       private static Builder create() {
@@ -39279,10 +42669,32 @@ public final class LogicClient {
         super.clear();
         error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
         bitField0_ = (bitField0_ & ~0x00000001);
-        road_ = java.util.Collections.emptyList();
+        if (src1Builder_ == null) {
+          src1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          src1Builder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000002);
-        id_ = 0L;
+        if (dst1Builder_ == null) {
+          dst1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          dst1Builder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000004);
+        if (src2Builder_ == null) {
+          src2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          src2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        if (dst2Builder_ == null) {
+          dst2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          dst2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000010);
+        id_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
 
@@ -39315,13 +42727,40 @@ public final class LogicClient {
           to_bitField0_ |= 0x00000001;
         }
         result.error_ = error_;
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          road_ = java.util.Collections.unmodifiableList(road_);
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.road_ = road_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
+        }
+        if (src1Builder_ == null) {
+          result.src1_ = src1_;
+        } else {
+          result.src1_ = src1Builder_.build();
+        }
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        if (dst1Builder_ == null) {
+          result.dst1_ = dst1_;
+        } else {
+          result.dst1_ = dst1Builder_.build();
+        }
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        if (src2Builder_ == null) {
+          result.src2_ = src2_;
+        } else {
+          result.src2_ = src2Builder_.build();
+        }
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        if (dst2Builder_ == null) {
+          result.dst2_ = dst2_;
+        } else {
+          result.dst2_ = dst2Builder_.build();
+        }
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
         }
         result.id_ = id_;
         result.bitField0_ = to_bitField0_;
@@ -39343,15 +42782,17 @@ public final class LogicClient {
         if (other.hasError()) {
           setError(other.getError());
         }
-        if (!other.road_.isEmpty()) {
-          if (road_.isEmpty()) {
-            road_ = other.road_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureRoadIsMutable();
-            road_.addAll(other.road_);
-          }
-          onChanged();
+        if (other.hasSrc1()) {
+          mergeSrc1(other.getSrc1());
+        }
+        if (other.hasDst1()) {
+          mergeDst1(other.getDst1());
+        }
+        if (other.hasSrc2()) {
+          mergeSrc2(other.getSrc2());
+        }
+        if (other.hasDst2()) {
+          mergeDst2(other.getDst2());
         }
         if (other.hasId()) {
           setId(other.getId());
@@ -39434,113 +42875,627 @@ public final class LogicClient {
         return this;
       }
 
-      private java.util.List<java.lang.Integer> road_ = java.util.Collections.emptyList();
-      private void ensureRoadIsMutable() {
-        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-          road_ = new java.util.ArrayList<java.lang.Integer>(road_);
-          bitField0_ |= 0x00000002;
-         }
-      }
+      private org.shell.mmo.sample.message.proto.Global.Position src1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> src1Builder_;
       /**
-       * <code>repeated int32 road = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public java.util.List<java.lang.Integer>
-          getRoadList() {
-        return java.util.Collections.unmodifiableList(road_);
+      public boolean hasSrc1() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>repeated int32 road = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public int getRoadCount() {
-        return road_.size();
+      public org.shell.mmo.sample.message.proto.Global.Position getSrc1() {
+        if (src1Builder_ == null) {
+          return src1_;
+        } else {
+          return src1Builder_.getMessage();
+        }
       }
       /**
-       * <code>repeated int32 road = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public int getRoad(int index) {
-        return road_.get(index);
-      }
-      /**
-       * <code>repeated int32 road = 2;</code>
-       *
-       * <pre>
-       * 道路位置
-       * </pre>
-       */
-      public Builder setRoad(
-          int index, int value) {
-        ensureRoadIsMutable();
-        road_.set(index, value);
-        onChanged();
+      public Builder setSrc1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (src1Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          src1_ = value;
+          onChanged();
+        } else {
+          src1Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
         return this;
       }
       /**
-       * <code>repeated int32 road = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public Builder addRoad(int value) {
-        ensureRoadIsMutable();
-        road_.add(value);
-        onChanged();
+      public Builder setSrc1(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (src1Builder_ == null) {
+          src1_ = builderForValue.build();
+          onChanged();
+        } else {
+          src1Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
         return this;
       }
       /**
-       * <code>repeated int32 road = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public Builder addAllRoad(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureRoadIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, road_);
-        onChanged();
+      public Builder mergeSrc1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (src1Builder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              src1_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            src1_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(src1_).mergeFrom(value).buildPartial();
+          } else {
+            src1_ = value;
+          }
+          onChanged();
+        } else {
+          src1Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
         return this;
       }
       /**
-       * <code>repeated int32 road = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
        *
        * <pre>
-       * 道路位置
+       * 起点1
        * </pre>
        */
-      public Builder clearRoad() {
-        road_ = java.util.Collections.emptyList();
+      public Builder clearSrc1() {
+        if (src1Builder_ == null) {
+          src1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          src1Builder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
+       *
+       * <pre>
+       * 起点1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getSrc1Builder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getSrc1FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
+       *
+       * <pre>
+       * 起点1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc1OrBuilder() {
+        if (src1Builder_ != null) {
+          return src1Builder_.getMessageOrBuilder();
+        } else {
+          return src1_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src1 = 2;</code>
+       *
+       * <pre>
+       * 起点1
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getSrc1FieldBuilder() {
+        if (src1Builder_ == null) {
+          src1Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getSrc1(),
+                  getParentForChildren(),
+                  isClean());
+          src1_ = null;
+        }
+        return src1Builder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position dst1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> dst1Builder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public boolean hasDst1() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getDst1() {
+        if (dst1Builder_ == null) {
+          return dst1_;
+        } else {
+          return dst1Builder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public Builder setDst1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dst1Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dst1_ = value;
+          onChanged();
+        } else {
+          dst1Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public Builder setDst1(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (dst1Builder_ == null) {
+          dst1_ = builderForValue.build();
+          onChanged();
+        } else {
+          dst1Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public Builder mergeDst1(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dst1Builder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              dst1_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            dst1_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(dst1_).mergeFrom(value).buildPartial();
+          } else {
+            dst1_ = value;
+          }
+          onChanged();
+        } else {
+          dst1Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public Builder clearDst1() {
+        if (dst1Builder_ == null) {
+          dst1_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          dst1Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getDst1Builder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getDst1FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst1OrBuilder() {
+        if (dst1Builder_ != null) {
+          return dst1Builder_.getMessageOrBuilder();
+        } else {
+          return dst1_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst1 = 3;</code>
+       *
+       * <pre>
+       * 终点1
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getDst1FieldBuilder() {
+        if (dst1Builder_ == null) {
+          dst1Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getDst1(),
+                  getParentForChildren(),
+                  isClean());
+          dst1_ = null;
+        }
+        return dst1Builder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position src2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> src2Builder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public boolean hasSrc2() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getSrc2() {
+        if (src2Builder_ == null) {
+          return src2_;
+        } else {
+          return src2Builder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public Builder setSrc2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (src2Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          src2_ = value;
+          onChanged();
+        } else {
+          src2Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public Builder setSrc2(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (src2Builder_ == null) {
+          src2_ = builderForValue.build();
+          onChanged();
+        } else {
+          src2Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public Builder mergeSrc2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (src2Builder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008) &&
+              src2_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            src2_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(src2_).mergeFrom(value).buildPartial();
+          } else {
+            src2_ = value;
+          }
+          onChanged();
+        } else {
+          src2Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public Builder clearSrc2() {
+        if (src2Builder_ == null) {
+          src2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          src2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getSrc2Builder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getSrc2FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getSrc2OrBuilder() {
+        if (src2Builder_ != null) {
+          return src2Builder_.getMessageOrBuilder();
+        } else {
+          return src2_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position src2 = 4;</code>
+       *
+       * <pre>
+       * 起点2
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getSrc2FieldBuilder() {
+        if (src2Builder_ == null) {
+          src2Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getSrc2(),
+                  getParentForChildren(),
+                  isClean());
+          src2_ = null;
+        }
+        return src2Builder_;
+      }
+
+      private org.shell.mmo.sample.message.proto.Global.Position dst2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> dst2Builder_;
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public boolean hasDst2() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position getDst2() {
+        if (dst2Builder_ == null) {
+          return dst2_;
+        } else {
+          return dst2Builder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public Builder setDst2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dst2Builder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          dst2_ = value;
+          onChanged();
+        } else {
+          dst2Builder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public Builder setDst2(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (dst2Builder_ == null) {
+          dst2_ = builderForValue.build();
+          onChanged();
+        } else {
+          dst2Builder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public Builder mergeDst2(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (dst2Builder_ == null) {
+          if (((bitField0_ & 0x00000010) == 0x00000010) &&
+              dst2_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            dst2_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(dst2_).mergeFrom(value).buildPartial();
+          } else {
+            dst2_ = value;
+          }
+          onChanged();
+        } else {
+          dst2Builder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000010;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public Builder clearDst2() {
+        if (dst2Builder_ == null) {
+          dst2_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          dst2Builder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000010);
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getDst2Builder() {
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return getDst2FieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getDst2OrBuilder() {
+        if (dst2Builder_ != null) {
+          return dst2Builder_.getMessageOrBuilder();
+        } else {
+          return dst2_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position dst2 = 5;</code>
+       *
+       * <pre>
+       * 终点2
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getDst2FieldBuilder() {
+        if (dst2Builder_ == null) {
+          dst2Builder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getDst2(),
+                  getParentForChildren(),
+                  isClean());
+          dst2_ = null;
+        }
+        return dst2Builder_;
       }
 
       private long id_ ;
       /**
-       * <code>optional fixed64 id = 3;</code>
+       * <code>optional fixed64 id = 6;</code>
        *
        * <pre>
        * 账号id
        * </pre>
        */
       public boolean hasId() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
+        return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       /**
-       * <code>optional fixed64 id = 3;</code>
+       * <code>optional fixed64 id = 6;</code>
        *
        * <pre>
        * 账号id
@@ -39550,27 +43505,27 @@ public final class LogicClient {
         return id_;
       }
       /**
-       * <code>optional fixed64 id = 3;</code>
+       * <code>optional fixed64 id = 6;</code>
        *
        * <pre>
        * 账号id
        * </pre>
        */
       public Builder setId(long value) {
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000020;
         id_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional fixed64 id = 3;</code>
+       * <code>optional fixed64 id = 6;</code>
        *
        * <pre>
        * 账号id
        * </pre>
        */
       public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000020);
         id_ = 0L;
         onChanged();
         return this;
@@ -39592,21 +43547,29 @@ public final class LogicClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 robber = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
      *
      * <pre>
-     * 强盗的位置
+     * 强盗的位置(格子坐标)
      * </pre>
      */
     boolean hasRobber();
     /**
-     * <code>optional int32 robber = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
      *
      * <pre>
-     * 强盗的位置
+     * 强盗的位置(格子坐标)
      * </pre>
      */
-    int getRobber();
+    org.shell.mmo.sample.message.proto.Global.Position getRobber();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+     *
+     * <pre>
+     * 强盗的位置(格子坐标)
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder();
 
     /**
      * <code>optional fixed64 id = 2;</code>
@@ -39681,9 +43644,17 @@ public final class LogicClient {
               }
               break;
             }
-            case 8: {
+            case 10: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = robber_.toBuilder();
+              }
+              robber_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(robber_);
+                robber_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000001;
-              robber_ = input.readInt32();
               break;
             }
             case 17: {
@@ -39732,25 +43703,35 @@ public final class LogicClient {
 
     private int bitField0_;
     public static final int ROBBER_FIELD_NUMBER = 1;
-    private int robber_;
+    private org.shell.mmo.sample.message.proto.Global.Position robber_;
     /**
-     * <code>optional int32 robber = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
      *
      * <pre>
-     * 强盗的位置
+     * 强盗的位置(格子坐标)
      * </pre>
      */
     public boolean hasRobber() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional int32 robber = 1;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
      *
      * <pre>
-     * 强盗的位置
+     * 强盗的位置(格子坐标)
      * </pre>
      */
-    public int getRobber() {
+    public org.shell.mmo.sample.message.proto.Global.Position getRobber() {
+      return robber_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+     *
+     * <pre>
+     * 强盗的位置(格子坐标)
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder() {
       return robber_;
     }
 
@@ -39778,7 +43759,7 @@ public final class LogicClient {
     }
 
     private void initFields() {
-      robber_ = 0;
+      robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
       id_ = 0L;
     }
     private byte memoizedIsInitialized = -1;
@@ -39795,7 +43776,7 @@ public final class LogicClient {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, robber_);
+        output.writeMessage(1, robber_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeFixed64(2, id_);
@@ -39811,7 +43792,7 @@ public final class LogicClient {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, robber_);
+          .computeMessageSize(1, robber_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -39930,6 +43911,7 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getRobberFieldBuilder();
         }
       }
       private static Builder create() {
@@ -39938,7 +43920,11 @@ public final class LogicClient {
 
       public Builder clear() {
         super.clear();
-        robber_ = 0;
+        if (robberBuilder_ == null) {
+          robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          robberBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
         id_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -39973,7 +43959,11 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.robber_ = robber_;
+        if (robberBuilder_ == null) {
+          result.robber_ = robber_;
+        } else {
+          result.robber_ = robberBuilder_.build();
+        }
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
@@ -39995,7 +43985,7 @@ public final class LogicClient {
       public Builder mergeFrom(org.shell.mmo.sample.message.proto.LogicClient.ReqCatanKnightCard other) {
         if (other == org.shell.mmo.sample.message.proto.LogicClient.ReqCatanKnightCard.getDefaultInstance()) return this;
         if (other.hasRobber()) {
-          setRobber(other.getRobber());
+          mergeRobber(other.getRobber());
         }
         if (other.hasId()) {
           setId(other.getId());
@@ -40027,52 +44017,156 @@ public final class LogicClient {
       }
       private int bitField0_;
 
-      private int robber_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> robberBuilder_;
       /**
-       * <code>optional int32 robber = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
        *
        * <pre>
-       * 强盗的位置
+       * 强盗的位置(格子坐标)
        * </pre>
        */
       public boolean hasRobber() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional int32 robber = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
        *
        * <pre>
-       * 强盗的位置
+       * 强盗的位置(格子坐标)
        * </pre>
        */
-      public int getRobber() {
-        return robber_;
+      public org.shell.mmo.sample.message.proto.Global.Position getRobber() {
+        if (robberBuilder_ == null) {
+          return robber_;
+        } else {
+          return robberBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 robber = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
        *
        * <pre>
-       * 强盗的位置
+       * 强盗的位置(格子坐标)
        * </pre>
        */
-      public Builder setRobber(int value) {
+      public Builder setRobber(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (robberBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          robber_ = value;
+          onChanged();
+        } else {
+          robberBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000001;
-        robber_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 robber = 1;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
        *
        * <pre>
-       * 强盗的位置
+       * 强盗的位置(格子坐标)
+       * </pre>
+       */
+      public Builder setRobber(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (robberBuilder_ == null) {
+          robber_ = builderForValue.build();
+          onChanged();
+        } else {
+          robberBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+       *
+       * <pre>
+       * 强盗的位置(格子坐标)
+       * </pre>
+       */
+      public Builder mergeRobber(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (robberBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              robber_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            robber_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(robber_).mergeFrom(value).buildPartial();
+          } else {
+            robber_ = value;
+          }
+          onChanged();
+        } else {
+          robberBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+       *
+       * <pre>
+       * 强盗的位置(格子坐标)
        * </pre>
        */
       public Builder clearRobber() {
+        if (robberBuilder_ == null) {
+          robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          robberBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000001);
-        robber_ = 0;
-        onChanged();
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+       *
+       * <pre>
+       * 强盗的位置(格子坐标)
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getRobberBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getRobberFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+       *
+       * <pre>
+       * 强盗的位置(格子坐标)
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder() {
+        if (robberBuilder_ != null) {
+          return robberBuilder_.getMessageOrBuilder();
+        } else {
+          return robber_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 1;</code>
+       *
+       * <pre>
+       * 强盗的位置(格子坐标)
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getRobberFieldBuilder() {
+        if (robberBuilder_ == null) {
+          robberBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getRobber(),
+                  getParentForChildren(),
+                  isClean());
+          robber_ = null;
+        }
+        return robberBuilder_;
       }
 
       private long id_ ;
@@ -40156,21 +44250,29 @@ public final class LogicClient {
     org.shell.mmo.sample.message.proto.Global.Error getError();
 
     /**
-     * <code>optional int32 robber = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
      *
      * <pre>
-     * 强盗的位置
+     * 强盗的位置(格子坐标)
      * </pre>
      */
     boolean hasRobber();
     /**
-     * <code>optional int32 robber = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
      *
      * <pre>
-     * 强盗的位置
+     * 强盗的位置(格子坐标)
      * </pre>
      */
-    int getRobber();
+    org.shell.mmo.sample.message.proto.Global.Position getRobber();
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+     *
+     * <pre>
+     * 强盗的位置(格子坐标)
+     * </pre>
+     */
+    org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder();
 
     /**
      * <code>optional fixed64 criminal = 3;</code>
@@ -40207,7 +44309,7 @@ public final class LogicClient {
     long getVictim();
 
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
      *
      * <pre>
      * 资源
@@ -40215,21 +44317,13 @@ public final class LogicClient {
      */
     boolean hasResource();
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    org.shell.mmo.sample.message.proto.Global.CatanResource getResource();
-    /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder();
+    org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource();
   }
   /**
    * Protobuf type {@code org.shell.mmo.sample.message.proto.ResCatanKnightCard}
@@ -40298,9 +44392,17 @@ public final class LogicClient {
               }
               break;
             }
-            case 16: {
+            case 18: {
+              org.shell.mmo.sample.message.proto.Global.Position.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000002) == 0x00000002)) {
+                subBuilder = robber_.toBuilder();
+              }
+              robber_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.Position.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(robber_);
+                robber_ = subBuilder.buildPartial();
+              }
               bitField0_ |= 0x00000002;
-              robber_ = input.readInt32();
               break;
             }
             case 25: {
@@ -40313,17 +44415,15 @@ public final class LogicClient {
               victim_ = input.readFixed64();
               break;
             }
-            case 42: {
-              org.shell.mmo.sample.message.proto.Global.CatanResource.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000010) == 0x00000010)) {
-                subBuilder = resource_.toBuilder();
+            case 40: {
+              int rawValue = input.readEnum();
+              org.shell.mmo.sample.message.proto.Global.CatanResourceType value = org.shell.mmo.sample.message.proto.Global.CatanResourceType.valueOf(rawValue);
+              if (value == null) {
+                unknownFields.mergeVarintField(5, rawValue);
+              } else {
+                bitField0_ |= 0x00000010;
+                resource_ = value;
               }
-              resource_ = input.readMessage(org.shell.mmo.sample.message.proto.Global.CatanResource.PARSER, extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(resource_);
-                resource_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000010;
               break;
             }
           }
@@ -40390,25 +44490,35 @@ public final class LogicClient {
     }
 
     public static final int ROBBER_FIELD_NUMBER = 2;
-    private int robber_;
+    private org.shell.mmo.sample.message.proto.Global.Position robber_;
     /**
-     * <code>optional int32 robber = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
      *
      * <pre>
-     * 强盗的位置
+     * 强盗的位置(格子坐标)
      * </pre>
      */
     public boolean hasRobber() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>optional int32 robber = 2;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
      *
      * <pre>
-     * 强盗的位置
+     * 强盗的位置(格子坐标)
      * </pre>
      */
-    public int getRobber() {
+    public org.shell.mmo.sample.message.proto.Global.Position getRobber() {
+      return robber_;
+    }
+    /**
+     * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+     *
+     * <pre>
+     * 强盗的位置(格子坐标)
+     * </pre>
+     */
+    public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder() {
       return robber_;
     }
 
@@ -40459,9 +44569,9 @@ public final class LogicClient {
     }
 
     public static final int RESOURCE_FIELD_NUMBER = 5;
-    private org.shell.mmo.sample.message.proto.Global.CatanResource resource_;
+    private org.shell.mmo.sample.message.proto.Global.CatanResourceType resource_;
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
      *
      * <pre>
      * 资源
@@ -40471,32 +44581,22 @@ public final class LogicClient {
       return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+     * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
      *
      * <pre>
      * 资源
      * </pre>
      */
-    public org.shell.mmo.sample.message.proto.Global.CatanResource getResource() {
-      return resource_;
-    }
-    /**
-     * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-     *
-     * <pre>
-     * 资源
-     * </pre>
-     */
-    public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder() {
+    public org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource() {
       return resource_;
     }
 
     private void initFields() {
       error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
-      robber_ = 0;
+      robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
       criminal_ = 0L;
       victim_ = 0L;
-      resource_ = org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance();
+      resource_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -40515,7 +44615,7 @@ public final class LogicClient {
         output.writeEnum(1, error_.getNumber());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, robber_);
+        output.writeMessage(2, robber_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         output.writeFixed64(3, criminal_);
@@ -40524,7 +44624,7 @@ public final class LogicClient {
         output.writeFixed64(4, victim_);
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeMessage(5, resource_);
+        output.writeEnum(5, resource_.getNumber());
       }
       getUnknownFields().writeTo(output);
     }
@@ -40541,7 +44641,7 @@ public final class LogicClient {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, robber_);
+          .computeMessageSize(2, robber_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
@@ -40553,7 +44653,7 @@ public final class LogicClient {
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, resource_);
+          .computeEnumSize(5, resource_.getNumber());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -40668,7 +44768,7 @@ public final class LogicClient {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getResourceFieldBuilder();
+          getRobberFieldBuilder();
         }
       }
       private static Builder create() {
@@ -40679,17 +44779,17 @@ public final class LogicClient {
         super.clear();
         error_ = org.shell.mmo.sample.message.proto.Global.Error.SYS_ERR;
         bitField0_ = (bitField0_ & ~0x00000001);
-        robber_ = 0;
+        if (robberBuilder_ == null) {
+          robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+        } else {
+          robberBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000002);
         criminal_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000004);
         victim_ = 0L;
         bitField0_ = (bitField0_ & ~0x00000008);
-        if (resourceBuilder_ == null) {
-          resource_ = org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance();
-        } else {
-          resourceBuilder_.clear();
-        }
+        resource_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
         bitField0_ = (bitField0_ & ~0x00000010);
         return this;
       }
@@ -40726,7 +44826,11 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.robber_ = robber_;
+        if (robberBuilder_ == null) {
+          result.robber_ = robber_;
+        } else {
+          result.robber_ = robberBuilder_.build();
+        }
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
@@ -40738,11 +44842,7 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
           to_bitField0_ |= 0x00000010;
         }
-        if (resourceBuilder_ == null) {
-          result.resource_ = resource_;
-        } else {
-          result.resource_ = resourceBuilder_.build();
-        }
+        result.resource_ = resource_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -40763,7 +44863,7 @@ public final class LogicClient {
           setError(other.getError());
         }
         if (other.hasRobber()) {
-          setRobber(other.getRobber());
+          mergeRobber(other.getRobber());
         }
         if (other.hasCriminal()) {
           setCriminal(other.getCriminal());
@@ -40772,7 +44872,7 @@ public final class LogicClient {
           setVictim(other.getVictim());
         }
         if (other.hasResource()) {
-          mergeResource(other.getResource());
+          setResource(other.getResource());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -40852,52 +44952,156 @@ public final class LogicClient {
         return this;
       }
 
-      private int robber_ ;
+      private org.shell.mmo.sample.message.proto.Global.Position robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> robberBuilder_;
       /**
-       * <code>optional int32 robber = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
        *
        * <pre>
-       * 强盗的位置
+       * 强盗的位置(格子坐标)
        * </pre>
        */
       public boolean hasRobber() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>optional int32 robber = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
        *
        * <pre>
-       * 强盗的位置
+       * 强盗的位置(格子坐标)
        * </pre>
        */
-      public int getRobber() {
-        return robber_;
+      public org.shell.mmo.sample.message.proto.Global.Position getRobber() {
+        if (robberBuilder_ == null) {
+          return robber_;
+        } else {
+          return robberBuilder_.getMessage();
+        }
       }
       /**
-       * <code>optional int32 robber = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
        *
        * <pre>
-       * 强盗的位置
+       * 强盗的位置(格子坐标)
        * </pre>
        */
-      public Builder setRobber(int value) {
+      public Builder setRobber(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (robberBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          robber_ = value;
+          onChanged();
+        } else {
+          robberBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000002;
-        robber_ = value;
-        onChanged();
         return this;
       }
       /**
-       * <code>optional int32 robber = 2;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
        *
        * <pre>
-       * 强盗的位置
+       * 强盗的位置(格子坐标)
+       * </pre>
+       */
+      public Builder setRobber(
+          org.shell.mmo.sample.message.proto.Global.Position.Builder builderForValue) {
+        if (robberBuilder_ == null) {
+          robber_ = builderForValue.build();
+          onChanged();
+        } else {
+          robberBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+       *
+       * <pre>
+       * 强盗的位置(格子坐标)
+       * </pre>
+       */
+      public Builder mergeRobber(org.shell.mmo.sample.message.proto.Global.Position value) {
+        if (robberBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              robber_ != org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance()) {
+            robber_ =
+              org.shell.mmo.sample.message.proto.Global.Position.newBuilder(robber_).mergeFrom(value).buildPartial();
+          } else {
+            robber_ = value;
+          }
+          onChanged();
+        } else {
+          robberBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+       *
+       * <pre>
+       * 强盗的位置(格子坐标)
        * </pre>
        */
       public Builder clearRobber() {
+        if (robberBuilder_ == null) {
+          robber_ = org.shell.mmo.sample.message.proto.Global.Position.getDefaultInstance();
+          onChanged();
+        } else {
+          robberBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000002);
-        robber_ = 0;
-        onChanged();
         return this;
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+       *
+       * <pre>
+       * 强盗的位置(格子坐标)
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.Position.Builder getRobberBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getRobberFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+       *
+       * <pre>
+       * 强盗的位置(格子坐标)
+       * </pre>
+       */
+      public org.shell.mmo.sample.message.proto.Global.PositionOrBuilder getRobberOrBuilder() {
+        if (robberBuilder_ != null) {
+          return robberBuilder_.getMessageOrBuilder();
+        } else {
+          return robber_;
+        }
+      }
+      /**
+       * <code>optional .org.shell.mmo.sample.message.proto.Position robber = 2;</code>
+       *
+       * <pre>
+       * 强盗的位置(格子坐标)
+       * </pre>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder> 
+          getRobberFieldBuilder() {
+        if (robberBuilder_ == null) {
+          robberBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              org.shell.mmo.sample.message.proto.Global.Position, org.shell.mmo.sample.message.proto.Global.Position.Builder, org.shell.mmo.sample.message.proto.Global.PositionOrBuilder>(
+                  getRobber(),
+                  getParentForChildren(),
+                  isClean());
+          robber_ = null;
+        }
+        return robberBuilder_;
       }
 
       private long criminal_ ;
@@ -40996,11 +45200,9 @@ public final class LogicClient {
         return this;
       }
 
-      private org.shell.mmo.sample.message.proto.Global.CatanResource resource_ = org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> resourceBuilder_;
+      private org.shell.mmo.sample.message.proto.Global.CatanResourceType resource_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
        *
        * <pre>
        * 资源
@@ -41010,142 +45212,43 @@ public final class LogicClient {
         return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource getResource() {
-        if (resourceBuilder_ == null) {
-          return resource_;
-        } else {
-          return resourceBuilder_.getMessage();
-        }
+      public org.shell.mmo.sample.message.proto.Global.CatanResourceType getResource() {
+        return resource_;
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
-      public Builder setResource(org.shell.mmo.sample.message.proto.Global.CatanResource value) {
-        if (resourceBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          resource_ = value;
-          onChanged();
-        } else {
-          resourceBuilder_.setMessage(value);
+      public Builder setResource(org.shell.mmo.sample.message.proto.Global.CatanResourceType value) {
+        if (value == null) {
+          throw new NullPointerException();
         }
         bitField0_ |= 0x00000010;
+        resource_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder setResource(
-          org.shell.mmo.sample.message.proto.Global.CatanResource.Builder builderForValue) {
-        if (resourceBuilder_ == null) {
-          resource_ = builderForValue.build();
-          onChanged();
-        } else {
-          resourceBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000010;
-        return this;
-      }
-      /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public Builder mergeResource(org.shell.mmo.sample.message.proto.Global.CatanResource value) {
-        if (resourceBuilder_ == null) {
-          if (((bitField0_ & 0x00000010) == 0x00000010) &&
-              resource_ != org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance()) {
-            resource_ =
-              org.shell.mmo.sample.message.proto.Global.CatanResource.newBuilder(resource_).mergeFrom(value).buildPartial();
-          } else {
-            resource_ = value;
-          }
-          onChanged();
-        } else {
-          resourceBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000010;
-        return this;
-      }
-      /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
+       * <code>optional .org.shell.mmo.sample.message.proto.CatanResourceType resource = 5;</code>
        *
        * <pre>
        * 资源
        * </pre>
        */
       public Builder clearResource() {
-        if (resourceBuilder_ == null) {
-          resource_ = org.shell.mmo.sample.message.proto.Global.CatanResource.getDefaultInstance();
-          onChanged();
-        } else {
-          resourceBuilder_.clear();
-        }
         bitField0_ = (bitField0_ & ~0x00000010);
-        return this;
-      }
-      /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResource.Builder getResourceBuilder() {
-        bitField0_ |= 0x00000010;
+        resource_ = org.shell.mmo.sample.message.proto.Global.CatanResourceType.RESOURCE_BRICK;
         onChanged();
-        return getResourceFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      public org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder getResourceOrBuilder() {
-        if (resourceBuilder_ != null) {
-          return resourceBuilder_.getMessageOrBuilder();
-        } else {
-          return resource_;
-        }
-      }
-      /**
-       * <code>optional .org.shell.mmo.sample.message.proto.CatanResource resource = 5;</code>
-       *
-       * <pre>
-       * 资源
-       * </pre>
-       */
-      private com.google.protobuf.SingleFieldBuilder<
-          org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder> 
-          getResourceFieldBuilder() {
-        if (resourceBuilder_ == null) {
-          resourceBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              org.shell.mmo.sample.message.proto.Global.CatanResource, org.shell.mmo.sample.message.proto.Global.CatanResource.Builder, org.shell.mmo.sample.message.proto.Global.CatanResourceOrBuilder>(
-                  getResource(),
-                  getParentForChildren(),
-                  isClean());
-          resource_ = null;
-        }
-        return resourceBuilder_;
+        return this;
       }
 
       // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ResCatanKnightCard)
@@ -42638,24 +46741,7 @@ public final class LogicClient {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional fixed64 id = 1;</code>
-     *
-     * <pre>
-     * 账号id
-     * </pre>
-     */
-    boolean hasId();
-    /**
-     * <code>optional fixed64 id = 1;</code>
-     *
-     * <pre>
-     * 账号id
-     * </pre>
-     */
-    long getId();
-
-    /**
-     * <code>optional int32 remain = 2;</code>
+     * <code>optional int32 remain = 1;</code>
      *
      * <pre>
      * 剩余多少秒结束
@@ -42663,7 +46749,7 @@ public final class LogicClient {
      */
     boolean hasRemain();
     /**
-     * <code>optional int32 remain = 2;</code>
+     * <code>optional int32 remain = 1;</code>
      *
      * <pre>
      * 剩余多少秒结束
@@ -42727,13 +46813,8 @@ public final class LogicClient {
               }
               break;
             }
-            case 9: {
+            case 8: {
               bitField0_ |= 0x00000001;
-              id_ = input.readFixed64();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
               remain_ = input.readInt32();
               break;
             }
@@ -42777,43 +46858,20 @@ public final class LogicClient {
     }
 
     private int bitField0_;
-    public static final int ID_FIELD_NUMBER = 1;
-    private long id_;
-    /**
-     * <code>optional fixed64 id = 1;</code>
-     *
-     * <pre>
-     * 账号id
-     * </pre>
-     */
-    public boolean hasId() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>optional fixed64 id = 1;</code>
-     *
-     * <pre>
-     * 账号id
-     * </pre>
-     */
-    public long getId() {
-      return id_;
-    }
-
-    public static final int REMAIN_FIELD_NUMBER = 2;
+    public static final int REMAIN_FIELD_NUMBER = 1;
     private int remain_;
     /**
-     * <code>optional int32 remain = 2;</code>
+     * <code>optional int32 remain = 1;</code>
      *
      * <pre>
      * 剩余多少秒结束
      * </pre>
      */
     public boolean hasRemain() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+      return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional int32 remain = 2;</code>
+     * <code>optional int32 remain = 1;</code>
      *
      * <pre>
      * 剩余多少秒结束
@@ -42824,7 +46882,6 @@ public final class LogicClient {
     }
 
     private void initFields() {
-      id_ = 0L;
       remain_ = 0;
     }
     private byte memoizedIsInitialized = -1;
@@ -42841,10 +46898,7 @@ public final class LogicClient {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeFixed64(1, id_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, remain_);
+        output.writeInt32(1, remain_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -42857,11 +46911,7 @@ public final class LogicClient {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed64Size(1, id_);
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, remain_);
+          .computeInt32Size(1, remain_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -42984,10 +47034,8 @@ public final class LogicClient {
 
       public Builder clear() {
         super.clear();
-        id_ = 0L;
-        bitField0_ = (bitField0_ & ~0x00000001);
         remain_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -43019,10 +47067,6 @@ public final class LogicClient {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.id_ = id_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
         result.remain_ = remain_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -43040,9 +47084,6 @@ public final class LogicClient {
 
       public Builder mergeFrom(org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRoundFoldStart other) {
         if (other == org.shell.mmo.sample.message.proto.LogicClient.ReqCatanRoundFoldStart.getDefaultInstance()) return this;
-        if (other.hasId()) {
-          setId(other.getId());
-        }
         if (other.hasRemain()) {
           setRemain(other.getRemain());
         }
@@ -43073,67 +47114,19 @@ public final class LogicClient {
       }
       private int bitField0_;
 
-      private long id_ ;
-      /**
-       * <code>optional fixed64 id = 1;</code>
-       *
-       * <pre>
-       * 账号id
-       * </pre>
-       */
-      public boolean hasId() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>optional fixed64 id = 1;</code>
-       *
-       * <pre>
-       * 账号id
-       * </pre>
-       */
-      public long getId() {
-        return id_;
-      }
-      /**
-       * <code>optional fixed64 id = 1;</code>
-       *
-       * <pre>
-       * 账号id
-       * </pre>
-       */
-      public Builder setId(long value) {
-        bitField0_ |= 0x00000001;
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional fixed64 id = 1;</code>
-       *
-       * <pre>
-       * 账号id
-       * </pre>
-       */
-      public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        id_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private int remain_ ;
       /**
-       * <code>optional int32 remain = 2;</code>
+       * <code>optional int32 remain = 1;</code>
        *
        * <pre>
        * 剩余多少秒结束
        * </pre>
        */
       public boolean hasRemain() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
+        return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional int32 remain = 2;</code>
+       * <code>optional int32 remain = 1;</code>
        *
        * <pre>
        * 剩余多少秒结束
@@ -43143,27 +47136,27 @@ public final class LogicClient {
         return remain_;
       }
       /**
-       * <code>optional int32 remain = 2;</code>
+       * <code>optional int32 remain = 1;</code>
        *
        * <pre>
        * 剩余多少秒结束
        * </pre>
        */
       public Builder setRemain(int value) {
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
         remain_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int32 remain = 2;</code>
+       * <code>optional int32 remain = 1;</code>
        *
        * <pre>
        * 剩余多少秒结束
        * </pre>
        */
       public Builder clearRemain() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         remain_ = 0;
         onChanged();
         return this;
@@ -46403,114 +50396,147 @@ public final class LogicClient {
       "id\030\002 \001(\006\"J\n\rReqCatanStart\0229\n\003map\030\001 \001(\0132," +
       ".org.shell.mmo.sample.message.proto.Cata" +
       "nMap\"4\n\026ReqCatanRoundInitStart\022\n\n\002id\030\001 \001" +
-      "(\006\022\016\n\006remain\030\002 \001(\005\",\n\013ReqCatanSet\022\017\n\007cou" +
-      "ntry\030\001 \001(\005\022\014\n\004road\030\002 \001(\005\"r\n\013ResCatanSet\022" +
-      "8\n\005error\030\001 \001(\0162).org.shell.mmo.sample.me" +
-      "ssage.proto.Error\022\n\n\002id\030\002 \001(\006\022\017\n\007country",
-      "\030\003 \001(\005\022\014\n\004road\030\004 \001(\005\"\212\001\n\030ReqCatanRoundCo" +
-      "mmonStart\022\n\n\002id\030\001 \001(\006\022\016\n\006remain\030\002 \001(\005\022\013\n" +
-      "\003rob\030\003 \001(\010\022E\n\004gain\030\004 \003(\01327.org.shell.mmo" +
-      ".sample.message.proto.CatanMasterResourc" +
-      "e\"\030\n\026ReqCatanRoundCommonEnd\"R\n\026ResCatanR" +
-      "oundCommonEnd\0228\n\005error\030\001 \001(\0162).org.shell" +
-      ".mmo.sample.message.proto.Error\"!\n\021ReqCa" +
-      "tanBuildRoad\022\014\n\004road\030\001 \001(\005\"g\n\021ResCatanBu" +
-      "ildRoad\0228\n\005error\030\001 \001(\0162).org.shell.mmo.s" +
-      "ample.message.proto.Error\022\n\n\002id\030\002 \001(\006\022\014\n",
-      "\004road\030\003 \001(\005\"\'\n\024ReqCatanBuildCountry\022\017\n\007c" +
-      "ountry\030\001 \001(\005\"m\n\024ResCatanBuildCountry\0228\n\005" +
-      "error\030\001 \001(\0162).org.shell.mmo.sample.messa" +
-      "ge.proto.Error\022\n\n\002id\030\002 \001(\006\022\017\n\007country\030\003 " +
-      "\001(\005\"!\n\021ReqCatanBuildCity\022\014\n\004city\030\001 \001(\005\"g" +
-      "\n\021ResCatanBuildCity\0228\n\005error\030\001 \001(\0162).org" +
-      ".shell.mmo.sample.message.proto.Error\022\n\n" +
-      "\002id\030\002 \001(\006\022\014\n\004city\030\003 \001(\005\"-\n\034ReqCatanBuild" +
-      "DevelopmentCard\022\r\n\005count\030\001 \001(\005\"s\n\034ResCat" +
-      "anBuildDevelopmentCard\0228\n\005error\030\001 \001(\0162).",
-      "org.shell.mmo.sample.message.proto.Error" +
-      "\022\n\n\002id\030\002 \001(\006\022\r\n\005count\030\003 \001(\005\"\230\001\n\023ReqCatan" +
-      "TradeSystem\022@\n\005offer\030\001 \003(\01321.org.shell.m" +
-      "mo.sample.message.proto.CatanResource\022?\n" +
-      "\004want\030\002 \003(\01321.org.shell.mmo.sample.messa" +
-      "ge.proto.CatanResource\"\336\001\n\023ResCatanTrade" +
-      "System\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sa" +
-      "mple.message.proto.Error\022@\n\005offer\030\002 \003(\0132" +
-      "1.org.shell.mmo.sample.message.proto.Cat" +
-      "anResource\022?\n\004want\030\003 \003(\01321.org.shell.mmo",
-      ".sample.message.proto.CatanResource\022\n\n\002i" +
-      "d\030\004 \001(\006\"\227\001\n\022ReqCatanTradeOffer\022@\n\005offer\030" +
-      "\001 \003(\01321.org.shell.mmo.sample.message.pro" +
-      "to.CatanResource\022?\n\004want\030\002 \003(\01321.org.she" +
+      "(\006\022\016\n\006remain\030\002 \001(\005\"\213\001\n\013ReqCatanSet\022=\n\007co" +
+      "untry\030\001 \001(\0132,.org.shell.mmo.sample.messa" +
+      "ge.proto.Position\022=\n\007roadDst\030\002 \001(\0132,.org" +
+      ".shell.mmo.sample.message.proto.Position",
+      "\"\226\002\n\013ResCatanSet\0228\n\005error\030\001 \001(\0162).org.sh" +
+      "ell.mmo.sample.message.proto.Error\022\n\n\002id" +
+      "\030\002 \001(\006\022=\n\007country\030\003 \001(\0132,.org.shell.mmo." +
+      "sample.message.proto.Position\022=\n\007roadDst" +
+      "\030\004 \001(\0132,.org.shell.mmo.sample.message.pr" +
+      "oto.Position\022C\n\010resource\030\005 \003(\01321.org.she" +
       "ll.mmo.sample.message.proto.CatanResourc" +
-      "e\"\335\001\n\022ResCatanTradeOffer\0228\n\005error\030\001 \001(\0162" +
-      ").org.shell.mmo.sample.message.proto.Err" +
-      "or\022@\n\005offer\030\002 \003(\01321.org.shell.mmo.sample" +
-      ".message.proto.CatanResource\022?\n\004want\030\003 \003" +
-      "(\01321.org.shell.mmo.sample.message.proto.",
-      "CatanResource\022\n\n\002id\030\004 \001(\006\"\236\001\n\031ReqCatanTr" +
-      "adeCounterOffer\022@\n\005offer\030\001 \003(\01321.org.she" +
+      "e\"\213\001\n\030ReqCatanRoundCommonStart\022\n\n\002id\030\001 \001" +
+      "(\006\022\016\n\006remain\030\002 \001(\005\022\014\n\004dice\030\003 \001(\005\022E\n\004gain" +
+      "\030\004 \003(\01327.org.shell.mmo.sample.message.pr",
+      "oto.CatanMasterResource\"\030\n\026ReqCatanRound" +
+      "CommonEnd\"R\n\026ResCatanRoundCommonEnd\0228\n\005e" +
+      "rror\030\001 \001(\0162).org.shell.mmo.sample.messag" +
+      "e.proto.Error\"\211\001\n\021ReqCatanBuildRoad\0229\n\003s" +
+      "rc\030\001 \001(\0132,.org.shell.mmo.sample.message." +
+      "proto.Position\0229\n\003dst\030\002 \001(\0132,.org.shell." +
+      "mmo.sample.message.proto.Position\"\317\001\n\021Re" +
+      "sCatanBuildRoad\0228\n\005error\030\001 \001(\0162).org.she" +
+      "ll.mmo.sample.message.proto.Error\022\n\n\002id\030" +
+      "\002 \001(\006\0229\n\003src\030\003 \001(\0132,.org.shell.mmo.sampl",
+      "e.message.proto.Position\0229\n\003dst\030\004 \001(\0132,." +
+      "org.shell.mmo.sample.message.proto.Posit" +
+      "ion\"U\n\024ReqCatanBuildCountry\022=\n\007country\030\001" +
+      " \001(\0132,.org.shell.mmo.sample.message.prot" +
+      "o.Position\"\233\001\n\024ResCatanBuildCountry\0228\n\005e" +
+      "rror\030\001 \001(\0162).org.shell.mmo.sample.messag" +
+      "e.proto.Error\022\n\n\002id\030\002 \001(\006\022=\n\007country\030\003 \001" +
+      "(\0132,.org.shell.mmo.sample.message.proto." +
+      "Position\"O\n\021ReqCatanBuildCity\022:\n\004city\030\001 " +
+      "\001(\0132,.org.shell.mmo.sample.message.proto",
+      ".Position\"\225\001\n\021ResCatanBuildCity\0228\n\005error" +
+      "\030\001 \001(\0162).org.shell.mmo.sample.message.pr" +
+      "oto.Error\022\n\n\002id\030\002 \001(\006\022:\n\004city\030\003 \001(\0132,.or" +
+      "g.shell.mmo.sample.message.proto.Positio" +
+      "n\"-\n\034ReqCatanBuildDevelopmentCard\022\r\n\005cou" +
+      "nt\030\001 \001(\005\"\241\001\n\034ResCatanBuildDevelopmentCar" +
+      "d\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sample." +
+      "message.proto.Error\022\n\n\002id\030\002 \001(\006\022;\n\004card\030" +
+      "\003 \003(\0132-.org.shell.mmo.sample.message.pro" +
+      "to.CatanCard\"\230\001\n\023ReqCatanTradeSystem\022@\n\005",
+      "offer\030\001 \003(\01321.org.shell.mmo.sample.messa" +
+      "ge.proto.CatanResource\022?\n\004want\030\002 \003(\01321.o" +
+      "rg.shell.mmo.sample.message.proto.CatanR" +
+      "esource\"\336\001\n\023ResCatanTradeSystem\0228\n\005error" +
+      "\030\001 \001(\0162).org.shell.mmo.sample.message.pr" +
+      "oto.Error\022@\n\005offer\030\002 \003(\01321.org.shell.mmo" +
+      ".sample.message.proto.CatanResource\022?\n\004w" +
+      "ant\030\003 \003(\01321.org.shell.mmo.sample.message" +
+      ".proto.CatanResource\022\n\n\002id\030\004 \001(\006\"\227\001\n\022Req" +
+      "CatanTradeOffer\022@\n\005offer\030\001 \003(\01321.org.she",
       "ll.mmo.sample.message.proto.CatanResourc" +
       "e\022?\n\004want\030\002 \003(\01321.org.shell.mmo.sample.m" +
-      "essage.proto.CatanResource\"U\n\031ResCatanTr" +
-      "adeCounterOffer\0228\n\005error\030\001 \001(\0162).org.she" +
-      "ll.mmo.sample.message.proto.Error\"\256\001\n\035Re" +
-      "qCatanTradeCounterOfferToMe\022@\n\005offer\030\001 \003" +
+      "essage.proto.CatanResource\"\335\001\n\022ResCatanT" +
+      "radeOffer\0228\n\005error\030\001 \001(\0162).org.shell.mmo" +
+      ".sample.message.proto.Error\022@\n\005offer\030\002 \003" +
       "(\01321.org.shell.mmo.sample.message.proto." +
-      "CatanResource\022?\n\004want\030\002 \003(\01321.org.shell.",
+      "CatanResource\022?\n\004want\030\003 \003(\01321.org.shell." +
       "mmo.sample.message.proto.CatanResource\022\n" +
-      "\n\002id\030\003 \001(\006\"!\n\037ReqCatanTradeCounterOfferR" +
-      "efuse\"[\n\037ResCatanTradeCounterOfferRefuse" +
+      "\n\002id\030\004 \001(\006\"\236\001\n\031ReqCatanTradeCounterOffer" +
+      "\022@\n\005offer\030\001 \003(\01321.org.shell.mmo.sample.m",
+      "essage.proto.CatanResource\022?\n\004want\030\002 \003(\013" +
+      "21.org.shell.mmo.sample.message.proto.Ca" +
+      "tanResource\"U\n\031ResCatanTradeCounterOffer" +
       "\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sample.m" +
-      "essage.proto.Error\"1\n#ReqCatanTradeCount" +
-      "erOfferRefuseToMe\022\n\n\002id\030\003 \001(\006\"#\n\021ReqCata" +
-      "nTradeDeal\022\016\n\006target\030\001 \001(\006\"\341\001\n\021ResCatanT" +
-      "radeDeal\0228\n\005error\030\001 \001(\0162).org.shell.mmo." +
-      "sample.message.proto.Error\022H\n\007master1\030\002 " +
-      "\001(\01327.org.shell.mmo.sample.message.proto",
-      ".CatanMasterResource\022H\n\007master2\030\004 \001(\01327." +
-      "org.shell.mmo.sample.message.proto.Catan" +
-      "MasterResource\"\025\n\023ReqCatanTradeCancel\"O\n" +
-      "\023ResCatanTradeCancel\0228\n\005error\030\001 \001(\0162).or" +
-      "g.shell.mmo.sample.message.proto.Error\")" +
-      "\n\013ReqCatanRob\022\016\n\006robber\030\001 \001(\005\022\n\n\002id\030\002 \001(" +
-      "\006\"\276\001\n\013ResCatanRob\0228\n\005error\030\001 \001(\0162).org.s" +
-      "hell.mmo.sample.message.proto.Error\022\016\n\006r" +
-      "obber\030\002 \001(\005\022\020\n\010criminal\030\003 \001(\006\022\016\n\006victim\030" +
-      "\004 \001(\006\022C\n\010resource\030\005 \001(\01321.org.shell.mmo.",
-      "sample.message.proto.CatanResource\"W\n\020Re" +
-      "qCatanRichCard\022C\n\010resource\030\001 \003(\01321.org.s" +
-      "hell.mmo.sample.message.proto.CatanResou" +
-      "rce\"\235\001\n\020ResCatanRichCard\0228\n\005error\030\001 \001(\0162" +
-      ").org.shell.mmo.sample.message.proto.Err" +
-      "or\022C\n\010resource\030\002 \003(\01321.org.shell.mmo.sam" +
-      "ple.message.proto.CatanResource\022\n\n\002id\030\003 " +
-      "\001(\006\" \n\020ReqCatanRoadCard\022\014\n\004road\030\001 \003(\005\"f\n" +
-      "\020ResCatanRoadCard\0228\n\005error\030\001 \001(\0162).org.s" +
-      "hell.mmo.sample.message.proto.Error\022\014\n\004r",
-      "oad\030\002 \003(\005\022\n\n\002id\030\003 \001(\006\"0\n\022ReqCatanKnightC" +
-      "ard\022\016\n\006robber\030\001 \001(\005\022\n\n\002id\030\002 \001(\006\"\305\001\n\022ResC" +
-      "atanKnightCard\0228\n\005error\030\001 \001(\0162).org.shel" +
-      "l.mmo.sample.message.proto.Error\022\016\n\006robb" +
-      "er\030\002 \001(\005\022\020\n\010criminal\030\003 \001(\006\022\016\n\006victim\030\004 \001" +
-      "(\006\022C\n\010resource\030\005 \001(\01321.org.shell.mmo.sam" +
-      "ple.message.proto.CatanResource\"[\n\024ReqCa" +
-      "tanMonopolyCard\022C\n\004type\030\001 \001(\01625.org.shel" +
-      "l.mmo.sample.message.proto.CatanResource" +
-      "Type\"\243\001\n\024ResCatanMonopolyCard\0228\n\005error\030\001",
+      "essage.proto.Error\"\256\001\n\035ReqCatanTradeCoun" +
+      "terOfferToMe\022@\n\005offer\030\001 \003(\01321.org.shell." +
+      "mmo.sample.message.proto.CatanResource\022?" +
+      "\n\004want\030\002 \003(\01321.org.shell.mmo.sample.mess" +
+      "age.proto.CatanResource\022\n\n\002id\030\003 \001(\006\"!\n\037R" +
+      "eqCatanTradeCounterOfferRefuse\"[\n\037ResCat",
+      "anTradeCounterOfferRefuse\0228\n\005error\030\001 \001(\016" +
+      "2).org.shell.mmo.sample.message.proto.Er" +
+      "ror\"1\n#ReqCatanTradeCounterOfferRefuseTo" +
+      "Me\022\n\n\002id\030\003 \001(\006\"#\n\021ReqCatanTradeDeal\022\016\n\006t" +
+      "arget\030\001 \001(\006\"\341\001\n\021ResCatanTradeDeal\0228\n\005err" +
+      "or\030\001 \001(\0162).org.shell.mmo.sample.message." +
+      "proto.Error\022H\n\007master1\030\002 \001(\01327.org.shell" +
+      ".mmo.sample.message.proto.CatanMasterRes" +
+      "ource\022H\n\007master2\030\003 \001(\01327.org.shell.mmo.s" +
+      "ample.message.proto.CatanMasterResource\"",
+      "\025\n\023ReqCatanTradeCancel\"O\n\023ResCatanTradeC" +
+      "ancel\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sam" +
+      "ple.message.proto.Error\"W\n\013ReqCatanRob\022<" +
+      "\n\006robber\030\001 \001(\0132,.org.shell.mmo.sample.me" +
+      "ssage.proto.Position\022\n\n\002id\030\002 \001(\006\"\360\001\n\013Res" +
+      "CatanRob\0228\n\005error\030\001 \001(\0162).org.shell.mmo." +
+      "sample.message.proto.Error\022<\n\006robber\030\002 \001" +
+      "(\0132,.org.shell.mmo.sample.message.proto." +
+      "Position\022\020\n\010criminal\030\003 \001(\006\022\016\n\006victim\030\004 \001" +
+      "(\006\022G\n\010resource\030\005 \001(\01625.org.shell.mmo.sam",
+      "ple.message.proto.CatanResourceType\"[\n\020R" +
+      "eqCatanRichCard\022G\n\010resource\030\001 \003(\01625.org." +
+      "shell.mmo.sample.message.proto.CatanReso" +
+      "urceType\"\241\001\n\020ResCatanRichCard\0228\n\005error\030\001" +
       " \001(\0162).org.shell.mmo.sample.message.prot" +
-      "o.Error\022\n\n\002id\030\002 \001(\006\022E\n\004lose\030\005 \003(\01327.org." +
-      "shell.mmo.sample.message.proto.CatanMast" +
-      "erResource\"4\n\026ReqCatanRoundFoldStart\022\n\n\002" +
-      "id\030\001 \001(\006\022\016\n\006remain\030\002 \001(\005\"O\n\014ReqCatanFold" +
-      "\022?\n\004lose\030\004 \003(\01321.org.shell.mmo.sample.me" +
-      "ssage.proto.CatanResource\"\225\001\n\014ResCatanFo" +
-      "ld\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sample" +
-      ".message.proto.Error\022\n\n\002id\030\002 \001(\006\022?\n\004lose" +
-      "\030\003 \003(\01321.org.shell.mmo.sample.message.pr",
-      "oto.CatanResource\"n\n\014ReqCatanDone\022=\n\005sco" +
-      "re\030\001 \003(\0132..org.shell.mmo.sample.message." +
-      "proto.CatanScore\022\014\n\004gain\030\002 \001(\005\022\021\n\ttotalG" +
-      "ain\030\003 \001(\005"
+      "o.Error\022G\n\010resource\030\002 \003(\01625.org.shell.mm" +
+      "o.sample.message.proto.CatanResourceType" +
+      "\022\n\n\002id\030\003 \001(\006\"\202\002\n\020ReqCatanRoadCard\022:\n\004src" +
+      "1\030\001 \001(\0132,.org.shell.mmo.sample.message.p" +
+      "roto.Position\022:\n\004dst1\030\002 \001(\0132,.org.shell.",
+      "mmo.sample.message.proto.Position\022:\n\004src" +
+      "2\030\003 \001(\0132,.org.shell.mmo.sample.message.p" +
+      "roto.Position\022:\n\004dst2\030\004 \001(\0132,.org.shell." +
+      "mmo.sample.message.proto.Position\"\310\002\n\020Re" +
+      "sCatanRoadCard\0228\n\005error\030\001 \001(\0162).org.shel" +
+      "l.mmo.sample.message.proto.Error\022:\n\004src1" +
+      "\030\002 \001(\0132,.org.shell.mmo.sample.message.pr" +
+      "oto.Position\022:\n\004dst1\030\003 \001(\0132,.org.shell.m" +
+      "mo.sample.message.proto.Position\022:\n\004src2" +
+      "\030\004 \001(\0132,.org.shell.mmo.sample.message.pr",
+      "oto.Position\022:\n\004dst2\030\005 \001(\0132,.org.shell.m" +
+      "mo.sample.message.proto.Position\022\n\n\002id\030\006" +
+      " \001(\006\"^\n\022ReqCatanKnightCard\022<\n\006robber\030\001 \001" +
+      "(\0132,.org.shell.mmo.sample.message.proto." +
+      "Position\022\n\n\002id\030\002 \001(\006\"\367\001\n\022ResCatanKnightC" +
+      "ard\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sampl" +
+      "e.message.proto.Error\022<\n\006robber\030\002 \001(\0132,." +
+      "org.shell.mmo.sample.message.proto.Posit" +
+      "ion\022\020\n\010criminal\030\003 \001(\006\022\016\n\006victim\030\004 \001(\006\022G\n" +
+      "\010resource\030\005 \001(\01625.org.shell.mmo.sample.m",
+      "essage.proto.CatanResourceType\"[\n\024ReqCat" +
+      "anMonopolyCard\022C\n\004type\030\001 \001(\01625.org.shell" +
+      ".mmo.sample.message.proto.CatanResourceT" +
+      "ype\"\243\001\n\024ResCatanMonopolyCard\0228\n\005error\030\001 " +
+      "\001(\0162).org.shell.mmo.sample.message.proto" +
+      ".Error\022\n\n\002id\030\002 \001(\006\022E\n\004lose\030\005 \003(\01327.org.s" +
+      "hell.mmo.sample.message.proto.CatanMaste" +
+      "rResource\"(\n\026ReqCatanRoundFoldStart\022\016\n\006r" +
+      "emain\030\001 \001(\005\"O\n\014ReqCatanFold\022?\n\004lose\030\004 \003(" +
+      "\01321.org.shell.mmo.sample.message.proto.C",
+      "atanResource\"\225\001\n\014ResCatanFold\0228\n\005error\030\001" +
+      " \001(\0162).org.shell.mmo.sample.message.prot" +
+      "o.Error\022\n\n\002id\030\002 \001(\006\022?\n\004lose\030\003 \003(\01321.org." +
+      "shell.mmo.sample.message.proto.CatanReso" +
+      "urce\"n\n\014ReqCatanDone\022=\n\005score\030\001 \003(\0132..or" +
+      "g.shell.mmo.sample.message.proto.CatanSc" +
+      "ore\022\014\n\004gain\030\002 \001(\005\022\021\n\ttotalGain\030\003 \001(\005"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -46674,19 +50700,19 @@ public final class LogicClient {
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanSet_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanSet_descriptor,
-        new java.lang.String[] { "Country", "Road", });
+        new java.lang.String[] { "Country", "RoadDst", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanSet_descriptor =
       getDescriptor().getMessageTypes().get(25);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanSet_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanSet_descriptor,
-        new java.lang.String[] { "Error", "Id", "Country", "Road", });
+        new java.lang.String[] { "Error", "Id", "Country", "RoadDst", "Resource", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundCommonStart_descriptor =
       getDescriptor().getMessageTypes().get(26);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundCommonStart_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundCommonStart_descriptor,
-        new java.lang.String[] { "Id", "Remain", "Rob", "Gain", });
+        new java.lang.String[] { "Id", "Remain", "Dice", "Gain", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundCommonEnd_descriptor =
       getDescriptor().getMessageTypes().get(27);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundCommonEnd_fieldAccessorTable = new
@@ -46704,13 +50730,13 @@ public final class LogicClient {
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildRoad_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildRoad_descriptor,
-        new java.lang.String[] { "Road", });
+        new java.lang.String[] { "Src", "Dst", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildRoad_descriptor =
       getDescriptor().getMessageTypes().get(30);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildRoad_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildRoad_descriptor,
-        new java.lang.String[] { "Error", "Id", "Road", });
+        new java.lang.String[] { "Error", "Id", "Src", "Dst", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildCountry_descriptor =
       getDescriptor().getMessageTypes().get(31);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildCountry_fieldAccessorTable = new
@@ -46746,7 +50772,7 @@ public final class LogicClient {
     internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildDevelopmentCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildDevelopmentCard_descriptor,
-        new java.lang.String[] { "Error", "Id", "Count", });
+        new java.lang.String[] { "Error", "Id", "Card", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeSystem_descriptor =
       getDescriptor().getMessageTypes().get(37);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeSystem_fieldAccessorTable = new
@@ -46860,13 +50886,13 @@ public final class LogicClient {
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoadCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoadCard_descriptor,
-        new java.lang.String[] { "Road", });
+        new java.lang.String[] { "Src1", "Dst1", "Src2", "Dst2", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanRoadCard_descriptor =
       getDescriptor().getMessageTypes().get(56);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanRoadCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanRoadCard_descriptor,
-        new java.lang.String[] { "Error", "Road", "Id", });
+        new java.lang.String[] { "Error", "Src1", "Dst1", "Src2", "Dst2", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanKnightCard_descriptor =
       getDescriptor().getMessageTypes().get(57);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanKnightCard_fieldAccessorTable = new
@@ -46896,7 +50922,7 @@ public final class LogicClient {
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundFoldStart_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundFoldStart_descriptor,
-        new java.lang.String[] { "Id", "Remain", });
+        new java.lang.String[] { "Remain", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanFold_descriptor =
       getDescriptor().getMessageTypes().get(62);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanFold_fieldAccessorTable = new

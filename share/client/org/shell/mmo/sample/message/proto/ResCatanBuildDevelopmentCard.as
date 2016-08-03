@@ -7,6 +7,7 @@ package org.shell.mmo.sample.message.proto {
 	import flash.utils.IDataOutput;
 	import flash.utils.IExternalizable;
 	import flash.errors.IOError;
+	import org.shell.mmo.sample.message.proto.CatanCard;
 	import org.shell.mmo.sample.message.proto.Error;
 	// @@protoc_insertion_point(imports)
 
@@ -65,27 +66,10 @@ package org.shell.mmo.sample.message.proto {
 		/**
 		 *  @private
 		 */
-		public static const COUNT:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.ResCatanBuildDevelopmentCard.count", "count", (3 << 3) | com.netease.protobuf.WireType.VARINT);
+		public static const CARD:RepeatedFieldDescriptor_TYPE_MESSAGE = new RepeatedFieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.message.proto.ResCatanBuildDevelopmentCard.card", "card", (3 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.message.proto.CatanCard; });
 
-		private var count$field:int;
-
-		public function clearCount():void {
-			hasField$0 &= 0xfffffffd;
-			count$field = new int();
-		}
-
-		public function get hasCount():Boolean {
-			return (hasField$0 & 0x2) != 0;
-		}
-
-		public function set count(value:int):void {
-			hasField$0 |= 0x2;
-			count$field = value;
-		}
-
-		public function get count():int {
-			return count$field;
-		}
+		[ArrayElementType("org.shell.mmo.sample.message.proto.CatanCard")]
+		public var card:Array = [];
 
 		/**
 		 *  @private
@@ -99,9 +83,9 @@ package org.shell.mmo.sample.message.proto {
 				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.FIXED_64_BIT, 2);
 				com.netease.protobuf.WriteUtils.write_TYPE_FIXED64(output, id$field);
 			}
-			if (hasCount) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 3);
-				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, count$field);
+			for (var card$index:uint = 0; card$index < this.card.length; ++card$index) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 3);
+				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, this.card[card$index]);
 			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
@@ -114,7 +98,6 @@ package org.shell.mmo.sample.message.proto {
 		override com.netease.protobuf.used_by_generated_code final function readFromSlice(input:flash.utils.IDataInput, bytesAfterSlice:uint):void {
 			var error$count:uint = 0;
 			var id$count:uint = 0;
-			var count$count:uint = 0;
 			while (input.bytesAvailable > bytesAfterSlice) {
 				var tag:uint = com.netease.protobuf.ReadUtils.read_TYPE_UINT32(input);
 				switch (tag >> 3) {
@@ -133,11 +116,7 @@ package org.shell.mmo.sample.message.proto {
 					this.id = com.netease.protobuf.ReadUtils.read_TYPE_FIXED64(input);
 					break;
 				case 3:
-					if (count$count != 0) {
-						throw new flash.errors.IOError('Bad data format: ResCatanBuildDevelopmentCard.count cannot be set twice.');
-					}
-					++count$count;
-					this.count = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					this.card.push(com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, new org.shell.mmo.sample.message.proto.CatanCard()));
 					break;
 				default:
 					super.readUnknown(input, tag);

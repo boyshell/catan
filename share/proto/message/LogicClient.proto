@@ -121,21 +121,22 @@ message ReqCatanRoundInitStart {
 }
 // 设置起始点:参数
 message ReqCatanSet {
-    optional int32 country = 1; // 村庄位置
-    optional int32 road = 2; // 道路位置
+    optional Position country = 1; // 村庄坐标(道路起点)
+    optional Position roadDst = 2; // 道路终点
 }
 // 设置起始点:返回值
 message ResCatanSet {
     optional Error error = 1; // 错误码
     optional fixed64 id = 2; // 账号id
-    optional int32 country = 3; // 村庄位置
-    optional int32 road = 4; // 道路位置
+    optional Position country = 3; // 村庄坐标(道路起点)
+    optional Position roadDst = 4; // 道路终点
+    repeated CatanResource resource = 5; // 资源
 }
 // 普通回合开始:参数
 message ReqCatanRoundCommonStart {
     optional fixed64 id = 1; // 账号id
     optional int32 remain = 2; // 剩余多少秒结束
-    optional bool rob = 3; // 受否需要移动强盗
+    optional int32 dice = 3; // 骰子点数,前端自行判定是否需要移动强盗
     repeated CatanMasterResource gain = 4; // 每个人收获列表
 }
 // 结束普通回合:参数
@@ -147,33 +148,35 @@ message ResCatanRoundCommonEnd {
 }
 // 建造道路:参数
 message ReqCatanBuildRoad {
-    optional int32 road = 1; // 道路位置
+    optional Position src = 1; // 起点
+    optional Position dst = 2; // 终点
 }
 // 建造道路:返回值
 message ResCatanBuildRoad {
     optional Error error = 1; // 错误码
     optional fixed64 id = 2; // 账号id
-    optional int32 road = 3; // 道路位置
+    optional Position src = 3; // 起点
+    optional Position dst = 4; // 终点
 }
 // 建造村庄:参数
 message ReqCatanBuildCountry {
-    optional int32 country = 1; // 村庄位置
+    optional Position country = 1; // 村庄坐标
 }
 // 建造村庄:返回值
 message ResCatanBuildCountry {
     optional Error error = 1; // 错误码
     optional fixed64 id = 2; // 账号id
-    optional int32 country = 3; // 村庄位置
+    optional Position country = 3; // 村庄坐标
 }
 // 建造城市:参数
 message ReqCatanBuildCity {
-    optional int32 city = 1; // 城市位置
+    optional Position city = 1; // 城市坐标
 }
 // 建造城市:返回值
 message ResCatanBuildCity {
     optional Error error = 1; // 错误码
     optional fixed64 id = 2; // 账号id
-    optional int32 city = 3; // 城市位置
+    optional Position city = 3; // 城市坐标
 }
 // 建造发展卡:参数
 message ReqCatanBuildDevelopmentCard {
@@ -183,7 +186,7 @@ message ReqCatanBuildDevelopmentCard {
 message ResCatanBuildDevelopmentCard {
     optional Error error = 1; // 错误码
     optional fixed64 id = 2; // 账号id
-    optional int32 count = 3; // 数量
+    repeated CatanCard card = 3; // 获得卡片
 }
 // 系统交易:参数
 message ReqCatanTradeSystem {
@@ -197,12 +200,12 @@ message ResCatanTradeSystem {
     repeated CatanResource want = 3; // 玩家提供的资源
     optional fixed64 id = 4; // 账号id
 }
-// 开价给所有人(交易流程:开价->还价/取消->成交/取消):参数
+// 开价给所有人(交易流程:开价->还价/取消->成交/取消),此消息可能会重复收取,需要重置交易流程:参数
 message ReqCatanTradeOffer {
     repeated CatanResource offer = 1; // 我要的资源
     repeated CatanResource want = 2; // 我提供的资源
 }
-// 开价给所有人(交易流程:开价->还价/取消->成交/取消):返回值
+// 开价给所有人(交易流程:开价->还价/取消->成交/取消),此消息可能会重复收取,需要重置交易流程:返回值
 message ResCatanTradeOffer {
     optional Error error = 1; // 错误码
     repeated CatanResource offer = 2; // 玩家要的资源
@@ -242,8 +245,8 @@ message ReqCatanTradeDeal {
 // 交易成交:返回值
 message ResCatanTradeDeal {
     optional Error error = 1; // 错误码
-    optional CatanMasterResource master1 = 2; // 玩家1获得的资源
-    optional CatanMasterResource master2 = 4; // 玩家2获得的资源
+    optional CatanMasterResource master1 = 2; // 玩家1获得的资源(玩家2失去的资源)
+    optional CatanMasterResource master2 = 3; // 玩家2获得的资源(玩家1失去的资源)
 }
 // 交易取消:参数
 message ReqCatanTradeCancel {
@@ -254,49 +257,55 @@ message ResCatanTradeCancel {
 }
 // 抢劫:参数
 message ReqCatanRob {
-    optional int32 robber = 1; // 强盗的位置
+    optional Position robber = 1; // 强盗的位置
     optional fixed64 id = 2; // 被抢的玩家
 }
 // 抢劫:返回值
 message ResCatanRob {
     optional Error error = 1; // 错误码
-    optional int32 robber = 2; // 强盗的位置
+    optional Position robber = 2; // 强盗的位置
     optional fixed64 criminal = 3; // 罪犯
     optional fixed64 victim = 4; // 受害者
-    optional CatanResource resource = 5; // 资源
+    optional CatanResourceType resource = 5; // 资源
 }
 // 使用丰收卡:参数
 message ReqCatanRichCard {
-    repeated CatanResource resource = 1; // 资源
+    repeated CatanResourceType resource = 1; // 资源
 }
 // 使用丰收卡:返回值
 message ResCatanRichCard {
     optional Error error = 1; // 错误码
-    repeated CatanResource resource = 2; // 资源
+    repeated CatanResourceType resource = 2; // 资源
     optional fixed64 id = 3; // 账号id
 }
 // 使用道路卡:参数
 message ReqCatanRoadCard {
-    repeated int32 road = 1; // 道路位置
+    optional Position src1 = 1; // 起点1
+    optional Position dst1 = 2; // 终点1
+    optional Position src2 = 3; // 起点2
+    optional Position dst2 = 4; // 终点2
 }
 // 使用道路卡:返回值
 message ResCatanRoadCard {
     optional Error error = 1; // 错误码
-    repeated int32 road = 2; // 道路位置
-    optional fixed64 id = 3; // 账号id
+    optional Position src1 = 2; // 起点1
+    optional Position dst1 = 3; // 终点1
+    optional Position src2 = 4; // 起点2
+    optional Position dst2 = 5; // 终点2
+    optional fixed64 id = 6; // 账号id
 }
 // 使用骑士卡:参数
 message ReqCatanKnightCard {
-    optional int32 robber = 1; // 强盗的位置
+    optional Position robber = 1; // 强盗的位置(格子坐标)
     optional fixed64 id = 2; // 被抢的玩家
 }
 // 使用骑士卡:返回值
 message ResCatanKnightCard {
     optional Error error = 1; // 错误码
-    optional int32 robber = 2; // 强盗的位置
+    optional Position robber = 2; // 强盗的位置(格子坐标)
     optional fixed64 criminal = 3; // 罪犯
     optional fixed64 victim = 4; // 受害者
-    optional CatanResource resource = 5; // 资源
+    optional CatanResourceType resource = 5; // 资源
 }
 // 使用垄断卡:参数
 message ReqCatanMonopolyCard {
@@ -310,8 +319,7 @@ message ResCatanMonopolyCard {
 }
 // 弃牌回合开始(前端自行判定自己是否需要弃牌):参数
 message ReqCatanRoundFoldStart {
-    optional fixed64 id = 1; // 账号id
-    optional int32 remain = 2; // 剩余多少秒结束
+    optional int32 remain = 1; // 剩余多少秒结束
 }
 // 弃牌:参数
 message ReqCatanFold {

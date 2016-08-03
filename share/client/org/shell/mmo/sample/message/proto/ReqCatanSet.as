@@ -7,6 +7,7 @@ package org.shell.mmo.sample.message.proto {
 	import flash.utils.IDataOutput;
 	import flash.utils.IExternalizable;
 	import flash.errors.IOError;
+	import org.shell.mmo.sample.message.proto.Position;
 	// @@protoc_insertion_point(imports)
 
 	// @@protoc_insertion_point(class_metadata)
@@ -14,53 +15,47 @@ package org.shell.mmo.sample.message.proto {
 		/**
 		 *  @private
 		 */
-		public static const COUNTRY:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.ReqCatanSet.country", "country", (1 << 3) | com.netease.protobuf.WireType.VARINT);
+		public static const COUNTRY:FieldDescriptor_TYPE_MESSAGE = new FieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.message.proto.ReqCatanSet.country", "country", (1 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.message.proto.Position; });
 
-		private var country$field:int;
-
-		private var hasField$0:uint = 0;
+		private var country$field:org.shell.mmo.sample.message.proto.Position;
 
 		public function clearCountry():void {
-			hasField$0 &= 0xfffffffe;
-			country$field = new int();
+			country$field = null;
 		}
 
 		public function get hasCountry():Boolean {
-			return (hasField$0 & 0x1) != 0;
+			return country$field != null;
 		}
 
-		public function set country(value:int):void {
-			hasField$0 |= 0x1;
+		public function set country(value:org.shell.mmo.sample.message.proto.Position):void {
 			country$field = value;
 		}
 
-		public function get country():int {
+		public function get country():org.shell.mmo.sample.message.proto.Position {
 			return country$field;
 		}
 
 		/**
 		 *  @private
 		 */
-		public static const ROAD:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.ReqCatanSet.road", "road", (2 << 3) | com.netease.protobuf.WireType.VARINT);
+		public static const ROADDST:FieldDescriptor_TYPE_MESSAGE = new FieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.message.proto.ReqCatanSet.roadDst", "roadDst", (2 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.message.proto.Position; });
 
-		private var road$field:int;
+		private var roadDst$field:org.shell.mmo.sample.message.proto.Position;
 
-		public function clearRoad():void {
-			hasField$0 &= 0xfffffffd;
-			road$field = new int();
+		public function clearRoadDst():void {
+			roadDst$field = null;
 		}
 
-		public function get hasRoad():Boolean {
-			return (hasField$0 & 0x2) != 0;
+		public function get hasRoadDst():Boolean {
+			return roadDst$field != null;
 		}
 
-		public function set road(value:int):void {
-			hasField$0 |= 0x2;
-			road$field = value;
+		public function set roadDst(value:org.shell.mmo.sample.message.proto.Position):void {
+			roadDst$field = value;
 		}
 
-		public function get road():int {
-			return road$field;
+		public function get roadDst():org.shell.mmo.sample.message.proto.Position {
+			return roadDst$field;
 		}
 
 		/**
@@ -68,12 +63,12 @@ package org.shell.mmo.sample.message.proto {
 		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
 			if (hasCountry) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
-				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, country$field);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 1);
+				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, country$field);
 			}
-			if (hasRoad) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 2);
-				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, road$field);
+			if (hasRoadDst) {
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 2);
+				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, roadDst$field);
 			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
@@ -85,7 +80,7 @@ package org.shell.mmo.sample.message.proto {
 		 */
 		override com.netease.protobuf.used_by_generated_code final function readFromSlice(input:flash.utils.IDataInput, bytesAfterSlice:uint):void {
 			var country$count:uint = 0;
-			var road$count:uint = 0;
+			var roadDst$count:uint = 0;
 			while (input.bytesAvailable > bytesAfterSlice) {
 				var tag:uint = com.netease.protobuf.ReadUtils.read_TYPE_UINT32(input);
 				switch (tag >> 3) {
@@ -94,14 +89,16 @@ package org.shell.mmo.sample.message.proto {
 						throw new flash.errors.IOError('Bad data format: ReqCatanSet.country cannot be set twice.');
 					}
 					++country$count;
-					this.country = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					this.country = new org.shell.mmo.sample.message.proto.Position();
+					com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, this.country);
 					break;
 				case 2:
-					if (road$count != 0) {
-						throw new flash.errors.IOError('Bad data format: ReqCatanSet.road cannot be set twice.');
+					if (roadDst$count != 0) {
+						throw new flash.errors.IOError('Bad data format: ReqCatanSet.roadDst cannot be set twice.');
 					}
-					++road$count;
-					this.road = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					++roadDst$count;
+					this.roadDst = new org.shell.mmo.sample.message.proto.Position();
+					com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, this.roadDst);
 					break;
 				default:
 					super.readUnknown(input, tag);

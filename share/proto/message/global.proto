@@ -44,6 +44,11 @@ message CatanMasterResource {
     optional fixed64 id = 1; // 玩家id
     repeated CatanResource resource = 2; // 资源
 }
+// 卡坦岛发展卡
+message CatanCard {
+    optional CatanCardType type = 1; // 类型
+    optional int32 count = 2; // 数量
+}
 // 卡坦岛地图信息
 message CatanMap {
     repeated CatanGrid grid = 1; // 格子信息
@@ -51,6 +56,7 @@ message CatanMap {
     repeated CatanCountry country = 3; // 村庄信息
     repeated CatanRoad road = 4; // 道路信息
     repeated CatanPort port = 5; // 港口信息
+    optional Position robber = 6; // 强盗坐标
 }
 // 卡坦岛港口信息
 message CatanPort {
@@ -111,6 +117,27 @@ enum Error {
     TABLE_PWD_ERROR = 21; // 桌子[密码错误]
     TABLE_READY = 22; // 桌子[已经准备]
     CATAN_MAP_ILLEGAL = 23; // 卡坦岛[地图非法]
+    CATAN_ROUND_NULL = 24; // 卡坦岛[回合不存在]
+    CATAN_NOT_INIT_ROUND = 25; // 卡坦岛[不是初始化回合]
+    CATAN_NOT_MY_ROUND = 26; // 卡坦岛[不是我的回合]
+    CATAN_ILLEGAL_COUNTRY = 27; // 卡坦岛[村庄位置非法]
+    CATAN_ILLEGAL_ROAD = 28; // 卡坦岛[道路位置非法]
+    CATAN_NOT_COMMON_ROUND = 29; // 卡坦岛[不是普通回合]
+    CATAN_ILLEGAL_CITY = 30; // 卡坦岛[城市位置非法]
+    CATAN_RESOURCE_NOT_ENOUGH = 31; // 卡坦岛[资源不足]
+    CATAN_TRADE_SYSTEM = 32; // 卡坦岛[系统交易参数错误]
+    CATAN_CAN_NOT_ROB = 33; // 卡坦岛[不能抢夺]
+    CATAN_CAN_NOT_USE = 34; // 卡坦岛[本轮不能使用发展卡了]
+    CATAN_NO_CARD = 35; // 卡坦岛[没有该类型发展卡]
+    CATAN_PARAM_ERROR = 36; // 卡坦岛[参数错误]
+    CATAN_NOT_FOLD_ROUND = 37; // 卡坦岛[不是弃牌回合]
+    CATAN_FOLD_ALREADY = 38; // 卡坦岛[已经弃牌了]
+    CATAN_TRADE_NULL = 39; // 卡坦岛[交易不存在]
+    CATAN_TRADE_TARGET_ERROR = 40; // 卡坦岛[交易目标错误]
+    CATAN_TRADE_OFFER_ERROR = 41; // 卡坦岛[提供的资源错误]
+    CATAN_TRADE_WANT_ERROR = 42; // 卡坦岛[需求的资源错误]
+    CATAN_TRADE_ERROR = 43; // 卡坦岛[交易错误]
+    CATAN_TRADE_COUNTERED = 44; // 卡坦岛[已经还价了]
 }
 // 桌子类型
 enum RoomType {
@@ -129,6 +156,14 @@ enum CatanResourceType {
     RESOURCE_WOOL = 3; // 羊毛
     RESOURCE_GAIN = 4; // 粮食
     RESOURCE_ORE = 5; // 矿石
+}
+// 卡坦岛发展卡类型
+enum CatanCardType {
+    CARD_KNIGHT = 1; // 骑士卡
+    CARD_MONOPOLY = 2; // 垄断卡
+    CARD_RICH = 3; // 丰收卡
+    CARD_ROAD = 4; // 道路卡
+    CARD_POINT = 5; // 点数卡
 }
 // 卡坦岛港口类型
 enum CatanPortType {

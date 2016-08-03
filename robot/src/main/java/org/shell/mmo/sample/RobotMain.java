@@ -23,7 +23,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Created by zhangxiangxi on 16/7/21.
  */
 public class RobotMain {
-    private static final AtomicInteger index = new AtomicInteger(2);
+    private static final AtomicInteger index = new AtomicInteger(4);
     public static void main(String[] args) throws Exception {
         Injector injector = Guice.createInjector(Stage.DEVELOPMENT);
 

@@ -7,7 +7,7 @@ package org.shell.mmo.sample.message.proto {
 	import flash.utils.IDataOutput;
 	import flash.utils.IExternalizable;
 	import flash.errors.IOError;
-	import org.shell.mmo.sample.message.proto.CatanResource;
+	import org.shell.mmo.sample.message.proto.CatanResourceType;
 	// @@protoc_insertion_point(imports)
 
 	// @@protoc_insertion_point(class_metadata)
@@ -15,9 +15,9 @@ package org.shell.mmo.sample.message.proto {
 		/**
 		 *  @private
 		 */
-		public static const RESOURCE:RepeatedFieldDescriptor_TYPE_MESSAGE = new RepeatedFieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.message.proto.ReqCatanRichCard.resource", "resource", (1 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.message.proto.CatanResource; });
+		public static const RESOURCE:RepeatedFieldDescriptor_TYPE_ENUM = new RepeatedFieldDescriptor_TYPE_ENUM("org.shell.mmo.sample.message.proto.ReqCatanRichCard.resource", "resource", (1 << 3) | com.netease.protobuf.WireType.VARINT, org.shell.mmo.sample.message.proto.CatanResourceType);
 
-		[ArrayElementType("org.shell.mmo.sample.message.proto.CatanResource")]
+		[ArrayElementType("int")]
 		public var resource:Array = [];
 
 		/**
@@ -25,8 +25,8 @@ package org.shell.mmo.sample.message.proto {
 		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
 			for (var resource$index:uint = 0; resource$index < this.resource.length; ++resource$index) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 1);
-				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, this.resource[resource$index]);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
+				com.netease.protobuf.WriteUtils.write_TYPE_ENUM(output, this.resource[resource$index]);
 			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
@@ -41,7 +41,11 @@ package org.shell.mmo.sample.message.proto {
 				var tag:uint = com.netease.protobuf.ReadUtils.read_TYPE_UINT32(input);
 				switch (tag >> 3) {
 				case 1:
-					this.resource.push(com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, new org.shell.mmo.sample.message.proto.CatanResource()));
+					if ((tag & 7) == com.netease.protobuf.WireType.LENGTH_DELIMITED) {
+						com.netease.protobuf.ReadUtils.readPackedRepeated(input, com.netease.protobuf.ReadUtils.read_TYPE_ENUM, this.resource);
+						break;
+					}
+					this.resource.push(com.netease.protobuf.ReadUtils.read_TYPE_ENUM(input));
 					break;
 				default:
 					super.readUnknown(input, tag);

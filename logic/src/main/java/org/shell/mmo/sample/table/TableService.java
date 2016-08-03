@@ -8,6 +8,7 @@ import com.shell.mmo.utils.thread.DisruptorWorker;
 import com.shell.mmo.utils.thread.Worker;
 import org.shell.mmo.sample.account.Account;
 import org.shell.mmo.sample.account.AccountService;
+import org.shell.mmo.sample.catan.Catan;
 import org.shell.mmo.sample.catan.CatanService;
 import org.shell.mmo.sample.message.proto.Global;
 import org.shell.mmo.sample.message.proto.LogicClient;
@@ -15,6 +16,8 @@ import org.shell.mmo.sample.room.Room;
 import org.shell.mmo.sample.room.RoomService;
 
 import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Created by zhangxiangxi on 16/7/30.
@@ -22,13 +25,7 @@ import java.util.Map;
 @Singleton
 public class TableService {
     private final Worker[] workers;
-
-    public TableService() throws Exception {
-        this.workers = DisruptorWorker.createGroup("table-worker", 16 * 1024, Thread.MAX_PRIORITY, Runtime.getRuntime().availableProcessors());
-        for (int i = 0; i < this.workers.length; ++i) {
-            ((DisruptorWorker)this.workers[i]).setKey(i);
-        }
-    }
+    private final Timer timer;
 
     @Inject
     RoomService roomService;
@@ -36,6 +33,31 @@ public class TableService {
     AccountService accountService;
     @Inject
     CatanService catanService;
+
+    public TableService() throws Exception {
+        this.workers = DisruptorWorker.createGroup("table-worker", 16 * 1024, Thread.MAX_PRIORITY, Runtime.getRuntime().availableProcessors());
+        for (int i = 0; i < this.workers.length; ++i) {
+            ((DisruptorWorker)this.workers[i]).setKey(i);
+        }
+
+        timer = new Timer("table-timer");
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                for (Room room : roomService.all()) {
+                    worker(roomService.id(room)).execute(() -> timer(room));
+                }
+            }
+        }, 10000, 1000);
+    }
+
+    private void timer(Room room) {
+        if (roomService.type(room) == Global.RoomType.ROOM_CATAN) {
+            for (Table table : roomService.all(room)) {
+                catanService.timer(table.catan);
+            }
+        }
+    }
 
     public Global.GameTable.Builder build(Table table) {
         Global.GameTable.Builder builder = Global.GameTable.newBuilder();
@@ -164,5 +186,9 @@ public class TableService {
 
     public Map<Long, Table.TableRole> masters(Table table) {
         return table.masters;
+    }
+
+    public Catan catan(Table table) {
+        return table.catan;
     }
 }

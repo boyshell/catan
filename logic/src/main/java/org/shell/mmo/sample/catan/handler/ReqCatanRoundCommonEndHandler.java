@@ -1,12 +1,24 @@
 package org.shell.mmo.sample.catan.handler;
 
-import org.shell.mmo.sample.message.proto.LogicClient;
+import com.google.inject.Inject;
+import com.shell.mmo.utils.net.NetUtil;
+import org.shell.mmo.sample.catan.CatanService;
+import org.shell.mmo.sample.message.proto.Global;
 import org.shell.mmo.sample.message.proto.Global.Module;
+import org.shell.mmo.sample.message.proto.LogicClient;
 
 public class ReqCatanRoundCommonEndHandler extends org.shell.mmo.sample.catan.CatanMessageHandler<LogicClient.ReqCatanRoundCommonEnd> {
+    @Inject
+    CatanService catanService;
+
     @Override
     protected void execute(LogicClient.ReqCatanRoundCommonEnd message) {
-        // TODO
+        Global.Error error = catanService.commonRoundCheck(catan, account);
+        if (error != null) {
+            NetUtil.write(channel, error(error));
+            return;
+        }
+        catan.getRound().end();
     }
 
     @Override

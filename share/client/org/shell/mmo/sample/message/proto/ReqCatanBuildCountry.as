@@ -7,6 +7,7 @@ package org.shell.mmo.sample.message.proto {
 	import flash.utils.IDataOutput;
 	import flash.utils.IExternalizable;
 	import flash.errors.IOError;
+	import org.shell.mmo.sample.message.proto.Position;
 	// @@protoc_insertion_point(imports)
 
 	// @@protoc_insertion_point(class_metadata)
@@ -14,27 +15,23 @@ package org.shell.mmo.sample.message.proto {
 		/**
 		 *  @private
 		 */
-		public static const COUNTRY:FieldDescriptor_TYPE_INT32 = new FieldDescriptor_TYPE_INT32("org.shell.mmo.sample.message.proto.ReqCatanBuildCountry.country", "country", (1 << 3) | com.netease.protobuf.WireType.VARINT);
+		public static const COUNTRY:FieldDescriptor_TYPE_MESSAGE = new FieldDescriptor_TYPE_MESSAGE("org.shell.mmo.sample.message.proto.ReqCatanBuildCountry.country", "country", (1 << 3) | com.netease.protobuf.WireType.LENGTH_DELIMITED, function():Class { return org.shell.mmo.sample.message.proto.Position; });
 
-		private var country$field:int;
-
-		private var hasField$0:uint = 0;
+		private var country$field:org.shell.mmo.sample.message.proto.Position;
 
 		public function clearCountry():void {
-			hasField$0 &= 0xfffffffe;
-			country$field = new int();
+			country$field = null;
 		}
 
 		public function get hasCountry():Boolean {
-			return (hasField$0 & 0x1) != 0;
+			return country$field != null;
 		}
 
-		public function set country(value:int):void {
-			hasField$0 |= 0x1;
+		public function set country(value:org.shell.mmo.sample.message.proto.Position):void {
 			country$field = value;
 		}
 
-		public function get country():int {
+		public function get country():org.shell.mmo.sample.message.proto.Position {
 			return country$field;
 		}
 
@@ -43,8 +40,8 @@ package org.shell.mmo.sample.message.proto {
 		 */
 		override com.netease.protobuf.used_by_generated_code final function writeToBuffer(output:com.netease.protobuf.WritingBuffer):void {
 			if (hasCountry) {
-				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.VARINT, 1);
-				com.netease.protobuf.WriteUtils.write_TYPE_INT32(output, country$field);
+				com.netease.protobuf.WriteUtils.writeTag(output, com.netease.protobuf.WireType.LENGTH_DELIMITED, 1);
+				com.netease.protobuf.WriteUtils.write_TYPE_MESSAGE(output, country$field);
 			}
 			for (var fieldKey:* in this) {
 				super.writeUnknown(output, fieldKey);
@@ -64,7 +61,8 @@ package org.shell.mmo.sample.message.proto {
 						throw new flash.errors.IOError('Bad data format: ReqCatanBuildCountry.country cannot be set twice.');
 					}
 					++country$count;
-					this.country = com.netease.protobuf.ReadUtils.read_TYPE_INT32(input);
+					this.country = new org.shell.mmo.sample.message.proto.Position();
+					com.netease.protobuf.ReadUtils.read_TYPE_MESSAGE(input, this.country);
 					break;
 				default:
 					super.readUnknown(input, tag);
