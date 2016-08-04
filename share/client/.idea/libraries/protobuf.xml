@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="protobuf" type="flex">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../bin/protobuf.swc!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
