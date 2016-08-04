@@ -22,5 +22,11 @@
                 <field type="string" name="host" desc="顶号者的主机地址" index="1"/>
             </params>
         </api>
+
+        <api name="Config" desc="加载配置" invoke="logic" provide="client">
+            <params>
+                <field type="bytes" name="data" desc="对应proto:ContainerGroup" index="1"/>
+            </params>
+        </api>
     </apis>
 </root>

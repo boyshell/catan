@@ -3,6 +3,7 @@ package org.shell.mmo.sample.message {
     import org.shell.mmo.sample.message.proto.ReqLoginLogin;
     import org.shell.mmo.sample.message.proto.ResLoginLogin;
     import org.shell.mmo.sample.message.proto.ReqLoginReplace;
+    import org.shell.mmo.sample.message.proto.ReqLoginConfig;
     import org.shell.mmo.sample.message.proto.ReqRoleCreateRole;
     import org.shell.mmo.sample.message.proto.ResRoleCreateRole;
     import org.shell.mmo.sample.message.proto.ReqRoomEnter;
@@ -100,6 +101,7 @@ package org.shell.mmo.sample.message {
             this.add(257, ReqLoginLogin);
             this.add(256, ResLoginLogin);
             this.add(259, ReqLoginReplace);
+            this.add(261, ReqLoginConfig);
             this.add(513, ReqRoleCreateRole);
             this.add(512, ResRoleCreateRole);
             this.add(769, ReqRoomEnter);

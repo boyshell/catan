@@ -18,6 +18,7 @@ public class ClientMessageGroup {
         builder.put((short)257, org.shell.mmo.sample.message.proto.LogicClient.ReqLoginLogin.PARSER);
         builder.put((short)256, org.shell.mmo.sample.message.proto.LogicClient.ResLoginLogin.PARSER);
         builder.put((short)259, org.shell.mmo.sample.message.proto.LogicClient.ReqLoginReplace.PARSER);
+        builder.put((short)261, org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig.PARSER);
         builder.put((short)513, org.shell.mmo.sample.message.proto.LogicClient.ReqRoleCreateRole.PARSER);
         builder.put((short)512, org.shell.mmo.sample.message.proto.LogicClient.ResRoleCreateRole.PARSER);
         builder.put((short)769, org.shell.mmo.sample.message.proto.LogicClient.ReqRoomEnter.PARSER);

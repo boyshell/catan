@@ -6,17 +6,16 @@ import com.google.inject.Injector;
 import com.google.inject.Stage;
 import com.google.protobuf.MessageLite;
 import com.google.protobuf.Parser;
-import com.shell.mmo.utils.net.Adaptor;
-import com.shell.mmo.utils.net.Decoder;
-import com.shell.mmo.utils.net.Encoder;
-import com.shell.mmo.utils.net.Server;
+import com.shell.mmo.utils.net.*;
 import com.shell.mmo.utils.net.message.MessageHandler;
 import io.netty.channel.Channel;
 import org.shell.mmo.sample.account.Account;
+import org.shell.mmo.sample.config.proto.Config;
 import org.shell.mmo.sample.guice.PostConstructModule;
 import org.shell.mmo.sample.message.ChannelAttributeKey;
 import org.shell.mmo.sample.message.ClientHandlerGroup;
 import org.shell.mmo.sample.message.ClientMessageGroup;
+import org.shell.mmo.sample.message.proto.LogicClient;
 import org.shell.mmo.sample.room.RoomService;
 
 import java.io.File;
@@ -45,7 +44,9 @@ public class LogicMain {
                 }, new Adaptor.ChannelEventHandler() {
                     @Override
                     public void handler(Channel channel) throws Exception {
-                        // TODO active
+                        // TODO 测试阶段有效
+                        Config.ContainerGroup instance = injector.getInstance(Config.ContainerGroup.class);
+                        NetUtil.write(channel, LogicClient.ReqLoginConfig.newBuilder().setData(instance.toByteString()));
                     }
                 }, new Adaptor.ChannelEventHandler() {
                     @Override

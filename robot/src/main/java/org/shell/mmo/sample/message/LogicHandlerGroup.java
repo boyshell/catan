@@ -14,6 +14,7 @@ public class LogicHandlerGroup {
         Map<Parser<? extends MessageLite>, Class<? extends com.shell.mmo.utils.net.message.MessageHandler>> map = new HashMap<>();
         map.put(org.shell.mmo.sample.message.proto.LogicClient.ResLoginLogin.PARSER, org.shell.mmo.sample.login.handler.ResLoginLoginHandler.class);
         map.put(org.shell.mmo.sample.message.proto.LogicClient.ReqLoginReplace.PARSER, org.shell.mmo.sample.login.handler.ReqLoginReplaceHandler.class);
+        map.put(org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig.PARSER, org.shell.mmo.sample.login.handler.ReqLoginConfigHandler.class);
         map.put(org.shell.mmo.sample.message.proto.LogicClient.ResRoleCreateRole.PARSER, org.shell.mmo.sample.role.handler.ResRoleCreateRoleHandler.class);
         map.put(org.shell.mmo.sample.message.proto.LogicClient.ResRoomEnter.PARSER, org.shell.mmo.sample.room.handler.ResRoomEnterHandler.class);
         map.put(org.shell.mmo.sample.message.proto.LogicClient.ResRoomExit.PARSER, org.shell.mmo.sample.room.handler.ResRoomExitHandler.class);

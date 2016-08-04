@@ -2641,6 +2641,446 @@ public final class LogicClient {
     // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.ReqLoginReplace)
   }
 
+  public interface ReqLoginConfigOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.ReqLoginConfig)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional bytes data = 1;</code>
+     *
+     * <pre>
+     * 对应proto:ContainerGroup
+     * </pre>
+     */
+    boolean hasData();
+    /**
+     * <code>optional bytes data = 1;</code>
+     *
+     * <pre>
+     * 对应proto:ContainerGroup
+     * </pre>
+     */
+    com.google.protobuf.ByteString getData();
+  }
+  /**
+   * Protobuf type {@code org.shell.mmo.sample.message.proto.ReqLoginConfig}
+   *
+   * <pre>
+   * 加载配置:参数
+   * </pre>
+   */
+  public static final class ReqLoginConfig extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:org.shell.mmo.sample.message.proto.ReqLoginConfig)
+      ReqLoginConfigOrBuilder {
+    // Use ReqLoginConfig.newBuilder() to construct.
+    private ReqLoginConfig(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private ReqLoginConfig(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final ReqLoginConfig defaultInstance;
+    public static ReqLoginConfig getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public ReqLoginConfig getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ReqLoginConfig(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              data_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.shell.mmo.sample.message.proto.LogicClient.internal_static_org_shell_mmo_sample_message_proto_ReqLoginConfig_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.shell.mmo.sample.message.proto.LogicClient.internal_static_org_shell_mmo_sample_message_proto_ReqLoginConfig_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig.class, org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<ReqLoginConfig> PARSER =
+        new com.google.protobuf.AbstractParser<ReqLoginConfig>() {
+      public ReqLoginConfig parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ReqLoginConfig(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ReqLoginConfig> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int DATA_FIELD_NUMBER = 1;
+    private com.google.protobuf.ByteString data_;
+    /**
+     * <code>optional bytes data = 1;</code>
+     *
+     * <pre>
+     * 对应proto:ContainerGroup
+     * </pre>
+     */
+    public boolean hasData() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional bytes data = 1;</code>
+     *
+     * <pre>
+     * 对应proto:ContainerGroup
+     * </pre>
+     */
+    public com.google.protobuf.ByteString getData() {
+      return data_;
+    }
+
+    private void initFields() {
+      data_ = com.google.protobuf.ByteString.EMPTY;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, data_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, data_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code org.shell.mmo.sample.message.proto.ReqLoginConfig}
+     *
+     * <pre>
+     * 加载配置:参数
+     * </pre>
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:org.shell.mmo.sample.message.proto.ReqLoginConfig)
+        org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfigOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.shell.mmo.sample.message.proto.LogicClient.internal_static_org_shell_mmo_sample_message_proto_ReqLoginConfig_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.shell.mmo.sample.message.proto.LogicClient.internal_static_org_shell_mmo_sample_message_proto_ReqLoginConfig_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig.class, org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig.Builder.class);
+      }
+
+      // Construct using org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        data_ = com.google.protobuf.ByteString.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.shell.mmo.sample.message.proto.LogicClient.internal_static_org_shell_mmo_sample_message_proto_ReqLoginConfig_descriptor;
+      }
+
+      public org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig getDefaultInstanceForType() {
+        return org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig.getDefaultInstance();
+      }
+
+      public org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig build() {
+        org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig buildPartial() {
+        org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig result = new org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.data_ = data_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig) {
+          return mergeFrom((org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig other) {
+        if (other == org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig.getDefaultInstance()) return this;
+        if (other.hasData()) {
+          setData(other.getData());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (org.shell.mmo.sample.message.proto.LogicClient.ReqLoginConfig) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private com.google.protobuf.ByteString data_ = com.google.protobuf.ByteString.EMPTY;
+      /**
+       * <code>optional bytes data = 1;</code>
+       *
+       * <pre>
+       * 对应proto:ContainerGroup
+       * </pre>
+       */
+      public boolean hasData() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional bytes data = 1;</code>
+       *
+       * <pre>
+       * 对应proto:ContainerGroup
+       * </pre>
+       */
+      public com.google.protobuf.ByteString getData() {
+        return data_;
+      }
+      /**
+       * <code>optional bytes data = 1;</code>
+       *
+       * <pre>
+       * 对应proto:ContainerGroup
+       * </pre>
+       */
+      public Builder setData(com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        data_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bytes data = 1;</code>
+       *
+       * <pre>
+       * 对应proto:ContainerGroup
+       * </pre>
+       */
+      public Builder clearData() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        data_ = getDefaultInstance().getData();
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:org.shell.mmo.sample.message.proto.ReqLoginConfig)
+    }
+
+    static {
+      defaultInstance = new ReqLoginConfig(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:org.shell.mmo.sample.message.proto.ReqLoginConfig)
+  }
+
   public interface ReqRoleCreateRoleOrBuilder extends
       // @@protoc_insertion_point(interface_extends:org.shell.mmo.sample.message.proto.ReqRoleCreateRole)
       com.google.protobuf.MessageOrBuilder {
@@ -50032,6 +50472,11 @@ public final class LogicClient {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_org_shell_mmo_sample_message_proto_ReqLoginReplace_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_shell_mmo_sample_message_proto_ReqLoginConfig_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_shell_mmo_sample_message_proto_ReqLoginConfig_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_org_shell_mmo_sample_message_proto_ReqRoleCreateRole_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -50360,183 +50805,184 @@ public final class LogicClient {
       "message.proto.Error\022B\n\nleaderRole\030\002 \001(\0132" +
       "..org.shell.mmo.sample.message.proto.Lea" +
       "derRole\022\n\n\002id\030\003 \001(\006\022\014\n\004gold\030\004 \001(\005\"\037\n\017Req",
-      "LoginReplace\022\014\n\004host\030\001 \001(\t\"!\n\021ReqRoleCre" +
-      "ateRole\022\014\n\004name\030\001 \001(\t\"\221\001\n\021ResRoleCreateR" +
-      "ole\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sampl" +
-      "e.message.proto.Error\022B\n\nleaderRole\030\002 \001(" +
-      "\0132..org.shell.mmo.sample.message.proto.L" +
-      "eaderRole\"\032\n\014ReqRoomEnter\022\n\n\002id\030\001 \001(\005\"\222\001" +
-      "\n\014ResRoomEnter\0228\n\005error\030\001 \001(\0162).org.shel" +
-      "l.mmo.sample.message.proto.Error\022\n\n\002id\030\002" +
-      " \001(\005\022<\n\005table\030\003 \003(\0132-.org.shell.mmo.samp" +
-      "le.message.proto.GameTable\"\r\n\013ReqRoomExi",
-      "t\"G\n\013ResRoomExit\0228\n\005error\030\001 \001(\0162).org.sh" +
-      "ell.mmo.sample.message.proto.Error\"H\n\nRe" +
-      "qRoomAll\022:\n\004room\030\001 \003(\0132,.org.shell.mmo.s" +
-      "ample.message.proto.GameRoom\"*\n\rReqRoomU" +
-      "pdate\022\n\n\002id\030\001 \001(\005\022\r\n\005count\030\002 \001(\005\"8\n\016ReqT" +
-      "ableCreate\022\014\n\004name\030\001 \001(\t\022\013\n\003pwd\030\002 \001(\t\022\013\n" +
-      "\003map\030\003 \001(\005\"c\n\016ResTableCreate\0228\n\005error\030\001 " +
-      "\001(\0162).org.shell.mmo.sample.message.proto" +
-      ".Error\022\n\n\002id\030\002 \001(\005\022\013\n\003map\030\003 \001(\005\"K\n\013ReqTa" +
-      "bleAdd\022<\n\005table\030\001 \001(\0132-.org.shell.mmo.sa",
-      "mple.message.proto.GameTable\"\'\n\014ReqTable" +
-      "Join\022\n\n\002id\030\001 \001(\005\022\013\n\003pwd\030\002 \001(\t\"\240\001\n\014ResTab" +
-      "leJoin\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sa" +
-      "mple.message.proto.Error\022\n\n\002id\030\002 \001(\005\022\013\n\003" +
-      "map\030\003 \001(\005\022=\n\006master\030\004 \003(\0132-.org.shell.mm" +
-      "o.sample.message.proto.TableRole\":\n\016ReqT" +
-      "ableUpdate\022\n\n\002id\030\001 \001(\005\022\r\n\005count\030\002 \001(\005\022\r\n" +
-      "\005start\030\003 \001(\010\"\016\n\014ReqTableExit\"T\n\014ResTable" +
-      "Exit\0228\n\005error\030\001 \001(\0162).org.shell.mmo.samp" +
-      "le.message.proto.Error\022\n\n\002id\030\002 \001(\006\"\034\n\016Re",
-      "qTableRemove\022\n\n\002id\030\001 \001(\005\"\017\n\rReqTableRead" +
-      "y\"U\n\rResTableReady\0228\n\005error\030\001 \001(\0162).org." +
-      "shell.mmo.sample.message.proto.Error\022\n\n\002" +
-      "id\030\002 \001(\006\"J\n\rReqCatanStart\0229\n\003map\030\001 \001(\0132," +
+      "LoginReplace\022\014\n\004host\030\001 \001(\t\"\036\n\016ReqLoginCo" +
+      "nfig\022\014\n\004data\030\001 \001(\014\"!\n\021ReqRoleCreateRole\022" +
+      "\014\n\004name\030\001 \001(\t\"\221\001\n\021ResRoleCreateRole\0228\n\005e" +
+      "rror\030\001 \001(\0162).org.shell.mmo.sample.messag" +
+      "e.proto.Error\022B\n\nleaderRole\030\002 \001(\0132..org." +
+      "shell.mmo.sample.message.proto.LeaderRol" +
+      "e\"\032\n\014ReqRoomEnter\022\n\n\002id\030\001 \001(\005\"\222\001\n\014ResRoo" +
+      "mEnter\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sa" +
+      "mple.message.proto.Error\022\n\n\002id\030\002 \001(\005\022<\n\005" +
+      "table\030\003 \003(\0132-.org.shell.mmo.sample.messa",
+      "ge.proto.GameTable\"\r\n\013ReqRoomExit\"G\n\013Res" +
+      "RoomExit\0228\n\005error\030\001 \001(\0162).org.shell.mmo." +
+      "sample.message.proto.Error\"H\n\nReqRoomAll" +
+      "\022:\n\004room\030\001 \003(\0132,.org.shell.mmo.sample.me" +
+      "ssage.proto.GameRoom\"*\n\rReqRoomUpdate\022\n\n" +
+      "\002id\030\001 \001(\005\022\r\n\005count\030\002 \001(\005\"8\n\016ReqTableCrea" +
+      "te\022\014\n\004name\030\001 \001(\t\022\013\n\003pwd\030\002 \001(\t\022\013\n\003map\030\003 \001" +
+      "(\005\"c\n\016ResTableCreate\0228\n\005error\030\001 \001(\0162).or" +
+      "g.shell.mmo.sample.message.proto.Error\022\n" +
+      "\n\002id\030\002 \001(\005\022\013\n\003map\030\003 \001(\005\"K\n\013ReqTableAdd\022<",
+      "\n\005table\030\001 \001(\0132-.org.shell.mmo.sample.mes" +
+      "sage.proto.GameTable\"\'\n\014ReqTableJoin\022\n\n\002" +
+      "id\030\001 \001(\005\022\013\n\003pwd\030\002 \001(\t\"\240\001\n\014ResTableJoin\0228" +
+      "\n\005error\030\001 \001(\0162).org.shell.mmo.sample.mes" +
+      "sage.proto.Error\022\n\n\002id\030\002 \001(\005\022\013\n\003map\030\003 \001(" +
+      "\005\022=\n\006master\030\004 \003(\0132-.org.shell.mmo.sample" +
+      ".message.proto.TableRole\":\n\016ReqTableUpda" +
+      "te\022\n\n\002id\030\001 \001(\005\022\r\n\005count\030\002 \001(\005\022\r\n\005start\030\003" +
+      " \001(\010\"\016\n\014ReqTableExit\"T\n\014ResTableExit\0228\n\005" +
+      "error\030\001 \001(\0162).org.shell.mmo.sample.messa",
+      "ge.proto.Error\022\n\n\002id\030\002 \001(\006\"\034\n\016ReqTableRe" +
+      "move\022\n\n\002id\030\001 \001(\005\"\017\n\rReqTableReady\"U\n\rRes" +
+      "TableReady\0228\n\005error\030\001 \001(\0162).org.shell.mm" +
+      "o.sample.message.proto.Error\022\n\n\002id\030\002 \001(\006" +
+      "\"J\n\rReqCatanStart\0229\n\003map\030\001 \001(\0132,.org.she" +
+      "ll.mmo.sample.message.proto.CatanMap\"4\n\026" +
+      "ReqCatanRoundInitStart\022\n\n\002id\030\001 \001(\006\022\016\n\006re" +
+      "main\030\002 \001(\005\"\213\001\n\013ReqCatanSet\022=\n\007country\030\001 " +
+      "\001(\0132,.org.shell.mmo.sample.message.proto" +
+      ".Position\022=\n\007roadDst\030\002 \001(\0132,.org.shell.m",
+      "mo.sample.message.proto.Position\"\226\002\n\013Res" +
+      "CatanSet\0228\n\005error\030\001 \001(\0162).org.shell.mmo." +
+      "sample.message.proto.Error\022\n\n\002id\030\002 \001(\006\022=" +
+      "\n\007country\030\003 \001(\0132,.org.shell.mmo.sample.m" +
+      "essage.proto.Position\022=\n\007roadDst\030\004 \001(\0132," +
+      ".org.shell.mmo.sample.message.proto.Posi" +
+      "tion\022C\n\010resource\030\005 \003(\01321.org.shell.mmo.s" +
+      "ample.message.proto.CatanResource\"\213\001\n\030Re" +
+      "qCatanRoundCommonStart\022\n\n\002id\030\001 \001(\006\022\016\n\006re" +
+      "main\030\002 \001(\005\022\014\n\004dice\030\003 \001(\005\022E\n\004gain\030\004 \003(\01327",
       ".org.shell.mmo.sample.message.proto.Cata" +
-      "nMap\"4\n\026ReqCatanRoundInitStart\022\n\n\002id\030\001 \001" +
-      "(\006\022\016\n\006remain\030\002 \001(\005\"\213\001\n\013ReqCatanSet\022=\n\007co" +
-      "untry\030\001 \001(\0132,.org.shell.mmo.sample.messa" +
-      "ge.proto.Position\022=\n\007roadDst\030\002 \001(\0132,.org" +
-      ".shell.mmo.sample.message.proto.Position",
-      "\"\226\002\n\013ResCatanSet\0228\n\005error\030\001 \001(\0162).org.sh" +
-      "ell.mmo.sample.message.proto.Error\022\n\n\002id" +
-      "\030\002 \001(\006\022=\n\007country\030\003 \001(\0132,.org.shell.mmo." +
-      "sample.message.proto.Position\022=\n\007roadDst" +
-      "\030\004 \001(\0132,.org.shell.mmo.sample.message.pr" +
-      "oto.Position\022C\n\010resource\030\005 \003(\01321.org.she" +
-      "ll.mmo.sample.message.proto.CatanResourc" +
-      "e\"\213\001\n\030ReqCatanRoundCommonStart\022\n\n\002id\030\001 \001" +
-      "(\006\022\016\n\006remain\030\002 \001(\005\022\014\n\004dice\030\003 \001(\005\022E\n\004gain" +
-      "\030\004 \003(\01327.org.shell.mmo.sample.message.pr",
-      "oto.CatanMasterResource\"\030\n\026ReqCatanRound" +
-      "CommonEnd\"R\n\026ResCatanRoundCommonEnd\0228\n\005e" +
-      "rror\030\001 \001(\0162).org.shell.mmo.sample.messag" +
-      "e.proto.Error\"\211\001\n\021ReqCatanBuildRoad\0229\n\003s" +
-      "rc\030\001 \001(\0132,.org.shell.mmo.sample.message." +
-      "proto.Position\0229\n\003dst\030\002 \001(\0132,.org.shell." +
-      "mmo.sample.message.proto.Position\"\317\001\n\021Re" +
-      "sCatanBuildRoad\0228\n\005error\030\001 \001(\0162).org.she" +
-      "ll.mmo.sample.message.proto.Error\022\n\n\002id\030" +
-      "\002 \001(\006\0229\n\003src\030\003 \001(\0132,.org.shell.mmo.sampl",
-      "e.message.proto.Position\0229\n\003dst\030\004 \001(\0132,." +
-      "org.shell.mmo.sample.message.proto.Posit" +
-      "ion\"U\n\024ReqCatanBuildCountry\022=\n\007country\030\001" +
-      " \001(\0132,.org.shell.mmo.sample.message.prot" +
-      "o.Position\"\233\001\n\024ResCatanBuildCountry\0228\n\005e" +
-      "rror\030\001 \001(\0162).org.shell.mmo.sample.messag" +
-      "e.proto.Error\022\n\n\002id\030\002 \001(\006\022=\n\007country\030\003 \001" +
-      "(\0132,.org.shell.mmo.sample.message.proto." +
-      "Position\"O\n\021ReqCatanBuildCity\022:\n\004city\030\001 " +
-      "\001(\0132,.org.shell.mmo.sample.message.proto",
-      ".Position\"\225\001\n\021ResCatanBuildCity\0228\n\005error" +
-      "\030\001 \001(\0162).org.shell.mmo.sample.message.pr" +
-      "oto.Error\022\n\n\002id\030\002 \001(\006\022:\n\004city\030\003 \001(\0132,.or" +
+      "nMasterResource\"\030\n\026ReqCatanRoundCommonEn" +
+      "d\"R\n\026ResCatanRoundCommonEnd\0228\n\005error\030\001 \001" +
+      "(\0162).org.shell.mmo.sample.message.proto." +
+      "Error\"\211\001\n\021ReqCatanBuildRoad\0229\n\003src\030\001 \001(\013" +
+      "2,.org.shell.mmo.sample.message.proto.Po" +
+      "sition\0229\n\003dst\030\002 \001(\0132,.org.shell.mmo.samp" +
+      "le.message.proto.Position\"\317\001\n\021ResCatanBu" +
+      "ildRoad\0228\n\005error\030\001 \001(\0162).org.shell.mmo.s" +
+      "ample.message.proto.Error\022\n\n\002id\030\002 \001(\006\0229\n",
+      "\003src\030\003 \001(\0132,.org.shell.mmo.sample.messag" +
+      "e.proto.Position\0229\n\003dst\030\004 \001(\0132,.org.shel" +
+      "l.mmo.sample.message.proto.Position\"U\n\024R" +
+      "eqCatanBuildCountry\022=\n\007country\030\001 \001(\0132,.o" +
+      "rg.shell.mmo.sample.message.proto.Positi" +
+      "on\"\233\001\n\024ResCatanBuildCountry\0228\n\005error\030\001 \001" +
+      "(\0162).org.shell.mmo.sample.message.proto." +
+      "Error\022\n\n\002id\030\002 \001(\006\022=\n\007country\030\003 \001(\0132,.org" +
+      ".shell.mmo.sample.message.proto.Position" +
+      "\"O\n\021ReqCatanBuildCity\022:\n\004city\030\001 \001(\0132,.or",
       "g.shell.mmo.sample.message.proto.Positio" +
-      "n\"-\n\034ReqCatanBuildDevelopmentCard\022\r\n\005cou" +
-      "nt\030\001 \001(\005\"\241\001\n\034ResCatanBuildDevelopmentCar" +
-      "d\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sample." +
-      "message.proto.Error\022\n\n\002id\030\002 \001(\006\022;\n\004card\030" +
-      "\003 \003(\0132-.org.shell.mmo.sample.message.pro" +
-      "to.CatanCard\"\230\001\n\023ReqCatanTradeSystem\022@\n\005",
-      "offer\030\001 \003(\01321.org.shell.mmo.sample.messa" +
-      "ge.proto.CatanResource\022?\n\004want\030\002 \003(\01321.o" +
-      "rg.shell.mmo.sample.message.proto.CatanR" +
-      "esource\"\336\001\n\023ResCatanTradeSystem\0228\n\005error" +
-      "\030\001 \001(\0162).org.shell.mmo.sample.message.pr" +
-      "oto.Error\022@\n\005offer\030\002 \003(\01321.org.shell.mmo" +
-      ".sample.message.proto.CatanResource\022?\n\004w" +
-      "ant\030\003 \003(\01321.org.shell.mmo.sample.message" +
-      ".proto.CatanResource\022\n\n\002id\030\004 \001(\006\"\227\001\n\022Req" +
-      "CatanTradeOffer\022@\n\005offer\030\001 \003(\01321.org.she",
-      "ll.mmo.sample.message.proto.CatanResourc" +
-      "e\022?\n\004want\030\002 \003(\01321.org.shell.mmo.sample.m" +
-      "essage.proto.CatanResource\"\335\001\n\022ResCatanT" +
-      "radeOffer\0228\n\005error\030\001 \001(\0162).org.shell.mmo" +
-      ".sample.message.proto.Error\022@\n\005offer\030\002 \003" +
-      "(\01321.org.shell.mmo.sample.message.proto." +
-      "CatanResource\022?\n\004want\030\003 \003(\01321.org.shell." +
-      "mmo.sample.message.proto.CatanResource\022\n" +
-      "\n\002id\030\004 \001(\006\"\236\001\n\031ReqCatanTradeCounterOffer" +
-      "\022@\n\005offer\030\001 \003(\01321.org.shell.mmo.sample.m",
-      "essage.proto.CatanResource\022?\n\004want\030\002 \003(\013" +
-      "21.org.shell.mmo.sample.message.proto.Ca" +
-      "tanResource\"U\n\031ResCatanTradeCounterOffer" +
-      "\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sample.m" +
-      "essage.proto.Error\"\256\001\n\035ReqCatanTradeCoun" +
-      "terOfferToMe\022@\n\005offer\030\001 \003(\01321.org.shell." +
-      "mmo.sample.message.proto.CatanResource\022?" +
-      "\n\004want\030\002 \003(\01321.org.shell.mmo.sample.mess" +
-      "age.proto.CatanResource\022\n\n\002id\030\003 \001(\006\"!\n\037R" +
-      "eqCatanTradeCounterOfferRefuse\"[\n\037ResCat",
-      "anTradeCounterOfferRefuse\0228\n\005error\030\001 \001(\016" +
-      "2).org.shell.mmo.sample.message.proto.Er" +
-      "ror\"1\n#ReqCatanTradeCounterOfferRefuseTo" +
-      "Me\022\n\n\002id\030\003 \001(\006\"#\n\021ReqCatanTradeDeal\022\016\n\006t" +
-      "arget\030\001 \001(\006\"\341\001\n\021ResCatanTradeDeal\0228\n\005err" +
+      "n\"\225\001\n\021ResCatanBuildCity\0228\n\005error\030\001 \001(\0162)" +
+      ".org.shell.mmo.sample.message.proto.Erro" +
+      "r\022\n\n\002id\030\002 \001(\006\022:\n\004city\030\003 \001(\0132,.org.shell." +
+      "mmo.sample.message.proto.Position\"-\n\034Req" +
+      "CatanBuildDevelopmentCard\022\r\n\005count\030\001 \001(\005" +
+      "\"\241\001\n\034ResCatanBuildDevelopmentCard\0228\n\005err" +
       "or\030\001 \001(\0162).org.shell.mmo.sample.message." +
-      "proto.Error\022H\n\007master1\030\002 \001(\01327.org.shell" +
-      ".mmo.sample.message.proto.CatanMasterRes" +
-      "ource\022H\n\007master2\030\003 \001(\01327.org.shell.mmo.s" +
-      "ample.message.proto.CatanMasterResource\"",
-      "\025\n\023ReqCatanTradeCancel\"O\n\023ResCatanTradeC" +
-      "ancel\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sam" +
-      "ple.message.proto.Error\"W\n\013ReqCatanRob\022<" +
-      "\n\006robber\030\001 \001(\0132,.org.shell.mmo.sample.me" +
-      "ssage.proto.Position\022\n\n\002id\030\002 \001(\006\"\360\001\n\013Res" +
-      "CatanRob\0228\n\005error\030\001 \001(\0162).org.shell.mmo." +
-      "sample.message.proto.Error\022<\n\006robber\030\002 \001" +
-      "(\0132,.org.shell.mmo.sample.message.proto." +
-      "Position\022\020\n\010criminal\030\003 \001(\006\022\016\n\006victim\030\004 \001" +
-      "(\006\022G\n\010resource\030\005 \001(\01625.org.shell.mmo.sam",
-      "ple.message.proto.CatanResourceType\"[\n\020R" +
-      "eqCatanRichCard\022G\n\010resource\030\001 \003(\01625.org." +
-      "shell.mmo.sample.message.proto.CatanReso" +
-      "urceType\"\241\001\n\020ResCatanRichCard\0228\n\005error\030\001" +
-      " \001(\0162).org.shell.mmo.sample.message.prot" +
-      "o.Error\022G\n\010resource\030\002 \003(\01625.org.shell.mm" +
+      "proto.Error\022\n\n\002id\030\002 \001(\006\022;\n\004card\030\003 \003(\0132-." +
+      "org.shell.mmo.sample.message.proto.Catan",
+      "Card\"\230\001\n\023ReqCatanTradeSystem\022@\n\005offer\030\001 " +
+      "\003(\01321.org.shell.mmo.sample.message.proto" +
+      ".CatanResource\022?\n\004want\030\002 \003(\01321.org.shell" +
+      ".mmo.sample.message.proto.CatanResource\"" +
+      "\336\001\n\023ResCatanTradeSystem\0228\n\005error\030\001 \001(\0162)" +
+      ".org.shell.mmo.sample.message.proto.Erro" +
+      "r\022@\n\005offer\030\002 \003(\01321.org.shell.mmo.sample." +
+      "message.proto.CatanResource\022?\n\004want\030\003 \003(" +
+      "\01321.org.shell.mmo.sample.message.proto.C" +
+      "atanResource\022\n\n\002id\030\004 \001(\006\"\227\001\n\022ReqCatanTra",
+      "deOffer\022@\n\005offer\030\001 \003(\01321.org.shell.mmo.s" +
+      "ample.message.proto.CatanResource\022?\n\004wan" +
+      "t\030\002 \003(\01321.org.shell.mmo.sample.message.p" +
+      "roto.CatanResource\"\335\001\n\022ResCatanTradeOffe" +
+      "r\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sample." +
+      "message.proto.Error\022@\n\005offer\030\002 \003(\01321.org" +
+      ".shell.mmo.sample.message.proto.CatanRes" +
+      "ource\022?\n\004want\030\003 \003(\01321.org.shell.mmo.samp" +
+      "le.message.proto.CatanResource\022\n\n\002id\030\004 \001" +
+      "(\006\"\236\001\n\031ReqCatanTradeCounterOffer\022@\n\005offe",
+      "r\030\001 \003(\01321.org.shell.mmo.sample.message.p" +
+      "roto.CatanResource\022?\n\004want\030\002 \003(\01321.org.s" +
+      "hell.mmo.sample.message.proto.CatanResou" +
+      "rce\"U\n\031ResCatanTradeCounterOffer\0228\n\005erro" +
+      "r\030\001 \001(\0162).org.shell.mmo.sample.message.p" +
+      "roto.Error\"\256\001\n\035ReqCatanTradeCounterOffer" +
+      "ToMe\022@\n\005offer\030\001 \003(\01321.org.shell.mmo.samp" +
+      "le.message.proto.CatanResource\022?\n\004want\030\002" +
+      " \003(\01321.org.shell.mmo.sample.message.prot" +
+      "o.CatanResource\022\n\n\002id\030\003 \001(\006\"!\n\037ReqCatanT",
+      "radeCounterOfferRefuse\"[\n\037ResCatanTradeC" +
+      "ounterOfferRefuse\0228\n\005error\030\001 \001(\0162).org.s" +
+      "hell.mmo.sample.message.proto.Error\"1\n#R" +
+      "eqCatanTradeCounterOfferRefuseToMe\022\n\n\002id" +
+      "\030\003 \001(\006\"#\n\021ReqCatanTradeDeal\022\016\n\006target\030\001 " +
+      "\001(\006\"\341\001\n\021ResCatanTradeDeal\0228\n\005error\030\001 \001(\016" +
+      "2).org.shell.mmo.sample.message.proto.Er" +
+      "ror\022H\n\007master1\030\002 \001(\01327.org.shell.mmo.sam" +
+      "ple.message.proto.CatanMasterResource\022H\n" +
+      "\007master2\030\003 \001(\01327.org.shell.mmo.sample.me",
+      "ssage.proto.CatanMasterResource\"\025\n\023ReqCa" +
+      "tanTradeCancel\"O\n\023ResCatanTradeCancel\0228\n" +
+      "\005error\030\001 \001(\0162).org.shell.mmo.sample.mess" +
+      "age.proto.Error\"W\n\013ReqCatanRob\022<\n\006robber" +
+      "\030\001 \001(\0132,.org.shell.mmo.sample.message.pr" +
+      "oto.Position\022\n\n\002id\030\002 \001(\006\"\360\001\n\013ResCatanRob" +
+      "\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sample.m" +
+      "essage.proto.Error\022<\n\006robber\030\002 \001(\0132,.org" +
+      ".shell.mmo.sample.message.proto.Position" +
+      "\022\020\n\010criminal\030\003 \001(\006\022\016\n\006victim\030\004 \001(\006\022G\n\010re",
+      "source\030\005 \001(\01625.org.shell.mmo.sample.mess" +
+      "age.proto.CatanResourceType\"[\n\020ReqCatanR" +
+      "ichCard\022G\n\010resource\030\001 \003(\01625.org.shell.mm" +
       "o.sample.message.proto.CatanResourceType" +
-      "\022\n\n\002id\030\003 \001(\006\"\202\002\n\020ReqCatanRoadCard\022:\n\004src" +
-      "1\030\001 \001(\0132,.org.shell.mmo.sample.message.p" +
-      "roto.Position\022:\n\004dst1\030\002 \001(\0132,.org.shell.",
-      "mmo.sample.message.proto.Position\022:\n\004src" +
-      "2\030\003 \001(\0132,.org.shell.mmo.sample.message.p" +
-      "roto.Position\022:\n\004dst2\030\004 \001(\0132,.org.shell." +
-      "mmo.sample.message.proto.Position\"\310\002\n\020Re" +
-      "sCatanRoadCard\0228\n\005error\030\001 \001(\0162).org.shel" +
-      "l.mmo.sample.message.proto.Error\022:\n\004src1" +
-      "\030\002 \001(\0132,.org.shell.mmo.sample.message.pr" +
-      "oto.Position\022:\n\004dst1\030\003 \001(\0132,.org.shell.m" +
-      "mo.sample.message.proto.Position\022:\n\004src2" +
-      "\030\004 \001(\0132,.org.shell.mmo.sample.message.pr",
-      "oto.Position\022:\n\004dst2\030\005 \001(\0132,.org.shell.m" +
-      "mo.sample.message.proto.Position\022\n\n\002id\030\006" +
-      " \001(\006\"^\n\022ReqCatanKnightCard\022<\n\006robber\030\001 \001" +
-      "(\0132,.org.shell.mmo.sample.message.proto." +
-      "Position\022\n\n\002id\030\002 \001(\006\"\367\001\n\022ResCatanKnightC" +
-      "ard\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sampl" +
-      "e.message.proto.Error\022<\n\006robber\030\002 \001(\0132,." +
-      "org.shell.mmo.sample.message.proto.Posit" +
-      "ion\022\020\n\010criminal\030\003 \001(\006\022\016\n\006victim\030\004 \001(\006\022G\n" +
-      "\010resource\030\005 \001(\01625.org.shell.mmo.sample.m",
-      "essage.proto.CatanResourceType\"[\n\024ReqCat" +
-      "anMonopolyCard\022C\n\004type\030\001 \001(\01625.org.shell" +
-      ".mmo.sample.message.proto.CatanResourceT" +
-      "ype\"\243\001\n\024ResCatanMonopolyCard\0228\n\005error\030\001 " +
-      "\001(\0162).org.shell.mmo.sample.message.proto" +
-      ".Error\022\n\n\002id\030\002 \001(\006\022E\n\004lose\030\005 \003(\01327.org.s" +
-      "hell.mmo.sample.message.proto.CatanMaste" +
-      "rResource\"(\n\026ReqCatanRoundFoldStart\022\016\n\006r" +
-      "emain\030\001 \001(\005\"O\n\014ReqCatanFold\022?\n\004lose\030\004 \003(" +
-      "\01321.org.shell.mmo.sample.message.proto.C",
-      "atanResource\"\225\001\n\014ResCatanFold\0228\n\005error\030\001" +
-      " \001(\0162).org.shell.mmo.sample.message.prot" +
-      "o.Error\022\n\n\002id\030\002 \001(\006\022?\n\004lose\030\003 \003(\01321.org." +
+      "\"\241\001\n\020ResCatanRichCard\0228\n\005error\030\001 \001(\0162).o" +
+      "rg.shell.mmo.sample.message.proto.Error\022" +
+      "G\n\010resource\030\002 \003(\01625.org.shell.mmo.sample" +
+      ".message.proto.CatanResourceType\022\n\n\002id\030\003" +
+      " \001(\006\"\202\002\n\020ReqCatanRoadCard\022:\n\004src1\030\001 \001(\0132" +
+      ",.org.shell.mmo.sample.message.proto.Pos",
+      "ition\022:\n\004dst1\030\002 \001(\0132,.org.shell.mmo.samp" +
+      "le.message.proto.Position\022:\n\004src2\030\003 \001(\0132" +
+      ",.org.shell.mmo.sample.message.proto.Pos" +
+      "ition\022:\n\004dst2\030\004 \001(\0132,.org.shell.mmo.samp" +
+      "le.message.proto.Position\"\310\002\n\020ResCatanRo" +
+      "adCard\0228\n\005error\030\001 \001(\0162).org.shell.mmo.sa" +
+      "mple.message.proto.Error\022:\n\004src1\030\002 \001(\0132," +
+      ".org.shell.mmo.sample.message.proto.Posi" +
+      "tion\022:\n\004dst1\030\003 \001(\0132,.org.shell.mmo.sampl" +
+      "e.message.proto.Position\022:\n\004src2\030\004 \001(\0132,",
+      ".org.shell.mmo.sample.message.proto.Posi" +
+      "tion\022:\n\004dst2\030\005 \001(\0132,.org.shell.mmo.sampl" +
+      "e.message.proto.Position\022\n\n\002id\030\006 \001(\006\"^\n\022" +
+      "ReqCatanKnightCard\022<\n\006robber\030\001 \001(\0132,.org" +
+      ".shell.mmo.sample.message.proto.Position" +
+      "\022\n\n\002id\030\002 \001(\006\"\367\001\n\022ResCatanKnightCard\0228\n\005e" +
+      "rror\030\001 \001(\0162).org.shell.mmo.sample.messag" +
+      "e.proto.Error\022<\n\006robber\030\002 \001(\0132,.org.shel" +
+      "l.mmo.sample.message.proto.Position\022\020\n\010c" +
+      "riminal\030\003 \001(\006\022\016\n\006victim\030\004 \001(\006\022G\n\010resourc",
+      "e\030\005 \001(\01625.org.shell.mmo.sample.message.p" +
+      "roto.CatanResourceType\"[\n\024ReqCatanMonopo" +
+      "lyCard\022C\n\004type\030\001 \001(\01625.org.shell.mmo.sam" +
+      "ple.message.proto.CatanResourceType\"\243\001\n\024" +
+      "ResCatanMonopolyCard\0228\n\005error\030\001 \001(\0162).or" +
+      "g.shell.mmo.sample.message.proto.Error\022\n" +
+      "\n\002id\030\002 \001(\006\022E\n\004lose\030\005 \003(\01327.org.shell.mmo" +
+      ".sample.message.proto.CatanMasterResourc" +
+      "e\"(\n\026ReqCatanRoundFoldStart\022\016\n\006remain\030\001 " +
+      "\001(\005\"O\n\014ReqCatanFold\022?\n\004lose\030\004 \003(\01321.org.",
       "shell.mmo.sample.message.proto.CatanReso" +
-      "urce\"n\n\014ReqCatanDone\022=\n\005score\030\001 \003(\0132..or" +
-      "g.shell.mmo.sample.message.proto.CatanSc" +
-      "ore\022\014\n\004gain\030\002 \001(\005\022\021\n\ttotalGain\030\003 \001(\005"
+      "urce\"\225\001\n\014ResCatanFold\0228\n\005error\030\001 \001(\0162).o" +
+      "rg.shell.mmo.sample.message.proto.Error\022" +
+      "\n\n\002id\030\002 \001(\006\022?\n\004lose\030\003 \003(\01321.org.shell.mm" +
+      "o.sample.message.proto.CatanResource\"n\n\014" +
+      "ReqCatanDone\022=\n\005score\030\001 \003(\0132..org.shell." +
+      "mmo.sample.message.proto.CatanScore\022\014\n\004g" +
+      "ain\030\002 \001(\005\022\021\n\ttotalGain\030\003 \001(\005"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -50569,374 +51015,380 @@ public final class LogicClient {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqLoginReplace_descriptor,
         new java.lang.String[] { "Host", });
-    internal_static_org_shell_mmo_sample_message_proto_ReqRoleCreateRole_descriptor =
+    internal_static_org_shell_mmo_sample_message_proto_ReqLoginConfig_descriptor =
       getDescriptor().getMessageTypes().get(3);
+    internal_static_org_shell_mmo_sample_message_proto_ReqLoginConfig_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_org_shell_mmo_sample_message_proto_ReqLoginConfig_descriptor,
+        new java.lang.String[] { "Data", });
+    internal_static_org_shell_mmo_sample_message_proto_ReqRoleCreateRole_descriptor =
+      getDescriptor().getMessageTypes().get(4);
     internal_static_org_shell_mmo_sample_message_proto_ReqRoleCreateRole_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqRoleCreateRole_descriptor,
         new java.lang.String[] { "Name", });
     internal_static_org_shell_mmo_sample_message_proto_ResRoleCreateRole_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_org_shell_mmo_sample_message_proto_ResRoleCreateRole_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResRoleCreateRole_descriptor,
         new java.lang.String[] { "Error", "LeaderRole", });
     internal_static_org_shell_mmo_sample_message_proto_ReqRoomEnter_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_org_shell_mmo_sample_message_proto_ReqRoomEnter_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqRoomEnter_descriptor,
         new java.lang.String[] { "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ResRoomEnter_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_org_shell_mmo_sample_message_proto_ResRoomEnter_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResRoomEnter_descriptor,
         new java.lang.String[] { "Error", "Id", "Table", });
     internal_static_org_shell_mmo_sample_message_proto_ReqRoomExit_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_org_shell_mmo_sample_message_proto_ReqRoomExit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqRoomExit_descriptor,
         new java.lang.String[] { });
     internal_static_org_shell_mmo_sample_message_proto_ResRoomExit_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_org_shell_mmo_sample_message_proto_ResRoomExit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResRoomExit_descriptor,
         new java.lang.String[] { "Error", });
     internal_static_org_shell_mmo_sample_message_proto_ReqRoomAll_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_org_shell_mmo_sample_message_proto_ReqRoomAll_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqRoomAll_descriptor,
         new java.lang.String[] { "Room", });
     internal_static_org_shell_mmo_sample_message_proto_ReqRoomUpdate_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_org_shell_mmo_sample_message_proto_ReqRoomUpdate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqRoomUpdate_descriptor,
         new java.lang.String[] { "Id", "Count", });
     internal_static_org_shell_mmo_sample_message_proto_ReqTableCreate_descriptor =
-      getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(12);
     internal_static_org_shell_mmo_sample_message_proto_ReqTableCreate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqTableCreate_descriptor,
         new java.lang.String[] { "Name", "Pwd", "Map", });
     internal_static_org_shell_mmo_sample_message_proto_ResTableCreate_descriptor =
-      getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(13);
     internal_static_org_shell_mmo_sample_message_proto_ResTableCreate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResTableCreate_descriptor,
         new java.lang.String[] { "Error", "Id", "Map", });
     internal_static_org_shell_mmo_sample_message_proto_ReqTableAdd_descriptor =
-      getDescriptor().getMessageTypes().get(13);
+      getDescriptor().getMessageTypes().get(14);
     internal_static_org_shell_mmo_sample_message_proto_ReqTableAdd_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqTableAdd_descriptor,
         new java.lang.String[] { "Table", });
     internal_static_org_shell_mmo_sample_message_proto_ReqTableJoin_descriptor =
-      getDescriptor().getMessageTypes().get(14);
+      getDescriptor().getMessageTypes().get(15);
     internal_static_org_shell_mmo_sample_message_proto_ReqTableJoin_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqTableJoin_descriptor,
         new java.lang.String[] { "Id", "Pwd", });
     internal_static_org_shell_mmo_sample_message_proto_ResTableJoin_descriptor =
-      getDescriptor().getMessageTypes().get(15);
+      getDescriptor().getMessageTypes().get(16);
     internal_static_org_shell_mmo_sample_message_proto_ResTableJoin_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResTableJoin_descriptor,
         new java.lang.String[] { "Error", "Id", "Map", "Master", });
     internal_static_org_shell_mmo_sample_message_proto_ReqTableUpdate_descriptor =
-      getDescriptor().getMessageTypes().get(16);
+      getDescriptor().getMessageTypes().get(17);
     internal_static_org_shell_mmo_sample_message_proto_ReqTableUpdate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqTableUpdate_descriptor,
         new java.lang.String[] { "Id", "Count", "Start", });
     internal_static_org_shell_mmo_sample_message_proto_ReqTableExit_descriptor =
-      getDescriptor().getMessageTypes().get(17);
+      getDescriptor().getMessageTypes().get(18);
     internal_static_org_shell_mmo_sample_message_proto_ReqTableExit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqTableExit_descriptor,
         new java.lang.String[] { });
     internal_static_org_shell_mmo_sample_message_proto_ResTableExit_descriptor =
-      getDescriptor().getMessageTypes().get(18);
+      getDescriptor().getMessageTypes().get(19);
     internal_static_org_shell_mmo_sample_message_proto_ResTableExit_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResTableExit_descriptor,
         new java.lang.String[] { "Error", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ReqTableRemove_descriptor =
-      getDescriptor().getMessageTypes().get(19);
+      getDescriptor().getMessageTypes().get(20);
     internal_static_org_shell_mmo_sample_message_proto_ReqTableRemove_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqTableRemove_descriptor,
         new java.lang.String[] { "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ReqTableReady_descriptor =
-      getDescriptor().getMessageTypes().get(20);
+      getDescriptor().getMessageTypes().get(21);
     internal_static_org_shell_mmo_sample_message_proto_ReqTableReady_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqTableReady_descriptor,
         new java.lang.String[] { });
     internal_static_org_shell_mmo_sample_message_proto_ResTableReady_descriptor =
-      getDescriptor().getMessageTypes().get(21);
+      getDescriptor().getMessageTypes().get(22);
     internal_static_org_shell_mmo_sample_message_proto_ResTableReady_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResTableReady_descriptor,
         new java.lang.String[] { "Error", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanStart_descriptor =
-      getDescriptor().getMessageTypes().get(22);
+      getDescriptor().getMessageTypes().get(23);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanStart_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanStart_descriptor,
         new java.lang.String[] { "Map", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundInitStart_descriptor =
-      getDescriptor().getMessageTypes().get(23);
+      getDescriptor().getMessageTypes().get(24);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundInitStart_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundInitStart_descriptor,
         new java.lang.String[] { "Id", "Remain", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanSet_descriptor =
-      getDescriptor().getMessageTypes().get(24);
+      getDescriptor().getMessageTypes().get(25);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanSet_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanSet_descriptor,
         new java.lang.String[] { "Country", "RoadDst", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanSet_descriptor =
-      getDescriptor().getMessageTypes().get(25);
+      getDescriptor().getMessageTypes().get(26);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanSet_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanSet_descriptor,
         new java.lang.String[] { "Error", "Id", "Country", "RoadDst", "Resource", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundCommonStart_descriptor =
-      getDescriptor().getMessageTypes().get(26);
+      getDescriptor().getMessageTypes().get(27);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundCommonStart_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundCommonStart_descriptor,
         new java.lang.String[] { "Id", "Remain", "Dice", "Gain", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundCommonEnd_descriptor =
-      getDescriptor().getMessageTypes().get(27);
+      getDescriptor().getMessageTypes().get(28);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundCommonEnd_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundCommonEnd_descriptor,
         new java.lang.String[] { });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanRoundCommonEnd_descriptor =
-      getDescriptor().getMessageTypes().get(28);
+      getDescriptor().getMessageTypes().get(29);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanRoundCommonEnd_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanRoundCommonEnd_descriptor,
         new java.lang.String[] { "Error", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildRoad_descriptor =
-      getDescriptor().getMessageTypes().get(29);
+      getDescriptor().getMessageTypes().get(30);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildRoad_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildRoad_descriptor,
         new java.lang.String[] { "Src", "Dst", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildRoad_descriptor =
-      getDescriptor().getMessageTypes().get(30);
+      getDescriptor().getMessageTypes().get(31);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildRoad_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildRoad_descriptor,
         new java.lang.String[] { "Error", "Id", "Src", "Dst", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildCountry_descriptor =
-      getDescriptor().getMessageTypes().get(31);
+      getDescriptor().getMessageTypes().get(32);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildCountry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildCountry_descriptor,
         new java.lang.String[] { "Country", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildCountry_descriptor =
-      getDescriptor().getMessageTypes().get(32);
+      getDescriptor().getMessageTypes().get(33);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildCountry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildCountry_descriptor,
         new java.lang.String[] { "Error", "Id", "Country", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildCity_descriptor =
-      getDescriptor().getMessageTypes().get(33);
+      getDescriptor().getMessageTypes().get(34);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildCity_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildCity_descriptor,
         new java.lang.String[] { "City", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildCity_descriptor =
-      getDescriptor().getMessageTypes().get(34);
+      getDescriptor().getMessageTypes().get(35);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildCity_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildCity_descriptor,
         new java.lang.String[] { "Error", "Id", "City", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildDevelopmentCard_descriptor =
-      getDescriptor().getMessageTypes().get(35);
+      getDescriptor().getMessageTypes().get(36);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildDevelopmentCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanBuildDevelopmentCard_descriptor,
         new java.lang.String[] { "Count", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildDevelopmentCard_descriptor =
-      getDescriptor().getMessageTypes().get(36);
+      getDescriptor().getMessageTypes().get(37);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildDevelopmentCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanBuildDevelopmentCard_descriptor,
         new java.lang.String[] { "Error", "Id", "Card", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeSystem_descriptor =
-      getDescriptor().getMessageTypes().get(37);
+      getDescriptor().getMessageTypes().get(38);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeSystem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeSystem_descriptor,
         new java.lang.String[] { "Offer", "Want", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeSystem_descriptor =
-      getDescriptor().getMessageTypes().get(38);
+      getDescriptor().getMessageTypes().get(39);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeSystem_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeSystem_descriptor,
         new java.lang.String[] { "Error", "Offer", "Want", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeOffer_descriptor =
-      getDescriptor().getMessageTypes().get(39);
+      getDescriptor().getMessageTypes().get(40);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeOffer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeOffer_descriptor,
         new java.lang.String[] { "Offer", "Want", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeOffer_descriptor =
-      getDescriptor().getMessageTypes().get(40);
+      getDescriptor().getMessageTypes().get(41);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeOffer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeOffer_descriptor,
         new java.lang.String[] { "Error", "Offer", "Want", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOffer_descriptor =
-      getDescriptor().getMessageTypes().get(41);
+      getDescriptor().getMessageTypes().get(42);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOffer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOffer_descriptor,
         new java.lang.String[] { "Offer", "Want", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeCounterOffer_descriptor =
-      getDescriptor().getMessageTypes().get(42);
+      getDescriptor().getMessageTypes().get(43);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeCounterOffer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeCounterOffer_descriptor,
         new java.lang.String[] { "Error", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOfferToMe_descriptor =
-      getDescriptor().getMessageTypes().get(43);
+      getDescriptor().getMessageTypes().get(44);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOfferToMe_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOfferToMe_descriptor,
         new java.lang.String[] { "Offer", "Want", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOfferRefuse_descriptor =
-      getDescriptor().getMessageTypes().get(44);
+      getDescriptor().getMessageTypes().get(45);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOfferRefuse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOfferRefuse_descriptor,
         new java.lang.String[] { });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeCounterOfferRefuse_descriptor =
-      getDescriptor().getMessageTypes().get(45);
+      getDescriptor().getMessageTypes().get(46);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeCounterOfferRefuse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeCounterOfferRefuse_descriptor,
         new java.lang.String[] { "Error", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOfferRefuseToMe_descriptor =
-      getDescriptor().getMessageTypes().get(46);
+      getDescriptor().getMessageTypes().get(47);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOfferRefuseToMe_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCounterOfferRefuseToMe_descriptor,
         new java.lang.String[] { "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeDeal_descriptor =
-      getDescriptor().getMessageTypes().get(47);
+      getDescriptor().getMessageTypes().get(48);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeDeal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeDeal_descriptor,
         new java.lang.String[] { "Target", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeDeal_descriptor =
-      getDescriptor().getMessageTypes().get(48);
+      getDescriptor().getMessageTypes().get(49);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeDeal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeDeal_descriptor,
         new java.lang.String[] { "Error", "Master1", "Master2", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCancel_descriptor =
-      getDescriptor().getMessageTypes().get(49);
+      getDescriptor().getMessageTypes().get(50);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCancel_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanTradeCancel_descriptor,
         new java.lang.String[] { });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeCancel_descriptor =
-      getDescriptor().getMessageTypes().get(50);
+      getDescriptor().getMessageTypes().get(51);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeCancel_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanTradeCancel_descriptor,
         new java.lang.String[] { "Error", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRob_descriptor =
-      getDescriptor().getMessageTypes().get(51);
+      getDescriptor().getMessageTypes().get(52);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRob_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanRob_descriptor,
         new java.lang.String[] { "Robber", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanRob_descriptor =
-      getDescriptor().getMessageTypes().get(52);
+      getDescriptor().getMessageTypes().get(53);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanRob_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanRob_descriptor,
         new java.lang.String[] { "Error", "Robber", "Criminal", "Victim", "Resource", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRichCard_descriptor =
-      getDescriptor().getMessageTypes().get(53);
+      getDescriptor().getMessageTypes().get(54);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRichCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanRichCard_descriptor,
         new java.lang.String[] { "Resource", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanRichCard_descriptor =
-      getDescriptor().getMessageTypes().get(54);
+      getDescriptor().getMessageTypes().get(55);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanRichCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanRichCard_descriptor,
         new java.lang.String[] { "Error", "Resource", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoadCard_descriptor =
-      getDescriptor().getMessageTypes().get(55);
+      getDescriptor().getMessageTypes().get(56);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoadCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoadCard_descriptor,
         new java.lang.String[] { "Src1", "Dst1", "Src2", "Dst2", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanRoadCard_descriptor =
-      getDescriptor().getMessageTypes().get(56);
+      getDescriptor().getMessageTypes().get(57);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanRoadCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanRoadCard_descriptor,
         new java.lang.String[] { "Error", "Src1", "Dst1", "Src2", "Dst2", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanKnightCard_descriptor =
-      getDescriptor().getMessageTypes().get(57);
+      getDescriptor().getMessageTypes().get(58);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanKnightCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanKnightCard_descriptor,
         new java.lang.String[] { "Robber", "Id", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanKnightCard_descriptor =
-      getDescriptor().getMessageTypes().get(58);
+      getDescriptor().getMessageTypes().get(59);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanKnightCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanKnightCard_descriptor,
         new java.lang.String[] { "Error", "Robber", "Criminal", "Victim", "Resource", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanMonopolyCard_descriptor =
-      getDescriptor().getMessageTypes().get(59);
+      getDescriptor().getMessageTypes().get(60);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanMonopolyCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanMonopolyCard_descriptor,
         new java.lang.String[] { "Type", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanMonopolyCard_descriptor =
-      getDescriptor().getMessageTypes().get(60);
+      getDescriptor().getMessageTypes().get(61);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanMonopolyCard_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanMonopolyCard_descriptor,
         new java.lang.String[] { "Error", "Id", "Lose", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundFoldStart_descriptor =
-      getDescriptor().getMessageTypes().get(61);
+      getDescriptor().getMessageTypes().get(62);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundFoldStart_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanRoundFoldStart_descriptor,
         new java.lang.String[] { "Remain", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanFold_descriptor =
-      getDescriptor().getMessageTypes().get(62);
+      getDescriptor().getMessageTypes().get(63);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanFold_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanFold_descriptor,
         new java.lang.String[] { "Lose", });
     internal_static_org_shell_mmo_sample_message_proto_ResCatanFold_descriptor =
-      getDescriptor().getMessageTypes().get(63);
+      getDescriptor().getMessageTypes().get(64);
     internal_static_org_shell_mmo_sample_message_proto_ResCatanFold_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ResCatanFold_descriptor,
         new java.lang.String[] { "Error", "Id", "Lose", });
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanDone_descriptor =
-      getDescriptor().getMessageTypes().get(64);
+      getDescriptor().getMessageTypes().get(65);
     internal_static_org_shell_mmo_sample_message_proto_ReqCatanDone_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_org_shell_mmo_sample_message_proto_ReqCatanDone_descriptor,

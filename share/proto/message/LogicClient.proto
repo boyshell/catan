@@ -21,6 +21,10 @@ message ResLoginLogin {
 message ReqLoginReplace {
     optional string host = 1; // 顶号者的主机地址
 }
+// 加载配置:参数
+message ReqLoginConfig {
+    optional bytes data = 1; // 对应proto:ContainerGroup
+}
 // 创角:参数
 message ReqRoleCreateRole {
     optional string name = 1; // 角色名称

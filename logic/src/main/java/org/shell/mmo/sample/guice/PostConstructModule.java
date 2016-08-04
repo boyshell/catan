@@ -14,6 +14,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.shell.mmo.sample.config.ConfigGroup;
+import org.shell.mmo.sample.config.proto.Config;
 import org.shell.mmo.sample.uid.UID;
 import org.shell.mmo.sample.uid.UIDSaver;
 import org.slf4j.Logger;
@@ -84,7 +85,10 @@ public class PostConstructModule extends AbstractModule {
     private ConfigGroup createConfigGroup() {
         try {
             Pair<Map<String, Sheet>, Map<String, Sheet>> pair = ExcelUtil.parse(configDir);
-            return new ConfigGroup(ConfigGroup.create(pair.getLeft(), pair.getRight()));
+            Config.ContainerGroup containerGroup = ConfigGroup.create(pair.getLeft(), pair.getRight());
+            // TODO 测试阶段生效
+            bind(Config.ContainerGroup.class).toInstance(containerGroup);
+            return new ConfigGroup(containerGroup);
         } catch (IOException e) {
             logger.error("解析配置出错", e);
             System.exit(-1);
