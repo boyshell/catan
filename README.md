@@ -1,2 +1,1 @@
-# mmo-sample
-mmo-sample
+# catan
